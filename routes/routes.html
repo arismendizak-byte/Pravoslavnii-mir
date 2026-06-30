@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Маршруты — Православный Мир</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .routes-header { margin-bottom: 40px; text-align: center; }
+        .routes-header h1 { font-family: 'Playfair Display', serif; font-size: clamp(32px, 4vw, 48px); font-weight: 700; color: var(--dark); line-height: 1.15; }
+        .routes-header h1 em { font-style: italic; color: var(--gold); }
+        .routes-header p { font-size: 16px; color: var(--text-muted); max-width: 600px; margin: 0 auto; line-height: 1.7; }
+
+        .routes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; }
+
+        .route-card {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+            transition: transform var(--transition), box-shadow var(--transition);
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+        .route-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+
+        .route-img {
+            height: 200px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            background: linear-gradient(135deg, var(--dark-3), #1A3A2A);
+            position: relative;
+        }
+        .route-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .route-body { padding: 20px; display: flex; flex-direction: column; flex: 1; }
+        .route-title { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: var(--dark); margin-bottom: 8px; line-height: 1.3; }
+        .route-meta { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 12px; }
+        .route-meta-item { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--text-muted); }
+        .route-meta-icon { font-size: 16px; }
+        .route-price { font-size: 20px; font-weight: 700; color: var(--gold); margin-bottom: 12px; }
+        .route-desc { font-size: 14px; color: var(--text-muted); line-height: 1.6; margin-bottom: 12px; }
+        .route-places { font-size: 13px; color: var(--text-muted); margin-bottom: 12px; }
+        .route-places a { color: var(--gold); text-decoration: none; transition: color var(--transition); }
+        .route-places a:hover { color: var(--gold-light); }
+
+        .route-btn {
+            background: var(--gold);
+            color: var(--dark);
+            border: none;
+            padding: 12px 24px;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            transition: background var(--transition);
+            margin-top: auto;
+        }
+        .route-btn:hover { background: var(--gold-light); }
+
+        @media (max-width: 560px) {
+            .route-img { height: 160px; }
+            .route-title { font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div id="nav-container"></div>
+    <div id="bottom-nav-container"></div>
+
+    <div class="page-section">
+        <div class="breadcrumbs">
+            <a href="/index.html">Главная</a> &rarr;
+            <span>Маршруты</span>
+        </div>
+
+        <div class="routes-header">
+            <h1>Паломнические<br><em>маршруты</em></h1>
+            <p>Готовые туры по святым местам России. Выберите свой путь.</p>
+        </div>
+
+        <div class="routes-grid">
+            <!-- Маршрут 1: Московский паломник (Дорога в Лавру) -->
+            <div class="route-card">
+                <div class="route-img">
+                    <img src="https://i.postimg.cc/9F0J7SyK/lavra3.jpg" alt="Троице-Сергиева Лавра">
+                    <div class="route-badge" style="position:absolute; bottom:10px; left:10px; background:var(--gold); color:var(--dark); padding:4px 12px; border-radius:100px; font-size:11px; font-weight:600;">Пеший маршрут</div>
+                </div>
+                <div class="route-body">
+                    <div class="route-title">Московский паломник</div>
+                    <div class="route-meta">
+                        <span class="route-meta-item"><span class="route-meta-icon">📍</span> Москва → Сергиев Посад</span>
+                        <span class="route-meta-item"><span class="route-meta-icon">🕐</span> 4–5 дней</span>
+                        <span class="route-meta-item"><span class="route-meta-icon">👣</span> 120 км</span>
+                    </div>
+                    <div class="route-price">Бесплатно (личные расходы)</div>
+                    <div class="route-desc">
+                        Главный пеший паломнический путь России. Повторяет исторический маршрут царского богомолья от Иверской часовни у стен Московского Кремля до Свято-Троицкой Сергиевой Лавры — духовного сердца русского православия. Путь проходит через леса и поля Подмосковья, позволяя паломнику погрузиться в молитву и тишину.
+                    </div>
+                    <div class="route-places">
+                        <strong>Ключевые объекты:</strong>
+                        <a href="/objects/christ.html">Храм Христа Спасителя (старт)</a>,
+                        <a href="/objects/lavra.html">Троице-Сергиева Лавра (финиш)</a>
+                    </div>
+                    <button class="route-btn" onclick="alert('Функция заказа будет доступна в ближайшее время. Спасибо за интерес!')">Подробнее о маршруте</button>
+                </div>
+            </div>
+
+          <!-- Маршрут 2: Дивеевский маршрут -->
+<div class="route-card">
+    <div class="route-img">
+        <img src="https://i.postimg.cc/2yyFYdyK/images-(3).jpg" alt="Дивеево">
+        <div class="route-badge" style="position:absolute; bottom:10px; left:10px; background:var(--gold); color:var(--dark); padding:4px 12px; border-radius:100px; font-size:11px; font-weight:600;">Паломнический</div>
+    </div>
+    <div class="route-body">
+        <div class="route-title">Дивеевский маршрут</div>
+        <div class="route-meta">
+            <span class="route-meta-item"><span class="route-meta-icon">📍</span> Нижегородская область</span>
+            <span class="route-meta-item"><span class="route-meta-icon">🕐</span> 2–3 дня</span>
+            <span class="route-meta-item"><span class="route-meta-icon">⛪</span> 4 объекта</span>
+        </div>
+        <div class="route-price">от 7 500 ₽</div>
+        <div class="route-desc">
+            Паломничество в четвёртый удел Пресвятой Богородицы — Свято-Дивеевский монастырь. Прохождение по Святой Канавке, поклонение мощам преподобного Серафима Саровского. Посещение исторического центра Арзамаса с его храмами.
+        </div>
+        <div class="route-places">
+            <strong>Объекты в маршруте:</strong>
+            <a href="../objects/diveevo.html">Свято-Дивеевский монастырь</a>,
+            <a href="../objects/arzamas.html">Арзамас (храмы и соборы)</a>
+        </div>
+        <button class="route-btn" onclick="alert('Функция заказа будет доступна в ближайшее время. Спасибо за интерес!')">Подробнее о маршруте</button>
+    </div>
+</div>
+
+            <!-- Маршрут 3: Остров Валаам (заглушка) -->
+            <div class="route-card" style="opacity:0.6; pointer-events:none;">
+                <div class="route-img">
+                    <img src="https://i.postimg.cc/3R0t8L0S/valaam.jpg" alt="Валаам">
+                </div>
+                <div class="route-body">
+                    <div class="route-title">Остров Валаам</div>
+                    <div class="route-meta">
+                        <span class="route-meta-item"><span class="route-meta-icon">📍</span> Республика Карелия</span>
+                        <span class="route-meta-item"><span class="route-meta-icon">🕐</span> 3–5 дней</span>
+                        <span class="route-meta-item"><span class="route-meta-icon">🚢</span> По воде</span>
+                    </div>
+                    <div class="route-price">Скоро</div>
+                    <div class="route-desc">
+                        «Северный Афон» среди суровой природы Ладожского озера. Добраться можно только по воде. Посещение уединённых скитов и Преображенского собора.
+                    </div>
+                    <div class="route-places"><strong>Объекты:</strong> Валаамский монастырь</div>
+                    <button class="route-btn" onclick="alert('Маршрут в разработке. Следите за обновлениями!')">Скоро</button>
+                </div>
+            </div>
+
+            <!-- Маршрут 4: Соловецкие острова (заглушка) -->
+            <div class="route-card" style="opacity:0.6; pointer-events:none;">
+                <div class="route-img">
+                    <img src="https://i.postimg.cc/ZK1vtwWy/solovki.jpg" alt="Соловки">
+                </div>
+                <div class="route-body">
+                    <div class="route-title">Соловецкие острова</div>
+                    <div class="route-meta">
+                        <span class="route-meta-item"><span class="route-meta-icon">📍</span> Архангельская область</span>
+                        <span class="route-meta-item"><span class="route-meta-icon">🕐</span> 4–6 дней</span>
+                        <span class="route-meta-item"><span class="route-meta-icon">🚢</span> По воде</span>
+                    </div>
+                    <div class="route-price">Скоро</div>
+                    <div class="route-desc">
+                        Один из самых труднодоступных, но духовно сильных маршрутов на Белом море. Древняя архитектура и трагическая история советских лагерей.
+                    </div>
+                    <div class="route-places"><strong>Объекты:</strong> Соловецкий монастырь</div>
+                    <button class="route-btn" onclick="alert('Маршрут в разработке. Следите за обновлениями!')">Скоро</button>
+                </div>
+            </div>
+
+            <!-- Маршрут 5: Псково-Печерский маршрут (заглушка) -->
+            <div class="route-card" style="opacity:0.6; pointer-events:none;">
+                <div class="route-img">
+                    <img src="https://i.postimg.cc/jjYjzCkD/pskov-pechery.jpg" alt="Псково-Печерский монастырь">
+                </div>
+                <div class="route-body">
+                    <div class="route-title">Псково-Печерский маршрут</div>
+                    <div class="route-meta">
+                        <span class="route-meta-item"><span class="route-meta-icon">📍</span> Псковская область</span>
+                        <span class="route-meta-item"><span class="route-meta-icon">🕐</span> 2–3 дня</span>
+                        <span class="route-meta-item"><span class="route-meta-icon">⛪</span> 3 объекта</span>
+                    </div>
+                    <div class="route-price">Скоро</div>
+                    <div class="route-desc">
+                        Единственный крупный монастырь в России, который никогда не закрывался. Знаменитые Ближние и Дальние «Богом зданные» пещеры.
+                    </div>
+                    <div class="route-places"><strong>Объекты:</strong> Псково-Печерский монастырь</div>
+                    <button class="route-btn" onclick="alert('Маршрут в разработке. Следите за обновлениями!')">Скоро</button>
+                </div>
+            </div>
+
+            <!-- Маршрут 6: Великорецкий крестный ход (заглушка) -->
+            <div class="route-card" style="opacity:0.6; pointer-events:none;">
+                <div class="route-img">
+                    <img src="https://i.postimg.cc/bN4qBQzL/velikoretskiy.jpg" alt="Великорецкий крестный ход">
+                </div>
+                <div class="route-body">
+                    <div class="route-title">Великорецкий крестный ход</div>
+                    <div class="route-meta">
+                        <span class="route-meta-item"><span class="route-meta-icon">📍</span> Кировская область</span>
+                        <span class="route-meta-item"><span class="route-meta-icon">🕐</span> 5 дней</span>
+                        <span class="route-meta-item"><span class="route-meta-icon">👣</span> 150 км</span>
+                    </div>
+                    <div class="route-price">Скоро</div>
+                    <div class="route-desc">
+                        Один из самых древних и массовых пеших крестных ходов России. Более 600 лет истории. Ежегодно собирает более 20 тысяч паломников.
+                    </div>
+                    <div class="route-places"><strong>Объекты:</strong> Великорецкая икона Николая Чудотворца</div>
+                    <button class="route-btn" onclick="alert('Маршрут в разработке. Следите за обновлениями!')">Скоро</button>
+                </div>
+            </div>
+
+            <!-- Маршрут 7: Оптина Пустынь (заглушка) -->
+            <div class="route-card" style="opacity:0.6; pointer-events:none;">
+                <div class="route-img">
+                    <img src="https://i.postimg.cc/0QzPzLCL/optina.jpg" alt="Оптина Пустынь">
+                </div>
+                <div class="route-body">
+                    <div class="route-title">Оптина Пустынь</div>
+                    <div class="route-meta">
+                        <span class="route-meta-item"><span class="route-meta-icon">📍</span> Калужская область</span>
+                        <span class="route-meta-item"><span class="route-meta-icon">🕐</span> 2–3 дня</span>
+                        <span class="route-meta-item"><span class="route-meta-icon">⛪</span> 5 объектов</span>
+                    </div>
+                    <div class="route-price">Скоро</div>
+                    <div class="route-desc">
+                        Исторический центр русского старчества. Место, куда приезжали за советом Гоголь, Достоевский и Толстой. Паломники едут сюда ради исповеди у оптинских старцев.
+                    </div>
+                    <div class="route-places"><strong>Объекты:</strong> Оптина Пустынь, Шамордино</div>
+                    <button class="route-btn" onclick="alert('Маршрут в разработке. Следите за обновлениями!')">Скоро</button>
+                </div>
+            </div>
+
+            <!-- Маршрут 8: Царский крестный ход (заглушка) -->
+            <div class="route-card" style="opacity:0.6; pointer-events:none;">
+                <div class="route-img">
+                    <img src="https://i.postimg.cc/JzpQsvsJ/ganina-yama.jpg" alt="Царский крестный ход">
+                </div>
+                <div class="route-body">
+                    <div class="route-title">Царский крестный ход</div>
+                    <div class="route-meta">
+                        <span class="route-meta-item"><span class="route-meta-icon">📍</span> Екатеринбург</span>
+                        <span class="route-meta-item"><span class="route-meta-icon">🕐</span> 1 ночь (21 км)</span>
+                        <span class="route-meta-item"><span class="route-meta-icon">👣</span> 21 км</span>
+                    </div>
+                    <div class="route-price">Скоро</div>
+                    <div class="route-desc">
+                        Пеший покаянный маршрут в ночь с 16 на 17 июля. От Храма на Крови до Ганиной Ямы, куда были привезены останки царской семьи.
+                    </div>
+                    <div class="route-places"><strong>Объекты:</strong> Храм на Крови, Ганина Яма</div>
+                    <button class="route-btn" onclick="alert('Маршрут в разработке. Следите за обновлениями!')">Скоро</button>
+                </div>
+            </div>
+
+            <!-- Маршрут 9: Крымский паломнический маршрут (заглушка) -->
+            <div class="route-card" style="opacity:0.6; pointer-events:none;">
+                <div class="route-img">
+                    <img src="https://i.postimg.cc/rpBmH4XH/crimea.jpg" alt="Крым">
+                </div>
+                <div class="route-body">
+                    <div class="route-title">Крымский паломнический маршрут</div>
+                    <div class="route-meta">
+                        <span class="route-meta-item"><span class="route-meta-icon">📍</span> Республика Крым</span>
+                        <span class="route-meta-item"><span class="route-meta-icon">🕐</span> 4–6 дней</span>
+                        <span class="route-meta-item"><span class="route-meta-icon">⛪</span> 6 объектов</span>
+                    </div>
+                    <div class="route-price">Скоро</div>
+                    <div class="route-desc">
+                        Кольбель русского христианства. Древнейшие скальные храмы, пещерные монастыри и места, связанные со святителем Лукой (Войно-Ясенецким).
+                    </div>
+                    <div class="route-places"><strong>Объекты:</strong> Херсонес, Инкерман, Бахчисарай</div>
+                    <button class="route-btn" onclick="alert('Маршрут в разработке. Следите за обновлениями!')">Скоро</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+    <script src="/js/config.js"></script>
+    <script src="/js/components.js"></script>
+</body>
+</html>
