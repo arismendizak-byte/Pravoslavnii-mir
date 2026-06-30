@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Личный кабинет — Православный Мир</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .profile-layout { display: grid; grid-template-columns: 260px 1fr; gap: 40px; margin-bottom: 60px; }
+        .profile-sidebar { background: var(--white); border-radius: var(--radius-md); padding: 24px; box-shadow: var(--shadow-card); border: 1px solid var(--cream-2); height: fit-content; }
+        .profile-sidebar .user-info { display: flex; flex-direction: column; align-items: center; padding-bottom: 20px; border-bottom: 1px solid var(--cream-2); margin-bottom: 20px; }
+        .profile-sidebar .avatar { width: 80px; height: 80px; border-radius: 50%; background: var(--gold-pale); display: flex; align-items: center; justify-content: center; font-size: 40px; color: var(--gold); margin-bottom: 12px; }
+        .profile-sidebar .user-name { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 600; color: var(--dark); }
+        .profile-sidebar .user-email { font-size: 14px; color: var(--text-muted); }
+        .profile-menu { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+        .profile-menu li a { display: flex; align-items: center; gap: 12px; padding: 10px 14px; border-radius: var(--radius-sm); text-decoration: none; color: var(--text); font-size: 14px; transition: background var(--transition), color var(--transition); }
+        .profile-menu li a:hover, .profile-menu li a.active { background: var(--gold-pale); color: var(--gold); }
+        .profile-menu li a .menu-icon { font-size: 18px; width: 24px; text-align: center; }
+        .profile-content .tab-content { display: none; }
+        .profile-content .tab-content.active { display: block; }
+        .dashboard-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 32px; }
+        .stat-card { background: var(--white); border-radius: var(--radius-md); padding: 20px; text-align: center; box-shadow: var(--shadow-card); border: 1px solid var(--cream-2); }
+        .stat-card .stat-num { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 4px; }
+        .stat-card .stat-label { font-size: 14px; color: var(--text-muted); }
+        .dashboard-title { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 600; color: var(--dark); margin-bottom: 16px; }
+        .list-card { background: var(--white); border-radius: var(--radius-md); padding: 16px 20px; box-shadow: var(--shadow-card); border: 1px solid var(--cream-2); display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; transition: transform var(--transition); }
+        .list-card:hover { transform: translateX(4px); }
+        .list-card .item-info { display: flex; flex-direction: column; gap: 4px; }
+        .list-card .item-title { font-weight: 600; font-size: 16px; color: var(--dark); }
+        .list-card .item-sub { font-size: 13px; color: var(--text-muted); }
+        .list-card .item-actions { display: flex; gap: 8px; }
+        .list-card .item-actions button { background: transparent; border: none; cursor: pointer; font-size: 20px; padding: 4px 8px; border-radius: var(--radius-sm); transition: background var(--transition); }
+        .list-card .item-actions button:hover { background: var(--gold-pale); }
+        .list-card .item-actions .remove-btn { color: #B00020; }
+        .empty-state { text-align: center; padding: 40px 20px; color: var(--text-muted); font-size: 15px; }
+        .empty-state .empty-icon { font-size: 48px; margin-bottom: 12px; display: block; }
+        @media (max-width: 900px) { .profile-layout { grid-template-columns: 1fr; gap: 24px; } .profile-sidebar { padding: 16px; } .profile-sidebar .avatar { width: 60px; height: 60px; font-size: 30px; } .dashboard-stats { grid-template-columns: 1fr 1fr; } .profile-menu { flex-direction: row; flex-wrap: wrap; justify-content: center; } .profile-menu li a { font-size: 13px; padding: 8px 12px; } }
+        @media (max-width: 560px) { .dashboard-stats { grid-template-columns: 1fr; } .list-card { flex-direction: column; align-items: flex-start; gap: 12px; } .list-card .item-actions { width: 100%; justify-content: flex-end; } .stat-card .stat-num { font-size: 28px; } }
+    </style>
+</head>
+<body>
+    <div id="nav-container"></div>
+    <div id="bottom-nav-container"></div>
+
+    <div class="page-section">
+        <div class="breadcrumbs"><a href="index.html">Главная</a> &rarr; <span>Личный кабинет</span></div>
+        <div class="profile-layout">
+            <div class="profile-sidebar">
+                <div class="user-info"><div class="avatar">👤</div><div class="user-name">Паломник</div><div class="user-email">user@example.com</div></div>
+                <ul class="profile-menu">
+                    <li><a href="#" class="active" data-tab="dashboard"><span class="menu-icon">📊</span> Главная</a></li>
+                    <li><a href="#" data-tab="favorites"><span class="menu-icon">❤️</span> Избранное</a></li>
+                    <li><a href="#" data-tab="readlater"><span class="menu-icon">📖</span> Читать позже</a></li>
+                    <li><a href="#" data-tab="routes"><span class="menu-icon">🗺️</span> Мои маршруты</a></li>
+                    <li><a href="#" data-tab="settings"><span class="menu-icon">⚙️</span> Настройки</a></li>
+                </ul>
+            </div>
+
+            <div class="profile-content">
+                <div id="dashboard" class="tab-content active">
+                    <h2 class="dashboard-title">Добро пожаловать, Паломник!</h2>
+                    <div class="dashboard-stats">
+                        <div class="stat-card"><div class="stat-num" id="favCount">0</div><div class="stat-label">В избранном</div></div>
+                        <div class="stat-card"><div class="stat-num" id="readLaterCount">0</div><div class="stat-label">Читать позже</div></div>
+                        <div class="stat-card"><div class="stat-num">0</div><div class="stat-label">Маршрутов</div></div>
+                    </div>
+                </div>
+                <div id="favorites" class="tab-content"><h2 class="dashboard-title">❤️ Избранное</h2><div id="favoritesList"><div class="empty-state"><span class="empty-icon">❤️</span> У вас пока нет избранных мест</div></div></div>
+                <div id="readlater" class="tab-content"><h2 class="dashboard-title">📖 Читать позже</h2><div id="readLaterList"><div class="empty-state"><span class="empty-icon">📖</span> Список пуст. Добавьте статьи из журнала</div></div></div>
+                <div id="routes" class="tab-content"><h2 class="dashboard-title">🗺️ Мои маршруты</h2><div id="routesList"><div class="empty-state"><span class="empty-icon">🗺️</span> У вас пока нет маршрутов</div></div></div>
+                <div id="settings" class="tab-content">
+                    <h2 class="dashboard-title">⚙️ Настройки</h2>
+                    <div style="background:var(--white); border-radius:var(--radius-md); padding:24px; border:1px solid var(--cream-2); display:flex; flex-direction:column; gap:16px; max-width:500px;">
+                        <div><label style="font-size:14px; font-weight:500; display:block; margin-bottom:4px;">Имя</label><input type="text" value="Паломник" style="width:100%; padding:10px 14px; border:1px solid var(--cream-2); border-radius:var(--radius-sm); font-family:'Inter',sans-serif; font-size:14px;"></div>
+                        <div><label style="font-size:14px; font-weight:500; display:block; margin-bottom:4px;">Email</label><input type="email" value="user@example.com" style="width:100%; padding:10px 14px; border:1px solid var(--cream-2); border-radius:var(--radius-sm); font-family:'Inter',sans-serif; font-size:14px;"></div>
+                        <button style="background:var(--gold); color:var(--dark); border:none; padding:12px 24px; border-radius:var(--radius-sm); font-weight:600; cursor:pointer; font-family:'Inter',sans-serif; transition:background var(--transition);">Сохранить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('.profile-menu a');
+            const tabs = document.querySelectorAll('.tab-content');
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    links.forEach(l => l.classList.remove('active'));
+                    tabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    const target = document.getElementById(this.dataset.tab);
+                    if (target) {
+                        target.classList.add('active');
+                    }
+                });
+            });
+        });
+
+        function getStorage(key) {
+            try {
+                return JSON.parse(localStorage.getItem(key)) || [];
+            } catch {
+                return [];
+            }
+        }
+
+        function setStorage(key, data) {
+            localStorage.setItem(key, JSON.stringify(data));
+        }
+
+        function updateStats() {
+            const fav = getStorage('favorites');
+            const later = getStorage('readLater');
+            const favCountEl = document.getElementById('favCount');
+            const laterCountEl = document.getElementById('readLaterCount');
+            if (favCountEl) favCountEl.textContent = fav.length;
+            if (laterCountEl) laterCountEl.textContent = later.length;
+        }
+
+        function renderList(containerId, storageKey, emptyMsg) {
+            const container = document.getElementById(containerId);
+            if (!container) return;
+            const data = getStorage(storageKey);
+            if (data.length === 0) {
+                container.innerHTML = `<div class="empty-state"><span class="empty-icon">${emptyMsg.split(' ')[0]}</span>${emptyMsg}</div>`;
+                return;
+            }
+            container.innerHTML = '';
+            data.forEach((item, index) => {
+                const card = document.createElement('div');
+                card.className = 'list-card';
+                card.innerHTML = `
+                    <div class="item-info">
+                        <div class="item-title">${item.title}</div>
+                        <div class="item-sub">${item.sub || ''}</div>
+                    </div>
+                    <div class="item-actions">
+                        <button class="remove-btn" data-key="${storageKey}" data-index="${index}">🗑️</button>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+            container.querySelectorAll('.remove-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const key = this.dataset.key;
+                    const idx = parseInt(this.dataset.index);
+                    const data = getStorage(key);
+                    data.splice(idx, 1);
+                    setStorage(key, data);
+                    renderList(containerId, storageKey, emptyMsg);
+                    updateStats();
+                });
+            });
+        }
+
+        renderList('readLaterList', 'readLater', '📖 Список пуст. Добавьте статьи из журнала');
+        renderList('favoritesList', 'favorites', '❤️ У вас пока нет избранных мест');
+        updateStats();
+
+        window.addToReadLater = function(title, sub) {
+            const data = getStorage('readLater');
+            const exists = data.some(item => item.title === title);
+            if (exists) {
+                alert('📖 Эта статья уже в списке "Читать позже"!');
+                return;
+            }
+            data.push({ title, sub });
+            setStorage('readLater', data);
+            renderList('readLaterList', 'readLater', '📖 Список пуст. Добавьте статьи из журнала');
+            updateStats();
+            alert('✅ Статья добавлена в "Читать позже"!');
+        };
+
+        window.addToFavorites = function(title, sub) {
+            const data = getStorage('favorites');
+            const exists = data.some(item => item.title === title);
+            if (exists) {
+                alert('❤️ Это уже в избранном!');
+                return;
+            }
+            data.push({ title, sub });
+            setStorage('favorites', data);
+            renderList('favoritesList', 'favorites', '❤️ У вас пока нет избранных мест');
+            updateStats();
+            alert('✅ Добавлено в избранное!');
+        };
+    </script>
+
+    <script src="js/config.js"></script>
+    <script src="js/components.js"></script>
+</body>
+</html>

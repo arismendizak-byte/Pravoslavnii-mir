@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Николай Чудотворец — Православный Мир</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="nav-container"></div>
+    <div id="bottom-nav-container"></div>
+
+    <div class="page-section">
+        <div class="breadcrumbs">
+            <a href="../journal.html">Журнал</a> &rarr;
+            <span>Николай Чудотворец</span>
+        </div>
+
+        <div class="article-header">
+            <h1>Николай Чудотворец:<br><em>самый быстрый помощник в мире</em></h1>
+            <div class="article-meta-top">
+                <span class="author">Публицист Мария Ф.</span>
+                <span>•</span>
+                <span>25 августа 2025</span>
+                <span>•</span>
+                <span>Святые</span>
+            </div>
+        </div>
+
+        <div class="article-content">
+            <p><strong>Введение: тот, кого знают даже неверующие</strong></p>
+            <p>Святитель Николай, архиепископ Мир Ликийских, известен во всём мире. Его почитают и православные, и католики, и даже протестанты. Он стал прообразом Санта-Клауса, но настоящий Николай — гораздо больше, чем весёлый старик в красной шубе. Это один из самых быстрых помощников в истории человечества.</p>
+
+            <p><strong>Николай из Мир Ликийских</strong></p>
+            <p>Святитель Николай жил в IV веке в городе Мира, который находился на территории современной Турции. Он родился в богатой христианской семье и с раннего детства отличался невероятной добротой и щедростью. Согласно преданию, он ещё в юности раздал всё своё наследство нуждающимся и посвятил себя служению Богу.</p>
+
+            <p>Позже он стал епископом Мир Ликийских и прославился своей любовью к людям и праведностью. За его жизнь произошло столько чудес, что его стали называть Чудотворцем уже при жизни.</p>
+
+            <p><strong>Самое известное чудо</strong></p>
+            <p>В одном из самых известных преданий рассказывается о трёх сёстрах, которых отец хотел отдать в позорную торговлю из-за страшной бедности. Николай, узнав об этом, тайно подкинул им три мешочка золота в течение трёх ночей. Сёстры смогли выйти замуж, избегнув позора.</p>
+
+            <p>Это чудо вошло в историю как символ бескорыстной помощи. Именно благодаря этой истории святитель Николай стал прообразом Санта-Клауса и покровителем всех, кто нуждается в быстрой помощи.</p>
+
+            <p><strong>Почему он так популярен в России</strong></p>
+            <p>В России его называют Николаем Чудотворцем и любят больше многих других святых. Ему молятся моряки, путешественники, дети, торговцы и все, кто оказался в трудной ситуации. И миллионы людей по всему миру свидетельствуют: он действительно помогает.</p>
+
+            <p><strong>Заключение</strong></p>
+            <p>Святитель Николай — это живое доказательство того, что один человек, живущий в любви и вере, может изменить судьбы тысяч людей. И даже спустя 17 веков он продолжает отвечать на молитвы тех, кто обращается к нему с верой.</p>
+
+            <button class="btn-nav btn-gold" style="margin-bottom:16px; width:100%;" onclick="addToReadLater('Николай Чудотворец', 'Публицист Мария Ф.')">📖 Читать позже</button>
+            <a href="../journal.html" class="back-btn">← Вернуться к журналу</a>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script>
+        function addToReadLater(title, sub) {
+            try {
+                const data = JSON.parse(localStorage.getItem('readLater')) || [];
+                const exists = data.some(item => item.title === title);
+                if (exists) {
+                    alert('📖 Эта статья уже в списке "Читать позже"!');
+                    return;
+                }
+                data.push({ title, sub });
+                localStorage.setItem('readLater', JSON.stringify(data));
+                alert('✅ Статья добавлена в "Читать позже"!');
+            } catch {
+                alert('❌ Ошибка. Проверьте, что localStorage доступен.');
+            }
+        }
+    </script>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/components.js"></script>
+</body>
+</html>

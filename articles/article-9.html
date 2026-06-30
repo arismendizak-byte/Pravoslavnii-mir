@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Аминь и Аллилуйя — Православный Мир</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="nav-container"></div>
+    <div id="bottom-nav-container"></div>
+
+    <div class="page-section">
+        <div class="breadcrumbs">
+            <a href="../journal.html">Журнал</a> &rarr;
+            <span>Аминь и Аллилуйя</span>
+        </div>
+
+        <div class="article-header">
+            <h1>Что означают слова «Аминь» и «Аллилуйя»?</h1>
+            <div class="article-meta-top">
+                <span class="author">Богослов Андрей З.</span>
+                <span>•</span>
+                <span>15 февраля 2026</span>
+                <span>•</span>
+                <span>Факты</span>
+            </div>
+        </div>
+
+        <div class="article-content">
+            <p><strong>Введение: слова, которые мы произносим каждый день</strong></p>
+            <p>Многие из нас произносят эти слова в церкви, но не задумываются, что они означают. А ведь у них глубокая история, уходящая корнями в древнееврейский язык. «Аминь» и «Аллилуйя» — это не просто междометия. Это целые богословские формулы, сжатые в два коротких слова.</p>
+
+            <p><strong>«Аминь»: согласие и утверждение</strong></p>
+            <p>Слово «Аминь» происходит от древнееврейского слова, означающего «истинно», «да будет так». Это слово завершает молитву и выражает согласие с тем, что сказано. Когда мы говорим «Аминь», мы подтверждаем, что полностью разделяем слова молитвы, которую только что произнесли.</p>
+
+            <p>В Ветхом Завете «Аминь» часто использовалось как утверждение истины. В Новом Завете Иисус часто начинал Свои речи с «Истинно, истинно говорю вам», что на арамейском звучало как «Аминь, аминь». Таким образом, Христос Сам подтверждал Своим словом, что произносит абсолютную истину.</p>
+
+            <p>Сегодня «Аминь» — это самое частое слово в церкви. Оно звучит в конце каждой молитвы, символизируя нашу веру в то, что сказанное действительно будет так.</p>
+
+            <p><strong>«Аллилуйя»: хвала Господу</strong></p>
+            <p>«Аллилуйя» происходит от древнееврейского «Аллелу-Ях», что означает «хвалите Господа». Это слово используется в богослужении как возглас радости, хвалы и благодарности Богу. Оно особенно часто звучит в пасхальный период, когда мы празднуем Воскресение Христово.</p>
+
+            <p>В православном богослужении «Аллилуйя» произносится многократно — как прославление Творца. Это слово выражает не просто emocцию, а состояние души, которая радуется своему Создателю.</p>
+
+            <p><strong>Заключение</strong></p>
+            <p>«Аминь» и «Аллилуйя» — это два коротких слова, которые несут в себе целое богословие. Одно означает согласие с Богом, другое — радость о Нём. Произнося их, мы соединяем свой голос с голосом миллионов верующих по всему миру. И это — настоящее единство.</p>
+
+            <button class="btn-nav btn-gold" style="margin-bottom:16px; width:100%;" onclick="addToReadLater('Аминь и Аллилуйя', 'Богослов Андрей З.')">📖 Читать позже</button>
+            <a href="../journal.html" class="back-btn">← Вернуться к журналу</a>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script>
+        function addToReadLater(title, sub) {
+            try {
+                const data = JSON.parse(localStorage.getItem('readLater')) || [];
+                const exists = data.some(item => item.title === title);
+                if (exists) {
+                    alert('📖 Эта статья уже в списке "Читать позже"!');
+                    return;
+                }
+                data.push({ title, sub });
+                localStorage.setItem('readLater', JSON.stringify(data));
+                alert('✅ Статья добавлена в "Читать позже"!');
+            } catch {
+                alert('❌ Ошибка. Проверьте, что localStorage доступен.');
+            }
+        }
+    </script>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/components.js"></script>
+</body>
+</html>

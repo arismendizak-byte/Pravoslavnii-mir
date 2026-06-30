@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Каталог храмов и монастырей — Православный Мир</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .catalog-header { display: flex; flex-direction: column; gap: 16px; margin-bottom: 40px; }
+        .catalog-header h1 { font-family: 'Playfair Display', serif; font-size: clamp(32px, 4vw, 48px); font-weight: 700; color: var(--dark); line-height: 1.15; }
+        .catalog-header h1 em { font-style: italic; color: var(--gold); }
+        .catalog-header p { font-size: 16px; color: var(--text-muted); max-width: 600px; line-height: 1.7; }
+
+        .catalog-filters {
+            display: flex; gap: 10px; flex-wrap: nowrap; overflow-x: auto;
+            padding-bottom: 8px; margin-bottom: 32px; scrollbar-width: none;
+        }
+        .catalog-filters::-webkit-scrollbar { display: none; }
+        .filter-btn {
+            flex-shrink: 0; padding: 8px 20px; border-radius: 100px; border: 1px solid var(--cream-2);
+            background: var(--white); font-size: 13px; color: var(--text-muted);
+            cursor: pointer; transition: all var(--transition); font-family: 'Inter', sans-serif; white-space: nowrap;
+        }
+        .filter-btn:hover, .filter-btn.active { background: var(--dark); color: var(--gold-light); border-color: var(--dark); }
+
+        .catalog-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; transition: all 0.2s ease; }
+
+        .place-card {
+            position: relative; border-radius: var(--radius-md);
+            overflow: hidden; cursor: pointer; text-decoration: none;
+            aspect-ratio: 3/4; transition: transform var(--transition), box-shadow var(--transition);
+            background: var(--dark-2);
+        }
+        .place-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+        .place-card-img {
+            width: 100%; height: 100%; object-fit: cover;
+            display: flex; align-items: center; justify-content: center;
+            background: var(--dark-3);
+        }
+        .place-card-overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(to top, rgba(26,18,8,0.92) 0%, rgba(26,18,8,0) 55%);
+        }
+        .place-card-body {
+            position: absolute; bottom: 0; left: 0; right: 0; padding: 20px;
+        }
+        .place-card-name {
+            font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 4px;
+        }
+        .place-card-region {
+            font-size: 12px; color: rgba(255,255,255,0.55); display: flex; align-items: center; gap: 4px;
+        }
+        .place-card-badge {
+            position: absolute; top: 16px; right: 16px;
+            background: var(--gold); color: var(--dark); padding: 4px 12px; border-radius: 100px;
+            font-size: 11px; font-weight: 600; text-transform: uppercase; z-index: 2;
+        }
+
+        @media (max-width: 900px) {
+            .catalog-grid { display: flex; flex-direction: column; gap: 12px; }
+            .place-card {
+                aspect-ratio: auto;
+                display: flex; flex-direction: row; align-items: stretch;
+                height: 100px;
+                min-height: 100px;
+                background: var(--white);
+                border: 1px solid var(--cream-2); border-radius: var(--radius-md);
+                box-shadow: var(--shadow-card);
+            }
+            .place-card:hover { transform: translateY(-2px); }
+            .place-card-img {
+                width: 100px; height: 100px; flex-shrink: 0;
+                border-radius: var(--radius-md) 0 0 var(--radius-md);
+                display: flex; align-items: center; justify-content: center;
+                background: var(--dark-3);
+            }
+            .place-card-overlay { display: none; }
+            .place-card-body {
+                position: static; padding: 12px 16px;
+                display: flex; flex-direction: column; justify-content: center; flex: 1;
+            }
+            .place-card-name { font-size: 16px; color: var(--dark); margin-bottom: 2px; }
+            .place-card-region { font-size: 12px; color: var(--text-muted); }
+            .place-card-badge { top: 8px; right: 8px; font-size: 10px; }
+            .place-card::after {
+                content: '→'; position: absolute; right: 16px; top: 50%; transform: translateY(-50%);
+                font-size: 20px; color: var(--gold); opacity: 0.5; transition: opacity var(--transition);
+            }
+            .place-card:hover::after { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- КОНТЕЙНЕРЫ ДЛЯ МЕНЮ -->
+    <div id="nav-container"></div>
+    <div id="bottom-nav-container"></div>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <div class="page-section">
+        <div class="breadcrumbs">
+            <a href="../index.html">Главная</a> &rarr;
+            <span>Каталог храмов</span>
+        </div>
+
+        <div class="catalog-header">
+            <h1>Храмы и монастыри<br><em>России и СНГ</em></h1>
+            <p>Исследуйте великие святыни, узнавайте их историю и планируйте паломничество.</p>
+        </div>
+
+        <div class="catalog-filters">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="Храм">Храмы</button>
+            <button class="filter-btn" data-filter="Собор">Соборы</button>
+            <button class="filter-btn" data-filter="Монастырь">Монастыри</button>
+        </div>
+
+        <div class="catalog-grid" id="catalogGrid"></div>
+    </div>
+
+    <!-- КОНТЕЙНЕР ДЛЯ ПОДВАЛА -->
+    <div id="footer-container"></div>
+
+    <script>
+        // ============================================
+        // ДАННЫЕ ДЛЯ КАТАЛОГА (ЕДИНЫЙ МАССИВ)
+        // ============================================
+        const catalogData = [
+            {
+                id: 1,
+                name: 'Храм Христа Спасителя',
+                region: 'г. Москва',
+                category: 'Храм',
+                link: '../objects/christ.html',
+                image: 'https://i.postimg.cc/J0MjMTLm/Cathedral-of-Christ-the-Savior.jpg'
+            },
+            {
+                id: 2,
+                name: 'Никольский Морской собор',
+                region: 'г. Санкт-Петербург',
+                category: 'Собор',
+                link: '../objects/nikolsky.html',
+                image: 'https://i.postimg.cc/59rxcXS9/S600x-U-2x-(3).jpg'
+            },
+            {
+                id: 3,
+                name: 'Троице-Сергиева Лавра',
+                region: 'Сергиев Посад',
+                category: 'Монастырь',
+                link: '../objects/lavra.html',
+                image: 'https://i.postimg.cc/9F0J7SyK/lavra3.jpg'
+            },
+            {
+                id: 4,
+                name: 'Дивеево',
+                region: 'Нижегородская область',
+                category: 'Монастырь',
+                link: '../objects/diveevo.html',
+                image: 'https://i.postimg.cc/2yyFYdyK/images-(3).jpg'
+            }
+        ];
+
+        // ============================================
+        // УМНАЯ ФИЛЬТРАЦИЯ (ПЕРЕРИСОВКА СЕТКИ)
+        // ============================================
+        function renderCatalog(filter) {
+            const grid = document.getElementById('catalogGrid');
+            grid.innerHTML = ''; // Очищаем сетку
+
+            // Фильтруем данные
+            const filtered = filter === 'all' 
+                ? catalogData 
+                : catalogData.filter(item => item.category === filter);
+
+            // Если ничего не найдено
+            if (filtered.length === 0) {
+                grid.innerHTML = `
+                    <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-muted);">
+                        <span style="font-size: 48px; display: block;">🔍</span>
+                        <p>По выбранной категории ничего не найдено</p>
+                    </div>
+                `;
+                return;
+            }
+
+            // Создаём карточки
+            filtered.forEach(item => {
+                const card = document.createElement('a');
+                card.href = item.link;
+                card.className = 'place-card';
+                card.innerHTML = `
+                    <div class="place-card-img">
+                        <img src="${item.image}" alt="${item.name}" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="place-card-overlay"></div>
+                    <div class="place-card-body">
+                        <div class="place-card-name">${item.name}</div>
+                        <div class="place-card-region">📍 ${item.region}</div>
+                    </div>
+                    <div class="place-card-badge">${item.category}</div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // ============================================
+        // ОБРАБОТЧИКИ КНОПОК ФИЛЬТРОВ
+        // ============================================
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Снимаем активность со всех кнопок
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                // Ставим активность на нажатую
+                this.classList.add('active');
+                // Перерисовываем каталог
+                renderCatalog(this.dataset.filter);
+            });
+        });
+
+        // ============================================
+        // ИНИЦИАЛИЗАЦИЯ (ЗАГРУЗКА ВСЕХ)
+        // ============================================
+        renderCatalog('all');
+    </script>
+
+    <!-- ПОДКЛЮЧЕНИЕ СКРИПТОВ -->
+    <script src="../js/config.js"></script>
+    <script src="../js/components.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Дивеево — Православный Мир</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="nav-container"></div>
+    <div id="bottom-nav-container"></div>
+
+    <div class="page-section">
+        <div class="breadcrumbs">
+            <a href="../index.html">Главная</a> &rarr;
+            <a href="../catalog/catalog.html">Каталог</a> &rarr;
+            <span>Свято-Дивеевский монастырь</span>
+        </div>
+
+        <div class="object-hero">
+            <div class="object-gallery">
+                <div class="gallery-slides" id="diveevo-slides">
+                    <img class="gallery-slide" src="https://i.postimg.cc/kg147ngV/lori-0023008997-bigwww-jpg.jpg" alt="Дивеево 1" loading="lazy">
+                    <img class="gallery-slide" src="https://i.postimg.cc/rwnmq8wS/original.jpg" alt="Дивеево 2" loading="lazy">
+                    <img class="gallery-slide" src="https://i.postimg.cc/1t650wcw/Diveyevo-(51263813251).jpg" alt="Дивеево 3" loading="lazy">
+                    <img class="gallery-slide" src="https://i.postimg.cc/2yyFYdyK/images-(3).jpg" alt="Дивеево 4" loading="lazy">
+                </div>
+                <button class="gallery-arrow prev" id="prev-btn">‹</button>
+                <button class="gallery-arrow next" id="next-btn">›</button>
+                <div class="gallery-nav" id="diveevo-nav"></div>
+                <div class="object-gallery-badge">Святая обитель</div>
+            </div>
+
+            <div class="object-info">
+                <div class="object-info-category">Монастырь</div>
+                <h1 class="object-info-title">Свято-Дивеевский монастырь</h1>
+                <div class="object-info-location">
+                    <span>📍</span> Нижегородская область, с. Дивеево
+                </div>
+                <p class="object-info-desc">
+                    Свято-Троицкий Серафимо-Дивеевский женский монастырь, называемый четвёртым уделом Пресвятой Богородицы на земле. Основан в 1760 году, прославлен трудами преподобного Серафима Саровского.
+                </p>
+                <div class="object-info-tags">
+                    <span class="tag">Женский монастырь</span>
+                    <span class="tag">Четвёртый удел</span>
+                    <span class="tag">Святая Канавка</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="object-nearby">
+            <div class="object-nearby-title">Что рядом с объектом</div>
+            <div class="nearby-grid">
+                <a href="#" class="nearby-item">
+                    <div class="nearby-icon">🕯️</div>
+                    <div>
+                        <div class="nearby-text">Святая Канавка</div>
+                        <div class="nearby-sub">Главная святыня обители</div>
+                    </div>
+                </a>
+                <a href="#" class="nearby-item">
+                    <div class="nearby-icon">🏨</div>
+                    <div>
+                        <div class="nearby-text">Гостиница</div>
+                        <div class="nearby-sub">Паломнический центр</div>
+                    </div>
+                </a>
+                <a href="#" class="nearby-item">
+                    <div class="nearby-icon">🍽️</div>
+                    <div>
+                        <div class="nearby-text">Трапезная</div>
+                        <div class="nearby-sub">Монастырская столовая</div>
+                    </div>
+                </a>
+                <a href="#" class="nearby-item">
+                    <div class="nearby-icon">🚗</div>
+                    <div>
+                        <div class="nearby-text">Парковка</div>
+                        <div class="nearby-sub">Бесплатная у входа</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="object-content">
+            <div class="object-text">
+                <h2>История обители</h2>
+                <p>Монастырь был основан в 1760 году диаконисой Агафьей Мельгуновой (в монашестве — Александра) по благословению преподобного Серафима Саровского. Сама преподобная Серафим называл Дивеево «четвёртым уделом Пресвятой Богородицы» после Иверии, Афона и Киево-Печерской лавры.</p>
+                <p>Главная святыня обители — Святая Канавка, которую, по преданию, Божия Матерь указала обнести вокруг территории монастыря. Считается, что она является невидимой границей, за которой начинается Небесный Иерусалим.</p>
+                <p>В 1991 году монастырь был возвращён Русской Православной Церкви, и началось его масштабное восстановление. Сегодня это один из самых посещаемых паломнических центров России.</p>
+
+                <h2 style="margin-top:24px;">Как добраться</h2>
+                <p>Дивеево находится в 180 километрах от Нижнего Новгорода. Добраться можно на автобусе или личном автомобиле. В селе есть вся необходимая инфраструктура для паломников: гостиницы, трапезные и церковные лавки.</p>
+            </div>
+            
+            <div class="object-sidebar">
+                <div class="sidebar-block">
+                    <div class="sidebar-title">🕐 Расписание</div>
+                    <div class="schedule-item"><span class="schedule-day">Будни</span><span class="schedule-time">06:00 — 20:00</span></div>
+                    <div class="schedule-item"><span class="schedule-day">Суббота</span><span class="schedule-time">06:00 — 21:00</span></div>
+                    <div class="schedule-item"><span class="schedule-day">Воскресенье</span><span class="schedule-time">06:30 — 21:00</span></div>
+                    <div style="margin-top:12px; font-size:13px; color:var(--text-muted);">Вход на территорию свободный.</div>
+                </div>
+                <div class="sidebar-block">
+                    <div class="sidebar-title">📞 Контакты</div>
+                    <div style="font-size:14px; color:var(--text-muted); margin-bottom: 8px;">Паломнический центр: +7 (831) 345-78-90</div>
+                    <div style="font-size:14px; color:var(--text-muted);">Официальный сайт: diveevo.ru</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="object-related">
+            <div class="object-related-title">Святыни обители</div>
+            <div class="object-related-sub">Связанные с этим местом</div>
+            <div class="related-grid">
+                <a href="#" class="related-card">
+                    <div class="related-icon">🙏</div>
+                    <div class="related-name">Серафим Саровский</div>
+                    <div class="related-desc">Преподобный, небесный покровитель</div>
+                </a>
+                <a href="#" class="related-card">
+                    <div class="related-icon">🕯️</div>
+                    <div class="related-name">Святая Канавка</div>
+                    <div class="related-desc">Богородичная тропа</div>
+                </a>
+                <a href="#" class="related-card">
+                    <div class="related-icon">✨</div>
+                    <div class="related-name">Св. мощи</div>
+                    <div class="related-desc">Мощи Серафима Саровского</div>
+                </a>
+                <a href="#" class="related-card">
+                    <div class="related-icon">📿</div>
+                    <div class="related-name">Блаженная Пелагия</div>
+                    <div class="related-desc">Одна из дивеевских блаженных</div>
+                </a>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="../catalog/catalog.html" class="btn-nav btn-ghost" style="background: var(--gold-pale); color: var(--dark); border-color: var(--gold);">← Вернуться к каталогу</a>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        const slidesContainer = document.getElementById('diveevo-slides');
+        const slides = slidesContainer.querySelectorAll('.gallery-slide');
+        const nav = document.getElementById('diveevo-nav');
+        let currentSlide = 0;
+
+        slides.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.className = 'gallery-dot' + (index === 0 ? ' active' : '');
+            dot.onclick = () => goToSlide(index);
+            nav.appendChild(dot);
+        });
+
+        function updateSlide() {
+            const offset = -currentSlide * 100;
+            slidesContainer.style.transform = `translateX(${offset}%)`;
+            document.querySelectorAll('#diveevo-nav .gallery-dot').forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentSlide);
+            });
+        }
+
+        function changeSlide(direction) {
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            updateSlide();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlide();
+        }
+
+        document.getElementById('prev-btn').addEventListener('click', () => changeSlide(-1));
+        document.getElementById('next-btn').addEventListener('click', () => changeSlide(1));
+
+        let autoSlide = setInterval(() => changeSlide(1), 5000);
+
+        const gallery = document.querySelector('.object-gallery');
+        gallery.addEventListener('mouseenter', () => clearInterval(autoSlide));
+        gallery.addEventListener('mouseleave', () => {
+            autoSlide = setInterval(() => changeSlide(1), 5000);
+        });
+    </script>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/components.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Святая Земля — Православный Мир</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="nav-container"></div>
+    <div id="bottom-nav-container"></div>
+
+    <div class="page-section">
+        <div class="breadcrumbs">
+            <a href="../journal.html">Журнал</a> &rarr;
+            <span>Святая Земля</span>
+        </div>
+
+        <div class="article-header">
+            <h1>Святая Земля:<br><em>Иерусалим, Назарет, Вифлеем</em></h1>
+            <div class="article-meta-top">
+                <span class="author">Паломница Екатерина Ш.</span>
+                <span>•</span>
+                <span>1 апреля 2026</span>
+                <span>•</span>
+                <span>Культура</span>
+            </div>
+        </div>
+
+        <div class="article-content">
+            <p><strong>Введение: земля, по которой ходил Бог</strong></p>
+            <p>Святая Земля — это место, где жил, проповедовал, умер и воскрес Иисус Христос. Сюда, в Израиль и Палестину, ежегодно приезжают миллионы паломников. Для каждого православного человека это не просто географическая точка. Это место, где соприкасаешься с самой сутью веры.</p>
+
+            <p><strong>Иерусалим — сердце Святой Земли</strong></p>
+            <p>Иерусалим — это сердце Святой Земли. Здесь находится Храм Гроба Господня — главная святыня христианства. Здесь же произошло Распятие и Воскресение Христа. Каждый год в Страстную неделю тысячи верующих проходят по Виа Долороза — крестному пути Иисуса. Войдя в храм Гроба Господня, человек прикасается к камню, на котором стоял Крест, и входит в Кувуклию — место Воскресения.</p>
+
+            <p><strong>Вифлеем — место рождения Спасителя</strong></p>
+            <p>Вифлеем — небольшой город в Палестине. Именно там родился Иисус Христос. На месте его рождения сейчас стоит храм Рождества Христова — один из древнейших в мире. Внутри храма есть пещера, где лежал Младенец. Это место, где небо коснулось земли.</p>
+
+            <p><strong>Назарет — место детства Христа</strong></p>
+            <p>Назарет — город, где прошло детство Иисуса. Здесь Он жил с Марией и Иосифом, рос и набирался мудрости. Назарет — это напоминание о том, что Сын Божий был не только Спасителем мира, но и обычным человеком, который жил простой жизнью.</p>
+
+            <p><strong>Заключение</strong></p>
+            <p>Посещение Святой Земли — это не туристическая поездка. Это духовный опыт, который навсегда меняет человека. Именно там, на месте событий, можно по-новому прочитать Евангелие и почувствовать реальность Христа. Святая Земля — это место, где история и вера встречаются каждый день.</p>
+
+            <button class="btn-nav btn-gold" style="margin-bottom:16px; width:100%;" onclick="addToReadLater('Святая Земля', 'Паломница Екатерина Ш.')">📖 Читать позже</button>
+            <a href="../journal.html" class="back-btn">← Вернуться к журналу</a>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script>
+        function addToReadLater(title, sub) {
+            try {
+                const data = JSON.parse(localStorage.getItem('readLater')) || [];
+                const exists = data.some(item => item.title === title);
+                if (exists) {
+                    alert('📖 Эта статья уже в списке "Читать позже"!');
+                    return;
+                }
+                data.push({ title, sub });
+                localStorage.setItem('readLater', JSON.stringify(data));
+                alert('✅ Статья добавлена в "Читать позже"!');
+            } catch {
+                alert('❌ Ошибка. Проверьте, что localStorage доступен.');
+            }
+        }
+    </script>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/components.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Великий раскол 1054 года — Православный Мир</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="nav-container"></div>
+    <div id="bottom-nav-container"></div>
+
+    <div class="page-section">
+        <div class="breadcrumbs">
+            <a href="../journal.html">Журнал</a> &rarr;
+            <span>Великий раскол 1054 года</span>
+        </div>
+
+        <div class="article-header">
+            <h1>Великий раскол 1054 года:<br><em>что разделило Восток и Запад</em></h1>
+            <div class="article-meta-top">
+                <span class="author">Историк Петр В.</span>
+                <span>•</span>
+                <span>10 июля 2025</span>
+                <span>•</span>
+                <span>История</span>
+            </div>
+        </div>
+
+        <div class="article-content">
+            <p><strong>Введение: удар, разделивший христианский мир</strong></p>
+            <p>В 1054 году произошло событие, которое навсегда разделило христианский мир на две ветви: католичество и православие. Это был Великий раскол. Формально он начался с взаимных отлучений римского папы и константинопольского патриарха. Но за этим стояли гораздо более глубокие причины.</p>
+
+            <p><strong>Причины раскола</strong></p>
+            <p>Первая причина — догматическая. В Западной церкви утвердилось учение о том, что Святой Дух исходит не только от Отца, но и от Сына (так называемое filioque). Восточная церковь отвергала эту новую формулу. Споры по этому вопросу продолжались столетиями.</p>
+
+            <p>Вторая причина — политическая. Папа римский стремился к верховной власти над всей Церковью. Константинопольский патриарх, в свою очередь, не собирался подчиняться. Конфликт между двумя центрами христианского мира давно назревал.</p>
+
+            <p>Третья причина — культурная. Восток и Запад говорили на разных языках (греческий и латынь), использовали разные традиции богослужения и по-разному воспринимали многие христианские учения.</p>
+
+            <p><strong>Что произошло в 1054 году</strong></p>
+            <p>В июле 1054 года папские легаты прибыли в Константинополь. Они вошли в храм Святой Софии и, прервав богослужение, возложили на престол грамоту об отлучении патриарха. Патриарх в ответ созвал собор и предал анафеме папских послов.</p>
+
+            <p>Раскол оказался окончательным. Попытки воссоединения предпринимались не раз, но ни одна не увенчалась успехом. Сегодня православные и католики стараются сближаться в диалоге, но различия остаются.</p>
+
+            <p><strong>Исторический итог</strong></p>
+            <p>Великий раскол 1054 года — это не просто историческая дата. Это граница, которая до сих пор делит христианский мир. Но он напоминает нам о том, как важно беречь единство веры и любви, не поддаваясь гордости и политическим амбициям.</p>
+
+            <button class="btn-nav btn-gold" style="margin-bottom:16px; width:100%;" onclick="addToReadLater('Великий раскол', 'Историк Петр В.')">📖 Читать позже</button>
+            <a href="../journal.html" class="back-btn">← Вернуться к журналу</a>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script>
+        function addToReadLater(title, sub) {
+            try {
+                const data = JSON.parse(localStorage.getItem('readLater')) || [];
+                const exists = data.some(item => item.title === title);
+                if (exists) {
+                    alert('📖 Эта статья уже в списке "Читать позже"!');
+                    return;
+                }
+                data.push({ title, sub });
+                localStorage.setItem('readLater', JSON.stringify(data));
+                alert('✅ Статья добавлена в "Читать позже"!');
+            } catch {
+                alert('❌ Ошибка. Проверьте, что localStorage доступен.');
+            }
+        }
+    </script>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/components.js"></script>
+</body>
+</html>

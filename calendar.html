@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Православный календарь 2026 — Православный Мир</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; background: #FAF6ED; color: #1A1208; padding-bottom: 80px; }
+        .calendar-wrapper { max-width: 700px; margin: 0 auto; padding: 20px 16px 40px; }
+        .cal-header { text-align: center; margin-bottom: 24px; }
+        .cal-header h1 { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; color: #1A1208; line-height: 1.15; }
+        .cal-header h1 em { font-style: italic; color: #C8941A; }
+        .cal-search { display: flex; align-items: center; gap: 10px; background: #FFFFFF; border-radius: 12px; padding: 4px 4px 4px 16px; box-shadow: 0 2px 16px rgba(26,18,8,0.10); margin: 0 auto 20px auto; max-width: 400px; }
+        .cal-search input { flex: 1; border: none; outline: none; font-size: 14px; padding: 10px 0; background: transparent; font-family: 'Inter', sans-serif; }
+        .cal-search button { background: #C8941A; border: none; border-radius: 6px; padding: 10px 18px; font-weight: 600; cursor: pointer; color: #1A1208; font-size: 14px; font-family: 'Inter', sans-serif; }
+        .cal-search button:hover { background: #E8B84B; }
+        .cal-nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        .cal-nav-btn { background: #F5E9C8; border: 1px solid #C8941A; border-radius: 12px; padding: 8px 16px; font-size: 14px; font-weight: 500; cursor: pointer; color: #1A1208; font-family: 'Inter', sans-serif; }
+        .cal-nav-btn:hover { background: #C8941A; color: #fff; }
+        .cal-month { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 600; color: #1A1208; }
+        .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; margin-bottom: 32px; background: #FFFFFF; border-radius: 12px; padding: 12px; box-shadow: 0 2px 16px rgba(26,18,8,0.10); }
+        .cal-grid-header { text-align: center; font-size: 12px; font-weight: 600; color: #6B5A3A; padding: 8px 0; text-transform: uppercase; }
+        .cal-cell { aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 6px; font-size: 14px; font-weight: 500; color: #1A1208; cursor: pointer; transition: background 0.25s ease, transform 0.25s ease; position: relative; padding: 4px; }
+        .cal-cell:hover { background: #F0E8D4; transform: scale(1.05); }
+        .cal-cell.empty { cursor: default; }
+        .cal-cell.empty:hover { background: transparent; transform: none; }
+        .cal-cell.today { background: #F5E9C8; border: 2px solid #C8941A; font-weight: 700; }
+        .cal-cell.holiday { color: #C8941A; font-weight: 600; }
+        .cal-cell.holiday::after { content: '✨'; font-size: 10px; position: absolute; top: 2px; right: 4px; }
+        .cal-cell.fast { color: #6B5A3A; }
+        .cal-cell.fast::after { content: '🕯️'; font-size: 10px; position: absolute; top: 2px; right: 4px; }
+        .cal-cell.event { color: #1A1208; }
+        .cal-cell.event::after { content: '✝️'; font-size: 10px; position: absolute; top: 2px; right: 4px; }
+        .cal-cell.highlight { outline: 3px solid #E8B84B; outline-offset: -3px; background: rgba(200,148,26,0.15); }
+        .cal-details { background: #FFFFFF; border-radius: 12px; padding: 20px; box-shadow: 0 2px 16px rgba(26,18,8,0.10); border: 1px solid #F0E8D4; margin-top: 8px; min-height: 80px; }
+        .cal-details-title { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 600; color: #1A1208; margin-bottom: 4px; }
+        .cal-details-sub { font-size: 14px; color: #6B5A3A; margin-bottom: 8px; }
+        .cal-details-event { font-size: 15px; color: #1A1208; }
+        @media (max-width: 560px) { .cal-grid { gap: 2px; padding: 8px; } .cal-cell { font-size: 11px; padding: 2px; } .cal-cell::after { font-size: 8px; top: 0px; right: 2px; } .cal-search { max-width: 100%; padding: 4px 4px 4px 12px; } }
+    </style>
+</head>
+<body>
+    <div id="nav-container"></div>
+    <div id="bottom-nav-container"></div>
+
+    <div class="page-section">
+        <div class="breadcrumbs" style="margin-bottom: 20px; font-size: 14px; color: #6B5A3A;">
+            <a href="index.html" style="color: #C8941A; text-decoration: none;">Главная</a> &rarr;
+            <span>Православный календарь 2026</span>
+        </div>
+
+        <div class="calendar-wrapper">
+            <div class="cal-header">
+                <h1>Православный<br><em>календарь 2026</em></h1>
+            </div>
+
+            <div class="cal-search">
+                <input type="text" id="dateSearch" placeholder="25 июня, 25.06, 25/06" oninput="autoFormatDate(this)" onkeydown="if(event.key==='Enter') searchDate()">
+                <button onclick="searchDate()">Найти</button>
+            </div>
+
+            <div class="cal-nav">
+                <button class="cal-nav-btn" onclick="changeMonth(-1)">‹ Назад</button>
+                <span class="cal-month" id="currentMonthLabel">Июнь 2026</span>
+                <button class="cal-nav-btn" onclick="changeMonth(1)">Вперёд ›</button>
+            </div>
+
+            <div class="cal-grid" id="calendarGrid"></div>
+
+            <div class="cal-details" id="dayDetails">
+                <div class="cal-details-title" id="selectedDayTitle">Выберите день в календаре</div>
+                <div class="cal-details-sub" id="selectedDaySub"></div>
+                <div class="cal-details-event" id="selectedDayEvent">👆 Нажмите на любую дату выше</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script>
+        function autoFormatDate(input) {
+            let val = input.value.replace(/[^0-9]/g, '');
+            let formatted = '';
+            if (val.length > 0) {
+                if (val.length <= 2) {
+                    formatted = val;
+                } else if (val.length <= 4) {
+                    formatted = val.substring(0, 2) + '.' + val.substring(2);
+                } else {
+                    formatted = val.substring(0, 2) + '.' + val.substring(2, 4) + '.' + val.substring(4, 8);
+                }
+            }
+            input.value = formatted;
+        }
+
+        const calendar2026 = [
+            { date: '2026-01-07', title: 'РОЖДЕСТВО ХРИСТОВО', type: 'holiday' },
+            { date: '2026-01-19', title: 'КРЕЩЕНИЕ ГОСПОДНЕ', type: 'holiday' },
+            { date: '2026-01-25', title: 'Мученицы Татианы', type: 'event' },
+            { date: '2026-02-15', title: 'СРЕТЕНИЕ ГОСПОДНЕ', type: 'holiday' },
+            { date: '2026-02-23', title: 'Начало ВЕЛИКОГО ПОСТА', type: 'fast' },
+            { date: '2026-04-07', title: 'БЛАГОВЕЩЕНИЕ ПРЕСВЯТОЙ БОГОРОДИЦЫ', type: 'holiday' },
+            { date: '2026-04-12', title: 'ПАСХА ХРИСТОВА', type: 'holiday' },
+            { date: '2026-04-19', title: 'Антипасха (Неделя Фомы)', type: 'event' },
+            { date: '2026-04-26', title: 'Радоница', type: 'event' },
+            { date: '2026-05-21', title: 'ВОЗНЕСЕНИЕ ГОСПОДНЕ', type: 'holiday' },
+            { date: '2026-05-24', title: 'Кирилла и Мефодия', type: 'event' },
+            { date: '2026-05-31', title: 'ДЕНЬ СВЯТОЙ ТРОИЦЫ', type: 'holiday' },
+            { date: '2026-06-01', title: 'Начало ПЕТРОВА ПОСТА', type: 'fast' },
+            { date: '2026-06-26', title: 'Преподобной Анны Кашинской', type: 'event' },
+            { date: '2026-07-12', title: 'Апостолов Петра и Павла', type: 'holiday' },
+            { date: '2026-07-28', title: 'Равноапостольного Владимира', type: 'event' },
+            { date: '2026-08-01', title: 'Серафима Саровского', type: 'event' },
+            { date: '2026-08-14', title: 'Начало УСПЕНСКОГО ПОСТА', type: 'fast' },
+            { date: '2026-08-19', title: 'ПРЕОБРАЖЕНИЕ ГОСПОДНЕ', type: 'holiday' },
+            { date: '2026-08-28', title: 'УСПЕНИЕ ПРЕСВЯТОЙ БОГОРОДИЦЫ', type: 'holiday' },
+            { date: '2026-09-21', title: 'РОЖДЕСТВО ПРЕСВЯТОЙ БОГОРОДИЦЫ', type: 'holiday' },
+            { date: '2026-09-27', title: 'ВОЗДВИЖЕНИЕ КРЕСТА ГОСПОДНЯ', type: 'holiday' },
+            { date: '2026-10-14', title: 'ПОКРОВ ПРЕСВЯТОЙ БОГОРОДИЦЫ', type: 'holiday' },
+            { date: '2026-11-04', title: 'Казанской иконы Божией Матери', type: 'holiday' },
+            { date: '2026-11-28', title: 'Начало РОЖДЕСТВЕНСКОГО ПОСТА', type: 'fast' },
+            { date: '2026-12-04', title: 'ВВЕДЕНИЕ ВО ХРАМ ПРЕСВЯТОЙ БОГОРОДИЦЫ', type: 'holiday' },
+            { date: '2026-12-06', title: 'Святителя Николая Чудотворца', type: 'event' },
+        ];
+
+        function getFast(dateStr) {
+            const parts = dateStr.split('-');
+            const m = parseInt(parts[1]);
+            const day = parseInt(parts[2]);
+            if ((m === 2 && day >= 23) || (m === 3) || (m === 4 && day <= 11)) return 'Великий пост';
+            if ((m === 6 && day >= 1) || (m === 7 && day <= 11)) return 'Петров пост';
+            if (m === 8 && day >= 14 && day <= 27) return 'Успенский пост';
+            if ((m === 11 && day >= 28) || (m === 12)) return 'Рождественский пост';
+            return null;
+        }
+
+        function getEvent(dateStr) {
+            const ev = calendar2026.find(e => e.date === dateStr);
+            const fast = getFast(dateStr);
+            if (ev) return ev;
+            if (fast) return { title: fast, type: 'fast' };
+            return null;
+        }
+
+        let currentYear = 2026;
+        let currentMonth = 5;
+        let selectedDate = null;
+
+        const weekDays = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
+        const monthNames = ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'];
+        const monthNamesRu = ['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
+        const dayNamesRu = ['Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'];
+
+        function renderCalendar() {
+            const grid = document.getElementById('calendarGrid');
+            grid.innerHTML = '';
+            weekDays.forEach(d => {
+                const div = document.createElement('div');
+                div.className = 'cal-grid-header';
+                div.textContent = d;
+                grid.appendChild(div);
+            });
+
+            const firstDay = new Date(currentYear, currentMonth, 1).getDay();
+            const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+            let startOffset = firstDay === 0 ? 6 : firstDay - 1;
+
+            for (let i = 0; i < startOffset; i++) {
+                const div = document.createElement('div');
+                div.className = 'cal-cell empty';
+                grid.appendChild(div);
+            }
+
+            const today = new Date();
+            const todayStr = today.getFullYear() + '-' + String(today.getMonth()+1).padStart(2,'0') + '-' + String(today.getDate()).padStart(2,'0');
+
+            for (let d = 1; d <= daysInMonth; d++) {
+                const dateStr = currentYear + '-' + String(currentMonth+1).padStart(2,'0') + '-' + String(d).padStart(2,'0');
+                const cell = document.createElement('div');
+                cell.className = 'cal-cell';
+                cell.textContent = d;
+
+                if (dateStr === todayStr) cell.classList.add('today');
+
+                const ev = getEvent(dateStr);
+                if (ev) {
+                    if (ev.type === 'holiday') cell.classList.add('holiday');
+                    else if (ev.type === 'fast') cell.classList.add('fast');
+                    else if (ev.type === 'event') cell.classList.add('event');
+                }
+
+                cell.onclick = () => {
+                    document.querySelectorAll('.cal-cell').forEach(c => c.style.outline = 'none');
+                    document.querySelectorAll('.cal-cell').forEach(c => c.classList.remove('highlight'));
+                    cell.style.outline = '2px solid #C8941A';
+                    cell.style.outlineOffset = '-2px';
+                    cell.classList.add('highlight');
+                    showDayDetails(dateStr);
+                };
+
+                grid.appendChild(cell);
+            }
+
+            document.getElementById('currentMonthLabel').textContent = `${monthNames[currentMonth]} ${currentYear}`;
+        }
+
+        function showDayDetails(dateStr) {
+            selectedDate = dateStr;
+            const parts = dateStr.split('-');
+            const d = parseInt(parts[2]);
+            const m = parseInt(parts[1]) - 1;
+            const y = parseInt(parts[0]);
+            const dayOfWeek = new Date(y, m, d).getDay();
+
+            const ev = getEvent(dateStr);
+            document.getElementById('selectedDayTitle').textContent = `${d} ${monthNamesRu[m]} ${y}`;
+            document.getElementById('selectedDaySub').textContent = dayNamesRu[dayOfWeek === 0 ? 6 : dayOfWeek - 1];
+            document.getElementById('selectedDayEvent').textContent = ev ? `✝️ ${ev.title}` : '📖 День без особых событий';
+        }
+
+        function changeMonth(delta) {
+            currentMonth += delta;
+            if (currentMonth > 11) { currentMonth = 0; currentYear++; }
+            if (currentMonth < 0) { currentMonth = 11; currentYear--; }
+            if (currentYear < 2026) { currentYear = 2026; currentMonth = 0; }
+            if (currentYear > 2026) { currentYear = 2026; currentMonth = 11; }
+            renderCalendar();
+            document.querySelectorAll('.cal-cell').forEach(c => c.style.outline = 'none');
+            document.querySelectorAll('.cal-cell').forEach(c => c.classList.remove('highlight'));
+            document.getElementById('selectedDayTitle').textContent = 'Выберите день в календаре';
+            document.getElementById('selectedDaySub').textContent = '';
+            document.getElementById('selectedDayEvent').textContent = '👆 Нажмите на любую дату выше';
+            document.getElementById('dateSearch').value = '';
+        }
+
+        function searchDate() {
+            const input = document.getElementById('dateSearch').value.trim().toLowerCase();
+            if (!input) return;
+
+            const monthMap = {
+                'янв':0, 'фев':1, 'мар':2, 'апр':3, 'май':4, 'июн':5, 'июл':6, 'авг':7, 'сен':8, 'окт':9, 'ноя':10, 'дек':11,
+                'январь':0, 'февраль':1, 'март':2, 'апрель':3, 'июнь':5, 'июль':6, 'август':7, 'сентябрь':8, 'октябрь':9, 'ноябрь':10, 'декабрь':11,
+                'мая':4, 'июня':5, 'июля':6, 'августа':7, 'сентября':8, 'октября':9, 'ноября':10, 'декабря':11
+            };
+
+            let day = null, month = null, year = null;
+
+            let match = input.match(/(\d{1,2})\s*([а-я]+)\s*(\d{4})?/);
+            if (match) {
+                day = parseInt(match[1]);
+                month = monthMap[match[2]];
+                if (month === undefined) month = null;
+                if (match[3]) year = parseInt(match[3]);
+            }
+
+            if (day === null && input.match(/[\.\/]/)) {
+                const parts = input.split(/[\.\/]/);
+                if (parts.length >= 2) {
+                    day = parseInt(parts[0]);
+                    month = parseInt(parts[1]) - 1;
+                    if (parts.length === 3) year = parseInt(parts[2]);
+                }
+            }
+
+            if (day === null && input.match(/\s/)) {
+                const parts = input.split(/\s+/);
+                if (parts.length >= 2) {
+                    day = parseInt(parts[0]);
+                    month = parseInt(parts[1]) - 1;
+                    if (parts.length === 3) year = parseInt(parts[2]);
+                }
+            }
+
+            if (day === null) {
+                const m = input.match(/(\d{1,2})[\.\/](\d{1,2})/);
+                if (m) {
+                    day = parseInt(m[1]);
+                    month = parseInt(m[2]) - 1;
+                }
+            }
+
+            if (year === null) year = new Date().getFullYear();
+
+            if (day === null || month === null || isNaN(day) || isNaN(month) || day < 1 || day > 31 || month < 0 || month > 11) {
+                alert('Введите корректную дату, например: 25 июня, 25.06, 25/06');
+                return;
+            }
+
+            currentYear = year;
+            currentMonth = month;
+            renderCalendar();
+
+            const dateStr = year + '-' + String(month+1).padStart(2,'0') + '-' + String(day).padStart(2,'0');
+            setTimeout(() => {
+                const cells = document.querySelectorAll('.cal-cell');
+                cells.forEach(c => {
+                    c.style.outline = 'none';
+                    c.classList.remove('highlight');
+                });
+                const allCells = document.querySelectorAll('.cal-cell:not(.empty)');
+                allCells.forEach(c => {
+                    if (parseInt(c.textContent) === day) {
+                        c.style.outline = '3px solid #E8B84B';
+                        c.style.outlineOffset = '-3px';
+                        c.classList.add('highlight');
+                        showDayDetails(dateStr);
+                    }
+                });
+            }, 100);
+        }
+
+        const today = new Date();
+        currentYear = today.getFullYear();
+        currentMonth = today.getMonth();
+        renderCalendar();
+
+        const todayStr = today.getFullYear() + '-' + String(today.getMonth()+1).padStart(2,'0') + '-' + String(today.getDate()).padStart(2,'0');
+        showDayDetails(todayStr);
+        setTimeout(() => {
+            document.querySelectorAll('.cal-cell.today').forEach(c => {
+                c.style.outline = '2px solid #C8941A';
+                c.style.outlineOffset = '-2px';
+                c.classList.add('highlight');
+            });
+        }, 100);
+    </script>
+
+    <script src="js/config.js"></script>
+    <script src="js/components.js"></script>
+</body>
+</html>

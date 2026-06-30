@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Ставропигиальный собор святого Николая — Православный Мир</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* СВАЙП-ГАЛЕРЕЯ (БЕЗ КНОПОК) */
+        .object-gallery {
+            position: relative;
+            border-radius: var(--radius-lg);
+            height: 480px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            background: var(--dark-2);
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+        .object-gallery::-webkit-scrollbar {
+            display: none;
+        }
+        .gallery-slide {
+            min-width: 100%;
+            height: 100%;
+            object-fit: cover;
+            scroll-snap-align: start;
+        }
+        .gallery-arrow, .gallery-nav {
+            display: none !important;
+        }
+        @media (max-width: 900px) {
+            .object-gallery { height: 300px; }
+        }
+        @media (max-width: 560px) {
+            .object-gallery { height: 220px; }
+        }
+    </style>
+</head>
+<body>
+    <div id="nav-container"></div>
+    <div id="bottom-nav-container"></div>
+
+    <div class="page-section">
+        <div class="breadcrumbs">
+            <a href="../journal.html">Журнал</a> &rarr;
+            <span>Ставропигиальный собор св. Николая</span>
+        </div>
+
+        <div class="object-hero">
+            <div class="object-gallery">
+                <img class="gallery-slide" src="https://i.postimg.cc/59rxcXS9/S600x-U-2x-(3).jpg" alt="Никольский собор 1" loading="lazy">
+                <img class="gallery-slide" src="https://i.postimg.cc/R0GBghZR/S600x-U-2x-(2).jpg" alt="Никольский собор 2" loading="lazy">
+                <img class="gallery-slide" src="https://i.postimg.cc/0jK15C0q/S600x-U-2x-(1).jpg" alt="Никольский собор 3" loading="lazy">
+                <img class="gallery-slide" src="https://i.postimg.cc/65RTYVJM/S600x-U-2x.jpg" alt="Никольский собор 4" loading="lazy">
+                <div class="object-gallery-badge">Ставропигиальный</div>
+            </div>
+
+            <div class="object-info">
+                <div class="object-info-category">Собор</div>
+                <h1 class="object-info-title">Ставропигиальный собор св. Николая</h1>
+                <div class="object-info-location">
+                    <span>📍</span> г. Санкт-Петербург, Никольская пл.
+                </div>
+                <p class="object-info-desc">
+                    Величественный Никольский Морской собор в Петербурге. Один из главных храмов русского флота, построенный в стиле барокко по проекту Саввы Чевакинского в 18 веке.
+                </p>
+                <div class="object-info-tags">
+                    <span class="tag">Морской собор</span>
+                    <span class="tag">Барокко</span>
+                    <span class="tag">История</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="object-nearby">
+            <div class="object-nearby-title">Что рядом с объектом</div>
+            <div class="nearby-grid">
+                <a href="#" class="nearby-item">
+                    <div class="nearby-icon">🚗</div>
+                    <div>
+                        <div class="nearby-text">Парковка</div>
+                        <div class="nearby-sub">Прилегающая улица</div>
+                    </div>
+                </a>
+                <a href="#" class="nearby-item">
+                    <div class="nearby-icon">🕯️</div>
+                    <div>
+                        <div class="nearby-text">Церковная лавка</div>
+                        <div class="nearby-sub">Внутри собора</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="object-content">
+            <div class="object-text">
+                <h2>История собора</h2>
+                <p>Никольский Морской собор был построен в 1753–1762 годах по указу императрицы Елизаветы Петровны. Это храм-памятник русским морякам. Собор стал свидетелем многих исторических событий — здесь служили молебны перед уходом в плавание и встречали героев.</p>
+                <p>В соборе хранится чудотворный образ Николая Чудотворца, почитаемый многими верующими. Архитектура в стиле барокко — одна из лучших в Санкт-Петербурге.</p>
+            </div>
+            
+            <div class="object-sidebar">
+                <div class="sidebar-block">
+                    <div class="sidebar-title">🕐 Расписание</div>
+                    <div class="schedule-item"><span class="schedule-day">Будни</span><span class="schedule-time">07:00 — 19:00</span></div>
+                    <div class="schedule-item"><span class="schedule-day">Выходные</span><span class="schedule-time">08:00 — 20:00</span></div>
+                    <div style="margin-top:12px; font-size:13px; color:var(--text-muted);">Вход свободный.</div>
+                </div>
+                <div class="sidebar-block">
+                    <div class="sidebar-title">📞 Контакты</div>
+                    <div style="font-size:14px; color:var(--text-muted);">Официальный сайт: nikolskiysobor.ru</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="object-related">
+            <div class="object-related-title">Святыни собора</div>
+            <div class="object-related-sub">Почитаемые иконы и мощи</div>
+            <div class="related-grid">
+                <a href="#" class="related-card">
+                    <div class="related-icon">🕯️</div>
+                    <div class="related-name">Икона Николая Чудотворца</div>
+                    <div class="related-desc">Чудотворный образ</div>
+                </a>
+                <a href="#" class="related-card">
+                    <div class="related-icon">🙏</div>
+                    <div class="related-name">Св. Николай</div>
+                    <div class="related-desc">Покровитель мореплавателей</div>
+                </a>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="../catalog/catalog.html" class="btn-nav btn-ghost" style="background: var(--gold-pale); color: var(--dark); border-color: var(--gold);">← Вернуться к каталогу</a>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/components.js"></script>
+</body>
+</html>

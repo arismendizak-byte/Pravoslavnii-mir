@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Арзамас — Православный Мир</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="nav-container"></div>
+    <div id="bottom-nav-container"></div>
+
+    <div class="page-section">
+        <div class="breadcrumbs">
+            <a href="../index.html">Главная</a> &rarr;
+            <a href="../catalog/catalog.html">Каталог</a> &rarr;
+            <span>Арзамас</span>
+        </div>
+
+        <div class="object-hero">
+            <div class="object-gallery">
+                <div class="gallery-slides" id="arzamas-slides">
+                    <img class="gallery-slide" src="https://i.postimg.cc/xdptGbTc/Arzamas-Saint-Nicholas-Monastery-Church-of-the-Epiphany-IMG-9660-1725.jpg" alt="Арзамас 1" loading="lazy">
+                    <img class="gallery-slide" src="https://i.postimg.cc/DzpBQbyy/images-(7).jpg" alt="Арзамас 2" loading="lazy">
+                    <img class="gallery-slide" src="https://i.postimg.cc/QMY0gWxh/images-(8).jpg" alt="Арзамас 3" loading="lazy">
+                </div>
+                <button class="gallery-arrow prev" id="prev-btn">‹</button>
+                <button class="gallery-arrow next" id="next-btn">›</button>
+                <div class="gallery-nav" id="arzamas-nav"></div>
+                <div class="object-gallery-badge">Духовный центр</div>
+            </div>
+
+            <div class="object-info">
+                <div class="object-info-category">Город</div>
+                <h1 class="object-info-title">Арзамас</h1>
+                <div class="object-info-location">
+                    <span>📍</span> Нижегородская область, г. Арзамас
+                </div>
+                <p class="object-info-desc">
+                    Арзамас — город, через который проходит паломнический путь в Дивеево. Здесь паломники останавливаются, чтобы поклониться древним святыням: Воскресенскому собору, Никольскому храму и Благовещенскому собору. Это город с живой духовной историей.
+                </p>
+                <div class="object-info-tags">
+                    <span class="tag">Древние храмы</span>
+                    <span class="tag">Путь в Дивеево</span>
+                    <span class="tag">Исторический центр</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="object-nearby">
+            <div class="object-nearby-title">Что посмотреть в Арзамасе</div>
+            <div class="nearby-grid">
+                <a href="#" class="nearby-item">
+                    <div class="nearby-icon">🏛️</div>
+                    <div>
+                        <div class="nearby-text">Воскресенский собор</div>
+                        <div class="nearby-sub">Главный собор города</div>
+                    </div>
+                </a>
+                <a href="#" class="nearby-item">
+                    <div class="nearby-icon">🕯️</div>
+                    <div>
+                        <div class="nearby-text">Никольский храм</div>
+                        <div class="nearby-sub">Чудотворная икона «Живоносный Источник»</div>
+                    </div>
+                </a>
+                <a href="#" class="nearby-item">
+                    <div class="nearby-icon">⛪</div>
+                    <div>
+                        <div class="nearby-text">Благовещенский собор</div>
+                        <div class="nearby-sub">Старинные фрески</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="object-content">
+            <div class="object-text">
+                <h2>Духовный центр на пути к Дивеево</h2>
+                <p>Арзамас является важным пунктом паломнического маршрута в Свято-Дивеевский монастырь. Многие паломники делают здесь остановку, чтобы посетить Воскресенский собор — величественный храм в стиле русского барокко, построенный в 1842 году.</p>
+                <p>Никольский храм, известный как собор Живоносного Источника, хранит чудотворную икону Божией Матери, к которой приезжают молиться паломники со всей России.</p>
+                <p>Благовещенский собор — один из самых высоких в городе, внутри которого сохранились уникальные фрески и старинный иконостас.</p>
+
+                <h2 style="margin-top:24px;">Совет паломнику</h2>
+                <p>Если вы едете в Дивеево, выделите на Арзамас хотя бы полдня. Начните с Воскресенского собора, затем посетите Никольский храм, а завершите прогулкой по историческому центру города. Обязательно зайдите в церковные лавки — здесь можно найти уникальные иконы.</p>
+            </div>
+            
+            <div class="object-sidebar">
+                <div class="sidebar-block">
+                    <div class="sidebar-title">🕐 Расписание</div>
+                    <div class="schedule-item"><span class="schedule-day">Храмы открыты</span><span class="schedule-time">08:00 — 19:00</span></div>
+                    <div style="margin-top:12px; font-size:13px; color:var(--text-muted);">Вход свободный.</div>
+                </div>
+                <div class="sidebar-block">
+                    <div class="sidebar-title">📞 Контакты</div>
+                    <div style="font-size:14px; color:var(--text-muted);">Арзамасская епархия: +7 (831) 477-60-07</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="../catalog/catalog.html" class="btn-nav btn-ghost" style="background: var(--gold-pale); color: var(--dark); border-color: var(--gold);">← Вернуться к каталогу</a>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        const slidesContainer = document.getElementById('arzamas-slides');
+        const slides = slidesContainer.querySelectorAll('.gallery-slide');
+        const nav = document.getElementById('arzamas-nav');
+        let currentSlide = 0;
+
+        slides.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.className = 'gallery-dot' + (index === 0 ? ' active' : '');
+            dot.onclick = () => goToSlide(index);
+            nav.appendChild(dot);
+        });
+
+        function updateSlide() {
+            const offset = -currentSlide * 100;
+            slidesContainer.style.transform = `translateX(${offset}%)`;
+            document.querySelectorAll('#arzamas-nav .gallery-dot').forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentSlide);
+            });
+        }
+
+        function changeSlide(direction) {
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            updateSlide();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlide();
+        }
+
+        document.getElementById('prev-btn').addEventListener('click', () => changeSlide(-1));
+        document.getElementById('next-btn').addEventListener('click', () => changeSlide(1));
+
+        let autoSlide = setInterval(() => changeSlide(1), 5000);
+
+        const gallery = document.querySelector('.object-gallery');
+        gallery.addEventListener('mouseenter', () => clearInterval(autoSlide));
+        gallery.addEventListener('mouseleave', () => {
+            autoSlide = setInterval(() => changeSlide(1), 5000);
+        });
+    </script>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/components.js"></script>
+</body>
+</html>

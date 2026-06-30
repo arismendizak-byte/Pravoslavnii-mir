@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Сергий Радонежский — Православный Мир</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="nav-container"></div>
+    <div id="bottom-nav-container"></div>
+
+    <div class="page-section">
+        <div class="breadcrumbs">
+            <a href="../journal.html">Журнал</a> &rarr;
+            <span>Сергий Радонежский</span>
+        </div>
+
+        <div class="article-header">
+            <h1>Сергий Радонежский:<br><em>тихий свет русской земли</em></h1>
+            <div class="article-meta-top">
+                <span class="author">Житийный писатель Игорь С.</span>
+                <span>•</span>
+                <span>2 апреля 2025</span>
+                <span>•</span>
+                <span>Святые</span>
+            </div>
+        </div>
+
+        <div class="article-content">
+            <p><strong>Введение: монах, объединивший Русь</strong></p>
+            <p>Варфоломей — так звали в миру будущего великого святого — родился в 1314 году в семье бояр Кирилла и Марии, которые жили под Ростовом. С детства он был тихим, богобоязненным и задумчивым мальчиком. Уже в раннем возрасте он полюбил молитву и уединение. Но никто тогда не мог предположить, что именно этот скромный юноша станет духовным отцом и объединителем всей Русской земли.</p>
+
+            <p><strong>Уход в пустыню и рождение Лавры</strong></p>
+            <p>В возрасте 23 лет Варфоломей вместе с братом Стефаном ушёл в глухой лес, в урочище Маковец, чтобы жить в полном уединении. Там они построили небольшую деревянную церковь в честь Святой Троицы. Но брат не выдержал суровой жизни — он ушёл в московский монастырь. Варфоломей остался один.</p>
+            <p>Годы одиночества, молитвы и тяжелого физического труда закалили его дух. Он принял иночество с именем Сергий. Постепенно о нём пошла молва, и к нему начали стекаться ученики, искавшие духовного наставления. Так родилась Троице-Сергиева лавра — один из величайших духовных центров России.</p>
+
+            <p><strong>Благословение на Куликовскую битву</strong></p>
+            <p>Самое известное событие в жизни преподобного Сергия произошло в 1380 году. Князь Дмитрий Донской, собираясь на войну с татаро-монгольским войском Мамая, прибыл к Сергию за благословением. Сергий, несмотря на свою мирную иноческую жизнь, благословил князя и сказал: «Иди с Богом, и ты победишь». Он также отправил с войском двух своих иноков — Александра Пересвета и Андрея Ослябю, которые пали в бою, но стали символом жертвенной любви к Родине.</p>
+            <p>Эта победа стала переломным моментом в освобождении Руси от татаро-монгольского ига. И она была бы невозможна без духовной поддержки Сергия.</p>
+
+            <p><strong>Духовное наследие Сергия Радонежского</strong></p>
+            <p>Сергий оставил после себя не только монастырь. Он оставил новый идеал монашества — трудолюбивого, смиренного, молитвенного, близкого к простому народу. Его пример вдохновил множество других святых, включая его учеников, таких как Кирилл Белозерский и Андроник Московский.</p>
+            <p>Его влияние чувствуется в каждом камне Троице-Сергиевой лавры, в каждой иконе, написанной его учениками. И сегодня, спустя века, он остаётся тихим светом, который освещает русскую землю.</p>
+
+            <button class="btn-nav btn-gold" style="margin-bottom:16px; width:100%;" onclick="addToReadLater('Сергий Радонежский', 'Житийный писатель Игорь С.')">📖 Читать позже</button>
+            <a href="../journal.html" class="back-btn">← Вернуться к журналу</a>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script>
+        function addToReadLater(title, sub) {
+            try {
+                const data = JSON.parse(localStorage.getItem('readLater')) || [];
+                const exists = data.some(item => item.title === title);
+                if (exists) {
+                    alert('📖 Эта статья уже в списке "Читать позже"!');
+                    return;
+                }
+                data.push({ title, sub });
+                localStorage.setItem('readLater', JSON.stringify(data));
+                alert('✅ Статья добавлена в "Читать позже"!');
+            } catch {
+                alert('❌ Ошибка. Проверьте, что localStorage доступен.');
+            }
+        }
+    </script>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/components.js"></script>
+</body>
+</html>

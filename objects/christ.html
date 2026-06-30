@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Храм Христа Спасителя — Православный Мир</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* СВАЙП-ГАЛЕРЕЯ ПО УМОЛЧАНИЮ */
+        .object-gallery {
+            position: relative;
+            border-radius: var(--radius-lg);
+            height: 480px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            background: var(--dark-2);
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+        .object-gallery::-webkit-scrollbar { display: none; }
+        .gallery-slide {
+            min-width: 100%;
+            height: 100%;
+            object-fit: cover;
+            scroll-snap-align: start;
+        }
+
+        /* КНОПКИ И ТОЧКИ — СКРЫТЫ ПО УМОЛЧАНИЮ */
+        .gallery-arrow, .gallery-nav {
+            display: none !important;
+        }
+
+        /* НА ПК (ширина > 1024px) — ПОКАЗЫВАЕМ КНОПКИ И ТОЧКИ */
+        @media (min-width: 1025px) {
+            .object-gallery {
+                overflow: hidden; /* отключаем свайп-скролл */
+                scroll-snap-type: none;
+            }
+            .gallery-arrow {
+                display: flex !important;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: rgba(0,0,0,0.3);
+                color: #fff;
+                border: none;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                cursor: pointer;
+                font-size: 20px;
+                transition: background var(--transition);
+                z-index: 20;
+                align-items: center;
+                justify-content: center;
+            }
+            .gallery-arrow:hover { background: rgba(0,0,0,0.6); }
+            .gallery-arrow.prev { left: 16px; }
+            .gallery-arrow.next { right: 16px; }
+
+            .gallery-nav {
+                display: flex !important;
+                position: absolute;
+                bottom: 16px;
+                left: 50%;
+                transform: translateX(-50%);
+                gap: 8px;
+                background: rgba(0,0,0,0.4);
+                padding: 6px 12px;
+                border-radius: 100px;
+                backdrop-filter: blur(4px);
+                z-index: 20;
+            }
+            .gallery-dot {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: rgba(255,255,255,0.4);
+                cursor: pointer;
+                transition: background var(--transition);
+            }
+            .gallery-dot.active { background: #fff; }
+        }
+
+        /* АДАПТИВНОСТЬ ВЫСОТЫ */
+        @media (max-width: 900px) {
+            .object-gallery { height: 300px; }
+        }
+        @media (max-width: 560px) {
+            .object-gallery { height: 220px; }
+        }
+    </style>
+</head>
+<body>
+    <div id="nav-container"></div>
+    <div id="bottom-nav-container"></div>
+
+    <div class="page-section">
+        <div class="breadcrumbs">
+            <a href="../journal.html">Журнал</a> &rarr;
+            <span>Храм Христа Спасителя</span>
+        </div>
+
+        <div class="object-hero">
+            <div class="object-gallery" id="gallery">
+                <img class="gallery-slide" src="https://i.postimg.cc/J0MjMTLm/Cathedral-of-Christ-the-Savior.jpg" alt="Храм Христа Спасителя 1" loading="lazy">
+                <img class="gallery-slide" src="https://i.postimg.cc/bYmZZY0T/ria-956406hr-b4c.jpg" alt="Храм Христа Спасителя 2" loading="lazy">
+                <img class="gallery-slide" src="https://i.postimg.cc/SxMR160p/getlstd-property-photo.jpg" alt="Храм Христа Спасителя 3" loading="lazy">
+                <img class="gallery-slide" src="https://i.postimg.cc/bJ3wSLnk/images-(2).jpg" alt="Храм Христа Спасителя 4" loading="lazy">
+                <button class="gallery-arrow prev" onclick="changeSlide(-1)">‹</button>
+                <button class="gallery-arrow next" onclick="changeSlide(1)">›</button>
+                <div class="gallery-nav" id="nav"></div>
+                <div class="object-gallery-badge">Кафедральный собор</div>
+            </div>
+
+            <div class="object-info">
+                <div class="object-info-category">Храм</div>
+                <h1 class="object-info-title">Храм Христа Спасителя</h1>
+                <div class="object-info-location">
+                    <span>📍</span> г. Москва, ул. Волхонка, 15
+                </div>
+                <p class="object-info-desc">
+                    Главный кафедральный собор Русской Православной Церкви. Построен в память о победе в Отечественной войне 1812 года. Восстановлен в 1990-х годах.
+                </p>
+                <div class="object-info-tags">
+                    <span class="tag">Главный храм</span>
+                    <span class="tag">История</span>
+                    <span class="tag">Достопримечательность</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="object-nearby">
+            <div class="object-nearby-title">Что рядом с объектом</div>
+            <div class="nearby-grid">
+                <a href="#" class="nearby-item">
+                    <div class="nearby-icon">🍽️</div>
+                    <div>
+                        <div class="nearby-text">Трапезная</div>
+                        <div class="nearby-sub">Кафе "Хлеб и Крест"</div>
+                    </div>
+                </a>
+                <a href="#" class="nearby-item">
+                    <div class="nearby-icon">🚗</div>
+                    <div>
+                        <div class="nearby-text">Парковка</div>
+                        <div class="nearby-sub">Подземная парковка</div>
+                    </div>
+                </a>
+                <a href="#" class="nearby-item">
+                    <div class="nearby-icon">🕯️</div>
+                    <div>
+                        <div class="nearby-text">Церковная лавка</div>
+                        <div class="nearby-sub">На цокольном этаже</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="object-content">
+            <div class="object-text">
+                <h2>История храма</h2>
+                <p>Изначальный храм был заложен в 1839 году по проекту архитектора Константина Тона. Освящение состоялось в 1883 году. В 1931 году храм был разрушен, и на его месте планировалось строительство Дворца Советов. В 1990-е годы храм был восстановлен в первоначальных формах.</p>
+                <p>Сегодня это крупнейший православный храм России, вмещающий до 10 000 человек. Его высота с крестом достигает 103 метров.</p>
+            </div>
+            
+            <div class="object-sidebar">
+                <div class="sidebar-block">
+                    <div class="sidebar-title">🕐 Расписание</div>
+                    <div class="schedule-item"><span class="schedule-day">Будни</span><span class="schedule-time">08:00 — 19:00</span></div>
+                    <div class="schedule-item"><span class="schedule-day">Выходные</span><span class="schedule-time">09:00 — 20:00</span></div>
+                    <div style="margin-top:12px; font-size:13px; color:var(--text-muted);">Вход свободный.</div>
+                </div>
+                <div class="sidebar-block">
+                    <div class="sidebar-title">📞 Контакты</div>
+                    <div style="font-size:14px; color:var(--text-muted); margin-bottom: 8px;">Телефон: +7 (495) 637-17-27</div>
+                    <div style="font-size:14px; color:var(--text-muted);">Официальный сайт: xxc.ru</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="object-related">
+            <div class="object-related-title">Святыни храма</div>
+            <div class="object-related-sub">Что хранится в этом месте</div>
+            <div class="related-grid">
+                <a href="#" class="related-card">
+                    <div class="related-icon">🕯️</div>
+                    <div class="related-name">Святой образ</div>
+                    <div class="related-desc">Список Нерукотворного Образа</div>
+                </a>
+                <a href="#" class="related-card">
+                    <div class="related-icon">✨</div>
+                    <div class="related-name">Св. мощи</div>
+                    <div class="related-desc">Частицы мощей святых</div>
+                </a>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="../catalog/catalog.html" class="btn-nav btn-ghost" style="background: var(--gold-pale); color: var(--dark); border-color: var(--gold);">← Вернуться к каталогу</a>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // СЛАЙДЕР ДЛЯ ПК (работает только если экран широкий)
+        if (window.innerWidth > 1024) {
+            const slides = document.querySelectorAll('#gallery .gallery-slide');
+            const nav = document.getElementById('nav');
+            let currentSlide = 0;
+
+            // Создаём точки
+            slides.forEach((_, index) => {
+                const dot = document.createElement('div');
+                dot.className = 'gallery-dot' + (index === 0 ? ' active' : '');
+                dot.onclick = () => goToSlide(index);
+                nav.appendChild(dot);
+            });
+
+            function updateSlide() {
+                const offset = -currentSlide * 100;
+                document.getElementById('gallery').style.transform = `translateX(${offset}%)`;
+                document.querySelectorAll('#nav .gallery-dot').forEach((dot, i) => {
+                    dot.classList.toggle('active', i === currentSlide);
+                });
+            }
+
+            function changeSlide(direction) {
+                currentSlide = (currentSlide + direction + slides.length) % slides.length;
+                updateSlide();
+            }
+
+            function goToSlide(index) {
+                currentSlide = index;
+                updateSlide();
+            }
+
+            // Автопрокрутка на ПК
+            let autoSlide = setInterval(() => changeSlide(1), 5000);
+
+            const gallery = document.querySelector('.object-gallery');
+            gallery.addEventListener('mouseenter', () => clearInterval(autoSlide));
+            gallery.addEventListener('mouseleave', () => {
+                autoSlide = setInterval(() => changeSlide(1), 5000);
+            });
+        }
+    </script>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/components.js"></script>
+</body>
+</html>

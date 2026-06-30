@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Рождество Христово — Православный Мир</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="nav-container"></div>
+    <div id="bottom-nav-container"></div>
+
+    <div class="page-section">
+        <div class="breadcrumbs">
+            <a href="../journal.html">Журнал</a> &rarr;
+            <span>Рождество Христово</span>
+        </div>
+
+        <div class="article-header">
+            <h1>Рождество Христово:<br><em>от яслей до ёлки</em></h1>
+            <div class="article-meta-top">
+                <span class="author">Священник Олег Д.</span>
+                <span>•</span>
+                <span>7 января 2026</span>
+                <span>•</span>
+                <span>Праздники</span>
+            </div>
+        </div>
+
+        <div class="article-content">
+            <p><strong>Введение: свет в зимней тьме</strong></p>
+            <p>Рождество Христово — один из самых светлых и радостных праздников. Он напоминает нам о том, как Бог стал человеком, родился в убогой пещере и лежал в яслях. Это событие изменило всю историю мира. В России этот праздник отмечают 7 января, и он связан с множеством традиций, которые складывались веками.</p>
+
+            <p><strong>Библейская история</strong></p>
+            <p>Согласно Евангелию, Мария и Иосиф прибыли в Вифлеем для переписи населения. Там не нашлось места в гостинице, и они остановились в пещере, где вскоре родился Младенец — Иисус Христос. Его мать спеленала Его и положила в ясли — кормушку для скота. Это был Царь, родившийся в нищете, чтобы показать, что величие Божие не в богатстве, а в смирении.</p>
+
+            <p><strong>Рождество в России</strong></p>
+            <p>В России Рождество Христово издавна отмечается 7 января по новому стилю. В этот день верующие идут в храмы на торжественное богослужение, которое начинается ещё ночью. В домах накрывают праздничный стол, на котором обязательно присутствует сочиво — сладкая каша из пшеницы, символизирующая плодородие и вечную жизнь.</p>
+
+            <p><strong>Символ Рождества — ёлка</strong></p>
+            <p>Символом Рождества стала ёлка. Это не просто украшение. Ель символизирует райское древо, которое было потеряно в грехопадении, но обретено вновь через Христа. Она напоминает о вечной жизни и надежде, которую принёс Младенец.</p>
+
+            <p><strong>Заключение</strong></p>
+            <p>Рождество Христово — это больше, чем праздник. Это напоминание о том, что Бог не оставил нас, а пришёл, чтобы жить с нами. Радость Рождества — это радость того, что надежда не умерла, а родилась заново. И каждый год мы вновь переживаем это чудо.</p>
+
+            <button class="btn-nav btn-gold" style="margin-bottom:16px; width:100%;" onclick="addToReadLater('Рождество Христово', 'Священник Олег Д.')">📖 Читать позже</button>
+            <a href="../journal.html" class="back-btn">← Вернуться к журналу</a>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script>
+        function addToReadLater(title, sub) {
+            try {
+                const data = JSON.parse(localStorage.getItem('readLater')) || [];
+                const exists = data.some(item => item.title === title);
+                if (exists) {
+                    alert('📖 Эта статья уже в списке "Читать позже"!');
+                    return;
+                }
+                data.push({ title, sub });
+                localStorage.setItem('readLater', JSON.stringify(data));
+                alert('✅ Статья добавлена в "Читать позже"!');
+            } catch {
+                alert('❌ Ошибка. Проверьте, что localStorage доступен.');
+            }
+        }
+    </script>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/components.js"></script>
+</body>
+</html>

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Православный Мир — Путеводитель по святым местам</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- КОНТЕЙНЕРЫ ДЛЯ МЕНЮ -->
+    <div id="nav-container"></div>
+    <div id="bottom-nav-container"></div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-silhouette"></div>
+
+        <div class="hero-content">
+            <div class="hero-label">Духовное наследие России и СНГ</div>
+            <h1 class="hero-title">
+                Откройте<br>
+                <em>святые места</em><br>
+                России и СНГ
+            </h1>
+            <p class="hero-subtitle">
+                Путешествуйте, находите святыни, планируйте паломничество.
+                Тысячи храмов, монастырей, источников и маршрутов.
+            </p>
+            <div class="search-bar">
+                <svg class="search-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6">
+                    <circle cx="9" cy="9" r="6"/>
+                    <path d="M14 14 L18 18" stroke-linecap="round"/>
+                </svg>
+                <input type="text" placeholder="Куда вы хотите отправиться?">
+                <button class="btn-search">Найти</button>
+            </div>
+            <div class="hero-cta-row">
+                <a href="#map" class="btn-hero btn-hero-outline">
+                    <span>🗺️</span> Исследовать карту
+                </a>
+                <a href="#routes" class="btn-hero btn-hero-outline">
+                    <span>✨</span> Найти вдохновение
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-story">
+            <div class="hero-story-label">История дня</div>
+            <div class="hero-story-img">⛪</div>
+            <div class="hero-story-title">Валаам</div>
+            <div class="hero-story-desc">Место особой тишины и молитвы на Ладожском озере.</div>
+            <a href="#" class="hero-story-link">Открыть историю &rarr;</a>
+        </div>
+
+        <div class="hero-scroll">
+            <span>ЛИСТАТЬ</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <div class="stats-bar">
+        <div class="stat-item">
+            <div class="stat-num">1 200+</div>
+            <div class="stat-label">Объектов в базе</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num">85+</div>
+            <div class="stat-label">Маршрутов</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num">15</div>
+            <div class="stat-label">Стран и регионов</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Геопозиция каждой святыни</div>
+        </div>
+    </div>
+
+    <!-- PLACES -->
+    <section class="places">
+        <div class="section-header">
+            <div>
+                <div class="section-label">Святой путеводитель</div>
+                <h2 class="section-title">Места, которые<br><em>вдохновляют</em></h2>
+            </div>
+            <a href="catalog/catalog.html" class="link-all">Смотреть все &rarr;</a>
+        </div>
+        <div class="places-grid">
+            <!-- Храм Христа Спасителя -->
+            <a href="objects/christ.html" class="place-card">
+                <div class="place-card-img">
+                    <img src="https://i.postimg.cc/J0MjMTLm/Cathedral-of-Christ-the-Savior.jpg" alt="Храм Христа Спасителя" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="place-card-overlay"></div>
+                <div class="place-card-body">
+                    <div class="place-card-name">Храм Христа Спасителя</div>
+                    <div class="place-card-region">📍 г. Москва</div>
+                </div>
+            </a>
+
+            <!-- Никольский собор -->
+            <a href="objects/nikolsky.html" class="place-card">
+                <div class="place-card-img">
+                    <img src="https://i.postimg.cc/59rxcXS9/S600x-U-2x-(3).jpg" alt="Никольский собор" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="place-card-overlay"></div>
+                <div class="place-card-body">
+                    <div class="place-card-name">Никольский собор</div>
+                    <div class="place-card-region">📍 г. Санкт-Петербург</div>
+                </div>
+            </a>
+
+            <!-- Троице-Сергиева Лавра -->
+            <a href="objects/lavra.html" class="place-card">
+                <div class="place-card-img">
+                    <img src="https://i.postimg.cc/9F0J7SyK/lavra3.jpg" alt="Троице-Сергиева Лавра" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="place-card-overlay"></div>
+                <div class="place-card-body">
+                    <div class="place-card-name">Троице-Сергиева Лавра</div>
+                    <div class="place-card-region">📍 Сергиев Посад</div>
+                </div>
+            </a>
+
+            <!-- Дивеево -->
+            <a href="objects/diveevo.html" class="place-card">
+                <div class="place-card-img">
+                    <img src="https://i.postimg.cc/2yyFYdyK/images-(3).jpg" alt="Дивеево" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="place-card-overlay"></div>
+                <div class="place-card-body">
+                    <div class="place-card-name">Дивеево</div>
+                    <div class="place-card-region">📍 Нижегородская область</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- ROUTES -->
+    <section class="routes" id="routes">
+        <div class="section-header">
+            <div>
+                <div class="section-label">Паломнические пути</div>
+                <h2 class="section-title">Маршруты для<br><em>паломников</em></h2>
+            </div>
+            <a href="routes/routes.html" class="link-all">Смотреть все маршруты &rarr;</a>
+        </div>
+        <div class="routes-grid">
+            <a href="routes/routes.html" class="route-card">
+                <div class="route-card-img">🗺️</div>
+                <div class="route-card-body">
+                    <div class="route-card-title">Москва за один день</div>
+                    <div class="route-card-region">📍 Москва</div>
+                    <div class="route-meta">
+                        <span class="route-meta-item"><span class="route-meta-icon">🕐</span> 1 день</span>
+                        <span class="route-meta-item"><span class="route-meta-icon">👥</span> 12 мест</span>
+                    </div>
+                    <div class="route-link">Подробнее &rarr;</div>
+                </div>
+            </a>
+            <a href="routes/routes.html" class="route-card">
+                <div class="route-card-img">⛪</div>
+                <div class="route-card-body">
+                    <div class="route-card-title">Оптина + Шамордино</div>
+                    <div class="route-card-region">📍 Калужская область</div>
+                    <div class="route-meta">
+                        <span class="route-meta-item"><span class="route-meta-icon">🕐</span> 2 дня</span>
+                        <span class="route-meta-item"><span class="route-meta-icon">👥</span> 18 мест</span>
+                    </div>
+                    <div class="route-link">Подробнее &rarr;</div>
+                </div>
+            </a>
+            <a href="routes/routes.html" class="route-card">
+                <div class="route-card-img">🕊️</div>
+                <div class="route-card-body">
+                    <div class="route-card-title">Дивеево</div>
+                    <div class="route-card-region">📍 Нижегородская область</div>
+                    <div class="route-meta">
+                        <span class="route-meta-item"><span class="route-meta-icon">🕐</span> 2 дня</span>
+                        <span class="route-meta-item"><span class="route-meta-icon">👥</span> 15 мест</span>
+                    </div>
+                    <div class="route-link">Подробнее &rarr;</div>
+                </div>
+            </a>
+            <a href="routes/routes.html" class="route-card">
+                <div class="route-card-img">🌊</div>
+                <div class="route-card-body">
+                    <div class="route-card-title">Святыни Карелии</div>
+                    <div class="route-card-region">📍 Республика Карелия</div>
+                    <div class="route-meta">
+                        <span class="route-meta-item"><span class="route-meta-icon">🕐</span> 3 дня</span>
+                        <span class="route-meta-item"><span class="route-meta-icon">👥</span> 20 мест</span>
+                    </div>
+                    <div class="route-link">Подробнее &rarr;</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="map-section" id="map">
+        <div class="section-header">
+            <div>
+                <div class="section-label">Интерактивная карта</div>
+                <h2 class="section-title">Исследуйте православные<br>святыни <em>на карте</em></h2>
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+                <button class="map-filter active">Все категории</button>
+                <button class="map-filter">Монастыри</button>
+                <button class="map-filter">Храмы</button>
+                <button class="map-filter">Источники</button>
+                <button class="map-filter">Иконы</button>
+            </div>
+        </div>
+        <div class="map-placeholder">
+            <div class="map-pin" style="top:35%;left:48%;">Троице-Сергиева Лавра</div>
+            <div class="map-pin" style="top:20%;left:30%;">Псково-Печерский монастырь</div>
+            <div class="map-pin" style="top:25%;left:58%;">Ярославль</div>
+            <div class="map-pin" style="top:50%;left:38%;">Оптина пустынь</div>
+            <div class="map-pin" style="top:15%;left:45%;">Валаам</div>
+            <div class="map-pin" style="top:60%;left:62%;">Дивеево</div>
+            <div class="map-placeholder-inner">
+                <div class="map-placeholder-icon">🗺️</div>
+                <div class="map-placeholder-text">Яндекс.Карты · 1200+ объектов</div>
+                <button class="btn-search" style="margin:0 auto;">Открыть полную карту</button>
+            </div>
+        </div>
+    </section>
+
+   <!-- PILGRIM -->
+<section class="pilgrim">
+    <div class="section-header">
+        <div>
+            <div class="section-label">Для паломника</div>
+            <h2 class="section-title">Всё что нужно<br>в <em>дороге</em></h2>
+        </div>
+    </div>
+    
+    <!-- ВСЕ КАРТОЧКИ В ОДНОЙ СЕТКЕ (без разделения на две) -->
+    <div class="pilgrim-grid">
+        <a href="#" class="pilgrim-card">
+            <div class="pilgrim-icon">🍽️</div>
+            <div>
+                <div class="pilgrim-card-title">Трапезные</div>
+                <div class="pilgrim-card-sub">Где поесть рядом со святынями и монастырями</div>
+            </div>
+        </a>
+        <a href="#" class="pilgrim-card">
+            <div class="pilgrim-icon">🏨</div>
+            <div>
+                <div class="pilgrim-card-title">Где остановиться</div>
+                <div class="pilgrim-card-sub">Гостиницы и дома паломника</div>
+            </div>
+        </a>
+        <a href="#" class="pilgrim-card">
+            <div class="pilgrim-icon">🕯️</div>
+            <div>
+                <div class="pilgrim-card-title">Церковные лавки</div>
+                <div class="pilgrim-card-sub">Магазины при храмах и монастырях</div>
+            </div>
+        </a>
+        <a href="#" class="pilgrim-card">
+            <div class="pilgrim-icon">💧</div>
+            <div>
+                <div class="pilgrim-card-title">Святые источники</div>
+                <div class="pilgrim-card-sub">Купели и источники рядом</div>
+            </div>
+        </a>
+        <a href="#" class="pilgrim-card">
+            <div class="pilgrim-icon">🚗</div>
+            <div>
+                <div class="pilgrim-card-title">Парковка</div>
+                <div class="pilgrim-card-sub">Парковочные места у объектов</div>
+            </div>
+        </a>
+        <a href="#" class="pilgrim-card">
+            <div class="pilgrim-icon">👪</div>
+            <div>
+                <div class="pilgrim-card-title">Для семьи</div>
+                <div class="pilgrim-card-sub">Советы и удобства для семей с детьми</div>
+            </div>
+        </a>
+    </div>
+</section>
+
+    <!-- JOURNAL + CALENDAR WIDGET -->
+    <section class="journal-cal">
+        <div class="journal-cal-grid">
+            <div>
+                <div class="section-label">Журнал</div>
+                <div class="section-header" style="margin-bottom:24px;">
+                    <h2 class="section-title" style="color:#fff;">Путь,<br><em>пройденный сердцем</em></h2>
+                    <a href="journal.html" class="link-all">Все статьи &rarr;</a>
+                </div>
+                <div class="journal-grid">
+                    <a href="#" class="journal-main">
+                        <div class="journal-main-img">⛪</div>
+                        <div class="journal-main-body">
+                            <span class="journal-tag">Паломничество</span>
+                            <div class="journal-main-title">Почему тысячи людей каждый год приезжают в Оптину пустынь</div>
+                            <div class="journal-main-sub">История монастыря, духовное наследие и советы для паломников.</div>
+                            <div class="journal-date">14 мая 2024</div>
+                        </div>
+                    </a>
+                    <div class="journal-small-list">
+                        <a href="#" class="journal-small">
+                            <div class="journal-small-img">🕊️</div>
+                            <div>
+                                <div class="journal-small-title">Паломничество в Дивеево: что важно знать</div>
+                                <div class="journal-small-date">10 мая 2024</div>
+                            </div>
+                        </a>
+                        <a href="#" class="journal-small">
+                            <div class="journal-small-img">💧</div>
+                            <div>
+                                <div class="journal-small-title">Святые источники Подмосковья</div>
+                                <div class="journal-small-date">8 мая 2024</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="section-label">Православный календарь</div>
+                <div class="cal-widget-box">
+                    <div class="cal-widget-title">
+                        <span>Ближайшие дни</span>
+                        <a href="calendar.html" class="cal-widget-link">Смотреть все &rarr;</a>
+                    </div>
+                    <div id="calendarWidgetList"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <h2 class="cta-title">Сохраним <em>наследие</em> вместе</h2>
+        <p class="cta-sub">Присоединяйтесь к сообществу исследователей духовных маршрутов России и стран СНГ.</p>
+        <div class="cta-actions">
+            <a href="#" class="btn-cta btn-gold">Узнать больше</a>
+            <a href="#" class="btn-cta" style="background:rgba(255,255,255,0.08);color:#fff;border:1px solid rgba(255,255,255,0.2);">Связаться с нами &rarr;</a>
+        </div>
+    </section>
+
+    <!-- CONTRIBUTE -->
+    <div class="contribute">
+        <div class="contribute-grid">
+            <div>
+                <div class="contribute-title">Помогите сделать путеводитель лучше</div>
+                <div class="contribute-sub">Делитесь фотографиями, предлагайте места, оставляйте отзывы и советы паломникам.</div>
+            </div>
+            <div class="contribute-action">
+                <div class="contribute-action-icon">📍</div>
+                <div class="contribute-action-label">Добавить место</div>
+                <div class="contribute-action-sub">Предложить святыню</div>
+            </div>
+            <div class="contribute-action">
+                <div class="contribute-action-icon">📸</div>
+                <div class="contribute-action-label">Добавить фото</div>
+                <div class="contribute-action-sub">Поделиться красотой</div>
+            </div>
+            <div class="contribute-action">
+                <div class="contribute-action-icon">✍️</div>
+                <div class="contribute-action-label">Написать отзыв</div>
+                <div class="contribute-action-sub">Ваш опыт важен</div>
+            </div>
+            <div class="contribute-action">
+                <div class="contribute-action-icon">🗺️</div>
+                <div class="contribute-action-label">Маршрут</div>
+                <div class="contribute-action-sub">Поделиться путём</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- КОНТЕЙНЕР ДЛЯ ПОДВАЛА -->
+    <div id="footer-container"></div>
+
+    <script>
+        // Фильтры карты
+        document.querySelectorAll('.map-filter').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.map-filter').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+
+        // Анимации при скролле
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.style.opacity = '1';
+                    e.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.place-card, .route-card, .pilgrim-card, .journal-main, .journal-small').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(el);
+        });
+
+        // Календарь-виджет
+        const calendar2026 = [
+            { date: '2026-01-07', title: 'РОЖДЕСТВО ХРИСТОВО', type: 'holiday' },
+            { date: '2026-01-19', title: 'КРЕЩЕНИЕ ГОСПОДНЕ', type: 'holiday' },
+            { date: '2026-01-25', title: 'Мученицы Татианы', type: 'event' },
+            { date: '2026-02-15', title: 'СРЕТЕНИЕ ГОСПОДНЕ', type: 'holiday' },
+            { date: '2026-02-23', title: 'Начало ВЕЛИКОГО ПОСТА', type: 'fast' },
+            { date: '2026-04-07', title: 'БЛАГОВЕЩЕНИЕ ПРЕСВЯТОЙ БОГОРОДИЦЫ', type: 'holiday' },
+            { date: '2026-04-12', title: 'ПАСХА ХРИСТОВА', type: 'holiday' },
+            { date: '2026-04-19', title: 'Антипасха (Неделя Фомы)', type: 'event' },
+            { date: '2026-04-26', title: 'Радоница', type: 'event' },
+            { date: '2026-05-21', title: 'ВОЗНЕСЕНИЕ ГОСПОДНЕ', type: 'holiday' },
+            { date: '2026-05-24', title: 'Кирилла и Мефодия', type: 'event' },
+            { date: '2026-05-31', title: 'ДЕНЬ СВЯТОЙ ТРОИЦЫ', type: 'holiday' },
+            { date: '2026-06-01', title: 'Начало ПЕТРОВА ПОСТА', type: 'fast' },
+            { date: '2026-06-26', title: 'Преподобной Анны Кашинской', type: 'event' },
+            { date: '2026-07-12', title: 'Апостолов Петра и Павла', type: 'holiday' },
+            { date: '2026-07-28', title: 'Равноапостольного Владимира', type: 'event' },
+            { date: '2026-08-01', title: 'Серафима Саровского', type: 'event' },
+            { date: '2026-08-14', title: 'Начало УСПЕНСКОГО ПОСТА', type: 'fast' },
+            { date: '2026-08-19', title: 'ПРЕОБРАЖЕНИЕ ГОСПОДНЕ', type: 'holiday' },
+            { date: '2026-08-28', title: 'УСПЕНИЕ ПРЕСВЯТОЙ БОГОРОДИЦЫ', type: 'holiday' },
+            { date: '2026-09-21', title: 'РОЖДЕСТВО ПРЕСВЯТОЙ БОГОРОДИЦЫ', type: 'holiday' },
+            { date: '2026-09-27', title: 'ВОЗДВИЖЕНИЕ КРЕСТА ГОСПОДНЯ', type: 'holiday' },
+            { date: '2026-10-14', title: 'ПОКРОВ ПРЕСВЯТОЙ БОГОРОДИЦЫ', type: 'holiday' },
+            { date: '2026-11-04', title: 'Казанской иконы Божией Матери', type: 'holiday' },
+            { date: '2026-11-28', title: 'Начало РОЖДЕСТВЕНСКОГО ПОСТА', type: 'fast' },
+            { date: '2026-12-04', title: 'ВВЕДЕНИЕ ВО ХРАМ ПРЕСВЯТОЙ БОГОРОДИЦЫ', type: 'holiday' },
+            { date: '2026-12-06', title: 'Святителя Николая Чудотворца', type: 'event' },
+        ];
+
+        function getFast(dateStr) {
+            const parts = dateStr.split('-');
+            const m = parseInt(parts[1]);
+            const day = parseInt(parts[2]);
+            if ((m === 2 && day >= 23) || (m === 3) || (m === 4 && day <= 11)) return 'Великий пост';
+            if ((m === 6 && day >= 1) || (m === 7 && day <= 11)) return 'Петров пост';
+            if (m === 8 && day >= 14 && day <= 27) return 'Успенский пост';
+            if ((m === 11 && day >= 28) || (m === 12)) return 'Рождественский пост';
+            return null;
+        }
+
+        function getEvent(dateStr) {
+            const ev = calendar2026.find(e => e.date === dateStr);
+            const fast = getFast(dateStr);
+            if (ev) return ev;
+            if (fast) return { title: fast, type: 'fast' };
+            return null;
+        }
+
+        function formatDateShort(dateStr) {
+            const parts = dateStr.split('-');
+            const d = parseInt(parts[2]);
+            const months = ['янв', 'фев', 'мар', 'апр', 'май', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'];
+            return `${d} ${months[parseInt(parts[1])-1]}`;
+        }
+
+        function getIcon(type) {
+            if (type === 'holiday') return '✨';
+            if (type === 'fast') return '🕯️';
+            return '✝️';
+        }
+
+        const widgetList = document.getElementById('calendarWidgetList');
+        const today = new Date();
+        let found = 0;
+        for (let i = 0; i < 60; i++) {
+            const checkDate = new Date(today);
+            checkDate.setDate(today.getDate() + i);
+            const checkStr = checkDate.toISOString().split('T')[0];
+            const event = getEvent(checkStr);
+            if (event) {
+                const entry = document.createElement('div');
+                entry.className = 'cal-widget-entry';
+                entry.innerHTML = `
+                    <div class="cal-widget-date">
+                        <div class="cal-widget-date-day">${checkDate.getDate()}</div>
+                        <div class="cal-widget-date-month">${['ЯНВ','ФЕВ','МАР','АПР','МАЙ','ИЮН','ИЮЛ','АВГ','СЕН','ОКТ','НОЯ','ДЕК'][checkDate.getMonth()]}</div>
+                    </div>
+                    <div class="cal-widget-icon">${getIcon(event.type)}</div>
+                    <div>
+                        <div class="cal-widget-entry-title">${event.title}</div>
+                        <div class="cal-widget-entry-sub">${formatDateShort(checkStr)}</div>
+                    </div>
+                `;
+                widgetList.appendChild(entry);
+                found++;
+                if (found >= 4) break;
+            }
+        }
+
+        if (found === 0) {
+            widgetList.innerHTML = `
+                <div class="cal-widget-entry">
+                    <div class="cal-widget-date">
+                        <div class="cal-widget-date-day">—</div>
+                        <div class="cal-widget-date-month">—</div>
+                    </div>
+                    <div class="cal-widget-icon">📖</div>
+                    <div>
+                        <div class="cal-widget-entry-title">Нет ближайших событий</div>
+                        <div class="cal-widget-entry-sub">проверьте календарь</div>
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+
+    <script src="js/config.js"></script>
+    <script src="js/components.js"></script>
+</body>
+</html>

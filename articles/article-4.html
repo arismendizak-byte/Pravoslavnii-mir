@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Почему иконы пишут «наоборот»? — Православный Мир</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="nav-container"></div>
+    <div id="bottom-nav-container"></div>
+
+    <div class="page-section">
+        <div class="breadcrumbs">
+            <a href="../journal.html">Журнал</a> &rarr;
+            <span>Обратная перспектива икон</span>
+        </div>
+
+        <div class="article-header">
+            <h1>Почему иконы пишут «наоборот»?<br><em>Обратная перспектива</em></h1>
+            <div class="article-meta-top">
+                <span class="author">Искусствовед Анна К.</span>
+                <span>•</span>
+                <span>8 мая 2025</span>
+                <span>•</span>
+                <span>Факты</span>
+            </div>
+        </div>
+
+        <div class="article-content">
+            <p><strong>Введение: загадка, скрытая в каждом образе</strong></p>
+            <p>Перед нами древняя икона. Мы видим лики святых, золотые фоны, но что-то кажется странным: здания, предметы, линии не уходят вдаль, а расходятся на нас. Это и есть обратная перспектива — одна из самых загадочных техник в мировом искусстве.</p>
+
+            <p><strong>Что такое обратная перспектива?</strong></p>
+            <p>В античности и в эпоху Возрождения использовалась прямая перспектива: мир изображался с точки зрения человека. Всё уходит в точку схода на горизонте, создавая иллюзию трёхмерности.</p>
+            <p>Обратная перспектива делает наоборот. Точка схода находится не за картиной, а перед ней — то есть, перед зрителем. Это означает, что зритель оказывается внутри изображаемого пространства.</p>
+
+            <p><strong>Зачем это нужно?</strong></p>
+            <p>Икона не стремится быть похожей на фотографию. Её задача — показать мир, каким его видит Бог. А Бог видит всё и сразу, без ограничений времени и пространства. Обратная перспектива символизирует, что святость не подчиняется законам перспективы.</p>
+            <p>Кроме того, эта техника создаёт ощущение, что святой не смотрит на нас сверху вниз — он находится рядом, он обращается к нам лично. Это приглашение к диалогу.</p>
+
+            <p><strong>Технические детали</strong></p>
+            <p>Интересно, что обратная перспектива не была ошибкой древних художников. Они прекрасно знали законы геометрии, но сознательно отказывались от них. Икона — не картина, а откровение. И откровение не должно быть удобным для глаза, оно должно быть обращено к душе.</p>
+
+            <p><strong>Заключение</strong></p>
+            <p>Когда мы смотрим на икону, мы видим не просто изображение. Мы видим приглашение к молитве. И обратная перспектива — один из способов сказать нам: «Остановись, подойди ближе, этот мир ждёт тебя».</p>
+
+            <button class="btn-nav btn-gold" style="margin-bottom:16px; width:100%;" onclick="addToReadLater('Обратная перспектива', 'Искусствовед Анна К.')">📖 Читать позже</button>
+            <a href="../journal.html" class="back-btn">← Вернуться к журналу</a>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script>
+        function addToReadLater(title, sub) {
+            try {
+                const data = JSON.parse(localStorage.getItem('readLater')) || [];
+                const exists = data.some(item => item.title === title);
+                if (exists) {
+                    alert('📖 Эта статья уже в списке "Читать позже"!');
+                    return;
+                }
+                data.push({ title, sub });
+                localStorage.setItem('readLater', JSON.stringify(data));
+                alert('✅ Статья добавлена в "Читать позже"!');
+            } catch {
+                alert('❌ Ошибка. Проверьте, что localStorage доступен.');
+            }
+        }
+    </script>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/components.js"></script>
+</body>
+</html>

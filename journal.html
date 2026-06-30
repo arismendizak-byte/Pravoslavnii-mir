@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Журнал — Православный Мир</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .journal-header { text-align: center; margin-bottom: 40px; }
+        .journal-header h1 { font-family: 'Playfair Display', serif; font-size: clamp(32px, 4vw, 48px); font-weight: 700; color: var(--dark); line-height: 1.15; }
+        .journal-header h1 em { font-style: italic; color: var(--gold); }
+        .journal-header p { font-size: 16px; color: var(--text-muted); max-width: 600px; margin: 0 auto; line-height: 1.7; }
+        .journal-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; }
+        .article-card { background: var(--white); border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-card); transition: transform var(--transition), box-shadow var(--transition); text-decoration: none; color: inherit; display: block; }
+        .article-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+        .article-img { height: 200px; width: 100%; display: flex; align-items: center; justify-content: center; font-size: 64px; background: linear-gradient(135deg, var(--dark-3), #1A3A2A); }
+        .article-card:nth-child(2) .article-img { background: linear-gradient(135deg, #2C1E0A, #1A2A35); }
+        .article-card:nth-child(3) .article-img { background: linear-gradient(135deg, #1A2A35, #2C1E0A); }
+        .article-card:nth-child(4) .article-img { background: linear-gradient(135deg, #1E2C1A, #35280A); }
+        .article-card:nth-child(5) .article-img { background: linear-gradient(135deg, #251A35, #1A3A2A); }
+        .article-body { padding: 20px; }
+        .article-tag { display: inline-block; background: var(--gold-pale); color: var(--dark-2); font-size: 11px; font-weight: 600; padding: 2px 12px; border-radius: 100px; text-transform: uppercase; margin-bottom: 8px; }
+        .article-title { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: var(--dark); margin-bottom: 8px; line-height: 1.3; }
+        .article-desc { font-size: 14px; color: var(--text-muted); line-height: 1.6; margin-bottom: 12px; }
+        .article-meta { display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: var(--text-muted); border-top: 1px solid var(--cream-2); padding-top: 12px; }
+        .article-author { font-weight: 500; color: var(--gold); }
+        .article-date { font-size: 12px; color: #9E8A6A; }
+    </style>
+</head>
+<body>
+    <div id="nav-container"></div>
+    <div id="bottom-nav-container"></div>
+
+    <div class="page-section">
+        <div class="breadcrumbs">
+            <a href="index.html">Главная</a> &rarr;
+            <span>Журнал</span>
+        </div>
+
+        <div class="journal-header">
+            <h1>Православный<br><em>журнал</em></h1>
+            <p>Статьи о вере, истории, святых и культуре православного мира.</p>
+        </div>
+
+        <div class="journal-grid" id="journalGrid"></div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script>
+        fetch('data/articles.json')
+            .then(response => response.json())
+            .then(articles => {
+                const grid = document.getElementById('journalGrid');
+                grid.innerHTML = '';
+                articles.forEach(article => {
+                    const card = document.createElement('a');
+                    card.href = `articles/${article.file}`;
+                    card.className = 'article-card';
+                    card.innerHTML = `
+                        <div class="article-img">${article.emoji}</div>
+                        <div class="article-body">
+                            <div class="article-tag">${article.tag}</div>
+                            <div class="article-title">${article.title}</div>
+                            <div class="article-desc">${article.description}</div>
+                            <div class="article-meta">
+                                <span class="article-author">${article.author}</span>
+                                <span class="article-date">${article.date}</span>
+                            </div>
+                            <button class="btn-nav btn-gold" style="margin-top:12px; width:100%;" onclick="addToReadLater('${article.title}', '${article.author}')">📖 Читать позже</button>
+                        </div>
+                    `;
+                    grid.appendChild(card);
+                });
+            })
+            .catch(error => {
+                console.error('Ошибка загрузки статей:', error);
+                document.getElementById('journalGrid').innerHTML = '<p style="text-align:center;color:var(--text-muted);">Не удалось загрузить статьи. Проверьте наличие файла data/articles.json</p>';
+            });
+
+        function addToReadLater(title, sub) {
+            try {
+                const data = JSON.parse(localStorage.getItem('readLater')) || [];
+                const exists = data.some(item => item.title === title);
+                if (exists) {
+                    alert('📖 Эта статья уже в списке "Читать позже"!');
+                    return;
+                }
+                data.push({ title, sub });
+                localStorage.setItem('readLater', JSON.stringify(data));
+                alert('✅ Статья добавлена в "Читать позже"!');
+            } catch {
+                alert('❌ Ошибка. Проверьте, что localStorage доступен.');
+            }
+        }
+    </script>
+
+    <script src="js/config.js"></script>
+    <script src="js/components.js"></script>
+</body>
+</html>
