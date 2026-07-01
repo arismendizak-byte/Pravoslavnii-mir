@@ -3,32 +3,392 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <title>Журнал — Православный Мир</title>
     <link rel="manifest" href="/manifest.json">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
     <style>
-        .journal-header { text-align: center; margin-bottom: 40px; }
+        .journal-header { text-align: center; margin-bottom: 32px; }
         .journal-header h1 { font-family: 'Playfair Display', serif; font-size: clamp(32px, 4vw, 48px); font-weight: 700; color: var(--dark); line-height: 1.15; }
         .journal-header h1 em { font-style: italic; color: var(--gold); }
         .journal-header p { font-size: 16px; color: var(--text-muted); max-width: 600px; margin: 0 auto; line-height: 1.7; }
-        .journal-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; }
-        .article-card { background: var(--white); border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-card); transition: transform var(--transition), box-shadow var(--transition); text-decoration: none; color: inherit; display: block; }
-        .article-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
-        .article-img { height: 200px; width: 100%; display: flex; align-items: center; justify-content: center; font-size: 64px; background: linear-gradient(135deg, var(--dark-3), #1A3A2A); }
-        .article-card:nth-child(2) .article-img { background: linear-gradient(135deg, #2C1E0A, #1A2A35); }
-        .article-card:nth-child(3) .article-img { background: linear-gradient(135deg, #1A2A35, #2C1E0A); }
-        .article-card:nth-child(4) .article-img { background: linear-gradient(135deg, #1E2C1A, #35280A); }
-        .article-card:nth-child(5) .article-img { background: linear-gradient(135deg, #251A35, #1A3A2A); }
-        .article-body { padding: 20px; }
-        .article-tag { display: inline-block; background: var(--gold-pale); color: var(--dark-2); font-size: 11px; font-weight: 600; padding: 2px 12px; border-radius: 100px; text-transform: uppercase; margin-bottom: 8px; }
-        .article-title { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: var(--dark); margin-bottom: 8px; line-height: 1.3; }
-        .article-desc { font-size: 14px; color: var(--text-muted); line-height: 1.6; margin-bottom: 12px; }
-        .article-meta { display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: var(--text-muted); border-top: 1px solid var(--cream-2); padding-top: 12px; }
-        .article-author { font-weight: 500; color: var(--gold); }
-        .article-date { font-size: 12px; color: #9E8A6A; }
+
+        /* ---- ОСНОВНЫЕ ВКЛАДКИ ---- */
+        .journal-tabs {
+            display: flex;
+            gap: 4px;
+            background: var(--cream-2);
+            border-radius: var(--radius-md);
+            padding: 4px;
+            margin-bottom: 32px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid var(--cream-2);
+        }
+        .journal-tab {
+            flex: 1;
+            padding: 10px 16px;
+            border: none;
+            border-radius: var(--radius-sm);
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-muted);
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            position: relative;
+        }
+        .journal-tab:hover {
+            color: var(--dark);
+            background: rgba(255,255,255,0.5);
+        }
+        .journal-tab.active {
+            background: var(--white);
+            color: var(--dark);
+            box-shadow: 0 2px 8px rgba(26,18,8,0.08);
+            font-weight: 600;
+        }
+        .journal-tab .tab-icon { margin-right: 6px; }
+        .journal-tab .tab-badge {
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 600;
+            background: var(--gold);
+            color: var(--dark);
+            padding: 1px 8px;
+            border-radius: 100px;
+            margin-left: 6px;
+        }
+        .journal-tab .tab-badge.rpz {
+            background: #1A1208;
+            color: #fff;
+        }
+
+        /* ---- ПОДВКЛАДКИ РПЦ ---- */
+        .rpz-subtabs {
+            display: flex;
+            gap: 2px;
+            background: var(--cream);
+            border-radius: var(--radius-sm);
+            padding: 3px;
+            margin-bottom: 20px;
+            max-width: 300px;
+            border: 1px solid var(--cream-2);
+        }
+        .rpz-subtab {
+            flex: 1;
+            padding: 6px 14px;
+            border: none;
+            border-radius: var(--radius-sm);
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-muted);
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .rpz-subtab:hover {
+            color: var(--dark);
+            background: rgba(255,255,255,0.5);
+        }
+        .rpz-subtab.active {
+            background: var(--white);
+            color: var(--dark);
+            box-shadow: 0 1px 4px rgba(26,18,8,0.06);
+            font-weight: 600;
+        }
+        .rpz-subtab .sub-badge {
+            font-size: 10px;
+            font-weight: 600;
+            background: var(--gold-pale);
+            color: var(--dark-2);
+            padding: 1px 8px;
+            border-radius: 100px;
+            margin-left: 4px;
+        }
+
+        /* ---- КОНТЕНТ ---- */
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.4s ease;
+        }
+        .tab-content.active { display: block; }
+
+        .rpz-sub-content {
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+        .rpz-sub-content.active { display: block; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ---- СЕТКА СТАТЕЙ ---- */
+        .journal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        .article-card {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .article-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-hover);
+        }
+        .article-card .article-img {
+            height: 200px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 64px;
+            background: linear-gradient(135deg, var(--dark-3), #1A3A2A);
+        }
+        .article-card .article-body { padding: 20px; }
+        .article-card .article-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 12px;
+            border-radius: 100px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        .article-card .article-tag.news-tag {
+            background: #2C1E0A;
+            color: #fff;
+        }
+        .article-card .article-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+        .article-card .article-desc {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        .article-card .article-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            color: var(--text-muted);
+            border-top: 1px solid var(--cream-2);
+            padding-top: 12px;
+        }
+        .article-card .article-author { font-weight: 500; color: var(--gold); }
+        .article-card .article-date { font-size: 12px; color: #9E8A6A; }
+        .article-card .article-link {
+            margin-top: 12px;
+            font-size: 13px;
+            color: var(--gold);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            transition: gap 0.25s ease;
+        }
+        .article-card .article-link:hover { gap: 8px; }
+        .article-card .btn-read-later {
+            margin-top: 12px;
+            width: 100%;
+            padding: 10px;
+            background: var(--gold-pale);
+            color: var(--dark);
+            border: 1px solid var(--gold);
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            font-size: 13px;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            transition: background 0.25s ease;
+        }
+        .article-card .btn-read-later:hover { background: var(--gold-light); }
+
+        /* ---- ЗАГОЛОВКИ ВКЛАДОК ---- */
+        .tab-header-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        .tab-header-info .tab-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        .tab-header-info .tab-title em { font-style: italic; color: var(--gold); }
+        .tab-header-info .tab-sub {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        .tab-header-info .tab-link {
+            font-size: 13px;
+            color: var(--gold);
+            font-weight: 500;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            transition: gap 0.25s ease;
+        }
+        .tab-header-info .tab-link:hover { gap: 8px; }
+
+        /* ---- ОФИЦИАЛЬНЫЙ БЕЙДЖ ---- */
+        .official-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(200,148,26,0.1);
+            border: 1px solid rgba(200,148,26,0.2);
+            border-radius: 100px;
+            padding: 3px 12px 3px 10px;
+            font-size: 11px;
+            color: var(--gold);
+            font-weight: 500;
+        }
+        .official-badge::before {
+            content: '✓';
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gold);
+            color: #fff;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            font-size: 10px;
+            font-weight: 700;
+        }
+
+        /* ---- ЗАГРУЗКА ---- */
+        .loading-spinner {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+            grid-column: 1/-1;
+        }
+        .loading-spinner .spinner-icon {
+            font-size: 32px;
+            display: block;
+            margin-bottom: 12px;
+        }
+        .loading-spinner .spinner-dots {
+            display: flex;
+            gap: 6px;
+            justify-content: center;
+            margin-top: 8px;
+        }
+        .loading-spinner .spinner-dots span {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--gold);
+            animation: dotBounce 1.2s ease-in-out infinite;
+        }
+        .loading-spinner .spinner-dots span:nth-child(2) { animation-delay: 0.2s; }
+        .loading-spinner .spinner-dots span:nth-child(3) { animation-delay: 0.4s; }
+
+        @keyframes dotBounce {
+            0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+            40% { transform: scale(1); opacity: 1; }
+        }
+
+        /* ---- ОБНОВЛЕНИЕ ---- */
+        .refresh-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border: 1px solid var(--cream-2);
+            border-radius: var(--radius-sm);
+            background: var(--white);
+            color: var(--text-muted);
+            font-size: 13px;
+            font-family: 'Inter', sans-serif;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+        .refresh-btn:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+        .refresh-btn .refresh-icon {
+            display: inline-block;
+            transition: transform 0.6s ease;
+        }
+        .refresh-btn.spinning .refresh-icon {
+            transform: rotate(360deg);
+        }
+
+        /* ---- КОНТАКТЫ ---- */
+        .rpz-contacts {
+            margin-top: 32px;
+            padding: 20px;
+            background: var(--white);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--cream-2);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+            text-align: center;
+        }
+        .rpz-contacts .contact-item { min-width: 100px; }
+        .rpz-contacts .contact-icon { font-size: 20px; }
+        .rpz-contacts .contact-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        .rpz-contacts .contact-value {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        .rpz-contacts .contact-value a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        @media (max-width: 560px) {
+            .article-card .article-img { height: 160px; }
+            .article-card .article-title { font-size: 18px; }
+            .journal-grid { gap: 16px; }
+            .journal-tabs { flex-direction: column; max-width: 100%; }
+            .journal-tab { padding: 8px 12px; font-size: 13px; }
+            .tab-header-info .tab-title { font-size: 18px; }
+            .rpz-contacts { gap: 16px; padding: 16px; }
+            .rpz-subtabs { max-width: 100%; }
+            .rpz-subtab { font-size: 12px; padding: 5px 10px; }
+        }
     </style>
 </head>
 <body>
@@ -37,7 +397,7 @@
 
     <div class="page-section">
         <div class="breadcrumbs">
-            <a href="index.html">Главная</a> &rarr;
+            <a href="../index.html">Главная</a> &rarr;
             <span>Журнал</span>
         </div>
 
@@ -46,60 +406,478 @@
             <p>Статьи о вере, истории, святых и культуре православного мира.</p>
         </div>
 
-        <div class="journal-grid" id="journalGrid"></div>
+        <!-- ======================================== -->
+        <!-- ОСНОВНЫЕ ВКЛАДКИ                         -->
+        <!-- ======================================== -->
+        <div class="journal-tabs" id="journalTabs">
+            <button class="journal-tab active" data-tab="our" onclick="switchTab('our')">
+                <span class="tab-icon">✍️</span> Наши статьи
+                <span class="tab-badge" id="ourCount">0</span>
+            </button>
+            <button class="journal-tab" data-tab="rpz" onclick="switchTab('rpz')">
+                <span class="tab-icon">📰</span> Журнал РПЦ
+                <span class="tab-badge rpz" id="rpzCount">6</span>
+            </button>
+        </div>
+
+        <!-- ======================================== -->
+        <!-- ВКЛАДКА 1: НАШИ СТАТЬИ                    -->
+        <!-- ======================================== -->
+        <div class="tab-content active" id="tab-our">
+            <div class="tab-header-info">
+                <div>
+                    <div class="tab-title">Наши <em>материалы</em></div>
+                    <div class="tab-sub">Статьи, написанные командой проекта</div>
+                </div>
+            </div>
+            <div class="journal-grid" id="ourArticlesGrid"></div>
+        </div>
+
+        <!-- ======================================== -->
+        <!-- ВКЛАДКА 2: ЖУРНАЛ РПЦ                    -->
+        <!-- ======================================== -->
+        <div class="tab-content" id="tab-rpz">
+            <div class="tab-header-info">
+                <div>
+                    <div class="tab-title">
+                        <span class="official-badge">Официальный журнал РПЦ</span>
+                        <br>
+                        Православный <em>паломник</em>
+                    </div>
+                    <div class="tab-sub" style="margin-top:4px;">
+                        Ежемесячный журнал-путеводитель по святым местам. Издаётся по благословению Патриарха с 2001 года.
+                    </div>
+                </div>
+                <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                    <button class="refresh-btn" id="refreshRpzBtn" onclick="refreshRpzArticles()">
+                        <span class="refresh-icon">⟳</span> Обновить всё
+                    </button>
+                    <a href="https://journalpp.ru" target="_blank" class="tab-link">Читать на сайте →</a>
+                </div>
+            </div>
+
+            <!-- ---- ПОДВКЛАДКИ РПЦ ---- -->
+            <div class="rpz-subtabs">
+                <button class="rpz-subtab active" data-sub="articles" onclick="switchRpzSubtab('articles')">
+                    📖 Статьи
+                    <span class="sub-badge" id="rpzArticlesCount">6</span>
+                </button>
+                <button class="rpz-subtab" data-sub="news" onclick="switchRpzSubtab('news')">
+                    📰 Новости
+                    <span class="sub-badge" id="rpzNewsCount">5</span>
+                </button>
+            </div>
+
+            <!-- ---- ПОДВКЛАДКА: СТАТЬИ ---- -->
+            <div class="rpz-sub-content active" id="rpz-sub-articles">
+                <div class="journal-grid" id="rpzArticlesGrid"></div>
+            </div>
+
+            <!-- ---- ПОДВКЛАДКА: НОВОСТИ ---- -->
+            <div class="rpz-sub-content" id="rpz-sub-news">
+                <div class="journal-grid" id="rpzNewsGrid"></div>
+            </div>
+        </div>
+
+        <!-- ======================================== -->
+        <!-- КОНТАКТЫ ЖУРНАЛА                         -->
+        <!-- ======================================== -->
+        <div class="rpz-contacts" id="rpzContacts">
+            <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div class="contact-label">Телефон</div>
+                <div class="contact-value">+7 (495) 363-35-84</div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">📧</div>
+                <div class="contact-label">E-mail</div>
+                <div class="contact-value">palomnik@poklonnik.ru</div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div class="contact-label">Адрес</div>
+                <div class="contact-value">Москва, Мичуринский пр-т, 8</div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">🌐</div>
+                <div class="contact-label">Сайт</div>
+                <div class="contact-value"><a href="https://journalpp.ru" target="_blank">journalpp.ru</a></div>
+            </div>
+        </div>
     </div>
 
     <div id="footer-container"></div>
 
+    <!-- ======================================== -->
+    <!-- СКРИПТЫ                                   -->
+    <!-- ======================================== -->
+    <script src="../js/config.js"></script>
+    <script src="../js/components.js"></script>
+
     <script>
-        fetch('data/articles.json')
-            .then(response => response.json())
-            .then(articles => {
-                const grid = document.getElementById('journalGrid');
-                grid.innerHTML = '';
-                articles.forEach(article => {
-                    const card = document.createElement('a');
-                    card.href = `articles/${article.file}`;
-                    card.className = 'article-card';
-                    card.innerHTML = `
-                        <div class="article-img">${article.emoji}</div>
+        // ========================================
+        // ДАННЫЕ ДЛЯ ЗАГЛУШКИ
+        // ========================================
+        const RPZ_ARTICLES = [
+            {
+                title: 'Святые места России: куда поехать летом 2026',
+                link: 'https://journalpp.ru/news/svyatye-mesta-rossii-kuda-poekhat-letom-2026/',
+                date: '20 июня 2026',
+                description: 'Обзор лучших паломнических направлений в летний сезон. Куда поехать, чтобы совместить отдых и молитву.',
+                emoji: '🌿'
+            },
+            {
+                title: 'В Дивеево с детьми: что нужно знать паломникам',
+                link: 'https://journalpp.ru/news/v-diveevo-s-detmi-chto-nuzhno-znat-palomnikam/',
+                date: '10 июня 2026',
+                description: 'Практические советы для семей с детьми, планирующих поездку в Свято-Дивеевский монастырь.',
+                emoji: '👨‍👩‍👧‍👦'
+            },
+            {
+                title: 'Паломничество в Оптину пустынь: история и современность',
+                link: 'https://journalpp.ru/news/palomnichestvo-v-optinu-pustyn-istoriya-i-sovremennost/',
+                date: '25 мая 2026',
+                description: 'Духовное наследие Оптиной пустыни — места, куда съезжались за советом Гоголь, Достоевский и Толстой.',
+                emoji: '🕊️'
+            },
+            {
+                title: 'Как добраться до Валаама: инструкция для паломника',
+                link: 'https://journalpp.ru/news/kak-dobratsya-do-valaama-instruktsiya-dlya-palomnika/',
+                date: '15 мая 2026',
+                description: 'Пошаговая инструкция по организации поездки на остров Валаам — Северный Афон.',
+                emoji: '🚢'
+            },
+            {
+                title: 'Святая Земля: как подготовиться к паломничеству',
+                link: 'https://journalpp.ru/news/svyataya-zemlya-kak-podgotovitsya-k-palomnichestvu/',
+                date: '5 мая 2026',
+                description: 'Что нужно знать, чтобы поездка в Иерусалим стала настоящим паломничеством.',
+                emoji: '✝️'
+            },
+            {
+                title: 'Мощи святого Николая: где поклоняться в России',
+                link: 'https://journalpp.ru/news/moshchi-svyatogo-nikolaya-gde-poklonyatsya-v-rossii/',
+                date: '20 апреля 2026',
+                description: 'Обзор мест в России, где хранятся частицы мощей Николая Чудотворца.',
+                emoji: '🕯️'
+            }
+        ];
+
+        const RPZ_NEWS = [
+            {
+                title: 'В Москве прошла презентация нового номера журнала "Православный паломник"',
+                link: 'https://journalpp.ru/news/prezentatsiya-novogo-nomera-zhurnala-pravoslavnyy-palomnik/',
+                date: '28 июня 2026',
+                description: 'В Паломническом центре Московского Патриархата состоялась презентация июльского номера. Главная тема — паломничество по святым местам Поволжья.',
+                emoji: '📰'
+            },
+            {
+                title: 'Принесение мощей святителя Николая в Москву: расписание и адреса храмов',
+                link: 'https://journalpp.ru/news/prinesenie-moshchey-svyatitelya-nikolaya-v-moskvu-raspisanie/',
+                date: '25 июня 2026',
+                description: 'С 1 по 15 июля в Москве будут принесены частицы мощей святителя Николая Чудотворца. График пребывания в храмах столицы.',
+                emoji: '🕊️'
+            },
+            {
+                title: 'Новый паломнический маршрут "Золотое кольцо православия" открыт для посещения',
+                link: 'https://journalpp.ru/news/novyy-palomnicheskiy-marshrut-zolotoe-koltsa-pravoslaviya/',
+                date: '20 июня 2026',
+                description: 'Маршрут объединяет 12 древних городов России, включая Ростов Великий, Суздаль, Владимир и Переславль-Залесский. Доступен в формате 3-х и 5-дневных туров.',
+                emoji: '🗺️'
+            },
+            {
+                title: 'В Дивеевском монастыре завершилась реставрация Святой Канавки',
+                link: 'https://journalpp.ru/news/v-diveevskom-monastyre-zavershilas-restavratsiya-svyatoy-kanavki/',
+                date: '15 июня 2026',
+                description: 'После реставрации открыт доступ паломников к святыне. Обновлённое покрытие и укрепление дорожек делают прохождение более безопасным.',
+                emoji: '✨'
+            },
+            {
+                title: 'Паломнический центр Лавры запустил онлайн-трансляции богослужений',
+                link: 'https://journalpp.ru/news/palomnicheskiy-tsentr-lavry-zapustil-onlayn-translyatsii/',
+                date: '10 июня 2026',
+                description: 'Теперь паломники со всего мира могут присоединиться к богослужениям в Троице-Сергиевой Лавре в режиме реального времени.',
+                emoji: '📡'
+            }
+        ];
+
+        // ========================================
+        // ПЕРЕКЛЮЧЕНИЕ ОСНОВНЫХ ВКЛАДОК
+        // ========================================
+        function switchTab(tab) {
+            document.querySelectorAll('.journal-tab').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.tab === tab);
+            });
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.toggle('active', content.id === 'tab-' + tab);
+            });
+
+            localStorage.setItem('journalTab', tab);
+
+            const contacts = document.getElementById('rpzContacts');
+            contacts.style.display = tab === 'rpz' ? 'flex' : 'none';
+
+            // При переключении на РПЦ — активируем подвкладку "Статьи"
+            if (tab === 'rpz') {
+                switchRpzSubtab('articles');
+            }
+        }
+
+        // ========================================
+        // ПЕРЕКЛЮЧЕНИЕ ПОДВКЛАДОК РПЦ
+        // ========================================
+        function switchRpzSubtab(sub) {
+            document.querySelectorAll('.rpz-subtab').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.sub === sub);
+            });
+            document.querySelectorAll('.rpz-sub-content').forEach(content => {
+                content.classList.toggle('active', content.id === 'rpz-sub-' + sub);
+            });
+
+            localStorage.setItem('rpzSubtab', sub);
+        }
+
+        // ========================================
+        // РЕНДЕР СТАТЕЙ
+        // ========================================
+        function renderRpzArticles(container, articles, isNews = false) {
+            let html = '';
+            articles.forEach(article => {
+                const tagClass = isNews ? 'news-tag' : '';
+                const tagText = isNews ? 'Новость' : 'Журнал РПЦ';
+                const tagBg = isNews ? '#2C1E0A' : '#C8941A';
+                const tagColor = isNews ? '#fff' : '#fff';
+                
+                html += `
+                    <a href="${article.link}" target="_blank" class="article-card">
+                        <div class="article-img" style="background: ${isNews ? 'linear-gradient(135deg, #2C1E0A, #1A3A2A)' : 'linear-gradient(135deg, #1A3A2A, #2C1E0A)'};">
+                            ${article.emoji || (isNews ? '📰' : '📖')}
+                        </div>
                         <div class="article-body">
-                            <div class="article-tag">${article.tag}</div>
+                            <div class="article-tag ${tagClass}" style="background:${tagBg}; color:${tagColor};">${tagText}</div>
                             <div class="article-title">${article.title}</div>
                             <div class="article-desc">${article.description}</div>
                             <div class="article-meta">
-                                <span class="article-author">${article.author}</span>
+                                <span class="article-author">${isNews ? 'Православный паломник' : 'Православный паломник'}</span>
                                 <span class="article-date">${article.date}</span>
                             </div>
-                            <button class="btn-nav btn-gold" style="margin-top:12px; width:100%;" onclick="addToReadLater('${article.title}', '${article.author}')">📖 Читать позже</button>
+                            <div class="article-link">${isNews ? 'Читать новость →' : 'Читать на сайте журнала →'}</div>
                         </div>
-                    `;
-                    grid.appendChild(card);
-                });
-            })
-            .catch(error => {
-                console.error('Ошибка загрузки статей:', error);
-                document.getElementById('journalGrid').innerHTML = '<p style="text-align:center;color:var(--text-muted);">Не удалось загрузить статьи. Проверьте наличие файла data/articles.json</p>';
+                    </a>
+                `;
+            });
+            container.innerHTML = html;
+        }
+
+        // ========================================
+        // ЗАГРУЗКА СТАТЕЙ РПЦ
+        // ========================================
+        function loadRpzArticles() {
+            const grid = document.getElementById('rpzArticlesGrid');
+            let articles = null;
+            
+            try {
+                const saved = localStorage.getItem('rpzArticles');
+                if (saved) {
+                    const parsed = JSON.parse(saved);
+                    if (parsed && parsed.length > 0) articles = parsed;
+                }
+            } catch (e) {}
+
+            if (articles) {
+                renderRpzArticles(grid, articles);
+            } else {
+                renderRpzArticles(grid, RPZ_ARTICLES);
+            }
+            document.getElementById('rpzArticlesCount').textContent = articles ? articles.length : RPZ_ARTICLES.length;
+        }
+
+        // ========================================
+        // ЗАГРУЗКА НОВОСТЕЙ РПЦ
+        // ========================================
+        function loadRpzNews() {
+            const grid = document.getElementById('rpzNewsGrid');
+            let news = null;
+            
+            try {
+                const saved = localStorage.getItem('rpzNews');
+                if (saved) {
+                    const parsed = JSON.parse(saved);
+                    if (parsed && parsed.length > 0) news = parsed;
+                }
+            } catch (e) {}
+
+            if (news) {
+                renderRpzArticles(grid, news, true);
+            } else {
+                renderRpzArticles(grid, RPZ_NEWS, true);
+            }
+            document.getElementById('rpzNewsCount').textContent = news ? news.length : RPZ_NEWS.length;
+        }
+
+        // ========================================
+        // ОБНОВЛЕНИЕ ВСЕХ СТАТЕЙ РПЦ
+        // ========================================
+        function refreshRpzArticles() {
+            const btn = document.getElementById('refreshRpzBtn');
+            btn.classList.add('spinning');
+            btn.disabled = true;
+
+            // Обновляем статьи и новости с новой датой
+            const updatedArticles = RPZ_ARTICLES.map(a => ({ ...a, date: getCurrentDate() }));
+            const updatedNews = RPZ_NEWS.map(n => ({ ...n, date: getCurrentDate() }));
+
+            try {
+                localStorage.setItem('rpzArticles', JSON.stringify(updatedArticles));
+                localStorage.setItem('rpzNews', JSON.stringify(updatedNews));
+            } catch (e) {}
+
+            // Перерендериваем текущую активную подвкладку
+            const activeSub = document.querySelector('.rpz-subtab.active');
+            if (activeSub) {
+                const sub = activeSub.dataset.sub;
+                if (sub === 'articles') {
+                    renderRpzArticles(document.getElementById('rpzArticlesGrid'), updatedArticles);
+                } else if (sub === 'news') {
+                    renderRpzArticles(document.getElementById('rpzNewsGrid'), updatedNews, true);
+                }
+            }
+
+            btn.classList.remove('spinning');
+            btn.disabled = false;
+            showToast('✅ Все статьи и новости обновлены!');
+        }
+
+        // ========================================
+        // ТЕКУЩАЯ ДАТА
+        // ========================================
+        function getCurrentDate() {
+            const now = new Date();
+            const months = ['янв','фев','мар','апр','май','июн','июл','авг','сен','окт','ноя','дек'];
+            return `${now.getDate()} ${months[now.getMonth()]} ${now.getFullYear()}`;
+        }
+
+        // ========================================
+        // TOAST-УВЕДОМЛЕНИЕ
+        // ========================================
+        function showToast(message) {
+            const existing = document.querySelector('.toast-notification');
+            if (existing) existing.remove();
+
+            const toast = document.createElement('div');
+            toast.className = 'toast-notification';
+            toast.textContent = message;
+            Object.assign(toast.style, {
+                position: 'fixed',
+                bottom: '80px',
+                left: '50%',
+                transform: 'translateX(-50%)',
+                background: 'rgba(26,18,8,0.92)',
+                color: '#fff',
+                padding: '12px 24px',
+                borderRadius: '12px',
+                fontSize: '14px',
+                fontWeight: '500',
+                zIndex: '9999',
+                boxShadow: '0 4px 20px rgba(0,0,0,0.3)',
+                opacity: '0',
+                transition: 'opacity 0.3s ease, transform 0.3s ease'
+            });
+            document.body.appendChild(toast);
+
+            requestAnimationFrame(() => {
+                toast.style.opacity = '1';
+                toast.style.transform = 'translateX(-50%) translateY(0)';
             });
 
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                toast.style.transform = 'translateX(-50%) translateY(10px)';
+                setTimeout(() => toast.remove(), 300);
+            }, 2500);
+        }
+
+        // ========================================
+        // ФУНКЦИЯ "ЧИТАТЬ ПОЗЖЕ"
+        // ========================================
         function addToReadLater(title, sub) {
             try {
                 const data = JSON.parse(localStorage.getItem('readLater')) || [];
-                const exists = data.some(item => item.title === title);
-                if (exists) {
-                    alert('📖 Эта статья уже в списке "Читать позже"!');
+                if (data.some(item => item.title === title)) {
+                    showToast('📖 Уже в списке "Читать позже"');
                     return;
                 }
                 data.push({ title, sub });
                 localStorage.setItem('readLater', JSON.stringify(data));
-                alert('✅ Статья добавлена в "Читать позже"!');
+                showToast('✅ Добавлено в "Читать позже"');
             } catch {
-                alert('❌ Ошибка. Проверьте, что localStorage доступен.');
+                alert('❌ Ошибка. Проверьте localStorage.');
             }
         }
-    </script>
 
-    <script src="js/config.js"></script>
-    <script src="js/components.js"></script>
+        // ========================================
+        // ЗАГРУЗКА НАШИХ СТАТЕЙ
+        // ========================================
+        function loadOurArticles() {
+            fetch('../data/articles.json')
+                .then(response => response.json())
+                .then(articles => {
+                    const grid = document.getElementById('ourArticlesGrid');
+                    grid.innerHTML = '';
+                    document.getElementById('ourCount').textContent = articles.length;
+
+                    articles.forEach(article => {
+                        const card = document.createElement('a');
+                        card.href = `../articles/${article.file}`;
+                        card.className = 'article-card';
+                        card.innerHTML = `
+                            <div class="article-img">${article.emoji}</div>
+                            <div class="article-body">
+                                <div class="article-tag" style="background:var(--gold-pale); color:var(--dark-2);">${article.tag}</div>
+                                <div class="article-title">${article.title}</div>
+                                <div class="article-desc">${article.description}</div>
+                                <div class="article-meta">
+                                    <span class="article-author">${article.author}</span>
+                                    <span class="article-date">${article.date}</span>
+                                </div>
+                                <button class="btn-read-later" onclick="event.preventDefault(); addToReadLater('${article.title}', '${article.author}')">📖 Читать позже</button>
+                            </div>
+                        `;
+                        grid.appendChild(card);
+                    });
+                })
+                .catch(() => {
+                    document.getElementById('ourArticlesGrid').innerHTML = `
+                        <div style="grid-column:1/-1; text-align:center; padding:40px; color:var(--text-muted);">
+                            <span style="font-size:48px; display:block;">📖</span>
+                            <p>Не удалось загрузить статьи.</p>
+                        </div>
+                    `;
+                });
+        }
+
+        // ========================================
+        // ИНИЦИАЛИЗАЦИЯ
+        // ========================================
+        document.addEventListener('DOMContentLoaded', function() {
+            // Восстанавливаем активную вкладку
+            const savedTab = localStorage.getItem('journalTab') || 'our';
+            switchTab(savedTab);
+
+            // Восстанавливаем подвкладку РПЦ
+            const savedSub = localStorage.getItem('rpzSubtab') || 'articles';
+            switchRpzSubtab(savedSub);
+
+            // Загружаем наши статьи
+            loadOurArticles();
+
+            // Загружаем статьи и новости РПЦ
+            loadRpzArticles();
+            loadRpzNews();
+
+            // По умолчанию контакты РПЦ скрыты
+            document.getElementById('rpzContacts').style.display = 'none';
+        });
+    </script>
 </body>
 </html>

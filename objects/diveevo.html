@@ -25,15 +25,15 @@
 
         <div class="object-hero">
             <div class="object-gallery">
-                <div class="gallery-slides" id="diveevo-slides">
+                <div class="gallery-slides">
                     <img class="gallery-slide" src="https://i.postimg.cc/kg147ngV/lori-0023008997-bigwww-jpg.jpg" alt="Дивеево 1" loading="lazy">
                     <img class="gallery-slide" src="https://i.postimg.cc/rwnmq8wS/original.jpg" alt="Дивеево 2" loading="lazy">
                     <img class="gallery-slide" src="https://i.postimg.cc/1t650wcw/Diveyevo-(51263813251).jpg" alt="Дивеево 3" loading="lazy">
                     <img class="gallery-slide" src="https://i.postimg.cc/2yyFYdyK/images-(3).jpg" alt="Дивеево 4" loading="lazy">
                 </div>
-                <button class="gallery-arrow prev" id="prev-btn">‹</button>
-                <button class="gallery-arrow next" id="next-btn">›</button>
-                <div class="gallery-nav" id="diveevo-nav"></div>
+                <button class="gallery-arrow prev">‹</button>
+                <button class="gallery-arrow next">›</button>
+                <div class="gallery-nav"></div>
                 <div class="object-gallery-badge">Святая обитель</div>
             </div>
 
@@ -148,51 +148,6 @@
     </div>
 
     <div id="footer-container"></div>
-
-    <script>
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-        const slidesContainer = document.getElementById('diveevo-slides');
-        const slides = slidesContainer.querySelectorAll('.gallery-slide');
-        const nav = document.getElementById('diveevo-nav');
-        let currentSlide = 0;
-
-        slides.forEach((_, index) => {
-            const dot = document.createElement('div');
-            dot.className = 'gallery-dot' + (index === 0 ? ' active' : '');
-            dot.onclick = () => goToSlide(index);
-            nav.appendChild(dot);
-        });
-
-        function updateSlide() {
-            const offset = -currentSlide * 100;
-            slidesContainer.style.transform = `translateX(${offset}%)`;
-            document.querySelectorAll('#diveevo-nav .gallery-dot').forEach((dot, i) => {
-                dot.classList.toggle('active', i === currentSlide);
-            });
-        }
-
-        function changeSlide(direction) {
-            currentSlide = (currentSlide + direction + slides.length) % slides.length;
-            updateSlide();
-        }
-
-        function goToSlide(index) {
-            currentSlide = index;
-            updateSlide();
-        }
-
-        document.getElementById('prev-btn').addEventListener('click', () => changeSlide(-1));
-        document.getElementById('next-btn').addEventListener('click', () => changeSlide(1));
-
-        let autoSlide = setInterval(() => changeSlide(1), 5000);
-
-        const gallery = document.querySelector('.object-gallery');
-        gallery.addEventListener('mouseenter', () => clearInterval(autoSlide));
-        gallery.addEventListener('mouseleave', () => {
-            autoSlide = setInterval(() => changeSlide(1), 5000);
-        });
-    </script>
 
     <script src="../js/config.js"></script>
     <script src="../js/components.js"></script>

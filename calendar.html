@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <title>Православный календарь 2026 — Православный Мир</title>
     <link rel="manifest" href="/manifest.json">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
         body { font-family: 'Inter', sans-serif; background: #FAF6ED; color: #1A1208; padding-bottom: 80px; }
@@ -15,6 +17,42 @@
         .cal-header { text-align: center; margin-bottom: 24px; }
         .cal-header h1 { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; color: #1A1208; line-height: 1.15; }
         .cal-header h1 em { font-style: italic; color: #C8941A; }
+
+        .cal-today-indicator {
+            text-align: center;
+            margin-bottom: 4px;
+            font-size: 14px;
+            color: #6B5A3A;
+            font-weight: 500;
+        }
+        .cal-today-indicator strong {
+            color: #C8941A;
+            font-weight: 700;
+        }
+        .cal-today-event {
+            text-align: center;
+            margin-bottom: 16px;
+            font-size: 13px;
+            color: #1A1208;
+            font-weight: 500;
+            padding: 6px 14px;
+            background: #F5E9C8;
+            border-radius: 100px;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            width: auto;
+            max-width: 100%;
+        }
+        .cal-today-event.empty {
+            background: transparent;
+            color: #9E8A6A;
+            font-weight: 400;
+        }
+        .cal-today-wrapper {
+            text-align: center;
+        }
+
         .cal-search { display: flex; align-items: center; gap: 10px; background: #FFFFFF; border-radius: 12px; padding: 4px 4px 4px 16px; box-shadow: 0 2px 16px rgba(26,18,8,0.10); margin: 0 auto 20px auto; max-width: 400px; }
         .cal-search input { flex: 1; border: none; outline: none; font-size: 14px; padding: 10px 0; background: transparent; font-family: 'Inter', sans-serif; }
         .cal-search button { background: #C8941A; border: none; border-radius: 6px; padding: 10px 18px; font-weight: 600; cursor: pointer; color: #1A1208; font-size: 14px; font-family: 'Inter', sans-serif; }
@@ -24,24 +62,46 @@
         .cal-nav-btn:hover { background: #C8941A; color: #fff; }
         .cal-month { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 600; color: #1A1208; }
         .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; margin-bottom: 32px; background: #FFFFFF; border-radius: 12px; padding: 12px; box-shadow: 0 2px 16px rgba(26,18,8,0.10); }
-        .cal-grid-header { text-align: center; font-size: 12px; font-weight: 600; color: #6B5A3A; padding: 8px 0; text-transform: uppercase; }
-        .cal-cell { aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 6px; font-size: 14px; font-weight: 500; color: #1A1208; cursor: pointer; transition: background 0.25s ease, transform 0.25s ease; position: relative; padding: 4px; }
+        .cal-grid-header { text-align: center; font-size: 12px; font-weight: 600; color: #6B5A3A; padding: 8px 0; text-transform: uppercase; letter-spacing: 0.05em; }
+        .cal-cell {
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #1A1208;
+            cursor: pointer;
+            transition: background 0.2s ease, transform 0.2s ease, color 0.2s ease;
+            font-family: 'Inter', sans-serif;
+            border: 2px solid transparent;
+        }
         .cal-cell:hover { background: #F0E8D4; transform: scale(1.05); }
         .cal-cell.empty { cursor: default; }
         .cal-cell.empty:hover { background: transparent; transform: none; }
-        .cal-cell.today { background: #F5E9C8; border: 2px solid #C8941A; font-weight: 700; }
-        .cal-cell.holiday { color: #C8941A; font-weight: 600; }
-        .cal-cell.holiday::after { content: '✨'; font-size: 10px; position: absolute; top: 2px; right: 4px; }
-        .cal-cell.fast { color: #6B5A3A; }
-        .cal-cell.fast::after { content: '🕯️'; font-size: 10px; position: absolute; top: 2px; right: 4px; }
-        .cal-cell.event { color: #1A1208; }
-        .cal-cell.event::after { content: '✝️'; font-size: 10px; position: absolute; top: 2px; right: 4px; }
-        .cal-cell.highlight { outline: 3px solid #E8B84B; outline-offset: -3px; background: rgba(200,148,26,0.15); }
+        .cal-cell.holiday { color: #C8941A; font-weight: 800; }
+        .cal-cell.fast { color: #6B5A3A; font-weight: 700; }
+        .cal-cell.event { color: #1A1208; font-weight: 700; }
+        .cal-cell.selected {
+            outline: 3px solid #E8B84B;
+            outline-offset: -3px;
+            background: rgba(200,148,26,0.15);
+        }
         .cal-details { background: #FFFFFF; border-radius: 12px; padding: 20px; box-shadow: 0 2px 16px rgba(26,18,8,0.10); border: 1px solid #F0E8D4; margin-top: 8px; min-height: 80px; }
         .cal-details-title { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 600; color: #1A1208; margin-bottom: 4px; }
         .cal-details-sub { font-size: 14px; color: #6B5A3A; margin-bottom: 8px; }
         .cal-details-event { font-size: 15px; color: #1A1208; }
-        @media (max-width: 560px) { .cal-grid { gap: 2px; padding: 8px; } .cal-cell { font-size: 11px; padding: 2px; } .cal-cell::after { font-size: 8px; top: 0px; right: 2px; } .cal-search { max-width: 100%; padding: 4px 4px 4px 12px; } }
+        @media (max-width: 560px) {
+            .cal-grid { gap: 2px; padding: 8px; }
+            .cal-cell { font-size: 15px; padding: 2px; }
+            .cal-search { max-width: 100%; padding: 4px 4px 4px 12px; }
+            .cal-today-event { font-size: 12px; padding: 4px 12px; }
+        }
+        @media (max-width: 400px) {
+            .cal-cell { font-size: 13px; }
+            .cal-grid { gap: 1px; padding: 6px; }
+        }
     </style>
 </head>
 <body>
@@ -59,6 +119,13 @@
                 <h1>Православный<br><em>календарь 2026</em></h1>
             </div>
 
+            <div class="cal-today-wrapper">
+                <div class="cal-today-indicator" id="todayIndicator">
+                    📅 Сегодня: <strong id="todayDateText">—</strong>
+                </div>
+                <div class="cal-today-event" id="todayEventText">—</div>
+            </div>
+
             <div class="cal-search">
                 <input type="text" id="dateSearch" placeholder="25 июня, 25.06, 25/06" oninput="autoFormatDate(this)" onkeydown="if(event.key==='Enter') searchDate()">
                 <button onclick="searchDate()">Найти</button>
@@ -66,7 +133,7 @@
 
             <div class="cal-nav">
                 <button class="cal-nav-btn" onclick="changeMonth(-1)">‹ Назад</button>
-                <span class="cal-month" id="currentMonthLabel">Июнь 2026</span>
+                <span class="cal-month" id="currentMonthLabel">Июль 2026</span>
                 <button class="cal-nav-btn" onclick="changeMonth(1)">Вперёд ›</button>
             </div>
 
@@ -147,14 +214,39 @@
             return null;
         }
 
-        let currentYear = 2026;
-        let currentMonth = 5;
-        let selectedDate = null;
+        // Определяем текущую дату сразу
+        const todayDate = new Date();
+        let currentYear = todayDate.getFullYear();
+        let currentMonth = todayDate.getMonth();
+        let todayStr = todayDate.getFullYear() + '-' + String(todayDate.getMonth()+1).padStart(2,'0') + '-' + String(todayDate.getDate()).padStart(2,'0');
 
         const weekDays = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
         const monthNames = ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'];
         const monthNamesRu = ['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
         const dayNamesRu = ['Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'];
+
+        function updateTodayIndicator() {
+            const today = new Date();
+            const d = today.getDate();
+            const m = today.getMonth();
+            const y = today.getFullYear();
+            document.getElementById('todayDateText').textContent = d + ' ' + monthNamesRu[m] + ' ' + y;
+
+            // Обновляем описание события на сегодня
+            const ev = getEvent(todayStr);
+            const eventText = document.getElementById('todayEventText');
+            if (ev) {
+                let icon = '';
+                if (ev.type === 'holiday') icon = '✨ ';
+                else if (ev.type === 'fast') icon = '🕯️ ';
+                else icon = '✝️ ';
+                eventText.textContent = icon + ev.title;
+                eventText.className = 'cal-today-event';
+            } else {
+                eventText.textContent = '📖 День без особых событий';
+                eventText.className = 'cal-today-event empty';
+            }
+        }
 
         function renderCalendar() {
             const grid = document.getElementById('calendarGrid');
@@ -176,16 +268,12 @@
                 grid.appendChild(div);
             }
 
-            const today = new Date();
-            const todayStr = today.getFullYear() + '-' + String(today.getMonth()+1).padStart(2,'0') + '-' + String(today.getDate()).padStart(2,'0');
-
             for (let d = 1; d <= daysInMonth; d++) {
                 const dateStr = currentYear + '-' + String(currentMonth+1).padStart(2,'0') + '-' + String(d).padStart(2,'0');
                 const cell = document.createElement('div');
                 cell.className = 'cal-cell';
                 cell.textContent = d;
-
-                if (dateStr === todayStr) cell.classList.add('today');
+                cell.dataset.date = dateStr;
 
                 const ev = getEvent(dateStr);
                 if (ev) {
@@ -195,11 +283,10 @@
                 }
 
                 cell.onclick = () => {
-                    document.querySelectorAll('.cal-cell').forEach(c => c.style.outline = 'none');
-                    document.querySelectorAll('.cal-cell').forEach(c => c.classList.remove('highlight'));
-                    cell.style.outline = '2px solid #C8941A';
-                    cell.style.outlineOffset = '-2px';
-                    cell.classList.add('highlight');
+                    document.querySelectorAll('.cal-cell').forEach(c => {
+                        c.classList.remove('selected');
+                    });
+                    cell.classList.add('selected');
                     showDayDetails(dateStr);
                 };
 
@@ -207,10 +294,10 @@
             }
 
             document.getElementById('currentMonthLabel').textContent = `${monthNames[currentMonth]} ${currentYear}`;
+            updateTodayIndicator();
         }
 
         function showDayDetails(dateStr) {
-            selectedDate = dateStr;
             const parts = dateStr.split('-');
             const d = parseInt(parts[2]);
             const m = parseInt(parts[1]) - 1;
@@ -227,11 +314,8 @@
             currentMonth += delta;
             if (currentMonth > 11) { currentMonth = 0; currentYear++; }
             if (currentMonth < 0) { currentMonth = 11; currentYear--; }
-            if (currentYear < 2026) { currentYear = 2026; currentMonth = 0; }
-            if (currentYear > 2026) { currentYear = 2026; currentMonth = 11; }
             renderCalendar();
-            document.querySelectorAll('.cal-cell').forEach(c => c.style.outline = 'none');
-            document.querySelectorAll('.cal-cell').forEach(c => c.classList.remove('highlight'));
+            document.querySelectorAll('.cal-cell').forEach(c => c.classList.remove('selected'));
             document.getElementById('selectedDayTitle').textContent = 'Выберите день в календаре';
             document.getElementById('selectedDaySub').textContent = '';
             document.getElementById('selectedDayEvent').textContent = '👆 Нажмите на любую дату выше';
@@ -297,37 +381,21 @@
 
             const dateStr = year + '-' + String(month+1).padStart(2,'0') + '-' + String(day).padStart(2,'0');
             setTimeout(() => {
-                const cells = document.querySelectorAll('.cal-cell');
-                cells.forEach(c => {
-                    c.style.outline = 'none';
-                    c.classList.remove('highlight');
-                });
+                document.querySelectorAll('.cal-cell').forEach(c => c.classList.remove('selected'));
                 const allCells = document.querySelectorAll('.cal-cell:not(.empty)');
                 allCells.forEach(c => {
                     if (parseInt(c.textContent) === day) {
-                        c.style.outline = '3px solid #E8B84B';
-                        c.style.outlineOffset = '-3px';
-                        c.classList.add('highlight');
+                        c.classList.add('selected');
                         showDayDetails(dateStr);
                     }
                 });
             }, 100);
         }
 
-        const today = new Date();
-        currentYear = today.getFullYear();
-        currentMonth = today.getMonth();
+        // ИНИЦИАЛИЗАЦИЯ — открываем текущий месяц
         renderCalendar();
-
-        const todayStr = today.getFullYear() + '-' + String(today.getMonth()+1).padStart(2,'0') + '-' + String(today.getDate()).padStart(2,'0');
+        // Показываем сегодняшнюю дату в деталях
         showDayDetails(todayStr);
-        setTimeout(() => {
-            document.querySelectorAll('.cal-cell.today').forEach(c => {
-                c.style.outline = '2px solid #C8941A';
-                c.style.outlineOffset = '-2px';
-                c.classList.add('highlight');
-            });
-        }, 100);
     </script>
 
     <script src="js/config.js"></script>

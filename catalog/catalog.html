@@ -94,14 +94,19 @@
             }
             .place-card:hover::after { opacity: 1; }
         }
+        @media (max-width: 560px) {
+            .place-card { height: 80px; min-height: 80px; }
+            .place-card-img { width: 80px; height: 80px; }
+            .place-card-name { font-size: 14px; }
+            .place-card-region { font-size: 11px; }
+            .place-card-body { padding: 10px 14px; }
+        }
     </style>
 </head>
 <body>
-    <!-- КОНТЕЙНЕРЫ ДЛЯ МЕНЮ -->
     <div id="nav-container"></div>
     <div id="bottom-nav-container"></div>
 
-    <!-- ОСНОВНОЙ КОНТЕНТ -->
     <div class="page-section">
         <div class="breadcrumbs">
             <a href="../index.html">Главная</a> &rarr;
@@ -118,17 +123,17 @@
             <button class="filter-btn" data-filter="Храм">Храмы</button>
             <button class="filter-btn" data-filter="Собор">Соборы</button>
             <button class="filter-btn" data-filter="Монастырь">Монастыри</button>
+            <button class="filter-btn" data-filter="Город">Города</button>
         </div>
 
         <div class="catalog-grid" id="catalogGrid"></div>
     </div>
 
-    <!-- КОНТЕЙНЕР ДЛЯ ПОДВАЛА -->
     <div id="footer-container"></div>
 
     <script>
         // ============================================
-        // ДАННЫЕ ДЛЯ КАТАЛОГА (ЕДИНЫЙ МАССИВ)
+        // ДАННЫЕ ДЛЯ КАТАЛОГА
         // ============================================
         const catalogData = [
             {
@@ -162,22 +167,28 @@
                 category: 'Монастырь',
                 link: '../objects/diveevo.html',
                 image: 'https://i.postimg.cc/2yyFYdyK/images-(3).jpg'
+            },
+            {
+                id: 5,
+                name: 'Арзамас',
+                region: 'Нижегородская область',
+                category: 'Город',
+                link: '../objects/arzamas.html',
+                image: 'https://i.postimg.cc/xdptGbTc/Arzamas-Saint-Nicholas-Monastery-Church-of-the-Epiphany-IMG-9660-1725.jpg'
             }
         ];
 
         // ============================================
-        // УМНАЯ ФИЛЬТРАЦИЯ (ПЕРЕРИСОВКА СЕТКИ)
+        // УМНАЯ ФИЛЬТРАЦИЯ
         // ============================================
         function renderCatalog(filter) {
             const grid = document.getElementById('catalogGrid');
-            grid.innerHTML = ''; // Очищаем сетку
+            grid.innerHTML = '';
 
-            // Фильтруем данные
             const filtered = filter === 'all' 
                 ? catalogData 
                 : catalogData.filter(item => item.category === filter);
 
-            // Если ничего не найдено
             if (filtered.length === 0) {
                 grid.innerHTML = `
                     <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-muted);">
@@ -188,14 +199,13 @@
                 return;
             }
 
-            // Создаём карточки
             filtered.forEach(item => {
                 const card = document.createElement('a');
                 card.href = item.link;
                 card.className = 'place-card';
                 card.innerHTML = `
                     <div class="place-card-img">
-                        <img src="${item.image}" alt="${item.name}" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="${item.image}" alt="${item.name}" style="width:100%; height:100%; object-fit:cover;" loading="lazy">
                     </div>
                     <div class="place-card-overlay"></div>
                     <div class="place-card-body">
@@ -209,26 +219,22 @@
         }
 
         // ============================================
-        // ОБРАБОТЧИКИ КНОПОК ФИЛЬТРОВ
+        // ОБРАБОТЧИКИ ФИЛЬТРОВ
         // ============================================
         document.querySelectorAll('.filter-btn').forEach(btn => {
             btn.addEventListener('click', function() {
-                // Снимаем активность со всех кнопок
                 document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                // Ставим активность на нажатую
                 this.classList.add('active');
-                // Перерисовываем каталог
                 renderCatalog(this.dataset.filter);
             });
         });
 
         // ============================================
-        // ИНИЦИАЛИЗАЦИЯ (ЗАГРУЗКА ВСЕХ)
+        // ИНИЦИАЛИЗАЦИЯ
         // ============================================
         renderCatalog('all');
     </script>
 
-    <!-- ПОДКЛЮЧЕНИЕ СКРИПТОВ -->
     <script src="../js/config.js"></script>
     <script src="../js/components.js"></script>
 </body>

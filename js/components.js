@@ -36,7 +36,6 @@ function buildNav() {
     return `
     <nav>
         <a href="${getPath('index.html')}" class="nav-logo">
-            <!-- ПРАВОСЛАВНЫЙ ВОСЬМИКОНЕЧНЫЙ КРЕСТ (ПРЯМАЯ НИЖНЯЯ ПЕРЕКЛАДИНА) -->
             <svg class="nav-logo-cross" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="12.5" y="1" width="3" height="30" rx="0.5" fill="#C8941A"/>
                 <rect x="9.5" y="4" width="9" height="3" rx="0.5" fill="#C8941A"/>
@@ -212,49 +211,138 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ============================================
-    // СЛАЙДЕРЫ (единый код для ПК и мобилок)
+    // СЛАЙДЕРЫ (РАБОТАЮТ ВЕЗДЕ)
     // ============================================
-    document.querySelectorAll('.object-gallery').forEach(gallery => {
-        const slides = gallery.querySelectorAll('.gallery-slide');
-        const nav = gallery.querySelector('.gallery-nav');
-        const prevBtn = gallery.querySelector('.gallery-arrow.prev');
-        const nextBtn = gallery.querySelector('.gallery-arrow.next');
-        let currentSlide = 0;
+    document.querySelectorAll('.object-gallery').forEach(function(gallery) {
+        // Находим контейнер со слайдами
+        var slidesContainer = gallery.querySelector('.gallery-slides');
+        if (!slidesContainer) return;
 
-        if (!nav || slides.length === 0) return;
+        var slides = slidesContainer.querySelectorAll('.gallery-slide');
+        if (slides.length < 2) return;
 
-        slides.forEach((_, index) => {
-            const dot = document.createElement('div');
-            dot.className = 'gallery-dot' + (index === 0 ? ' active' : '');
-            dot.onclick = () => goToSlide(index);
-            nav.appendChild(dot);
-        });
+        var nav = gallery.querySelector('.gallery-nav');
+        var prevBtn = gallery.querySelector('.gallery-arrow.prev');
+        var nextBtn = gallery.querySelector('.gallery-arrow.next');
+
+        var currentSlide = 0;
+        var autoTimer = null;
+
+        // Создаём точки навигации
+        if (nav) {
+            nav.innerHTML = '';
+            slides.forEach(function(_, index) {
+                var dot = document.createElement('div');
+                dot.className = 'gallery-dot' + (index === 0 ? ' active' : '');
+                dot.addEventListener('click', function() {
+                    goToSlide(index);
+                });
+                nav.appendChild(dot);
+            });
+        }
 
         function updateSlide() {
-            const offset = -currentSlide * 100;
-            gallery.style.transform = `translateX(${offset}%)`;
-            nav.querySelectorAll('.gallery-dot').forEach((dot, i) => {
-                dot.classList.toggle('active', i === currentSlide);
-            });
+            var offset = -currentSlide * 100;
+            slidesContainer.style.transition = 'transform 0.5s ease-in-out';
+            slidesContainer.style.transform = 'translateX(' + offset + '%)';
+
+            if (nav) {
+                var dots = nav.querySelectorAll('.gallery-dot');
+                dots.forEach(function(dot, i) {
+                    dot.classList.toggle('active', i === currentSlide);
+                });
+            }
         }
 
         function changeSlide(direction) {
             currentSlide = (currentSlide + direction + slides.length) % slides.length;
             updateSlide();
+            resetAuto();
         }
 
         function goToSlide(index) {
             currentSlide = index;
             updateSlide();
+            resetAuto();
         }
 
-        if (prevBtn) prevBtn.addEventListener('click', () => changeSlide(-1));
-        if (nextBtn) nextBtn.addEventListener('click', () => changeSlide(1));
+        function resetAuto() {
+            if (autoTimer) {
+                clearInterval(autoTimer);
+                autoTimer = null;
+            }
+            autoTimer = setInterval(function() {
+                changeSlide(1);
+            }, 5000);
+        }
 
-        let autoSlide = setInterval(() => changeSlide(1), 5000);
-        gallery.addEventListener('mouseenter', () => clearInterval(autoSlide));
-        gallery.addEventListener('mouseleave', () => {
-            autoSlide = setInterval(() => changeSlide(1), 5000);
+        // Кнопки
+        if (prevBtn) {
+            prevBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                changeSlide(-1);
+            });
+        }
+        if (nextBtn) {
+            nextBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                changeSlide(1);
+            });
+        }
+
+        // Свайп для мобильных
+        var startX = 0;
+        var isDragging = false;
+
+        gallery.addEventListener('touchstart', function(e) {
+            startX = e.changedTouches[0].screenX;
+            isDragging = true;
+            slidesContainer.style.transition = 'none';
+        }, { passive: true });
+
+        gallery.addEventListener('touchmove', function(e) {
+            if (!isDragging) return;
+            var diff = startX - e.changedTouches[0].screenX;
+            var offset = -currentSlide * 100 - (diff / gallery.offsetWidth * 100);
+            slidesContainer.style.transform = 'translateX(' + offset + '%)';
+        }, { passive: true });
+
+        gallery.addEventListener('touchend', function(e) {
+            if (!isDragging) return;
+            isDragging = false;
+            var diff = startX - e.changedTouches[0].screenX;
+            slidesContainer.style.transition = 'transform 0.5s ease-in-out';
+            if (Math.abs(diff) > 50) {
+                if (diff > 0) {
+                    changeSlide(1);
+                } else {
+                    changeSlide(-1);
+                }
+            } else {
+                updateSlide();
+            }
+            resetAuto();
+        }, { passive: true });
+
+        // Пауза при наведении
+        gallery.addEventListener('mouseenter', function() {
+            if (autoTimer) {
+                clearInterval(autoTimer);
+                autoTimer = null;
+            }
         });
+
+        gallery.addEventListener('mouseleave', function() {
+            resetAuto();
+        });
+
+        // Запуск
+        updateSlide();
+        resetAuto();
+
+        // Показываем кнопки и навигацию
+        if (prevBtn) prevBtn.style.display = 'flex';
+        if (nextBtn) nextBtn.style.display = 'flex';
+        if (nav) nav.style.display = 'flex';
     });
 });

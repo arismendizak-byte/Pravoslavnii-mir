@@ -1,0 +1,682 @@
+[
+  {
+    "name": "Паломническая служба Сретенского монастыря",
+    "region": "Москва",
+    "phone": "+7 (495) 640-30-40",
+    "website": "https://sretenie.moscow",
+    "email": "palomnik@sretenie.ru",
+    "org": "Сретенский монастырь"
+  },
+  {
+    "name": "Паломнический центр при Черниговском Патриаршем Подворье",
+    "region": "Москва",
+    "phone": "+7 (495) 098-00-43",
+    "website": "https://hrampodborom.ru/",
+    "email": "info@piligrim.msk.ru",
+    "org": "Черниговское подворье"
+  },
+  {
+    "name": "Паломническая служба храма св. Мефодия и Кирилла в Ростокине «Росток»",
+    "region": "Москва",
+    "phone": "+7 (495) 222-16-75",
+    "website": "https://hram-rostokino.ru/palomniki/",
+    "email": "Hram-km@mail.ru",
+    "org": "Храм в Ростокине"
+  },
+  {
+    "name": "Приходская паломническая служба «Знамение»",
+    "region": "Москва",
+    "phone": "+7 (495) 453-91-01",
+    "website": "https://xn--80aeldmpbyw0c.xn--p1ai/",
+    "email": "Znam77adm@mail.ru",
+    "org": "Храм Знамения"
+  },
+  {
+    "name": "Паломнический центр Московского Патриархата",
+    "region": "Москва",
+    "phone": "+7 (495) 685-93-38 (доб. 520)",
+    "website": "https://www.poklonnik.ru/",
+    "email": "info@poklonnik.ru",
+    "org": "Московский Патриархат"
+  },
+  {
+    "name": "Православный паломнический центр Донского монастыря",
+    "region": "Москва",
+    "phone": "+7 (919) 100-90-10",
+    "website": "http://palomnik.center",
+    "email": "info@palomnik.center",
+    "org": "Донской монастырь"
+  },
+  {
+    "name": "Паломническая служба «Иерусалимская Одигитрия»",
+    "region": "Москва",
+    "phone": "+7 (952) 910-54-79",
+    "website": "http://xn--80abbflmnp8b8bu.xn--p1ai/",
+    "email": "pps.ierus@yandex.ru",
+    "org": "Паломническая служба"
+  },
+  {
+    "name": "Паломническая служба «7 стран»",
+    "region": "Московская область",
+    "phone": "+7 (926) 133-13-28",
+    "website": "https://7stran.com/",
+    "email": "givonosnyiistochnik@gmail.com",
+    "org": "Храм Живоносный Источник (с. Быково)"
+  },
+  {
+    "name": "Паломническая служба Николо-Берлюковской пустыни",
+    "region": "Московская область",
+    "phone": "+7 (968) 374-11-07",
+    "website": "https://www.berluki.ru/",
+    "email": "berluki@mail.ru",
+    "org": "Николо-Берлюковская пустынь"
+  },
+  {
+    "name": "Паломническая служба Введенского Владычнего монастыря",
+    "region": "Московская область",
+    "phone": "+7 (4967) 724-625",
+    "website": "https://xn--80aaehbc1ad4i.xn--p1ai/",
+    "email": "inokini@yandex.ru",
+    "org": "Введенский Владычний монастырь (г. Серпухов)"
+  },
+  {
+    "name": "Паломнический центр «Благодатный дом»",
+    "region": "Московская область",
+    "phone": "+7 (496) 415-10-38",
+    "website": "https://oz-blago.ru/category/palomnichestvo",
+    "email": "contact@oz-blago.ru",
+    "org": "г. Орехово-Зуево"
+  },
+  {
+    "name": "Паломническая служба имени свт. Николая при Никитском монастыре",
+    "region": "Московская область",
+    "phone": "+7 (915) 141-70-57",
+    "website": "http://xn--80aaapdd3bff2h.xn--p1ai/",
+    "email": "nikit-mon@yandex.ru",
+    "org": "Никитский женский монастырь (г. Кашира)"
+  },
+  {
+    "name": "Паломническая служба «Верность» Спасо-Бородинского монастыря",
+    "region": "Московская область",
+    "phone": "+7 (926) 608-70-89",
+    "website": "https://spaso-borodinskiy.ru/",
+    "email": "borodino-1812@mail.ru",
+    "org": "Спасо-Бородинский монастырь (д. Семеновское)"
+  },
+  {
+    "name": "Паломническая служба имени прп. Владимира Белопесоцкого",
+    "region": "Московская область",
+    "phone": "+7 (496) 649-05-83",
+    "website": "https://svtbm.cerkov.ru/",
+    "email": "svtbm@yandex.ru",
+    "org": "Свято-Троицкий Белопесоцкий монастырь (г. Ступино)"
+  },
+  {
+    "name": "Паломническая служба имени св. блгв. кн. Александра Невского",
+    "region": "Московская область",
+    "phone": "+7 (906) 798-65-82",
+    "website": "https://egorievgrad.ru/",
+    "email": "eg.palomnik@yandex.ru",
+    "org": "г. Егорьевск"
+  },
+  {
+    "name": "Паломнический центр Троице-Сергиевой Лавры",
+    "region": "Московская область",
+    "phone": "+7 (496) 540-57-21",
+    "website": "https://lavra.ru/",
+    "email": "order@lavra.ru",
+    "org": "г. Сергиев Посад"
+  },
+  {
+    "name": "Паломнический центр Одинцовской епархии",
+    "region": "Московская область",
+    "phone": "+7 (926) 700-29-52",
+    "website": "",
+    "email": "",
+    "org": "Одинцовская епархия"
+  },
+  {
+    "name": "Православный паломнический центр Тамбовской Епархии",
+    "region": "Тамбов",
+    "phone": "+7 (4752) 718-499",
+    "website": "https://tambov-palomnik.ru/",
+    "email": "admin@eparhia-tmb.ru",
+    "org": "Тамбовская епархия"
+  },
+  {
+    "name": "Епархиальный паломнический отдел Россошанской епархии",
+    "region": "Воронежская область",
+    "phone": "+7 (903) 858-07-86",
+    "website": "https://roseparhia.ru/eparkhialnye-otdely/pilgrimage-department.php",
+    "email": "palomnik.rossosh@gmail.com",
+    "org": "г. Россошь"
+  },
+  {
+    "name": "Епархиальный паломнический центр Касимовской епархии",
+    "region": "Касимов",
+    "phone": "+7 (965) 651-51-65",
+    "website": "https://kas-eparhia.ru/",
+    "email": "mon.savvos@yandex.ru",
+    "org": "Касимовская епархия"
+  },
+  {
+    "name": "Тульский епархиальный паломнический центр",
+    "region": "Тула",
+    "phone": "+7 (910) 153-30-40",
+    "website": "https://tulapalomnik71.ru/",
+    "email": "tulapalomnik@mail.ru",
+    "org": "Тульская епархия"
+  },
+  {
+    "name": "Паломническая служба «София»",
+    "region": "Курск",
+    "phone": "+7 (4712) 525-478",
+    "website": "https://www.kursksofiya.ru/",
+    "email": "kursksofiya@mail.ru",
+    "org": "Приход храма Веры, Надежды, Любови"
+  },
+  {
+    "name": "Паломническая служба Переславской епархии",
+    "region": "Переславль-Залесский",
+    "phone": "+7 (48 535) 94-065",
+    "website": "https://preparhia.ru/organisation/palomnicheskaya-sluzhba",
+    "email": "aksios.eparhia@gmail.com",
+    "org": "Переславская епархия"
+  },
+  {
+    "name": "Православная паломническая служба Шуйской епархии",
+    "region": "Шуя",
+    "phone": "+7 (961) 117-94-61",
+    "website": "https://shuya-eparhia.ru/",
+    "email": "nikola4-deti@yandex.ru",
+    "org": "Шуйская епархия"
+  },
+  {
+    "name": "Паломническая служба Кемеровской Епархии",
+    "region": "Кемерово",
+    "phone": "+7 (923) 488-80-58",
+    "website": "https://kemesp.vsite.pro/",
+    "email": "kem-eps@list.ru",
+    "org": "Кемеровская епархия"
+  },
+  {
+    "name": "Православный Паломнический центр Белевской епархии",
+    "region": "Плавск",
+    "phone": "+7 (48 752) 21-888",
+    "website": "https://xn--80aakfe3afbj.xn--p1ai/",
+    "email": "hram.serg@yandex.ru",
+    "org": "Белевская епархия"
+  },
+  {
+    "name": "Паломническая служба «Одигитрия»",
+    "region": "Ярославль",
+    "phone": "+7 (980) 744-67-84",
+    "website": "https://xn----8sbabbgdbu4af0a9e.xn--p1ai/",
+    "email": "yarkazan@list.ru",
+    "org": "Казанский женский монастырь"
+  },
+  {
+    "name": "Православная паломническая служба «Преображение»",
+    "region": "Железногорск",
+    "phone": "+7 (920) 736-44-31",
+    "website": "https://xn--e1aboudcffm0l.xn--p1ai/palomnicheskaya-sluzhba.html",
+    "email": "zheleznogorsk.preobragenie@yandex.ru",
+    "org": "Железногорская епархия"
+  },
+  {
+    "name": "Паломнический центр «КОЛОКОЛ»",
+    "region": "Ростов",
+    "phone": "+7 (48 536) 641-30",
+    "website": "https://hramrostov.ru/",
+    "email": "rostovsobor@yandex.ru",
+    "org": "Успенский собор"
+  },
+  {
+    "name": "Приходская паломническая служба «Тихвинский Паломник»",
+    "region": "Калуга",
+    "phone": "+7 (908) 824-08-81",
+    "website": "https://tihpalomnik.ru/",
+    "email": "tihpalomnik@yandex.ru",
+    "org": "Храм в Козлово"
+  },
+  {
+    "name": "Паломнический центр «Ярославский Паломник»",
+    "region": "Ярославль",
+    "phone": "+7 (4852) 727-720",
+    "website": "https://yarpalomnik.ru/",
+    "email": "yarpiligrim@yandex.ru",
+    "org": "Ярославская епархия"
+  },
+  {
+    "name": "Паломническая служба Пензенской епархии «Пензенский паломник»",
+    "region": "Пенза",
+    "phone": "+7 (927) 375-60-61",
+    "website": "https://palomnikpenza.ru/",
+    "email": "palomnikpenza@mail.ru",
+    "org": "Пензенская епархия"
+  },
+  {
+    "name": "Паломническая служба Ставропольской и Невинномысской епархии",
+    "region": "Ставрополь",
+    "phone": "+7 (8652) 358-051",
+    "website": "https://stavropol-eparhia.ru/category/palomnicheskaya-sluzhba/",
+    "email": "palomnik.stavropol-eparhia@yandex.ru",
+    "org": "Ставропольская епархия"
+  },
+  {
+    "name": "Паломнический Центр Орловской епархии",
+    "region": "Орёл",
+    "phone": "+7 (903) 882-26-36",
+    "website": "https://orel-eparhia.ru/structure/departments/piligrimage",
+    "email": "logos-orel@yandex.ru",
+    "org": "Орловская епархия"
+  },
+  {
+    "name": "Паломнический центр «Убрус»",
+    "region": "Ярославль",
+    "phone": "+7 (920) 106-92-49",
+    "website": "https://kamonastery.ru/",
+    "email": "kamonastery@gmail.com",
+    "org": "Спасо-Афанасиевский монастырь"
+  },
+  {
+    "name": "Паломническая служба «Елецкий паломник»",
+    "region": "Елец",
+    "phone": "+7 (904) 690-16-00",
+    "website": "https://el-eparhy.ru/palomnicheskij-otdel/",
+    "email": "el.palomnik@mail.ru",
+    "org": "Елецкая епархия"
+  },
+  {
+    "name": "Паломническая служба Клинцовской епархии",
+    "region": "Клинцы",
+    "phone": "+7 (980) 335-78-22",
+    "website": "https://eparhia-klintsy.ru/",
+    "email": "pashaka500@gmail.com",
+    "org": "Клинцовская епархия"
+  },
+  {
+    "name": "Паломническая служба Брянской епархии «Брянский паломник»",
+    "region": "Брянск",
+    "phone": "+7 (4832) 599-263",
+    "website": "https://bryansk-palomnik.ru/",
+    "email": "proskinites@yandex.ru",
+    "org": "Брянская епархия"
+  },
+  {
+    "name": "Паломническая служба Новокузнецкой Епархии",
+    "region": "Новокузнецк",
+    "phone": "+7 (950) 574-54-74",
+    "website": "https://eparhia-nk.ru/",
+    "email": "kuzbishop@mail.ru",
+    "org": "Новокузнецкая епархия"
+  },
+  {
+    "name": "Паломническая служба Санкт-Петербургской Епархии",
+    "region": "Санкт-Петербург",
+    "phone": "+7 (921) 755-51-25",
+    "website": "https://mitropolia-palomnik.ru/",
+    "email": "info@mitropolia-palomnik.ru",
+    "org": "Санкт-Петербургская епархия"
+  },
+  {
+    "name": "Паломническая служба Коневского монастыря",
+    "region": "Санкт-Петербург",
+    "phone": "+7 (812) 571-80-79",
+    "website": "https://konevskiy.ru/",
+    "email": "manager-konev@mail.ru",
+    "org": "Коневский монастырь"
+  },
+  {
+    "name": "Паломническая служба при Нефтекамской епархии",
+    "region": "Нефтекамск",
+    "phone": "+7 (987) 583-54-59",
+    "website": "https://nefeparhia.ru/",
+    "email": "kancneftekamsk@mail.ru",
+    "org": "Нефтекамская епархия"
+  },
+  {
+    "name": "Паломнический центр Георгиевской епархии",
+    "region": "Георгиевск",
+    "phone": "+7 (87 951) 62-203",
+    "website": "https://palomnichestvo.georgeparhia.ru/",
+    "email": "georg-eparhia@mail.ru",
+    "org": "Георгиевская епархия"
+  },
+  {
+    "name": "Паломнический центр Александро-Невского собора",
+    "region": "Новосибирск",
+    "phone": "+7 (913) 007-50-15",
+    "website": "https://ansobor.ru/",
+    "email": "palomnik@sibmail.ru",
+    "org": "Александро-Невский собор"
+  },
+  {
+    "name": "Паломническая служба «Знамение»",
+    "region": "Борисоглебск",
+    "phone": "+7 (950) 755-71-56",
+    "website": "https://bsk-eparhia.ru/eparhialnye-otdely/palomnicheskij-otdel/",
+    "email": "bosenko_sergei@mail.ru",
+    "org": "Борисоглебская епархия"
+  },
+  {
+    "name": "Паломническая служба «Преображение»",
+    "region": "Бутурлиновка",
+    "phone": "+7 (47 361) 231-55",
+    "website": "https://preob.cerkov.ru/",
+    "email": "buturlin-sobor@mail.ru",
+    "org": "Борисоглебская епархия"
+  },
+  {
+    "name": "Единый православный паломнический центр",
+    "region": "Смоленск",
+    "phone": "+7 (910) 788-90-16",
+    "website": "https://smol-stt-app.cerkov.ru/",
+    "email": "palomniksm@yandex.ru",
+    "org": "Храм Петра и Павла"
+  },
+  {
+    "name": "Паломническая служба Ейской епархии «Путник»",
+    "region": "Ейск",
+    "phone": "+7 (86 132) 21-046",
+    "website": "https://eyskiy-putnik.turbo.site/",
+    "email": "info@eisk-eparh.ru",
+    "org": "Ейская епархия"
+  },
+  {
+    "name": "Паломническая служба «Задонский паломник»",
+    "region": "Липецк",
+    "phone": "+7 (4742) 250-365",
+    "website": "",
+    "email": "latyshva-na@bk.ru",
+    "org": "Задонский монастырь"
+  },
+  {
+    "name": "Паломническая служба Вологодской епархии",
+    "region": "Вологда",
+    "phone": "+7 (905) 298-20-93",
+    "website": "https://palomnikvologda.vsite.pro",
+    "email": "palomnik35@yandex.ru",
+    "org": "Вологодская епархия"
+  },
+  {
+    "name": "Паломнический центр «Южный Паломник»",
+    "region": "Краснодар",
+    "phone": "+7 (861) 260-59-58",
+    "website": "https://www.sdhram.ru/",
+    "email": "yugpalmer@mail.ru",
+    "org": "Паломнический центр"
+  },
+  {
+    "name": "Православная паломническая служба «Азария»",
+    "region": "Братск",
+    "phone": "+7 (3953) 258-025",
+    "website": "https://azariatour.ru/",
+    "email": "azaria.ru@gmail.com",
+    "org": "Братская епархия"
+  },
+  {
+    "name": "Паломническая служба «Елеон»",
+    "region": "Йошкар-Ола",
+    "phone": "+7 (902) 325-81-12",
+    "website": "",
+    "email": "mari-palomnik@yandex.ru",
+    "org": "Паломническая служба"
+  },
+  {
+    "name": "Паломническая служба Урюпинской епархии «Покров»",
+    "region": "Урюпинск",
+    "phone": "+7 (909) 393-99-51",
+    "website": "https://xn--80aaahfc1b4ann.xn--p1ai/otdely/palomnichestvo/",
+    "email": "aistur61@yandex.ru",
+    "org": "Урюпинская епархия"
+  },
+  {
+    "name": "Паломническая служба Архангельского подворья Соловецкого монастыря",
+    "region": "Архангельск",
+    "phone": "+7 (911) 560-59-48",
+    "website": "https://palomnik.solovki-monastyr.ru/",
+    "email": "info@slovodvina.ru",
+    "org": "Соловецкий монастырь"
+  },
+  {
+    "name": "Паломническая служба Искитимской епархии",
+    "region": "Искитим",
+    "phone": "+7 (913) 943-10-85",
+    "website": "https://iskitimeparhia.ru/palomnik.html",
+    "email": "iskitimpalomnik@mail.ru",
+    "org": "Искитимская епархия"
+  },
+  {
+    "name": "Паломническая служба Севастопольского благочиния «Купель»",
+    "region": "Севастополь",
+    "phone": "+7 (978) 709-46-88",
+    "website": "",
+    "email": "Sev.palom@bk.ru",
+    "org": "Севастопольское благочиние"
+  },
+  {
+    "name": "Паломническая служба «Истоки»",
+    "region": "Севастополь",
+    "phone": "+7 (978) 072-58-25",
+    "website": "",
+    "email": "politrifon@gmail.com",
+    "org": "Паломническая служба"
+  },
+  {
+    "name": "Паломнический Центр Воронежской Епархии",
+    "region": "Воронеж",
+    "phone": "+7 (473) 255-40-05",
+    "website": "https://palomnikrus.ru",
+    "email": "palomnikrus@list.ru",
+    "org": "Воронежская епархия"
+  },
+  {
+    "name": "Паломническая служба Соловецкого монастыря",
+    "region": "Соловецкий",
+    "phone": "+7 (911) 575-83-10",
+    "website": "https://palomnik.solovki-monastyr.ru",
+    "email": "palomnik@solovki-monastyr.ru",
+    "org": "Соловецкий монастырь"
+  },
+  {
+    "name": "Паломническая служба «Аю-Даг»",
+    "region": "Алушта",
+    "phone": "+7 (978) 620-14-14",
+    "website": "https://monastyr-kid.ru",
+    "email": "turpodvorie@mail.ru",
+    "org": "Паломническая служба"
+  },
+  {
+    "name": "Паломническая служба Камчатской епархии",
+    "region": "Петропавловск-Камчатский",
+    "phone": "+7 (962) 215-78-58",
+    "website": "http://nestor.pravkamchatka.ru",
+    "email": "pke@list.ru",
+    "org": "Камчатская епархия"
+  },
+  {
+    "name": "Паломническая служба Благовещенской епархии",
+    "region": "Благовещенск",
+    "phone": "+7 (961) 950-00-27",
+    "website": "https://blaginform.ru/palomnicheskaya-sluzhba",
+    "email": "felixicharli@mail.ru",
+    "org": "Благовещенская епархия"
+  },
+  {
+    "name": "Паломническая служба Владикавказской Епархии",
+    "region": "Владикавказ",
+    "phone": "+7 (8672) 53-17-33",
+    "website": "https://pravoslavnaya-alania.ru",
+    "email": "diocese@blagos.ru",
+    "org": "Владикавказская епархия"
+  },
+  {
+    "name": "Паломническая служба Канской епархии «Здравие»",
+    "region": "Канск",
+    "phone": "+7 (39 161) 39-079",
+    "website": "http://zdravie-tur.ru/",
+    "email": "Zdravie_tur@mail.ru",
+    "org": "Канская епархия"
+  },
+  {
+    "name": "Паломническая служба «Покров» (Кинешма)",
+    "region": "Кинешма",
+    "phone": "+7 (910) 680-55-88",
+    "website": "https://kinsobor.blogspot.com/",
+    "email": "kineshma-sobor@yandex.ru",
+    "org": "Троицко-Успенский собор"
+  },
+  {
+    "name": "Православный паломнический центр «Центр социальных программ «Жизнь»",
+    "region": "Нижний Новгород",
+    "phone": "+7 (831) 274-64-77",
+    "website": "https://palomnik.nne.ru/",
+    "email": "palomniknn@yandex.ru",
+    "org": "Центр социальных программ"
+  },
+  {
+    "name": "Паломническая служба Омской епархии «Ачаир»",
+    "region": "Омск",
+    "phone": "+7 (951) 457-43-74",
+    "website": "https://omsk-eparhiya.ru/",
+    "email": "omskpalomnik@mail.ru",
+    "org": "Омская епархия"
+  },
+  {
+    "name": "Паломническая служба «Православный паломник» (Хлебодаровка)",
+    "region": "Хлебодаровка",
+    "phone": "+7 (906) 107-43-38",
+    "website": "",
+    "email": "avdeev-1989@yandex.ru",
+    "org": "Храм Успения Божией Матери"
+  },
+  {
+    "name": "Православная паломническая служба Сердобской Епархии",
+    "region": "Сердобск",
+    "phone": "+7 (963) 104-17-40",
+    "website": "https://serdobsk-eparh.ru/",
+    "email": "palomotdelse@gmail.com",
+    "org": "Сердобская епархия"
+  },
+  {
+    "name": "Паломническая служба «Фавор»",
+    "region": "Алушта",
+    "phone": "+7 (978) 708-11-97",
+    "website": "https://pokrovcrimea.ru",
+    "email": "otetsigor@ukr.net",
+    "org": "Паломническая служба"
+  },
+  {
+    "name": "Паломнический центр Симферопольской и Крымской епархии",
+    "region": "Симферополь",
+    "phone": "+7 (978) 820-30-98",
+    "website": "https://palomnic.ru/",
+    "email": "atushev@yandex.ru",
+    "org": "Симферопольская епархия"
+  },
+  {
+    "name": "Паломническая служба Сызранской епархии",
+    "region": "Сызрань",
+    "phone": "+7 (927) 77-000-71",
+    "website": "",
+    "email": "palomnikszreparhia@gmail.com",
+    "org": "Сызранская епархия"
+  },
+  {
+    "name": "Паломнический центр «Селигер»",
+    "region": "Тверь",
+    "phone": "+7 (4822) 321-208",
+    "website": "https://seliger-palomnik.ru/",
+    "email": "palomnik@tvereparhia.ru",
+    "org": "Тверская епархия"
+  },
+  {
+    "name": "Православная паломническая служба Челябинской епархии",
+    "region": "Челябинск",
+    "phone": "+7 (919) 346-30-67",
+    "website": "https://palomniki.pravorg.ru",
+    "email": "Palomniki74@bk.ru",
+    "org": "Челябинская епархия"
+  },
+  {
+    "name": "Паломнический отдел Чувашской митрополии",
+    "region": "Чебоксары",
+    "phone": "+7 (927) 840-50-40",
+    "website": "https://putnik.cerkov.ru/",
+    "email": "Feo-doroga@yandex.ru",
+    "org": "Чувашская митрополия"
+  },
+  {
+    "name": "Паломническая служба Шадринской епархии «Преображение»",
+    "region": "Шадринск",
+    "phone": "+7 (912) 976-73-45",
+    "website": "https://shadreparh.cerkov.ru/",
+    "email": "t.v.g_45@mail.ru",
+    "org": "Шадринская епархия"
+  },
+  {
+    "name": "Православная паломническая служба Гатчинской Епархии",
+    "region": "Гатчина",
+    "phone": "+7 (921) 937-48-09",
+    "website": "https://palomnik-club.ru",
+    "email": "boxpam@mail.ru",
+    "org": "Гатчинская епархия"
+  },
+  {
+    "name": "Православная паломническая служба Екатеринбургской епархии",
+    "region": "Екатеринбург",
+    "phone": "+7 (912) 690-40-40",
+    "website": "https://palomural.ru",
+    "email": "Palom-ekb@internet.ru",
+    "org": "Екатеринбургская епархия"
+  },
+  {
+    "name": "Вяземская Епархиальная Паломническая Служба",
+    "region": "Вязьма",
+    "phone": "+7 (48 131) 41-773",
+    "website": "https://palomniksm.ru/",
+    "email": "Vyazma.eparh@mail.ru",
+    "org": "Вяземская епархия"
+  },
+  {
+    "name": "Паломническая служба «Кавказский Паломник»",
+    "region": "Пятигорск",
+    "phone": "+7 (879) 333-25-33",
+    "website": "http://Kavkaz-palomnik.ru",
+    "email": "Kavkaz-palomnik@mail.ru",
+    "org": "Пятигорская и Черкесская епархия"
+  },
+  {
+    "name": "Православная паломническая служба «Покров» (Энгельс)",
+    "region": "Энгельс",
+    "phone": "+7 (8453) 568-826",
+    "website": "http://www.pokrovsk-hram.ru/",
+    "email": "Pokrovskhram@yandex.ru",
+    "org": "Храм Покрова Божией Матери на Волге"
+  },
+  {
+    "name": "Паломническая служба «Ржевский паломник»",
+    "region": "Ржев",
+    "phone": "+7 (904) 029-55-60",
+    "website": "https://xn--80aafajbbae2bbm7f.xn--p1ai/",
+    "email": "Rzhev-palomnik@mail.ru",
+    "org": "Оковецкий кафедральный собор"
+  },
+  {
+    "name": "Паломнический центр имени святого князя Александра Невского",
+    "region": "Волгоград",
+    "phone": "+7 (906) 404-56-70",
+    "website": "",
+    "email": "palomnikvolgograda@yandex.ru",
+    "org": "Волгоградская епархия"
+  },
+  {
+    "name": "Паломническая служба Саратовской Епархии",
+    "region": "Саратов",
+    "phone": "+7 (8452) 27-30-87",
+    "website": "",
+    "email": "pokrovhram@yandex.ru",
+    "org": "Саратовская епархия"
+  }
+]

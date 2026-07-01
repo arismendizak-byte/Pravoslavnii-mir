@@ -9,30 +9,508 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
     <style>
-        .routes-header { margin-bottom: 40px; text-align: center; }
+        /* ===== ОБЩИЕ СТИЛИ ===== */
+        .routes-header { text-align: center; margin-bottom: 32px; }
         .routes-header h1 { font-family: 'Playfair Display', serif; font-size: clamp(32px, 4vw, 48px); font-weight: 700; color: var(--dark); line-height: 1.15; }
         .routes-header h1 em { font-style: italic; color: var(--gold); }
         .routes-header p { font-size: 16px; color: var(--text-muted); max-width: 600px; margin: 0 auto; line-height: 1.7; }
 
-        .routes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; }
+        /* ===== ВКЛАДКИ ===== */
+        .routes-tabs {
+            display: flex;
+            gap: 4px;
+            background: var(--cream-2);
+            border-radius: var(--radius-md);
+            padding: 4px;
+            margin-bottom: 32px;
+            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid var(--cream-2);
+        }
+        .routes-tab {
+            flex: 1;
+            padding: 10px 16px;
+            border: none;
+            border-radius: var(--radius-sm);
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-muted);
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .routes-tab:hover { color: var(--dark); background: rgba(255,255,255,0.5); }
+        .routes-tab.active { background: var(--white); color: var(--dark); box-shadow: 0 2px 8px rgba(26,18,8,0.08); font-weight: 600; }
+        .routes-tab .tab-icon { margin-right: 6px; }
+        .routes-tab .tab-badge {
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 600;
+            background: var(--gold);
+            color: var(--dark);
+            padding: 1px 8px;
+            border-radius: 100px;
+            margin-left: 6px;
+        }
+        .routes-tab .tab-badge.rpz { background: #1A1208; color: #fff; }
 
+        /* ===== КОНТЕНТ ===== */
+        .tab-content { display: none; animation: fadeIn 0.4s ease; }
+        .tab-content.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+        .tab-header-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        .tab-header-info .tab-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        .tab-header-info .tab-title em { font-style: italic; color: var(--gold); }
+        .tab-header-info .tab-sub { font-size: 14px; color: var(--text-muted); }
+        .tab-header-info .tab-link {
+            font-size: 13px;
+            color: var(--gold);
+            font-weight: 500;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            transition: gap 0.25s ease;
+        }
+        .tab-header-info .tab-link:hover { gap: 8px; }
+
+        .official-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(200,148,26,0.1);
+            border: 1px solid rgba(200,148,26,0.2);
+            border-radius: 100px;
+            padding: 3px 12px 3px 10px;
+            font-size: 11px;
+            color: var(--gold);
+            font-weight: 500;
+        }
+        .official-badge::before {
+            content: '✓';
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gold);
+            color: #fff;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            font-size: 10px;
+            font-weight: 700;
+        }
+
+        .refresh-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border: 1px solid var(--cream-2);
+            border-radius: var(--radius-sm);
+            background: var(--white);
+            color: var(--text-muted);
+            font-size: 13px;
+            font-family: 'Inter', sans-serif;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+        .refresh-btn:hover { border-color: var(--gold); color: var(--gold); }
+        .refresh-btn .refresh-icon { display: inline-block; transition: transform 0.6s ease; }
+        .refresh-btn.spinning .refresh-icon { transform: rotate(360deg); }
+
+        /* ===== ПОИСК С АВТОПОДСКАЗКАМИ ===== */
+        .search-wrapper {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: var(--white);
+            border-radius: var(--radius-md);
+            padding: 4px 4px 4px 18px;
+            border: 2px solid var(--cream-2);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 8px rgba(26,18,8,0.04);
+        }
+        .search-box:focus-within {
+            border-color: var(--gold);
+            box-shadow: 0 4px 16px rgba(200,148,26,0.15);
+        }
+        .search-box .search-icon {
+            font-size: 18px;
+            color: var(--text-muted);
+            margin-right: 10px;
+        }
+        .search-box input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            padding: 12px 0;
+            background: transparent;
+            font-family: 'Inter', sans-serif;
+            color: var(--dark);
+        }
+        .search-box input::placeholder {
+            color: #9E8A6A;
+        }
+        .search-box .clear-btn {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-size: 18px;
+            padding: 4px 12px;
+            display: none;
+        }
+        .search-box .clear-btn.visible { display: block; }
+        .search-box .search-btn {
+            background: var(--gold);
+            border: none;
+            border-radius: var(--radius-sm);
+            padding: 8px 20px;
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--dark);
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            transition: background 0.25s ease;
+        }
+        .search-box .search-btn:hover { background: var(--gold-light); }
+
+        /* ---- Автоподсказки ---- */
+        .autocomplete-list {
+            position: absolute;
+            top: calc(100% + 4px);
+            left: 0;
+            right: 0;
+            background: var(--white);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--cream-2);
+            box-shadow: 0 8px 32px rgba(26,18,8,0.12);
+            max-height: 280px;
+            overflow-y: auto;
+            z-index: 100;
+            display: none;
+        }
+        .autocomplete-list.active { display: block; }
+        .autocomplete-list::-webkit-scrollbar { width: 4px; }
+        .autocomplete-list::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 4px; }
+        .autocomplete-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 18px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            border-bottom: 1px solid var(--cream);
+        }
+        .autocomplete-item:last-child { border-bottom: none; }
+        .autocomplete-item:hover { background: var(--gold-pale); }
+        .autocomplete-item .item-name {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--dark);
+        }
+        .autocomplete-item .item-count {
+            font-size: 12px;
+            color: var(--text-muted);
+            background: var(--cream-2);
+            padding: 2px 10px;
+            border-radius: 100px;
+        }
+        .autocomplete-item .item-region {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .autocomplete-empty {
+            padding: 20px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        /* ===== ПОПУЛЯРНЫЕ ГОРОДА ===== */
+        .popular-cities {
+            margin-bottom: 24px;
+        }
+        .popular-cities .popular-label {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .popular-cities .popular-label::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--cream-2);
+        }
+        .popular-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 10px;
+        }
+        .popular-chip {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 14px;
+            background: var(--white);
+            border: 1px solid var(--cream-2);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: all 0.25s ease;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--dark);
+        }
+        .popular-chip:hover {
+            border-color: var(--gold);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(26,18,8,0.08);
+        }
+        .popular-chip .chip-icon {
+            font-size: 18px;
+        }
+        .popular-chip .chip-count {
+            font-size: 11px;
+            color: var(--text-muted);
+            background: var(--cream-2);
+            padding: 1px 8px;
+            border-radius: 100px;
+            margin-left: auto;
+        }
+
+        /* ===== АККОРДЕОН (ФЕДЕРАЛЬНЫЕ ОКРУГА) ===== */
+        .districts-accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .district-item {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--cream-2);
+            overflow: hidden;
+            transition: border-color 0.25s ease;
+        }
+        .district-item:hover { border-color: var(--gold); }
+        .district-item.active { border-color: var(--gold); }
+
+        .district-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 18px;
+            cursor: pointer;
+            user-select: none;
+            transition: background 0.25s ease;
+            gap: 12px;
+        }
+        .district-header:hover { background: var(--cream); }
+        .district-header .district-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex: 1;
+            min-width: 0;
+        }
+        .district-header .district-icon {
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+        .district-header .district-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        .district-header .district-count {
+            font-size: 13px;
+            color: var(--text-muted);
+            font-weight: 500;
+            white-space: nowrap;
+        }
+        .district-header .district-arrow {
+            font-size: 14px;
+            color: var(--text-muted);
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+        }
+        .district-item.active .district-arrow { transform: rotate(180deg); }
+
+        .district-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+            padding: 0 18px;
+        }
+        .district-item.active .district-body {
+            max-height: 2000px;
+            padding: 0 18px 16px;
+        }
+
+        .district-cities {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 6px;
+        }
+        .district-city {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 6px 10px;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: background 0.2s ease;
+            font-size: 13px;
+            color: var(--dark);
+        }
+        .district-city:hover { background: var(--gold-pale); }
+        .district-city .city-name { font-weight: 500; }
+        .district-city .city-count {
+            font-size: 11px;
+            color: var(--text-muted);
+            background: var(--cream-2);
+            padding: 1px 8px;
+            border-radius: 100px;
+        }
+
+        /* ===== РЕЗУЛЬТАТЫ ПОИСКА ===== */
+        .search-results {
+            display: none;
+            margin-top: 16px;
+        }
+        .search-results.active { display: block; }
+        .search-results .result-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 12px;
+        }
+        .search-results .result-title em { font-style: italic; color: var(--gold); }
+
+        .result-services {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 12px;
+        }
+        .result-service {
+            background: var(--white);
+            border: 1px solid var(--cream-2);
+            border-radius: var(--radius-sm);
+            padding: 14px 16px;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .result-service:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-card);
+        }
+        .result-service .rs-name {
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--dark);
+        }
+        .result-service .rs-region {
+            font-size: 12px;
+            color: var(--gold);
+            font-weight: 500;
+        }
+        .result-service .rs-phone {
+            font-size: 13px;
+            color: var(--text);
+            margin-top: 4px;
+        }
+        .result-service .rs-phone a { color: var(--gold); text-decoration: none; }
+        .result-service .rs-phone a:hover { text-decoration: underline; }
+        .result-service .rs-website {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+        .result-service .rs-website a { color: var(--gold); text-decoration: none; word-break: break-all; }
+        .result-service .rs-website a:hover { text-decoration: underline; }
+        .result-service .rs-org {
+            font-size: 12px;
+            color: #6B5A3A;
+            margin-top: 4px;
+            padding: 2px 10px;
+            background: var(--cream);
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+        }
+        .no-results .no-icon { font-size: 48px; display: block; margin-bottom: 12px; }
+
+        /* ===== КОНТАКТЫ ===== */
+        .rpz-contacts {
+            margin-top: 32px;
+            padding: 20px;
+            background: var(--white);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--cream-2);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+            text-align: center;
+        }
+        .rpz-contacts .contact-item { min-width: 100px; }
+        .rpz-contacts .contact-icon { font-size: 20px; }
+        .rpz-contacts .contact-label { font-size: 13px; font-weight: 600; color: var(--dark); }
+        .rpz-contacts .contact-value { font-size: 13px; color: var(--text-muted); }
+        .rpz-contacts .contact-value a { color: var(--gold); text-decoration: none; }
+
+        /* ===== СЕТКА НАШИХ МАРШРУТОВ ===== */
+        .routes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 24px;
+        }
         .route-card {
             background: var(--white);
             border-radius: var(--radius-md);
             overflow: hidden;
             box-shadow: var(--shadow-card);
-            transition: transform var(--transition), box-shadow var(--transition);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             text-decoration: none;
             color: inherit;
             display: flex;
             flex-direction: column;
         }
         .route-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
-
-        .route-img {
+        .route-card .route-img {
             height: 200px;
             width: 100%;
             display: flex;
@@ -41,25 +519,63 @@
             font-size: 48px;
             background: linear-gradient(135deg, var(--dark-3), #1A3A2A);
             position: relative;
+            overflow: hidden;
         }
-        .route-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .route-card .route-img img { width: 100%; height: 100%; object-fit: cover; }
+        .route-card .route-badge {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: var(--gold);
+            color: var(--dark);
+            padding: 4px 12px;
+            border-radius: 100px;
+            font-size: 11px;
+            font-weight: 600;
         }
-
-        .route-body { padding: 20px; display: flex; flex-direction: column; flex: 1; }
-        .route-title { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: var(--dark); margin-bottom: 8px; line-height: 1.3; }
-        .route-meta { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 12px; }
-        .route-meta-item { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--text-muted); }
-        .route-meta-icon { font-size: 16px; }
-        .route-price { font-size: 20px; font-weight: 700; color: var(--gold); margin-bottom: 12px; }
-        .route-desc { font-size: 14px; color: var(--text-muted); line-height: 1.6; margin-bottom: 12px; }
-        .route-places { font-size: 13px; color: var(--text-muted); margin-bottom: 12px; }
-        .route-places a { color: var(--gold); text-decoration: none; transition: color var(--transition); }
-        .route-places a:hover { color: var(--gold-light); }
-
-        .route-btn {
+        .route-card .route-body { padding: 20px; display: flex; flex-direction: column; flex: 1; }
+        .route-card .route-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+        .route-card .route-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+        .route-card .route-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        .route-card .route-meta-icon { font-size: 16px; }
+        .route-card .route-price {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 12px;
+        }
+        .route-card .route-desc {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        .route-card .route-places {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+        .route-card .route-places a { color: var(--gold); text-decoration: none; transition: color 0.25s ease; }
+        .route-card .route-places a:hover { color: var(--gold-light); }
+        .route-card .route-btn {
             background: var(--gold);
             color: var(--dark);
             border: none;
@@ -69,14 +585,50 @@
             font-size: 14px;
             cursor: pointer;
             font-family: 'Inter', sans-serif;
-            transition: background var(--transition);
+            transition: background 0.25s ease;
             margin-top: auto;
         }
-        .route-btn:hover { background: var(--gold-light); }
+        .route-card .route-btn:hover { background: var(--gold-light); }
 
+        /* ===== TOAST ===== */
+        .toast-notification {
+            position: fixed;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(26,18,8,0.92);
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 500;
+            z-index: 9999;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        /* ===== АДАПТИВ ===== */
         @media (max-width: 560px) {
-            .route-img { height: 160px; }
-            .route-title { font-size: 18px; }
+            .routes-tabs { flex-direction: column; max-width: 100%; }
+            .routes-tab { padding: 8px 12px; font-size: 13px; }
+            .popular-grid { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); }
+            .popular-chip { font-size: 12px; padding: 8px 12px; }
+            .district-cities { grid-template-columns: 1fr; }
+            .district-header { padding: 12px 14px; }
+            .district-header .district-name { font-size: 14px; }
+            .result-services { grid-template-columns: 1fr; }
+            .routes-grid { grid-template-columns: 1fr; }
+            .route-card .route-img { height: 160px; }
+            .tab-header-info .tab-title { font-size: 18px; }
+            .rpz-contacts { gap: 16px; padding: 16px; }
+            .search-box { padding: 4px 4px 4px 12px; }
+            .search-box input { font-size: 14px; padding: 10px 0; }
+            .search-box .search-btn { padding: 6px 14px; font-size: 13px; }
+        }
+        @media (max-width: 400px) {
+            .popular-grid { grid-template-columns: repeat(2, 1fr); }
+            .popular-chip { font-size: 11px; padding: 6px 10px; }
         }
     </style>
 </head>
@@ -86,7 +638,7 @@
 
     <div class="page-section">
         <div class="breadcrumbs">
-            <a href="/index.html">Главная</a> &rarr;
+            <a href="../index.html">Главная</a> &rarr;
             <span>Маршруты</span>
         </div>
 
@@ -95,215 +647,716 @@
             <p>Готовые туры по святым местам России. Выберите свой путь.</p>
         </div>
 
-        <div class="routes-grid">
-            <!-- Маршрут 1: Московский паломник (Дорога в Лавру) -->
-            <div class="route-card">
-                <div class="route-img">
-                    <img src="https://i.postimg.cc/9F0J7SyK/lavra3.jpg" alt="Троице-Сергиева Лавра">
-                    <div class="route-badge" style="position:absolute; bottom:10px; left:10px; background:var(--gold); color:var(--dark); padding:4px 12px; border-radius:100px; font-size:11px; font-weight:600;">Пеший маршрут</div>
-                </div>
-                <div class="route-body">
-                    <div class="route-title">Московский паломник</div>
-                    <div class="route-meta">
-                        <span class="route-meta-item"><span class="route-meta-icon">📍</span> Москва → Сергиев Посад</span>
-                        <span class="route-meta-item"><span class="route-meta-icon">🕐</span> 4–5 дней</span>
-                        <span class="route-meta-item"><span class="route-meta-icon">👣</span> 120 км</span>
-                    </div>
-                    <div class="route-price">Бесплатно (личные расходы)</div>
-                    <div class="route-desc">
-                        Главный пеший паломнический путь России. Повторяет исторический маршрут царского богомолья от Иверской часовни у стен Московского Кремля до Свято-Троицкой Сергиевой Лавры — духовного сердца русского православия. Путь проходит через леса и поля Подмосковья, позволяя паломнику погрузиться в молитву и тишину.
-                    </div>
-                    <div class="route-places">
-                        <strong>Ключевые объекты:</strong>
-                        <a href="/objects/christ.html">Храм Христа Спасителя (старт)</a>,
-                        <a href="/objects/lavra.html">Троице-Сергиева Лавра (финиш)</a>
-                    </div>
-                    <button class="route-btn" onclick="alert('Функция заказа будет доступна в ближайшее время. Спасибо за интерес!')">Подробнее о маршруте</button>
-                </div>
-            </div>
-
-          <!-- Маршрут 2: Дивеевский маршрут -->
-<div class="route-card">
-    <div class="route-img">
-        <img src="https://i.postimg.cc/2yyFYdyK/images-(3).jpg" alt="Дивеево">
-        <div class="route-badge" style="position:absolute; bottom:10px; left:10px; background:var(--gold); color:var(--dark); padding:4px 12px; border-radius:100px; font-size:11px; font-weight:600;">Паломнический</div>
-    </div>
-    <div class="route-body">
-        <div class="route-title">Дивеевский маршрут</div>
-        <div class="route-meta">
-            <span class="route-meta-item"><span class="route-meta-icon">📍</span> Нижегородская область</span>
-            <span class="route-meta-item"><span class="route-meta-icon">🕐</span> 2–3 дня</span>
-            <span class="route-meta-item"><span class="route-meta-icon">⛪</span> 4 объекта</span>
+        <!-- ===== ВКЛАДКИ ===== -->
+        <div class="routes-tabs">
+            <button class="routes-tab active" data-tab="our" onclick="switchRoutesTab('our')">
+                <span class="tab-icon">✍️</span> Наши маршруты
+                <span class="tab-badge">2</span>
+            </button>
+            <button class="routes-tab" data-tab="official" onclick="switchRoutesTab('official')">
+                <span class="tab-icon">📋</span> Паломнические службы РПЦ
+                <span class="tab-badge rpz" id="officialRoutesCount">75</span>
+            </button>
         </div>
-        <div class="route-price">от 7 500 ₽</div>
-        <div class="route-desc">
-            Паломничество в четвёртый удел Пресвятой Богородицы — Свято-Дивеевский монастырь. Прохождение по Святой Канавке, поклонение мощам преподобного Серафима Саровского. Посещение исторического центра Арзамаса с его храмами.
+
+        <!-- ===== ВКЛАДКА 1: НАШИ МАРШРУТЫ ===== -->
+        <div class="tab-content active" id="tab-our">
+            <div class="tab-header-info">
+                <div>
+                    <div class="tab-title">Наши <em>маршруты</em></div>
+                    <div class="tab-sub">Паломнические маршруты, разработанные командой проекта</div>
+                </div>
+            </div>
+            <div class="routes-grid" id="ourRoutesGrid"></div>
         </div>
-        <div class="route-places">
-            <strong>Объекты в маршруте:</strong>
-            <a href="../objects/diveevo.html">Свято-Дивеевский монастырь</a>,
-            <a href="../objects/arzamas.html">Арзамас (храмы и соборы)</a>
+
+        <!-- ===== ВКЛАДКА 2: ПАЛОМНИЧЕСКИЕ СЛУЖБЫ РПЦ ===== -->
+        <div class="tab-content" id="tab-official">
+            <div class="tab-header-info">
+                <div>
+                    <div class="tab-title">
+                        <span class="official-badge">Единый реестр РПЦ</span>
+                        <br>
+                        Паломнические <em>службы России</em>
+                    </div>
+                    <div class="tab-sub" style="margin-top:4px;">
+                        Аккредитованные паломнические службы из Единого реестра Русской Православной Церкви.
+                        <br><small style="color: #9E8A6A;">Источник: palomnikofficial.ru • Всего: <span id="totalCount">75</span> центров</small>
+                    </div>
+                </div>
+                <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                    <button class="refresh-btn" id="refreshOfficialBtn" onclick="refreshOfficialData()">
+                        <span class="refresh-icon">⟳</span> Обновить
+                    </button>
+                    <a href="https://palomnikofficial.ru" target="_blank" class="tab-link">Перейти в реестр →</a>
+                </div>
+            </div>
+
+            <!-- ===== ПОИСК ===== -->
+            <div class="search-wrapper">
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="serviceSearch" placeholder="Поиск по городу, названию или телефону..." oninput="handleSearchInput(this.value)" onfocus="handleSearchFocus()" onblur="handleSearchBlur()">
+                    <button class="clear-btn" id="clearSearchBtn" onclick="clearSearch()">✕</button>
+                    <button class="search-btn" onclick="executeSearch()">Найти</button>
+                </div>
+                <!-- Автоподсказки -->
+                <div class="autocomplete-list" id="autocompleteList"></div>
+            </div>
+
+            <!-- ===== ПОПУЛЯРНЫЕ ГОРОДА ===== -->
+            <div class="popular-cities" id="popularCities">
+                <div class="popular-label">⭐ Популярные направления</div>
+                <div class="popular-grid" id="popularGrid"></div>
+            </div>
+
+            <!-- ===== АККОРДЕОН С ОКРУГАМИ ===== -->
+            <div class="districts-accordion" id="districtsAccordion"></div>
+
+            <!-- ===== РЕЗУЛЬТАТЫ ПОИСКА ===== -->
+            <div class="search-results" id="searchResults">
+                <div class="result-title">Результаты поиска: <em id="searchQueryDisplay"></em></div>
+                <div class="result-services" id="searchResultsGrid"></div>
+            </div>
         </div>
-        <button class="route-btn" onclick="alert('Функция заказа будет доступна в ближайшее время. Спасибо за интерес!')">Подробнее о маршруте</button>
-    </div>
-</div>
 
-            <!-- Маршрут 3: Остров Валаам (заглушка) -->
-            <div class="route-card" style="opacity:0.6; pointer-events:none;">
-                <div class="route-img">
-                    <img src="https://i.postimg.cc/3R0t8L0S/valaam.jpg" alt="Валаам">
-                </div>
-                <div class="route-body">
-                    <div class="route-title">Остров Валаам</div>
-                    <div class="route-meta">
-                        <span class="route-meta-item"><span class="route-meta-icon">📍</span> Республика Карелия</span>
-                        <span class="route-meta-item"><span class="route-meta-icon">🕐</span> 3–5 дней</span>
-                        <span class="route-meta-item"><span class="route-meta-icon">🚢</span> По воде</span>
-                    </div>
-                    <div class="route-price">Скоро</div>
-                    <div class="route-desc">
-                        «Северный Афон» среди суровой природы Ладожского озера. Добраться можно только по воде. Посещение уединённых скитов и Преображенского собора.
-                    </div>
-                    <div class="route-places"><strong>Объекты:</strong> Валаамский монастырь</div>
-                    <button class="route-btn" onclick="alert('Маршрут в разработке. Следите за обновлениями!')">Скоро</button>
-                </div>
+        <!-- ===== КОНТАКТЫ ===== -->
+        <div class="rpz-contacts" id="officialContacts">
+            <div class="contact-item">
+                <div class="contact-icon">🏛️</div>
+                <div class="contact-label">Паломнический центр</div>
+                <div class="contact-value">Московского Патриархата</div>
             </div>
-
-            <!-- Маршрут 4: Соловецкие острова (заглушка) -->
-            <div class="route-card" style="opacity:0.6; pointer-events:none;">
-                <div class="route-img">
-                    <img src="https://i.postimg.cc/ZK1vtwWy/solovki.jpg" alt="Соловки">
-                </div>
-                <div class="route-body">
-                    <div class="route-title">Соловецкие острова</div>
-                    <div class="route-meta">
-                        <span class="route-meta-item"><span class="route-meta-icon">📍</span> Архангельская область</span>
-                        <span class="route-meta-item"><span class="route-meta-icon">🕐</span> 4–6 дней</span>
-                        <span class="route-meta-item"><span class="route-meta-icon">🚢</span> По воде</span>
-                    </div>
-                    <div class="route-price">Скоро</div>
-                    <div class="route-desc">
-                        Один из самых труднодоступных, но духовно сильных маршрутов на Белом море. Древняя архитектура и трагическая история советских лагерей.
-                    </div>
-                    <div class="route-places"><strong>Объекты:</strong> Соловецкий монастырь</div>
-                    <button class="route-btn" onclick="alert('Маршрут в разработке. Следите за обновлениями!')">Скоро</button>
-                </div>
+            <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div class="contact-label">Телефон</div>
+                <div class="contact-value">+7 (495) 685-93-38 (доб. 520)</div>
             </div>
-
-            <!-- Маршрут 5: Псково-Печерский маршрут (заглушка) -->
-            <div class="route-card" style="opacity:0.6; pointer-events:none;">
-                <div class="route-img">
-                    <img src="https://i.postimg.cc/jjYjzCkD/pskov-pechery.jpg" alt="Псково-Печерский монастырь">
-                </div>
-                <div class="route-body">
-                    <div class="route-title">Псково-Печерский маршрут</div>
-                    <div class="route-meta">
-                        <span class="route-meta-item"><span class="route-meta-icon">📍</span> Псковская область</span>
-                        <span class="route-meta-item"><span class="route-meta-icon">🕐</span> 2–3 дня</span>
-                        <span class="route-meta-item"><span class="route-meta-icon">⛪</span> 3 объекта</span>
-                    </div>
-                    <div class="route-price">Скоро</div>
-                    <div class="route-desc">
-                        Единственный крупный монастырь в России, который никогда не закрывался. Знаменитые Ближние и Дальние «Богом зданные» пещеры.
-                    </div>
-                    <div class="route-places"><strong>Объекты:</strong> Псково-Печерский монастырь</div>
-                    <button class="route-btn" onclick="alert('Маршрут в разработке. Следите за обновлениями!')">Скоро</button>
-                </div>
+            <div class="contact-item">
+                <div class="contact-icon">📧</div>
+                <div class="contact-label">E-mail</div>
+                <div class="contact-value"><a href="mailto:info@poklonnik.ru">info@poklonnik.ru</a></div>
             </div>
-
-            <!-- Маршрут 6: Великорецкий крестный ход (заглушка) -->
-            <div class="route-card" style="opacity:0.6; pointer-events:none;">
-                <div class="route-img">
-                    <img src="https://i.postimg.cc/bN4qBQzL/velikoretskiy.jpg" alt="Великорецкий крестный ход">
-                </div>
-                <div class="route-body">
-                    <div class="route-title">Великорецкий крестный ход</div>
-                    <div class="route-meta">
-                        <span class="route-meta-item"><span class="route-meta-icon">📍</span> Кировская область</span>
-                        <span class="route-meta-item"><span class="route-meta-icon">🕐</span> 5 дней</span>
-                        <span class="route-meta-item"><span class="route-meta-icon">👣</span> 150 км</span>
-                    </div>
-                    <div class="route-price">Скоро</div>
-                    <div class="route-desc">
-                        Один из самых древних и массовых пеших крестных ходов России. Более 600 лет истории. Ежегодно собирает более 20 тысяч паломников.
-                    </div>
-                    <div class="route-places"><strong>Объекты:</strong> Великорецкая икона Николая Чудотворца</div>
-                    <button class="route-btn" onclick="alert('Маршрут в разработке. Следите за обновлениями!')">Скоро</button>
-                </div>
+            <div class="contact-item">
+                <div class="contact-icon">🌐</div>
+                <div class="contact-label">Сайт</div>
+                <div class="contact-value"><a href="https://www.poklonnik.ru/" target="_blank">poklonnik.ru</a></div>
             </div>
-
-            <!-- Маршрут 7: Оптина Пустынь (заглушка) -->
-            <div class="route-card" style="opacity:0.6; pointer-events:none;">
-                <div class="route-img">
-                    <img src="https://i.postimg.cc/0QzPzLCL/optina.jpg" alt="Оптина Пустынь">
-                </div>
-                <div class="route-body">
-                    <div class="route-title">Оптина Пустынь</div>
-                    <div class="route-meta">
-                        <span class="route-meta-item"><span class="route-meta-icon">📍</span> Калужская область</span>
-                        <span class="route-meta-item"><span class="route-meta-icon">🕐</span> 2–3 дня</span>
-                        <span class="route-meta-item"><span class="route-meta-icon">⛪</span> 5 объектов</span>
-                    </div>
-                    <div class="route-price">Скоро</div>
-                    <div class="route-desc">
-                        Исторический центр русского старчества. Место, куда приезжали за советом Гоголь, Достоевский и Толстой. Паломники едут сюда ради исповеди у оптинских старцев.
-                    </div>
-                    <div class="route-places"><strong>Объекты:</strong> Оптина Пустынь, Шамордино</div>
-                    <button class="route-btn" onclick="alert('Маршрут в разработке. Следите за обновлениями!')">Скоро</button>
-                </div>
-            </div>
-
-            <!-- Маршрут 8: Царский крестный ход (заглушка) -->
-            <div class="route-card" style="opacity:0.6; pointer-events:none;">
-                <div class="route-img">
-                    <img src="https://i.postimg.cc/JzpQsvsJ/ganina-yama.jpg" alt="Царский крестный ход">
-                </div>
-                <div class="route-body">
-                    <div class="route-title">Царский крестный ход</div>
-                    <div class="route-meta">
-                        <span class="route-meta-item"><span class="route-meta-icon">📍</span> Екатеринбург</span>
-                        <span class="route-meta-item"><span class="route-meta-icon">🕐</span> 1 ночь (21 км)</span>
-                        <span class="route-meta-item"><span class="route-meta-icon">👣</span> 21 км</span>
-                    </div>
-                    <div class="route-price">Скоро</div>
-                    <div class="route-desc">
-                        Пеший покаянный маршрут в ночь с 16 на 17 июля. От Храма на Крови до Ганиной Ямы, куда были привезены останки царской семьи.
-                    </div>
-                    <div class="route-places"><strong>Объекты:</strong> Храм на Крови, Ганина Яма</div>
-                    <button class="route-btn" onclick="alert('Маршрут в разработке. Следите за обновлениями!')">Скоро</button>
-                </div>
-            </div>
-
-            <!-- Маршрут 9: Крымский паломнический маршрут (заглушка) -->
-            <div class="route-card" style="opacity:0.6; pointer-events:none;">
-                <div class="route-img">
-                    <img src="https://i.postimg.cc/rpBmH4XH/crimea.jpg" alt="Крым">
-                </div>
-                <div class="route-body">
-                    <div class="route-title">Крымский паломнический маршрут</div>
-                    <div class="route-meta">
-                        <span class="route-meta-item"><span class="route-meta-icon">📍</span> Республика Крым</span>
-                        <span class="route-meta-item"><span class="route-meta-icon">🕐</span> 4–6 дней</span>
-                        <span class="route-meta-item"><span class="route-meta-icon">⛪</span> 6 объектов</span>
-                    </div>
-                    <div class="route-price">Скоро</div>
-                    <div class="route-desc">
-                        Кольбель русского христианства. Древнейшие скальные храмы, пещерные монастыри и места, связанные со святителем Лукой (Войно-Ясенецким).
-                    </div>
-                    <div class="route-places"><strong>Объекты:</strong> Херсонес, Инкерман, Бахчисарай</div>
-                    <button class="route-btn" onclick="alert('Маршрут в разработке. Следите за обновлениями!')">Скоро</button>
-                </div>
+            <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div class="contact-label">Адрес</div>
+                <div class="contact-value">Москва, Мичуринский пр-т, д. 8 стр. 1</div>
             </div>
         </div>
     </div>
 
     <div id="footer-container"></div>
 
-    <script>
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-    </script>
+    <script src="../js/config.js"></script>
+    <script src="../js/components.js"></script>
 
-    <script src="/js/config.js"></script>
-    <script src="/js/components.js"></script>
+    <script>
+        // ========================================
+        // ДАННЫЕ (загружаются из JSON)
+        // ========================================
+        let allServices = [];
+        let districtsData = {};
+        let popularCities = [];
+
+        // ========================================
+        // ЗАГРУЗКА ДАННЫХ
+        // ========================================
+        async function loadServicesData() {
+            try {
+                const response = await fetch('../data/pilgrim-centers.json');
+                if (response.ok) {
+                    const data = await response.json();
+                    allServices = data;
+                    return data;
+                }
+            } catch (e) {
+                console.log('Не удалось загрузить данные, используем встроенные');
+            }
+            // Если файл не загрузился — минимальный набор
+            allServices = getFallbackData();
+            return allServices;
+        }
+
+        function getFallbackData() {
+            return [
+                { name: 'Паломнический центр Московского Патриархата', region: 'Москва', phone: '+7 (495) 685-93-38 (доб. 520)', website: 'https://www.poklonnik.ru/', email: 'info@poklonnik.ru', org: 'Московский Патриархат' },
+                { name: 'Паломническая служба Сретенского монастыря', region: 'Москва', phone: '+7 (495) 640-30-40', website: 'https://sretenie.moscow', email: 'palomnik@sretenie.ru', org: 'Сретенский монастырь' },
+                { name: 'Паломнический центр Троице-Сергиевой Лавры', region: 'Сергиев Посад', phone: '+7 (496) 540-57-21', website: 'https://lavra.ru/', email: 'order@lavra.ru', org: 'Троице-Сергиева Лавра' },
+                { name: 'Паломническая служба Санкт-Петербургской Епархии', region: 'Санкт-Петербург', phone: '+7 (921) 755-51-25', website: 'https://mitropolia-palomnik.ru/', email: 'info@mitropolia-palomnik.ru', org: 'Санкт-Петербургская епархия' },
+                { name: 'Паломническая служба «Кавказский Паломник»', region: 'Пятигорск', phone: '+7 (879) 333-25-33', website: 'http://Kavkaz-palomnik.ru', email: 'Kavkaz-palomnik@mail.ru', org: 'Пятигорская епархия' },
+                { name: 'Паломнический центр Симферопольской епархии', region: 'Симферополь', phone: '+7 (978) 820-30-98', website: 'https://palomnic.ru/', email: 'atushev@yandex.ru', org: 'Симферопольская епархия' },
+                { name: 'Паломнический центр Орловской епархии', region: 'Орёл', phone: '+7 (903) 882-26-36', website: 'https://orel-eparhia.ru/structure/departments/piligrimage', email: 'logos-orel@yandex.ru', org: 'Орловская епархия' },
+                { name: 'Паломнический центр Александро-Невского собора', region: 'Новосибирск', phone: '+7 (913) 007-50-15', website: 'https://ansobor.ru/', email: 'palomnik@sibmail.ru', org: 'Александро-Невский собор' },
+                { name: 'Паломническая служба «7 стран»', region: 'Московская область', phone: '+7 (926) 133-13-28', website: 'https://7stran.com/', email: 'givonosnyiistochnik@gmail.com', org: 'Храм Живоносный Источник' }
+            ];
+        }
+
+        // ========================================
+        // РАЗБИВКА ПО ОКРУГАМ
+        // ========================================
+        function buildDistricts(services) {
+            const districts = {
+                'Центральный ФО': {
+                    icon: '🏛️',
+                    cities: {}
+                },
+                'Северо-Западный ФО': {
+                    icon: '❄️',
+                    cities: {}
+                },
+                'Южный ФО': {
+                    icon: '☀️',
+                    cities: {}
+                },
+                'Приволжский ФО': {
+                    icon: '🌊',
+                    cities: {}
+                },
+                'Уральский ФО': {
+                    icon: '⛰️',
+                    cities: {}
+                },
+                'Сибирский ФО': {
+                    icon: '🌲',
+                    cities: {}
+                },
+                'Дальневосточный ФО': {
+                    icon: '🗾',
+                    cities: {}
+                },
+                'Северный Кавказ': {
+                    icon: '🏔️',
+                    cities: {}
+                }
+            };
+
+            // Карта городов к округам
+            const regionMap = {
+                // Центральный ФО
+                'Москва': 'Центральный ФО',
+                'Московская область': 'Центральный ФО',
+                'Тамбов': 'Центральный ФО',
+                'Воронежская область': 'Центральный ФО',
+                'Воронеж': 'Центральный ФО',
+                'Касимов': 'Центральный ФО',
+                'Тула': 'Центральный ФО',
+                'Курск': 'Центральный ФО',
+                'Переславль-Залесский': 'Центральный ФО',
+                'Шуя': 'Центральный ФО',
+                'Плавск': 'Центральный ФО',
+                'Ярославль': 'Центральный ФО',
+                'Железногорск': 'Центральный ФО',
+                'Ростов': 'Центральный ФО',
+                'Калуга': 'Центральный ФО',
+                'Орёл': 'Центральный ФО',
+                'Елец': 'Центральный ФО',
+                'Клинцы': 'Центральный ФО',
+                'Брянск': 'Центральный ФО',
+                'Липецк': 'Центральный ФО',
+                'Борисоглебск': 'Центральный ФО',
+                'Бутурлиновка': 'Центральный ФО',
+                'Смоленск': 'Центральный ФО',
+                'Вязьма': 'Центральный ФО',
+                'Ржев': 'Центральный ФО',
+                'Тверь': 'Центральный ФО',
+                // Северо-Западный ФО
+                'Санкт-Петербург': 'Северо-Западный ФО',
+                'Ленинградская область': 'Северо-Западный ФО',
+                'Архангельск': 'Северо-Западный ФО',
+                'Вологда': 'Северо-Западный ФО',
+                'Гатчина': 'Северо-Западный ФО',
+                'Соловецкий': 'Северо-Западный ФО',
+                // Южный ФО
+                'Краснодар': 'Южный ФО',
+                'Кропоткин': 'Южный ФО',
+                'Ставрополь': 'Южный ФО',
+                'Георгиевск': 'Южный ФО',
+                'Ейск': 'Южный ФО',
+                'Урюпинск': 'Южный ФО',
+                'Севастополь': 'Южный ФО',
+                'Алушта': 'Южный ФО',
+                'Симферополь': 'Южный ФО',
+                'Волгоград': 'Южный ФО',
+                'Ростовская область': 'Южный ФО',
+                // Приволжский ФО
+                'Тольятти': 'Приволжский ФО',
+                'Уржум': 'Приволжский ФО',
+                'Йошкар-Ола': 'Приволжский ФО',
+                'Нефтекамск': 'Приволжский ФО',
+                'Чебоксары': 'Приволжский ФО',
+                'Энгельс': 'Приволжский ФО',
+                'Саратов': 'Приволжский ФО',
+                'Сызрань': 'Приволжский ФО',
+                'Кинешма': 'Приволжский ФО',
+                'Нижний Новгород': 'Приволжский ФО',
+                'Хлебодаровка': 'Приволжский ФО',
+                'Сердобск': 'Приволжский ФО',
+                'Пенза': 'Приволжский ФО',
+                'Самарская область': 'Приволжский ФО',
+                'Республика Башкортостан': 'Приволжский ФО',
+                'Республика Марий Эл': 'Приволжский ФО',
+                'Чувашская Республика': 'Приволжский ФО',
+                'Кировская область': 'Приволжский ФО',
+                // Уральский ФО
+                'Челябинск': 'Уральский ФО',
+                'Шадринск': 'Уральский ФО',
+                'Екатеринбург': 'Уральский ФО',
+                'Курган': 'Уральский ФО',
+                'Свердловская область': 'Уральский ФО',
+                // Сибирский ФО
+                'Новосибирск': 'Сибирский ФО',
+                'Новокузнецк': 'Сибирский ФО',
+                'Кемерово': 'Сибирский ФО',
+                'Омск': 'Сибирский ФО',
+                'Канск': 'Сибирский ФО',
+                'Братск': 'Сибирский ФО',
+                'Искитим': 'Сибирский ФО',
+                'Красноярский край': 'Сибирский ФО',
+                'Иркутская область': 'Сибирский ФО',
+                // Дальневосточный ФО
+                'Петропавловск-Камчатский': 'Дальневосточный ФО',
+                'Благовещенск': 'Дальневосточный ФО',
+                'Амурская область': 'Дальневосточный ФО',
+                'Камчатский край': 'Дальневосточный ФО',
+                // Северный Кавказ
+                'Владикавказ': 'Северный Кавказ',
+                'Пятигорск': 'Северный Кавказ',
+                'Республика Северная Осетия': 'Северный Кавказ'
+            };
+
+            services.forEach(s => {
+                const district = regionMap[s.region] || 'Центральный ФО';
+                if (!districts[district].cities[s.region]) {
+                    districts[district].cities[s.region] = [];
+                }
+                districts[district].cities[s.region].push(s);
+            });
+
+            // Удаляем пустые округа
+            for (const key in districts) {
+                if (Object.keys(districts[key].cities).length === 0) {
+                    delete districts[key];
+                }
+            }
+
+            return districts;
+        }
+
+        // ========================================
+        // РЕНДЕР ПОПУЛЯРНЫХ ГОРОДОВ
+        // ========================================
+        function renderPopularCities(services) {
+            const grid = document.getElementById('popularGrid');
+            const cityCounts = {};
+            services.forEach(s => {
+                cityCounts[s.region] = (cityCounts[s.region] || 0) + 1;
+            });
+
+            // Топ-8 городов по количеству центров
+            const sorted = Object.entries(cityCounts)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 8);
+
+            const emojis = ['🌆', '🏙️', '🌉', '🏛️', '⛪', '🕊️', '🌊', '⛰️'];
+            let html = '';
+            sorted.forEach(([city, count], index) => {
+                const emoji = emojis[index % emojis.length];
+                html += `
+                    <div class="popular-chip" onclick="selectCity('${city}')">
+                        <span class="chip-icon">${emoji}</span>
+                        <span>${city}</span>
+                        <span class="chip-count">${count}</span>
+                    </div>
+                `;
+            });
+            grid.innerHTML = html;
+        }
+
+        // ========================================
+        // РЕНДЕР АККОРДЕОНА
+        // ========================================
+        function renderAccordion(districts) {
+            const container = document.getElementById('districtsAccordion');
+            let html = '';
+
+            const order = [
+                'Центральный ФО',
+                'Северо-Западный ФО',
+                'Южный ФО',
+                'Приволжский ФО',
+                'Уральский ФО',
+                'Сибирский ФО',
+                'Дальневосточный ФО',
+                'Северный Кавказ'
+            ];
+
+            // Сортируем в нужном порядке
+            const sortedDistricts = order.filter(d => districts[d]);
+
+            sortedDistricts.forEach((districtName, idx) => {
+                const district = districts[districtName];
+                const cities = district.cities;
+                const total = Object.values(cities).reduce((sum, arr) => sum + arr.length, 0);
+
+                let citiesHtml = '';
+                const sortedCities = Object.entries(cities).sort((a, b) => b[1].length - a[1].length);
+                sortedCities.forEach(([cityName, services]) => {
+                    citiesHtml += `
+                        <div class="district-city" onclick="selectCity('${cityName}')">
+                            <span class="city-name">${cityName}</span>
+                            <span class="city-count">${services.length}</span>
+                        </div>
+                    `;
+                });
+
+                const isActive = idx === 0 ? 'active' : '';
+
+                html += `
+                    <div class="district-item ${isActive}" data-district="${districtName}">
+                        <div class="district-header" onclick="toggleDistrict(this)">
+                            <div class="district-info">
+                                <span class="district-icon">${district.icon}</span>
+                                <span class="district-name">${districtName}</span>
+                            </div>
+                            <span class="district-count">${total} центров</span>
+                            <span class="district-arrow">▾</span>
+                        </div>
+                        <div class="district-body">
+                            <div class="district-cities">${citiesHtml}</div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+        }
+
+        // ========================================
+        // УПРАВЛЕНИЕ АККОРДЕОНОМ
+        // ========================================
+        function toggleDistrict(header) {
+            const item = header.closest('.district-item');
+            const isActive = item.classList.contains('active');
+            // Закрываем все
+            document.querySelectorAll('.district-item').forEach(el => el.classList.remove('active'));
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        }
+
+        // ========================================
+        // ПОИСК С АВТОПОДСКАЗКАМИ
+        // ========================================
+        let searchTimeout = null;
+
+        function handleSearchInput(value) {
+            const clearBtn = document.getElementById('clearSearchBtn');
+            clearBtn.classList.toggle('visible', value.length > 0);
+
+            if (value.length === 0) {
+                document.getElementById('autocompleteList').classList.remove('active');
+                document.getElementById('searchResults').classList.remove('active');
+                document.getElementById('popularCities').style.display = 'block';
+                document.getElementById('districtsAccordion').style.display = 'block';
+                return;
+            }
+
+            // Показываем автоподсказки
+            const suggestions = getSuggestions(value);
+            renderAutocomplete(suggestions, value);
+
+            // Если ввели больше 2 символов — ищем сразу
+            if (value.length > 2) {
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(() => {
+                    executeSearch();
+                }, 300);
+            }
+        }
+
+        function handleSearchFocus() {
+            const value = document.getElementById('serviceSearch').value;
+            if (value.length > 0) {
+                const suggestions = getSuggestions(value);
+                renderAutocomplete(suggestions, value);
+            }
+        }
+
+        function handleSearchBlur() {
+            setTimeout(() => {
+                document.getElementById('autocompleteList').classList.remove('active');
+            }, 200);
+        }
+
+        function getSuggestions(query) {
+            const q = query.toLowerCase().trim();
+            const results = [];
+            const seen = new Set();
+
+            allServices.forEach(s => {
+                const city = s.region;
+                if (!seen.has(city) && city.toLowerCase().includes(q)) {
+                    seen.add(city);
+                    const count = allServices.filter(serv => serv.region === city).length;
+                    results.push({ name: city, count: count });
+                }
+                if (results.length >= 10) return;
+            });
+
+            return results;
+        }
+
+        function renderAutocomplete(suggestions, query) {
+            const list = document.getElementById('autocompleteList');
+            if (suggestions.length === 0) {
+                list.innerHTML = `
+                    <div class="autocomplete-empty">
+                        🔍 Ничего не найдено для "<strong>${query}</strong>"
+                    </div>
+                `;
+                list.classList.add('active');
+                return;
+            }
+
+            let html = '';
+            suggestions.forEach(s => {
+                html += `
+                    <div class="autocomplete-item" onclick="selectCity('${s.name}')">
+                        <span class="item-name">📍 ${s.name}</span>
+                        <span class="item-count">${s.count} центров</span>
+                    </div>
+                `;
+            });
+            list.innerHTML = html;
+            list.classList.add('active');
+        }
+
+        function selectCity(city) {
+            document.getElementById('serviceSearch').value = city;
+            document.getElementById('autocompleteList').classList.remove('active');
+            document.getElementById('clearSearchBtn').classList.add('visible');
+            executeSearch();
+        }
+
+        function executeSearch() {
+            const query = document.getElementById('serviceSearch').value.trim();
+            if (!query) {
+                document.getElementById('searchResults').classList.remove('active');
+                document.getElementById('popularCities').style.display = 'block';
+                document.getElementById('districtsAccordion').style.display = 'block';
+                return;
+            }
+
+            const q = query.toLowerCase();
+            const results = allServices.filter(s =>
+                s.name.toLowerCase().includes(q) ||
+                s.region.toLowerCase().includes(q) ||
+                s.phone.includes(q)
+            );
+
+            // Скрываем популярные города и аккордеон
+            document.getElementById('popularCities').style.display = 'none';
+            document.getElementById('districtsAccordion').style.display = 'none';
+
+            // Показываем результаты
+            const container = document.getElementById('searchResults');
+            const grid = document.getElementById('searchResultsGrid');
+            document.getElementById('searchQueryDisplay').textContent = `«${query}»`;
+
+            if (results.length === 0) {
+                grid.innerHTML = `
+                    <div class="no-results" style="grid-column:1/-1;">
+                        <span class="no-icon">🔍</span>
+                        <p>Ничего не найдено по запросу <strong>«${query}»</strong></p>
+                        <p style="font-size:13px; color:#9E8A6A; margin-top:4px;">Попробуйте изменить запрос или посмотреть все центры</p>
+                    </div>
+                `;
+            } else {
+                let html = '';
+                results.forEach(s => {
+                    const phoneLink = s.phone ? `<a href="tel:${s.phone.replace(/\s/g, '')}">${s.phone}</a>` : '';
+                    const websiteLink = s.website ? `<a href="${s.website}" target="_blank">${s.website.replace(/^https?:\/\//, '').substring(0, 30)}</a>` : '';
+                    const orgHtml = s.org ? `<div class="rs-org">🏛️ ${s.org}</div>` : '';
+
+                    html += `
+                        <div class="result-service">
+                            <div class="rs-name">${s.name}</div>
+                            <div class="rs-region">📍 ${s.region}</div>
+                            ${s.phone ? `<div class="rs-phone">📞 ${phoneLink}</div>` : ''}
+                            ${s.website ? `<div class="rs-website">🌐 ${websiteLink}</div>` : ''}
+                            ${orgHtml}
+                        </div>
+                    `;
+                });
+                grid.innerHTML = html;
+            }
+
+            container.classList.add('active');
+            document.getElementById('autocompleteList').classList.remove('active');
+        }
+
+        function clearSearch() {
+            document.getElementById('serviceSearch').value = '';
+            document.getElementById('clearSearchBtn').classList.remove('visible');
+            document.getElementById('autocompleteList').classList.remove('active');
+            document.getElementById('searchResults').classList.remove('active');
+            document.getElementById('popularCities').style.display = 'block';
+            document.getElementById('districtsAccordion').style.display = 'block';
+            document.getElementById('serviceSearch').focus();
+        }
+
+        // ========================================
+        // ПЕРЕКЛЮЧЕНИЕ ВКЛАДОК
+        // ========================================
+        function switchRoutesTab(tab) {
+            document.querySelectorAll('.routes-tab').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.tab === tab);
+            });
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.toggle('active', content.id === 'tab-' + tab);
+            });
+            localStorage.setItem('routesTab', tab);
+            const contacts = document.getElementById('officialContacts');
+            contacts.style.display = tab === 'official' ? 'flex' : 'none';
+        }
+
+        // ========================================
+        // ОБНОВЛЕНИЕ
+        // ========================================
+        function refreshOfficialData() {
+            const btn = document.getElementById('refreshOfficialBtn');
+            btn.classList.add('spinning');
+            btn.disabled = true;
+
+            setTimeout(() => {
+                // Перестраиваем всё
+                const districts = buildDistricts(allServices);
+                renderAccordion(districts);
+                renderPopularCities(allServices);
+                btn.classList.remove('spinning');
+                btn.disabled = false;
+                showToast('✅ Данные обновлены!');
+            }, 800);
+        }
+
+        // ========================================
+        // TOAST
+        // ========================================
+        function showToast(message) {
+            const existing = document.querySelector('.toast-notification');
+            if (existing) existing.remove();
+            const toast = document.createElement('div');
+            toast.className = 'toast-notification';
+            toast.textContent = message;
+            document.body.appendChild(toast);
+            requestAnimationFrame(() => {
+                toast.style.opacity = '1';
+                toast.style.transform = 'translateX(-50%) translateY(0)';
+            });
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                toast.style.transform = 'translateX(-50%) translateY(10px)';
+                setTimeout(() => toast.remove(), 300);
+            }, 2500);
+        }
+
+        // ========================================
+        // ЗАГРУЗКА НАШИХ МАРШРУТОВ
+        // ========================================
+        function loadOurRoutes() {
+            const grid = document.getElementById('ourRoutesGrid');
+            const ourRoutes = [{
+                title: 'Московский паломник',
+                location: 'Москва → Сергиев Посад',
+                duration: '4–5 дней',
+                distance: '120 км',
+                price: 'Бесплатно (личные расходы)',
+                desc: 'Главный пеший паломнический путь России. Повторяет исторический маршрут царского богомолья от Иверской часовни у стен Московского Кремля до Свято-Троицкой Сергиевой Лавры.',
+                places: ['Храм Христа Спасителя', 'Троице-Сергиева Лавра'],
+                img: 'https://i.postimg.cc/9F0J7SyK/lavra3.jpg',
+                badge: 'Пеший маршрут'
+            }, {
+                title: 'Дивеевский маршрут',
+                location: 'Нижегородская область',
+                duration: '2–3 дня',
+                distance: '4 объекта',
+                price: 'от 7 500 ₽',
+                desc: 'Паломничество в четвёртый удел Пресвятой Богородицы — Свято-Дивеевский монастырь. Прохождение по Святой Канавке, поклонение мощам преподобного Серафима Саровского.',
+                places: ['Свято-Дивеевский монастырь', 'Арзамас'],
+                img: 'https://i.postimg.cc/2yyFYdyK/images-(3).jpg',
+                badge: 'Паломнический'
+            }];
+
+            let html = '';
+            ourRoutes.forEach(route => {
+                const placesHtml = route.places.map(p => `<a href="#">${p}</a>`).join(', ');
+                html += `
+                    <div class="route-card">
+                        <div class="route-img">
+                            <img src="${route.img}" alt="${route.title}" loading="lazy">
+                            <div class="route-badge">${route.badge}</div>
+                        </div>
+                        <div class="route-body">
+                            <div class="route-title">${route.title}</div>
+                            <div class="route-meta">
+                                <span class="route-meta-item"><span class="route-meta-icon">📍</span> ${route.location}</span>
+                                <span class="route-meta-item"><span class="route-meta-icon">🕐</span> ${route.duration}</span>
+                                <span class="route-meta-item"><span class="route-meta-icon">${route.distance.includes('км') ? '👣' : '⛪'}</span> ${route.distance}</span>
+                            </div>
+                            <div class="route-price">${route.price}</div>
+                            <div class="route-desc">${route.desc}</div>
+                            <div class="route-places"><strong>Объекты:</strong> ${placesHtml}</div>
+                            <button class="route-btn" onclick="alert('Подробности скоро появятся. Спасибо за интерес!')">Подробнее →</button>
+                        </div>
+                    </div>
+                `;
+            });
+            grid.innerHTML = html;
+        }
+
+        // ========================================
+        // ИНИЦИАЛИЗАЦИЯ
+        // ========================================
+        document.addEventListener('DOMContentLoaded', async function() {
+            // Восстанавливаем вкладку
+            const savedTab = localStorage.getItem('routesTab') || 'our';
+            switchRoutesTab(savedTab);
+
+            // Загружаем данные
+            await loadServicesData();
+
+            // Строим округа
+            const districts = buildDistricts(allServices);
+
+            // Рендерим популярные города
+            renderPopularCities(allServices);
+
+            // Рендерим аккордеон
+            renderAccordion(districts);
+
+            // Обновляем общее количество
+            document.getElementById('totalCount').textContent = allServices.length;
+            document.getElementById('officialRoutesCount').textContent = allServices.length;
+
+            // Загружаем наши маршруты
+            loadOurRoutes();
+
+            // Контакты скрыты по умолчанию
+            document.getElementById('officialContacts').style.display = 'none';
+
+            // Обработчик Enter в поиске
+            document.getElementById('serviceSearch').addEventListener('keydown', function(e) {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    executeSearch();
+                }
+            });
+        });
+    </script>
 </body>
 </html>

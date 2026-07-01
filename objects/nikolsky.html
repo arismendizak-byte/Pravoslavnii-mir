@@ -11,40 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
-    <style>
-        /* СВАЙП-ГАЛЕРЕЯ (БЕЗ КНОПОК) */
-        .object-gallery {
-            position: relative;
-            border-radius: var(--radius-lg);
-            height: 480px;
-            overflow-x: auto;
-            overflow-y: hidden;
-            background: var(--dark-2);
-            width: 100%;
-            display: flex;
-            flex-wrap: nowrap;
-            scroll-snap-type: x mandatory;
-            -webkit-overflow-scrolling: touch;
-        }
-        .object-gallery::-webkit-scrollbar {
-            display: none;
-        }
-        .gallery-slide {
-            min-width: 100%;
-            height: 100%;
-            object-fit: cover;
-            scroll-snap-align: start;
-        }
-        .gallery-arrow, .gallery-nav {
-            display: none !important;
-        }
-        @media (max-width: 900px) {
-            .object-gallery { height: 300px; }
-        }
-        @media (max-width: 560px) {
-            .object-gallery { height: 220px; }
-        }
-    </style>
 </head>
 <body>
     <div id="nav-container"></div>
@@ -52,16 +18,22 @@
 
     <div class="page-section">
         <div class="breadcrumbs">
-            <a href="../journal.html">Журнал</a> &rarr;
+            <a href="../index.html">Главная</a> &rarr;
+            <a href="../catalog/catalog.html">Каталог</a> &rarr;
             <span>Ставропигиальный собор св. Николая</span>
         </div>
 
         <div class="object-hero">
             <div class="object-gallery">
-                <img class="gallery-slide" src="https://i.postimg.cc/59rxcXS9/S600x-U-2x-(3).jpg" alt="Никольский собор 1" loading="lazy">
-                <img class="gallery-slide" src="https://i.postimg.cc/R0GBghZR/S600x-U-2x-(2).jpg" alt="Никольский собор 2" loading="lazy">
-                <img class="gallery-slide" src="https://i.postimg.cc/0jK15C0q/S600x-U-2x-(1).jpg" alt="Никольский собор 3" loading="lazy">
-                <img class="gallery-slide" src="https://i.postimg.cc/65RTYVJM/S600x-U-2x.jpg" alt="Никольский собор 4" loading="lazy">
+                <div class="gallery-slides">
+                    <img class="gallery-slide" src="https://i.postimg.cc/59rxcXS9/S600x-U-2x-(3).jpg" alt="Никольский собор 1" loading="lazy">
+                    <img class="gallery-slide" src="https://i.postimg.cc/R0GBghZR/S600x-U-2x-(2).jpg" alt="Никольский собор 2" loading="lazy">
+                    <img class="gallery-slide" src="https://i.postimg.cc/0jK15C0q/S600x-U-2x-(1).jpg" alt="Никольский собор 3" loading="lazy">
+                    <img class="gallery-slide" src="https://i.postimg.cc/65RTYVJM/S600x-U-2x.jpg" alt="Никольский собор 4" loading="lazy">
+                </div>
+                <button class="gallery-arrow prev">‹</button>
+                <button class="gallery-arrow next">›</button>
+                <div class="gallery-nav"></div>
                 <div class="object-gallery-badge">Ставропигиальный</div>
             </div>
 
@@ -146,10 +118,6 @@
     </div>
 
     <div id="footer-container"></div>
-
-    <script>
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-    </script>
 
     <script src="../js/config.js"></script>
     <script src="../js/components.js"></script>

@@ -18,21 +18,22 @@
 
     <div class="page-section">
         <div class="breadcrumbs">
-            <a href="../journal.html">Журнал</a> &rarr;
+            <a href="../index.html">Главная</a> &rarr;
+            <a href="../catalog/catalog.html">Каталог</a> &rarr;
             <span>Свято-Троицкая Сергиева Лавра</span>
         </div>
 
         <div class="object-hero">
             <div class="object-gallery">
-                <div class="gallery-slides" id="lavra-slides">
+                <div class="gallery-slides">
                     <img class="gallery-slide" src="https://i.postimg.cc/k4NhTb4J/lavra1.jpg" alt="Лавра 1" loading="lazy">
                     <img class="gallery-slide" src="https://i.postimg.cc/63KM4phd/lavra2.jpg" alt="Лавра 2" loading="lazy">
                     <img class="gallery-slide" src="https://i.postimg.cc/9F0J7SyK/lavra3.jpg" alt="Лавра 3" loading="lazy">
                     <img class="gallery-slide" src="https://i.postimg.cc/d0PBgVgF/lavra4.jpg" alt="Лавра 4" loading="lazy">
                 </div>
-                <button class="gallery-arrow prev" id="prev-btn">‹</button>
-                <button class="gallery-arrow next" id="next-btn">›</button>
-                <div class="gallery-nav" id="lavra-nav"></div>
+                <button class="gallery-arrow prev">‹</button>
+                <button class="gallery-arrow next">›</button>
+                <div class="gallery-nav"></div>
                 <div class="object-gallery-badge">Действующий монастырь</div>
             </div>
 
@@ -152,51 +153,6 @@
     </div>
 
     <div id="footer-container"></div>
-
-    <script>
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-        const slidesContainer = document.getElementById('lavra-slides');
-        const slides = slidesContainer.querySelectorAll('.gallery-slide');
-        const nav = document.getElementById('lavra-nav');
-        let currentSlide = 0;
-
-        slides.forEach((_, index) => {
-            const dot = document.createElement('div');
-            dot.className = 'gallery-dot' + (index === 0 ? ' active' : '');
-            dot.onclick = () => goToSlide(index);
-            nav.appendChild(dot);
-        });
-
-        function updateSlide() {
-            const offset = -currentSlide * 100;
-            slidesContainer.style.transform = `translateX(${offset}%)`;
-            document.querySelectorAll('#lavra-nav .gallery-dot').forEach((dot, i) => {
-                dot.classList.toggle('active', i === currentSlide);
-            });
-        }
-
-        function changeSlide(direction) {
-            currentSlide = (currentSlide + direction + slides.length) % slides.length;
-            updateSlide();
-        }
-
-        function goToSlide(index) {
-            currentSlide = index;
-            updateSlide();
-        }
-
-        document.getElementById('prev-btn').addEventListener('click', () => changeSlide(-1));
-        document.getElementById('next-btn').addEventListener('click', () => changeSlide(1));
-
-        let autoSlide = setInterval(() => changeSlide(1), 5000);
-
-        const gallery = document.querySelector('.object-gallery');
-        gallery.addEventListener('mouseenter', () => clearInterval(autoSlide));
-        gallery.addEventListener('mouseleave', () => {
-            autoSlide = setInterval(() => changeSlide(1), 5000);
-        });
-    </script>
 
     <script src="../js/config.js"></script>
     <script src="../js/components.js"></script>
