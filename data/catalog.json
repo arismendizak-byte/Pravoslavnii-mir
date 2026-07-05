@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "Храм Христа Спасителя",
+        "region": "г. Москва",
+        "category": "Храм",
+        "link": "../objects/christ.html",
+        "image": "https://i.postimg.cc/J0MjMTLm/Cathedral-of-Christ-the-Savior.jpg",
+        "lat": 55.7444,
+        "lon": 37.6054
+    },
+    {
+        "id": 2,
+        "name": "Никольский Морской собор",
+        "region": "г. Санкт-Петербург",
+        "category": "Собор",
+        "link": "../objects/nikolsky.html",
+        "image": "https://i.postimg.cc/59rxcXS9/S600x-U-2x-(3).jpg",
+        "lat": 59.9225,
+        "lon": 30.3000
+    },
+    {
+        "id": 3,
+        "name": "Троице-Сергиева Лавра",
+        "region": "Сергиев Посад",
+        "category": "Монастырь",
+        "link": "../objects/lavra.html",
+        "image": "https://i.postimg.cc/9F0J7SyK/lavra3.jpg",
+        "lat": 56.3114,
+        "lon": 38.1321
+    },
+    {
+        "id": 4,
+        "name": "Дивеево",
+        "region": "Нижегородская область",
+        "category": "Монастырь",
+        "link": "../objects/diveevo.html",
+        "image": "https://i.postimg.cc/2yyFYdyK/images-(3).jpg",
+        "lat": 55.0434,
+        "lon": 43.2372
+    },
+    {
+        "id": 5,
+        "name": "Арзамас",
+        "region": "Нижегородская область",
+        "category": "Город",
+        "link": "../objects/arzamas.html",
+        "image": "https://i.postimg.cc/xdptGbTc/Arzamas-Saint-Nicholas-Monastery-Church-of-the-Epiphany-IMG-9660-1725.jpg",
+        "lat": 55.3948,
+        "lon": 43.8396
+    }
+]

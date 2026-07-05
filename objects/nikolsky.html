@@ -51,6 +51,25 @@
                     <span class="tag">Барокко</span>
                     <span class="tag">История</span>
                 </div>
+
+                <!-- КНОПКИ ПЕРЕМЕЩЕНЫ ВВЕРХ (ПОД ТЕГАМИ) -->
+                <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px;">
+                    <button class="btn-nav btn-ghost" style="background: var(--gold-pale); color: var(--dark); border-color: var(--gold); padding: 10px 20px;" 
+                            onclick="goToMap(59.922474, 30.300023, 'Ставропигиальный собор св. Николая', '../objects/nikolsky.html')">
+                        📍 Показать на карте
+                    </button>
+                    
+                    <!-- ТЕКСТ ИСПРАВЛЕН НА "Построить маршрут" -->
+                    <button class="btn-nav btn-gold" style="padding: 10px 20px;" 
+                            onclick="planRoute(59.922474, 30.300023, 'Ставропигиальный собор св. Николая')">
+                        🗺️ Построить маршрут
+                    </button>
+
+                    <button class="btn-nav" style="background: var(--cream-2); color: var(--dark-2); border: 1px solid var(--text-muted); padding: 10px 20px;" 
+                            onclick="openGPS(59.922474, 30.300023, 'Ставропигиальный собор св. Николая')">
+                        🚗 Начать маршрут (Навигатор)
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -88,6 +107,7 @@
                     <div class="schedule-item"><span class="schedule-day">Выходные</span><span class="schedule-time">08:00 — 20:00</span></div>
                     <div style="margin-top:12px; font-size:13px; color:var(--text-muted);">Вход свободный.</div>
                 </div>
+                
                 <div class="sidebar-block">
                     <div class="sidebar-title">📞 Контакты</div>
                     <div style="font-size:14px; color:var(--text-muted);">Официальный сайт: nikolskiysobor.ru</div>

@@ -18,88 +18,39 @@
         .catalog-header p { font-size: 16px; color: var(--text-muted); max-width: 600px; line-height: 1.7; }
 
         .catalog-filters {
-            display: flex; gap: 10px; flex-wrap: nowrap; overflow-x: auto;
-            padding-bottom: 8px; margin-bottom: 32px; scrollbar-width: none;
+            display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+            margin-bottom: 32px;
         }
-        .catalog-filters::-webkit-scrollbar { display: none; }
         .filter-btn {
-            flex-shrink: 0; padding: 8px 20px; border-radius: 100px; border: 1px solid var(--cream-2);
+            padding: 8px 20px; border-radius: 100px; border: 1px solid var(--cream-2);
             background: var(--white); font-size: 13px; color: var(--text-muted);
             cursor: pointer; transition: all var(--transition); font-family: 'Inter', sans-serif; white-space: nowrap;
         }
         .filter-btn:hover, .filter-btn.active { background: var(--dark); color: var(--gold-light); border-color: var(--dark); }
+        .filter-group-label { font-size: 13px; font-weight: 600; color: var(--text-muted); margin-right: 4px; }
 
-        .catalog-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; transition: all 0.2s ease; }
+        .catalog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+        .catalog-item {
+            background: var(--white); border-radius: var(--radius-md);
+            padding: 16px 20px; box-shadow: var(--shadow-card);
+            border: 1px solid var(--cream-2);
+            transition: transform var(--transition), box-shadow var(--transition);
+            text-decoration: none; color: inherit; display: flex; flex-direction: column; gap: 8px;
+        }
+        .catalog-item:hover { transform: translateY(-2px); box-shadow: var(--shadow-hover); }
+        .catalog-item .item-name { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--dark); }
+        .catalog-item .item-region { font-size: 13px; color: var(--text-muted); display: flex; align-items: center; gap: 4px; }
+        .catalog-item .item-category { font-size: 12px; color: var(--gold); font-weight: 600; }
+        .catalog-item .item-status { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+        .catalog-item .item-link { margin-top: 8px; font-size: 13px; color: var(--gold); font-weight: 500; display: flex; align-items: center; gap: 4px; }
 
-        .place-card {
-            position: relative; border-radius: var(--radius-md);
-            overflow: hidden; cursor: pointer; text-decoration: none;
-            aspect-ratio: 3/4; transition: transform var(--transition), box-shadow var(--transition);
-            background: var(--dark-2);
-        }
-        .place-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
-        .place-card-img {
-            width: 100%; height: 100%; object-fit: cover;
-            display: flex; align-items: center; justify-content: center;
-            background: var(--dark-3);
-        }
-        .place-card-overlay {
-            position: absolute; inset: 0;
-            background: linear-gradient(to top, rgba(26,18,8,0.92) 0%, rgba(26,18,8,0) 55%);
-        }
-        .place-card-body {
-            position: absolute; bottom: 0; left: 0; right: 0; padding: 20px;
-        }
-        .place-card-name {
-            font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 4px;
-        }
-        .place-card-region {
-            font-size: 12px; color: rgba(255,255,255,0.55); display: flex; align-items: center; gap: 4px;
-        }
-        .place-card-badge {
-            position: absolute; top: 16px; right: 16px;
-            background: var(--gold); color: var(--dark); padding: 4px 12px; border-radius: 100px;
-            font-size: 11px; font-weight: 600; text-transform: uppercase; z-index: 2;
-        }
+        .no-results { grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-muted); font-size: 16px; }
+        .no-results .big-icon { font-size: 48px; display: block; margin-bottom: 12px; }
 
-        @media (max-width: 900px) {
-            .catalog-grid { display: flex; flex-direction: column; gap: 12px; }
-            .place-card {
-                aspect-ratio: auto;
-                display: flex; flex-direction: row; align-items: stretch;
-                height: 100px;
-                min-height: 100px;
-                background: var(--white);
-                border: 1px solid var(--cream-2); border-radius: var(--radius-md);
-                box-shadow: var(--shadow-card);
-            }
-            .place-card:hover { transform: translateY(-2px); }
-            .place-card-img {
-                width: 100px; height: 100px; flex-shrink: 0;
-                border-radius: var(--radius-md) 0 0 var(--radius-md);
-                display: flex; align-items: center; justify-content: center;
-                background: var(--dark-3);
-            }
-            .place-card-overlay { display: none; }
-            .place-card-body {
-                position: static; padding: 12px 16px;
-                display: flex; flex-direction: column; justify-content: center; flex: 1;
-            }
-            .place-card-name { font-size: 16px; color: var(--dark); margin-bottom: 2px; }
-            .place-card-region { font-size: 12px; color: var(--text-muted); }
-            .place-card-badge { top: 8px; right: 8px; font-size: 10px; }
-            .place-card::after {
-                content: '→'; position: absolute; right: 16px; top: 50%; transform: translateY(-50%);
-                font-size: 20px; color: var(--gold); opacity: 0.5; transition: opacity var(--transition);
-            }
-            .place-card:hover::after { opacity: 1; }
-        }
         @media (max-width: 560px) {
-            .place-card { height: 80px; min-height: 80px; }
-            .place-card-img { width: 80px; height: 80px; }
-            .place-card-name { font-size: 14px; }
-            .place-card-region { font-size: 11px; }
-            .place-card-body { padding: 10px 14px; }
+            .catalog-grid { grid-template-columns: 1fr; }
+            .filter-btn { font-size: 12px; padding: 6px 14px; }
+            .catalog-item { padding: 12px 16px; }
         }
     </style>
 </head>
@@ -118,124 +69,133 @@
             <p>Исследуйте великие святыни, узнавайте их историю и планируйте паломничество.</p>
         </div>
 
-        <div class="catalog-filters">
-            <button class="filter-btn active" data-filter="all">Все</button>
-            <button class="filter-btn" data-filter="Храм">Храмы</button>
-            <button class="filter-btn" data-filter="Собор">Соборы</button>
-            <button class="filter-btn" data-filter="Монастырь">Монастыри</button>
-            <button class="filter-btn" data-filter="Город">Города</button>
+        <div class="catalog-filters" id="filtersContainer">
+            <span class="filter-group-label">Регион:</span>
+            <button class="filter-btn active" data-filter-type="region" data-value="all">Все</button>
+            
+            <span class="filter-group-label" style="margin-left:20px;">Категория:</span>
+            <button class="filter-btn active" data-filter-type="category" data-value="all">Все</button>
+            <button class="filter-btn" data-filter-type="category" data-value="Храм">Храм</button>
+            <button class="filter-btn" data-filter-type="category" data-value="Собор">Собор</button>
+            <button class="filter-btn" data-filter-type="category" data-value="Монастырь">Монастырь</button>
+            <button class="filter-btn" data-filter-type="category" data-value="Часовня">Часовня</button>
         </div>
 
-        <div class="catalog-grid" id="catalogGrid"></div>
+        <div class="catalog-grid" id="catalogGrid">
+            <div class="no-results"><span class="big-icon">📖</span>Загрузка данных...</div>
+        </div>
     </div>
 
     <div id="footer-container"></div>
 
+    <script src="../js/config.js"></script>
+    <script src="../js/components.js"></script>
+
     <script>
-        // ============================================
-        // ДАННЫЕ ДЛЯ КАТАЛОГА
-        // ============================================
-        const catalogData = [
-            {
-                id: 1,
-                name: 'Храм Христа Спасителя',
-                region: 'г. Москва',
-                category: 'Храм',
-                link: '../objects/christ.html',
-                image: 'https://i.postimg.cc/J0MjMTLm/Cathedral-of-Christ-the-Savior.jpg'
-            },
-            {
-                id: 2,
-                name: 'Никольский Морской собор',
-                region: 'г. Санкт-Петербург',
-                category: 'Собор',
-                link: '../objects/nikolsky.html',
-                image: 'https://i.postimg.cc/59rxcXS9/S600x-U-2x-(3).jpg'
-            },
-            {
-                id: 3,
-                name: 'Троице-Сергиева Лавра',
-                region: 'Сергиев Посад',
-                category: 'Монастырь',
-                link: '../objects/lavra.html',
-                image: 'https://i.postimg.cc/9F0J7SyK/lavra3.jpg'
-            },
-            {
-                id: 4,
-                name: 'Дивеево',
-                region: 'Нижегородская область',
-                category: 'Монастырь',
-                link: '../objects/diveevo.html',
-                image: 'https://i.postimg.cc/2yyFYdyK/images-(3).jpg'
-            },
-            {
-                id: 5,
-                name: 'Арзамас',
-                region: 'Нижегородская область',
-                category: 'Город',
-                link: '../objects/arzamas.html',
-                image: 'https://i.postimg.cc/xdptGbTc/Arzamas-Saint-Nicholas-Monastery-Church-of-the-Epiphany-IMG-9660-1725.jpg'
-            }
-        ];
+        const dataFiles = ['../data/spb_temples.json'];
+        let allData = [];
+        let filteredData = [];
 
-        // ============================================
-        // УМНАЯ ФИЛЬТРАЦИЯ
-        // ============================================
-        function renderCatalog(filter) {
+        function generateLink(name) {
+            const slug = name.toLowerCase()
+                .replace(/[^a-zа-я0-9\s]/g, '')
+                .replace(/\s+/g, '-');
+            return `../objects/${slug}.html`;
+        }
+
+        async function loadCatalogData() {
             const grid = document.getElementById('catalogGrid');
-            grid.innerHTML = '';
+            try {
+                const fetchPromises = dataFiles.map(url => fetch(url).then(resp => {
+                    if (!resp.ok) throw new Error(`Ошибка загрузки ${url}`);
+                    return resp.json();
+                }));
+                const results = await Promise.all(fetchPromises);
+                allData = results.flat();
+                allData = allData.filter(item => item.name && item.region);
 
-            const filtered = filter === 'all' 
-                ? catalogData 
-                : catalogData.filter(item => item.category === filter);
+                allData.forEach(item => {
+                    if (!item.link) {
+                        item.link = generateLink(item.name);
+                    }
+                });
 
-            if (filtered.length === 0) {
+                buildFilters();
+                applyFilters();
+            } catch (error) {
+                console.error('Ошибка загрузки каталога:', error);
                 grid.innerHTML = `
-                    <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-muted);">
-                        <span style="font-size: 48px; display: block;">🔍</span>
-                        <p>По выбранной категории ничего не найдено</p>
+                    <div class="no-results">
+                        <span class="big-icon">⚠️</span>
+                        <p>Не удалось загрузить данные каталога.</p>
+                        <p style="font-size:13px; margin-top:8px;">Проверьте наличие файла spb_temples.json в папке data/</p>
+                    </div>
+                `;
+            }
+        }
+
+        function buildFilters() {
+            const regions = [...new Set(allData.map(item => item.region))].sort();
+            const container = document.getElementById('filtersContainer');
+            const allRegionBtn = container.querySelector('[data-filter-type="region"][data-value="all"]');
+            let regionHTML = '';
+            regions.forEach(region => {
+                regionHTML += `<button class="filter-btn" data-filter-type="region" data-value="${region}">${region}</button>`;
+            });
+            allRegionBtn.insertAdjacentHTML('afterend', regionHTML);
+
+            container.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const type = this.dataset.filterType;
+                    container.querySelectorAll(`.filter-btn[data-filter-type="${type}"]`).forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    applyFilters();
+                });
+            });
+        }
+
+        function applyFilters() {
+            const activeRegion = document.querySelector('.filter-btn[data-filter-type="region"].active')?.dataset.value || 'all';
+            const activeCategory = document.querySelector('.filter-btn[data-filter-type="category"].active')?.dataset.value || 'all';
+
+            filteredData = allData.filter(item => {
+                const regionMatch = activeRegion === 'all' || item.region === activeRegion;
+                const categoryMatch = activeCategory === 'all' || item.category === activeCategory;
+                return regionMatch && categoryMatch;
+            });
+
+            renderCatalog(filteredData);
+        }
+
+        function renderCatalog(data) {
+            const grid = document.getElementById('catalogGrid');
+            if (data.length === 0) {
+                grid.innerHTML = `
+                    <div class="no-results">
+                        <span class="big-icon">🔍</span>
+                        <p>По выбранным фильтрам ничего не найдено</p>
                     </div>
                 `;
                 return;
             }
 
-            filtered.forEach(item => {
-                const card = document.createElement('a');
-                card.href = item.link;
-                card.className = 'place-card';
-                card.innerHTML = `
-                    <div class="place-card-img">
-                        <img src="${item.image}" alt="${item.name}" style="width:100%; height:100%; object-fit:cover;" loading="lazy">
-                    </div>
-                    <div class="place-card-overlay"></div>
-                    <div class="place-card-body">
-                        <div class="place-card-name">${item.name}</div>
-                        <div class="place-card-region">📍 ${item.region}</div>
-                    </div>
-                    <div class="place-card-badge">${item.category}</div>
+            let html = '';
+            data.forEach(item => {
+                const statusHtml = item.status ? `<div class="item-status">Статус: ${item.status}</div>` : '';
+                html += `
+                    <a href="${item.link}" class="catalog-item" target="_blank">
+                        <div class="item-name">${item.name}</div>
+                        <div class="item-region">📍 ${item.region}</div>
+                        <div class="item-category">${item.category || 'Объект'}</div>
+                        ${statusHtml}
+                        <div class="item-link">Подробнее →</div>
+                    </a>
                 `;
-                grid.appendChild(card);
             });
+            grid.innerHTML = html;
         }
 
-        // ============================================
-        // ОБРАБОТЧИКИ ФИЛЬТРОВ
-        // ============================================
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                this.classList.add('active');
-                renderCatalog(this.dataset.filter);
-            });
-        });
-
-        // ============================================
-        // ИНИЦИАЛИЗАЦИЯ
-        // ============================================
-        renderCatalog('all');
+        document.addEventListener('DOMContentLoaded', loadCatalogData);
     </script>
-
-    <script src="../js/config.js"></script>
-    <script src="../js/components.js"></script>
 </body>
 </html>

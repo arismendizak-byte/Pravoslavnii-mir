@@ -23,6 +23,7 @@ function buildNav() {
         `<li><a href="${getPath(item.url)}">${item.title}</a></li>`
     ).join('');
 
+    // Бургер-меню ТОЛЬКО для навигации по сайту (выбор карт убран отсюда)
     const burgerItems = `
         <li><a href="${getPath('profile.html')}">Профиль</a></li>
         <li><a href="${getPath('calendar.html')}">Календарь</a></li>
@@ -211,10 +212,31 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ============================================
-    // СЛАЙДЕРЫ (РАБОТАЮТ ВЕЗДЕ)
+    // ОБРАБОТЧИК ЛОКАЛЬНОГО ПЕРЕКЛЮЧАТЕЛЯ КАРТ (ТОЛЬКО ЗДЕСЬ)
+    // ============================================
+    const switcherBtn = document.getElementById('mapSwitcherBtn');
+    const switcherMenu = document.getElementById('mapSwitcherMenu');
+
+    if (switcherBtn && switcherMenu) {
+        switcherBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            this.classList.toggle('active');
+            switcherMenu.classList.toggle('active');
+        });
+
+        document.addEventListener('click', function(e) {
+            const wrapper = document.querySelector('.map-switcher-wrapper');
+            if (wrapper && !wrapper.contains(e.target)) {
+                switcherBtn.classList.remove('active');
+                switcherMenu.classList.remove('active');
+            }
+        });
+    }
+
+    // ============================================
+    // СЛАЙДЕРЫ
     // ============================================
     document.querySelectorAll('.object-gallery').forEach(function(gallery) {
-        // Находим контейнер со слайдами
         var slidesContainer = gallery.querySelector('.gallery-slides');
         if (!slidesContainer) return;
 
@@ -228,7 +250,6 @@ document.addEventListener('DOMContentLoaded', function() {
         var currentSlide = 0;
         var autoTimer = null;
 
-        // Создаём точки навигации
         if (nav) {
             nav.innerHTML = '';
             slides.forEach(function(_, index) {
@@ -276,7 +297,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 5000);
         }
 
-        // Кнопки
         if (prevBtn) {
             prevBtn.addEventListener('click', function(e) {
                 e.stopPropagation();
@@ -290,7 +310,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
 
-        // Свайп для мобильных
         var startX = 0;
         var isDragging = false;
 
@@ -324,7 +343,6 @@ document.addEventListener('DOMContentLoaded', function() {
             resetAuto();
         }, { passive: true });
 
-        // Пауза при наведении
         gallery.addEventListener('mouseenter', function() {
             if (autoTimer) {
                 clearInterval(autoTimer);
@@ -336,13 +354,69 @@ document.addEventListener('DOMContentLoaded', function() {
             resetAuto();
         });
 
-        // Запуск
         updateSlide();
         resetAuto();
 
-        // Показываем кнопки и навигацию
         if (prevBtn) prevBtn.style.display = 'flex';
         if (nextBtn) nextBtn.style.display = 'flex';
         if (nav) nav.style.display = 'flex';
     });
 });
+
+// ============================================
+// ФУНКЦИИ ДЛЯ СТРАНИЦ ОБЪЕКТОВ
+// ============================================
+
+window.goToMap = function(lat, lon, name, link = '#') {
+    sessionStorage.setItem('mapTarget', JSON.stringify({ lat, lon, name, link }));
+    window.location.href = '../index.html#map';
+};
+
+window.planRoute = function(lat, lon, name) {
+    sessionStorage.setItem('mapRoute', JSON.stringify({ lat, lon, name }));
+    setTimeout(() => {
+        window.location.href = '../index.html#route';
+    }, 50);
+};
+
+window.openGPS = function(lat, lon, name) {
+    const yandexUrl = `https://yandex.ru/maps/?rtext=~${lat},${lon}&utm_source=pravmir`;
+    const googleUrl = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lon}`;
+    
+    if (confirm(`Открыть маршрут до "${name}" в Яндекс.Картах для голосовой навигации?`)) {
+        window.open(yandexUrl, '_blank');
+    } else {
+        window.open(googleUrl, '_blank');
+    }
+};
+
+// ============================================
+// ПЕРЕКЛЮЧЕНИЕ КАРТ (ВЫНЕСЕНО СЮДА)
+// ============================================
+
+window.switchMapTab = function(targetId, label) {
+    const mapViews = document.querySelectorAll('.map-view');
+    mapViews.forEach(view => view.classList.remove('active'));
+    
+    const targetView = document.getElementById(targetId);
+    if (targetView) {
+        targetView.classList.add('active');
+    }
+
+    // Обновляем текст на кнопке переключателя
+    const currentLabel = document.getElementById('currentMapLabel');
+    if (currentLabel && label) {
+        currentLabel.textContent = label;
+    }
+
+    // Закрываем выпадающее меню
+    const switcherBtn = document.getElementById('mapSwitcherBtn');
+    const switcherMenu = document.getElementById('mapSwitcherMenu');
+    if (switcherBtn) switcherBtn.classList.remove('active');
+    if (switcherMenu) switcherMenu.classList.remove('active');
+
+    // Перерисовываем нашу карту, если переключились на неё
+    if (targetId === 'map-our' && window.pravmirMap) {
+        setTimeout(() => window.pravmirMap.invalidateSize(), 150);
+    }
+};
