@@ -52,6 +52,37 @@
         .leaflet-routing-container h2 { font-size: 14px !important; font-weight: 600 !important; margin-bottom: 6px !important; }
         .leaflet-routing-container table { margin: 8px 0 0 0 !important; }
     </style>
+
+<style id="home-search-patch">
+.home-search-results{
+position:absolute;z-index:1200;left:0;right:0;top:calc(100% + 8px);
+display:none;max-height:360px;overflow-y:auto;background:#fff;
+border:1px solid var(--cream-2);border-radius:14px;
+box-shadow:0 12px 30px rgba(26,18,8,.16);padding:6px
+}
+.home-search-results.open{display:block}
+.home-search-result{
+display:flex;align-items:center;gap:10px;width:100%;padding:11px 12px;
+border:0;border-radius:10px;background:transparent;color:var(--dark);
+text-align:left;cursor:pointer;font:500 14px/1.35 Inter,sans-serif
+}
+.home-search-result:hover,.home-search-result:focus-visible{
+background:var(--cream);outline:none
+}
+.home-search-result-icon{flex:0 0 auto;font-size:20px}
+.home-search-result-text{min-width:0}
+.home-search-result-name{font-weight:600}
+.home-search-result-meta{
+display:block;margin-top:2px;color:var(--text-muted);
+font-size:12px;font-weight:400
+}
+.home-search-empty{
+padding:16px 12px;color:var(--text-muted);
+font-size:13px;text-align:center
+}
+.search-bar{position:relative}
+</style>
+
 </head>
 <body>
     <div id="nav-container"></div>
@@ -339,5 +370,163 @@
             }
         });
     </script>
+
+<script id="home-search-script">
+(function(){
+const input=document.querySelector('.search-bar input');
+const button=document.querySelector('.search-bar .btn-search');
+const bar=document.querySelector('.search-bar');
+if(!input||!button||!bar)return;
+
+const results=document.createElement('div');
+results.className='home-search-results';
+results.setAttribute('role','listbox');
+bar.appendChild(results);
+
+let data=null;
+
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({
+'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'
+}[c]));
+
+const norm=v=>String(v??'').toLocaleLowerCase('ru-RU').trim();
+
+async function load(){
+if(data)return data;
+const [catalog,temples]=await Promise.all([
+fetch('data/catalog.json').then(r=>r.ok?r.json():[]),
+fetch('data/spb_temples.json').then(r=>r.ok?r.json():[])
+]);
+
+const a=catalog.map(x=>({
+...x,
+source:'catalog',
+link:String(x.link||'').replace(/^\.\.\//,'')
+}));
+
+const b=temples.map(x=>({...x,source:'map'}));
+
+const seen=new Set();
+data=[...a,...b].filter(x=>{
+const key=[norm(x.name),norm(x.region),x.lat,x.lon].join('|');
+if(seen.has(key))return false;
+seen.add(key);
+return !!x.name;
+});
+
+return data;
+}
+
+function openItem(x){
+results.classList.remove('open');
+
+if(x.link){
+location.href=x.link;
+return;
+}
+
+if(Number.isFinite(Number(x.lat))&&Number.isFinite(Number(x.lon))){
+sessionStorage.setItem('mapTarget',JSON.stringify({
+lat:Number(x.lat),
+lon:Number(x.lon),
+name:x.name
+}));
+location.href='index.html#map';
+}
+}
+
+function render(items){
+if(!items.length){
+results.innerHTML='<div class="home-search-empty">Ничего не найдено. Попробуйте название храма или город.</div>';
+results.classList.add('open');
+return;
+}
+
+results.innerHTML=items.slice(0,8).map((x,i)=>{
+const cat=x.category||'Святое место';
+const place=x.region||x.address||'';
+const icon=cat==='Монастырь'?'🕍':cat==='Часовня'?'🕯️':'⛪';
+
+return `<button type="button" class="home-search-result" data-index="${i}">
+<span class="home-search-result-icon">${icon}</span>
+<span class="home-search-result-text">
+<span class="home-search-result-name">${esc(x.name)}</span>
+<span class="home-search-result-meta">${esc(place)} · ${esc(cat)}</span>
+</span>
+</button>`;
+}).join('');
+
+results.querySelectorAll('.home-search-result').forEach(btn=>{
+btn.addEventListener('click',()=>{
+openItem(items[Number(btn.dataset.index)]);
+});
+});
+
+results.classList.add('open');
+}
+
+async function search(){
+const q=norm(input.value);
+
+if(!q){
+results.classList.remove('open');
+input.focus();
+return;
+}
+
+const all=await load();
+const terms=q.split(/\s+/).filter(Boolean);
+
+const found=all.map(x=>{
+const name=norm(x.name);
+const hay=norm([
+x.name,x.region,x.category,x.address,x.status
+].join(' '));
+
+let score=0;
+
+if(name===q)score+=150;
+if(name.startsWith(q))score+=100;
+else if(name.includes(q))score+=60;
+
+if(norm(x.region).includes(q))score+=35;
+
+for(const term of terms){
+if(hay.includes(term))score+=10;
+}
+
+return {x,score};
+})
+.filter(x=>x.score>0)
+.sort((a,b)=>b.score-a.score)
+.map(x=>x.x);
+
+render(found);
+}
+
+input.addEventListener('input',()=>{
+if(input.value.trim().length>=2)search();
+else results.classList.remove('open');
+});
+
+input.addEventListener('keydown',e=>{
+if(e.key==='Enter'){
+e.preventDefault();
+search();
+}
+if(e.key==='Escape')results.classList.remove('open');
+});
+
+button.addEventListener('click',e=>{
+e.preventDefault();
+search();
+});
+
+document.addEventListener('click',e=>{
+if(!bar.contains(e.target))results.classList.remove('open');
+});
+})();
+</script>
+
 </body>
 </html>

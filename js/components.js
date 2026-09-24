@@ -10,12 +10,29 @@ const currentPath = window.location.pathname;
 const fileName = currentPath.split('/').pop();
 const folder = currentPath.split('/').slice(0, -1).pop() || 'root';
 
+// Папки первого уровня, из которых нужен переход на корень проекта.
+const nestedFolders = new Set(['catalog', 'routes', 'objects', 'articles']);
+
 function getPath(relativePath) {
-    if (folder === 'root' || folder === 'pages' || folder === '') {
-        return relativePath;
-    } else {
-        return '../' + relativePath;
+    const value = String(relativePath ?? '');
+
+    // Якоря, внешние ссылки и специальные URL не изменяем.
+    if (
+        value === '' ||
+        value === '#' ||
+        value.startsWith('#') ||
+        /^(https?:|mailto:|tel:|\/)/i.test(value)
+    ) {
+        return value;
     }
+
+    // Страницы в корне проекта используют путь напрямую.
+    if (!nestedFolders.has(folder)) {
+        return value;
+    }
+
+    // Страницы во вложенных папках поднимаются на уровень корня.
+    return '../' + value;
 }
 
 function buildNav() {
