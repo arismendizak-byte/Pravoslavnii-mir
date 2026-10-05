@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "provider": "templesru",
+  "files": {
+    "arkhangelsk_temples_full.csv": {
+      "region": "Архангельская область"
+    },
+    "bryansk_temples_full.csv": {
+      "region": "Брянская область"
+    },
+    "ivanovo_temples_full.csv": {
+      "region": "Ивановская область"
+    },
+    "karelia_temples_full.csv": {
+      "region": "Республика Карелия"
+    },
+    "kostroma_temples_full.csv": {
+      "region": "Костромская область"
+    },
+    "lo_temples.csv": {
+      "region": "Ленинградская область"
+    },
+    "mo_temples_full.csv": {
+      "region": "Московская область"
+    },
+    "moscow_temples_full.csv": {
+      "region": "Москва"
+    },
+    "nizhny_novgorod_temples_full.csv": {
+      "region": "Нижегородская область"
+    },
+    "pskov_temples_full.csv": {
+      "region": "Псковская область"
+    },
+    "ryazan_temples_full.csv": {
+      "region": "Рязанская область"
+    },
+    "smolensk_temples_full.csv": {
+      "region": "Смоленская область"
+    },
+    "sverdlovsk_temples_full.csv": {
+      "region": "Свердловская область"
+    },
+    "tver_temples_full.csv": {
+      "region": "Тверская область"
+    },
+    "vladimir_temples_full.csv": {
+      "region": "Владимирская область"
+    },
+    "vologda_temples_full.csv": {
+      "region": "Вологодская область"
+    },
+    "yaroslavl_temples_full.csv": {
+      "region": "Ярославская область"
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "library_media_asset.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "media_kind",
+    "work_ref",
+    "storage_mode",
+    "asset_path",
+    "external_url",
+    "rights_status",
+    "license_url",
+    "copyright_notice",
+    "trust_layer",
+    "verification_status",
+    "source_records"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^pm-media-[0-9a-f]{20}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "media_kind": {
+      "enum": [
+        "audio",
+        "video",
+        "image"
+      ]
+    },
+    "work_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "storage_mode": {
+      "enum": [
+        "local_asset",
+        "external_url"
+      ]
+    },
+    "asset_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "external_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "rights_status": {
+      "enum": [
+        "public_domain_verified",
+        "open_license",
+        "permission_granted",
+        "metadata_only",
+        "external_link_only",
+        "restricted",
+        "review_required"
+      ]
+    },
+    "license_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "copyright_notice": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "trust_layer": {
+      "enum": [
+        "editorial",
+        "verified_organisation",
+        "community"
+      ]
+    },
+    "verification_status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

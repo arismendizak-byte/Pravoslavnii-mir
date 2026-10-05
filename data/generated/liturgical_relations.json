@@ -1,0 +1,4952 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "a9ee762957cf96ade9f1e1d5e01eec3151689d7ed798c30e3cc39c9178151bd9",
+  "count": 215,
+  "relations": [
+    {
+      "id": "pm-lrel-010fc5c4921da8f0af9e",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-21"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-01551d52bfaecb26c3d8",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-03"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-04dc892f1a52d3a8cda8",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-01-19"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-d74ddb9c294bbeda6141"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-19-05",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 5,
+          "source_url": "https://azbyka.ru/days/2026-01-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-0514a11989b4d9c66324",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-25"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-05d8d9a410732819ff99",
+      "relation_type": "commemorates",
+      "from": {
+        "kind": "commemoration",
+        "id": "pm-comm-1b5916d3536d3b80bd3f"
+      },
+      "to": {
+        "kind": "saint",
+        "id": "pm-saint-4efbfd490a4731dd4707"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-08-01:серафима саровского",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 17,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-09579dd4f8da0343df85",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-07-08"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-095e446dfa81fa5d707e",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-04-07"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-09c7d83cd6ab368f6979",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-01-07"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-be216a176ebc0ab2f49f"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-07-01",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 1,
+          "source_url": "https://azbyka.ru/days/2026-01-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-0afa113dcf12e4284d18",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-18"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-0d0d5cb3a5f3cd88a46d",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-02-24"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-0d8dfad13d0aa78d40b1",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-07-03"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-0e89440974729f4a7fac",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-08-25"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-4392fc29019cc3f5a733"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "dormition-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 30,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-0ec4a566961844b9d31d",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-30"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-0ed33cd86f5ca203a90c",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-01-19"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-dc17e58f53df809351c5"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-19-08",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 8,
+          "source_url": "https://azbyka.ru/days/2026-01-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-0f2060e9488b346f1cf5",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-09"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-10c637897f253cd8c266",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-09-21"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-f551378f999ea1e74826"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-09-21-40",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 40,
+          "source_url": "https://azbyka.ru/days/2026-09-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-11be804067ee636fbc2f",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-02-25"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-12118f25e3d2be5bcca8",
+      "relation_type": "observed_on",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-05-21"
+      },
+      "to": {
+        "kind": "feast",
+        "id": "pm-feast-1329aa553e96ce62d806"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-05-21:вознесение господне",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 10,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-136aa089ccb8b2200fd4",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-20"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-148e28e94043d6ca959c",
+      "relation_type": "observed_on",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-05-31"
+      },
+      "to": {
+        "kind": "feast",
+        "id": "pm-feast-714fb97ce53e3934b482"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-05-31:день святой троицы",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 12,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-16520c6d4e12c4dfbe91",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-10"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-1726aa79af6d03782172",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-29"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-176a1fd6d8df71da368b",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-16"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-181fb80b151ffeb34993",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-31"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-185f98237b32a767b820",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-07-12"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-d3e9f01d12a63c4b1416"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-07-12-33",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 33,
+          "source_url": "https://azbyka.ru/days/2026-07-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-188462dc74985bd309d6",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-23"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-18b11f81f14ec1deafe6",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-08-19"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-4392fc29019cc3f5a733"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "dormition-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 30,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-1905b566c8ff8f4e4ac8",
+      "relation_type": "commemorates",
+      "from": {
+        "kind": "commemoration",
+        "id": "pm-comm-84206d9b9149f4ae874b"
+      },
+      "to": {
+        "kind": "saint",
+        "id": "pm-saint-4db1cd8508af04e95c6d"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-06-26:преподобной анны кашинской",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 14,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-197a68f7355bc330cc9f",
+      "relation_type": "observed_on",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-07-28"
+      },
+      "to": {
+        "kind": "commemoration",
+        "id": "pm-comm-44391236ccbb9053880f"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-07-28:равноапостольного владимира",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 16,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-201fe75130620effb991",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-19"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-20e45e955071ddb23839",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-08-18"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-4392fc29019cc3f5a733"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "dormition-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 30,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-213db49ff8f7fa323290",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-02-15"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-a4e01d8d11f68ef4e0e8"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-02-15-12",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 12,
+          "source_url": "https://azbyka.ru/days/2026-02-15",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-21cd0d76b7ad66b15ac6",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-30"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-230e96c5c0fe213df00c",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-16"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-2546871147fd80555c2d",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-11"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-29edd8fb7bd41932f611",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-01"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-2ac0229d932c2ffd4877",
+      "relation_type": "observed_on",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-04-07"
+      },
+      "to": {
+        "kind": "feast",
+        "id": "pm-feast-77e553f688cf6cb2d43d"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-04-07:благовещение пресвятой богородицы",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 6,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-2c75468fa6a091a39100",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-14"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-2d5178dccd812981ab59",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-09"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-2db62980fcd18bee7755",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-09-27"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-1292a3cf023b33be491a"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-09-27-45",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 45,
+          "source_url": "https://azbyka.ru/days/2026-09-27",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-3012b00f937a5ad56276",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-21"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-32c23c51c6f673a63400",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-07-10"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-3353832928240fa2bd1c",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-04"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-3506b24b0ab4bc77790d",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-17"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-35315f6c27c9fc6c87c9",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-08-15"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-4392fc29019cc3f5a733"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "dormition-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 30,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-354cba715cca3065cdd1",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-08"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-35a25b95803d2cc866d1",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-13"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-3692cd1ce17e48f12bff",
+      "relation_type": "observed_on",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-08-19"
+      },
+      "to": {
+        "kind": "feast",
+        "id": "pm-feast-fac0126a9ab43e90d972"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-08-19:преображение господне",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 19,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-3727d8e7f8f1ea8fe127",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-11"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-3839854b9cd1ea85a360",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-04-07"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-9824c05b57a8971beef2"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-07-16",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 16,
+          "source_url": "https://azbyka.ru/days/2026-04-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-39143bee8b86d962ba4f",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-13"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-3b3189d0cabefd9cc025",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-04-07"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-da3835da2b192b4dfb54"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-07-15",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 15,
+          "source_url": "https://azbyka.ru/days/2026-04-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-3b63402d70248a45d5c0",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-30"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-3c93e7a38296d3d43134",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-14"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-3e5885ce3c616e99f331",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-02-15"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-c8c28d629f1cdd7b8617"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-02-15-10",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 10,
+          "source_url": "https://azbyka.ru/days/2026-02-15",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-3ef186c39b421b868788",
+      "relation_type": "commemorates",
+      "from": {
+        "kind": "commemoration",
+        "id": "pm-comm-d430778866669a0e530a"
+      },
+      "to": {
+        "kind": "saint",
+        "id": "pm-saint-d65fcc88a283729e7147"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-05-24:кирилла и мефодия",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 11,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-3f29bf2f1ecf42d017c0",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-15"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-40d7021f6fc93be1981c",
+      "relation_type": "observed_on",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-01-19"
+      },
+      "to": {
+        "kind": "feast",
+        "id": "pm-feast-0d16d133b2183b48ebb6"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-01-19:крещение господне",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 2,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-429167d270151ccac470",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-08-19"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-cc2de1e84f9bc7cb9219"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-08-19-36",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 36,
+          "source_url": "https://azbyka.ru/days/2026-08-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-42e186e20bc770dc786c",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-11-28"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-43db258a17565a66a5b4",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-02-26"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-45ce71270aa38af50b36",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-10"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-45e9f3934cf4392a4f0b",
+      "relation_type": "observed_on",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-04-12"
+      },
+      "to": {
+        "kind": "feast",
+        "id": "pm-feast-e168192c9f98092e4e02"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-04-12:пасха христова",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 7,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-463291dc1533e260b18e",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-04-06"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-48b4c0dd7880eeb6238f",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-02-27"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-4b52f29dddf889d1c77e",
+      "relation_type": "observed_on",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-04-19"
+      },
+      "to": {
+        "kind": "commemoration",
+        "id": "pm-comm-47fc5e8a8a1f1181872b"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-04-19:антипасха неделя фомы",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 8,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-4dac86eff23f6879c236",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-24"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-4db938504b30c212a869",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-07"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-4f5d9bc281510e9cd142",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-26"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-56b51db22d6347553230",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-07-05"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-56bf00196a172c93f926",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-07"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-5a9189e1d8e37335ade5",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-05-31"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-a0abe9e8bdf284198427"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-31-28",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 28,
+          "source_url": "https://azbyka.ru/days/2026-05-31",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-5f210c9f92b5c3c85390",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-07-12"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-8aaba5fdd348df244d27"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-07-12-29",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 29,
+          "source_url": "https://azbyka.ru/days/2026-07-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-5f6793fe2d24db71c01e",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-02-23"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-6034067d49f6aabb635d",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-04-12"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-18f12ae920faec61b1dd"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-12-19",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 19,
+          "source_url": "https://azbyka.ru/days/2026-04-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-60ea20badda4d81f2b3e",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-04-07"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-b913664d210150314bef"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-07-14",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 14,
+          "source_url": "https://azbyka.ru/days/2026-04-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-61630f75fbff45219ddb",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-07-02"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-6177681152de0dda72a9",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-04-12"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-de66b03576d5124c53e5"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-12-18",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 18,
+          "source_url": "https://azbyka.ru/days/2026-04-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-63a7905bf28f696c05b9",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-09"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-6493f8693288ffd5141c",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-24"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-66c5571b2b9254aa36df",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-13"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-68f595ee0c6cd79f1d89",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-04-11"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-6901959d6ab6c9487a3d",
+      "relation_type": "commemorates",
+      "from": {
+        "kind": "commemoration",
+        "id": "pm-comm-44391236ccbb9053880f"
+      },
+      "to": {
+        "kind": "saint",
+        "id": "pm-saint-f78aee1ef3f22a9d0a76"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-07-28:равноапостольного владимира",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 16,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-697613051fdd40cda4a9",
+      "relation_type": "commemorates",
+      "from": {
+        "kind": "commemoration",
+        "id": "pm-comm-c5d505838696a3036a6b"
+      },
+      "to": {
+        "kind": "saint",
+        "id": "pm-saint-5e9427d027db724c0adf"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-01-25:мученицы татианы",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 3,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-6b18286031583962f6ad",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-28"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-7161a031f195f46e9abd",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-15"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-71a81a324526048fe578",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-03"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-7246ee34bc3e9d8c4079",
+      "relation_type": "observed_on",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-26"
+      },
+      "to": {
+        "kind": "commemoration",
+        "id": "pm-comm-84206d9b9149f4ae874b"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-06-26:преподобной анны кашинской",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 14,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-728275cbf592c194389b",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-07-09"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-72856570dfccba1bdf8c",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-04-04"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-72937564cdb50cd27220",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-29"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-729f09c13ad0ba45b618",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-22"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-736ae81ffb8ca9a934ff",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-04-10"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-74a907911b12e3764365",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-04-05"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-75c939ddae264a52067e",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-07-12"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-3e1123688c2323c64f22"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-07-12-31",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 31,
+          "source_url": "https://azbyka.ru/days/2026-07-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-75c9abb4d70cc0ea9a05",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-02"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-767676e00f49494b0aaf",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-27"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-76c0089864f92cfaf0f3",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-03"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-7a4378e2b855b6780863",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-10-14"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-ac491ad6771018591452"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-10-14-46",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 46,
+          "source_url": "https://azbyka.ru/days/2026-10-14",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-7a80a052dab5a67c616e",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-08-28"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-40bb959a68dd93e46fec"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-08-28-37",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 37,
+          "source_url": "https://azbyka.ru/days/2026-08-28",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-7b9b6113392a58cc9909",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-08-22"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-4392fc29019cc3f5a733"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "dormition-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 30,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-7dc0205a0d8269fae450",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-08-28"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-921f96884344253d921a"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-08-28-39",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 39,
+          "source_url": "https://azbyka.ru/days/2026-08-28",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-7f3643216a30bace5153",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-23"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-8053c0c3744732b78235",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-02-15"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-d8e55c4b7f645fbf8438"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-02-15-11",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 11,
+          "source_url": "https://azbyka.ru/days/2026-02-15",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-80bcc551dd5a9d71c27d",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-09-21"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-d2a9a7bc7ccef2776dc7"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-09-21-41",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 41,
+          "source_url": "https://azbyka.ru/days/2026-09-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-84703cbff1602144e1ef",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-06"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-851449cfdd4d4f9302a8",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-08"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-852844a7baa9acfa306c",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-06"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-85330d81bf0fbaaddf02",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-02-28"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-8540a3507d1fac26b72f",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-26"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-85c475b6e955f104f85f",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-04-02"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-860c568d8748a55165a4",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-27"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-862cb9b8ec5d55cd7d3a",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-04-01"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-868e42fceef64db5b47f",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-05"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-871c3b4d9c46ee73606e",
+      "relation_type": "observed_on",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-11-04"
+      },
+      "to": {
+        "kind": "feast",
+        "id": "pm-feast-a9cd42d8e139aabcf163"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-11-04:казанской иконы божией матери",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 24,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-88b92278150abf1141f5",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-18"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-89866d6145188f9bce50",
+      "relation_type": "observed_on",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-02-15"
+      },
+      "to": {
+        "kind": "feast",
+        "id": "pm-feast-9fe64f862bec24c75b51"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-02-15:сретение господне",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 4,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-8bd6232143b46a204fa5",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-17"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-8c41aa29e05b4f6d0bdc",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-19"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-8d454d056e6adecf33b5",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-04"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-8f017bdf2f1054fad1e5",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-04-08"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-92005026f254bf8372fd",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-12"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-926706493c4fffd0f6d0",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-07"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-9282fc4cc6c84e4c48c3",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-02"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-941f46549a0bb3df86cb",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-08-20"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-4392fc29019cc3f5a733"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "dormition-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 30,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-94686b7641b1234bb2e5",
+      "relation_type": "observed_on",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-04"
+      },
+      "to": {
+        "kind": "feast",
+        "id": "pm-feast-dcfc2961bfad5d4da3ae"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-12-04:введение во храм пресвятой богородицы",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 26,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-9472bdae419425e5eed0",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-05"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-949af1e053e4a5ee31a6",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-01-07"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-c7b956a3b207cab00315"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-07-02",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 2,
+          "source_url": "https://azbyka.ru/days/2026-01-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-94e38e0a8f550122ee16",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-11"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-96d5f9632adafee84249",
+      "relation_type": "observed_on",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-01-25"
+      },
+      "to": {
+        "kind": "commemoration",
+        "id": "pm-comm-c5d505838696a3036a6b"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-01-25:мученицы татианы",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 3,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-97a780cb93718ad7cf4d",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-07-04"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-9b1a753311b92e52ceee",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-25"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-9d1b4f19fac1f242d790",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-02"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-9e3e5a50ad81b5aa9c26",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-22"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-9f4c23f06bf249b90ecb",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-09-21"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-e0146a92230720a5ec33"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-09-21-42",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 42,
+          "source_url": "https://azbyka.ru/days/2026-09-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-9f64dcb1db19eb1177af",
+      "relation_type": "observed_on",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-04-26"
+      },
+      "to": {
+        "kind": "commemoration",
+        "id": "pm-comm-7c05f3a13338f203d591"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-04-26:радоница",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 9,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-9f9a5dbfe00864233d3f",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-20"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-a0c6f85a769b1d5c4035",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-07-06"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-a3aa04ced5702db86fea",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-25"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-a4c1567fa72429592581",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-01"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-a6cd715fd46707577f87",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-08"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-a744e164d29efb4ff8e5",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-27"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-a7e4846f6308235c0c09",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-02-15"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-9f457738286d4cd69eba"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-02-15-13",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 13,
+          "source_url": "https://azbyka.ru/days/2026-02-15",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-a8597d76c81b8a5564ac",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-20"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-a8c44d4d42baa20ea2c5",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-31"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-a933a903938fe9d8b7a4",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-29"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-aa51210c6739141f4df0",
+      "relation_type": "observed_on",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-08-01"
+      },
+      "to": {
+        "kind": "commemoration",
+        "id": "pm-comm-1b5916d3536d3b80bd3f"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-08-01:серафима саровского",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 17,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-aa72727dd726b4bb17af",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-08-28"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-7140bf40e23013779954"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-08-28-38",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 38,
+          "source_url": "https://azbyka.ru/days/2026-08-28",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-ab119932059dea7d371b",
+      "relation_type": "observed_on",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-01-07"
+      },
+      "to": {
+        "kind": "feast",
+        "id": "pm-feast-d2a6b919fe5c37c14aa0"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-01-07:рождество христово",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 1,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-ad14c657e218085f8764",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-04"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-ae6a896311a4c729a8ce",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-15"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-af63172526e5d4b47e5f",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-07-11"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-afc60297b6c3334c7bc5",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-08-17"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-4392fc29019cc3f5a733"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "dormition-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 30,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-b0e062c6dbc859263edb",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-26"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-b33587488ee4ab0fbd3b",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-05-21"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-2492a2e73266807bcb04"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-21-22",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 22,
+          "source_url": "https://azbyka.ru/days/2026-05-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-b383d19975dbe6ff1327",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-12"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-b45c8deea1fb9de75670",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-09-27"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-1c4bfb0ca47662ca8988"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-09-27-43",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 43,
+          "source_url": "https://azbyka.ru/days/2026-09-27",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-b4d740cf33c80af682fc",
+      "relation_type": "observed_on",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-06"
+      },
+      "to": {
+        "kind": "commemoration",
+        "id": "pm-comm-58312e1ba4e51051b3ad"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-12-06:святителя николая чудотворца",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 27,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-b550f60b60e0ee9540f3",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-12"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-b6e303608212f62a8672",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-16"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-b91062beb9a2933b66e3",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-07-12"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-6966ef426fc964c3800a"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-07-12-30",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 30,
+          "source_url": "https://azbyka.ru/days/2026-07-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-ba8122c51be24ad9f7fb",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-09-27"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-d54f292c2fd82aba522b"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-09-27-44",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 44,
+          "source_url": "https://azbyka.ru/days/2026-09-27",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-bb1fe69baacd479a5de7",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-19"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-bf4f660f6331ba177218",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-01-19"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-58ecd4fda1dc875a2db5"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-19-07",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 7,
+          "source_url": "https://azbyka.ru/days/2026-01-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-c1257f5dac3d8b067493",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-04-12"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-4924c90ae6a6326fff16"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-12-20",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 20,
+          "source_url": "https://azbyka.ru/days/2026-04-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-c29c7b491752bba66deb",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-11-29"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-c361e7eec4d1ec77d4f9",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-08-27"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-4392fc29019cc3f5a733"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "dormition-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 30,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-c59d52320ee5ed846ffc",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-08-19"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-bcb95438af45cb5b03c9"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-08-19-35",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 35,
+          "source_url": "https://azbyka.ru/days/2026-08-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-c6ce2b911102a24fee90",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-05-21"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-4e55bb79ad5a482e7099"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-21-21",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 21,
+          "source_url": "https://azbyka.ru/days/2026-05-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-c7f403e88b629db85beb",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-28"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-ca4b2511b60f32d7df2a",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-01-19"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-ef34d5e57ec794a7f208"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-19-06",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 6,
+          "source_url": "https://azbyka.ru/days/2026-01-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-cb174e3ed7c64721361c",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-07-07"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-cb727fcacd48ea601f3d",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-04-09"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-cbd8a487e50a618802ee",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-08-26"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-4392fc29019cc3f5a733"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "dormition-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 30,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-cc4e5c68e90669d2804e",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-06"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-ccf811989fd4a27f54d8",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-08-16"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-4392fc29019cc3f5a733"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "dormition-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 30,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-d4c1587c0bb94f82b3bc",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-23"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-d4d74dd37a01b7454df5",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-05-21"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-b0b7ef6ffcf73eaa13e8"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-21-23",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 23,
+          "source_url": "https://azbyka.ru/days/2026-05-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-d559b55746a0b0b34af7",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-05-21"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-8726c47595a423bec487"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-21-24",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 24,
+          "source_url": "https://azbyka.ru/days/2026-05-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-d5f744e3675edd86589d",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-05-21"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-f98feb38bc1847db96bb"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-21-25",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 25,
+          "source_url": "https://azbyka.ru/days/2026-05-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-d6541dacb99f971a7e95",
+      "relation_type": "observed_on",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-05-24"
+      },
+      "to": {
+        "kind": "commemoration",
+        "id": "pm-comm-d430778866669a0e530a"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-05-24:кирилла и мефодия",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 11,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-d70c49cacbd29580bf7d",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-10-14"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-9d5e2aa44a08c4910b4c"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-10-14-47",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 47,
+          "source_url": "https://azbyka.ru/days/2026-10-14",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-d812d080313b4088d861",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-04-07"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-d60f361a4024f6e1d255"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-07-17",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 17,
+          "source_url": "https://azbyka.ru/days/2026-04-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-d843d769887e5c546266",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-08-19"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-ea4573c331aa1f70a264"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-08-19-34",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 34,
+          "source_url": "https://azbyka.ru/days/2026-08-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-d852c1dc794fbda60def",
+      "relation_type": "observed_on",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-09-21"
+      },
+      "to": {
+        "kind": "feast",
+        "id": "pm-feast-464eaad4104098f7ed0e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-09-21:рождество пресвятой богородицы",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 21,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-db1be6cafc250e6c260c",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-11-30"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-de5737448b3d242f3aca",
+      "relation_type": "commemorates",
+      "from": {
+        "kind": "commemoration",
+        "id": "pm-comm-58312e1ba4e51051b3ad"
+      },
+      "to": {
+        "kind": "saint",
+        "id": "pm-saint-5debdc29945c75da37dc"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-12-06:святителя николая чудотворца",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 27,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-de8fe85fe1bd6267d603",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-24"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-ded8352214b040cb2e70",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-10"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-e1a315a62bf59522e7fe",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-21"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-e2b0728bcf618c6b8b45",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-08-14"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-4392fc29019cc3f5a733"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "dormition-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 30,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-e315101040fb16d480e0",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-18"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-e3d7bf597dc1cd133478",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-14"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-e4a127f39f43fa858e79",
+      "relation_type": "observed_on",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-07-12"
+      },
+      "to": {
+        "kind": "feast",
+        "id": "pm-feast-b3b695bd49798b0770a2"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-07-12:апостолов петра и павла",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 15,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-e5cd10d42877e074c73a",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-02-15"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-09bbe8121761fc9b054c"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-02-15-09",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 9,
+          "source_url": "https://azbyka.ru/days/2026-02-15",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-e670872c78d50cf5e82e",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-08-21"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-4392fc29019cc3f5a733"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "dormition-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 30,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-e6ebfde4dc0052793e53",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-05-31"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-fefe047efff612c03aa4"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-31-27",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 27,
+          "source_url": "https://azbyka.ru/days/2026-05-31",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-e722490d8b5c346bc02d",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-17"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-e7b348d86fd593be35be",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-04-03"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-e8a24c7571ebf3b49842",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-05-31"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-7514a78ca9d8a2b9228d"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-31-26",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 26,
+          "source_url": "https://azbyka.ru/days/2026-05-31",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-e8b93931c32f1d88a05b",
+      "relation_type": "commemorates",
+      "from": {
+        "kind": "commemoration",
+        "id": "pm-comm-d430778866669a0e530a"
+      },
+      "to": {
+        "kind": "saint",
+        "id": "pm-saint-c7191324786b992d64d1"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-05-24:кирилла и мефодия",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 11,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-ea3fda486f7f37f55435",
+      "relation_type": "observed_on",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-10-14"
+      },
+      "to": {
+        "kind": "feast",
+        "id": "pm-feast-7f2419086b1894a14da8"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-10-14:покров пресвятой богородицы",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 23,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-eb68c2df102ca28e08b5",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-07-01"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-ec6d11db6aa8c05c4073",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-08-24"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-4392fc29019cc3f5a733"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "dormition-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 30,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-f0409b901dd79e4c4e5c",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-01-07"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-18bb95705dfd6453ef2d"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-07-03",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 3,
+          "source_url": "https://azbyka.ru/days/2026-01-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-f1057633fd9f5a3fb4d8",
+      "relation_type": "observed_on",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-08-28"
+      },
+      "to": {
+        "kind": "feast",
+        "id": "pm-feast-2eec1d0a53ab0dda4fa4"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-08-28:успение пресвятой богородицы",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 20,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-f28c3e64ec6cf57289ca",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-08-23"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-4392fc29019cc3f5a733"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "dormition-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 30,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-f44e21bac0b72436f335",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-10-14"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-62415f5d41fdba9d280c"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-10-14-48",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 48,
+          "source_url": "https://azbyka.ru/days/2026-10-14",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-f470cc43ef42c816e636",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-06-22"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-f5dc6331917de6ae1e49",
+      "relation_type": "observed_on",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-09-27"
+      },
+      "to": {
+        "kind": "feast",
+        "id": "pm-feast-06d4818f17b2241a5618"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-09-27:воздвижение креста господня",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 22,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-f73352e6047c48a7bbd9",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-07-12"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-93905306881404cbedce"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-07-12-32",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 32,
+          "source_url": "https://azbyka.ru/days/2026-07-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-f8357391d57d991f75d7",
+      "relation_type": "has_reading",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-01-19"
+      },
+      "to": {
+        "kind": "reading",
+        "id": "pm-reading-c5f518a7bf382ba6e36d"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-19-04",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 4,
+          "source_url": "https://azbyka.ru/days/2026-01-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-f8e5f9ea821cb8e8c785",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-28"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-fabab88e7556ee595851",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-03-05"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-lrel-fb628423b26d87439d62",
+      "relation_type": "fasting_period",
+      "from": {
+        "kind": "calendar_day",
+        "id": "pm-day-2026-12-01"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "legacy_unverified",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    }
+  ]
+}

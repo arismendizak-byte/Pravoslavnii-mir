@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "news_record.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "slug",
+    "title",
+    "summary",
+    "status",
+    "published_at",
+    "updated_at",
+    "canonical_path",
+    "original_url",
+    "publisher",
+    "trust_layer",
+    "verification_status",
+    "freshness",
+    "source_records"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^pm-news-[0-9a-f]{20}$"
+    },
+    "slug": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "published",
+        "withdrawn",
+        "expired"
+      ]
+    },
+    "published_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "canonical_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "original_url": {
+      "type": "string",
+      "minLength": 1
+    },
+    "publisher": {
+      "type": "string",
+      "minLength": 1
+    },
+    "trust_layer": {
+      "enum": [
+        "editorial",
+        "verified_organisation",
+        "community"
+      ]
+    },
+    "verification_status": {
+      "enum": [
+        "source_verified",
+        "verified_organisation",
+        "editorial_verified",
+        "community_unverified"
+      ]
+    },
+    "freshness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "observed_at",
+        "verified_at",
+        "valid_from",
+        "valid_to",
+        "expires_at"
+      ],
+      "properties": {
+        "observed_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "verified_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "valid_from": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "valid_to": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "expires_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "source_records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

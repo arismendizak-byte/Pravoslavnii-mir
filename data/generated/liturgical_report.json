@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "a9ee762957cf96ade9f1e1d5e01eec3151689d7ed798c30e3cc39c9178151bd9",
+  "result": "OK",
+  "coverage": {
+    "valid_from": "2026-01-01",
+    "valid_to": "2026-12-31"
+  },
+  "source_verification": {
+    "legacy_provider_status": "legacy_unverified",
+    "editorial_verified_readings": 48,
+    "scripture_text_records": 0,
+    "note": "Legacy 2026 feast/saint/fast assertions remain legacy_unverified. v1.22 reading records are editorial-verified bibliographic citations with explicit source URLs; no Scripture text is copied."
+  },
+  "counts": {
+    "calendar_day": 365,
+    "feast": 15,
+    "saint": 7,
+    "commemoration": 8,
+    "fasting_rule": 4,
+    "reading": 48,
+    "relations": 215,
+    "legacy_aliases": 31
+  },
+  "output_sha256": {
+    "calendar_days.json": "d7017667a025577303f7a30b1d9a440212fb6b0fa61c503e43750b022783e76a",
+    "commemorations.json": "24e9ee7b8721a5dbb3f5e4bd9a2e32324d60cb22945ff7ce4970454c6ad167c7",
+    "fasting_rules.json": "e1560df0b2d2a67c4690218684e38f7f932abb73cf6bf27bf9ae916cdd92baf4",
+    "feasts.json": "e2250f69b79a1cd9366941051d0f381e742bfa79afe63bf43fa36afdd4a2573e",
+    "liturgical_aliases.json": "5991b9ae89a3bb1715936f5078ae3c672804d1b0b1b8dfa8c4d914f8c1fef394",
+    "liturgical_index.json": "7c00b192b9285c94f9e03561a6ff9fc9837b651843b8413bc362ac62b4344baa",
+    "liturgical_relations.json": "88b1fbfbe79c5cbe7070c158fbd1ac9259383585beb4fa52e03e5c0afe86c37b",
+    "readings.json": "2c7f3af2d178967635b5020d9a4e265aaba134314da3b11ff67e1349ee4361fc",
+    "saints.json": "8ef57127b573fde6e72bf65c9d391d2242d256c46e82da6da9fc969867c9c3c4"
+  }
+}

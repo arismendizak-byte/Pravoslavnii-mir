@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.1.0",
+  "source_snapshot_sha256": "cb8933e71a4b77703b8f483e56da2559d16312c92899cdde4daaa786f8d88291",
+  "source_counts": {
+    "local_articles": 10,
+    "local_article_html": 10,
+    "journal_articles": 6,
+    "journal_news": 5,
+    "editorial_links": 11,
+    "calendar_explicit_entries": 27,
+    "calendar_fast_periods": 4,
+    "pilgrim_services": 85
+  },
+  "generated_counts": {
+    "content": 21,
+    "authors": 11,
+    "categories": 7,
+    "article_bodies": 10,
+    "events": 0,
+    "calendar_entries": 31,
+    "pilgrim_services": 85,
+    "links": 11,
+    "search_documents": 137
+  },
+  "unresolved_or_inferred_graph_links": 0,
+  "derived_related_content_is_canonical_relation": false,
+  "notes": [
+    "M5.2 journal/article delivery uses PravmirContent generated outputs only at runtime.",
+    "Author/category records are deterministic materializations of explicit legacy metadata, not name-matched graph facts.",
+    "Article bodies are generated from snapshotted legacy article HTML and sanitized to a small trusted HTML subset.",
+    "Related-content suggestions are derived from explicit category/tag metadata and are not canonical graph relations.",
+    "Cross-domain content links come only from data/content_sources/editorial_links.json; title/text matching never creates canonical links.",
+    "Legacy calendar dates remain civil_date_legacy until M5.3 verification; pilgrim services remain legacy_unverified until M5.6."
+  ]
+}

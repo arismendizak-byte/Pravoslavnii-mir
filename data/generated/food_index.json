@@ -1,0 +1,224 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "60b93662ffb974ae6efbd8a84ebe8405c9c8bec837dfe47dc84fbe3f47540611",
+  "counts": {
+    "recipes": 9,
+    "relations": 27,
+    "fasting_rules_linked": 4,
+    "feasts_linked": 2
+  },
+  "by_id": {
+    "pm-recipe-488427bb91e2d24c9053": {
+      "slug": "recipe-vinegret",
+      "title": "Винегрет"
+    },
+    "pm-recipe-1384e76e596ada43005f": {
+      "slug": "recipe-grechka-s-gribami",
+      "title": "Гречка с грибами и луком"
+    },
+    "pm-recipe-e7a8b3ad48586ff6cdd6": {
+      "slug": "recipe-kartofel-s-gribami-v-duhovke",
+      "title": "Картофель с грибами в духовке"
+    },
+    "pm-recipe-c3c628d59136b98c0349": {
+      "slug": "recipe-ovsyanaya-kasha-s-yablokom",
+      "title": "Овсяная каша с яблоком и корицей"
+    },
+    "pm-recipe-73286f69d22f5a22a82e": {
+      "slug": "recipe-paskhalny-kulich-editorial",
+      "title": "Пасхальный кулич"
+    },
+    "pm-recipe-ec700b505436e651e0c3": {
+      "slug": "recipe-postnye-shchi-s-fasolyu",
+      "title": "Постные щи с фасолью"
+    },
+    "pm-recipe-5ebb101321b2d3071d7b": {
+      "slug": "recipe-rozhdestvenskie-medovye-pryaniki-editorial",
+      "title": "Рождественские медовые пряники"
+    },
+    "pm-recipe-e458c441ed6c62512d0a": {
+      "slug": "recipe-tvorozhnaya-paskha-editorial",
+      "title": "Творожная пасха с сухофруктами"
+    },
+    "pm-recipe-b7e936336abcce0b6630": {
+      "slug": "recipe-chechevichnaya-pohlebka",
+      "title": "Чечевичная похлёбка"
+    }
+  },
+  "by_slug": {
+    "recipe-vinegret": "pm-recipe-488427bb91e2d24c9053",
+    "recipe-grechka-s-gribami": "pm-recipe-1384e76e596ada43005f",
+    "recipe-kartofel-s-gribami-v-duhovke": "pm-recipe-e7a8b3ad48586ff6cdd6",
+    "recipe-ovsyanaya-kasha-s-yablokom": "pm-recipe-c3c628d59136b98c0349",
+    "recipe-paskhalny-kulich-editorial": "pm-recipe-73286f69d22f5a22a82e",
+    "recipe-postnye-shchi-s-fasolyu": "pm-recipe-ec700b505436e651e0c3",
+    "recipe-rozhdestvenskie-medovye-pryaniki-editorial": "pm-recipe-5ebb101321b2d3071d7b",
+    "recipe-tvorozhnaya-paskha-editorial": "pm-recipe-e458c441ed6c62512d0a",
+    "recipe-chechevichnaya-pohlebka": "pm-recipe-b7e936336abcce0b6630"
+  },
+  "by_type": {
+    "baking": [
+      "pm-recipe-5ebb101321b2d3071d7b",
+      "pm-recipe-73286f69d22f5a22a82e"
+    ],
+    "breakfast": [
+      "pm-recipe-c3c628d59136b98c0349"
+    ],
+    "dessert": [
+      "pm-recipe-e458c441ed6c62512d0a"
+    ],
+    "main": [
+      "pm-recipe-1384e76e596ada43005f",
+      "pm-recipe-e7a8b3ad48586ff6cdd6"
+    ],
+    "salad": [
+      "pm-recipe-488427bb91e2d24c9053"
+    ],
+    "soup": [
+      "pm-recipe-b7e936336abcce0b6630",
+      "pm-recipe-ec700b505436e651e0c3"
+    ]
+  },
+  "by_tag": {
+    "Пасха": [
+      "pm-recipe-73286f69d22f5a22a82e",
+      "pm-recipe-e458c441ed6c62512d0a"
+    ],
+    "Рождество": [
+      "pm-recipe-5ebb101321b2d3071d7b"
+    ],
+    "без масла": [
+      "pm-recipe-b7e936336abcce0b6630",
+      "pm-recipe-c3c628d59136b98c0349"
+    ],
+    "без мяса": [
+      "pm-recipe-488427bb91e2d24c9053"
+    ],
+    "быстро": [
+      "pm-recipe-1384e76e596ada43005f"
+    ],
+    "выпечка": [
+      "pm-recipe-5ebb101321b2d3071d7b",
+      "pm-recipe-73286f69d22f5a22a82e"
+    ],
+    "гречка": [
+      "pm-recipe-1384e76e596ada43005f"
+    ],
+    "грибы": [
+      "pm-recipe-1384e76e596ada43005f",
+      "pm-recipe-e7a8b3ad48586ff6cdd6"
+    ],
+    "десерт": [
+      "pm-recipe-e458c441ed6c62512d0a"
+    ],
+    "домашняя кухня": [
+      "pm-recipe-ec700b505436e651e0c3"
+    ],
+    "духовка": [
+      "pm-recipe-e7a8b3ad48586ff6cdd6"
+    ],
+    "завтрак": [
+      "pm-recipe-c3c628d59136b98c0349"
+    ],
+    "картофель": [
+      "pm-recipe-e7a8b3ad48586ff6cdd6"
+    ],
+    "кулич": [
+      "pm-recipe-73286f69d22f5a22a82e"
+    ],
+    "овощи": [
+      "pm-recipe-488427bb91e2d24c9053"
+    ],
+    "овсянка": [
+      "pm-recipe-c3c628d59136b98c0349"
+    ],
+    "постное": [
+      "pm-recipe-1384e76e596ada43005f",
+      "pm-recipe-488427bb91e2d24c9053",
+      "pm-recipe-b7e936336abcce0b6630",
+      "pm-recipe-c3c628d59136b98c0349",
+      "pm-recipe-e7a8b3ad48586ff6cdd6",
+      "pm-recipe-ec700b505436e651e0c3"
+    ],
+    "праздничное": [
+      "pm-recipe-5ebb101321b2d3071d7b",
+      "pm-recipe-73286f69d22f5a22a82e",
+      "pm-recipe-e458c441ed6c62512d0a"
+    ],
+    "пряники": [
+      "pm-recipe-5ebb101321b2d3071d7b"
+    ],
+    "салат": [
+      "pm-recipe-488427bb91e2d24c9053"
+    ],
+    "суп": [
+      "pm-recipe-b7e936336abcce0b6630",
+      "pm-recipe-ec700b505436e651e0c3"
+    ],
+    "творог": [
+      "pm-recipe-e458c441ed6c62512d0a"
+    ],
+    "фасоль": [
+      "pm-recipe-ec700b505436e651e0c3"
+    ],
+    "чечевица": [
+      "pm-recipe-b7e936336abcce0b6630"
+    ]
+  },
+  "by_fasting_rule": {
+    "pm-fast-078cd89e51d0cc91d74e": [
+      "pm-recipe-1384e76e596ada43005f",
+      "pm-recipe-488427bb91e2d24c9053",
+      "pm-recipe-b7e936336abcce0b6630",
+      "pm-recipe-c3c628d59136b98c0349",
+      "pm-recipe-e7a8b3ad48586ff6cdd6",
+      "pm-recipe-ec700b505436e651e0c3"
+    ],
+    "pm-fast-402636d7f82405187cbd": [
+      "pm-recipe-1384e76e596ada43005f",
+      "pm-recipe-488427bb91e2d24c9053",
+      "pm-recipe-b7e936336abcce0b6630",
+      "pm-recipe-c3c628d59136b98c0349",
+      "pm-recipe-e7a8b3ad48586ff6cdd6",
+      "pm-recipe-ec700b505436e651e0c3"
+    ],
+    "pm-fast-4392fc29019cc3f5a733": [
+      "pm-recipe-1384e76e596ada43005f",
+      "pm-recipe-488427bb91e2d24c9053",
+      "pm-recipe-b7e936336abcce0b6630",
+      "pm-recipe-c3c628d59136b98c0349",
+      "pm-recipe-e7a8b3ad48586ff6cdd6",
+      "pm-recipe-ec700b505436e651e0c3"
+    ],
+    "pm-fast-8e139912f4858f604686": [
+      "pm-recipe-1384e76e596ada43005f",
+      "pm-recipe-488427bb91e2d24c9053",
+      "pm-recipe-b7e936336abcce0b6630",
+      "pm-recipe-c3c628d59136b98c0349",
+      "pm-recipe-e7a8b3ad48586ff6cdd6",
+      "pm-recipe-ec700b505436e651e0c3"
+    ]
+  },
+  "by_feast": {
+    "pm-feast-06d4818f17b2241a5618": [],
+    "pm-feast-0d16d133b2183b48ebb6": [],
+    "pm-feast-1329aa553e96ce62d806": [],
+    "pm-feast-2eec1d0a53ab0dda4fa4": [],
+    "pm-feast-464eaad4104098f7ed0e": [],
+    "pm-feast-714fb97ce53e3934b482": [],
+    "pm-feast-77e553f688cf6cb2d43d": [],
+    "pm-feast-7f2419086b1894a14da8": [],
+    "pm-feast-9fe64f862bec24c75b51": [],
+    "pm-feast-a9cd42d8e139aabcf163": [],
+    "pm-feast-b3b695bd49798b0770a2": [],
+    "pm-feast-d2a6b919fe5c37c14aa0": [
+      "pm-recipe-5ebb101321b2d3071d7b"
+    ],
+    "pm-feast-dcfc2961bfad5d4da3ae": [],
+    "pm-feast-e168192c9f98092e4e02": [
+      "pm-recipe-73286f69d22f5a22a82e",
+      "pm-recipe-e458c441ed6c62512d0a"
+    ],
+    "pm-feast-fac0126a9ab43e90d972": []
+  }
+}

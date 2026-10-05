@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema", "$id": "https://pravmir.local/schema/saint.schema.json", "title": "Pravmir saint", "type": "object",
+  "required": ["id","slug","name","display_name","canonical_path","scope","verification_status","aliases","references","source_records"],
+  "properties": {"id":{"type":"string","pattern":"^pm-saint-[0-9a-f]{20}$"},"slug":{"type":"string","pattern":"^[a-z0-9][a-z0-9-]*$"},"name":{"type":"string","minLength":1},"display_name":{"type":"string","minLength":1},"canonical_path":{"type":"string","minLength":1},"scope":{"$ref":"calendar_day.schema.json#/$defs/scope"},"verification_status":{"enum":["legacy_unverified","source_verified","editorial_verified"]},"aliases":{"type":"array","items":{"type":"string"},"uniqueItems":true},"references":{"type":"array","items":{"$ref":"content_item.schema.json#/$defs/reference"}},"source_records":{"type":"array","minItems":1,"items":{"$ref":"content_item.schema.json#/$defs/source_record"}}},
+  "additionalProperties":false
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "library_rights_policy.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "key",
+    "label",
+    "description",
+    "local_text_allowed",
+    "local_media_allowed",
+    "requires_rights_evidence",
+    "requires_license_url",
+    "trust_layer",
+    "verification_status"
+  ],
+  "properties": {
+    "key": {
+      "enum": [
+        "public_domain_verified",
+        "open_license",
+        "permission_granted",
+        "metadata_only",
+        "external_link_only",
+        "restricted",
+        "review_required"
+      ]
+    },
+    "label": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "local_text_allowed": {
+      "type": "boolean"
+    },
+    "local_media_allowed": {
+      "type": "boolean"
+    },
+    "requires_rights_evidence": {
+      "type": "boolean"
+    },
+    "requires_license_url": {
+      "type": "boolean"
+    },
+    "trust_layer": {
+      "const": "canonical_system"
+    },
+    "verification_status": {
+      "const": "system_defined"
+    }
+  }
+}

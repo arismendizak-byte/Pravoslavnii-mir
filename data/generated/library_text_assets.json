@@ -1,0 +1,684 @@
+{
+  "schema_version": "1.2.0",
+  "source_snapshot_sha256": "413c8dc21e944c9609d18cf7817a0a163b6de40dc3330958d24110aa8b58fee1",
+  "count": 24,
+  "text_assets": [
+    {
+      "id": "pm-text-021502897b2703bb72ba",
+      "work_ref": "pm-work-9bcc5e2d2617e8f32947",
+      "edition_ref": "pm-edition-ab6e00d7dfa240b674a2",
+      "asset_kind": "full_text",
+      "language": "ru",
+      "storage_mode": "external_url",
+      "content_path": null,
+      "external_url": "https://ru.wikisource.org/wiki/Мысли_на_каждый_день_года_по_церковным_чтениям_из_Слова_Божия_(Феофан-Затворник)",
+      "rights_status": "public_domain_verified",
+      "license_url": null,
+      "copyright_notice": "Викитека помечает исходное произведение как перешедшее в общественное достояние в России и в юрисдикциях с life+70 или меньшим сроком.",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:theophan-thoughts-every-day",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Мысли_на_каждый_день_года_по_церковным_чтениям_из_Слова_Божия_(Феофан-Затворник)",
+          "source_row": 1,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Мысли_на_каждый_день_года_по_церковным_чтениям_из_Слова_Божия_(Феофан-Затворник)"
+        }
+      ]
+    },
+    {
+      "id": "pm-text-ebd869b2c29975009025",
+      "work_ref": "pm-work-9906f04decbc4fa0a163",
+      "edition_ref": "pm-edition-2f7e73b336ee0b9873bd",
+      "asset_kind": "full_text",
+      "language": "ru",
+      "storage_mode": "external_url",
+      "content_path": null,
+      "external_url": "https://ru.wikisource.org/wiki/Пространный_христианский_катихизис_Православной_Кафолической_Восточной_Церкви",
+      "rights_status": "external_link_only",
+      "license_url": null,
+      "copyright_notice": "Историческое произведение святителя Филарета находится в общественном достоянии; текущая электронная страница указывает редакционную подготовку издания 2006 года. Права точной электронной редакции требуют отдельной проверки, поэтому ПМ хранит только внешнюю ссылку и metadata.",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:philaret-longer-catechism",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Пространный_христианский_катихизис_Православной_Кафолической_Восточной_Церкви",
+          "source_row": 2,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Пространный_христианский_катихизис_Православной_Кафолической_Восточной_Церкви"
+        }
+      ]
+    },
+    {
+      "id": "pm-text-e6fc8caa015efb62277f",
+      "work_ref": "pm-work-01a0f8ec5e9aa5921785",
+      "edition_ref": "pm-edition-aae26255a6302322fc73",
+      "asset_kind": "full_text",
+      "language": "ru",
+      "storage_mode": "local_text",
+      "content_path": "library/texts/philaret-scripture-translations.txt",
+      "external_url": "https://ru.wikisource.org/w/index.php?title=О_догматическом_достоинстве_и_охранительном_употреблении_переводов_Священного_Писания_(свят._Филарет)/ДО&oldid=5666262",
+      "rights_status": "open_license",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "copyright_notice": "Оригинальный авторский текст — общественное достояние. Электронная транскрипция: участники Викитеки, CC BY-SA 4.0. Сохранены орфография и ошибки источника; удалены только навигация и элементы сайта. Полная выбранная электронная публикация, без заявления о критической выверке.",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:philaret-scripture-translations",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=О_догматическом_достоинстве_и_охранительном_употреблении_переводов_Священного_Писания_(свят._Филарет)/ДО&oldid=5666262",
+          "source_row": 3,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=О_догматическом_достоинстве_и_охранительном_употреблении_переводов_Священного_Писания_(свят._Филарет)/ДО&oldid=5666262",
+          "local_source_file": "data/library_sources/texts/philaret-scripture-translations.json",
+          "source_revision": "5666262",
+          "verified_on": "2026-10-05",
+          "completeness_scope": "Full selected Wikisource electronic publication; not a completeness claim for the author collection or a critical edition.",
+          "text_quality": "source_transcription_not_independently_proofread"
+        }
+      ],
+      "content_sha256": "24761d6d674267d0fb3d3c2fbadcbd1a6eb0d7f37d9139c1efd1502f3024f14b",
+      "content_size_bytes": 81962
+    },
+    {
+      "id": "pm-text-eed9ece59f6774c77c89",
+      "work_ref": "pm-work-06c637a0f2384817fd24",
+      "edition_ref": "pm-edition-4840d02a572899e29cdd",
+      "asset_kind": "full_text",
+      "language": "ru",
+      "storage_mode": "external_url",
+      "content_path": null,
+      "external_url": "https://ru.wikisource.org/wiki/О_Православии_(Брянчанинов)",
+      "rights_status": "external_link_only",
+      "license_url": null,
+      "copyright_notice": "В электронной публикации есть поздние комментарии со ссылками на издания 1996 года. Общественное достояние авторского текста 1857 года не доказывает права редакционного аппарата. Локальная копия не включается до проверки точной редакции.",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:ignatius-on-orthodoxy",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/О_Православии_(Брянчанинов)",
+          "source_row": 4,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/О_Православии_(Брянчанинов)"
+        }
+      ]
+    },
+    {
+      "id": "pm-text-d155991ad4f6d539d1ab",
+      "work_ref": "pm-work-166e138e1aa87cbc22fa",
+      "edition_ref": "pm-edition-faefd6e3263edc8a240c",
+      "asset_kind": "full_text",
+      "language": "ru",
+      "storage_mode": "external_url",
+      "content_path": null,
+      "external_url": "https://ru.wikisource.org/wiki/Слово_о_человеке_(Брянчанинов)",
+      "rights_status": "external_link_only",
+      "license_url": null,
+      "copyright_notice": "В источнике указана первая публикация в 1995 году; имеются предисловие и редакторские примечания 1995 года. Статус точного издания требует отдельной проверки, возраст автора не доказывает права всей версии. Локальная копия не включается до проверки точной редакции.",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:ignatius-word-on-man",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Слово_о_человеке_(Брянчанинов)",
+          "source_row": 5,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Слово_о_человеке_(Брянчанинов)"
+        }
+      ]
+    },
+    {
+      "id": "pm-text-6c9706548036fc866316",
+      "work_ref": "pm-work-e8f804a36f7ff9b82b5d",
+      "edition_ref": "pm-edition-db70cc1e948a7b22d126",
+      "asset_kind": "full_text",
+      "language": "ru",
+      "storage_mode": "external_url",
+      "content_path": null,
+      "external_url": "https://ru.wikisource.org/wiki/Сад_во_время_зимы_(Игнатий_Брянчанинов)",
+      "rights_status": "public_domain_verified",
+      "license_url": null,
+      "copyright_notice": "Викитека указывает, что авторские произведения святителя Игнатия (Брянчанинова) находятся в общественном достоянии; поздние редакции/производные версии не считаются автоматически свободными.",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:ignatius-garden-in-winter",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Сад_во_время_зимы_(Игнатий_Брянчанинов)",
+          "source_row": 6,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Автор:Игнатий_(Брянчанинов)"
+        }
+      ]
+    },
+    {
+      "id": "pm-text-a1e17bb46be12a1c756c",
+      "work_ref": "pm-work-418ca5914c52724ff608",
+      "edition_ref": "pm-edition-10dc268b9b70b021ef97",
+      "asset_kind": "full_text",
+      "language": "ru",
+      "storage_mode": "local_text",
+      "content_path": "library/texts/ignatius-obedience-to-elder.txt",
+      "external_url": "https://ru.wikisource.org/w/index.php?title=О_жительстве_в_послушании_у_старца_(Игнатий_Брянчанинов)&oldid=2626028#bodyContent",
+      "rights_status": "open_license",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "copyright_notice": "Оригинальный авторский текст — общественное достояние. Электронная транскрипция: участники Викитеки, CC BY-SA 4.0. Сохранены орфография и ошибки источника; удалены только навигация и элементы сайта. Полная выбранная электронная публикация, без заявления о критической выверке.",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:ignatius-obedience-to-elder",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=О_жительстве_в_послушании_у_старца_(Игнатий_Брянчанинов)&oldid=2626028#bodyContent",
+          "source_row": 7,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=О_жительстве_в_послушании_у_старца_(Игнатий_Брянчанинов)&oldid=2626028#bodyContent",
+          "local_source_file": "data/library_sources/texts/ignatius-obedience-to-elder.json",
+          "source_revision": "2626028",
+          "verified_on": "2026-10-05",
+          "completeness_scope": "Full selected Wikisource electronic publication; not a completeness claim for the author collection or a critical edition.",
+          "text_quality": "source_transcription_not_independently_proofread"
+        }
+      ],
+      "content_sha256": "5dfe9a212b6145329f921f7004ef9196b907830ae22b7d218ea76704597b179c",
+      "content_size_bytes": 16712
+    },
+    {
+      "id": "pm-text-b1fb87d6024c7efbfd5b",
+      "work_ref": "pm-work-f4099288b3a4dead38f9",
+      "edition_ref": "pm-edition-7a88329fd41b0355ca93",
+      "asset_kind": "full_text",
+      "language": "ru",
+      "storage_mode": "external_url",
+      "content_path": null,
+      "external_url": "https://ru.wikisource.org/wiki/Как_начинается_в_нас_христианская_жизнь%3F",
+      "rights_status": "public_domain_verified",
+      "license_url": null,
+      "copyright_notice": "Викитека указывает, что авторские произведения святителя Феофана Затворника находятся в общественном достоянии; переводы и поздние редакции требуют отдельной проверки.",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:theophan-christian-life-begins",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Как_начинается_в_нас_христианская_жизнь%3F",
+          "source_row": 8,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Феофан_Затворник"
+        }
+      ]
+    },
+    {
+      "id": "pm-text-19604869dc444ca10663",
+      "work_ref": "pm-work-dcaba6b1797dd6768af0",
+      "edition_ref": "pm-edition-87dd97069c934f7b9d16",
+      "asset_kind": "full_text",
+      "language": "ru",
+      "storage_mode": "local_text",
+      "content_path": "library/texts/theophan-eternal-torments.txt",
+      "external_url": "https://ru.wikisource.org/w/index.php?title=О_вечности_мучений_(Феофан_Затворник)&oldid=1071762",
+      "rights_status": "open_license",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "copyright_notice": "Оригинальный авторский текст — общественное достояние. Электронная транскрипция: участники Викитеки, CC BY-SA 4.0. Сохранены орфография и ошибки источника; удалены только навигация и элементы сайта. Полная выбранная электронная публикация, без заявления о критической выверке.",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:theophan-eternal-torments",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=О_вечности_мучений_(Феофан_Затворник)&oldid=1071762",
+          "source_row": 9,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=О_вечности_мучений_(Феофан_Затворник)&oldid=1071762",
+          "local_source_file": "data/library_sources/texts/theophan-eternal-torments.json",
+          "source_revision": "1071762",
+          "verified_on": "2026-10-05",
+          "completeness_scope": "Full selected Wikisource electronic publication; not a completeness claim for the author collection or a critical edition.",
+          "text_quality": "source_transcription_not_independently_proofread"
+        }
+      ],
+      "content_sha256": "1f87de0c6ebf25536452e018ba86f1bd5e6598ab71f28b86768e088b5420c107",
+      "content_size_bytes": 58370
+    },
+    {
+      "id": "pm-text-6cfbc9188d6a9fe8485a",
+      "work_ref": "pm-work-c4ea07e87dd3dc7461e6",
+      "edition_ref": "pm-edition-b3c2ff60d3307ff486f7",
+      "asset_kind": "full_text",
+      "language": "ru",
+      "storage_mode": "external_url",
+      "content_path": null,
+      "external_url": "https://ru.wikisource.org/wiki/Два_слова_о_святом_таинстве_крещения_(Феофан_Затворник)",
+      "rights_status": "public_domain_verified",
+      "license_url": null,
+      "copyright_notice": "Викитека указывает, что авторские произведения святителя Феофана Затворника находятся в общественном достоянии; переводы и поздние редакции требуют отдельной проверки.",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:theophan-two-words-baptism",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Два_слова_о_святом_таинстве_крещения_(Феофан_Затворник)",
+          "source_row": 10,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Феофан_Затворник"
+        }
+      ]
+    },
+    {
+      "id": "pm-text-1183fe7a355cba368dfb",
+      "work_ref": "pm-work-bac606807a9c00d22fae",
+      "edition_ref": "pm-edition-4a15308447b2adc5f39f",
+      "asset_kind": "full_text",
+      "language": "ru",
+      "storage_mode": "local_text",
+      "content_path": "library/texts/theophan-spiritual-instructions.txt",
+      "external_url": "https://ru.wikisource.org/w/index.php?title=Наставления_в_духовной_жизни_(Феофан_Затворник)&oldid=5698478",
+      "rights_status": "open_license",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "copyright_notice": "Оригинальный авторский текст — общественное достояние. Электронная транскрипция: участники Викитеки, CC BY-SA 4.0. Сохранены орфография и ошибки источника; удалены только навигация и элементы сайта. Полная выбранная электронная публикация, без заявления о критической выверке.",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:theophan-spiritual-instructions",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=Наставления_в_духовной_жизни_(Феофан_Затворник)&oldid=5698478",
+          "source_row": 11,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=Наставления_в_духовной_жизни_(Феофан_Затворник)&oldid=5698478",
+          "local_source_file": "data/library_sources/texts/theophan-spiritual-instructions.json",
+          "source_revision": "5698478",
+          "verified_on": "2026-10-05",
+          "completeness_scope": "Full selected Wikisource electronic publication; not a completeness claim for the author collection or a critical edition.",
+          "text_quality": "source_transcription_not_independently_proofread"
+        }
+      ],
+      "content_sha256": "0084af6f0789f57fee196768e31f40ae9985da7c90dc81797300380f13c5aa15",
+      "content_size_bytes": 22578
+    },
+    {
+      "id": "pm-text-48831af7c452c6d6b16e",
+      "work_ref": "pm-work-69aec6a2c7a3271e0906",
+      "edition_ref": "pm-edition-de7ab59ccd239ad57212",
+      "asset_kind": "full_text",
+      "language": "ru",
+      "storage_mode": "local_text",
+      "content_path": "library/texts/theophan-hermas-commentary.txt",
+      "external_url": "https://ru.wikisource.org/w/index.php?title=Толкование_на_книгу_св._Ермы_(Феофан_Затворник)&oldid=5666316#bodyContent",
+      "rights_status": "open_license",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "copyright_notice": "Оригинальный авторский текст — общественное достояние. Электронная транскрипция: участники Викитеки, CC BY-SA 4.0. Сохранены орфография и ошибки источника; удалены только навигация и элементы сайта. Полная выбранная электронная публикация, без заявления о критической выверке.",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:theophan-hermas-commentary",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=Толкование_на_книгу_св._Ермы_(Феофан_Затворник)&oldid=5666316#bodyContent",
+          "source_row": 12,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=Толкование_на_книгу_св._Ермы_(Феофан_Затворник)&oldid=5666316#bodyContent",
+          "local_source_file": "data/library_sources/texts/theophan-hermas-commentary.json",
+          "source_revision": "5666316",
+          "verified_on": "2026-10-05",
+          "completeness_scope": "Full selected Wikisource electronic publication; not a completeness claim for the author collection or a critical edition.",
+          "text_quality": "source_transcription_not_independently_proofread"
+        }
+      ],
+      "content_sha256": "4ba254952986440f2ede9ed3c188eeb6841adb736031fdee7afb059208e5c2f0",
+      "content_size_bytes": 66364
+    },
+    {
+      "id": "pm-text-f546fa83a78d0fcf32ac",
+      "work_ref": "pm-work-59aefe056c9b88fccbd9",
+      "edition_ref": "pm-edition-07d622782397a86a1a33",
+      "asset_kind": "full_text",
+      "language": "cu",
+      "storage_mode": "local_text",
+      "content_path": "library/texts/lord-prayer-19c.txt",
+      "external_url": "https://ru.wikisource.org/w/index.php?oldid=5096383&title=Отче_наш/ДО",
+      "rights_status": "open_license",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "copyright_notice": "Исторический текст выбранной редакции относится к общественному достоянию. Электронная транскрипция Викитеки используется по CC BY-SA 4.0 с указанием закреплённой ревизии. Сохранены орфография и ошибки источника; локальная копия не заявляется как критическое издание.",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:lord-prayer-19c",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?oldid=5096383&title=Отче_наш/ДО",
+          "source_row": 13,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?oldid=5096383&title=Отче_наш/ДО",
+          "classification_evidence_url": "https://www.pravenc.ru/text/2581755.html",
+          "classification_evidence_summary": "Православная энциклопедия идентифицирует «Отче наш» как молитву Господню; статья «Начало обычное» подтверждает её богослужебное употребление.",
+          "local_source_file": "data/library_sources/texts/lord-prayer-19c.json",
+          "source_revision": "5096383",
+          "verified_on": "2026-10-05",
+          "completeness_scope": "Полный текст выбранной первой редакции «Написанье 19 века» со страницы закреплённой ревизии; примечания, навигация и альтернативные редакции не включены. Это не критическое издание.",
+          "text_quality": "source_transcription_not_independently_proofread"
+        }
+      ],
+      "content_sha256": "5b99a1fb3205a5fdd1ac0771f8894e61bc13037085bef058d0cb4be3767d4e12",
+      "content_size_bytes": 554
+    },
+    {
+      "id": "pm-text-ebe380ce1e64730c4421",
+      "work_ref": "pm-work-881d7fc99b281c38f527",
+      "edition_ref": "pm-edition-ae797557e6be1010cb9c",
+      "asset_kind": "full_text",
+      "language": "cu",
+      "storage_mode": "local_text",
+      "content_path": "library/texts/heavenly-king-19c.txt",
+      "external_url": "https://ru.wikisource.org/w/index.php?oldid=489359&title=Царю_Небесный/ДО",
+      "rights_status": "open_license",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "copyright_notice": "Исторический текст выбранной редакции относится к общественному достоянию. Электронная транскрипция Викитеки используется по CC BY-SA 4.0 с указанием закреплённой ревизии. Сохранены орфография и ошибки источника; локальная копия не заявляется как критическое издание.",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:heavenly-king-19c",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?oldid=489359&title=Царю_Небесный/ДО",
+          "source_row": 14,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?oldid=489359&title=Царю_Небесный/ДО",
+          "classification_evidence_url": "https://m.pravenc.ru/text/%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%B0.html",
+          "classification_evidence_summary": "Православная энциклопедия прямо называет «Царю Небесный» стихирой праздника Пятидесятницы и описывает её употребление в «Начале обычном».",
+          "local_source_file": "data/library_sources/texts/heavenly-king-19c.json",
+          "source_revision": "489359",
+          "verified_on": "2026-10-05",
+          "completeness_scope": "Полный текст выбранной редакции «Написание 19 века» со страницы закреплённой ревизии; примечания и навигация не включены. Сохраняется написание электронной транскрипции, включая её возможные ошибки.",
+          "text_quality": "source_transcription_not_independently_proofread"
+        }
+      ],
+      "content_sha256": "9a268d11f9a8f507692601e5167658e7f6cfbb9a59131da5628dfad5d91d0194",
+      "content_size_bytes": 362
+    },
+    {
+      "id": "pm-text-f4d3a4a4e2d4894bb883",
+      "work_ref": "pm-work-dd07f9dd508080e165f6",
+      "edition_ref": "pm-edition-5fb71d1aa5933238f402",
+      "asset_kind": "full_text",
+      "language": "cu",
+      "storage_mode": "local_text",
+      "content_path": "library/texts/worthy-is-19c.txt",
+      "external_url": "https://ru.wikisource.org/w/index.php?oldid=483297&title=Достойно_есть/ДО",
+      "rights_status": "open_license",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "copyright_notice": "Исторический текст выбранной редакции относится к общественному достоянию. Электронная транскрипция Викитеки используется по CC BY-SA 4.0 с указанием закреплённой ревизии. Сохранены орфография и ошибки источника; локальная копия не заявляется как критическое издание.",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:worthy-is-19c",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?oldid=483297&title=Достойно_есть/ДО",
+          "source_row": 15,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?oldid=483297&title=Достойно_есть/ДО",
+          "classification_evidence_url": "https://m.pravenc.ru/rubrics/383270.html",
+          "classification_evidence_summary": "Рубрикатор Православной энциклопедии определяет «Достойно есть» как одно из наиболее известных православных песнопений во имя Пресвятой Богородицы.",
+          "local_source_file": "data/library_sources/texts/worthy-is-19c.json",
+          "source_revision": "483297",
+          "verified_on": "2026-10-05",
+          "completeness_scope": "Полный текст выбранной первой редакции «Написанье 19 века» со страницы закреплённой ревизии; альтернативная редакция, примечания и навигация не включены. Это не критическое издание.",
+          "text_quality": "source_transcription_not_independently_proofread"
+        }
+      ],
+      "content_sha256": "ff1de2365fc8494c934bc4e09bf078f3d451667262e67fdf54090b4f8b4782a7",
+      "content_size_bytes": 448
+    },
+    {
+      "id": "pm-text-9a99e61833133a8e878b",
+      "work_ref": "pm-work-1545f9c669c5ef7c9b1e",
+      "edition_ref": "pm-edition-f1338246b24223929edd",
+      "asset_kind": "full_text",
+      "language": "cu",
+      "storage_mode": "local_text",
+      "content_path": "library/texts/nicene-creed-tolstoy-1875.txt",
+      "external_url": "https://ru.wikisource.org/w/index.php?oldid=4854183&title=Никео-Цареградский_Символ_веры/1875,_Толстой_(ДО)",
+      "rights_status": "open_license",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "copyright_notice": "Исторический текст выбранной редакции относится к общественному достоянию. Электронная транскрипция Викитеки используется по CC BY-SA 4.0 с указанием закреплённой ревизии. Сохранены орфография и ошибки источника; локальная копия не заявляется как критическое издание.",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:nicene-creed-tolstoy-1875",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?oldid=4854183&title=Никео-Цареградский_Символ_веры/1875,_Толстой_(ДО)",
+          "source_row": 16,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?oldid=4854183&title=Никео-Цареградский_Символ_веры/1875,_Толстой_(ДО)",
+          "classification_evidence_url": "https://azbyka.ru/simvol_very",
+          "classification_evidence_summary": "«Азбука веры» отдельно отмечает, что Символ веры не является молитвой, и подтверждает его соборное пение за Литургией и чтение в других богослужебных последованиях.",
+          "local_source_file": "data/library_sources/texts/nicene-creed-tolstoy-1875.json",
+          "source_revision": "4854183",
+          "verified_on": "2026-10-05",
+          "completeness_scope": "Полный текст выбранной церковнославянской редакции 1875 года на закреплённой странице; навигация и библиографическая шапка не входят в локальный body. Это не критическое издание.",
+          "text_quality": "source_transcription_not_independently_proofread"
+        }
+      ],
+      "content_sha256": "96da23154e68c8db2836124c0c21e84ffd3cdef2ef0e9e6b047373d8e7515494",
+      "content_size_bytes": 1809
+    },
+    {
+      "id": "pm-text-ce5bef3ee406d52ceb26",
+      "work_ref": "pm-work-fc5ab2a44e310e7df61d",
+      "edition_ref": "pm-edition-9acd6d6b91ecadf373a4",
+      "asset_kind": "full_text",
+      "language": "ru",
+      "storage_mode": "external_url",
+      "content_path": null,
+      "external_url": "https://ru.wikisource.org/wiki/Сборник_слов_и_проповедей_о_православии_с_предостережениями_от_погрешений_против_него…_(Феофан-Затворник)",
+      "rights_status": "open_license",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ru",
+      "copyright_notice": "Произведение 1863 года находится в общественном достоянии; электронная публикация Викитеки доступна по CC BY-SA. ПМ не копирует удалённый текст в ZIP и сохраняет закреплённую ревизию как provenance.",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:theophan-sermons-orthodoxy-1863",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=Сборник_слов_и_проповедей_о_православии_с_предостережениями_от_погрешений_против_него…_(Феофан-Затворник)&oldid=5661984",
+          "source_row": 17,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=Сборник_слов_и_проповедей_о_православии_с_предостережениями_от_погрешений_против_него…_(Феофан-Затворник)&oldid=5661984",
+          "classification_evidence_url": "https://ru.wikisource.org/w/index.php?title=Сборник_слов_и_проповедей_о_православии_с_предостережениями_от_погрешений_против_него…_(Феофан-Затворник)&oldid=5661984",
+          "classification_evidence_summary": "Название и оглавление источника прямо определяют произведение как сборник слов и проповедей."
+        }
+      ]
+    },
+    {
+      "id": "pm-text-7eabffa7f6e8d6c55e3d",
+      "work_ref": "pm-work-5e6db8095c36fa8d7418",
+      "edition_ref": "pm-edition-b3b64b48de9ca77f68ab",
+      "asset_kind": "full_text",
+      "language": "ru",
+      "storage_mode": "external_url",
+      "content_path": null,
+      "external_url": "https://ru.wikisource.org/wiki/Избранные_места_из_священной_истории_Ветхого_и_Нового_завета_с_назидательными_размышлениями_(Филарет)",
+      "rights_status": "open_license",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ru",
+      "copyright_notice": "Историческое произведение 1850 года и автор находятся в общественном достоянии; электронная публикация Викитеки доступна по CC BY-SA. Удалённый текст в ZIP не копируется.",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:philaret-gumilevsky-sacred-history-1850",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=Избранные_места_из_священной_истории_Ветхого_и_Нового_завета_с_назидательными_размышлениями_(Филарет)&oldid=5261535",
+          "source_row": 18,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=Избранные_места_из_священной_истории_Ветхого_и_Нового_завета_с_назидательными_размышлениями_(Филарет)&oldid=5261535",
+          "classification_evidence_url": "https://ru.wikisource.org/w/index.php?title=Избранные_места_из_священной_истории_Ветхого_и_Нового_завета_с_назидательными_размышлениями_(Филарет)&oldid=5261535",
+          "classification_evidence_summary": "Структура источника сочетает изложение Священной истории с отдельными назидательными размышлениями; в Library классифицируется как учебно-катехизический текст."
+        }
+      ]
+    },
+    {
+      "id": "pm-text-1d3a07e8c866fef354a5",
+      "work_ref": "pm-work-7ae8eceded8a2f474f7e",
+      "edition_ref": "pm-edition-bbbdb46e24092e381408",
+      "asset_kind": "full_text",
+      "language": "ru",
+      "storage_mode": "external_url",
+      "content_path": null,
+      "external_url": "https://ru.wikisource.org/wiki/История_Православной_Церкви_до_начала_разделения_Церквей_(Победоносцев)",
+      "rights_status": "open_license",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ru",
+      "copyright_notice": "Произведение 1891 года находится в общественном достоянии; электронная публикация Викитеки доступна по CC BY-SA. ПМ хранит metadata/provenance и внешнюю ссылку, а не удалённые байты текста.",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:pobedonostsev-orthodox-church-history-1891",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=История_Православной_Церкви_до_начала_разделения_Церквей_(Победоносцев)&oldid=5591605",
+          "source_row": 19,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=История_Православной_Церкви_до_начала_разделения_Церквей_(Победоносцев)&oldid=5591605",
+          "classification_evidence_url": "https://ru.wikisource.org/w/index.php?title=История_Православной_Церкви_до_начала_разделения_Церквей_(Победоносцев)&oldid=5591605",
+          "classification_evidence_summary": "Источник прямо озаглавлен как история Православной Церкви и содержит последовательное историческое изложение до разделения Церквей."
+        }
+      ]
+    },
+    {
+      "id": "pm-text-cfb37fa1bd5b510fc0f5",
+      "work_ref": "pm-work-d6025672bee94c6bafbf",
+      "edition_ref": "pm-edition-ca9d9263787855986851",
+      "asset_kind": "full_text",
+      "language": "ru",
+      "storage_mode": "external_url",
+      "content_path": null,
+      "external_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Январь/2",
+      "rights_status": "public_domain_verified",
+      "license_url": null,
+      "copyright_notice": "Источник восходит к дореволюционному изданию; scan/source edition на Викитеке помечен как public domain. Локальная копия текста в релиз не включается.",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:life-seraphim-sarov",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Январь/2",
+          "source_row": 1,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Январь.djvu"
+        }
+      ]
+    },
+    {
+      "id": "pm-text-a1d9e8701599ddf21244",
+      "work_ref": "pm-work-0d999a24d135a1efc6a5",
+      "edition_ref": "pm-edition-06f5c244baf878362cb3",
+      "asset_kind": "full_text",
+      "language": "ru",
+      "storage_mode": "external_url",
+      "content_path": null,
+      "external_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Январь/12",
+      "rights_status": "public_domain_verified",
+      "license_url": null,
+      "copyright_notice": "Источник восходит к дореволюционному изданию; scan/source edition на Викитеке помечен как public domain. Локальная копия текста в релиз не включается.",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:martyrdom-tatiana",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Январь/12",
+          "source_row": 2,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Январь.djvu"
+        }
+      ]
+    },
+    {
+      "id": "pm-text-28988278bc0984c7ee0d",
+      "work_ref": "pm-work-27c4e7cab5b3ea4b63df",
+      "edition_ref": "pm-edition-e5aa27d62d257fa02533",
+      "asset_kind": "full_text",
+      "language": "ru",
+      "storage_mode": "external_url",
+      "content_path": null,
+      "external_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Декабрь/6",
+      "rights_status": "public_domain_verified",
+      "license_url": null,
+      "copyright_notice": "Источник восходит к дореволюционному изданию серии 1903–1911; public-domain evidence фиксируется на уровне исходного тома. Локальная копия текста не включается.",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:life-nicholas-myra",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Декабрь/6",
+          "source_row": 3,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Декабрь.djvu"
+        }
+      ]
+    },
+    {
+      "id": "pm-text-1575bc4e827f6669ab04",
+      "work_ref": "pm-work-4257cdc79b1a388342e9",
+      "edition_ref": "pm-edition-188d9a36d46634528e24",
+      "asset_kind": "full_text",
+      "language": "ru",
+      "storage_mode": "external_url",
+      "content_path": null,
+      "external_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Май/11",
+      "rights_status": "public_domain_verified",
+      "license_url": null,
+      "copyright_notice": "Источник восходит к дореволюционному изданию серии 1903–1911; public-domain evidence фиксируется на уровне исходного тома. Локальная копия текста не включается.",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:life-cyril-methodius",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Май/11",
+          "source_row": 4,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Май.djvu"
+        }
+      ]
+    },
+    {
+      "id": "pm-text-e9bb9c6c6243b8eb14ea",
+      "work_ref": "pm-work-c60dbaf180deda1bbc82",
+      "edition_ref": "pm-edition-19c3be028de7f6bbafee",
+      "asset_kind": "full_text",
+      "language": "ru",
+      "storage_mode": "external_url",
+      "content_path": null,
+      "external_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Июль/15",
+      "rights_status": "public_domain_verified",
+      "license_url": null,
+      "copyright_notice": "Источник восходит к дореволюционному изданию серии 1903–1911; public-domain evidence фиксируется на уровне исходного тома. Локальная копия текста не включается.",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:memory-vladimir-kiev",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Июль/15",
+          "source_row": 5,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Июль.djvu"
+        }
+      ]
+    }
+  ]
+}

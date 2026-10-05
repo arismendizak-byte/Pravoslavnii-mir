@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.1.0",
+  "key": "worthy-is-19c",
+  "title": "Достойно есть",
+  "source_url": "https://ru.wikisource.org/w/index.php?oldid=483297&title=Достойно_есть/ДО",
+  "source_revision": "483297",
+  "verified_on": "2026-10-05",
+  "source_header": "Викитека, «Достойно есть/ДО», молитва Пресвятой Богородице; страница указывает «КРАТКІЙ МОЛИТВОСЛОВЪ» и «Новую Азбуку» Л. Н. Толстого как источники редакций.",
+  "work_rights_evidence_url": "https://ru.wikisource.org/w/index.php?oldid=483297&title=Достойно_есть/ДО",
+  "classification_evidence_url": "https://m.pravenc.ru/rubrics/383270.html",
+  "classification_evidence_summary": "Рубрикатор Православной энциклопедии определяет «Достойно есть» как одно из наиболее известных православных песнопений во имя Пресвятой Богородицы.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "rights_status": "open_license",
+  "transformation": "Select the explicitly identified historical edition/variant; remove site navigation, footnote markers and alternate editions; preserve source spelling and source transcription errors; join retained blocks with two LF characters. No translation or abridgment inside the selected variant.",
+  "completeness_scope": "Полный текст выбранной первой редакции «Написанье 19 века» со страницы закреплённой ревизии; альтернативная редакция, примечания и навигация не включены. Это не критическое издание.",
+  "text_quality": "source_transcription_not_independently_proofread",
+  "content_path": "library/texts/worthy-is-19c.txt",
+  "content_sha256": "ff1de2365fc8494c934bc4e09bf078f3d451667262e67fdf54090b4f8b4782a7",
+  "content_size_bytes": 448,
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": "Достойно есть"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Достойно есть, яко воистину, блажити Тя Богородицу, присноблаженную и пренепорочную и Матерь Бога нашего. Честнѣйшую херувимъ и славнѣйшую безъ сравненія серафимъ, безъ истлѣнія Бога Слова рождшую, сущую Богородицу Тя величаемъ."
+    }
+  ]
+}

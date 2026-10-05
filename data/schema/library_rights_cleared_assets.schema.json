@@ -1,0 +1,532 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "library_rights_cleared_assets.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "domain",
+    "verified_on",
+    "text_records",
+    "life_records",
+    "media_records",
+    "relations"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "domain": {
+      "const": "library_rights_cleared_assets"
+    },
+    "verified_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "text_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "key",
+          "title",
+          "work_type",
+          "author_key",
+          "author_name",
+          "author_aliases",
+          "edition_title",
+          "language",
+          "publisher",
+          "publication_year",
+          "asset_kind",
+          "storage_mode",
+          "external_url",
+          "rights_status",
+          "license_url",
+          "copyright_notice",
+          "rights_evidence_url",
+          "source_url"
+        ],
+        "properties": {
+          "key": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "work_type": {
+            "type": "string",
+            "minLength": 1
+          },
+          "author_key": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          },
+          "author_name": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          },
+          "author_aliases": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "edition_title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "language": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "publisher": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "publication_year": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "asset_kind": {
+            "type": "string",
+            "minLength": 1
+          },
+          "storage_mode": {
+            "enum": [
+              "external_url",
+              "local_text"
+            ]
+          },
+          "external_url": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rights_status": {
+            "enum": [
+              "public_domain_verified",
+              "open_license",
+              "external_link_only"
+            ]
+          },
+          "license_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "copyright_notice": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rights_evidence_url": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_url": {
+            "type": "string",
+            "minLength": 1
+          },
+          "work_rights_status": {
+            "enum": [
+              "public_domain_verified"
+            ]
+          },
+          "local_source_file": {
+            "type": "string",
+            "pattern": "^data/library_sources/texts/[a-z0-9-]+\\.json$"
+          },
+          "content_path": {
+            "type": "string",
+            "pattern": "^library/texts/[a-z0-9-]+\\.txt$"
+          },
+          "content_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "content_size_bytes": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "source_revision": {
+            "type": "string",
+            "pattern": "^[0-9]+$"
+          },
+          "verified_on": {
+            "type": "string",
+            "format": "date"
+          },
+          "classification_evidence_url": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          },
+          "classification_evidence_summary": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "storage_mode": {
+                  "const": "local_text"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "local_source_file",
+                "content_path",
+                "content_sha256",
+                "content_size_bytes",
+                "source_revision",
+                "verified_on",
+                "license_url"
+              ],
+              "properties": {
+                "rights_status": {
+                  "const": "open_license"
+                },
+                "license_url": {
+                  "const": "https://creativecommons.org/licenses/by-sa/4.0/"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "author_key": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "author_key"
+              ]
+            },
+            "then": {
+              "properties": {
+                "author_name": {
+                  "type": "null"
+                },
+                "author_aliases": {
+                  "maxItems": 0
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "author_name": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "media_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "key",
+          "title",
+          "media_kind",
+          "work_key",
+          "work_title",
+          "work_type",
+          "storage_mode",
+          "external_url",
+          "rights_status",
+          "license_url",
+          "copyright_notice",
+          "rights_evidence_url",
+          "source_url",
+          "source_sha1",
+          "source_size",
+          "source_creator"
+        ],
+        "properties": {
+          "key": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "media_kind": {
+            "enum": [
+              "audio",
+              "video",
+              "image"
+            ]
+          },
+          "work_key": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "work_title": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "work_type": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "storage_mode": {
+            "const": "external_url"
+          },
+          "external_url": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rights_status": {
+            "enum": [
+              "public_domain_verified",
+              "open_license"
+            ]
+          },
+          "license_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "copyright_notice": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rights_evidence_url": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_url": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_sha1": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "source_size": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "source_creator": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "key",
+          "relation_type",
+          "from_media_key",
+          "to_kind",
+          "to_id",
+          "target_label",
+          "evidence"
+        ],
+        "properties": {
+          "key": {
+            "type": "string",
+            "minLength": 1
+          },
+          "relation_type": {
+            "type": "string",
+            "minLength": 1
+          },
+          "from_media_key": {
+            "type": "string",
+            "minLength": 1
+          },
+          "to_kind": {
+            "enum": [
+              "saint",
+              "place",
+              "feast",
+              "content",
+              "news",
+              "route",
+              "event"
+            ]
+          },
+          "to_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "target_label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "life_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "key",
+          "title",
+          "work_type",
+          "saint_refs",
+          "edition_title",
+          "language",
+          "publisher",
+          "publication_year",
+          "asset_kind",
+          "storage_mode",
+          "external_url",
+          "rights_status",
+          "license_url",
+          "copyright_notice",
+          "rights_evidence_url",
+          "source_url"
+        ],
+        "properties": {
+          "key": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "work_type": {
+            "const": "life"
+          },
+          "saint_refs": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "label",
+                "relation_type",
+                "evidence"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^pm-saint-[0-9a-f]{20}$"
+                },
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "relation_type": {
+                  "const": "life_of"
+                },
+                "evidence": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          },
+          "edition_title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "language": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "publisher": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "publication_year": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "asset_kind": {
+            "type": "string",
+            "minLength": 1
+          },
+          "storage_mode": {
+            "const": "external_url"
+          },
+          "external_url": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rights_status": {
+            "const": "public_domain_verified"
+          },
+          "license_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "copyright_notice": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rights_evidence_url": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_url": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

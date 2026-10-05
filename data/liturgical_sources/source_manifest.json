@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.1.0",
+  "providers": [
+    {
+      "provider": "pravmir-legacy-calendar-2026",
+      "source_class": "legacy_migration",
+      "verification_status": "legacy_unverified",
+      "jurisdiction": {
+        "code": "unspecified",
+        "label": "Не указана в legacy-источнике"
+      },
+      "tradition": {
+        "code": "unspecified",
+        "label": "Не указана в legacy-источнике"
+      },
+      "calendar_style": "civil_date_legacy",
+      "locale": "ru-RU",
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "verified_at": null,
+      "source_files": [
+        "data/content_sources/calendar_2026_legacy.json",
+        "data/liturgical_sources/calendar_2026_semantics.json"
+      ],
+      "notes": "Legacy calendar is preserved as provenance only. It must not be presented as source-verified liturgical authority."
+    },
+    {
+      "provider": "azbyka-calendar-2026-editorial",
+      "source_class": "editorial",
+      "verification_status": "editorial_verified",
+      "jurisdiction": {
+        "code": "unspecified",
+        "label": "Не заявлена как официальный источник юрисдикции"
+      },
+      "tradition": {
+        "code": "russian-orthodox-editorial-calendar",
+        "label": "Русская православная календарная традиция (редакционная публикация)"
+      },
+      "calendar_style": "civil_date_new_style_with_old_style_reference",
+      "locale": "ru-RU",
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "verified_at": "2026-10-04T18:52:28Z",
+      "source_files": [
+        "data/liturgical_sources/readings_2026_editorial.json"
+      ],
+      "notes": "Editorial source for bibliographic reading references only. Scripture text is not copied; missing reading lists are not inferred. Provider is not treated as an official jurisdictional authority."
+    }
+  ]
+}

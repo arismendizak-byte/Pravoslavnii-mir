@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "domain": "events",
+  "files": [
+    {
+      "path": "data/event_sources/source_manifest.json",
+      "size": 1984,
+      "sha256": "f7afcb354f95e5eece4518fe8ea0e5769ccf82ccdf177c9595addb0bd428a1ea"
+    },
+    {
+      "path": "data/event_sources/events_editorial.json",
+      "size": 3599,
+      "sha256": "7a645b0253937f9ce28909b24030f6e213cd98e6cc0a28865a31935154981762"
+    },
+    {
+      "path": "data/event_sources/events_verified_organisations.json",
+      "size": 144,
+      "sha256": "2b742705d12fd32234d31bab08c6d2a86ff05eb315ebeea33e6eb65f72d27ea4"
+    },
+    {
+      "path": "data/event_sources/events_community.json",
+      "size": 1315,
+      "sha256": "1de05210a909b8df73068a62ab15d722ea2c99cb9fee576fc07232e08ce80c0b"
+    }
+  ]
+}

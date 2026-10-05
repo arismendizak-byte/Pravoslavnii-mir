@@ -1,0 +1,2047 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "cb8933e71a4b77703b8f483e56da2559d16312c92899cdde4daaa786f8d88291",
+  "count": 85,
+  "services": [
+    {
+      "id": "pm-pilgrim-02dfe6d64a6f93972a59",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Ейской епархии «Путник»",
+      "region_text": "Ейск",
+      "organization": "Ейская епархия",
+      "contacts": {
+        "phone": "+7 (86 132) 21-046",
+        "website": "https://eyskiy-putnik.turbo.site/",
+        "email": "info@eisk-eparh.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:f8fcdcbb419df2029881",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 48,
+          "source_url": "https://eyskiy-putnik.turbo.site/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-030436b2e8204c36b469",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Клинцовской епархии",
+      "region_text": "Клинцы",
+      "organization": "Клинцовская епархия",
+      "contacts": {
+        "phone": "+7 (980) 335-78-22",
+        "website": "https://eparhia-klintsy.ru/",
+        "email": "pashaka500@gmail.com"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:bd929d7ba2e65c1edcbb",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 37,
+          "source_url": "https://eparhia-klintsy.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-044493c7ec6f7fd18af2",
+      "service_type": "pilgrimage_service",
+      "name": "Паломнический центр Георгиевской епархии",
+      "region_text": "Георгиевск",
+      "organization": "Георгиевская епархия",
+      "contacts": {
+        "phone": "+7 (87 951) 62-203",
+        "website": "https://palomnichestvo.georgeparhia.ru/",
+        "email": "georg-eparhia@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:b9cdab4744d45bacd4c4",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 43,
+          "source_url": "https://palomnichestvo.georgeparhia.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-0642b830aa997c89ddec",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба имени св. блгв. кн. Александра Невского",
+      "region_text": "Московская область",
+      "organization": "г. Егорьевск",
+      "contacts": {
+        "phone": "+7 (906) 798-65-82",
+        "website": "https://egorievgrad.ru/",
+        "email": "eg.palomnik@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:9a97ac976fef6252fd03",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 15,
+          "source_url": "https://egorievgrad.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-06da5c8dbc1877ac04f2",
+      "service_type": "pilgrimage_service",
+      "name": "Паломнический центр «Убрус»",
+      "region_text": "Ярославль",
+      "organization": "Спасо-Афанасиевский монастырь",
+      "contacts": {
+        "phone": "+7 (920) 106-92-49",
+        "website": "https://kamonastery.ru/",
+        "email": "kamonastery@gmail.com"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:6b0039f616dd3a0d4e9e",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 35,
+          "source_url": "https://kamonastery.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-07fc7786155e0323c0cc",
+      "service_type": "pilgrimage_service",
+      "name": "Паломнический центр «Южный Паломник»",
+      "region_text": "Краснодар",
+      "organization": "Паломнический центр",
+      "contacts": {
+        "phone": "+7 (861) 260-59-58",
+        "website": "https://www.sdhram.ru/",
+        "email": "yugpalmer@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:4076d9c27f13a0b4f6ee",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 51,
+          "source_url": "https://www.sdhram.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-0a2ad802b0182ff69edb",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба «Одигитрия»",
+      "region_text": "Ярославль",
+      "organization": "Казанский женский монастырь",
+      "contacts": {
+        "phone": "+7 (980) 744-67-84",
+        "website": "https://xn----8sbabbgdbu4af0a9e.xn--p1ai/",
+        "email": "yarkazan@list.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:f5cee5e7b1b963a0a2f2",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 27,
+          "source_url": "https://xn----8sbabbgdbu4af0a9e.xn--p1ai/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-0b181be0f3b1245f69c3",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба «Аю-Даг»",
+      "region_text": "Алушта",
+      "organization": "Паломническая служба",
+      "contacts": {
+        "phone": "+7 (978) 620-14-14",
+        "website": "https://monastyr-kid.ru",
+        "email": "turpodvorie@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:0de2791471d55a6cfed0",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 61,
+          "source_url": "https://monastyr-kid.ru",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-12b4a092e850536e9a45",
+      "service_type": "pilgrimage_service",
+      "name": "Епархиальный паломнический центр Касимовской епархии",
+      "region_text": "Касимов",
+      "organization": "Касимовская епархия",
+      "contacts": {
+        "phone": "+7 (965) 651-51-65",
+        "website": "https://kas-eparhia.ru/",
+        "email": "mon.savvos@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:5c569ee757bebb6da710",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 20,
+          "source_url": "https://kas-eparhia.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-135c1129c2badf013beb",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Шадринской епархии «Преображение»",
+      "region_text": "Шадринск",
+      "organization": "Шадринская епархия",
+      "contacts": {
+        "phone": "+7 (912) 976-73-45",
+        "website": "https://shadreparh.cerkov.ru/",
+        "email": "t.v.g_45@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:9e232c592d94763ce8d9",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 77,
+          "source_url": "https://shadreparh.cerkov.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-144eef231bbb0a0627b1",
+      "service_type": "pilgrimage_service",
+      "name": "Паломнический центр Троице-Сергиевой Лавры",
+      "region_text": "Московская область",
+      "organization": "г. Сергиев Посад",
+      "contacts": {
+        "phone": "+7 (496) 540-57-21",
+        "website": "https://lavra.ru/",
+        "email": "order@lavra.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:6b479f6d1c8d719c29b4",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 16,
+          "source_url": "https://lavra.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-17b867ac6042edd06ff2",
+      "service_type": "pilgrimage_service",
+      "name": "Паломнический центр Симферопольской и Крымской епархии",
+      "region_text": "Симферополь",
+      "organization": "Симферопольская епархия",
+      "contacts": {
+        "phone": "+7 (978) 820-30-98",
+        "website": "https://palomnic.ru/",
+        "email": "atushev@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:68a7a9b1d8933908a9e6",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 72,
+          "source_url": "https://palomnic.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-1dd9fbb08baade5966ab",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Введенского Владычнего монастыря",
+      "region_text": "Московская область",
+      "organization": "Введенский Владычний монастырь (г. Серпухов)",
+      "contacts": {
+        "phone": "+7 (4967) 724-625",
+        "website": "https://xn--80aaehbc1ad4i.xn--p1ai/",
+        "email": "inokini@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:d41ed4d6827bdbede37b",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 10,
+          "source_url": "https://xn--80aaehbc1ad4i.xn--p1ai/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-1e50f7c2044f7e376541",
+      "service_type": "pilgrimage_service",
+      "name": "Паломнический центр Александро-Невского собора",
+      "region_text": "Новосибирск",
+      "organization": "Александро-Невский собор",
+      "contacts": {
+        "phone": "+7 (913) 007-50-15",
+        "website": "https://ansobor.ru/",
+        "email": "palomnik@sibmail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:342d486d93962988a1e2",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 44,
+          "source_url": "https://ansobor.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-1e654974f2c591309f60",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Севастопольского благочиния «Купель»",
+      "region_text": "Севастополь",
+      "organization": "Севастопольское благочиние",
+      "contacts": {
+        "phone": "+7 (978) 709-46-88",
+        "website": null,
+        "email": "Sev.palom@bk.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:608ae343a24bee808504",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 57,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-26cddf49b61a00a76890",
+      "service_type": "pilgrimage_service",
+      "name": "Православная паломническая служба «Покров» (Энгельс)",
+      "region_text": "Энгельс",
+      "organization": "Храм Покрова Божией Матери на Волге",
+      "contacts": {
+        "phone": "+7 (8453) 568-826",
+        "website": "http://www.pokrovsk-hram.ru/",
+        "email": "Pokrovskhram@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:3647c45ee310ff8d86bc",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 82,
+          "source_url": "http://www.pokrovsk-hram.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-29b4c5c8a2697c57b01f",
+      "service_type": "pilgrimage_service",
+      "name": "Вяземская Епархиальная Паломническая Служба",
+      "region_text": "Вязьма",
+      "organization": "Вяземская епархия",
+      "contacts": {
+        "phone": "+7 (48 131) 41-773",
+        "website": "https://palomniksm.ru/",
+        "email": "Vyazma.eparh@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:a6088199824f8720c898",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 80,
+          "source_url": "https://palomniksm.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-2d0c6f479a13b0022821",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба имени прп. Владимира Белопесоцкого",
+      "region_text": "Московская область",
+      "organization": "Свято-Троицкий Белопесоцкий монастырь (г. Ступино)",
+      "contacts": {
+        "phone": "+7 (496) 649-05-83",
+        "website": "https://svtbm.cerkov.ru/",
+        "email": "svtbm@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:6f6f7c43a89acc321304",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 14,
+          "source_url": "https://svtbm.cerkov.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-30610757d7b1f124eea7",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба «Кавказский Паломник»",
+      "region_text": "Пятигорск",
+      "organization": "Пятигорская и Черкесская епархия",
+      "contacts": {
+        "phone": "+7 (879) 333-25-33",
+        "website": "http://Kavkaz-palomnik.ru",
+        "email": "Kavkaz-palomnik@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:96fdc91dec88d5a9f674",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 81,
+          "source_url": "http://Kavkaz-palomnik.ru",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-31a0b7d23c6e51b197b7",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба «Иерусалимская Одигитрия»",
+      "region_text": "Москва",
+      "organization": "Паломническая служба",
+      "contacts": {
+        "phone": "+7 (952) 910-54-79",
+        "website": "http://xn--80abbflmnp8b8bu.xn--p1ai/",
+        "email": "pps.ierus@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:6c44614f006f3b6eea98",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 7,
+          "source_url": "http://xn--80abbflmnp8b8bu.xn--p1ai/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-35a67a01a855c153f9c3",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Кемеровской Епархии",
+      "region_text": "Кемерово",
+      "organization": "Кемеровская епархия",
+      "contacts": {
+        "phone": "+7 (923) 488-80-58",
+        "website": "https://kemesp.vsite.pro/",
+        "email": "kem-eps@list.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:9f5dc219b33103e71ddb",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 25,
+          "source_url": "https://kemesp.vsite.pro/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-37aad7cda2ecc8f478f6",
+      "service_type": "pilgrimage_service",
+      "name": "Православный паломнический центр «Центр социальных программ «Жизнь»",
+      "region_text": "Нижний Новгород",
+      "organization": "Центр социальных программ",
+      "contacts": {
+        "phone": "+7 (831) 274-64-77",
+        "website": "https://palomnik.nne.ru/",
+        "email": "palomniknn@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:262f6d7f930b8ecf0a15",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 67,
+          "source_url": "https://palomnik.nne.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-3a10d827161900a0a02b",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба при Нефтекамской епархии",
+      "region_text": "Нефтекамск",
+      "organization": "Нефтекамская епархия",
+      "contacts": {
+        "phone": "+7 (987) 583-54-59",
+        "website": "https://nefeparhia.ru/",
+        "email": "kancneftekamsk@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:ff56561763eefaa7b8c9",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 42,
+          "source_url": "https://nefeparhia.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-3f1d4f6c12cdd046e63f",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Ставропольской и Невинномысской епархии",
+      "region_text": "Ставрополь",
+      "organization": "Ставропольская епархия",
+      "contacts": {
+        "phone": "+7 (8652) 358-051",
+        "website": "https://stavropol-eparhia.ru/category/palomnicheskaya-sluzhba/",
+        "email": "palomnik.stavropol-eparhia@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:a40d14dfdc6ee3134be5",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 33,
+          "source_url": "https://stavropol-eparhia.ru/category/palomnicheskaya-sluzhba/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-403c0d786b3d74966b58",
+      "service_type": "pilgrimage_service",
+      "name": "Паломнический центр Одинцовской епархии",
+      "region_text": "Московская область",
+      "organization": "Одинцовская епархия",
+      "contacts": {
+        "phone": "+7 (926) 700-29-52",
+        "website": null,
+        "email": null
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:de65e8d7fbbf28ae8247",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 17,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-45dd9c0ef8c4911480f6",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба «София»",
+      "region_text": "Курск",
+      "organization": "Приход храма Веры, Надежды, Любови",
+      "contacts": {
+        "phone": "+7 (4712) 525-478",
+        "website": "https://www.kursksofiya.ru/",
+        "email": "kursksofiya@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:bf85a50848cd955c35cf",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 22,
+          "source_url": "https://www.kursksofiya.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-45ee7a076d0bf283245c",
+      "service_type": "pilgrimage_service",
+      "name": "Православная паломническая служба Екатеринбургской епархии",
+      "region_text": "Екатеринбург",
+      "organization": "Екатеринбургская епархия",
+      "contacts": {
+        "phone": "+7 (912) 690-40-40",
+        "website": "https://palomural.ru",
+        "email": "Palom-ekb@internet.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:b539480ca31cc284d7f3",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 79,
+          "source_url": "https://palomural.ru",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-47a96de493bca50fd8fd",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Переславской епархии",
+      "region_text": "Переславль-Залесский",
+      "organization": "Переславская епархия",
+      "contacts": {
+        "phone": "+7 (48 535) 94-065",
+        "website": "https://preparhia.ru/organisation/palomnicheskaya-sluzhba",
+        "email": "aksios.eparhia@gmail.com"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:a989d4e8510890eb6bc9",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 23,
+          "source_url": "https://preparhia.ru/organisation/palomnicheskaya-sluzhba",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-47b71db44e04169af9f1",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Сретенского монастыря",
+      "region_text": "Москва",
+      "organization": "Сретенский монастырь",
+      "contacts": {
+        "phone": "+7 (495) 640-30-40",
+        "website": "https://sretenie.moscow",
+        "email": "palomnik@sretenie.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:4771c7d0fe06eaf29157",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 1,
+          "source_url": "https://sretenie.moscow",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-492904d423a159e96d77",
+      "service_type": "pilgrimage_service",
+      "name": "Паломнический центр имени святого князя Александра Невского",
+      "region_text": "Волгоград",
+      "organization": "Волгоградская епархия",
+      "contacts": {
+        "phone": "+7 (906) 404-56-70",
+        "website": null,
+        "email": "palomnikvolgograda@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:aeee6e09eba121d4afda",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 84,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-4f2beb63d45dba8c6463",
+      "service_type": "pilgrimage_service",
+      "name": "Православный паломнический центр Тамбовской Епархии",
+      "region_text": "Тамбов",
+      "organization": "Тамбовская епархия",
+      "contacts": {
+        "phone": "+7 (4752) 718-499",
+        "website": "https://tambov-palomnik.ru/",
+        "email": "admin@eparhia-tmb.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:7e18c09de6053c6ef3a2",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 18,
+          "source_url": "https://tambov-palomnik.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-51d926529ae344ac7f4e",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба храма св. Мефодия и Кирилла в Ростокине «Росток»",
+      "region_text": "Москва",
+      "organization": "Храм в Ростокине",
+      "contacts": {
+        "phone": "+7 (495) 222-16-75",
+        "website": "https://hram-rostokino.ru/palomniki/",
+        "email": "Hram-km@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:62edc09118097304618e",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 3,
+          "source_url": "https://hram-rostokino.ru/palomniki/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-529afefcc7809a9caed2",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба «7 стран»",
+      "region_text": "Московская область",
+      "organization": "Храм Живоносный Источник (с. Быково)",
+      "contacts": {
+        "phone": "+7 (926) 133-13-28",
+        "website": "https://7stran.com/",
+        "email": "givonosnyiistochnik@gmail.com"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:fece8dedcf7c4c4337af",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 8,
+          "source_url": "https://7stran.com/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-5bc47b84cd6b0745f161",
+      "service_type": "pilgrimage_service",
+      "name": "Православная паломническая служба Гатчинской Епархии",
+      "region_text": "Гатчина",
+      "organization": "Гатчинская епархия",
+      "contacts": {
+        "phone": "+7 (921) 937-48-09",
+        "website": "https://palomnik-club.ru",
+        "email": "boxpam@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:fb1a72258228e9110585",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 78,
+          "source_url": "https://palomnik-club.ru",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-5ea3018c94dd7e1b1d01",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба «Задонский паломник»",
+      "region_text": "Липецк",
+      "organization": "Задонский монастырь",
+      "contacts": {
+        "phone": "+7 (4742) 250-365",
+        "website": null,
+        "email": "latyshva-na@bk.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:b35c08f3c3c7b21f1c53",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 49,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-5ee1bf1b57bec93384bb",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Коневского монастыря",
+      "region_text": "Санкт-Петербург",
+      "organization": "Коневский монастырь",
+      "contacts": {
+        "phone": "+7 (812) 571-80-79",
+        "website": "https://konevskiy.ru/",
+        "email": "manager-konev@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:c493281144ce71b4c2a2",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 41,
+          "source_url": "https://konevskiy.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-6fbb0a92224d6c62dd53",
+      "service_type": "pilgrimage_service",
+      "name": "Паломнический центр «Ярославский Паломник»",
+      "region_text": "Ярославль",
+      "organization": "Ярославская епархия",
+      "contacts": {
+        "phone": "+7 (4852) 727-720",
+        "website": "https://yarpalomnik.ru/",
+        "email": "yarpiligrim@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:305862c6ef1a4e66d184",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 31,
+          "source_url": "https://yarpalomnik.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-732f80199d154349f554",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Николо-Берлюковской пустыни",
+      "region_text": "Московская область",
+      "organization": "Николо-Берлюковская пустынь",
+      "contacts": {
+        "phone": "+7 (968) 374-11-07",
+        "website": "https://www.berluki.ru/",
+        "email": "berluki@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:28f514963f040e2635c7",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 9,
+          "source_url": "https://www.berluki.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-750bdc9c990b147109ba",
+      "service_type": "pilgrimage_service",
+      "name": "Епархиальный паломнический отдел Россошанской епархии",
+      "region_text": "Воронежская область",
+      "organization": "г. Россошь",
+      "contacts": {
+        "phone": "+7 (903) 858-07-86",
+        "website": "https://roseparhia.ru/eparkhialnye-otdely/pilgrimage-department.php",
+        "email": "palomnik.rossosh@gmail.com"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:809e4db46dcfe3dbe689",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 19,
+          "source_url": "https://roseparhia.ru/eparkhialnye-otdely/pilgrimage-department.php",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-7a2ec6aee4b93846e74c",
+      "service_type": "pilgrimage_service",
+      "name": "Православная паломническая служба Челябинской епархии",
+      "region_text": "Челябинск",
+      "organization": "Челябинская епархия",
+      "contacts": {
+        "phone": "+7 (919) 346-30-67",
+        "website": "https://palomniki.pravorg.ru",
+        "email": "Palomniki74@bk.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:4dd1ce38d1e69cf9f60e",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 75,
+          "source_url": "https://palomniki.pravorg.ru",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-7add980ac9e4a93abf20",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Владикавказской Епархии",
+      "region_text": "Владикавказ",
+      "organization": "Владикавказская епархия",
+      "contacts": {
+        "phone": "+7 (8672) 53-17-33",
+        "website": "https://pravoslavnaya-alania.ru",
+        "email": "diocese@blagos.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:9ee1a39f4b803be1398c",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 64,
+          "source_url": "https://pravoslavnaya-alania.ru",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-7d1bdd973437ade0cef7",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Санкт-Петербургской Епархии",
+      "region_text": "Санкт-Петербург",
+      "organization": "Санкт-Петербургская епархия",
+      "contacts": {
+        "phone": "+7 (921) 755-51-25",
+        "website": "https://mitropolia-palomnik.ru/",
+        "email": "info@mitropolia-palomnik.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:99a4727bdc4808c5bc5e",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 40,
+          "source_url": "https://mitropolia-palomnik.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-7d276346df9968acf3d2",
+      "service_type": "pilgrimage_service",
+      "name": "Православная паломническая служба «Преображение»",
+      "region_text": "Железногорск",
+      "organization": "Железногорская епархия",
+      "contacts": {
+        "phone": "+7 (920) 736-44-31",
+        "website": "https://xn--e1aboudcffm0l.xn--p1ai/palomnicheskaya-sluzhba.html",
+        "email": "zheleznogorsk.preobragenie@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:8372beb3b41efce7b6ab",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 28,
+          "source_url": "https://xn--e1aboudcffm0l.xn--p1ai/palomnicheskaya-sluzhba.html",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-7f7993adfb2a4325cee6",
+      "service_type": "pilgrimage_service",
+      "name": "Приходская паломническая служба «Знамение»",
+      "region_text": "Москва",
+      "organization": "Храм Знамения",
+      "contacts": {
+        "phone": "+7 (495) 453-91-01",
+        "website": "https://xn--80aeldmpbyw0c.xn--p1ai/",
+        "email": "Znam77adm@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:91f520deea9ccf17edd5",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 4,
+          "source_url": "https://xn--80aeldmpbyw0c.xn--p1ai/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-8056ad800bccd305fd42",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Искитимской епархии",
+      "region_text": "Искитим",
+      "organization": "Искитимская епархия",
+      "contacts": {
+        "phone": "+7 (913) 943-10-85",
+        "website": "https://iskitimeparhia.ru/palomnik.html",
+        "email": "iskitimpalomnik@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:b1d68c699952323216c4",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 56,
+          "source_url": "https://iskitimeparhia.ru/palomnik.html",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-865f9b1a385def85eade",
+      "service_type": "pilgrimage_service",
+      "name": "Тульский епархиальный паломнический центр",
+      "region_text": "Тула",
+      "organization": "Тульская епархия",
+      "contacts": {
+        "phone": "+7 (910) 153-30-40",
+        "website": "https://tulapalomnik71.ru/",
+        "email": "tulapalomnik@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:0c1d9b17245457709e01",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 21,
+          "source_url": "https://tulapalomnik71.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-8a709917500ce8f25281",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба «Преображение»",
+      "region_text": "Бутурлиновка",
+      "organization": "Борисоглебская епархия",
+      "contacts": {
+        "phone": "+7 (47 361) 231-55",
+        "website": "https://preob.cerkov.ru/",
+        "email": "buturlin-sobor@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:7aa4fb27ca91762e9628",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 46,
+          "source_url": "https://preob.cerkov.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-8ad961ab3bacc34ab6bc",
+      "service_type": "pilgrimage_service",
+      "name": "Единый православный паломнический центр",
+      "region_text": "Смоленск",
+      "organization": "Храм Петра и Павла",
+      "contacts": {
+        "phone": "+7 (910) 788-90-16",
+        "website": "https://smol-stt-app.cerkov.ru/",
+        "email": "palomniksm@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:7cc437c5c3baafb19ab3",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 47,
+          "source_url": "https://smol-stt-app.cerkov.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-905fd89894d64e9616f5",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Омской епархии «Ачаир»",
+      "region_text": "Омск",
+      "organization": "Омская епархия",
+      "contacts": {
+        "phone": "+7 (951) 457-43-74",
+        "website": "https://omsk-eparhiya.ru/",
+        "email": "omskpalomnik@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:dd7d788b427303120dfe",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 68,
+          "source_url": "https://omsk-eparhiya.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-96f6b2e5e0054d5cf7bd",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба «Истоки»",
+      "region_text": "Севастополь",
+      "organization": "Паломническая служба",
+      "contacts": {
+        "phone": "+7 (978) 072-58-25",
+        "website": null,
+        "email": "politrifon@gmail.com"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:7a7642986c796ad622a5",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 58,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-97506da9a144efdacb35",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба «Елецкий паломник»",
+      "region_text": "Елец",
+      "organization": "Елецкая епархия",
+      "contacts": {
+        "phone": "+7 (904) 690-16-00",
+        "website": "https://el-eparhy.ru/palomnicheskij-otdel/",
+        "email": "el.palomnik@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:86d93a9b04f7060433d0",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 36,
+          "source_url": "https://el-eparhy.ru/palomnicheskij-otdel/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-98830d6ec1ffba88e3d8",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба «Елеон»",
+      "region_text": "Йошкар-Ола",
+      "organization": "Паломническая служба",
+      "contacts": {
+        "phone": "+7 (902) 325-81-12",
+        "website": null,
+        "email": "mari-palomnik@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:a27aae6e58b53adeddad",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 53,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-9c965b78bac1f0ce23b3",
+      "service_type": "pilgrimage_service",
+      "name": "Паломнический Центр Орловской епархии",
+      "region_text": "Орёл",
+      "organization": "Орловская епархия",
+      "contacts": {
+        "phone": "+7 (903) 882-26-36",
+        "website": "https://orel-eparhia.ru/structure/departments/piligrimage",
+        "email": "logos-orel@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:8008f9bc035352aaec82",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 34,
+          "source_url": "https://orel-eparhia.ru/structure/departments/piligrimage",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-a274deeb8448332581bc",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба «Покров» (Кинешма)",
+      "region_text": "Кинешма",
+      "organization": "Троицко-Успенский собор",
+      "contacts": {
+        "phone": "+7 (910) 680-55-88",
+        "website": "https://kinsobor.blogspot.com/",
+        "email": "kineshma-sobor@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:3a36f7b07c5f7c2af3eb",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 66,
+          "source_url": "https://kinsobor.blogspot.com/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-a34aaaaccb4015f219fa",
+      "service_type": "pilgrimage_service",
+      "name": "Православная паломническая служба «Азария»",
+      "region_text": "Братск",
+      "organization": "Братская епархия",
+      "contacts": {
+        "phone": "+7 (3953) 258-025",
+        "website": "https://azariatour.ru/",
+        "email": "azaria.ru@gmail.com"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:b7a8f88848793de8b96c",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 52,
+          "source_url": "https://azariatour.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-a3945af5ced26d0cf5bc",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Пензенской епархии «Пензенский паломник»",
+      "region_text": "Пенза",
+      "organization": "Пензенская епархия",
+      "contacts": {
+        "phone": "+7 (927) 375-60-61",
+        "website": "https://palomnikpenza.ru/",
+        "email": "palomnikpenza@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:8e69e97a0ca7fed1b1e3",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 32,
+          "source_url": "https://palomnikpenza.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-a64d66afcde13aa5f846",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Брянской епархии «Брянский паломник»",
+      "region_text": "Брянск",
+      "organization": "Брянская епархия",
+      "contacts": {
+        "phone": "+7 (4832) 599-263",
+        "website": "https://bryansk-palomnik.ru/",
+        "email": "proskinites@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:6a90552f1ba6a3b9e069",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 38,
+          "source_url": "https://bryansk-palomnik.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-a698ca8fd71d242fd22c",
+      "service_type": "pilgrimage_service",
+      "name": "Паломнический отдел Чувашской митрополии",
+      "region_text": "Чебоксары",
+      "organization": "Чувашская митрополия",
+      "contacts": {
+        "phone": "+7 (927) 840-50-40",
+        "website": "https://putnik.cerkov.ru/",
+        "email": "Feo-doroga@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:37e4763686c23ba98951",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 76,
+          "source_url": "https://putnik.cerkov.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-a7f964feb3ea1f8700ed",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба «Православный паломник» (Хлебодаровка)",
+      "region_text": "Хлебодаровка",
+      "organization": "Храм Успения Божией Матери",
+      "contacts": {
+        "phone": "+7 (906) 107-43-38",
+        "website": null,
+        "email": "avdeev-1989@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:b0eb8fc3b8591db107f9",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 69,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-accd812cc9af74ae247e",
+      "service_type": "pilgrimage_service",
+      "name": "Православный Паломнический центр Белевской епархии",
+      "region_text": "Плавск",
+      "organization": "Белевская епархия",
+      "contacts": {
+        "phone": "+7 (48 752) 21-888",
+        "website": "https://xn--80aakfe3afbj.xn--p1ai/",
+        "email": "hram.serg@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:966b19ec057fb6c551ab",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 26,
+          "source_url": "https://xn--80aakfe3afbj.xn--p1ai/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-af5a58885c72297cccf6",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Благовещенской епархии",
+      "region_text": "Благовещенск",
+      "organization": "Благовещенская епархия",
+      "contacts": {
+        "phone": "+7 (961) 950-00-27",
+        "website": "https://blaginform.ru/palomnicheskaya-sluzhba",
+        "email": "felixicharli@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:fb665c2db6b97d71e9ec",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 63,
+          "source_url": "https://blaginform.ru/palomnicheskaya-sluzhba",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-b1ca66fa3a7d5cd4e8f9",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба «Знамение»",
+      "region_text": "Борисоглебск",
+      "organization": "Борисоглебская епархия",
+      "contacts": {
+        "phone": "+7 (950) 755-71-56",
+        "website": "https://bsk-eparhia.ru/eparhialnye-otdely/palomnicheskij-otdel/",
+        "email": "bosenko_sergei@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:13d2b0099797f592e2ab",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 45,
+          "source_url": "https://bsk-eparhia.ru/eparhialnye-otdely/palomnicheskij-otdel/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-b260245d10c3e8a5d825",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба «Фавор»",
+      "region_text": "Алушта",
+      "organization": "Паломническая служба",
+      "contacts": {
+        "phone": "+7 (978) 708-11-97",
+        "website": "https://pokrovcrimea.ru",
+        "email": "otetsigor@ukr.net"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:5aa4db559914c456cb02",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 71,
+          "source_url": "https://pokrovcrimea.ru",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-b66a09f2bd4b88118a63",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба «Верность» Спасо-Бородинского монастыря",
+      "region_text": "Московская область",
+      "organization": "Спасо-Бородинский монастырь (д. Семеновское)",
+      "contacts": {
+        "phone": "+7 (926) 608-70-89",
+        "website": "https://spaso-borodinskiy.ru/",
+        "email": "borodino-1812@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:70ef5aaa5304637a7cd0",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 13,
+          "source_url": "https://spaso-borodinskiy.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-ba78f376a0f682712404",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Урюпинской епархии «Покров»",
+      "region_text": "Урюпинск",
+      "organization": "Урюпинская епархия",
+      "contacts": {
+        "phone": "+7 (909) 393-99-51",
+        "website": "https://xn--80aaahfc1b4ann.xn--p1ai/otdely/palomnichestvo/",
+        "email": "aistur61@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:4e618c97620f95c1dfba",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 54,
+          "source_url": "https://xn--80aaahfc1b4ann.xn--p1ai/otdely/palomnichestvo/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-bf995cc43b33c3bab469",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Архангельского подворья Соловецкого монастыря",
+      "region_text": "Архангельск",
+      "organization": "Соловецкий монастырь",
+      "contacts": {
+        "phone": "+7 (911) 560-59-48",
+        "website": "https://palomnik.solovki-monastyr.ru/",
+        "email": "info@slovodvina.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:b7db500e58065d3c5894",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 55,
+          "source_url": "https://palomnik.solovki-monastyr.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-c253dd0ad43de602d3e7",
+      "service_type": "pilgrimage_service",
+      "name": "Паломнический центр «КОЛОКОЛ»",
+      "region_text": "Ростов",
+      "organization": "Успенский собор",
+      "contacts": {
+        "phone": "+7 (48 536) 641-30",
+        "website": "https://hramrostov.ru/",
+        "email": "rostovsobor@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:45cd95fb4448fb9704a3",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 29,
+          "source_url": "https://hramrostov.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-c5be92eda0dc0a7c678e",
+      "service_type": "pilgrimage_service",
+      "name": "Православный паломнический центр Донского монастыря",
+      "region_text": "Москва",
+      "organization": "Донской монастырь",
+      "contacts": {
+        "phone": "+7 (919) 100-90-10",
+        "website": "http://palomnik.center",
+        "email": "info@palomnik.center"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:e849181843774c6ab9e5",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 6,
+          "source_url": "http://palomnik.center",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-c896802769c71e6687b2",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба имени свт. Николая при Никитском монастыре",
+      "region_text": "Московская область",
+      "organization": "Никитский женский монастырь (г. Кашира)",
+      "contacts": {
+        "phone": "+7 (915) 141-70-57",
+        "website": "http://xn--80aaapdd3bff2h.xn--p1ai/",
+        "email": "nikit-mon@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:202f489477ed55c8b366",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 12,
+          "source_url": "http://xn--80aaapdd3bff2h.xn--p1ai/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-cc57715c8e14098cf999",
+      "service_type": "pilgrimage_service",
+      "name": "Паломнический центр при Черниговском Патриаршем Подворье",
+      "region_text": "Москва",
+      "organization": "Черниговское подворье",
+      "contacts": {
+        "phone": "+7 (495) 098-00-43",
+        "website": "https://hrampodborom.ru/",
+        "email": "info@piligrim.msk.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:37b59b96462e30c7ab40",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 2,
+          "source_url": "https://hrampodborom.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-d02d5b2bb1a13cf784b1",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Канской епархии «Здравие»",
+      "region_text": "Канск",
+      "organization": "Канская епархия",
+      "contacts": {
+        "phone": "+7 (39 161) 39-079",
+        "website": "http://zdravie-tur.ru/",
+        "email": "Zdravie_tur@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:4593242af3f4d5ed5312",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 65,
+          "source_url": "http://zdravie-tur.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-d0b5e270c53ed1676143",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба «Ржевский паломник»",
+      "region_text": "Ржев",
+      "organization": "Оковецкий кафедральный собор",
+      "contacts": {
+        "phone": "+7 (904) 029-55-60",
+        "website": "https://xn--80aafajbbae2bbm7f.xn--p1ai/",
+        "email": "Rzhev-palomnik@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:0f46355cafeb0cba8b23",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 83,
+          "source_url": "https://xn--80aafajbbae2bbm7f.xn--p1ai/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-d160c4b5837c11baf358",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Камчатской епархии",
+      "region_text": "Петропавловск-Камчатский",
+      "organization": "Камчатская епархия",
+      "contacts": {
+        "phone": "+7 (962) 215-78-58",
+        "website": "http://nestor.pravkamchatka.ru",
+        "email": "pke@list.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:28fed31ca8f1756695d2",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 62,
+          "source_url": "http://nestor.pravkamchatka.ru",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-d1f6bba79ab47d5bdc33",
+      "service_type": "pilgrimage_service",
+      "name": "Православная паломническая служба Шуйской епархии",
+      "region_text": "Шуя",
+      "organization": "Шуйская епархия",
+      "contacts": {
+        "phone": "+7 (961) 117-94-61",
+        "website": "https://shuya-eparhia.ru/",
+        "email": "nikola4-deti@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:c5b73a94db6133612d24",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 24,
+          "source_url": "https://shuya-eparhia.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-d67ae0c5224c8b3359f6",
+      "service_type": "pilgrimage_service",
+      "name": "Паломнический центр Московского Патриархата",
+      "region_text": "Москва",
+      "organization": "Московский Патриархат",
+      "contacts": {
+        "phone": "+7 (495) 685-93-38 (доб. 520)",
+        "website": "https://www.poklonnik.ru/",
+        "email": "info@poklonnik.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:195fde147de4b9b190ae",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 5,
+          "source_url": "https://www.poklonnik.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-df870776aaf166bc1ecf",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Вологодской епархии",
+      "region_text": "Вологда",
+      "organization": "Вологодская епархия",
+      "contacts": {
+        "phone": "+7 (905) 298-20-93",
+        "website": "https://palomnikvologda.vsite.pro",
+        "email": "palomnik35@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:d315b6eb76d9bb4110d8",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 50,
+          "source_url": "https://palomnikvologda.vsite.pro",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-e1623f33960ac2846c4f",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Соловецкого монастыря",
+      "region_text": "Соловецкий",
+      "organization": "Соловецкий монастырь",
+      "contacts": {
+        "phone": "+7 (911) 575-83-10",
+        "website": "https://palomnik.solovki-monastyr.ru",
+        "email": "palomnik@solovki-monastyr.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:a6c512e78f240e8b78ee",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 60,
+          "source_url": "https://palomnik.solovki-monastyr.ru",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-e3f60a7fe4c376fb7c7e",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Новокузнецкой Епархии",
+      "region_text": "Новокузнецк",
+      "organization": "Новокузнецкая епархия",
+      "contacts": {
+        "phone": "+7 (950) 574-54-74",
+        "website": "https://eparhia-nk.ru/",
+        "email": "kuzbishop@mail.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:df9bbc5ceabeb350402d",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 39,
+          "source_url": "https://eparhia-nk.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-e550b5ddb5f28ac34947",
+      "service_type": "pilgrimage_service",
+      "name": "Паломнический Центр Воронежской Епархии",
+      "region_text": "Воронеж",
+      "organization": "Воронежская епархия",
+      "contacts": {
+        "phone": "+7 (473) 255-40-05",
+        "website": "https://palomnikrus.ru",
+        "email": "palomnikrus@list.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:443635696e6db15b5501",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 59,
+          "source_url": "https://palomnikrus.ru",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-e836d7c890480782b617",
+      "service_type": "pilgrimage_service",
+      "name": "Православная паломническая служба Сердобской Епархии",
+      "region_text": "Сердобск",
+      "organization": "Сердобская епархия",
+      "contacts": {
+        "phone": "+7 (963) 104-17-40",
+        "website": "https://serdobsk-eparh.ru/",
+        "email": "palomotdelse@gmail.com"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:4d79b97bf6acdc5e4d68",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 70,
+          "source_url": "https://serdobsk-eparh.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-ed8b96e80da4f54d1369",
+      "service_type": "pilgrimage_service",
+      "name": "Паломнический центр «Благодатный дом»",
+      "region_text": "Московская область",
+      "organization": "г. Орехово-Зуево",
+      "contacts": {
+        "phone": "+7 (496) 415-10-38",
+        "website": "https://oz-blago.ru/category/palomnichestvo",
+        "email": "contact@oz-blago.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:da2a418a549588ea4f19",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 11,
+          "source_url": "https://oz-blago.ru/category/palomnichestvo",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-ef27a772ba86328b31e1",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Сызранской епархии",
+      "region_text": "Сызрань",
+      "organization": "Сызранская епархия",
+      "contacts": {
+        "phone": "+7 (927) 77-000-71",
+        "website": null,
+        "email": "palomnikszreparhia@gmail.com"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:2680a37dea5d417643b4",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 73,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-f020accf6ea3b38506c5",
+      "service_type": "pilgrimage_service",
+      "name": "Приходская паломническая служба «Тихвинский Паломник»",
+      "region_text": "Калуга",
+      "organization": "Храм в Козлово",
+      "contacts": {
+        "phone": "+7 (908) 824-08-81",
+        "website": "https://tihpalomnik.ru/",
+        "email": "tihpalomnik@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:6daf012f4350cbf567f1",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 30,
+          "source_url": "https://tihpalomnik.ru/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-f49e946225a6f43a63e2",
+      "service_type": "pilgrimage_service",
+      "name": "Паломническая служба Саратовской Епархии",
+      "region_text": "Саратов",
+      "organization": "Саратовская епархия",
+      "contacts": {
+        "phone": "+7 (8452) 27-30-87",
+        "website": null,
+        "email": "pokrovhram@yandex.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:de89342ab0a5bbae9804",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 85,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-pilgrim-f53b96067ec1c67bf6f0",
+      "service_type": "pilgrimage_service",
+      "name": "Паломнический центр «Селигер»",
+      "region_text": "Тверь",
+      "organization": "Тверская епархия",
+      "contacts": {
+        "phone": "+7 (4822) 321-208",
+        "website": "https://seliger-palomnik.ru/",
+        "email": "palomnik@tvereparhia.ru"
+      },
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-pilgrim-services",
+          "source_id": "legacy:86981b42c7de9f2179d7",
+          "source_file": "data/pilgrim-centers.json",
+          "source_row": 74,
+          "source_url": "https://seliger-palomnik.ru/",
+          "migrated_from": null
+        }
+      ]
+    }
+  ]
+}

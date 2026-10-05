@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pravmir.local/schema/amenity_type.schema.json",
+  "type": "object",
+  "required": [
+    "id",
+    "key",
+    "label",
+    "category",
+    "description",
+    "sort_order",
+    "capabilities",
+    "trust_layer",
+    "verification_status",
+    "source_records"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^pm-amenity-type-[a-z0-9-]+$"
+    },
+    "key": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]*$"
+    },
+    "label": {
+      "type": "string",
+      "minLength": 1
+    },
+    "category": {
+      "enum": [
+        "stay",
+        "food",
+        "transport",
+        "sacred_water",
+        "accessibility",
+        "support"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sort_order": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "trust_layer": {
+      "const": "canonical_system"
+    },
+    "verification_status": {
+      "const": "system_defined"
+    },
+    "source_records": {
+      "$ref": "content_item.schema.json#/$defs/source_records"
+    }
+  },
+  "additionalProperties": false
+}

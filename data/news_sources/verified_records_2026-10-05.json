@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "provider": "pravmir-editorial-patriarchia-verification-2026-10-05",
+  "trust_layer": "editorial",
+  "verification_status": "source_verified",
+  "jurisdiction": "Русская Православная Церковь",
+  "observed_at": "2026-10-05T00:00:00+03:00",
+  "records": [
+    {
+      "source_id": "patriarchia-123188",
+      "title": "Председатель Патриаршей комиссии по вопросам семьи выступил на круглом столе Общественного совета при Минюсте РФ",
+      "summary": "Председатель Патриаршей комиссии по вопросам семьи, защиты материнства и детства принял участие в круглом столе Общественного совета при Министерстве юстиции России.",
+      "published_at": "2026-10-04T16:43:00+03:00",
+      "updated_at": null,
+      "status": "published",
+      "publisher": "Патриархия.ru",
+      "original_url": "https://patriarchia.ru/article/123188"
+    },
+    {
+      "source_id": "patriarchia-123193",
+      "title": "Патриарший экзарх Африки принял участие в стратегической сессии «Россия — Африка: определяя архитектуру сотрудничества»",
+      "summary": "Патриарший экзарх Африки митрополит Константин принял участие в московской стратегической сессии, посвящённой развитию взаимодействия России со странами Африки.",
+      "published_at": "2026-10-04T15:48:00+03:00",
+      "updated_at": null,
+      "status": "published",
+      "publisher": "Патриархия.ru",
+      "original_url": "https://patriarchia.ru/article/123193"
+    },
+    {
+      "source_id": "patriarchia-123190",
+      "title": "В Общецерковной аспирантуре и докторантуре состоялся Актовый день",
+      "summary": "В Общецерковной аспирантуре и докторантуре имени святых равноапостольных Кирилла и Мефодия прошли богослужение и торжественные мероприятия Актового дня.",
+      "published_at": "2026-10-04T13:17:00+03:00",
+      "updated_at": null,
+      "status": "published",
+      "publisher": "Патриархия.ru",
+      "original_url": "https://patriarchia.ru/article/123190"
+    },
+    {
+      "source_id": "patriarchia-123033",
+      "title": "Святейший Патриарх Кирилл благословил создание музея колокольного искусства в Троице-Сергиевой лавре",
+      "summary": "В Троице-Сергиевой лавре планируется музей колокольного искусства, посвящённый истории и значению колокольного звона обители.",
+      "published_at": "2026-09-24T18:17:00+03:00",
+      "updated_at": null,
+      "status": "published",
+      "publisher": "Патриархия.ru",
+      "original_url": "https://eparchia.patriarchia.ru/article/123033",
+      "place_ref": "pm-9e8bc6fff182514f91cf1739e41d2839",
+      "relation_type": "about_place"
+    }
+  ]
+}

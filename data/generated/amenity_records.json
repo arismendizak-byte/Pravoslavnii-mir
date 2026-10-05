@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "f756a09b26d7c3b63960632e8acaa7bc051a8f004727aedf05c384f60c5774fe",
+  "count": 2,
+  "amenities": [
+    {
+      "id": "pm-amenity-e3e7ca4c14e8207c278a",
+      "slug": "amenity-lavra-pilgrim-house-207c278a",
+      "name": "Дом паломника",
+      "amenity_type_ref": "pm-amenity-type-accommodation",
+      "status": "available",
+      "aliases": [],
+      "canonical_path": "pilgrim/item.html?slug=amenity-lavra-pilgrim-house-207c278a",
+      "address": "141310 Московская область, г. Сергиев Посад, ул. 1-ой Ударной Армии, 17",
+      "coordinates": {
+        "lat": 56.3129242,
+        "lon": 38.1046557
+      },
+      "opening_hours": {
+        "text": null,
+        "timezone": "Europe/Moscow"
+      },
+      "contacts": {
+        "phone": "+7 (909) 620-40-94",
+        "email": "voskresgost@gmail.com",
+        "website": "https://lavra.ru/about_lavra/all/palomnicheskaya-gostinitsa-pri-voskresenskom-podvore/"
+      },
+      "accessibility": {
+        "wheelchair": "unknown",
+        "step_free": "unknown",
+        "accessible_toilet": "unknown",
+        "notes": null
+      },
+      "family_suitability": "unknown",
+      "availability_note": "Гостевой фонд указан на официальной странице; актуальную доступность мест необходимо подтверждать перед поездкой.",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "freshness": {
+        "observed_at": "2026-10-04",
+        "verified_at": "2026-10-04",
+        "valid_from": null,
+        "valid_to": null,
+        "expires_at": null
+      },
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-pilgrim-verification-2026-10-04",
+          "source_id": "lavra-pilgrim-house",
+          "source_file": "data/pilgrim_sources/verified_records_2026-10-04.json",
+          "source_row": 2,
+          "source_url": "https://lavra.ru/about_lavra/all/palomnicheskaya-gostinitsa-pri-voskresenskom-podvore/",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-amenity-288f30912a79315f0b5c",
+      "slug": "amenity-lavra-old-hotel-315f0b5c",
+      "name": "Старая Лаврская гостиница",
+      "amenity_type_ref": "pm-amenity-type-accommodation",
+      "status": "available",
+      "aliases": [],
+      "canonical_path": "pilgrim/item.html?slug=amenity-lavra-old-hotel-315f0b5c",
+      "address": "г. Сергиев Посад, проспект Красной Армии, д. 133",
+      "coordinates": null,
+      "opening_hours": {
+        "text": null,
+        "timezone": "Europe/Moscow"
+      },
+      "contacts": {
+        "phone": "+7 (496) 549-90-00; +7 (496) 541-43-00",
+        "email": null,
+        "website": "https://lavrahotel.ru"
+      },
+      "accessibility": {
+        "wheelchair": "unknown",
+        "step_free": "unknown",
+        "accessible_toilet": "unknown",
+        "notes": null
+      },
+      "family_suitability": "unknown",
+      "availability_note": "Официальная страница указывает размещение паломников; наличие мест необходимо подтверждать перед поездкой.",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "freshness": {
+        "observed_at": "2026-10-04",
+        "verified_at": "2026-10-04",
+        "valid_from": null,
+        "valid_to": null,
+        "expires_at": null
+      },
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-pilgrim-verification-2026-10-04",
+          "source_id": "lavra-old-hotel",
+          "source_file": "data/pilgrim_sources/verified_records_2026-10-04.json",
+          "source_row": 3,
+          "source_url": "https://www.lavra.ru/about_lavra/all/staraya-lavrskaya-gostinitsa/",
+          "migrated_from": null
+        }
+      ]
+    }
+  ]
+}

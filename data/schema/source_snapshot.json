@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "provider": "templesru",
+  "snapshot_at": "2026-10-02T19:54:24Z",
+  "source_count": 17,
+  "sources": {
+    "arkhangelsk_temples_full.csv": {
+      "sha256": "5e01bd84dba94d6e8a1bd73e309ef04b4ffc67148071c2d3024e3b7ab9c3332f",
+      "size": 579579
+    },
+    "bryansk_temples_full.csv": {
+      "sha256": "15bf88bfa0b07beb2246c7a84feef731973edc6ec53036ed723d272ff383cf45",
+      "size": 326956
+    },
+    "ivanovo_temples_full.csv": {
+      "sha256": "8cc4642e0ce3489721fce74450453d0194a6d06d8720fce1e024d530b26d5814",
+      "size": 423809
+    },
+    "karelia_temples_full.csv": {
+      "sha256": "3c3fb2693b426f6532a1d3117191995cb1972e9ebff27cc1e4f82cd5e55fcaec",
+      "size": 264239
+    },
+    "kostroma_temples_full.csv": {
+      "sha256": "d27383df06036967bd3d2a26fef04a4902cb359d14dd5756084a50a29173ab03",
+      "size": 591700
+    },
+    "lo_temples.csv": {
+      "sha256": "7d43fd3792f4b460a3f3b9bb617a7855ada830aa41e68458df5991b5a4ecab34",
+      "size": 465348
+    },
+    "mo_temples_full.csv": {
+      "sha256": "b1dba4a6bfe80405aa90b9205f930c68db9b292baf4dcbc48a22af1e063d562e",
+      "size": 1967505
+    },
+    "moscow_temples_full.csv": {
+      "sha256": "2698f7876e3887e4cd38a1e030bd69e84b6dcfb62db1313b84264f3e3188fcd8",
+      "size": 898003
+    },
+    "nizhny_novgorod_temples_full.csv": {
+      "sha256": "145332a579f6786fb7de4f6749818421cbcbd2cb78b84a6206e1496a76976e66",
+      "size": 597409
+    },
+    "pskov_temples_full.csv": {
+      "sha256": "2032af0d40ea4a68d883baab8306e515b2d741ab6e434eafcaee301ff1a1a938",
+      "size": 487885
+    },
+    "ryazan_temples_full.csv": {
+      "sha256": "9edf4f3f0752b09498cdf7998cde0bb458eed12732b2987cced4e7eb43fbad21",
+      "size": 103999
+    },
+    "smolensk_temples_full.csv": {
+      "sha256": "29001eba7cbae0f96debc05f8267a5bc63bbbae102b06dfb5ef281fed98a40c2",
+      "size": 261990
+    },
+    "sverdlovsk_temples_full.csv": {
+      "sha256": "87d3bb1c6763eca60eba8787ae90d4234139988ba0a8c36d1638416dde623049",
+      "size": 531104
+    },
+    "tver_temples_full.csv": {
+      "sha256": "a2c5e15e497c4e16c23db8661961a9a19344f17c71f693c8d9c233225829e1e0",
+      "size": 876503
+    },
+    "vladimir_temples_full.csv": {
+      "sha256": "4394f2ed939bffa11cd37c65ecfe80dc624a567f05bd8f6891e81f904c4df7c0",
+      "size": 719047
+    },
+    "vologda_temples_full.csv": {
+      "sha256": "70a2ce39635a094264c98716358062b08e1cc012e283572f74736c91effb1ab5",
+      "size": 562712
+    },
+    "yaroslavl_temples_full.csv": {
+      "sha256": "547bcdeeeaf76cc20aabbf856538a36d245494026822fbb767f1468a7eb3de4e",
+      "size": 815072
+    }
+  }
+}

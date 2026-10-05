@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pravmir.local/schema/content_body.schema.json",
+  "title": "Pravmir generated article body",
+  "type": "object",
+  "required": ["content_id", "format", "html", "source_file", "source_sha256"],
+  "properties": {
+    "content_id": {"type": "string", "pattern": "^pm-content-[0-9a-f]{20}$"},
+    "format": {"const": "trusted_html_fragment"},
+    "html": {"type": "string", "minLength": 1},
+    "source_file": {"type": "string", "minLength": 1},
+    "source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,686 @@
+[
+  {
+    "left_id": "pm-04318ad38d0b5824b8b114e9e22066a7",
+    "right_id": "pm-f5adaab2e567585c8a2852970affbcf0",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.93,
+    "distance_m": 16.34,
+    "name_similarity": 0.9333,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-046d9a78c1ab526a9b84e20ffc073297",
+    "right_id": "pm-62f1d95358af50579e0653ec71360872",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8718,
+    "distance_m": 52.03,
+    "name_similarity": 0.925,
+    "address_similarity": 0.9917
+  },
+  {
+    "left_id": "pm-073ee4acd825590cb992e541525863cb",
+    "right_id": "pm-40175b93fcdc5b598a53b876ba3b39d5",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.7281,
+    "distance_m": 143.94,
+    "name_similarity": 0.9307,
+    "address_similarity": 0.8548
+  },
+  {
+    "left_id": "pm-07c095a45cb257e395b681582ffdb237",
+    "right_id": "pm-b78280ff25a85825a933101fca018d2e",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8961,
+    "distance_m": 38.12,
+    "name_similarity": 0.9286,
+    "address_similarity": 0.7123
+  },
+  {
+    "left_id": "pm-0e22b604afd359dab9d8a04c3186a237",
+    "right_id": "pm-27baa1078d045e5c89f04723133dac84",
+    "reason": "similar_name_and_address",
+    "confidence": 0.9004,
+    "distance_m": 336.77,
+    "name_similarity": 0.9412,
+    "address_similarity": 0.8596
+  },
+  {
+    "left_id": "pm-129737f2e2c95112bd1cf0f0bc9bc755",
+    "right_id": "pm-437fe42456a2572aa4507f0e54ca79ee",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.93,
+    "distance_m": 0.0,
+    "name_similarity": 0.9375,
+    "address_similarity": 0.8261
+  },
+  {
+    "left_id": "pm-15a1dbb3d74f5f798d3881ff3e034b61",
+    "right_id": "pm-3fe6cb2e49eb5455af783bc1f7d39cf8",
+    "reason": "similar_name_and_address",
+    "confidence": 0.94,
+    "distance_m": 53.46,
+    "name_similarity": 0.9591,
+    "address_similarity": 0.9722
+  },
+  {
+    "left_id": "pm-15dfb05db672538a9ec9e0a0991d6b88",
+    "right_id": "pm-bb577f4e7a1451478f8c5bcc8eecccb3",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.9001,
+    "distance_m": 34.0,
+    "name_similarity": 0.9242,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-194ee84ed131540a8b9e2aad91f8a40f",
+    "right_id": "pm-722ecbae9b5f5ee08279c50b44e3d1f7",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.9267,
+    "distance_m": 19.83,
+    "name_similarity": 0.9307,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-1a7c08f02a5c5cb486d6d45003f657ad",
+    "right_id": "pm-2c7ebc04876b5b53ba184fcfb1081b26",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8709,
+    "distance_m": 56.93,
+    "name_similarity": 0.9367,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-1cc9b50d6adb539fb9329b6bdcae5aa7",
+    "right_id": "pm-8c2a4933be625cc8a56c07c0dea102f6",
+    "reason": "similar_name_and_address",
+    "confidence": 0.94,
+    "distance_m": 25.34,
+    "name_similarity": 0.9447,
+    "address_similarity": 0.991
+  },
+  {
+    "left_id": "pm-1db3894a116554d29dad12e8e99c309f",
+    "right_id": "pm-f71e40d8a3b256e890dcac1cedce2cf8",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.9185,
+    "distance_m": 24.14,
+    "name_similarity": 0.9286,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-1fa1fcfce3025ec2bd02de50713b1c3c",
+    "right_id": "pm-1ffe535eba4e52da9ad35485fa0db83d",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8025,
+    "distance_m": 98.91,
+    "name_similarity": 0.9346,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-1fd6f0d1be255741acbbc2ae7c2bddb5",
+    "right_id": "pm-849e6c2343db5786888cd694255ed369",
+    "reason": "similar_name_and_address",
+    "confidence": 0.94,
+    "distance_m": 30.83,
+    "name_similarity": 0.9481,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-1fe85356170f5defba7018d97eafad7a",
+    "right_id": "pm-e7517cb070735c3ab059d7635f8460a0",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.924,
+    "distance_m": 21.21,
+    "name_similarity": 0.9298,
+    "address_similarity": 0.9836
+  },
+  {
+    "left_id": "pm-2115df63f0f0516fb92d0ea5d41ad393",
+    "right_id": "pm-ae798fd4320a5bf091290656abf41118",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.7705,
+    "distance_m": 118.43,
+    "name_similarity": 0.9333,
+    "address_similarity": 0.8667
+  },
+  {
+    "left_id": "pm-221c1abb53e859b18cdf14c6773d9f72",
+    "right_id": "pm-91c71ce8cd6a500a977d0b17b4a739b6",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8712,
+    "distance_m": 65.52,
+    "name_similarity": 0.96,
+    "address_similarity": 0.8333
+  },
+  {
+    "left_id": "pm-29c3d4fb25695693ae5cea1cdd2f45bd",
+    "right_id": "pm-d49a5d227c15582580b00c4a95a7c028",
+    "reason": "similar_name_and_address",
+    "confidence": 0.9222,
+    "distance_m": 1144.39,
+    "name_similarity": 1.0,
+    "address_similarity": 0.8444
+  },
+  {
+    "left_id": "pm-2ac71b28d9db51a19b29e5cb5bbf1972",
+    "right_id": "pm-ef107b2742745d519a2356f86c118e29",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8917,
+    "distance_m": 40.11,
+    "name_similarity": 0.9265,
+    "address_similarity": 0.9672
+  },
+  {
+    "left_id": "pm-2d4fb8c164f25591994e55206b2e00de",
+    "right_id": "pm-c33a908f7dfd58dc88198742911c6122",
+    "reason": "similar_name_and_address",
+    "confidence": 0.94,
+    "distance_m": 235.69,
+    "name_similarity": 0.9412,
+    "address_similarity": 0.9737
+  },
+  {
+    "left_id": "pm-2ec94949d83757c7992da826c9ffb2db",
+    "right_id": "pm-f57d56d74c6854babb5e56b1aa077a1f",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.93,
+    "distance_m": 4.2,
+    "name_similarity": 0.9302,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-33e0d775604e55b79a9ba1f6b0c9ea26",
+    "right_id": "pm-8f777eb439ba5e0ab825b0206a784c23",
+    "reason": "similar_name_and_address",
+    "confidence": 0.94,
+    "distance_m": 58.49,
+    "name_similarity": 0.9429,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-379250ec05fe5d7b8139e90e1926118c",
+    "right_id": "pm-54d7b22dae605b0b8eaf59a88bdaaec0",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8515,
+    "distance_m": 67.81,
+    "name_similarity": 0.9333,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-382066d3297a5a3e92962a526928a70a",
+    "right_id": "pm-b212e05fc4745322a41d262c1f238b28",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.7942,
+    "distance_m": 102.7,
+    "name_similarity": 0.9308,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-3aeef3dd5803535ab6aed313d77cc1a0",
+    "right_id": "pm-5ade2a98220b59b9ad62670ceba66a2d",
+    "reason": "similar_name_and_address",
+    "confidence": 0.94,
+    "distance_m": 29.71,
+    "name_similarity": 0.9423,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-3e5b242917445712be14a056c1e694e9",
+    "right_id": "pm-f594c68b65945d9cb6d6915f424a70bc",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8152,
+    "distance_m": 87.29,
+    "name_similarity": 0.9247,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-3efb51387613566b84a94d47b06321e6",
+    "right_id": "pm-ecf4b429ab4151c0bbec45b7678f002e",
+    "reason": "similar_name_and_address",
+    "confidence": 0.94,
+    "distance_m": 69.95,
+    "name_similarity": 0.9431,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-426fc2d46b0453fc92270a2419fb1881",
+    "right_id": "pm-8f65e6728105573f96b756e055a075b4",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8673,
+    "distance_m": 52.97,
+    "name_similarity": 0.92,
+    "address_similarity": 0.9787
+  },
+  {
+    "left_id": "pm-446cb2f923d15e6ebbd47ff43711f5ea",
+    "right_id": "pm-bff00abfde845e469c0f000073c0746d",
+    "reason": "similar_name_and_address",
+    "confidence": 0.9288,
+    "distance_m": 43.45,
+    "name_similarity": 0.9457,
+    "address_similarity": 0.9118
+  },
+  {
+    "left_id": "pm-448e1725cdad5f4fb351589584e0f0f8",
+    "right_id": "pm-7db055684db95b548d82f064535c4c8f",
+    "reason": "similar_name_and_address",
+    "confidence": 0.94,
+    "distance_m": 46.63,
+    "name_similarity": 0.9655,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-48a41768eee554ca889405a56bca53af",
+    "right_id": "pm-ed474a76b99b5fbd8f03cce4d961fa3b",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8684,
+    "distance_m": 59.26,
+    "name_similarity": 0.9388,
+    "address_similarity": 0.8485
+  },
+  {
+    "left_id": "pm-4bb6debb1a8f54948e1635f7dffd87fd",
+    "right_id": "pm-70a3835113de54e1aad8c15e113983a9",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.681,
+    "distance_m": 175.55,
+    "name_similarity": 0.9365,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-4f72968ad4225880ac4eeb4be0b75ad4",
+    "right_id": "pm-dd1f79a459325ba9a136acd56b7cfde0",
+    "reason": "similar_name_and_address",
+    "confidence": 0.94,
+    "distance_m": 64.88,
+    "name_similarity": 0.9412,
+    "address_similarity": 0.9615
+  },
+  {
+    "left_id": "pm-4f93f4c1867b5b6fb6988012405abad2",
+    "right_id": "pm-93ead8e9e7b559e8a31cb1d66387a5e2",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.9141,
+    "distance_m": 23.91,
+    "name_similarity": 0.9206,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-50c4fb0e06685f97aca35966b1095dab",
+    "right_id": "pm-cc6255bed5a2554f9d473aa7f45f3a0e",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.9259,
+    "distance_m": 28.47,
+    "name_similarity": 0.9524,
+    "address_similarity": 0.7869
+  },
+  {
+    "left_id": "pm-56a56d2d782b52cfbc1b380dbbc8c970",
+    "right_id": "pm-83c847eb609c5060bca564b4657808b6",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8705,
+    "distance_m": 55.97,
+    "name_similarity": 0.9333,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-5a06018f37685be288637221683472bc",
+    "right_id": "pm-f79735ed63cb5397b09a76ea3724899a",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8341,
+    "distance_m": 74.82,
+    "name_similarity": 0.9231,
+    "address_similarity": 0.7742
+  },
+  {
+    "left_id": "pm-5fad88d2d6bd52bcbbc87353c4e3f54c",
+    "right_id": "pm-72a207a5c4355423baa00aebaeb4582b",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8798,
+    "distance_m": 48.59,
+    "name_similarity": 0.9293,
+    "address_similarity": 0.9
+  },
+  {
+    "left_id": "pm-60dab968ba0a5c9f9ea07c26da3418ba",
+    "right_id": "pm-b066b523c8b35c43ba4a923e6001eb74",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8991,
+    "distance_m": 38.07,
+    "name_similarity": 0.9333,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-62ebe478957a5486bf09fc79f882e7e3",
+    "right_id": "pm-88b31201ddc859f0a248ad5428227358",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8984,
+    "distance_m": 41.42,
+    "name_similarity": 0.9412,
+    "address_similarity": 0.5484
+  },
+  {
+    "left_id": "pm-63653e3a735a538cbe289ebcec222f02",
+    "right_id": "pm-bd4bd4002173500788658871ee2b57bd",
+    "reason": "similar_name_and_address",
+    "confidence": 0.94,
+    "distance_m": 13.84,
+    "name_similarity": 0.9647,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-63683fd0b9a154a288dbd533ad53a4a6",
+    "right_id": "pm-dd51049830575693be816a231ccb201b",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.9114,
+    "distance_m": 30.82,
+    "name_similarity": 0.9346,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-63bbf9e2fa8f50de828822f1751ce8de",
+    "right_id": "pm-e684b106e5355248a4f1a32e68e9c8c7",
+    "reason": "similar_name_and_address",
+    "confidence": 0.94,
+    "distance_m": 71.29,
+    "name_similarity": 0.9412,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-6a36d112614a53daa92b9f40ecd85bec",
+    "right_id": "pm-adc65801ab9f5d7491eab61b27862320",
+    "reason": "similar_name_and_address",
+    "confidence": 0.9175,
+    "distance_m": 57.61,
+    "name_similarity": 0.9421,
+    "address_similarity": 0.8929
+  },
+  {
+    "left_id": "pm-6a7ea20d7e555720bab8ca312f10cc3e",
+    "right_id": "pm-b54346cd0d4d57b780fcf0422280517f",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.9127,
+    "distance_m": 33.32,
+    "name_similarity": 0.9434,
+    "address_similarity": 0.768
+  },
+  {
+    "left_id": "pm-6b0bd61d20075a1cb8b69c5eb31633b3",
+    "right_id": "pm-c85f2989f68b53c6819d174ecf8255b0",
+    "reason": "similar_name_and_address",
+    "confidence": 0.94,
+    "distance_m": 160.42,
+    "name_similarity": 0.9737,
+    "address_similarity": 0.975
+  },
+  {
+    "left_id": "pm-6cdb946cb0195b12ad1b9ff45645c979",
+    "right_id": "pm-843b942f77c4582c850b96e6b99d5d5a",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.9072,
+    "distance_m": 30.21,
+    "name_similarity": 0.9259,
+    "address_similarity": 0.9818
+  },
+  {
+    "left_id": "pm-70d9617bc29c514b947e9a1e625782cd",
+    "right_id": "pm-b0964bdddfad5da7996cbfcde30b5b7f",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8798,
+    "distance_m": 48.78,
+    "name_similarity": 0.9298,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-70e7750b14895414b65e6a51cece8022",
+    "right_id": "pm-c14b1c02033b5ebdad3aa33951a4e9fc",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.9043,
+    "distance_m": 35.15,
+    "name_similarity": 0.9342,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-73c11d6bd9265ca5bc18cd277e5a541e",
+    "right_id": "pm-7570a87d541353e78bc90d5e1736c221",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8705,
+    "distance_m": 54.31,
+    "name_similarity": 0.929,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-73c11d6bd9265ca5bc18cd277e5a541e",
+    "right_id": "pm-cbf80c60c3125ecc9f2d245bd5a71208",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.9261,
+    "distance_m": 16.22,
+    "name_similarity": 0.92,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-760cbad68ca6535883c011e05a22753e",
+    "right_id": "pm-c6bcbdf20c8b57de97b2bb0e3448cda2",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8828,
+    "distance_m": 43.28,
+    "name_similarity": 0.92,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-76c3f115a68f5277a1bc06ea8d6a3aa9",
+    "right_id": "pm-a4dc6b6d31c45db7a3ba445c85e6c25c",
+    "reason": "similar_name_and_address",
+    "confidence": 0.94,
+    "distance_m": 209.3,
+    "name_similarity": 0.9497,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-7ac6f5d2666e510c832f172bed3270d7",
+    "right_id": "pm-d451b4df7d67595782c8e3c07e7c3f05",
+    "reason": "same_name_within_500m",
+    "confidence": 0.9,
+    "distance_m": 486.86,
+    "name_similarity": 1.0,
+    "address_similarity": 0.7826
+  },
+  {
+    "left_id": "pm-7f67d9c8329f5870828dae629cf3e4cf",
+    "right_id": "pm-9032633cc00157a8a44657501c3ddebf",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8924,
+    "distance_m": 43.49,
+    "name_similarity": 0.9367,
+    "address_similarity": 0.9778
+  },
+  {
+    "left_id": "pm-857ff807952150f6b287228cde38b294",
+    "right_id": "pm-9c11a496c7cf5b85b4dd7b922060ae14",
+    "reason": "similar_name_and_address",
+    "confidence": 0.908,
+    "distance_m": 297.65,
+    "name_similarity": 0.9429,
+    "address_similarity": 0.8732
+  },
+  {
+    "left_id": "pm-8bcdf0807a395101aa604902cc577851",
+    "right_id": "pm-ecf4b429ab4151c0bbec45b7678f002e",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8612,
+    "distance_m": 61.77,
+    "name_similarity": 0.9333,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-8c307044e8d35cbb83fd629a6b9d8edd",
+    "right_id": "pm-e99722795d805502bbf1cca085112822",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8976,
+    "distance_m": 35.16,
+    "name_similarity": 0.9231,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-91c13a3ee8dd5bacbe62c9d2c7e7dee6",
+    "right_id": "pm-f90fe4757b525eae9d2bfddd84258e94",
+    "reason": "similar_name_and_address",
+    "confidence": 0.94,
+    "distance_m": 34.35,
+    "name_similarity": 0.944,
+    "address_similarity": 0.9818
+  },
+  {
+    "left_id": "pm-95fc996141355a2a863d4fe3dcac384a",
+    "right_id": "pm-d8c619e2b9c556de9e0d4743b7a57d53",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.93,
+    "distance_m": 8.02,
+    "name_similarity": 0.9388,
+    "address_similarity": 0.6458
+  },
+  {
+    "left_id": "pm-97b629e93cd05073bbfa560d7bc8eebc",
+    "right_id": "pm-ff2b8eb62e625105badbece18e9437be",
+    "reason": "similar_name_and_address",
+    "confidence": 0.94,
+    "distance_m": 35.92,
+    "name_similarity": 0.9464,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-9cfcb667539753f29f4d51d0a00a0967",
+    "right_id": "pm-a1a2698ac7e353da8bf6ae46a6175209",
+    "reason": "similar_name_and_address",
+    "confidence": 0.94,
+    "distance_m": 112.54,
+    "name_similarity": 0.9474,
+    "address_similarity": 0.9412
+  },
+  {
+    "left_id": "pm-a4125cd11d8252b9829a28e17dee8975",
+    "right_id": "pm-bdec440c0cff5129b7534205ac810727",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8882,
+    "distance_m": 39.89,
+    "name_similarity": 0.92,
+    "address_similarity": 0.9831
+  },
+  {
+    "left_id": "pm-a5b962d3fe2a5db9a32bb61745f8648a",
+    "right_id": "pm-c6ed1f5f96235a9dafe8c82ccda283d8",
+    "reason": "same_name_within_500m",
+    "confidence": 0.9,
+    "distance_m": 257.03,
+    "name_similarity": 1.0,
+    "address_similarity": 0.8679
+  },
+  {
+    "left_id": "pm-a89d996443c25047ba22b27e7c139ab7",
+    "right_id": "pm-c85ea8c211475454821ea8452e0b359c",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.9033,
+    "distance_m": 31.05,
+    "name_similarity": 0.9216,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-ae01e4516b9f54dbbb5a101b36c8aa29",
+    "right_id": "pm-f5d041bbecc951cf804d26af82b3ff41",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.881,
+    "distance_m": 47.87,
+    "name_similarity": 0.9293,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-b4a1b563c3885367ad25ce75a502c3ba",
+    "right_id": "pm-e20221438e71551286cbd26111795476",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.7867,
+    "distance_m": 110.44,
+    "name_similarity": 0.939,
+    "address_similarity": 0.8857
+  },
+  {
+    "left_id": "pm-b68262197cf95d0a903c8494ffe58021",
+    "right_id": "pm-ecf4b429ab4151c0bbec45b7678f002e",
+    "reason": "similar_name_and_address",
+    "confidence": 0.94,
+    "distance_m": 40.48,
+    "name_similarity": 0.95,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-bad1e50dab4152268f5cda06954fcc22",
+    "right_id": "pm-c16abdd09bc659d49faa738c23b9f07a",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.927,
+    "distance_m": 16.8,
+    "name_similarity": 0.9231,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-c03ae06396e357ed8023c2729766ce0a",
+    "right_id": "pm-c0795e5a7b42510299eb376660844c4f",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8676,
+    "distance_m": 58.93,
+    "name_similarity": 0.9365,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-c91e87579d9550668eac4acc39f6dc52",
+    "right_id": "pm-cd4871998ab55d6b84c73f7a0fc2448b",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.9137,
+    "distance_m": 28.18,
+    "name_similarity": 0.9313,
+    "address_similarity": 0.8868
+  },
+  {
+    "left_id": "pm-cae571ef947e520abf8610a947cd13fe",
+    "right_id": "pm-f640174cdf5557479f042404743cb87c",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8736,
+    "distance_m": 49.49,
+    "name_similarity": 0.9213,
+    "address_similarity": 0.9667
+  },
+  {
+    "left_id": "pm-d29de131cc09536aacfb48e9f76fbfdf",
+    "right_id": "pm-d7a8f5026cbe523c9cdf004ba83ac18d",
+    "reason": "similar_name_and_address",
+    "confidence": 0.94,
+    "distance_m": 23.37,
+    "name_similarity": 0.9489,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-d63d656beaee5c94ae365b96354c80f1",
+    "right_id": "pm-dab02af0de06559d96a69356bb1b2458",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8456,
+    "distance_m": 67.67,
+    "name_similarity": 0.9231,
+    "address_similarity": 1.0
+  },
+  {
+    "left_id": "pm-d7d366d940b450968fc2d3a592fcde9a",
+    "right_id": "pm-fb409682ae6359ddac4ae9f4afcbb924",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8436,
+    "distance_m": 72.72,
+    "name_similarity": 0.9333,
+    "address_similarity": 0.9691
+  },
+  {
+    "left_id": "pm-e4480eba204a5c99b34e158ad7eb9b9d",
+    "right_id": "pm-fd88d5484a68587489d38be2d9067004",
+    "reason": "similar_name_within_250m",
+    "confidence": 0.8693,
+    "distance_m": 58.64,
+    "name_similarity": 0.9385,
+    "address_similarity": 1.0
+  }
+]

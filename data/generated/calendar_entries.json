@@ -1,0 +1,627 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "cb8933e71a4b77703b8f483e56da2559d16312c92899cdde4daaa786f8d88291",
+  "count": 31,
+  "entries": [
+    {
+      "id": "pm-cal-d2a6b919fe5c37c14aa0",
+      "calendar_kind": "feast",
+      "title": "РОЖДЕСТВО ХРИСТОВО",
+      "date_start": "2026-01-07",
+      "date_end": "2026-01-07",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-01-07:рождество христово",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 1,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-0d16d133b2183b48ebb6",
+      "calendar_kind": "feast",
+      "title": "КРЕЩЕНИЕ ГОСПОДНЕ",
+      "date_start": "2026-01-19",
+      "date_end": "2026-01-19",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-01-19:крещение господне",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 2,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-c5d505838696a3036a6b",
+      "calendar_kind": "commemoration",
+      "title": "Мученицы Татианы",
+      "date_start": "2026-01-25",
+      "date_end": "2026-01-25",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-01-25:мученицы татианы",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 3,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-9fe64f862bec24c75b51",
+      "calendar_kind": "feast",
+      "title": "СРЕТЕНИЕ ГОСПОДНЕ",
+      "date_start": "2026-02-15",
+      "date_end": "2026-02-15",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-02-15:сретение господне",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 4,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-3190cfc17f4f22699749",
+      "calendar_kind": "fast",
+      "title": "Начало ВЕЛИКОГО ПОСТА",
+      "date_start": "2026-02-23",
+      "date_end": "2026-02-23",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-02-23:начало великого поста",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 5,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-078cd89e51d0cc91d74e",
+      "calendar_kind": "fast",
+      "title": "Великий пост",
+      "date_start": "2026-02-23",
+      "date_end": "2026-04-11",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-77e553f688cf6cb2d43d",
+      "calendar_kind": "feast",
+      "title": "БЛАГОВЕЩЕНИЕ ПРЕСВЯТОЙ БОГОРОДИЦЫ",
+      "date_start": "2026-04-07",
+      "date_end": "2026-04-07",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-04-07:благовещение пресвятой богородицы",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 6,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-e168192c9f98092e4e02",
+      "calendar_kind": "feast",
+      "title": "ПАСХА ХРИСТОВА",
+      "date_start": "2026-04-12",
+      "date_end": "2026-04-12",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-04-12:пасха христова",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 7,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-47fc5e8a8a1f1181872b",
+      "calendar_kind": "commemoration",
+      "title": "Антипасха (Неделя Фомы)",
+      "date_start": "2026-04-19",
+      "date_end": "2026-04-19",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-04-19:антипасха неделя фомы",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 8,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-7c05f3a13338f203d591",
+      "calendar_kind": "commemoration",
+      "title": "Радоница",
+      "date_start": "2026-04-26",
+      "date_end": "2026-04-26",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-04-26:радоница",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 9,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-1329aa553e96ce62d806",
+      "calendar_kind": "feast",
+      "title": "ВОЗНЕСЕНИЕ ГОСПОДНЕ",
+      "date_start": "2026-05-21",
+      "date_end": "2026-05-21",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-05-21:вознесение господне",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 10,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-d430778866669a0e530a",
+      "calendar_kind": "commemoration",
+      "title": "Кирилла и Мефодия",
+      "date_start": "2026-05-24",
+      "date_end": "2026-05-24",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-05-24:кирилла и мефодия",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 11,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-714fb97ce53e3934b482",
+      "calendar_kind": "feast",
+      "title": "ДЕНЬ СВЯТОЙ ТРОИЦЫ",
+      "date_start": "2026-05-31",
+      "date_end": "2026-05-31",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-05-31:день святой троицы",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 12,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-3f6b8888ef0aed43e4d5",
+      "calendar_kind": "fast",
+      "title": "Начало ПЕТРОВА ПОСТА",
+      "date_start": "2026-06-01",
+      "date_end": "2026-06-01",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-06-01:начало петрова поста",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 13,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-402636d7f82405187cbd",
+      "calendar_kind": "fast",
+      "title": "Петров пост",
+      "date_start": "2026-06-01",
+      "date_end": "2026-07-11",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-84206d9b9149f4ae874b",
+      "calendar_kind": "commemoration",
+      "title": "Преподобной Анны Кашинской",
+      "date_start": "2026-06-26",
+      "date_end": "2026-06-26",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-06-26:преподобной анны кашинской",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 14,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-b3b695bd49798b0770a2",
+      "calendar_kind": "feast",
+      "title": "Апостолов Петра и Павла",
+      "date_start": "2026-07-12",
+      "date_end": "2026-07-12",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-07-12:апостолов петра и павла",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 15,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-44391236ccbb9053880f",
+      "calendar_kind": "commemoration",
+      "title": "Равноапостольного Владимира",
+      "date_start": "2026-07-28",
+      "date_end": "2026-07-28",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-07-28:равноапостольного владимира",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 16,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-1b5916d3536d3b80bd3f",
+      "calendar_kind": "commemoration",
+      "title": "Серафима Саровского",
+      "date_start": "2026-08-01",
+      "date_end": "2026-08-01",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-08-01:серафима саровского",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 17,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-99d54dd80bb1b3b99e50",
+      "calendar_kind": "fast",
+      "title": "Начало УСПЕНСКОГО ПОСТА",
+      "date_start": "2026-08-14",
+      "date_end": "2026-08-14",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-08-14:начало успенского поста",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 18,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-4392fc29019cc3f5a733",
+      "calendar_kind": "fast",
+      "title": "Успенский пост",
+      "date_start": "2026-08-14",
+      "date_end": "2026-08-27",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "dormition-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 30,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-fac0126a9ab43e90d972",
+      "calendar_kind": "feast",
+      "title": "ПРЕОБРАЖЕНИЕ ГОСПОДНЕ",
+      "date_start": "2026-08-19",
+      "date_end": "2026-08-19",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-08-19:преображение господне",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 19,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-2eec1d0a53ab0dda4fa4",
+      "calendar_kind": "feast",
+      "title": "УСПЕНИЕ ПРЕСВЯТОЙ БОГОРОДИЦЫ",
+      "date_start": "2026-08-28",
+      "date_end": "2026-08-28",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-08-28:успение пресвятой богородицы",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 20,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-464eaad4104098f7ed0e",
+      "calendar_kind": "feast",
+      "title": "РОЖДЕСТВО ПРЕСВЯТОЙ БОГОРОДИЦЫ",
+      "date_start": "2026-09-21",
+      "date_end": "2026-09-21",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-09-21:рождество пресвятой богородицы",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 21,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-06d4818f17b2241a5618",
+      "calendar_kind": "feast",
+      "title": "ВОЗДВИЖЕНИЕ КРЕСТА ГОСПОДНЯ",
+      "date_start": "2026-09-27",
+      "date_end": "2026-09-27",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-09-27:воздвижение креста господня",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 22,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-7f2419086b1894a14da8",
+      "calendar_kind": "feast",
+      "title": "ПОКРОВ ПРЕСВЯТОЙ БОГОРОДИЦЫ",
+      "date_start": "2026-10-14",
+      "date_end": "2026-10-14",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-10-14:покров пресвятой богородицы",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 23,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-a9cd42d8e139aabcf163",
+      "calendar_kind": "feast",
+      "title": "Казанской иконы Божией Матери",
+      "date_start": "2026-11-04",
+      "date_end": "2026-11-04",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-11-04:казанской иконы божией матери",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 24,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-14d1b02ea680f9ce3793",
+      "calendar_kind": "fast",
+      "title": "Начало РОЖДЕСТВЕНСКОГО ПОСТА",
+      "date_start": "2026-11-28",
+      "date_end": "2026-11-28",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-11-28:начало рождественского поста",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 25,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-8e139912f4858f604686",
+      "calendar_kind": "fast",
+      "title": "Рождественский пост",
+      "date_start": "2026-11-28",
+      "date_end": "2026-12-31",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-dcfc2961bfad5d4da3ae",
+      "calendar_kind": "feast",
+      "title": "ВВЕДЕНИЕ ВО ХРАМ ПРЕСВЯТОЙ БОГОРОДИЦЫ",
+      "date_start": "2026-12-04",
+      "date_end": "2026-12-04",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-12-04:введение во храм пресвятой богородицы",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 26,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-cal-58312e1ba4e51051b3ad",
+      "calendar_kind": "commemoration",
+      "title": "Святителя Николая Чудотворца",
+      "date_start": "2026-12-06",
+      "date_end": "2026-12-06",
+      "calendar_system": "civil_date_legacy",
+      "verification_status": "legacy_unverified",
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-12-06:святителя николая чудотворца",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 27,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    }
+  ]
+}

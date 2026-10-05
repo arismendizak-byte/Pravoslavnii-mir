@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "exact": {
+    "церковь": "church",
+    "собор": "cathedral",
+    "часовня": "chapel",
+    "монастырь": "monastery",
+    "скит": "skete",
+    "подворье": "metochion",
+    "колокольня": "bell_tower",
+    "святой источник": "holy_spring",
+    "источник": "holy_spring",
+    "мемориал": "memorial"
+  },
+  "contains": [
+    {
+      "needle": "часовн",
+      "value": "chapel"
+    },
+    {
+      "needle": "собор",
+      "value": "cathedral"
+    },
+    {
+      "needle": "церков",
+      "value": "church"
+    },
+    {
+      "needle": "храм",
+      "value": "church"
+    },
+    {
+      "needle": "монастыр",
+      "value": "monastery"
+    },
+    {
+      "needle": "скит",
+      "value": "skete"
+    },
+    {
+      "needle": "подвор",
+      "value": "metochion"
+    },
+    {
+      "needle": "колокольн",
+      "value": "bell_tower"
+    },
+    {
+      "needle": "источник",
+      "value": "holy_spring"
+    },
+    {
+      "needle": "мемориал",
+      "value": "memorial"
+    }
+  ],
+  "default": "unknown",
+  "name_contains": [
+    {
+      "needle": "подвор",
+      "value": "metochion"
+    },
+    {
+      "needle": "скит",
+      "value": "skete"
+    },
+    {
+      "needle": "монастыр",
+      "value": "monastery"
+    },
+    {
+      "needle": "собор",
+      "value": "cathedral"
+    },
+    {
+      "needle": "часовн",
+      "value": "chapel"
+    },
+    {
+      "needle": "колокольн",
+      "value": "bell_tower"
+    },
+    {
+      "needle": "источник",
+      "value": "holy_spring"
+    },
+    {
+      "needle": "церков",
+      "value": "church"
+    },
+    {
+      "needle": "храм",
+      "value": "church"
+    },
+    {
+      "needle": "мемориал",
+      "value": "memorial"
+    }
+  ]
+}

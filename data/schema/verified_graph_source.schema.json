@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pravmir.local/schema/verified_graph_source.schema.json",
+  "title": "Pravmir verified graph source bundle",
+  "type": "object",
+  "required": ["schema_version", "checked_at", "claims"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "checked_at": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+    "claims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["source_id", "provider", "source_url", "source_title", "authority", "evidence_note", "relation"],
+        "properties": {
+          "source_id": {"type": "string", "minLength": 1},
+          "provider": {"type": "string", "minLength": 1},
+          "source_url": {"type": "string", "pattern": "^https://"},
+          "source_title": {"type": "string", "minLength": 1},
+          "authority": {"enum": ["official_monastery", "official_church", "official_diocese", "official_cathedral", "official_museum", "official_institution"]},
+          "evidence_note": {"type": "string", "minLength": 1},
+          "relation": {
+            "type": "object",
+            "required": ["relation_type", "from", "to"],
+            "properties": {
+              "relation_type": {"enum": ["located_at", "relics_at", "relic_of"]},
+              "from": {"$ref": "#/$defs/ref"},
+              "to": {"$ref": "#/$defs/ref"}
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "$defs": {
+    "ref": {
+      "type": "object",
+      "required": ["kind", "id"],
+      "properties": {
+        "kind": {"enum": ["entity", "place"]},
+        "id": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

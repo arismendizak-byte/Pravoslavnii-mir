@@ -1,0 +1,206 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "45c649682966d23dfe5041e9905436acd4c3f7e6c667b1076a582d75d0d05b97",
+  "count": 4,
+  "items": [
+    {
+      "id": "pm-event-review-00e6d25790719f5e4625",
+      "status": "pending_review",
+      "provider": "pravmir-editorial-events",
+      "source_id": "demo-editorial-pilgrimage-001",
+      "source_file": "data/event_sources/events_editorial.json",
+      "reason": "draft_is_not_canonical_delivery",
+      "raw_event": {
+        "source_id": "demo-editorial-pilgrimage-001",
+        "title": "[ДЕМО] Паломническая поездка выходного дня",
+        "summary": "Синтетическая многодневная запись для проверки temporal overlap.",
+        "event_type": "pilgrimage_trip",
+        "temporal": {
+          "all_day": true,
+          "starts_at": "2026-10-17",
+          "ends_at": "2026-10-18",
+          "timezone": null,
+          "recurrence": {
+            "kind": "none",
+            "rrule": null
+          }
+        },
+        "status": "draft",
+        "venue": null,
+        "organizer": {
+          "name": "Редакция ПМ — demo fixture",
+          "organisation_ref": null
+        },
+        "registration": null,
+        "scope": {
+          "jurisdiction": null,
+          "tradition": "orthodox",
+          "locale": "ru-RU"
+        },
+        "freshness": {
+          "observed_at": "2026-10-03",
+          "verified_at": null,
+          "expires_at": null
+        },
+        "references": [],
+        "source_url": null,
+        "evidence_note": "Synthetic M5.4 development seed. Not a real pilgrimage announcement.",
+        "aliases": []
+      }
+    },
+    {
+      "id": "pm-event-review-155033ca0f14ae555546",
+      "status": "pending_review",
+      "provider": "pravmir-editorial-events",
+      "source_id": "demo-editorial-lecture-001",
+      "source_file": "data/event_sources/events_editorial.json",
+      "reason": "draft_is_not_canonical_delivery",
+      "raw_event": {
+        "source_id": "demo-editorial-lecture-001",
+        "title": "[ДЕМО] Лекция по истории Церкви",
+        "summary": "Синтетическая запись для проверки типов, дат и review queue.",
+        "event_type": "lecture",
+        "temporal": {
+          "all_day": false,
+          "starts_at": "2026-10-12T19:00:00+03:00",
+          "ends_at": "2026-10-12T20:30:00+03:00",
+          "timezone": "Europe/Moscow",
+          "recurrence": {
+            "kind": "none",
+            "rrule": null
+          }
+        },
+        "status": "draft",
+        "venue": {
+          "name": "Демонстрационный приходской зал",
+          "address": null,
+          "place_ref": null
+        },
+        "organizer": {
+          "name": "Редакция ПМ — demo fixture",
+          "organisation_ref": null
+        },
+        "registration": {
+          "required": false,
+          "url": null,
+          "email": null,
+          "phone": null
+        },
+        "scope": {
+          "jurisdiction": null,
+          "tradition": "orthodox",
+          "locale": "ru-RU"
+        },
+        "freshness": {
+          "observed_at": "2026-10-03",
+          "verified_at": null,
+          "expires_at": null
+        },
+        "references": [],
+        "source_url": null,
+        "evidence_note": "Synthetic M5.4 development seed. Not canonical factual data.",
+        "aliases": []
+      }
+    },
+    {
+      "id": "pm-event-review-39212a704244c4b95641",
+      "status": "pending_review",
+      "provider": "pravmir-community-event-contributions",
+      "source_id": "demo-community-event-001",
+      "source_file": "data/event_sources/events_community.json",
+      "reason": "community_contribution_requires_verification",
+      "raw_event": {
+        "source_id": "demo-community-event-001",
+        "title": "[ДЕМО] Пользовательское предложение события",
+        "summary": "Синтетический community contribution для проверки того, что community не пишет canonical напрямую.",
+        "event_type": "parish_event",
+        "temporal": {
+          "all_day": false,
+          "starts_at": "2026-10-20T18:00:00+03:00",
+          "ends_at": "2026-10-20T20:00:00+03:00",
+          "timezone": "Europe/Moscow",
+          "recurrence": {
+            "kind": "none",
+            "rrule": null
+          }
+        },
+        "status": "scheduled",
+        "venue": {
+          "name": "Демонстрационное место",
+          "address": null,
+          "place_ref": null
+        },
+        "organizer": {
+          "name": "Community demo fixture",
+          "organisation_ref": null
+        },
+        "registration": null,
+        "scope": {
+          "jurisdiction": null,
+          "tradition": "orthodox",
+          "locale": "ru-RU"
+        },
+        "freshness": {
+          "observed_at": "2026-10-03",
+          "verified_at": null,
+          "expires_at": null
+        },
+        "references": [],
+        "source_url": null,
+        "evidence_note": "Synthetic community seed for review-pipeline testing only.",
+        "aliases": []
+      }
+    },
+    {
+      "id": "pm-event-review-47d5ed2419d2acec942c",
+      "status": "pending_review",
+      "provider": "pravmir-editorial-events",
+      "source_id": "demo-editorial-service-001",
+      "source_file": "data/event_sources/events_editorial.json",
+      "reason": "draft_is_not_canonical_delivery",
+      "raw_event": {
+        "source_id": "demo-editorial-service-001",
+        "title": "[ДЕМО] Всенощное бдение",
+        "summary": "Синтетическая редакционная запись для проверки M5.4. Не является реальным расписанием.",
+        "event_type": "service",
+        "temporal": {
+          "all_day": false,
+          "starts_at": "2026-10-10T17:00:00+03:00",
+          "ends_at": "2026-10-10T19:00:00+03:00",
+          "timezone": "Europe/Moscow",
+          "recurrence": {
+            "kind": "none",
+            "rrule": null
+          }
+        },
+        "status": "draft",
+        "venue": {
+          "name": "Демонстрационный храм",
+          "address": null,
+          "place_ref": null
+        },
+        "organizer": {
+          "name": "Редакция ПМ — demo fixture",
+          "organisation_ref": null
+        },
+        "registration": null,
+        "scope": {
+          "jurisdiction": null,
+          "tradition": "orthodox",
+          "locale": "ru-RU"
+        },
+        "freshness": {
+          "observed_at": "2026-10-03",
+          "verified_at": null,
+          "expires_at": null
+        },
+        "references": [],
+        "source_url": null,
+        "evidence_note": "Synthetic M5.4 development seed. Must never be treated as a real-world event until replaced by verified source evidence.",
+        "aliases": [
+          "demo-service-001"
+        ]
+      }
+    }
+  ]
+}

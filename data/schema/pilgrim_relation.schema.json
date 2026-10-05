@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pravmir.local/schema/pilgrim_relation.schema.json",
+  "type": "object",
+  "required": [
+    "id",
+    "relation_type",
+    "from",
+    "to",
+    "trust_layer",
+    "verification_status",
+    "source_records"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^pm-pilgrim-rel-[0-9a-f]{20}$"
+    },
+    "relation_type": {
+      "enum": [
+        "located_at",
+        "serves_place",
+        "supports_route",
+        "provided_by",
+        "offers",
+        "available_at"
+      ]
+    },
+    "from": {
+      "type": "object",
+      "required": [
+        "kind",
+        "id"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "amenity",
+            "service"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "to": {
+      "type": "object",
+      "required": [
+        "kind",
+        "id"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "place",
+            "route",
+            "organisation",
+            "amenity",
+            "service"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "trust_layer": {
+      "enum": [
+        "canonical_system",
+        "verified_organisation",
+        "editorial",
+        "community"
+      ]
+    },
+    "verification_status": {
+      "enum": [
+        "source_verified",
+        "verified_organisation",
+        "editorial_verified",
+        "community_unverified"
+      ]
+    },
+    "source_records": {
+      "$ref": "content_item.schema.json#/$defs/source_records"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,996 @@
+{
+  "schema_version": "1.2.0",
+  "source_snapshot_sha256": "413c8dc21e944c9609d18cf7817a0a163b6de40dc3330958d24110aa8b58fee1",
+  "count": 39,
+  "works": [
+    {
+      "id": "pm-work-ead539b807952476ceab",
+      "slug": "scripture-gospel-matthew",
+      "title": "Евангелие от Матфея",
+      "work_type": "scripture",
+      "summary": "Книга Священного Писания в библиографическом каталоге ПМ. На этом этапе хранится только metadata/provenance; полный текст локально не копируется.",
+      "original_language": null,
+      "canonical_path": "library/item.html?slug=scripture-gospel-matthew",
+      "rights_status": "metadata_only",
+      "aliases": [
+        "Мф.",
+        "Евангелие от Матфея"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "work:gospel-matthew",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 1
+        }
+      ]
+    },
+    {
+      "id": "pm-work-2bcc66d0fa0877aadc78",
+      "slug": "scripture-gospel-mark",
+      "title": "Евангелие от Марка",
+      "work_type": "scripture",
+      "summary": "Книга Священного Писания в библиографическом каталоге ПМ. На этом этапе хранится только metadata/provenance; полный текст локально не копируется.",
+      "original_language": null,
+      "canonical_path": "library/item.html?slug=scripture-gospel-mark",
+      "rights_status": "metadata_only",
+      "aliases": [
+        "Мк.",
+        "Евангелие от Марка"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "work:gospel-mark",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 2
+        }
+      ]
+    },
+    {
+      "id": "pm-work-f10011f5590643d4ad5b",
+      "slug": "scripture-gospel-luke",
+      "title": "Евангелие от Луки",
+      "work_type": "scripture",
+      "summary": "Книга Священного Писания в библиографическом каталоге ПМ. На этом этапе хранится только metadata/provenance; полный текст локально не копируется.",
+      "original_language": null,
+      "canonical_path": "library/item.html?slug=scripture-gospel-luke",
+      "rights_status": "metadata_only",
+      "aliases": [
+        "Лк.",
+        "Евангелие от Луки"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "work:gospel-luke",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 3
+        }
+      ]
+    },
+    {
+      "id": "pm-work-9a06f06165dec584fd5f",
+      "slug": "scripture-gospel-john",
+      "title": "Евангелие от Иоанна",
+      "work_type": "scripture",
+      "summary": "Книга Священного Писания в библиографическом каталоге ПМ. На этом этапе хранится только metadata/provenance; полный текст локально не копируется.",
+      "original_language": null,
+      "canonical_path": "library/item.html?slug=scripture-gospel-john",
+      "rights_status": "metadata_only",
+      "aliases": [
+        "Ин.",
+        "Евангелие от Иоанна"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "work:gospel-john",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 4
+        }
+      ]
+    },
+    {
+      "id": "pm-work-88ed49e4eeb1e80fc71a",
+      "slug": "scripture-acts",
+      "title": "Деяния святых Апостолов",
+      "work_type": "scripture",
+      "summary": "Книга Священного Писания в библиографическом каталоге ПМ. На этом этапе хранится только metadata/provenance; полный текст локально не копируется.",
+      "original_language": null,
+      "canonical_path": "library/item.html?slug=scripture-acts",
+      "rights_status": "metadata_only",
+      "aliases": [
+        "Деян.",
+        "Деяния святых Апостолов"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "work:acts",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 5
+        }
+      ]
+    },
+    {
+      "id": "pm-work-b332575fa64ad64b5cf9",
+      "slug": "scripture-romans",
+      "title": "Послание к Римлянам",
+      "work_type": "scripture",
+      "summary": "Книга Священного Писания в библиографическом каталоге ПМ. На этом этапе хранится только metadata/provenance; полный текст локально не копируется.",
+      "original_language": null,
+      "canonical_path": "library/item.html?slug=scripture-romans",
+      "rights_status": "metadata_only",
+      "aliases": [
+        "Рим.",
+        "Послание к Римлянам"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "work:romans",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 6
+        }
+      ]
+    },
+    {
+      "id": "pm-work-b78fa698cdc84e069c3c",
+      "slug": "scripture-1-corinthians",
+      "title": "Первое послание к Коринфянам",
+      "work_type": "scripture",
+      "summary": "Книга Священного Писания в библиографическом каталоге ПМ. На этом этапе хранится только metadata/provenance; полный текст локально не копируется.",
+      "original_language": null,
+      "canonical_path": "library/item.html?slug=scripture-1-corinthians",
+      "rights_status": "metadata_only",
+      "aliases": [
+        "1Кор.",
+        "Первое послание к Коринфянам"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "work:1-corinthians",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 7
+        }
+      ]
+    },
+    {
+      "id": "pm-work-98ed244e0b24b307ad5b",
+      "slug": "scripture-2-corinthians",
+      "title": "Второе послание к Коринфянам",
+      "work_type": "scripture",
+      "summary": "Книга Священного Писания в библиографическом каталоге ПМ. На этом этапе хранится только metadata/provenance; полный текст локально не копируется.",
+      "original_language": null,
+      "canonical_path": "library/item.html?slug=scripture-2-corinthians",
+      "rights_status": "metadata_only",
+      "aliases": [
+        "2Кор.",
+        "Второе послание к Коринфянам"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "work:2-corinthians",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 8
+        }
+      ]
+    },
+    {
+      "id": "pm-work-f975c10a93106f166042",
+      "slug": "scripture-galatians",
+      "title": "Послание к Галатам",
+      "work_type": "scripture",
+      "summary": "Книга Священного Писания в библиографическом каталоге ПМ. На этом этапе хранится только metadata/provenance; полный текст локально не копируется.",
+      "original_language": null,
+      "canonical_path": "library/item.html?slug=scripture-galatians",
+      "rights_status": "metadata_only",
+      "aliases": [
+        "Гал.",
+        "Послание к Галатам"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "work:galatians",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 9
+        }
+      ]
+    },
+    {
+      "id": "pm-work-d58f05c9b12b2c9c2f20",
+      "slug": "scripture-philippians",
+      "title": "Послание к Филиппийцам",
+      "work_type": "scripture",
+      "summary": "Книга Священного Писания в библиографическом каталоге ПМ. На этом этапе хранится только metadata/provenance; полный текст локально не копируется.",
+      "original_language": null,
+      "canonical_path": "library/item.html?slug=scripture-philippians",
+      "rights_status": "metadata_only",
+      "aliases": [
+        "Флп.",
+        "Послание к Филиппийцам"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "work:philippians",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 10
+        }
+      ]
+    },
+    {
+      "id": "pm-work-ddb436c4a9ddef94cf81",
+      "slug": "scripture-titus",
+      "title": "Послание к Титу",
+      "work_type": "scripture",
+      "summary": "Книга Священного Писания в библиографическом каталоге ПМ. На этом этапе хранится только metadata/provenance; полный текст локально не копируется.",
+      "original_language": null,
+      "canonical_path": "library/item.html?slug=scripture-titus",
+      "rights_status": "metadata_only",
+      "aliases": [
+        "Тит.",
+        "Послание к Титу"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "work:titus",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 11
+        }
+      ]
+    },
+    {
+      "id": "pm-work-a3f2610ca1d32e3e93ab",
+      "slug": "scripture-hebrews",
+      "title": "Послание к Евреям",
+      "work_type": "scripture",
+      "summary": "Книга Священного Писания в библиографическом каталоге ПМ. На этом этапе хранится только metadata/provenance; полный текст локально не копируется.",
+      "original_language": null,
+      "canonical_path": "library/item.html?slug=scripture-hebrews",
+      "rights_status": "metadata_only",
+      "aliases": [
+        "Евр.",
+        "Послание к Евреям"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "work:hebrews",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 12
+        }
+      ]
+    },
+    {
+      "id": "pm-work-7798d2d95fcb5ddfef79",
+      "slug": "scripture-1-john",
+      "title": "Первое послание Иоанна",
+      "work_type": "scripture",
+      "summary": "Книга Священного Писания в библиографическом каталоге ПМ. На этом этапе хранится только metadata/provenance; полный текст локально не копируется.",
+      "original_language": null,
+      "canonical_path": "library/item.html?slug=scripture-1-john",
+      "rights_status": "metadata_only",
+      "aliases": [
+        "1Ин.",
+        "Первое послание Иоанна"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "work:1-john",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 13
+        }
+      ]
+    },
+    {
+      "id": "pm-work-edb29935b70bdf39c242",
+      "slug": "scripture-2-peter",
+      "title": "Второе послание Петра",
+      "work_type": "scripture",
+      "summary": "Книга Священного Писания в библиографическом каталоге ПМ. На этом этапе хранится только metadata/provenance; полный текст локально не копируется.",
+      "original_language": null,
+      "canonical_path": "library/item.html?slug=scripture-2-peter",
+      "rights_status": "metadata_only",
+      "aliases": [
+        "2Пет.",
+        "Второе послание Петра"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "work:2-peter",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 14
+        }
+      ]
+    },
+    {
+      "id": "pm-work-9bcc5e2d2617e8f32947",
+      "slug": "work-theophan-thoughts-every-day",
+      "title": "Мысли на каждый день года по церковным чтениям из Слова Божия",
+      "work_type": "theology",
+      "summary": "Произведение с подтверждённым внешним текстовым источником; локальная копия пока не включается.",
+      "original_language": "ru",
+      "canonical_path": "library/item.html?slug=work-theophan-thoughts-every-day",
+      "rights_status": "public_domain_verified",
+      "aliases": [
+        "Мысли на каждый день года по церковным чтениям из Слова Божия"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "work:theophan-thoughts-every-day",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Мысли_на_каждый_день_года_по_церковным_чтениям_из_Слова_Божия_(Феофан-Затворник)",
+          "source_row": 1,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Мысли_на_каждый_день_года_по_церковным_чтениям_из_Слова_Божия_(Феофан-Затворник)"
+        }
+      ]
+    },
+    {
+      "id": "pm-work-9906f04decbc4fa0a163",
+      "slug": "work-philaret-longer-catechism",
+      "title": "Пространный христианский катихизис Православной Кафолической Восточной Церкви",
+      "work_type": "catechesis",
+      "summary": "Произведение доступно по внешней ссылке. Права точной электронной редакции требуют проверки; локальная копия не включается.",
+      "original_language": "ru",
+      "canonical_path": "library/item.html?slug=work-philaret-longer-catechism",
+      "rights_status": "public_domain_verified",
+      "aliases": [
+        "Пространный христианский катихизис Православной Кафолической Восточной Церкви"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "work:philaret-longer-catechism",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Пространный_христианский_катихизис_Православной_Кафолической_Восточной_Церкви",
+          "source_row": 2,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Пространный_христианский_катихизис_Православной_Кафолической_Восточной_Церкви"
+        }
+      ]
+    },
+    {
+      "id": "pm-work-01a0f8ec5e9aa5921785",
+      "slug": "work-philaret-scripture-translations",
+      "title": "О догматическом достоинстве и охранительном употреблении переводов Священного Писания",
+      "work_type": "theology",
+      "summary": "Богословское произведение с полной локальной электронной публикацией и сохранённым источником. Транскрипция не проходила независимую критическую выверку.",
+      "original_language": "ru",
+      "canonical_path": "library/item.html?slug=work-philaret-scripture-translations",
+      "rights_status": "public_domain_verified",
+      "aliases": [
+        "О догматическом достоинстве и охранительном употреблении переводов Священного Писания"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "work:philaret-scripture-translations",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=О_догматическом_достоинстве_и_охранительном_употреблении_переводов_Священного_Писания_(свят._Филарет)/ДО&oldid=5666262",
+          "source_row": 3,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=О_догматическом_достоинстве_и_охранительном_употреблении_переводов_Священного_Писания_(свят._Филарет)/ДО&oldid=5666262"
+        }
+      ]
+    },
+    {
+      "id": "pm-work-06c637a0f2384817fd24",
+      "slug": "work-ignatius-on-orthodoxy",
+      "title": "О Православии",
+      "work_type": "theology",
+      "summary": "Произведение доступно по внешней ссылке. Права точной электронной редакции требуют проверки; локальная копия не включается.",
+      "original_language": "ru",
+      "canonical_path": "library/item.html?slug=work-ignatius-on-orthodoxy",
+      "rights_status": "external_link_only",
+      "aliases": [
+        "О Православии"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "work:ignatius-on-orthodoxy",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/О_Православии_(Брянчанинов)",
+          "source_row": 4,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/О_Православии_(Брянчанинов)"
+        }
+      ]
+    },
+    {
+      "id": "pm-work-166e138e1aa87cbc22fa",
+      "slug": "work-ignatius-word-on-man",
+      "title": "Слово о человеке",
+      "work_type": "theology",
+      "summary": "Произведение доступно по внешней ссылке. Права точной электронной редакции требуют проверки; локальная копия не включается.",
+      "original_language": "ru",
+      "canonical_path": "library/item.html?slug=work-ignatius-word-on-man",
+      "rights_status": "external_link_only",
+      "aliases": [
+        "Слово о человеке"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "work:ignatius-word-on-man",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Слово_о_человеке_(Брянчанинов)",
+          "source_row": 5,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Слово_о_человеке_(Брянчанинов)"
+        }
+      ]
+    },
+    {
+      "id": "pm-work-e8f804a36f7ff9b82b5d",
+      "slug": "work-ignatius-garden-in-winter",
+      "title": "Сад во время зимы",
+      "work_type": "sermon",
+      "summary": "Произведение с подтверждённым внешним текстовым источником; локальная копия пока не включается.",
+      "original_language": "ru",
+      "canonical_path": "library/item.html?slug=work-ignatius-garden-in-winter",
+      "rights_status": "public_domain_verified",
+      "aliases": [
+        "Сад во время зимы"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "work:ignatius-garden-in-winter",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Сад_во_время_зимы_(Игнатий_Брянчанинов)",
+          "source_row": 6,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Автор:Игнатий_(Брянчанинов)"
+        }
+      ]
+    },
+    {
+      "id": "pm-work-418ca5914c52724ff608",
+      "slug": "work-ignatius-obedience-to-elder",
+      "title": "О жительстве в послушании у старца",
+      "work_type": "theology",
+      "summary": "Богословское произведение с полной локальной электронной публикацией и сохранённым источником. Транскрипция не проходила независимую критическую выверку.",
+      "original_language": "ru",
+      "canonical_path": "library/item.html?slug=work-ignatius-obedience-to-elder",
+      "rights_status": "public_domain_verified",
+      "aliases": [
+        "О жительстве в послушании у старца"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "work:ignatius-obedience-to-elder",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=О_жительстве_в_послушании_у_старца_(Игнатий_Брянчанинов)&oldid=2626028#bodyContent",
+          "source_row": 7,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=О_жительстве_в_послушании_у_старца_(Игнатий_Брянчанинов)&oldid=2626028#bodyContent"
+        }
+      ]
+    },
+    {
+      "id": "pm-work-f4099288b3a4dead38f9",
+      "slug": "work-theophan-christian-life-begins",
+      "title": "Как начинается в нас христианская жизнь?",
+      "work_type": "catechesis",
+      "summary": "Произведение с подтверждённым внешним текстовым источником; локальная копия пока не включается.",
+      "original_language": "ru",
+      "canonical_path": "library/item.html?slug=work-theophan-christian-life-begins",
+      "rights_status": "public_domain_verified",
+      "aliases": [
+        "Как начинается в нас христианская жизнь?"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "work:theophan-christian-life-begins",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Как_начинается_в_нас_христианская_жизнь%3F",
+          "source_row": 8,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Феофан_Затворник"
+        }
+      ]
+    },
+    {
+      "id": "pm-work-dcaba6b1797dd6768af0",
+      "slug": "work-theophan-eternal-torments",
+      "title": "О вечности мучений",
+      "work_type": "theology",
+      "summary": "Богословское произведение с полной локальной электронной публикацией и сохранённым источником. Транскрипция не проходила независимую критическую выверку.",
+      "original_language": "ru",
+      "canonical_path": "library/item.html?slug=work-theophan-eternal-torments",
+      "rights_status": "public_domain_verified",
+      "aliases": [
+        "О вечности мучений"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "work:theophan-eternal-torments",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=О_вечности_мучений_(Феофан_Затворник)&oldid=1071762",
+          "source_row": 9,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=О_вечности_мучений_(Феофан_Затворник)&oldid=1071762"
+        }
+      ]
+    },
+    {
+      "id": "pm-work-c4ea07e87dd3dc7461e6",
+      "slug": "work-theophan-two-words-baptism",
+      "title": "Два слова о святом таинстве крещения",
+      "work_type": "sermon",
+      "summary": "Произведение с подтверждённым внешним текстовым источником; локальная копия пока не включается.",
+      "original_language": "ru",
+      "canonical_path": "library/item.html?slug=work-theophan-two-words-baptism",
+      "rights_status": "public_domain_verified",
+      "aliases": [
+        "Два слова о святом таинстве крещения"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "work:theophan-two-words-baptism",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Два_слова_о_святом_таинстве_крещения_(Феофан_Затворник)",
+          "source_row": 10,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Феофан_Затворник"
+        }
+      ]
+    },
+    {
+      "id": "pm-work-bac606807a9c00d22fae",
+      "slug": "work-theophan-spiritual-instructions",
+      "title": "Наставления в духовной жизни",
+      "work_type": "theology",
+      "summary": "Богословское произведение с полной локальной электронной публикацией и сохранённым источником. Транскрипция не проходила независимую критическую выверку.",
+      "original_language": "ru",
+      "canonical_path": "library/item.html?slug=work-theophan-spiritual-instructions",
+      "rights_status": "public_domain_verified",
+      "aliases": [
+        "Наставления в духовной жизни"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "work:theophan-spiritual-instructions",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=Наставления_в_духовной_жизни_(Феофан_Затворник)&oldid=5698478",
+          "source_row": 11,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=Наставления_в_духовной_жизни_(Феофан_Затворник)&oldid=5698478"
+        }
+      ]
+    },
+    {
+      "id": "pm-work-69aec6a2c7a3271e0906",
+      "slug": "work-theophan-hermas-commentary",
+      "title": "Толкование на книгу св. Ермы",
+      "work_type": "theology",
+      "summary": "Богословское произведение с полной локальной электронной публикацией и сохранённым источником. Транскрипция не проходила независимую критическую выверку.",
+      "original_language": "ru",
+      "canonical_path": "library/item.html?slug=work-theophan-hermas-commentary",
+      "rights_status": "public_domain_verified",
+      "aliases": [
+        "Толкование на книгу св. Ермы"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "work:theophan-hermas-commentary",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=Толкование_на_книгу_св._Ермы_(Феофан_Затворник)&oldid=5666316#bodyContent",
+          "source_row": 12,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=Толкование_на_книгу_св._Ермы_(Феофан_Затворник)&oldid=5666316#bodyContent"
+        }
+      ]
+    },
+    {
+      "id": "pm-work-59aefe056c9b88fccbd9",
+      "slug": "work-lord-prayer-19c",
+      "title": "Отче наш",
+      "work_type": "prayer",
+      "summary": "Молитвенный, богослужебный или гимнографический текст с полной выбранной локальной электронной редакцией и закреплённым источником. Транскрипция не проходила независимую критическую выверку.",
+      "original_language": "cu",
+      "canonical_path": "library/item.html?slug=work-lord-prayer-19c",
+      "rights_status": "public_domain_verified",
+      "aliases": [
+        "Отче наш"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "work:lord-prayer-19c",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?oldid=5096383&title=Отче_наш/ДО",
+          "source_row": 13,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?oldid=5096383&title=Отче_наш/ДО",
+          "classification_evidence_url": "https://www.pravenc.ru/text/2581755.html",
+          "classification_evidence_summary": "Православная энциклопедия идентифицирует «Отче наш» как молитву Господню; статья «Начало обычное» подтверждает её богослужебное употребление."
+        }
+      ]
+    },
+    {
+      "id": "pm-work-881d7fc99b281c38f527",
+      "slug": "work-heavenly-king-19c",
+      "title": "Царю Небесный",
+      "work_type": "hymnography",
+      "summary": "Молитвенный, богослужебный или гимнографический текст с полной выбранной локальной электронной редакцией и закреплённым источником. Транскрипция не проходила независимую критическую выверку.",
+      "original_language": "cu",
+      "canonical_path": "library/item.html?slug=work-heavenly-king-19c",
+      "rights_status": "public_domain_verified",
+      "aliases": [
+        "Царю Небесный"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "work:heavenly-king-19c",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?oldid=489359&title=Царю_Небесный/ДО",
+          "source_row": 14,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?oldid=489359&title=Царю_Небесный/ДО",
+          "classification_evidence_url": "https://m.pravenc.ru/text/%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%B0.html",
+          "classification_evidence_summary": "Православная энциклопедия прямо называет «Царю Небесный» стихирой праздника Пятидесятницы и описывает её употребление в «Начале обычном»."
+        }
+      ]
+    },
+    {
+      "id": "pm-work-dd07f9dd508080e165f6",
+      "slug": "work-worthy-is-19c",
+      "title": "Достойно есть",
+      "work_type": "hymnography",
+      "summary": "Молитвенный, богослужебный или гимнографический текст с полной выбранной локальной электронной редакцией и закреплённым источником. Транскрипция не проходила независимую критическую выверку.",
+      "original_language": "cu",
+      "canonical_path": "library/item.html?slug=work-worthy-is-19c",
+      "rights_status": "public_domain_verified",
+      "aliases": [
+        "Достойно есть"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "work:worthy-is-19c",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?oldid=483297&title=Достойно_есть/ДО",
+          "source_row": 15,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?oldid=483297&title=Достойно_есть/ДО",
+          "classification_evidence_url": "https://m.pravenc.ru/rubrics/383270.html",
+          "classification_evidence_summary": "Рубрикатор Православной энциклопедии определяет «Достойно есть» как одно из наиболее известных православных песнопений во имя Пресвятой Богородицы."
+        }
+      ]
+    },
+    {
+      "id": "pm-work-1545f9c669c5ef7c9b1e",
+      "slug": "work-nicene-creed-tolstoy-1875",
+      "title": "Никео-Цареградский Символ веры",
+      "work_type": "liturgy",
+      "summary": "Молитвенный, богослужебный или гимнографический текст с полной выбранной локальной электронной редакцией и закреплённым источником. Транскрипция не проходила независимую критическую выверку.",
+      "original_language": "cu",
+      "canonical_path": "library/item.html?slug=work-nicene-creed-tolstoy-1875",
+      "rights_status": "public_domain_verified",
+      "aliases": [
+        "Никео-Цареградский Символ веры"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "work:nicene-creed-tolstoy-1875",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?oldid=4854183&title=Никео-Цареградский_Символ_веры/1875,_Толстой_(ДО)",
+          "source_row": 16,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?oldid=4854183&title=Никео-Цареградский_Символ_веры/1875,_Толстой_(ДО)",
+          "classification_evidence_url": "https://azbyka.ru/simvol_very",
+          "classification_evidence_summary": "«Азбука веры» отдельно отмечает, что Символ веры не является молитвой, и подтверждает его соборное пение за Литургией и чтение в других богослужебных последованиях."
+        }
+      ]
+    },
+    {
+      "id": "pm-work-fc5ab2a44e310e7df61d",
+      "slug": "work-theophan-sermons-orthodoxy-1863",
+      "title": "Сборник слов и проповедей о православии с предостережениями от погрешений против него",
+      "work_type": "sermon",
+      "summary": "Произведение с подтверждённым внешним текстовым источником; локальная копия пока не включается.",
+      "original_language": "ru",
+      "canonical_path": "library/item.html?slug=work-theophan-sermons-orthodoxy-1863",
+      "rights_status": "public_domain_verified",
+      "aliases": [
+        "Сборник слов и проповедей о православии с предостережениями от погрешений против него"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "work:theophan-sermons-orthodoxy-1863",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=Сборник_слов_и_проповедей_о_православии_с_предостережениями_от_погрешений_против_него…_(Феофан-Затворник)&oldid=5661984",
+          "source_row": 17,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=Сборник_слов_и_проповедей_о_православии_с_предостережениями_от_погрешений_против_него…_(Феофан-Затворник)&oldid=5661984",
+          "classification_evidence_url": "https://ru.wikisource.org/w/index.php?title=Сборник_слов_и_проповедей_о_православии_с_предостережениями_от_погрешений_против_него…_(Феофан-Затворник)&oldid=5661984",
+          "classification_evidence_summary": "Название и оглавление источника прямо определяют произведение как сборник слов и проповедей."
+        }
+      ]
+    },
+    {
+      "id": "pm-work-5e6db8095c36fa8d7418",
+      "slug": "work-philaret-gumilevsky-sacred-history-1850",
+      "title": "Избранные места из священной истории Ветхого и Нового завета с назидательными размышлениями",
+      "work_type": "catechesis",
+      "summary": "Произведение с подтверждённым внешним текстовым источником; локальная копия пока не включается.",
+      "original_language": "ru",
+      "canonical_path": "library/item.html?slug=work-philaret-gumilevsky-sacred-history-1850",
+      "rights_status": "public_domain_verified",
+      "aliases": [
+        "Избранные места из священной истории Ветхого и Нового завета с назидательными размышлениями"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "work:philaret-gumilevsky-sacred-history-1850",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=Избранные_места_из_священной_истории_Ветхого_и_Нового_завета_с_назидательными_размышлениями_(Филарет)&oldid=5261535",
+          "source_row": 18,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=Избранные_места_из_священной_истории_Ветхого_и_Нового_завета_с_назидательными_размышлениями_(Филарет)&oldid=5261535",
+          "classification_evidence_url": "https://ru.wikisource.org/w/index.php?title=Избранные_места_из_священной_истории_Ветхого_и_Нового_завета_с_назидательными_размышлениями_(Филарет)&oldid=5261535",
+          "classification_evidence_summary": "Структура источника сочетает изложение Священной истории с отдельными назидательными размышлениями; в Library классифицируется как учебно-катехизический текст."
+        }
+      ]
+    },
+    {
+      "id": "pm-work-7ae8eceded8a2f474f7e",
+      "slug": "work-pobedonostsev-orthodox-church-history-1891",
+      "title": "История Православной Церкви до начала разделения Церквей",
+      "work_type": "church_history",
+      "summary": "Произведение с подтверждённым внешним текстовым источником; локальная копия пока не включается.",
+      "original_language": "ru",
+      "canonical_path": "library/item.html?slug=work-pobedonostsev-orthodox-church-history-1891",
+      "rights_status": "public_domain_verified",
+      "aliases": [
+        "История Православной Церкви до начала разделения Церквей"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "work:pobedonostsev-orthodox-church-history-1891",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=История_Православной_Церкви_до_начала_разделения_Церквей_(Победоносцев)&oldid=5591605",
+          "source_row": 19,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=История_Православной_Церкви_до_начала_разделения_Церквей_(Победоносцев)&oldid=5591605",
+          "classification_evidence_url": "https://ru.wikisource.org/w/index.php?title=История_Православной_Церкви_до_начала_разделения_Церквей_(Победоносцев)&oldid=5591605",
+          "classification_evidence_summary": "Источник прямо озаглавлен как история Православной Церкви и содержит последовательное историческое изложение до разделения Церквей."
+        }
+      ]
+    },
+    {
+      "id": "pm-work-d6025672bee94c6bafbf",
+      "slug": "work-life-seraphim-sarov",
+      "title": "Житие преподобного Серафима Саровского",
+      "work_type": "life",
+      "summary": "Source-verified hagiographic work linked only to explicit canonical saint IDs from the frozen source record; the external public-domain text is not copied into the release.",
+      "original_language": "ru",
+      "canonical_path": "library/item.html?slug=work-life-seraphim-sarov",
+      "rights_status": "public_domain_verified",
+      "aliases": [
+        "Житие преподобного Серафима Саровского"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "work:life-seraphim-sarov",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Январь/2",
+          "source_row": 1,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Январь.djvu"
+        }
+      ]
+    },
+    {
+      "id": "pm-work-0d999a24d135a1efc6a5",
+      "slug": "work-martyrdom-tatiana",
+      "title": "Страдание святой мученицы Татианы",
+      "work_type": "life",
+      "summary": "Source-verified hagiographic work linked only to explicit canonical saint IDs from the frozen source record; the external public-domain text is not copied into the release.",
+      "original_language": "ru",
+      "canonical_path": "library/item.html?slug=work-martyrdom-tatiana",
+      "rights_status": "public_domain_verified",
+      "aliases": [
+        "Страдание святой мученицы Татианы"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "work:martyrdom-tatiana",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Январь/12",
+          "source_row": 2,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Январь.djvu"
+        }
+      ]
+    },
+    {
+      "id": "pm-work-27c4e7cab5b3ea4b63df",
+      "slug": "work-life-nicholas-myra",
+      "title": "Житие святителя и чудотворца Николая, архиепископа Мирликийского",
+      "work_type": "life",
+      "summary": "Source-verified hagiographic work linked only to explicit canonical saint IDs from the frozen source record; the external public-domain text is not copied into the release.",
+      "original_language": "ru",
+      "canonical_path": "library/item.html?slug=work-life-nicholas-myra",
+      "rights_status": "public_domain_verified",
+      "aliases": [
+        "Житие святителя и чудотворца Николая, архиепископа Мирликийского"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "work:life-nicholas-myra",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Декабрь/6",
+          "source_row": 3,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Декабрь.djvu"
+        }
+      ]
+    },
+    {
+      "id": "pm-work-4257cdc79b1a388342e9",
+      "slug": "work-life-cyril-methodius",
+      "title": "Жизнь и труды преподобных Мефодия и Константина, в монашестве Кирилла, учителей славянских",
+      "work_type": "life",
+      "summary": "Source-verified hagiographic work linked only to explicit canonical saint IDs from the frozen source record; the external public-domain text is not copied into the release.",
+      "original_language": "ru",
+      "canonical_path": "library/item.html?slug=work-life-cyril-methodius",
+      "rights_status": "public_domain_verified",
+      "aliases": [
+        "Жизнь и труды преподобных Мефодия и Константина, в монашестве Кирилла, учителей славянских"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "work:life-cyril-methodius",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Май/11",
+          "source_row": 4,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Май.djvu"
+        }
+      ]
+    },
+    {
+      "id": "pm-work-c60dbaf180deda1bbc82",
+      "slug": "work-memory-vladimir-kiev",
+      "title": "Память святого равноапостольного Великого Князя Киевского Владимира",
+      "work_type": "life",
+      "summary": "Source-verified hagiographic work linked only to explicit canonical saint IDs from the frozen source record; the external public-domain text is not copied into the release.",
+      "original_language": "ru",
+      "canonical_path": "library/item.html?slug=work-memory-vladimir-kiev",
+      "rights_status": "public_domain_verified",
+      "aliases": [
+        "Память святого равноапостольного Великого Князя Киевского Владимира"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "work:memory-vladimir-kiev",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Июль/15",
+          "source_row": 5,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Июль.djvu"
+        }
+      ]
+    },
+    {
+      "id": "pm-work-2aefda2a5f933f716a67",
+      "slug": "work-bogorodice-devo-znamenny",
+      "title": "Богородице Дево, радуйся — знаменный распев",
+      "work_type": "hymnography",
+      "summary": "Медиапроизведение/гимнографическая запись с проверенным внешним media asset; права конкретной записи подтверждены отдельно.",
+      "original_language": null,
+      "canonical_path": "library/item.html?slug=work-bogorodice-devo-znamenny",
+      "rights_status": "metadata_only",
+      "aliases": [
+        "Богородице Дево, радуйся — знаменный распев"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikimedia-commons-rights-2026-10-05",
+          "source_id": "work:bogorodice-devo-znamenny",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://commons.wikimedia.org/wiki/File:04_Bogorodice_Devo_radujsja_znamennyj_raspev_grind_Moscow_Patriarchal_Choir.ogg",
+          "source_row": 1,
+          "rights_evidence_url": "https://commons.wikimedia.org/wiki/File:04_Bogorodice_Devo_radujsja_znamennyj_raspev_grind_Moscow_Patriarchal_Choir.ogg"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://pravmir.local/schema/recipe.schema.json","title":"Pravmir canonical recipe","type":"object",
+  "required":["id","slug","title","summary","recipe_type","servings","prep_minutes","cook_minutes","ingredients","steps","tags","dietary_profile","fasting_compatibility","canonical_path","trust_layer","verification_status","source_records"],
+  "properties":{
+    "id":{"type":"string","pattern":"^pm-recipe-[0-9a-f]{20}$"},"slug":{"type":"string","pattern":"^[a-z0-9][a-z0-9-]*$"},"title":{"type":"string","minLength":1},"summary":{"type":"string","minLength":1},
+    "recipe_type":{"enum":["soup","main","salad","breakfast","dessert","baking","drink","other"]},"servings":{"type":"integer","minimum":1},"prep_minutes":{"type":"integer","minimum":0},"cook_minutes":{"type":"integer","minimum":0},
+    "ingredients":{"type":"array","minItems":1,"items":{"type":"object","required":["name","amount"],"properties":{"name":{"type":"string","minLength":1},"amount":{"type":"string","minLength":1},"note":{"type":["string","null"]}},"additionalProperties":false}},
+    "steps":{"type":"array","minItems":1,"items":{"type":"string","minLength":1}},"tags":{"type":"array","items":{"type":"string","minLength":1},"uniqueItems":true},
+    "dietary_profile":{"type":"object","required":["contains_meat","contains_dairy","contains_eggs","contains_fish","contains_alcohol","uses_oil","plant_based"],"properties":{"contains_meat":{"type":"boolean"},"contains_dairy":{"type":"boolean"},"contains_eggs":{"type":"boolean"},"contains_fish":{"type":"boolean"},"contains_alcohol":{"type":"boolean"},"uses_oil":{"type":"boolean"},"plant_based":{"type":"boolean"}},"additionalProperties":false},
+    "fasting_compatibility":{"type":"object","required":["classification","oil_mode","note","disclaimer"],"properties":{"classification":{"enum":["general_fast_friendly","not_classified"]},"oil_mode":{"enum":["none","optional","used"]},"note":{"type":"string","minLength":1},"disclaimer":{"type":"string","minLength":1}},"additionalProperties":false},
+    "canonical_path":{"type":"string","minLength":1},"trust_layer":{"const":"editorial"},"verification_status":{"const":"editorial_content"},"source_records":{"$ref":"content_item.schema.json#/$defs/source_records"}
+  },"additionalProperties":false
+}

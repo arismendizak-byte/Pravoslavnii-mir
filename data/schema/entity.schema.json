@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pravmir.local/schema/entity.schema.json",
+  "title": "Pravmir graph entity",
+  "type": "object",
+  "required": ["id", "entity_type", "name", "source_records", "verification_status", "quality_flags"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^pm-ent-[a-f0-9]{24}$"},
+    "entity_type": {"enum": ["saint", "icon", "relic", "shrine"]},
+    "name": {"type": "string", "minLength": 1},
+    "title": {"type": ["string", "null"]},
+    "description": {"type": ["string", "null"]},
+    "feast_day": {"type": ["string", "null"]},
+    "saint_name": {"type": ["string", "null"]},
+    "location_text": {"type": ["string", "null"]},
+    "emoji": {"type": ["string", "null"]},
+    "detail_path": {"type": ["string", "null"]},
+    "verification_status": {"enum": ["legacy_unverified", "source_verified"]},
+    "quality_flags": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "source_records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["provider", "source_id", "source_file"],
+        "properties": {
+          "provider": {"type": "string", "minLength": 1},
+          "source_id": {"type": "string", "minLength": 1},
+          "source_file": {"type": "string", "minLength": 1}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

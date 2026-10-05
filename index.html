@@ -2,21 +2,18 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
     <title>Православный Мир — Путеводитель по святым местам</title>
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/search-discovery.css">
 
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
     
     <style>
         .map-container-box {
@@ -53,480 +50,177 @@
         .leaflet-routing-container table { margin: 8px 0 0 0 !important; }
     </style>
 
-<style id="home-search-patch">
-.home-search-results{
-position:absolute;z-index:1200;left:0;right:0;top:calc(100% + 8px);
-display:none;max-height:360px;overflow-y:auto;background:#fff;
-border:1px solid var(--cream-2);border-radius:14px;
-box-shadow:0 12px 30px rgba(26,18,8,.16);padding:6px
-}
-.home-search-results.open{display:block}
-.home-search-result{
-display:flex;align-items:center;gap:10px;width:100%;padding:11px 12px;
-border:0;border-radius:10px;background:transparent;color:var(--dark);
-text-align:left;cursor:pointer;font:500 14px/1.35 Inter,sans-serif
-}
-.home-search-result:hover,.home-search-result:focus-visible{
-background:var(--cream);outline:none
-}
-.home-search-result-icon{flex:0 0 auto;font-size:20px}
-.home-search-result-text{min-width:0}
-.home-search-result-name{font-weight:600}
-.home-search-result-meta{
-display:block;margin-top:2px;color:var(--text-muted);
-font-size:12px;font-weight:400
-}
-.home-search-empty{
-padding:16px 12px;color:var(--text-muted);
-font-size:13px;text-align:center
-}
-.search-bar{position:relative}
-</style>
+
 
 </head>
 <body>
     <div id="nav-container"></div>
     <div id="bottom-nav-container"></div>
 
+    <main class="home-main" id="main-content">
     <section class="hero">
         <div class="hero-bg"></div><div class="hero-silhouette"></div>
         <div class="hero-content">
-            <div class="hero-label">Духовное наследие России и СНГ</div>
-            <h1 class="hero-title">Откройте<br><em>святые места</em><br>России и СНГ</h1>
-            <p class="hero-subtitle">Путешествуйте, находите святыни, планируйте паломничество. Тысячи храмов, монастырей, источников и маршрутов.</p>
-            <div class="search-bar"><svg class="search-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="9" r="6"/><path d="M14 14 L18 18" stroke-linecap="round"/></svg><input type="text" placeholder="Куда вы хотите отправиться?"><button class="btn-search">Найти</button></div>
-            <div class="hero-cta-row"><a href="#map" class="btn-hero btn-hero-outline"><span>🗺️</span> Исследовать карту</a><a href="#routes" class="btn-hero btn-hero-outline"><span>✨</span> Найти вдохновение</a></div>
+            <div class="hero-label">Православная жизнь · Россия и СНГ</div>
+            <h1 class="hero-title">Ближе к вере.<br><em>Ближе к святыням.</em></h1>
+            <p class="hero-subtitle">Календарь, журнал, места и маршруты — в одном путеводителе. Исследуйте духовное наследие и готовьтесь к паломничеству.</p>
+            <div class="search-bar"><svg class="search-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="9" cy="9" r="6"/><path d="M14 14 L18 18" stroke-linecap="round"/></svg><input type="search" aria-label="Поиск по Православному Миру" autocomplete="off" spellcheck="false" placeholder="Место, святыня, маршрут, статья…"><button class="btn-search" type="button">Найти</button></div>
+            <div class="hero-cta-row"><a href="calendar.html" class="btn-hero btn-hero-outline"><span data-ui-icon="calendar"></span> Календарь на сегодня</a><a href="#map" class="btn-hero btn-hero-outline"><span data-ui-icon="pin"></span> Открыть карту</a></div>
+            <div class="hero-quick-links"><a href="journal.html"><span data-ui-icon="book"></span> Журнал</a><a href="food.html"><span data-ui-icon="food"></span> Православная кухня</a><a href="routes/routes.html"><span data-ui-icon="route"></span> Паломничество</a></div>
         </div>
-        <div class="hero-story"><div class="hero-story-label">История дня</div><div class="hero-story-img">⛪</div><div class="hero-story-title">Валаам</div><div class="hero-story-desc">Место особой тишины и молитвы на Ладожском озере.</div><a href="#" class="hero-story-link">Открыть историю &rarr;</a></div>
+        <div class="hero-story"><div class="hero-story-label">Начните путешествие</div><div class="hero-story-img" data-ui-icon="compass"></div><div class="hero-story-title">Найдите своё место</div><div class="hero-story-desc">Храмы, монастыри и источники. Выберите регион и сохраните то, что близко вам.</div><a href="catalog/catalog.html" class="hero-story-link">Исследовать каталог &rarr;</a></div>
         <div class="hero-scroll"><span>ЛИСТАТЬ</span><div class="scroll-line"></div></div>
     </section>
 
-    <section class="places">
+    <section class="today-layer" id="today" aria-labelledby="todayLayerTitle">
+        <div class="today-layer-head">
+            <div><div class="section-label">Сегодня</div><h2 class="today-layer-title" id="todayLayerTitle">Церковный день <em>в одном месте</em></h2></div>
+            <div class="today-layer-date" id="todayLayerDate" aria-live="polite">Загрузка дня…</div>
+        </div>
+        <div class="today-layer-grid" id="todayLayerGrid" aria-live="polite" aria-busy="true">
+            <div class="today-layer-loading">Собираем календарь, чтения, материалы, события и трапезу…</div>
+        </div>
+        <div class="today-layer-note" id="todayLayerNote">ПМ объединяет только данные из существующих domain layers и не создаёт факты по совпадению названий.</div>
+    </section>
+
+    <section class="discovery-hub" aria-labelledby="discoveryHubTitle">
+        <div class="discovery-hub-head"><div><div class="section-label">Единый поиск</div><h2 class="discovery-hub-title" id="discoveryHubTitle">Исследуйте <em>Православный Мир</em></h2></div><p>Переходите между местами, святынями, календарём, материалами и маршрутами — без разрыва контекста.</p></div>
+        <div class="discovery-hub-grid">
+            <a href="catalog/catalog.html" class="discovery-hub-card"><span class="discovery-hub-icon" data-ui-icon="pin"></span><strong>Места</strong><span>Храмы, монастыри, часовни и источники</span></a>
+            <a href="holiness.html" class="discovery-hub-card"><span class="discovery-hub-icon" data-ui-icon="cross"></span><strong>Святые и святыни</strong><span>Связанные сущности и места почитания</span></a>
+            <a href="routes/routes.html" class="discovery-hub-card"><span class="discovery-hub-icon" data-ui-icon="route"></span><strong>Маршруты</strong><span>Паломнические пути и остановки</span></a>
+            <a href="calendar.html" class="discovery-hub-card"><span class="discovery-hub-icon" data-ui-icon="calendar"></span><strong>Календарь</strong><span>Праздники, памяти и пост</span></a>
+            <a href="journal.html" class="discovery-hub-card"><span class="discovery-hub-icon" data-ui-icon="book"></span><strong>Журнал</strong><span>Статьи и связанные материалы</span></a>
+            <a href="news.html" class="discovery-hub-card"><span class="discovery-hub-icon" data-ui-icon="book"></span><strong>Новости</strong><span>Проверяемые новости и provenance</span></a>
+            <a href="food.html" class="discovery-hub-card"><span class="discovery-hub-icon" data-ui-icon="food"></span><strong>Кухня</strong><span>Редакционные подборки к календарю</span></a>
+        </div>
+    </section>
+
+    <section class="places deferred-section">
         <div class="section-header">
             <div><div class="section-label">Святой путеводитель</div><h2 class="section-title">Места, которые<br><em>вдохновляют</em></h2></div>
             <a href="catalog/catalog.html" class="link-all">Смотреть все &rarr;</a>
         </div>
         <div class="places-grid">
-            <a href="objects/christ.html" class="place-card"><div class="place-card-img"><img src="https://i.postimg.cc/J0MjMTLm/Cathedral-of-Christ-the-Savior.jpg" alt="Храм Христа Спасителя" style="width:100%; height:100%; object-fit:cover;"></div><div class="place-card-overlay"></div><div class="place-card-body"><div class="place-card-name">Храм Христа Спасителя</div><div class="place-card-region">📍 г. Москва</div></div></a>
-            <a href="objects/nikolsky.html" class="place-card"><div class="place-card-img"><img src="https://i.postimg.cc/59rxcXS9/S600x-U-2x-(3).jpg" alt="Никольский собор" style="width:100%; height:100%; object-fit:cover;"></div><div class="place-card-overlay"></div><div class="place-card-body"><div class="place-card-name">Никольский собор</div><div class="place-card-region">📍 г. Санкт-Петербург</div></div></a>
-            <a href="objects/lavra.html" class="place-card"><div class="place-card-img"><img src="https://i.postimg.cc/9F0J7SyK/lavra3.jpg" alt="Троице-Сергиева Лавра" style="width:100%; height:100%; object-fit:cover;"></div><div class="place-card-overlay"></div><div class="place-card-body"><div class="place-card-name">Троице-Сергиева Лавра</div><div class="place-card-region">📍 Сергиев Посад</div></div></a>
-            <a href="objects/diveevo.html" class="place-card"><div class="place-card-img"><img src="https://i.postimg.cc/2yyFYdyK/images-(3).jpg" alt="Дивеево" style="width:100%; height:100%; object-fit:cover;"></div><div class="place-card-overlay"></div><div class="place-card-body"><div class="place-card-name">Дивеево</div><div class="place-card-region">📍 Нижегородская область</div></div></a>
+            <a href="objects/christ.html" class="place-card"><div class="place-card-img"><img src="https://i.postimg.cc/J0MjMTLm/Cathedral-of-Christ-the-Savior.jpg" alt="Храм Христа Спасителя" style="width:100%; height:100%; object-fit:cover;"></div><div class="place-card-overlay"></div><div class="place-card-body"><div class="place-card-name">Храм Христа Спасителя</div><div class="place-card-region"><span data-ui-icon="pin"></span> г. Москва</div></div></a>
+            <a href="objects/nikolsky.html" class="place-card"><div class="place-card-img"><img src="https://i.postimg.cc/59rxcXS9/S600x-U-2x-(3).jpg" alt="Никольский собор" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover;"></div><div class="place-card-overlay"></div><div class="place-card-body"><div class="place-card-name">Никольский собор</div><div class="place-card-region"><span data-ui-icon="pin"></span> г. Санкт-Петербург</div></div></a>
+            <a href="objects/lavra.html" class="place-card"><div class="place-card-img"><img src="assets/images/lavra3.jpeg" alt="Троице-Сергиева Лавра" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover;"></div><div class="place-card-overlay"></div><div class="place-card-body"><div class="place-card-name">Троице-Сергиева Лавра</div><div class="place-card-region">Сергиев Посад</div></div></a>
+            <a href="objects/diveevo.html" class="place-card"><div class="place-card-img"><img src="https://i.postimg.cc/2yyFYdyK/images-(3).jpg" alt="Дивеево" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover;"></div><div class="place-card-overlay"></div><div class="place-card-body"><div class="place-card-name">Дивеево</div><div class="place-card-region"><span data-ui-icon="pin"></span> Нижегородская область</div></div></a>
         </div>
     </section>
 
-    <section class="routes" id="routes">
+    <section class="routes deferred-section" id="routes">
         <div class="section-header">
             <div><div class="section-label">Паломнические пути</div><h2 class="section-title">Маршруты для<br><em>паломников</em></h2></div>
             <a href="routes/routes.html" class="link-all">Смотреть все маршруты &rarr;</a>
         </div>
-        <div class="routes-grid">
-            <a href="objects/nikolsky.html" class="route-card">
-                <div class="route-card-img">⛪</div>
-                <div class="route-card-body">
-                    <div class="route-card-title">Морские соборы СПб</div>
-                    <div class="route-card-region">📍 г. Санкт-Петербург</div>
-                    <div class="route-meta"><span class="route-meta-item"><span class="route-meta-icon">🕐</span> 1 день</span><span class="route-meta-item"><span class="route-meta-icon">👥</span> 5+ мест</span></div>
-                    <div class="route-link">Подробнее &rarr;</div>
-                </div>
-            </a>
-            <a href="objects/lavra.html" class="route-card">
-                <div class="route-card-img">🗺️</div>
-                <div class="route-card-body">
-                    <div class="route-card-title">Золотое кольцо Подмосковья</div>
-                    <div class="route-card-region">📍 Московская область</div>
-                    <div class="route-meta"><span class="route-meta-item"><span class="route-meta-icon">🕐</span> 2 дня</span><span class="route-meta-item"><span class="route-meta-icon">👥</span> 12 мест</span></div>
-                    <div class="route-link">Подробнее &rarr;</div>
-                </div>
-            </a>
-            <a href="objects/diveevo.html" class="route-card">
-                <div class="route-card-img">🕊️</div>
-                <div class="route-card-body">
-                    <div class="route-card-title">Путь в Дивеево через Арзамас</div>
-                    <div class="route-card-region">📍 Нижегородская область</div>
-                    <div class="route-meta"><span class="route-meta-item"><span class="route-meta-icon">🕐</span> 2 дня</span><span class="route-meta-item"><span class="route-meta-icon">👥</span> 6+ мест</span></div>
-                    <div class="route-link">Подробнее &rarr;</div>
-                </div>
-            </a>
-            <a href="routes/routes.html" class="route-card">
-                <div class="route-card-img">🌊</div>
-                <div class="route-card-body">
-                    <div class="route-card-title">Святыни Карелии (скоро)</div>
-                    <div class="route-card-region">📍 Республика Карелия</div>
-                    <div class="route-meta"><span class="route-meta-item"><span class="route-meta-icon">🕐</span> 3 дня</span><span class="route-meta-item"><span class="route-meta-icon">👥</span> 20 мест</span></div>
-                    <div class="route-link">Пополнится в ближайшее время →</div>
-                </div>
-            </a>
+        <div class="routes-grid home-route-grid" id="homeRoutePreview" aria-live="polite" aria-busy="true">
+            <div class="home-state">Загрузка маршрутов…</div>
         </div>
     </section>
 
-    <section class="map-section" id="map">
+    <section class="map-section deferred-section" id="map">
         <div class="section-header"><div><div class="section-label">Интерактивная карта</div><h2 class="section-title">Исследуйте православные<br>святыни <em>на карте</em></h2></div></div>
 
-        <!-- ПЕРЕКЛЮЧАТЕЛЬ ПЕРЕНЕСЕН ВНУТРЬ БЛОКА КАРТЫ -->
+        <div class="map-discovery-controls" id="mapDiscoveryControls">
+            <div class="map-discovery-field">
+                <label for="mapSearch">Поиск на карте</label>
+                <input id="mapSearch" type="search" placeholder="Название, адрес или место">
+            </div>
+            <div class="map-discovery-field">
+                <label for="mapRegion">Регион</label>
+                <select id="mapRegion"><option value="all">Все регионы</option></select>
+            </div>
+            <div class="map-discovery-field">
+                <label for="mapType">Тип</label>
+                <select id="mapType"><option value="all">Все типы</option></select>
+            </div>
+            <div class="map-discovery-field">
+                <label for="mapStatus">Статус</label>
+                <select id="mapStatus"><option value="all">Все статусы</option></select>
+            </div>
+            <div class="map-discovery-actions">
+                <button type="button" id="mapReset">Сбросить</button>
+                <a id="mapCatalogLink" href="catalog/catalog.html">В каталог</a>
+            </div>
+        </div>
+        <div class="map-discovery-summary" id="mapDiscoverySummary"><strong>Загрузка карты…</strong></div>
+
         <div class="map-container-box">
             <!-- Переключатель теперь абсолютно позиционирован внутри карты -->
             <div class="map-switcher-wrapper">
                 <button class="map-switcher-btn" id="mapSwitcherBtn">
-                    <span class="switcher-icon">🗺️</span>
+                    <span class="switcher-icon" data-ui-icon="pin"></span>
                     <span id="currentMapLabel">Наша карта</span>
                     <span class="switcher-arrow">▾</span>
                 </button>
                 <div class="map-switcher-menu" id="mapSwitcherMenu">
-                    <div class="map-switcher-item" onclick="switchMapTab('map-our', 'Наша карта')"><span class="item-icon">⛪</span> Наша карта</div>
-                    <div class="map-switcher-item" onclick="switchMapTab('map-yandex', 'Яндекс')"><span class="item-icon">Я</span> Яндекс</div>
-                    <div class="map-switcher-item" onclick="switchMapTab('map-google', 'Google')"><span class="item-icon">G</span> Google</div>
-                    <div class="map-switcher-item" onclick="switchMapTab('map-2gis', '2ГИС')"><span class="item-icon">2ГИС</span> 2ГИС</div>
+                    <button type="button" class="map-switcher-item" onclick="switchMapTab('map-our', 'Наша карта')"><span class="item-icon" aria-hidden="true">ПМ</span> Наша карта</button>
+                    <button type="button" class="map-switcher-item" onclick="switchMapTab('map-yandex', 'Яндекс')"><span class="item-icon" aria-hidden="true">Я</span> Яндекс</button>
+                    <button type="button" class="map-switcher-item" onclick="switchMapTab('map-google', 'Google')"><span class="item-icon" aria-hidden="true">G</span> Google</button>
+                    <button type="button" class="map-switcher-item" onclick="switchMapTab('map-2gis', '2ГИС')"><span class="item-icon" aria-hidden="true">2ГИС</span> 2ГИС</button>
                 </div>
             </div>
 
-            <div id="map-our" class="map-view active"></div>
-            <div id="map-yandex" class="map-view placeholder-map"><span class="big-icon">Я</span><h3>Яндекс.Карты</h3><p>Откройте это место в приложении Яндекс.Карты.</p><a href="https://yandex.ru/maps" target="_blank" class="btn-ext">Перейти в Яндекс.Карты →</a></div>
+            <div id="map-our" class="map-view active">
+                <div id="mapLazyPrompt" class="map-lazy-prompt"><span class="map-lazy-icon" data-ui-icon="pin"></span><h3>Карта загрузится по требованию</h3><p>Тяжёлые данные и картографический движок не загружаются, пока карта не понадобится.</p><button type="button" id="mapLoadNow">Загрузить карту</button></div>
+                <div id="mapRuntimeStatus" class="map-runtime-status">Ожидание карты</div>
+                <div id="mapRuntimeError" class="map-map-error"><div class="map-map-error-card"><h3>Карта временно недоступна</h3><p>Не удалось загрузить картографический движок. Каталог и карточки мест продолжают работать.</p><div class="map-map-error-actions"><button type="button" id="mapRetry">Повторить</button><a href="https://yandex.ru/maps" target="_blank" rel="noopener">Открыть Яндекс.Карты →</a></div></div></div>
+            </div>
+            <div id="map-yandex" class="map-view">
+                <div class="yandex-map-shell">
+                    <div id="map-yandex-canvas"></div>
+                    <div id="mapYandexFallback" class="yandex-map-fallback"><div class="yandex-map-fallback-card"><h3>Яндекс.Карты JS API v3</h3><p id="mapYandexFallbackText">Встроенная Яндекс.Карта включится после добавления API-ключа в конфигурацию проекта. Основная карта сайта работает независимо.</p><a id="mapYandexExternal" href="https://yandex.ru/maps" target="_blank" rel="noopener">Открыть Яндекс.Карты →</a></div></div>
+                </div>
+            </div>
             <div id="map-google" class="map-view placeholder-map"><span class="big-icon">G</span><h3>Google Карты</h3><p>Откройте это место в приложении Google Карты.</p><a href="https://www.google.com/maps" target="_blank" class="btn-ext">Перейти в Google Карты →</a></div>
             <div id="map-2gis" class="map-view placeholder-map"><span class="big-icon">2ГИС</span><h3>2ГИС Карты</h3><p>Откройте это место в приложении 2ГИС.</p><a href="https://2gis.ru" target="_blank" class="btn-ext">Перейти в 2ГИС →</a></div>
         </div>
+        <div class="map-viewport-results" id="mapViewportResults" hidden aria-live="polite"></div>
     </section>
 
-    <section class="pilgrim"><div class="section-header"><div><div class="section-label">Для паломника</div><h2 class="section-title">Всё что нужно<br>в <em>дороге</em></h2></div></div>
+    <section class="pilgrim deferred-section"><div class="section-header"><div><div class="section-label">Для паломника</div><h2 class="section-title">Подготовиться<br>к <em>поездке</em></h2></div></div>
         <div class="pilgrim-grid">
-            <a href="routes/routes.html" class="pilgrim-card"><div class="pilgrim-icon">🍽️</div><div><div class="pilgrim-card-title">Трапезные</div><div class="pilgrim-card-sub">Где поесть рядом со святынями и монастырями</div></div></a>
-            <a href="routes/routes.html" class="pilgrim-card"><div class="pilgrim-icon">🏨</div><div><div class="pilgrim-card-title">Где остановиться</div><div class="pilgrim-card-sub">Гостиницы и дома паломника</div></div></a>
-            <a href="catalog/catalog.html" class="pilgrim-card"><div class="pilgrim-icon">🕯️</div><div><div class="pilgrim-card-title">Церковные лавки</div><div class="pilgrim-card-sub">Магазины при храмах и монастырях</div></div></a>
-            <a href="holiness.html" class="pilgrim-card"><div class="pilgrim-icon">💧</div><div><div class="pilgrim-card-title">Святые источники</div><div class="pilgrim-card-sub">Купели и источники рядом</div></div></a>
-            <a href="routes/routes.html" class="pilgrim-card"><div class="pilgrim-icon">🚗</div><div><div class="pilgrim-card-title">Парковка</div><div class="pilgrim-card-sub">Парковочные места у объектов</div></div></a>
-            <a href="calendar.html" class="pilgrim-card"><div class="pilgrim-icon">👪</div><div><div class="pilgrim-card-title">Для семьи</div><div class="pilgrim-card-sub">Советы и удобства для семей с детьми</div></div></a>
+            <a href="routes/routes.html?tab=services" class="pilgrim-card"><div class="pilgrim-icon" data-ui-icon="user"></div><div><div class="pilgrim-card-title">Паломнические службы</div><div class="pilgrim-card-sub">Каталог контактов · требует проверки</div></div></a>
+            <a href="routes/routes.html" class="pilgrim-card"><div class="pilgrim-icon" data-ui-icon="route"></div><div><div class="pilgrim-card-title">Выбрать маршрут</div><div class="pilgrim-card-sub">Места и остановки для вашего пути</div></div></a>
+            <a href="food.html" class="pilgrim-card"><div class="pilgrim-icon" data-ui-icon="food"></div><div><div class="pilgrim-card-title">Трапеза и рецепты</div><div class="pilgrim-card-sub">Редакционные подборки к календарю</div></div></a>
+            <a href="catalog/catalog.html?type=holy_spring" class="pilgrim-card"><div class="pilgrim-icon" data-ui-icon="pin"></div><div><div class="pilgrim-card-title">Святые источники</div><div class="pilgrim-card-sub">Источники в общем каталоге мест</div></div></a>
+            <a href="pilgrim/infrastructure.html#services" class="pilgrim-card"><div class="pilgrim-icon" data-ui-icon="cross"></div><div><div class="pilgrim-card-title">Где остановиться и поесть</div><div class="pilgrim-card-sub">Инфраструктура M5.6 · только после проверки источников</div></div></a>
+            <a href="pilgrim/infrastructure.html#review" class="pilgrim-card"><div class="pilgrim-icon" data-ui-icon="info"></div><div><div class="pilgrim-card-title">Удобства в дороге</div><div class="pilgrim-card-sub">12 типов инфраструктуры и очередь проверки legacy-данных</div></div></a>
         </div>
     </section>
 
-    <section class="journal-cal"><div class="journal-cal-grid">
-        <div><div class="section-label">Журнал</div><div class="section-header" style="margin-bottom:24px;"><h2 class="section-title" style="color:#fff;">Путь,<br><em>пройденный сердцем</em></h2><a href="journal.html" class="link-all">Все статьи &rarr;</a></div><div class="journal-grid"><a href="#" class="journal-main"><div class="journal-main-img">⛪</div><div class="journal-main-body"><span class="journal-tag">Паломничество</span><div class="journal-main-title">Почему тысячи людей каждый год приезжают в Оптину пустынь</div><div class="journal-main-sub">История монастыря, духовное наследие и советы для паломников.</div><div class="journal-date">14 мая 2024</div></div></a><div class="journal-small-list"><a href="#" class="journal-small"><div class="journal-small-img">🕊️</div><div><div class="journal-small-title">Паломничество в Дивеево: что важно знать</div><div class="journal-small-date">10 мая 2024</div></div></a><a href="#" class="journal-small"><div class="journal-small-img">💧</div><div><div class="journal-small-title">Святые источники Подмосковья</div><div class="journal-small-date">8 мая 2024</div></div></a></div></div></div>
+    <section class="journal-cal deferred-section"><div class="journal-cal-grid">
+        <div><div class="section-label">Журнал</div><div class="section-header" style="margin-bottom:24px;"><h2 class="section-title" style="color:#fff;">Путь,<br><em>пройденный сердцем</em></h2><a href="journal.html" class="link-all">Все статьи &rarr;</a></div><div class="journal-grid" id="homeJournalPreview"><div class="journal-main" id="homeJournalFeatured" aria-busy="true"><div class="journal-main-body"><div class="journal-main-title">Загрузка журнала…</div></div></div><div class="journal-small-list" id="homeJournalList"></div></div></div>
         <div><div class="section-label">Православный календарь</div><div class="cal-widget-box"><div class="cal-widget-title"><span>Ближайшие дни</span><a href="calendar.html" class="cal-widget-link">Смотреть все &rarr;</a></div><div id="calendarWidgetList"></div></div></div>
     </div></section>
 
-    <section class="cta-section"><h2 class="cta-title">Сохраним <em>наследие</em> вместе</h2><p class="cta-sub">Присоединяйтесь к сообществу исследователей духовных маршрутов России и стран СНГ.</p><div class="cta-actions"><a href="#" class="btn-cta btn-gold">Узнать больше</a><a href="#" class="btn-cta" style="background:rgba(255,255,255,0.08);color:#fff;border:1px solid rgba(255,255,255,0.2);">Связаться с нами &rarr;</a></div></section>
+    <section class="cta-section deferred-section"><h2 class="cta-title">Сохраним <em>наследие</em> вместе</h2><p class="cta-sub">Присоединяйтесь к сообществу исследователей духовных маршрутов России и стран СНГ.</p><div class="cta-actions"><a href="about.html" class="btn-cta btn-gold">Узнать больше</a><a href="mailto:hello@pravmir.ru" class="btn-cta" style="background:rgba(255,255,255,0.08);color:#fff;border:1px solid rgba(255,255,255,0.2);">Связаться с нами &rarr;</a></div></section>
 
-    <div class="contribute"><div class="contribute-grid"><div><div class="contribute-title">Помогите сделать путеводитель лучше</div><div class="contribute-sub">Делитесь фотографиями, предлагайте места, оставляйте отзывы и советы паломникам.</div></div><div class="contribute-action"><div class="contribute-action-icon">📍</div><div class="contribute-action-label">Добавить место</div><div class="contribute-action-sub">Предложить святыню</div></div><div class="contribute-action"><div class="contribute-action-icon">📸</div><div class="contribute-action-label">Добавить фото</div><div class="contribute-action-sub">Поделиться красотой</div></div><div class="contribute-action"><div class="contribute-action-icon">✍️</div><div class="contribute-action-label">Написать отзыв</div><div class="contribute-action-sub">Ваш опыт важен</div></div><div class="contribute-action"><div class="contribute-action-icon">🗺️</div><div class="contribute-action-label">Маршрут</div><div class="contribute-action-sub">Поделиться путём</div></div></div></div>
+    <div class="contribute"><div class="contribute-grid"><div><div class="contribute-title">Путеводитель, который растёт вместе с вами</div><div class="contribute-sub">Предложения мест, фотографии и отзывы появятся после запуска аккаунтов. Сейчас можно написать нам через обратную связь.</div></div><div class="contribute-action is-coming-soon"><div class="contribute-action-icon" data-ui-icon="pin"></div><div class="contribute-action-label">Добавить место</div><div class="contribute-action-sub">После запуска аккаунтов</div></div><div class="contribute-action is-coming-soon"><div class="contribute-action-icon" data-ui-icon="compass"></div><div class="contribute-action-label">Добавить фото</div><div class="contribute-action-sub">После запуска аккаунтов</div></div><div class="contribute-action is-coming-soon"><div class="contribute-action-icon" data-ui-icon="book"></div><div class="contribute-action-label">Написать отзыв</div><div class="contribute-action-sub">После запуска аккаунтов</div></div><div class="contribute-action is-coming-soon"><div class="contribute-action-icon" data-ui-icon="route"></div><div class="contribute-action-label">Поделиться маршрутом</div><div class="contribute-action-sub">После запуска аккаунтов</div></div></div></div>
 
-    <div class="stats-bar"><div class="stat-item"><div class="stat-num" id="stat-objects">1 200+</div><div class="stat-label">Объектов в базе</div></div><div class="stat-item"><div class="stat-num" id="stat-routes">85+</div><div class="stat-label">Маршрутов</div></div><div class="stat-item"><div class="stat-num" id="stat-regions">15</div><div class="stat-label">Стран и регионов</div></div><div class="stat-item"><div class="stat-num" id="stat-geo">100%</div><div class="stat-label">Геопозиция каждой святыни</div></div></div>
+    <div class="stats-bar"><div class="stat-item"><div class="stat-num" id="stat-objects">12 957</div><div class="stat-label">Мест в каталоге</div></div><div class="stat-item"><div class="stat-num" id="stat-routes">2</div><div class="stat-label">Маршрутов</div></div><div class="stat-item"><div class="stat-num" id="stat-regions">18</div><div class="stat-label">Регионов</div></div><div class="stat-item"><div class="stat-num" id="stat-geo">96%</div><div class="stat-label">Мест с координатами</div></div></div>
 
+    </main>
     <div id="footer-container"></div>
 
     <script src="js/config.js"></script>
     <script src="js/components.js"></script>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
-    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll('.map-filter').forEach(btn => {
-                btn.addEventListener('click', () => {
-                    document.querySelectorAll('.map-filter').forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-                });
-            });
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(e => { if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'translateY(0)'; } });
-            }, { threshold: 0.1 });
-            document.querySelectorAll('.place-card, .route-card, .pilgrim-card, .journal-main, .journal-small').forEach(el => {
-                el.style.opacity = '0'; el.style.transform = 'translateY(20px)'; el.style.transition = 'opacity 0.5s ease, transform 0.5s ease'; observer.observe(el);
-            });
-
-            // ===== КАЛЕНДАРЬ =====
-            const calendar2026 = [ { date: '2026-01-07', title: 'РОЖДЕСТВО ХРИСТОВО', type: 'holiday' }, { date: '2026-01-19', title: 'КРЕЩЕНИЕ ГОСПОДНЕ', type: 'holiday' }, { date: '2026-02-15', title: 'СРЕТЕНИЕ ГОСПОДНЕ', type: 'holiday' }, { date: '2026-02-23', title: 'Начало ВЕЛИКОГО ПОСТА', type: 'fast' }, { date: '2026-04-07', title: 'БЛАГОВЕЩЕНИЕ ПРЕСВЯТОЙ БОГОРОДИЦЫ', type: 'holiday' }, { date: '2026-04-12', title: 'ПАСХА ХРИСТОВА', type: 'holiday' }, { date: '2026-05-31', title: 'ДЕНЬ СВЯТОЙ ТРОИЦЫ', type: 'holiday' }, { date: '2026-06-01', title: 'Начало ПЕТРОВА ПОСТА', type: 'fast' }, { date: '2026-07-12', title: 'Апостолов Петра и Павла', type: 'holiday' }, { date: '2026-11-28', title: 'Начало РОЖДЕСТВЕНСКОГО ПОСТА', type: 'fast' }, { date: '2026-12-06', title: 'Святителя Николая Чудотворца', type: 'event' } ];
-            function getEvent(dateStr) { const ev = calendar2026.find(e => e.date === dateStr); return ev; }
-            function getIcon(type) { if (type === 'holiday') return '✨'; if (type === 'fast') return '🕯️'; return '✝️'; }
-            const widgetList = document.getElementById('calendarWidgetList'); const today = new Date(); let found = 0;
-            for (let i = 0; i < 60; i++) { const checkDate = new Date(today); checkDate.setDate(today.getDate() + i); const checkStr = checkDate.toISOString().split('T')[0]; const event = getEvent(checkStr); if (event) { const entry = document.createElement('div'); entry.className = 'cal-widget-entry'; entry.innerHTML = `<div class="cal-widget-date"><div class="cal-widget-date-day">${checkDate.getDate()}</div><div class="cal-widget-date-month">${['ЯНВ','ФЕВ','МАР','АПР','МАЙ','ИЮН','ИЮЛ','АВГ','СЕН','ОКТ','НОЯ','ДЕК'][checkDate.getMonth()]}</div></div><div class="cal-widget-icon">${getIcon(event.type)}</div><div><div class="cal-widget-entry-title">${event.title}</div><div class="cal-widget-entry-sub">${checkDate.getDate()} ${['янв','фев','мар','апр','май','июн','июл','авг','сен','окт','ноя','дек'][checkDate.getMonth()]}</div></div>`; widgetList.appendChild(entry); found++; if (found >= 4) break; } }
-            if (found === 0) { widgetList.innerHTML = `<div class="cal-widget-entry"><div class="cal-widget-date"><div class="cal-widget-date-day">—</div><div class="cal-widget-date-month">—</div></div><div class="cal-widget-icon">📖</div><div><div class="cal-widget-entry-title">Нет ближайших событий</div><div class="cal-widget-entry-sub">проверьте календарь</div></div></div>`; }
-
-            // ===== ИНИЦИАЛИЗАЦИЯ КАРТЫ (ЗУМ-КНОПКИ В ПРАВОМ ВЕРХНЕМ УГЛУ) =====
-            window.pravmirMap = L.map('map-our', {
-                zoomControl: false // Отключаем стандартные кнопки зума, чтобы добавить свои
-            }).setView([55.7558, 37.6173], 5);
-            
-            // Включаем кнопки зума в правый верхний угол
-            L.control.zoom({ position: 'topright' }).addTo(window.pravmirMap);
-
-            L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; CartoDB',
-                maxZoom: 18, minZoom: 3
-            }).addTo(window.pravmirMap);
-
-            const markers = L.markerClusterGroup({
-                maxClusterRadius: 40,
-                spiderfyOnMaxZoom: true,
-                showCoverageOnHover: false,
-                iconCreateFunction: function(cluster) {
-                    return L.divIcon({ html: `<div class="custom-cluster-icon">${cluster.getChildCount()}</div>`, className: '', iconSize: [32, 32] });
-                }
-            });
-
-            const urls = ['data/spb_temples.json'];
-            Promise.all(urls.map(url => fetch(url).then(resp => resp.json())))
-                .then(results => {
-                    const combinedData = results.flat();
-                    combinedData.forEach(item => {
-                        if (item.lat && item.lon && item.lat !== 0 && item.lon !== 0) {
-                            const icon = L.divIcon({ html: '<span style="color: #C8941A; font-size: 26px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">⛪</span>', iconSize: [26, 26], popupAnchor: [0, -15] });
-                            const marker = L.marker([item.lat, item.lon], { icon: icon });
-                            const statusHtml = item.status ? `<br><span style="font-size: 12px; color: #6B5A3A;">Статус: ${item.status}</span>` : '';
-                            const linkHtml = item.link ? `<a href="${item.link}">Подробнее →</a>` : '';
-                            marker.bindPopup(`<div style="min-width: 180px;"><div style="font-weight: 700; font-size: 16px; margin-bottom: 4px;">${item.name}</div><div style="font-size: 13px; color: #6B5A3A; margin-bottom: 4px;">${item.region}</div>${statusHtml}<div style="margin-top:8px;">${linkHtml}</div></div>`);
-                            markers.addLayer(marker);
-                        }
-                    });
-                    window.pravmirMap.addLayer(markers);
-                    try { document.getElementById('stat-objects').textContent = combinedData.length + '+'; const regions = new Set(combinedData.map(item => item.region)); document.getElementById('stat-regions').textContent = regions.size; } catch (e) {}
-                })
-                .catch(err => console.error('Ошибка загрузки данных карты:', err));
-
-            // ===== ЛОГИКА: ПОКАЗАТЬ НА КАРТЕ =====
-            const mapTarget = sessionStorage.getItem('mapTarget');
-            if (mapTarget) {
-                try {
-                    switchMapTab('map-our', 'Наша карта');
-                    const target = JSON.parse(mapTarget);
-                    window.pravmirMap.setView([target.lat, target.lon], 14);
-                    L.popup().setLatLng([target.lat, target.lon])
-                        .setContent(`<strong>${target.name}</strong><br><a href="${target.link}">Подробнее →</a>`)
-                        .openOn(window.pravmirMap);
-                    sessionStorage.removeItem('mapTarget');
-                } catch (e) { sessionStorage.removeItem('mapTarget'); }
-            }
-
-            // ===== ЛОГИКА: ПОСТРОИТЬ МАРШРУТ =====
-            const mapRoute = sessionStorage.getItem('mapRoute');
-            if (mapRoute) {
-                let routingControl = null;
-                try {
-                    const route = JSON.parse(mapRoute);
-                    switchMapTab('map-our', 'Наша карта');
-                    
-                    setTimeout(() => {
-                        window.pravmirMap.invalidateSize();
-
-                        function drawRoute(startLat, startLon, endLat, endLon) {
-                            if (routingControl) {
-                                window.pravmirMap.removeControl(routingControl);
-                                routingControl = null;
-                            }
-                            routingControl = L.Routing.control({
-                                waypoints: [ L.latLng(startLat, startLon), L.latLng(endLat, endLon) ],
-                                routeWhileDragging: true,
-                                addWaypoints: false,
-                                language: 'ru',
-                                collapsible: true,
-                                icon: '🚗',
-                                createMarker: function() { return null; },
-                                router: L.Routing.osrmv1({ serviceUrl: 'https://router.project-osrm.org/route/v1' })
-                            }).addTo(window.pravmirMap);
-
-                            routingControl.on('routesfound', function(e) {
-                                let container = routingControl.getContainer();
-                                if (container && !document.getElementById('start_navigation_btn')) {
-                                    let panel = container.querySelector('.leaflet-routing-container');
-                                    if (panel) {
-                                        let btn = document.createElement('button');
-                                        btn.id = 'start_navigation_btn';
-                                        btn.className = 'btn-nav btn-gold';
-                                        btn.style.cssText = 'margin-top: 12px; width: 100%; padding: 12px; border-radius: var(--radius-sm); font-weight: 600; font-size: 14px; cursor: pointer; border: none;';
-                                        btn.textContent = '🚗 Начать навигацию (внешнее приложение)';
-                                        btn.onclick = function() {
-                                            const yandexUrl = `https://yandex.ru/maps/?rtext=~${endLat},${endLon}`;
-                                            const googleUrl = `https://www.google.com/maps/dir/?api=1&destination=${endLat},${endLon}`;
-                                            if (confirm('Открыть маршрут в Яндекс Картах для навигации?')) {
-                                                window.open(yandexUrl, '_blank');
-                                            } else {
-                                                window.open(googleUrl, '_blank');
-                                            }
-                                        };
-                                        panel.appendChild(btn);
-                                    }
-                                }
-                            });
-                        }
-
-                        if (navigator.geolocation) {
-                            navigator.geolocation.getCurrentPosition(
-                                function(position) {
-                                    drawRoute(position.coords.latitude, position.coords.longitude, route.lat, route.lon);
-                                    sessionStorage.removeItem('mapRoute');
-                                },
-                                function() {
-                                    drawRoute(55.7558, 37.6173, route.lat, route.lon);
-                                    sessionStorage.removeItem('mapRoute');
-                                }
-                            );
-                        } else {
-                            drawRoute(55.7558, 37.6173, route.lat, route.lon);
-                            sessionStorage.removeItem('mapRoute');
-                        }
-                    }, 200);
-                } catch (e) {
-                    console.error('Ошибка маршрутизации:', e);
-                    sessionStorage.removeItem('mapRoute');
-                }
-            }
-        });
-    </script>
-
-<script id="home-search-script">
-(function(){
-const input=document.querySelector('.search-bar input');
-const button=document.querySelector('.search-bar .btn-search');
-const bar=document.querySelector('.search-bar');
-if(!input||!button||!bar)return;
-
-const results=document.createElement('div');
-results.className='home-search-results';
-results.setAttribute('role','listbox');
-bar.appendChild(results);
-
-let data=null;
-
-const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({
-'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'
-}[c]));
-
-const norm=v=>String(v??'').toLocaleLowerCase('ru-RU').trim();
-
-async function load(){
-if(data)return data;
-const [catalog,temples]=await Promise.all([
-fetch('data/catalog.json').then(r=>r.ok?r.json():[]),
-fetch('data/spb_temples.json').then(r=>r.ok?r.json():[])
-]);
-
-const a=catalog.map(x=>({
-...x,
-source:'catalog',
-link:String(x.link||'').replace(/^\.\.\//,'')
-}));
-
-const b=temples.map(x=>({...x,source:'map'}));
-
-const seen=new Set();
-data=[...a,...b].filter(x=>{
-const key=[norm(x.name),norm(x.region),x.lat,x.lon].join('|');
-if(seen.has(key))return false;
-seen.add(key);
-return !!x.name;
-});
-
-return data;
-}
-
-function openItem(x){
-results.classList.remove('open');
-
-if(x.link){
-location.href=x.link;
-return;
-}
-
-if(Number.isFinite(Number(x.lat))&&Number.isFinite(Number(x.lon))){
-sessionStorage.setItem('mapTarget',JSON.stringify({
-lat:Number(x.lat),
-lon:Number(x.lon),
-name:x.name
-}));
-location.href='index.html#map';
-}
-}
-
-function render(items){
-if(!items.length){
-results.innerHTML='<div class="home-search-empty">Ничего не найдено. Попробуйте название храма или город.</div>';
-results.classList.add('open');
-return;
-}
-
-results.innerHTML=items.slice(0,8).map((x,i)=>{
-const cat=x.category||'Святое место';
-const place=x.region||x.address||'';
-const icon=cat==='Монастырь'?'🕍':cat==='Часовня'?'🕯️':'⛪';
-
-return `<button type="button" class="home-search-result" data-index="${i}">
-<span class="home-search-result-icon">${icon}</span>
-<span class="home-search-result-text">
-<span class="home-search-result-name">${esc(x.name)}</span>
-<span class="home-search-result-meta">${esc(place)} · ${esc(cat)}</span>
-</span>
-</button>`;
-}).join('');
-
-results.querySelectorAll('.home-search-result').forEach(btn=>{
-btn.addEventListener('click',()=>{
-openItem(items[Number(btn.dataset.index)]);
-});
-});
-
-results.classList.add('open');
-}
-
-async function search(){
-const q=norm(input.value);
-
-if(!q){
-results.classList.remove('open');
-input.focus();
-return;
-}
-
-const all=await load();
-const terms=q.split(/\s+/).filter(Boolean);
-
-const found=all.map(x=>{
-const name=norm(x.name);
-const hay=norm([
-x.name,x.region,x.category,x.address,x.status
-].join(' '));
-
-let score=0;
-
-if(name===q)score+=150;
-if(name.startsWith(q))score+=100;
-else if(name.includes(q))score+=60;
-
-if(norm(x.region).includes(q))score+=35;
-
-for(const term of terms){
-if(hay.includes(term))score+=10;
-}
-
-return {x,score};
-})
-.filter(x=>x.score>0)
-.sort((a,b)=>b.score-a.score)
-.map(x=>x.x);
-
-render(found);
-}
-
-input.addEventListener('input',()=>{
-if(input.value.trim().length>=2)search();
-else results.classList.remove('open');
-});
-
-input.addEventListener('keydown',e=>{
-if(e.key==='Enter'){
-e.preventDefault();
-search();
-}
-if(e.key==='Escape')results.classList.remove('open');
-});
-
-button.addEventListener('click',e=>{
-e.preventDefault();
-search();
-});
-
-document.addEventListener('click',e=>{
-if(!bar.contains(e.target))results.classList.remove('open');
-});
-})();
-</script>
+    <script src="js/data-layer.js"></script>
+    <script src="js/content-layer.js"></script>
+    <script src="js/liturgical-layer.js"></script>
+    <script src="js/event-layer.js"></script>
+    <script src="js/food-layer.js"></script>
+    <script src="js/news-layer.js"></script>
+    <script src="js/library-layer.js"></script>
+    <script src="js/today-layer.js"></script>
+    <script src="js/knowledge-layer.js"></script>
+    <script src="js/pilgrim-layer.js"></script>
+    <script src="js/map-discovery.js"></script>
+    <script src="js/map-runtime.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/home-content.js"></script>
+    <script src="js/search.js"></script>
 
 </body>
 </html>

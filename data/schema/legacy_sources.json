@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "sources": {
+    "data/spb_temples.json": {
+      "provider": "pravmir-legacy-spb",
+      "format": "legacy_spb_json",
+      "region": "Санкт-Петербург",
+      "source_id_field": "id",
+      "runtime_id_prefix": "legacy-spb-"
+    }
+  }
+}

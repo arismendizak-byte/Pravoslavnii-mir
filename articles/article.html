@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Статья — Православный Мир</title>
+    <link rel="manifest" href="../manifest.json">
+    <link rel="canonical" id="canonicalLink" href="article.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/article.css">
+</head>
+<body>
+    <div id="nav-container"></div>
+    <div id="bottom-nav-container"></div>
+    <main class="page-section article-shell" id="articleShell">
+        <div class="breadcrumbs"><a href="../index.html">Главная</a> &rarr; <a href="../journal.html">Журнал</a> &rarr; <span id="breadcrumbTitle">Материал</span></div>
+        <div id="articleLoading" class="article-error">Загрузка материала…</div>
+        <article id="articleView" hidden>
+            <header class="article-header">
+                <div class="article-hero-emoji" id="articleEmoji">📖</div>
+                <div class="article-kicker" id="articleCategories"></div>
+                <h1 id="articleTitle"></h1>
+                <p class="article-summary" id="articleSummary"></p>
+                <div class="article-meta-top" id="articleMeta"></div>
+            </header>
+            <section class="article-source-panel" id="sourcePanel">
+                <h2 id="sourceHeading">Об источнике</h2>
+                <p id="sourceStatus"></p>
+                <details class="source-details"><summary>Происхождение материала</summary><p id="sourceDetails" class="source-details-content"></p></details>
+                <div class="article-source-actions">
+                    <a id="externalSourceLink" href="#" target="_blank" rel="noopener noreferrer external" hidden>Перейти к оригиналу →</a>
+                    <button id="readLaterBtn" type="button">📖 Читать позже</button>
+                </div>
+            </section>
+            <div class="article-content" id="articleBody"></div>
+            <section class="article-graph-links" id="graphLinks" hidden>
+                <strong>Места, святыни и маршруты</strong>
+                <div id="graphLinksList"></div>
+            </section>
+            <section class="article-related" id="relatedSection" hidden>
+                <h2>Связанные материалы</h2>
+                <div class="article-related-grid" id="relatedGrid"></div>
+            </section>
+            <a href="../journal.html" class="back-btn">← Вернуться к журналу</a>
+        </article>
+    </main>
+    <div id="footer-container"></div>
+    <script src="../js/config.js"></script>
+    <script src="../js/components.js"></script>
+    <script src="../js/data-layer.js"></script>
+    <script src="../js/liturgical-layer.js"></script>
+    <script src="../js/content-layer.js"></script>
+    <script src="../js/my-pm-layer.js"></script>
+    <script src="../js/article.js"></script>
+</body>
+</html>

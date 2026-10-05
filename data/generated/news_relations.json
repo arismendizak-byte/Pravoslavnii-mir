@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "7d0fc92ae7338a63670089a6366266ab30fcf67d1d779e73ac3f346f2bdaddc1",
+  "count": 1,
+  "relations": [
+    {
+      "id": "pm-news-rel-4612d1e1cd96fca88a31",
+      "relation_type": "about_place",
+      "from": {
+        "kind": "news",
+        "id": "pm-news-ef682c7d0480fa129507"
+      },
+      "to": {
+        "kind": "place",
+        "id": "pm-9e8bc6fff182514f91cf1739e41d2839"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-patriarchia-verification-2026-10-05",
+          "source_id": "patriarchia-123033",
+          "source_file": "data/news_sources/verified_records_2026-10-05.json",
+          "source_row": 4,
+          "source_url": "https://eparchia.patriarchia.ru/article/123033",
+          "migrated_from": null
+        }
+      ]
+    }
+  ]
+}

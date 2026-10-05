@@ -1,0 +1,6 @@
+{
+  "schema_version": "1.0.0",
+  "provider": "pravmir-verified-organisation-events",
+  "trust_layer": "verified_organisation",
+  "events": []
+}

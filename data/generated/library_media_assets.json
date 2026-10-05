@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.1.0",
+  "source_snapshot_sha256": "413c8dc21e944c9609d18cf7817a0a163b6de40dc3330958d24110aa8b58fee1",
+  "count": 2,
+  "media_assets": [
+    {
+      "id": "pm-media-64473668a8d18211a3a6",
+      "title": "Богородице Дево, радуйся — знаменный распев",
+      "media_kind": "audio",
+      "work_ref": "pm-work-2aefda2a5f933f716a67",
+      "storage_mode": "external_url",
+      "asset_path": null,
+      "external_url": "https://commons.wikimedia.org/wiki/File:04_Bogorodice_Devo_radujsja_znamennyj_raspev_grind_Moscow_Patriarchal_Choir.ogg",
+      "rights_status": "public_domain_verified",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "copyright_notice": "Moscow Patriarchal Choir of the Russian Orthodox Church; source page marks the recording CC0 1.0 / public-domain dedication.",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikimedia-commons-rights-2026-10-05",
+          "source_id": "media:bogorodice-devo-znamenny-audio",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://commons.wikimedia.org/wiki/File:04_Bogorodice_Devo_radujsja_znamennyj_raspev_grind_Moscow_Patriarchal_Choir.ogg",
+          "source_row": 1,
+          "rights_evidence_url": "https://commons.wikimedia.org/wiki/File:04_Bogorodice_Devo_radujsja_znamennyj_raspev_grind_Moscow_Patriarchal_Choir.ogg",
+          "source_sha1": "50aa361893437409ad4d8181c77aec1086fd502a",
+          "source_size": 452799,
+          "source_creator": "Moscow Patriarchal Choir of the Russian Orthodox Church"
+        }
+      ]
+    },
+    {
+      "id": "pm-media-0c70a4f711b96258f8d7",
+      "title": "Богоявление в Салониках — Великое освящение воды",
+      "media_kind": "video",
+      "work_ref": null,
+      "storage_mode": "external_url",
+      "asset_path": null,
+      "external_url": "https://commons.wikimedia.org/wiki/File:Theophany_in_Thessaloniki.webm",
+      "rights_status": "open_license",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "copyright_notice": "Geraki (Konstantinos Stampoulis), CC BY-SA 4.0; source description identifies Theophany/Epiphany and Great Blessing of the Water.",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikimedia-commons-rights-2026-10-05",
+          "source_id": "media:theophany-thessaloniki-video",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Theophany_in_Thessaloniki.webm",
+          "source_row": 2,
+          "rights_evidence_url": "https://commons.wikimedia.org/wiki/File:Theophany_in_Thessaloniki.webm",
+          "source_sha1": "6a7020afb677054c7b14a5dcdf8a7267e98b05a0",
+          "source_size": 99959189,
+          "source_creator": "Geraki (Konstantinos Stampoulis)"
+        }
+      ]
+    }
+  ]
+}

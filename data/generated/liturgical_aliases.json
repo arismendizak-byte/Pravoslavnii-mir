@@ -1,0 +1,317 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "a9ee762957cf96ade9f1e1d5e01eec3151689d7ed798c30e3cc39c9178151bd9",
+  "count": 31,
+  "aliases": [
+    {
+      "legacy_id": "pm-cal-06d4818f17b2241a5618",
+      "targets": [
+        {
+          "kind": "feast",
+          "id": "pm-feast-06d4818f17b2241a5618",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-078cd89e51d0cc91d74e",
+      "targets": [
+        {
+          "kind": "fasting_rule",
+          "id": "pm-fast-078cd89e51d0cc91d74e",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-0d16d133b2183b48ebb6",
+      "targets": [
+        {
+          "kind": "feast",
+          "id": "pm-feast-0d16d133b2183b48ebb6",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-1329aa553e96ce62d806",
+      "targets": [
+        {
+          "kind": "feast",
+          "id": "pm-feast-1329aa553e96ce62d806",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-14d1b02ea680f9ce3793",
+      "targets": [
+        {
+          "kind": "fasting_rule",
+          "relation_type": "legacy_fast_start",
+          "id": "pm-fast-8e139912f4858f604686"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-1b5916d3536d3b80bd3f",
+      "targets": [
+        {
+          "kind": "commemoration",
+          "id": "pm-comm-1b5916d3536d3b80bd3f",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-2eec1d0a53ab0dda4fa4",
+      "targets": [
+        {
+          "kind": "feast",
+          "id": "pm-feast-2eec1d0a53ab0dda4fa4",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-3190cfc17f4f22699749",
+      "targets": [
+        {
+          "kind": "fasting_rule",
+          "relation_type": "legacy_fast_start",
+          "id": "pm-fast-078cd89e51d0cc91d74e"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-3f6b8888ef0aed43e4d5",
+      "targets": [
+        {
+          "kind": "fasting_rule",
+          "relation_type": "legacy_fast_start",
+          "id": "pm-fast-402636d7f82405187cbd"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-402636d7f82405187cbd",
+      "targets": [
+        {
+          "kind": "fasting_rule",
+          "id": "pm-fast-402636d7f82405187cbd",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-4392fc29019cc3f5a733",
+      "targets": [
+        {
+          "kind": "fasting_rule",
+          "id": "pm-fast-4392fc29019cc3f5a733",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-44391236ccbb9053880f",
+      "targets": [
+        {
+          "kind": "commemoration",
+          "id": "pm-comm-44391236ccbb9053880f",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-464eaad4104098f7ed0e",
+      "targets": [
+        {
+          "kind": "feast",
+          "id": "pm-feast-464eaad4104098f7ed0e",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-47fc5e8a8a1f1181872b",
+      "targets": [
+        {
+          "kind": "commemoration",
+          "id": "pm-comm-47fc5e8a8a1f1181872b",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-58312e1ba4e51051b3ad",
+      "targets": [
+        {
+          "kind": "commemoration",
+          "id": "pm-comm-58312e1ba4e51051b3ad",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-714fb97ce53e3934b482",
+      "targets": [
+        {
+          "kind": "feast",
+          "id": "pm-feast-714fb97ce53e3934b482",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-77e553f688cf6cb2d43d",
+      "targets": [
+        {
+          "kind": "feast",
+          "id": "pm-feast-77e553f688cf6cb2d43d",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-7c05f3a13338f203d591",
+      "targets": [
+        {
+          "kind": "commemoration",
+          "id": "pm-comm-7c05f3a13338f203d591",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-7f2419086b1894a14da8",
+      "targets": [
+        {
+          "kind": "feast",
+          "id": "pm-feast-7f2419086b1894a14da8",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-84206d9b9149f4ae874b",
+      "targets": [
+        {
+          "kind": "commemoration",
+          "id": "pm-comm-84206d9b9149f4ae874b",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-8e139912f4858f604686",
+      "targets": [
+        {
+          "kind": "fasting_rule",
+          "id": "pm-fast-8e139912f4858f604686",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-99d54dd80bb1b3b99e50",
+      "targets": [
+        {
+          "kind": "fasting_rule",
+          "relation_type": "legacy_fast_start",
+          "id": "pm-fast-4392fc29019cc3f5a733"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-9fe64f862bec24c75b51",
+      "targets": [
+        {
+          "kind": "feast",
+          "id": "pm-feast-9fe64f862bec24c75b51",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-a9cd42d8e139aabcf163",
+      "targets": [
+        {
+          "kind": "feast",
+          "id": "pm-feast-a9cd42d8e139aabcf163",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-b3b695bd49798b0770a2",
+      "targets": [
+        {
+          "kind": "feast",
+          "id": "pm-feast-b3b695bd49798b0770a2",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-c5d505838696a3036a6b",
+      "targets": [
+        {
+          "kind": "commemoration",
+          "id": "pm-comm-c5d505838696a3036a6b",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-d2a6b919fe5c37c14aa0",
+      "targets": [
+        {
+          "kind": "feast",
+          "id": "pm-feast-d2a6b919fe5c37c14aa0",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-d430778866669a0e530a",
+      "targets": [
+        {
+          "kind": "commemoration",
+          "id": "pm-comm-d430778866669a0e530a",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-dcfc2961bfad5d4da3ae",
+      "targets": [
+        {
+          "kind": "feast",
+          "id": "pm-feast-dcfc2961bfad5d4da3ae",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-e168192c9f98092e4e02",
+      "targets": [
+        {
+          "kind": "feast",
+          "id": "pm-feast-e168192c9f98092e4e02",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    },
+    {
+      "legacy_id": "pm-cal-fac0126a9ab43e90d972",
+      "targets": [
+        {
+          "kind": "feast",
+          "id": "pm-feast-fac0126a9ab43e90d972",
+          "relation_type": "legacy_calendar_entry"
+        }
+      ]
+    }
+  ]
+}

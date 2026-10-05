@@ -1,0 +1,390 @@
+.journal-header { text-align: center; margin-bottom: 32px; }
+        .journal-header h1 { font-family: 'Playfair Display', serif; font-size: clamp(32px, 4vw, 48px); font-weight: 700; color: var(--dark); line-height: 1.15; }
+        .journal-header h1 em { font-style: italic; color: var(--gold); }
+        .journal-header p { font-size: 16px; color: var(--text-muted); max-width: 600px; margin: 0 auto; line-height: 1.7; }
+
+        /* ---- ОСНОВНЫЕ ВКЛАДКИ ---- */
+        .journal-tabs {
+            display: flex;
+            gap: 4px;
+            background: var(--cream-2);
+            border-radius: var(--radius-md);
+            padding: 4px;
+            margin-bottom: 32px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid var(--cream-2);
+        }
+        .journal-tab {
+            flex: 1;
+            padding: 10px 16px;
+            border: none;
+            border-radius: var(--radius-sm);
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-muted);
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            position: relative;
+        }
+        .journal-tab:hover {
+            color: var(--dark);
+            background: rgba(255,255,255,0.5);
+        }
+        .journal-tab.active {
+            background: var(--white);
+            color: var(--dark);
+            box-shadow: 0 2px 8px rgba(26,18,8,0.08);
+            font-weight: 600;
+        }
+        .journal-tab .tab-icon { margin-right: 6px; }
+        .journal-tab .tab-badge {
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 600;
+            background: var(--gold);
+            color: var(--dark);
+            padding: 1px 8px;
+            border-radius: 100px;
+            margin-left: 6px;
+        }
+        .journal-tab .tab-badge.rpz {
+            background: #1A1208;
+            color: #fff;
+        }
+
+        /* ---- ПОДВКЛАДКИ РПЦ ---- */
+        .rpz-subtabs {
+            display: flex;
+            gap: 2px;
+            background: var(--cream);
+            border-radius: var(--radius-sm);
+            padding: 3px;
+            margin-bottom: 20px;
+            max-width: 300px;
+            border: 1px solid var(--cream-2);
+        }
+        .rpz-subtab {
+            flex: 1;
+            padding: 6px 14px;
+            border: none;
+            border-radius: var(--radius-sm);
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-muted);
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .rpz-subtab:hover {
+            color: var(--dark);
+            background: rgba(255,255,255,0.5);
+        }
+        .rpz-subtab.active {
+            background: var(--white);
+            color: var(--dark);
+            box-shadow: 0 1px 4px rgba(26,18,8,0.06);
+            font-weight: 600;
+        }
+        .rpz-subtab .sub-badge {
+            font-size: 10px;
+            font-weight: 600;
+            background: var(--gold-pale);
+            color: var(--dark-2);
+            padding: 1px 8px;
+            border-radius: 100px;
+            margin-left: 4px;
+        }
+
+        /* ---- КОНТЕНТ ---- */
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.4s ease;
+        }
+        .tab-content.active { display: block; }
+
+        .rpz-sub-content {
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+        .rpz-sub-content.active { display: block; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ---- СЕТКА СТАТЕЙ ---- */
+        .journal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        .article-card {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .article-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-hover);
+        }
+        .article-card .article-img {
+            height: 200px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 64px;
+            background: linear-gradient(135deg, var(--dark-3), #1A3A2A);
+        }
+        .article-card .article-body { padding: 20px; }
+        .article-card .article-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 12px;
+            border-radius: 100px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        .article-card .article-tag.news-tag {
+            background: #2C1E0A;
+            color: #fff;
+        }
+        .article-card .article-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+        .article-card .article-desc {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        .article-card .article-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            color: var(--text-muted);
+            border-top: 1px solid var(--cream-2);
+            padding-top: 12px;
+        }
+        .article-card .article-author { font-weight: 500; color: var(--gold); }
+        .article-card .article-date { font-size: 12px; color: #9E8A6A; }
+        .article-card .article-link {
+            margin-top: 12px;
+            font-size: 13px;
+            color: var(--gold);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            transition: gap 0.25s ease;
+        }
+        .article-card .article-link:hover { gap: 8px; }
+        .article-card .btn-read-later {
+            margin-top: 12px;
+            width: 100%;
+            padding: 10px;
+            background: var(--gold-pale);
+            color: var(--dark);
+            border: 1px solid var(--gold);
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            font-size: 13px;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            transition: background 0.25s ease;
+        }
+        .article-card .btn-read-later:hover { background: var(--gold-light); }
+
+        /* ---- ЗАГОЛОВКИ ВКЛАДОК ---- */
+        .tab-header-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        .tab-header-info .tab-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        .tab-header-info .tab-title em { font-style: italic; color: var(--gold); }
+        .tab-header-info .tab-sub {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        .tab-header-info .tab-link {
+            font-size: 13px;
+            color: var(--gold);
+            font-weight: 500;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            transition: gap 0.25s ease;
+        }
+        .tab-header-info .tab-link:hover { gap: 8px; }
+
+        /* ---- ОФИЦИАЛЬНЫЙ БЕЙДЖ ---- */
+        .official-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(200,148,26,0.1);
+            border: 1px solid rgba(200,148,26,0.2);
+            border-radius: 100px;
+            padding: 3px 12px 3px 10px;
+            font-size: 11px;
+            color: var(--gold);
+            font-weight: 500;
+        }
+        .official-badge::before {
+            content: '✓';
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gold);
+            color: #fff;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            font-size: 10px;
+            font-weight: 700;
+        }
+
+        /* ---- ЗАГРУЗКА ---- */
+        .loading-spinner {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+            grid-column: 1/-1;
+        }
+        .loading-spinner .spinner-icon {
+            font-size: 32px;
+            display: block;
+            margin-bottom: 12px;
+        }
+        .loading-spinner .spinner-dots {
+            display: flex;
+            gap: 6px;
+            justify-content: center;
+            margin-top: 8px;
+        }
+        .loading-spinner .spinner-dots span {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--gold);
+            animation: dotBounce 1.2s ease-in-out infinite;
+        }
+        .loading-spinner .spinner-dots span:nth-child(2) { animation-delay: 0.2s; }
+        .loading-spinner .spinner-dots span:nth-child(3) { animation-delay: 0.4s; }
+
+        @keyframes dotBounce {
+            0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+            40% { transform: scale(1); opacity: 1; }
+        }
+
+        /* ---- ОБНОВЛЕНИЕ ---- */
+        .refresh-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border: 1px solid var(--cream-2);
+            border-radius: var(--radius-sm);
+            background: var(--white);
+            color: var(--text-muted);
+            font-size: 13px;
+            font-family: 'Inter', sans-serif;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+        .refresh-btn:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+        .refresh-btn .refresh-icon {
+            display: inline-block;
+            transition: transform 0.6s ease;
+        }
+        .refresh-btn.spinning .refresh-icon {
+            transform: rotate(360deg);
+        }
+
+        /* ---- КОНТАКТЫ ---- */
+        .rpz-contacts {
+            margin-top: 32px;
+            padding: 20px;
+            background: var(--white);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--cream-2);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+            text-align: center;
+        }
+        .rpz-contacts .contact-item { min-width: 100px; }
+        .rpz-contacts .contact-icon { font-size: 20px; }
+        .rpz-contacts .contact-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        .rpz-contacts .contact-value {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        .rpz-contacts .contact-value a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        @media (max-width: 560px) {
+            .article-card .article-img { height: 160px; }
+            .article-card .article-title { font-size: 18px; }
+            .journal-grid { gap: 16px; }
+            .journal-tabs { flex-direction: column; max-width: 100%; }
+            .journal-tab { padding: 8px 12px; font-size: 13px; }
+            .tab-header-info .tab-title { font-size: 18px; }
+            .rpz-contacts { gap: 16px; padding: 16px; }
+            .rpz-subtabs { max-width: 100%; }
+            .rpz-subtab { font-size: 12px; padding: 5px 10px; }
+        }
+
+/* M5.2 generated journal delivery */
+.journal-filters { display:grid; grid-template-columns:minmax(180px,1.6fr) repeat(2,minmax(150px,1fr)); gap:12px; margin:0 0 24px; }
+.journal-filter { width:100%; min-height:44px; border:1px solid var(--cream-2); border-radius:var(--radius-sm); background:var(--white); color:var(--dark); font:500 14px/1.2 'Inter',sans-serif; padding:10px 12px; }
+.journal-filter:focus { outline:2px solid rgba(200,148,26,.25); border-color:var(--gold); }
+.journal-state { grid-column:1/-1; padding:32px; text-align:center; color:var(--text-muted); background:var(--white); border:1px solid var(--cream-2); border-radius:var(--radius-md); }
+.article-card .article-source { display:flex; align-items:center; gap:6px; font-size:11px; color:var(--text-muted); margin-bottom:8px; }
+.article-card .article-source-badge { display:inline-flex; padding:2px 9px; border-radius:999px; background:var(--cream-2); color:var(--dark-2); font-weight:600; }
+.article-card .article-card-actions { display:flex; gap:8px; align-items:center; margin-top:12px; }
+.article-card .article-card-actions .article-link { margin-top:0; flex:1; }
+.article-card .btn-read-later { margin-top:0; width:auto; flex:0 0 auto; padding:8px 10px; }
+.journal-provenance-note { margin:24px 0 0; padding:14px 16px; border-radius:var(--radius-sm); background:var(--gold-pale); color:var(--dark-2); font-size:13px; line-height:1.55; }
+@media (max-width:760px) { .journal-filters { grid-template-columns:1fr; } }

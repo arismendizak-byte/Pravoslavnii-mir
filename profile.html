@@ -2,12 +2,12 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <title>Личный кабинет — Православный Мир</title>
-    <link rel="manifest" href="/manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Мой ПМ на этом устройстве — Православный Мир</title>
+    <link rel="manifest" href="manifest.json">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
         .profile-layout { display: grid; grid-template-columns: 260px 1fr; gap: 40px; margin-bottom: 60px; }
@@ -31,6 +31,8 @@
         .list-card:hover { transform: translateX(4px); }
         .list-card .item-info { display: flex; flex-direction: column; gap: 4px; }
         .list-card .item-title { font-weight: 600; font-size: 16px; color: var(--dark); }
+        .list-card .item-title a { color: inherit; text-decoration: none; }
+        .list-card .item-title a:hover { color: var(--gold-dark); text-decoration: underline; }
         .list-card .item-sub { font-size: 13px; color: var(--text-muted); }
         .list-card .item-actions { display: flex; gap: 8px; }
         .list-card .item-actions button { background: transparent; border: none; cursor: pointer; font-size: 20px; padding: 4px 8px; border-radius: var(--radius-sm); transition: background var(--transition); }
@@ -38,8 +40,19 @@
         .list-card .item-actions .remove-btn { color: #B00020; }
         .empty-state { text-align: center; padding: 40px 20px; color: var(--text-muted); font-size: 15px; }
         .empty-state .empty-icon { font-size: 48px; margin-bottom: 12px; display: block; }
+        .account-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+        .account-card { background:var(--white); border:1px solid var(--cream-2); border-radius:var(--radius-md); padding:20px; display:flex; flex-direction:column; gap:12px; }
+        .account-card h3 { font-family:'Playfair Display',serif; font-size:19px; color:var(--dark); margin:0; }
+        .account-card label { font-size:13px; font-weight:600; color:var(--text); display:block; margin-bottom:4px; }
+        .account-card input { width:100%; padding:10px 12px; border:1px solid var(--cream-2); border-radius:var(--radius-sm); font:inherit; background:var(--white); color:var(--text); }
+        .account-actions { display:flex; gap:8px; flex-wrap:wrap; }
+        .account-actions button { border:0; border-radius:var(--radius-sm); padding:10px 14px; cursor:pointer; font:inherit; font-weight:600; background:var(--gold); color:var(--dark); }
+        .account-actions button.secondary { background:var(--cream-2); }
+        .account-actions button.danger { background:#8d1b1b; color:#fff; }
+        .account-status { font-size:13px; color:var(--text-muted); min-height:1.3em; }
+        .account-card[hidden] { display:none !important; }
         @media (max-width: 900px) { .profile-layout { grid-template-columns: 1fr; gap: 24px; } .profile-sidebar { padding: 16px; } .profile-sidebar .avatar { width: 60px; height: 60px; font-size: 30px; } .dashboard-stats { grid-template-columns: 1fr 1fr; } .profile-menu { flex-direction: row; flex-wrap: wrap; justify-content: center; } .profile-menu li a { font-size: 13px; padding: 8px 12px; } }
-        @media (max-width: 560px) { .dashboard-stats { grid-template-columns: 1fr; } .list-card { flex-direction: column; align-items: flex-start; gap: 12px; } .list-card .item-actions { width: 100%; justify-content: flex-end; } .stat-card .stat-num { font-size: 28px; } }
+        @media (max-width: 560px) { .dashboard-stats { grid-template-columns: 1fr; } .list-card { flex-direction: column; align-items: flex-start; gap: 12px; } .list-card .item-actions { width: 100%; justify-content: flex-end; } .stat-card .stat-num { font-size: 28px; } .account-grid { grid-template-columns:1fr; } }
     </style>
 </head>
 <body>
@@ -47,37 +60,99 @@
     <div id="bottom-nav-container"></div>
 
     <div class="page-section">
-        <div class="breadcrumbs"><a href="index.html">Главная</a> &rarr; <span>Личный кабинет</span></div>
+        <div class="breadcrumbs"><a href="index.html">Главная</a> &rarr; <span>Мой ПМ</span></div>
         <div class="profile-layout">
             <div class="profile-sidebar">
-                <div class="user-info"><div class="avatar">👤</div><div class="user-name">Паломник</div><div class="user-email">user@example.com</div></div>
+                <div class="user-info"><div class="avatar" data-ui-icon="user"></div><div class="user-name" id="profileDisplayName">Паломник</div><div class="user-email" id="profileDisplayEmail">Локально на этом устройстве</div></div>
                 <ul class="profile-menu">
-                    <li><a href="#" class="active" data-tab="dashboard"><span class="menu-icon">📊</span> Главная</a></li>
-                    <li><a href="#" data-tab="favorites"><span class="menu-icon">❤️</span> Избранное</a></li>
-                    <li><a href="#" data-tab="readlater"><span class="menu-icon">📖</span> Читать позже</a></li>
-                    <li><a href="#" data-tab="routes"><span class="menu-icon">🗺️</span> Мои маршруты</a></li>
-                    <li><a href="#" data-tab="settings"><span class="menu-icon">⚙️</span> Настройки</a></li>
+                    <li><a href="#dashboard" class="active" data-tab="dashboard"><span class="menu-icon" data-ui-icon="sun"></span> Главная</a></li>
+                    <li><a href="#favorites" data-tab="favorites"><span class="menu-icon" data-ui-icon="heart"></span> Избранное</a></li>
+                    <li><a href="#readlater" data-tab="readlater"><span class="menu-icon" data-ui-icon="book"></span> Читать позже</a></li>
+                    <li><a href="#routes" data-tab="routes"><span class="menu-icon" data-ui-icon="route"></span> Мои маршруты</a></li>
+                    <li><a href="#account" data-tab="account"><span class="menu-icon" data-ui-icon="user"></span> Аккаунт</a></li>
+                    <li><a href="#settings" data-tab="settings"><span class="menu-icon" data-ui-icon="settings"></span> Настройки</a></li>
                 </ul>
             </div>
 
             <div class="profile-content">
                 <div id="dashboard" class="tab-content active">
-                    <h2 class="dashboard-title">Добро пожаловать, Паломник!</h2>
+                    <h2 class="dashboard-title" id="profileGreeting">Добро пожаловать, Паломник!</h2>
+                    <p style="margin:-8px 0 20px;color:var(--text-muted);">«Мой ПМ» остаётся local-first: списки работают без аккаунта. При доступном backend можно войти и вручную сохранить или восстановить локальное состояние; автоматической отправки localStorage нет.</p>
                     <div class="dashboard-stats">
                         <div class="stat-card"><div class="stat-num" id="favCount">0</div><div class="stat-label">В избранном</div></div>
                         <div class="stat-card"><div class="stat-num" id="readLaterCount">0</div><div class="stat-label">Читать позже</div></div>
-                        <div class="stat-card"><div class="stat-num">0</div><div class="stat-label">Маршрутов</div></div>
+                        <div class="stat-card"><div class="stat-num" id="routeCount">0</div><div class="stat-label">Маршрутов</div></div>
+                    </div>
+                    <div id="myPmStatus" class="list-card" style="align-items:flex-start;">
+                        <div class="item-info"><div class="item-title">Local-first профиль</div><div class="item-sub" id="myPmStatusText">Локальные данные загружаются без backend.</div></div>
+                    </div>
+                    <div id="legacyMigrationBox" class="list-card" hidden style="align-items:flex-start;">
+                        <div class="item-info"><div class="item-title">Данные прежней версии сохранены</div><div class="item-sub" id="legacyMigrationText"></div></div>
                     </div>
                 </div>
-                <div id="favorites" class="tab-content"><h2 class="dashboard-title">❤️ Избранное</h2><div id="favoritesList"><div class="empty-state"><span class="empty-icon">❤️</span> У вас пока нет избранных мест</div></div></div>
-                <div id="readlater" class="tab-content"><h2 class="dashboard-title">📖 Читать позже</h2><div id="readLaterList"><div class="empty-state"><span class="empty-icon">📖</span> Список пуст. Добавьте статьи из журнала</div></div></div>
-                <div id="routes" class="tab-content"><h2 class="dashboard-title">🗺️ Мои маршруты</h2><div id="routesList"><div class="empty-state"><span class="empty-icon">🗺️</span> У вас пока нет маршрутов</div></div></div>
+                <div id="favorites" class="tab-content"><h2 class="dashboard-title">Избранное</h2><div id="favoritesList"><div class="empty-state"><span class="empty-icon">❤️</span> У вас пока нет избранных мест</div></div></div>
+                <div id="readlater" class="tab-content"><h2 class="dashboard-title">Читать позже</h2><div id="readLaterList"><div class="empty-state"><span class="empty-icon">📖</span> Список пуст. Добавьте статьи из журнала</div></div></div>
+                <div id="routes" class="tab-content"><h2 class="dashboard-title">Мои маршруты</h2><div id="routesList"><div class="empty-state"><span class="empty-icon">🗺️</span> У вас пока нет маршрутов</div></div></div>
+                <div id="account" class="tab-content">
+                    <h2 class="dashboard-title">Аккаунт и синхронизация</h2>
+                    <p style="margin:-8px 0 20px;color:var(--text-muted);">Аккаунт необязателен. Локальные данные не отправляются на сервер автоматически: загрузка в аккаунт и восстановление на устройство выполняются только отдельными кнопками.</p>
+                    <div class="account-grid">
+                        <section class="account-card" id="accountGuestCard">
+                            <h3>Вход или регистрация</h3>
+                            <div><label for="accountEmail">Email</label><input id="accountEmail" type="email" maxlength="254" autocomplete="email"></div>
+                            <div><label for="accountPassword">Пароль</label><input id="accountPassword" type="password" minlength="10" maxlength="256" autocomplete="current-password"></div>
+                            <div><label for="accountDisplayName">Имя при регистрации</label><input id="accountDisplayName" type="text" maxlength="60" autocomplete="name" placeholder="Паломник"></div>
+                            <div class="account-actions"><button id="accountLogin" type="button">Войти</button><button id="accountRegister" class="secondary" type="button">Создать аккаунт</button></div>
+                            <div class="account-status" id="accountAuthStatus" role="status" aria-live="polite"></div>
+                        </section>
+                        <section class="account-card" id="accountBackendCard">
+                            <h3>Статус backend</h3>
+                            <div id="accountBackendStatus" class="account-status">Проверка…</div>
+                            <div class="account-actions"><button id="accountRefresh" class="secondary" type="button">Проверить снова</button></div>
+                            <p style="font-size:12px;color:var(--text-muted);margin:0;">Для локального запуска: <code>python -m backend.server</code>. Без сервера M6.1 продолжает работать на устройстве.</p>
+                        </section>
+                        <section class="account-card" id="accountSignedCard" hidden>
+                            <h3>Ваш аккаунт</h3>
+                            <div id="accountIdentity" class="account-status"></div>
+                            <div><label for="serverDisplayName">Имя</label><input id="serverDisplayName" type="text" maxlength="60" autocomplete="name"></div>
+                            <div><label for="serverCity">Город</label><input id="serverCity" type="text" maxlength="80" autocomplete="address-level2"></div>
+                            <div><label for="serverTimezone">Часовой пояс</label><input id="serverTimezone" type="text" maxlength="80" placeholder="Europe/Moscow"></div>
+                            <div class="account-actions"><button id="accountSaveProfile" type="button">Сохранить профиль</button><button id="accountLogout" class="secondary" type="button">Выйти</button></div>
+                            <div class="account-status" id="accountProfileStatus" role="status" aria-live="polite"></div>
+                        </section>
+                        <section class="account-card" id="accountSyncCard" hidden>
+                            <h3>Ручная синхронизация «Мой ПМ»</h3>
+                            <div id="accountSyncStatus" class="account-status">Серверное состояние ещё не проверено.</div>
+                            <div class="account-actions"><button id="accountPush" type="button">Сохранить это устройство в аккаунт</button><button id="accountPull" class="secondary" type="button">Загрузить из аккаунта на устройство</button></div>
+                            <p style="font-size:12px;color:var(--text-muted);margin:0;">Восстановление заменяет локальное состояние только после явного подтверждения. Stable IDs и unresolved legacy records сохраняются.</p>
+                        </section>
+                        <section class="account-card" id="accountRecoveryCard">
+                            <h3>Восстановление доступа</h3>
+                            <div><label for="recoveryEmail">Email</label><input id="recoveryEmail" type="email" maxlength="254" autocomplete="email"></div>
+                            <div class="account-actions"><button id="accountRecoveryRequest" class="secondary" type="button">Запросить восстановление</button></div>
+                            <div><label for="recoveryToken">Код восстановления</label><input id="recoveryToken" type="text" maxlength="180" autocomplete="one-time-code" placeholder="Из письма или локального dev-режима"></div>
+                            <div><label for="recoveryPassword">Новый пароль</label><input id="recoveryPassword" type="password" minlength="10" maxlength="256" autocomplete="new-password"></div>
+                            <div class="account-actions"><button id="accountRecoveryReset" type="button">Задать новый пароль</button></div>
+                            <div class="account-status" id="accountRecoveryStatus" role="status" aria-live="polite"></div>
+                            <p style="font-size:12px;color:var(--text-muted);margin:0;">Backend создаёт одноразовый recovery token; доставка письма подключается отдельно в production-инфраструктуре. В dev-режиме token может быть возвращён только для локальной проверки.</p>
+                        </section>
+                        <section class="account-card" id="accountDataCard" hidden>
+                            <h3>Данные аккаунта</h3>
+                            <div class="account-actions"><button id="accountExport" class="secondary" type="button">Экспорт JSON</button></div>
+                            <div><label for="accountDeletePassword">Удалить аккаунт — подтвердите пароль</label><input id="accountDeletePassword" type="password" maxlength="256" autocomplete="current-password"></div>
+                            <div class="account-actions"><button id="accountDelete" class="danger" type="button">Удалить аккаунт</button></div>
+                            <div class="account-status" id="accountDataStatus" role="status" aria-live="polite"></div>
+                        </section>
+                    </div>
+                </div>
                 <div id="settings" class="tab-content">
-                    <h2 class="dashboard-title">⚙️ Настройки</h2>
+                    <h2 class="dashboard-title">Настройки</h2>
                     <div style="background:var(--white); border-radius:var(--radius-md); padding:24px; border:1px solid var(--cream-2); display:flex; flex-direction:column; gap:16px; max-width:500px;">
-                        <div><label style="font-size:14px; font-weight:500; display:block; margin-bottom:4px;">Имя</label><input type="text" value="Паломник" style="width:100%; padding:10px 14px; border:1px solid var(--cream-2); border-radius:var(--radius-sm); font-family:'Inter',sans-serif; font-size:14px;"></div>
-                        <div><label style="font-size:14px; font-weight:500; display:block; margin-bottom:4px;">Email</label><input type="email" value="user@example.com" style="width:100%; padding:10px 14px; border:1px solid var(--cream-2); border-radius:var(--radius-sm); font-family:'Inter',sans-serif; font-size:14px;"></div>
-                        <button style="background:var(--gold); color:var(--dark); border:none; padding:12px 24px; border-radius:var(--radius-sm); font-weight:600; cursor:pointer; font-family:'Inter',sans-serif; transition:background var(--transition);">Сохранить</button>
+                        <p style="font-size:13px;color:var(--text-muted);">Локальные настройки не создают учётную запись и не отправляются на сервер.</p>
+                        <div><label for="profileName" style="font-size:14px; font-weight:500; display:block; margin-bottom:4px;">Имя</label><input id="profileName" type="text" maxlength="60" autocomplete="name" style="width:100%; padding:10px 14px; border:1px solid var(--cream-2); border-radius:var(--radius-sm); font-family:'Inter',sans-serif; font-size:14px;"></div>
+                        <div><label for="profileEmail" style="font-size:14px; font-weight:500; display:block; margin-bottom:4px;">Email</label><input id="profileEmail" type="email" maxlength="160" autocomplete="email" placeholder="Необязательно" style="width:100%; padding:10px 14px; border:1px solid var(--cream-2); border-radius:var(--radius-sm); font-family:'Inter',sans-serif; font-size:14px;"></div>
+                        <button id="saveProfileSettings" type="button" style="background:var(--gold); color:var(--dark); border:none; padding:12px 24px; border-radius:var(--radius-sm); font-weight:600; cursor:pointer; font-family:'Inter',sans-serif; transition:background var(--transition);">Сохранить на устройстве</button>
+                        <div id="profileSaveStatus" role="status" aria-live="polite" style="font-size:13px;color:var(--text-muted);"></div>
                     </div>
                 </div>
             </div>
@@ -86,115 +161,12 @@
 
     <div id="footer-container"></div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const links = document.querySelectorAll('.profile-menu a');
-            const tabs = document.querySelectorAll('.tab-content');
-            links.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    links.forEach(l => l.classList.remove('active'));
-                    tabs.forEach(t => t.classList.remove('active'));
-                    this.classList.add('active');
-                    const target = document.getElementById(this.dataset.tab);
-                    if (target) {
-                        target.classList.add('active');
-                    }
-                });
-            });
-        });
-
-        function getStorage(key) {
-            try {
-                return JSON.parse(localStorage.getItem(key)) || [];
-            } catch {
-                return [];
-            }
-        }
-
-        function setStorage(key, data) {
-            localStorage.setItem(key, JSON.stringify(data));
-        }
-
-        function updateStats() {
-            const fav = getStorage('favorites');
-            const later = getStorage('readLater');
-            const favCountEl = document.getElementById('favCount');
-            const laterCountEl = document.getElementById('readLaterCount');
-            if (favCountEl) favCountEl.textContent = fav.length;
-            if (laterCountEl) laterCountEl.textContent = later.length;
-        }
-
-        function renderList(containerId, storageKey, emptyMsg) {
-            const container = document.getElementById(containerId);
-            if (!container) return;
-            const data = getStorage(storageKey);
-            if (data.length === 0) {
-                container.innerHTML = `<div class="empty-state"><span class="empty-icon">${emptyMsg.split(' ')[0]}</span>${emptyMsg}</div>`;
-                return;
-            }
-            container.innerHTML = '';
-            data.forEach((item, index) => {
-                const card = document.createElement('div');
-                card.className = 'list-card';
-                card.innerHTML = `
-                    <div class="item-info">
-                        <div class="item-title">${item.title}</div>
-                        <div class="item-sub">${item.sub || ''}</div>
-                    </div>
-                    <div class="item-actions">
-                        <button class="remove-btn" data-key="${storageKey}" data-index="${index}">🗑️</button>
-                    </div>
-                `;
-                container.appendChild(card);
-            });
-            container.querySelectorAll('.remove-btn').forEach(btn => {
-                btn.addEventListener('click', function() {
-                    const key = this.dataset.key;
-                    const idx = parseInt(this.dataset.index);
-                    const data = getStorage(key);
-                    data.splice(idx, 1);
-                    setStorage(key, data);
-                    renderList(containerId, storageKey, emptyMsg);
-                    updateStats();
-                });
-            });
-        }
-
-        renderList('readLaterList', 'readLater', '📖 Список пуст. Добавьте статьи из журнала');
-        renderList('favoritesList', 'favorites', '❤️ У вас пока нет избранных мест');
-        updateStats();
-
-        window.addToReadLater = function(title, sub) {
-            const data = getStorage('readLater');
-            const exists = data.some(item => item.title === title);
-            if (exists) {
-                alert('📖 Эта статья уже в списке "Читать позже"!');
-                return;
-            }
-            data.push({ title, sub });
-            setStorage('readLater', data);
-            renderList('readLaterList', 'readLater', '📖 Список пуст. Добавьте статьи из журнала');
-            updateStats();
-            alert('✅ Статья добавлена в "Читать позже"!');
-        };
-
-        window.addToFavorites = function(title, sub) {
-            const data = getStorage('favorites');
-            const exists = data.some(item => item.title === title);
-            if (exists) {
-                alert('❤️ Это уже в избранном!');
-                return;
-            }
-            data.push({ title, sub });
-            setStorage('favorites', data);
-            renderList('favoritesList', 'favorites', '❤️ У вас пока нет избранных мест');
-            updateStats();
-            alert('✅ Добавлено в избранное!');
-        };
-    </script>
-
     <script src="js/config.js"></script>
     <script src="js/components.js"></script>
+    <script src="js/data-layer.js"></script>
+    <script src="js/content-layer.js"></script>
+    <script src="js/my-pm-layer.js"></script>
+    <script src="js/account-layer.js"></script>
+    <script src="js/profile.js"></script>
 </body>
 </html>

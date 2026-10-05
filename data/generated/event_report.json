@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "45c649682966d23dfe5041e9905436acd4c3f7e6c667b1076a582d75d0d05b97",
+  "providers": [
+    "pravmir-editorial-events",
+    "pravmir-verified-organisation-events",
+    "pravmir-community-event-contributions"
+  ],
+  "source_rows": 4,
+  "accepted_events": 0,
+  "relations": 0,
+  "aliases": 0,
+  "community_or_draft_review_queue": 4,
+  "rejected_rows": 0,
+  "inferred_text_links": 0,
+  "legacy_journal_promoted_to_events": 0,
+  "policy": {
+    "automatic_text_to_event_promotion": false,
+    "automatic_title_place_binding": false,
+    "community_writes_canonical": false,
+    "organisation_is_place": false
+  }
+}

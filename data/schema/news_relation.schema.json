@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "news_relation.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "relation_type",
+    "from",
+    "to",
+    "trust_layer",
+    "verification_status",
+    "source_records"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^pm-news-rel-[0-9a-f]{20}$"
+    },
+    "relation_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "from": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "id"
+      ],
+      "properties": {
+        "kind": {
+          "const": "news"
+        },
+        "id": {
+          "type": "string"
+        }
+      }
+    },
+    "to": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "id"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "place",
+            "event",
+            "entity",
+            "organisation",
+            "content",
+            "route",
+            "saint",
+            "feast"
+          ]
+        },
+        "id": {
+          "type": "string"
+        }
+      }
+    },
+    "trust_layer": {
+      "enum": [
+        "editorial",
+        "verified_organisation",
+        "community"
+      ]
+    },
+    "verification_status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "7d0fc92ae7338a63670089a6366266ab30fcf67d1d779e73ac3f346f2bdaddc1",
+  "count": 4,
+  "news": [
+    {
+      "id": "pm-news-d83038e745956654e08d",
+      "slug": "news-patriarchia-123188-6654e08d",
+      "title": "Председатель Патриаршей комиссии по вопросам семьи выступил на круглом столе Общественного совета при Минюсте РФ",
+      "summary": "Председатель Патриаршей комиссии по вопросам семьи, защиты материнства и детства принял участие в круглом столе Общественного совета при Министерстве юстиции России.",
+      "status": "published",
+      "published_at": "2026-10-04T16:43:00+03:00",
+      "updated_at": null,
+      "canonical_path": "news/item.html?slug=news-patriarchia-123188-6654e08d",
+      "original_url": "https://patriarchia.ru/article/123188",
+      "publisher": "Патриархия.ru",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "freshness": {
+        "observed_at": "2026-10-05T00:00:00+03:00",
+        "verified_at": "2026-10-05T00:00:00+03:00",
+        "valid_from": null,
+        "valid_to": null,
+        "expires_at": null
+      },
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-patriarchia-verification-2026-10-05",
+          "source_id": "patriarchia-123188",
+          "source_file": "data/news_sources/verified_records_2026-10-05.json",
+          "source_row": 1,
+          "source_url": "https://patriarchia.ru/article/123188",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-news-80723986a59858e6b73c",
+      "slug": "news-patriarchia-123193-58e6b73c",
+      "title": "Патриарший экзарх Африки принял участие в стратегической сессии «Россия — Африка: определяя архитектуру сотрудничества»",
+      "summary": "Патриарший экзарх Африки митрополит Константин принял участие в московской стратегической сессии, посвящённой развитию взаимодействия России со странами Африки.",
+      "status": "published",
+      "published_at": "2026-10-04T15:48:00+03:00",
+      "updated_at": null,
+      "canonical_path": "news/item.html?slug=news-patriarchia-123193-58e6b73c",
+      "original_url": "https://patriarchia.ru/article/123193",
+      "publisher": "Патриархия.ru",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "freshness": {
+        "observed_at": "2026-10-05T00:00:00+03:00",
+        "verified_at": "2026-10-05T00:00:00+03:00",
+        "valid_from": null,
+        "valid_to": null,
+        "expires_at": null
+      },
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-patriarchia-verification-2026-10-05",
+          "source_id": "patriarchia-123193",
+          "source_file": "data/news_sources/verified_records_2026-10-05.json",
+          "source_row": 2,
+          "source_url": "https://patriarchia.ru/article/123193",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-news-1237374c171d6c7bbea1",
+      "slug": "news-patriarchia-123190-6c7bbea1",
+      "title": "В Общецерковной аспирантуре и докторантуре состоялся Актовый день",
+      "summary": "В Общецерковной аспирантуре и докторантуре имени святых равноапостольных Кирилла и Мефодия прошли богослужение и торжественные мероприятия Актового дня.",
+      "status": "published",
+      "published_at": "2026-10-04T13:17:00+03:00",
+      "updated_at": null,
+      "canonical_path": "news/item.html?slug=news-patriarchia-123190-6c7bbea1",
+      "original_url": "https://patriarchia.ru/article/123190",
+      "publisher": "Патриархия.ru",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "freshness": {
+        "observed_at": "2026-10-05T00:00:00+03:00",
+        "verified_at": "2026-10-05T00:00:00+03:00",
+        "valid_from": null,
+        "valid_to": null,
+        "expires_at": null
+      },
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-patriarchia-verification-2026-10-05",
+          "source_id": "patriarchia-123190",
+          "source_file": "data/news_sources/verified_records_2026-10-05.json",
+          "source_row": 3,
+          "source_url": "https://patriarchia.ru/article/123190",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-news-ef682c7d0480fa129507",
+      "slug": "news-patriarchia-123033-fa129507",
+      "title": "Святейший Патриарх Кирилл благословил создание музея колокольного искусства в Троице-Сергиевой лавре",
+      "summary": "В Троице-Сергиевой лавре планируется музей колокольного искусства, посвящённый истории и значению колокольного звона обители.",
+      "status": "published",
+      "published_at": "2026-09-24T18:17:00+03:00",
+      "updated_at": null,
+      "canonical_path": "news/item.html?slug=news-patriarchia-123033-fa129507",
+      "original_url": "https://eparchia.patriarchia.ru/article/123033",
+      "publisher": "Патриархия.ru",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "freshness": {
+        "observed_at": "2026-10-05T00:00:00+03:00",
+        "verified_at": "2026-10-05T00:00:00+03:00",
+        "valid_from": null,
+        "valid_to": null,
+        "expires_at": null
+      },
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-patriarchia-verification-2026-10-05",
+          "source_id": "patriarchia-123033",
+          "source_file": "data/news_sources/verified_records_2026-10-05.json",
+          "source_row": 4,
+          "source_url": "https://eparchia.patriarchia.ru/article/123033",
+          "migrated_from": null
+        }
+      ]
+    }
+  ]
+}

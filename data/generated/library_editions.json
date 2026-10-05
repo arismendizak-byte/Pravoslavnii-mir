@@ -1,0 +1,947 @@
+{
+  "schema_version": "1.2.0",
+  "source_snapshot_sha256": "413c8dc21e944c9609d18cf7817a0a163b6de40dc3330958d24110aa8b58fee1",
+  "count": 38,
+  "editions": [
+    {
+      "id": "pm-edition-8f4f08797bd9078be011",
+      "work_ref": "pm-work-ead539b807952476ceab",
+      "title": "Синодальный перевод — Евангелие от Матфея",
+      "language": "ru",
+      "publisher": null,
+      "publication_year": null,
+      "identifiers": {
+        "translation": "synodal",
+        "scripture_abbreviation": "Мф.",
+        "external_catalog_url": "https://azbyka.ru/biblia/"
+      },
+      "rights_status": "metadata_only",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "edition:gospel-matthew:synodal",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 1
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-846c5ec7d5c3b2c0958f",
+      "work_ref": "pm-work-2bcc66d0fa0877aadc78",
+      "title": "Синодальный перевод — Евангелие от Марка",
+      "language": "ru",
+      "publisher": null,
+      "publication_year": null,
+      "identifiers": {
+        "translation": "synodal",
+        "scripture_abbreviation": "Мк.",
+        "external_catalog_url": "https://azbyka.ru/biblia/"
+      },
+      "rights_status": "metadata_only",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "edition:gospel-mark:synodal",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 2
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-dba1b9d4556488daf3ee",
+      "work_ref": "pm-work-f10011f5590643d4ad5b",
+      "title": "Синодальный перевод — Евангелие от Луки",
+      "language": "ru",
+      "publisher": null,
+      "publication_year": null,
+      "identifiers": {
+        "translation": "synodal",
+        "scripture_abbreviation": "Лк.",
+        "external_catalog_url": "https://azbyka.ru/biblia/"
+      },
+      "rights_status": "metadata_only",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "edition:gospel-luke:synodal",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 3
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-e16bd52bb41ab327b4b8",
+      "work_ref": "pm-work-9a06f06165dec584fd5f",
+      "title": "Синодальный перевод — Евангелие от Иоанна",
+      "language": "ru",
+      "publisher": null,
+      "publication_year": null,
+      "identifiers": {
+        "translation": "synodal",
+        "scripture_abbreviation": "Ин.",
+        "external_catalog_url": "https://azbyka.ru/biblia/"
+      },
+      "rights_status": "metadata_only",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "edition:gospel-john:synodal",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 4
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-cbede8fa0fae18f23389",
+      "work_ref": "pm-work-88ed49e4eeb1e80fc71a",
+      "title": "Синодальный перевод — Деяния святых Апостолов",
+      "language": "ru",
+      "publisher": null,
+      "publication_year": null,
+      "identifiers": {
+        "translation": "synodal",
+        "scripture_abbreviation": "Деян.",
+        "external_catalog_url": "https://azbyka.ru/biblia/"
+      },
+      "rights_status": "metadata_only",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "edition:acts:synodal",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 5
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-2656573735e396aa14f3",
+      "work_ref": "pm-work-b332575fa64ad64b5cf9",
+      "title": "Синодальный перевод — Послание к Римлянам",
+      "language": "ru",
+      "publisher": null,
+      "publication_year": null,
+      "identifiers": {
+        "translation": "synodal",
+        "scripture_abbreviation": "Рим.",
+        "external_catalog_url": "https://azbyka.ru/biblia/"
+      },
+      "rights_status": "metadata_only",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "edition:romans:synodal",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 6
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-c7256025662f5b43a3e0",
+      "work_ref": "pm-work-b78fa698cdc84e069c3c",
+      "title": "Синодальный перевод — Первое послание к Коринфянам",
+      "language": "ru",
+      "publisher": null,
+      "publication_year": null,
+      "identifiers": {
+        "translation": "synodal",
+        "scripture_abbreviation": "1Кор.",
+        "external_catalog_url": "https://azbyka.ru/biblia/"
+      },
+      "rights_status": "metadata_only",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "edition:1-corinthians:synodal",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 7
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-3243ed298004c9c96f5a",
+      "work_ref": "pm-work-98ed244e0b24b307ad5b",
+      "title": "Синодальный перевод — Второе послание к Коринфянам",
+      "language": "ru",
+      "publisher": null,
+      "publication_year": null,
+      "identifiers": {
+        "translation": "synodal",
+        "scripture_abbreviation": "2Кор.",
+        "external_catalog_url": "https://azbyka.ru/biblia/"
+      },
+      "rights_status": "metadata_only",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "edition:2-corinthians:synodal",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 8
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-ba1ce819367d7c3dbb7e",
+      "work_ref": "pm-work-f975c10a93106f166042",
+      "title": "Синодальный перевод — Послание к Галатам",
+      "language": "ru",
+      "publisher": null,
+      "publication_year": null,
+      "identifiers": {
+        "translation": "synodal",
+        "scripture_abbreviation": "Гал.",
+        "external_catalog_url": "https://azbyka.ru/biblia/"
+      },
+      "rights_status": "metadata_only",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "edition:galatians:synodal",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 9
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-30c2a5ccc8319f66788a",
+      "work_ref": "pm-work-d58f05c9b12b2c9c2f20",
+      "title": "Синодальный перевод — Послание к Филиппийцам",
+      "language": "ru",
+      "publisher": null,
+      "publication_year": null,
+      "identifiers": {
+        "translation": "synodal",
+        "scripture_abbreviation": "Флп.",
+        "external_catalog_url": "https://azbyka.ru/biblia/"
+      },
+      "rights_status": "metadata_only",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "edition:philippians:synodal",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 10
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-121178fdf5657c043441",
+      "work_ref": "pm-work-ddb436c4a9ddef94cf81",
+      "title": "Синодальный перевод — Послание к Титу",
+      "language": "ru",
+      "publisher": null,
+      "publication_year": null,
+      "identifiers": {
+        "translation": "synodal",
+        "scripture_abbreviation": "Тит.",
+        "external_catalog_url": "https://azbyka.ru/biblia/"
+      },
+      "rights_status": "metadata_only",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "edition:titus:synodal",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 11
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-9c099ac1fb85683e55e5",
+      "work_ref": "pm-work-a3f2610ca1d32e3e93ab",
+      "title": "Синодальный перевод — Послание к Евреям",
+      "language": "ru",
+      "publisher": null,
+      "publication_year": null,
+      "identifiers": {
+        "translation": "synodal",
+        "scripture_abbreviation": "Евр.",
+        "external_catalog_url": "https://azbyka.ru/biblia/"
+      },
+      "rights_status": "metadata_only",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "edition:hebrews:synodal",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 12
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-bd07e11a9656c956b9f2",
+      "work_ref": "pm-work-7798d2d95fcb5ddfef79",
+      "title": "Синодальный перевод — Первое послание Иоанна",
+      "language": "ru",
+      "publisher": null,
+      "publication_year": null,
+      "identifiers": {
+        "translation": "synodal",
+        "scripture_abbreviation": "1Ин.",
+        "external_catalog_url": "https://azbyka.ru/biblia/"
+      },
+      "rights_status": "metadata_only",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "edition:1-john:synodal",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 13
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-2fcbbd8aca29c52efc2e",
+      "work_ref": "pm-work-edb29935b70bdf39c242",
+      "title": "Синодальный перевод — Второе послание Петра",
+      "language": "ru",
+      "publisher": null,
+      "publication_year": null,
+      "identifiers": {
+        "translation": "synodal",
+        "scripture_abbreviation": "2Пет.",
+        "external_catalog_url": "https://azbyka.ru/biblia/"
+      },
+      "rights_status": "metadata_only",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "edition:2-peter:synodal",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 14
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-ab6e00d7dfa240b674a2",
+      "work_ref": "pm-work-9bcc5e2d2617e8f32947",
+      "title": "Викитека — электронная публикация",
+      "language": "ru",
+      "publisher": "Викитека",
+      "publication_year": null,
+      "identifiers": {
+        "external_catalog_url": "https://ru.wikisource.org/wiki/Мысли_на_каждый_день_года_по_церковным_чтениям_из_Слова_Божия_(Феофан-Затворник)"
+      },
+      "rights_status": "public_domain_verified",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "edition:theophan-thoughts-every-day",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Мысли_на_каждый_день_года_по_церковным_чтениям_из_Слова_Божия_(Феофан-Затворник)",
+          "source_row": 1,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Мысли_на_каждый_день_года_по_церковным_чтениям_из_Слова_Божия_(Феофан-Затворник)"
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-2f7e73b336ee0b9873bd",
+      "work_ref": "pm-work-9906f04decbc4fa0a163",
+      "title": "Викитека — электронная публикация катихизиса",
+      "language": "ru",
+      "publisher": "Викитека",
+      "publication_year": 1823,
+      "identifiers": {
+        "external_catalog_url": "https://ru.wikisource.org/wiki/Пространный_христианский_катихизис_Православной_Кафолической_Восточной_Церкви"
+      },
+      "rights_status": "external_link_only",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "edition:philaret-longer-catechism",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Пространный_христианский_катихизис_Православной_Кафолической_Восточной_Церкви",
+          "source_row": 2,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Пространный_христианский_катихизис_Православной_Кафолической_Восточной_Церкви"
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-aae26255a6302322fc73",
+      "work_ref": "pm-work-01a0f8ec5e9aa5921785",
+      "title": "Викитека — транскрипция дореформенного издания, Прибавления к творениям Святых Отцев, XVII, 1858, с. 452–484",
+      "language": "ru",
+      "publisher": "Викитека",
+      "publication_year": 1858,
+      "identifiers": {
+        "external_catalog_url": "https://ru.wikisource.org/w/index.php?title=О_догматическом_достоинстве_и_охранительном_употреблении_переводов_Священного_Писания_(свят._Филарет)/ДО&oldid=5666262"
+      },
+      "rights_status": "open_license",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "edition:philaret-scripture-translations",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=О_догматическом_достоинстве_и_охранительном_употреблении_переводов_Священного_Писания_(свят._Филарет)/ДО&oldid=5666262",
+          "source_row": 3,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=О_догматическом_достоинстве_и_охранительном_употреблении_переводов_Священного_Писания_(свят._Филарет)/ДО&oldid=5666262"
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-4840d02a572899e29cdd",
+      "work_ref": "pm-work-06c637a0f2384817fd24",
+      "title": "Викитека — электронная публикация",
+      "language": "ru",
+      "publisher": "Викитека",
+      "publication_year": 1857,
+      "identifiers": {
+        "external_catalog_url": "https://ru.wikisource.org/wiki/О_Православии_(Брянчанинов)"
+      },
+      "rights_status": "external_link_only",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "edition:ignatius-on-orthodoxy",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/О_Православии_(Брянчанинов)",
+          "source_row": 4,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/О_Православии_(Брянчанинов)"
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-faefd6e3263edc8a240c",
+      "work_ref": "pm-work-166e138e1aa87cbc22fa",
+      "title": "Викитека — электронная публикация",
+      "language": "ru",
+      "publisher": "Викитека",
+      "publication_year": 1876,
+      "identifiers": {
+        "external_catalog_url": "https://ru.wikisource.org/wiki/Слово_о_человеке_(Брянчанинов)"
+      },
+      "rights_status": "external_link_only",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "edition:ignatius-word-on-man",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Слово_о_человеке_(Брянчанинов)",
+          "source_row": 5,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Слово_о_человеке_(Брянчанинов)"
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-db70cc1e948a7b22d126",
+      "work_ref": "pm-work-e8f804a36f7ff9b82b5d",
+      "title": "Викитека — электронная публикация",
+      "language": "ru",
+      "publisher": "Викитека",
+      "publication_year": 1843,
+      "identifiers": {
+        "external_catalog_url": "https://ru.wikisource.org/wiki/Сад_во_время_зимы_(Игнатий_Брянчанинов)"
+      },
+      "rights_status": "public_domain_verified",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "edition:ignatius-garden-in-winter",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Сад_во_время_зимы_(Игнатий_Брянчанинов)",
+          "source_row": 6,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Автор:Игнатий_(Брянчанинов)"
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-10dc268b9b70b021ef97",
+      "work_ref": "pm-work-418ca5914c52724ff608",
+      "title": "Викитека — электронная публикация",
+      "language": "ru",
+      "publisher": "Викитека",
+      "publication_year": null,
+      "identifiers": {
+        "external_catalog_url": "https://ru.wikisource.org/w/index.php?title=О_жительстве_в_послушании_у_старца_(Игнатий_Брянчанинов)&oldid=2626028#bodyContent"
+      },
+      "rights_status": "open_license",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "edition:ignatius-obedience-to-elder",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=О_жительстве_в_послушании_у_старца_(Игнатий_Брянчанинов)&oldid=2626028#bodyContent",
+          "source_row": 7,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=О_жительстве_в_послушании_у_старца_(Игнатий_Брянчанинов)&oldid=2626028#bodyContent"
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-7a88329fd41b0355ca93",
+      "work_ref": "pm-work-f4099288b3a4dead38f9",
+      "title": "Викитека — электронная публикация",
+      "language": "ru",
+      "publisher": "Викитека",
+      "publication_year": null,
+      "identifiers": {
+        "external_catalog_url": "https://ru.wikisource.org/wiki/Как_начинается_в_нас_христианская_жизнь%3F"
+      },
+      "rights_status": "public_domain_verified",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "edition:theophan-christian-life-begins",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Как_начинается_в_нас_христианская_жизнь%3F",
+          "source_row": 8,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Феофан_Затворник"
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-87dd97069c934f7b9d16",
+      "work_ref": "pm-work-dcaba6b1797dd6768af0",
+      "title": "Викитека — электронная публикация",
+      "language": "ru",
+      "publisher": "Викитека",
+      "publication_year": null,
+      "identifiers": {
+        "external_catalog_url": "https://ru.wikisource.org/w/index.php?title=О_вечности_мучений_(Феофан_Затворник)&oldid=1071762"
+      },
+      "rights_status": "open_license",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "edition:theophan-eternal-torments",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=О_вечности_мучений_(Феофан_Затворник)&oldid=1071762",
+          "source_row": 9,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=О_вечности_мучений_(Феофан_Затворник)&oldid=1071762"
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-b3c2ff60d3307ff486f7",
+      "work_ref": "pm-work-c4ea07e87dd3dc7461e6",
+      "title": "Викитека — электронная публикация",
+      "language": "ru",
+      "publisher": "Викитека",
+      "publication_year": null,
+      "identifiers": {
+        "external_catalog_url": "https://ru.wikisource.org/wiki/Два_слова_о_святом_таинстве_крещения_(Феофан_Затворник)"
+      },
+      "rights_status": "public_domain_verified",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "edition:theophan-two-words-baptism",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Два_слова_о_святом_таинстве_крещения_(Феофан_Затворник)",
+          "source_row": 10,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Феофан_Затворник"
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-4a15308447b2adc5f39f",
+      "work_ref": "pm-work-bac606807a9c00d22fae",
+      "title": "Викитека — электронная публикация",
+      "language": "ru",
+      "publisher": "Викитека",
+      "publication_year": null,
+      "identifiers": {
+        "external_catalog_url": "https://ru.wikisource.org/w/index.php?title=Наставления_в_духовной_жизни_(Феофан_Затворник)&oldid=5698478"
+      },
+      "rights_status": "open_license",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "edition:theophan-spiritual-instructions",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=Наставления_в_духовной_жизни_(Феофан_Затворник)&oldid=5698478",
+          "source_row": 11,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=Наставления_в_духовной_жизни_(Феофан_Затворник)&oldid=5698478"
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-de7ab59ccd239ad57212",
+      "work_ref": "pm-work-69aec6a2c7a3271e0906",
+      "title": "Викитека — электронная публикация",
+      "language": "ru",
+      "publisher": "Викитека",
+      "publication_year": null,
+      "identifiers": {
+        "external_catalog_url": "https://ru.wikisource.org/w/index.php?title=Толкование_на_книгу_св._Ермы_(Феофан_Затворник)&oldid=5666316#bodyContent"
+      },
+      "rights_status": "open_license",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "edition:theophan-hermas-commentary",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=Толкование_на_книгу_св._Ермы_(Феофан_Затворник)&oldid=5666316#bodyContent",
+          "source_row": 12,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=Толкование_на_книгу_св._Ермы_(Феофан_Затворник)&oldid=5666316#bodyContent"
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-07d622782397a86a1a33",
+      "work_ref": "pm-work-59aefe056c9b88fccbd9",
+      "title": "Викитека — написание XIX века по «Краткому молитвослову», закреплённая ревизия 5096383",
+      "language": "cu",
+      "publisher": "Викитека",
+      "publication_year": null,
+      "identifiers": {
+        "external_catalog_url": "https://ru.wikisource.org/w/index.php?oldid=5096383&title=Отче_наш/ДО"
+      },
+      "rights_status": "open_license",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "edition:lord-prayer-19c",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?oldid=5096383&title=Отче_наш/ДО",
+          "source_row": 13,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?oldid=5096383&title=Отче_наш/ДО",
+          "classification_evidence_url": "https://www.pravenc.ru/text/2581755.html",
+          "classification_evidence_summary": "Православная энциклопедия идентифицирует «Отче наш» как молитву Господню; статья «Начало обычное» подтверждает её богослужебное употребление."
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-ae797557e6be1010cb9c",
+      "work_ref": "pm-work-881d7fc99b281c38f527",
+      "title": "Викитека — написание XIX века по «Новой Азбуке» Л. Н. Толстого, закреплённая ревизия 489359",
+      "language": "cu",
+      "publisher": "Викитека",
+      "publication_year": null,
+      "identifiers": {
+        "external_catalog_url": "https://ru.wikisource.org/w/index.php?oldid=489359&title=Царю_Небесный/ДО"
+      },
+      "rights_status": "open_license",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "edition:heavenly-king-19c",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?oldid=489359&title=Царю_Небесный/ДО",
+          "source_row": 14,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?oldid=489359&title=Царю_Небесный/ДО",
+          "classification_evidence_url": "https://m.pravenc.ru/text/%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%B0.html",
+          "classification_evidence_summary": "Православная энциклопедия прямо называет «Царю Небесный» стихирой праздника Пятидесятницы и описывает её употребление в «Начале обычном»."
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-5fb71d1aa5933238f402",
+      "work_ref": "pm-work-dd07f9dd508080e165f6",
+      "title": "Викитека — написание XIX века по «Краткому молитвослову», закреплённая ревизия 483297",
+      "language": "cu",
+      "publisher": "Викитека",
+      "publication_year": null,
+      "identifiers": {
+        "external_catalog_url": "https://ru.wikisource.org/w/index.php?oldid=483297&title=Достойно_есть/ДО"
+      },
+      "rights_status": "open_license",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "edition:worthy-is-19c",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?oldid=483297&title=Достойно_есть/ДО",
+          "source_row": 15,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?oldid=483297&title=Достойно_есть/ДО",
+          "classification_evidence_url": "https://m.pravenc.ru/rubrics/383270.html",
+          "classification_evidence_summary": "Рубрикатор Православной энциклопедии определяет «Достойно есть» как одно из наиболее известных православных песнопений во имя Пресвятой Богородицы."
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-f1338246b24223929edd",
+      "work_ref": "pm-work-1545f9c669c5ef7c9b1e",
+      "title": "Викитека — редакция 1875 года из «Новой азбуки» Л. Н. Толстого, закреплённая ревизия 4854183",
+      "language": "cu",
+      "publisher": "Викитека",
+      "publication_year": 1875,
+      "identifiers": {
+        "external_catalog_url": "https://ru.wikisource.org/w/index.php?oldid=4854183&title=Никео-Цареградский_Символ_веры/1875,_Толстой_(ДО)"
+      },
+      "rights_status": "open_license",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "edition:nicene-creed-tolstoy-1875",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?oldid=4854183&title=Никео-Цареградский_Символ_веры/1875,_Толстой_(ДО)",
+          "source_row": 16,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?oldid=4854183&title=Никео-Цареградский_Символ_веры/1875,_Толстой_(ДО)",
+          "classification_evidence_url": "https://azbyka.ru/simvol_very",
+          "classification_evidence_summary": "«Азбука веры» отдельно отмечает, что Символ веры не является молитвой, и подтверждает его соборное пение за Литургией и чтение в других богослужебных последованиях."
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-9acd6d6b91ecadf373a4",
+      "work_ref": "pm-work-fc5ab2a44e310e7df61d",
+      "title": "Викитека — электронная публикация сборника 1863 года",
+      "language": "ru",
+      "publisher": "Викитека",
+      "publication_year": 1863,
+      "identifiers": {
+        "external_catalog_url": "https://ru.wikisource.org/w/index.php?title=Сборник_слов_и_проповедей_о_православии_с_предостережениями_от_погрешений_против_него…_(Феофан-Затворник)&oldid=5661984"
+      },
+      "rights_status": "open_license",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "edition:theophan-sermons-orthodoxy-1863",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=Сборник_слов_и_проповедей_о_православии_с_предостережениями_от_погрешений_против_него…_(Феофан-Затворник)&oldid=5661984",
+          "source_row": 17,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=Сборник_слов_и_проповедей_о_православии_с_предостережениями_от_погрешений_против_него…_(Феофан-Затворник)&oldid=5661984",
+          "classification_evidence_url": "https://ru.wikisource.org/w/index.php?title=Сборник_слов_и_проповедей_о_православии_с_предостережениями_от_погрешений_против_него…_(Феофан-Затворник)&oldid=5661984",
+          "classification_evidence_summary": "Название и оглавление источника прямо определяют произведение как сборник слов и проповедей."
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-b3b64b48de9ca77f68ab",
+      "work_ref": "pm-work-5e6db8095c36fa8d7418",
+      "title": "Викитека — электронная публикация издания 1850 года",
+      "language": "ru",
+      "publisher": "Викитека",
+      "publication_year": 1850,
+      "identifiers": {
+        "external_catalog_url": "https://ru.wikisource.org/w/index.php?title=Избранные_места_из_священной_истории_Ветхого_и_Нового_завета_с_назидательными_размышлениями_(Филарет)&oldid=5261535"
+      },
+      "rights_status": "open_license",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "edition:philaret-gumilevsky-sacred-history-1850",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=Избранные_места_из_священной_истории_Ветхого_и_Нового_завета_с_назидательными_размышлениями_(Филарет)&oldid=5261535",
+          "source_row": 18,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=Избранные_места_из_священной_истории_Ветхого_и_Нового_завета_с_назидательными_размышлениями_(Филарет)&oldid=5261535",
+          "classification_evidence_url": "https://ru.wikisource.org/w/index.php?title=Избранные_места_из_священной_истории_Ветхого_и_Нового_завета_с_назидательными_размышлениями_(Филарет)&oldid=5261535",
+          "classification_evidence_summary": "Структура источника сочетает изложение Священной истории с отдельными назидательными размышлениями; в Library классифицируется как учебно-катехизический текст."
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-bbbdb46e24092e381408",
+      "work_ref": "pm-work-7ae8eceded8a2f474f7e",
+      "title": "Викитека — электронная публикация издания 1891 года",
+      "language": "ru",
+      "publisher": "Викитека",
+      "publication_year": 1891,
+      "identifiers": {
+        "external_catalog_url": "https://ru.wikisource.org/w/index.php?title=История_Православной_Церкви_до_начала_разделения_Церквей_(Победоносцев)&oldid=5591605"
+      },
+      "rights_status": "open_license",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "edition:pobedonostsev-orthodox-church-history-1891",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=История_Православной_Церкви_до_начала_разделения_Церквей_(Победоносцев)&oldid=5591605",
+          "source_row": 19,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=История_Православной_Церкви_до_начала_разделения_Церквей_(Победоносцев)&oldid=5591605",
+          "classification_evidence_url": "https://ru.wikisource.org/w/index.php?title=История_Православной_Церкви_до_начала_разделения_Церквей_(Победоносцев)&oldid=5591605",
+          "classification_evidence_summary": "Источник прямо озаглавлен как история Православной Церкви и содержит последовательное историческое изложение до разделения Церквей."
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-ca9d9263787855986851",
+      "work_ref": "pm-work-d6025672bee94c6bafbf",
+      "title": "Жития святых по изложению свт. Димитрия Ростовского — январь, 2 января",
+      "language": "ru",
+      "publisher": "Викитека",
+      "publication_year": 1904,
+      "identifiers": {
+        "external_catalog_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Январь/2"
+      },
+      "rights_status": "public_domain_verified",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "edition:life-seraphim-sarov",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Январь/2",
+          "source_row": 1,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Январь.djvu"
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-06f5c244baf878362cb3",
+      "work_ref": "pm-work-0d999a24d135a1efc6a5",
+      "title": "Жития святых по изложению свт. Димитрия Ростовского — январь, 12 января",
+      "language": "ru",
+      "publisher": "Викитека",
+      "publication_year": 1904,
+      "identifiers": {
+        "external_catalog_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Январь/12"
+      },
+      "rights_status": "public_domain_verified",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "edition:martyrdom-tatiana",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Январь/12",
+          "source_row": 2,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Январь.djvu"
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-e5aa27d62d257fa02533",
+      "work_ref": "pm-work-27c4e7cab5b3ea4b63df",
+      "title": "Жития святых по изложению свт. Димитрия Ростовского — декабрь, 6 декабря",
+      "language": "ru",
+      "publisher": "Викитека",
+      "publication_year": 1903,
+      "identifiers": {
+        "external_catalog_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Декабрь/6"
+      },
+      "rights_status": "public_domain_verified",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "edition:life-nicholas-myra",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Декабрь/6",
+          "source_row": 3,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Декабрь.djvu"
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-188d9a36d46634528e24",
+      "work_ref": "pm-work-4257cdc79b1a388342e9",
+      "title": "Жития святых по изложению свт. Димитрия Ростовского — май, 11 мая",
+      "language": "ru",
+      "publisher": "Викитека",
+      "publication_year": 1906,
+      "identifiers": {
+        "external_catalog_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Май/11"
+      },
+      "rights_status": "public_domain_verified",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "edition:life-cyril-methodius",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Май/11",
+          "source_row": 4,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Май.djvu"
+        }
+      ]
+    },
+    {
+      "id": "pm-edition-19c3be028de7f6bbafee",
+      "work_ref": "pm-work-c60dbaf180deda1bbc82",
+      "title": "Жития святых по изложению свт. Димитрия Ростовского — июль, 15 июля",
+      "language": "ru",
+      "publisher": "Викитека",
+      "publication_year": 1908,
+      "identifiers": {
+        "external_catalog_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Июль/15"
+      },
+      "rights_status": "public_domain_verified",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "edition:memory-vladimir-kiev",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Июль/15",
+          "source_row": 5,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Июль.djvu"
+        }
+      ]
+    }
+  ]
+}

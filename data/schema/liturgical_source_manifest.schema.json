@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pravmir.local/schema/liturgical_source_manifest.schema.json",
+  "title": "Pravmir liturgical source manifest",
+  "type": "object",
+  "required": ["schema_version", "providers"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "providers": {"type": "array", "items": {"type": "object", "required": ["provider", "source_class", "verification_status", "jurisdiction", "tradition", "calendar_style", "locale", "valid_from", "valid_to", "source_files"], "properties": {
+      "provider": {"type": "string", "minLength": 1},
+      "source_class": {"enum": ["legacy_migration", "official", "editorial"]},
+      "verification_status": {"enum": ["legacy_unverified", "source_verified", "editorial_verified"]},
+      "jurisdiction": {"$ref": "#/$defs/code_label"},
+      "tradition": {"$ref": "#/$defs/code_label"},
+      "calendar_style": {"type": "string", "minLength": 1},
+      "locale": {"type": "string", "minLength": 1},
+      "valid_from": {"type": "string", "format": "date"},
+      "valid_to": {"type": "string", "format": "date"},
+      "verified_at": {"type": ["string", "null"], "format": "date-time"},
+      "source_files": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+      "notes": {"type": ["string", "null"]}
+    }, "additionalProperties": false}}
+  },
+  "$defs": {"code_label": {"type": "object", "required": ["code", "label"], "properties": {"code": {"type": "string", "minLength": 1}, "label": {"type": "string", "minLength": 1}}, "additionalProperties": false}},
+  "additionalProperties": false
+}

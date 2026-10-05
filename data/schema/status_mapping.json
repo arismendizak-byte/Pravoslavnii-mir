@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "exact": {
+    "действ.": "active",
+    "действующий": "active",
+    "действующая": "active",
+    "сохр.": "preserved",
+    "сохранился": "preserved",
+    "не действ.": "inactive",
+    "недейств.": "inactive",
+    "утрач.": "lost",
+    "не сохр.": "lost",
+    "строится": "under_construction",
+    "восстанавливается": "restoring",
+    "реставрируется": "restoring",
+    "руинирован": "ruined",
+    "руинир.": "ruined"
+  },
+  "contains": [
+    {
+      "needle": "действ",
+      "value": "active"
+    },
+    {
+      "needle": "не сохр",
+      "value": "lost"
+    },
+    {
+      "needle": "сохр",
+      "value": "preserved"
+    },
+    {
+      "needle": "утрач",
+      "value": "lost"
+    },
+    {
+      "needle": "стро",
+      "value": "under_construction"
+    },
+    {
+      "needle": "восстан",
+      "value": "restoring"
+    },
+    {
+      "needle": "реставр",
+      "value": "restoring"
+    },
+    {
+      "needle": "руин",
+      "value": "ruined"
+    },
+    {
+      "needle": "заброш",
+      "value": "inactive"
+    },
+    {
+      "needle": "закры",
+      "value": "inactive"
+    }
+  ],
+  "default": "unknown"
+}

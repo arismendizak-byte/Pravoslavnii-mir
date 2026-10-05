@@ -1,0 +1,49 @@
+{
+  "canonical_place_entity_links": 6,
+  "canonical_route_stops": 2,
+  "entities": 7,
+  "legacy_location_link_conflicts": [
+    {
+      "detail_path": "objects/nikolsky.html",
+      "entity": "Николай Чудотворец",
+      "location_text": "Бари, Италия (частица мощей в России)",
+      "source_id": "2"
+    },
+    {
+      "detail_path": "objects/nikolsky.html",
+      "entity": "Иоанн Кронштадтский",
+      "location_text": "Санкт-Петербург, Иоанновский монастырь",
+      "source_id": "4"
+    },
+    {
+      "detail_path": "objects/nikolsky.html",
+      "entity": "Икона Казанской Божией Матери",
+      "location_text": "Санкт-Петербург, Казанский собор",
+      "source_id": "6"
+    }
+  ],
+  "legacy_route_waypoints": 2,
+  "noncanonical_route_stops": 0,
+  "relation_verification": {
+    "legacy_unverified": 0,
+    "source_verified": 7
+  },
+  "relations": 7,
+  "routes": 2,
+  "schema_version": "1.4.0",
+  "traversal_arcs": 18,
+  "traversal_edges": 9,
+  "traversal_nodes": 13,
+  "unresolved_canonical_locations": [
+    {
+      "detail_path": "objects/christ.html",
+      "entity": "Владимирская икона Божией Матери",
+      "location_text": "Москва, Храм Христа Спасителя",
+      "source_id": "5"
+    }
+  ],
+  "verified_source_claims": 7,
+  "verified_source_files": [
+    "data/graph_sources/verified_relations.json"
+  ]
+}

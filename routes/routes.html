@@ -2,14 +2,14 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
     <title>Маршруты — Православный Мир</title>
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="../manifest.json">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
     <style>
         /* ===== ОБЩИЕ СТИЛИ ===== */
@@ -587,6 +587,9 @@
             font-family: 'Inter', sans-serif;
             transition: background 0.25s ease;
             margin-top: auto;
+            display: block;
+            text-align: center;
+            text-decoration: none;
         }
         .route-card .route-btn:hover { background: var(--gold-light); }
 
@@ -644,18 +647,18 @@
 
         <div class="routes-header">
             <h1>Паломнические<br><em>маршруты</em></h1>
-            <p>Готовые туры по святым местам России. Выберите свой путь.</p>
+            <p>Маршруты проекта и справочный каталог паломнических служб.</p>
         </div>
 
         <!-- ===== ВКЛАДКИ ===== -->
         <div class="routes-tabs">
             <button class="routes-tab active" data-tab="our" onclick="switchRoutesTab('our')">
                 <span class="tab-icon">✍️</span> Наши маршруты
-                <span class="tab-badge">2</span>
+                <span class="tab-badge" id="ourRoutesCount">2</span>
             </button>
             <button class="routes-tab" data-tab="official" onclick="switchRoutesTab('official')">
-                <span class="tab-icon">📋</span> Паломнические службы РПЦ
-                <span class="tab-badge rpz" id="officialRoutesCount">75</span>
+                <span class="tab-icon">📋</span> Паломнические службы
+                <span class="tab-badge rpz" id="officialRoutesCount">85</span>
             </button>
         </div>
 
@@ -675,20 +678,20 @@
             <div class="tab-header-info">
                 <div>
                     <div class="tab-title">
-                        <span class="official-badge">Единый реестр РПЦ</span>
+                        <span class="official-badge">Справочный каталог · требует проверки</span>
                         <br>
                         Паломнические <em>службы России</em>
                     </div>
                     <div class="tab-sub" style="margin-top:4px;">
-                        Аккредитованные паломнические службы из Единого реестра Русской Православной Церкви.
-                        <br><small style="color: #9E8A6A;">Источник: palomnikofficial.ru • Всего: <span id="totalCount">75</span> центров</small>
+                        Контакты перенесены из прежней базы проекта и ещё не прошли актуальную проверку.
+                        <br><small style="color: #9E8A6A;">Перед поездкой уточняйте сведения на сайте организации • Всего: <span id="totalCount">85</span> записей</small>
                     </div>
                 </div>
                 <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                    <a class="refresh-btn" href="../pilgrim/infrastructure.html">Инфраструктура M5.6 →</a>
                     <button class="refresh-btn" id="refreshOfficialBtn" onclick="refreshOfficialData()">
-                        <span class="refresh-icon">⟳</span> Обновить
+                        <span class="refresh-icon">⟳</span> Перезагрузить
                     </button>
-                    <a href="https://palomnikofficial.ru" target="_blank" class="tab-link">Перейти в реестр →</a>
                 </div>
             </div>
 
@@ -720,32 +723,12 @@
             </div>
         </div>
 
-        <!-- ===== КОНТАКТЫ ===== -->
+        <!-- ===== СТАТУС ДАННЫХ ===== -->
         <div class="rpz-contacts" id="officialContacts">
             <div class="contact-item">
-                <div class="contact-icon">🏛️</div>
-                <div class="contact-label">Паломнический центр</div>
-                <div class="contact-value">Московского Патриархата</div>
-            </div>
-            <div class="contact-item">
-                <div class="contact-icon">📞</div>
-                <div class="contact-label">Телефон</div>
-                <div class="contact-value">+7 (495) 685-93-38 (доб. 520)</div>
-            </div>
-            <div class="contact-item">
-                <div class="contact-icon">📧</div>
-                <div class="contact-label">E-mail</div>
-                <div class="contact-value"><a href="mailto:info@poklonnik.ru">info@poklonnik.ru</a></div>
-            </div>
-            <div class="contact-item">
-                <div class="contact-icon">🌐</div>
-                <div class="contact-label">Сайт</div>
-                <div class="contact-value"><a href="https://www.poklonnik.ru/" target="_blank">poklonnik.ru</a></div>
-            </div>
-            <div class="contact-item">
-                <div class="contact-icon">📍</div>
-                <div class="contact-label">Адрес</div>
-                <div class="contact-value">Москва, Мичуринский пр-т, д. 8 стр. 1</div>
+                <div class="contact-icon">ℹ️</div>
+                <div class="contact-label">Статус каталога</div>
+                <div class="contact-value">Legacy unverified · контакты требуют повторной проверки</div>
             </div>
         </div>
     </div>
@@ -754,6 +737,8 @@
 
     <script src="../js/config.js"></script>
     <script src="../js/components.js"></script>
+    <script src="../js/data-layer.js"></script>
+    <script src="../js/pilgrim-layer.js"></script>
 
     <script>
         // ========================================
@@ -767,33 +752,26 @@
         // ЗАГРУЗКА ДАННЫХ
         // ========================================
         async function loadServicesData() {
-            try {
-                const response = await fetch('../data/pilgrim-centers.json');
-                if (response.ok) {
-                    const data = await response.json();
-                    allServices = data;
-                    return data;
-                }
-            } catch (e) {
-                console.log('Не удалось загрузить данные, используем встроенные');
-            }
-            // Если файл не загрузился — минимальный набор
-            allServices = getFallbackData();
+            if (!window.PravmirPilgrim) throw new Error('PravmirPilgrim unavailable');
+            await window.PravmirPilgrim.init();
+            const records = await window.PravmirPilgrim.getReviewQueue({ limit: 200 });
+            allServices = records.map(function(record) {
+                const contacts = record.contacts || {};
+                return {
+                    id: record.legacy_ref,
+                    reviewId: record.id,
+                    name: record.name,
+                    region: record.region_text || 'Регион не указан',
+                    phone: contacts.phone || '',
+                    website: contacts.website || '',
+                    email: contacts.email || '',
+                    org: record.organisation_text || '',
+                    verificationStatus: 'legacy_unverified',
+                    references: [],
+                    sourceRecords: record.source_records || []
+                };
+            });
             return allServices;
-        }
-
-        function getFallbackData() {
-            return [
-                { name: 'Паломнический центр Московского Патриархата', region: 'Москва', phone: '+7 (495) 685-93-38 (доб. 520)', website: 'https://www.poklonnik.ru/', email: 'info@poklonnik.ru', org: 'Московский Патриархат' },
-                { name: 'Паломническая служба Сретенского монастыря', region: 'Москва', phone: '+7 (495) 640-30-40', website: 'https://sretenie.moscow', email: 'palomnik@sretenie.ru', org: 'Сретенский монастырь' },
-                { name: 'Паломнический центр Троице-Сергиевой Лавры', region: 'Сергиев Посад', phone: '+7 (496) 540-57-21', website: 'https://lavra.ru/', email: 'order@lavra.ru', org: 'Троице-Сергиева Лавра' },
-                { name: 'Паломническая служба Санкт-Петербургской Епархии', region: 'Санкт-Петербург', phone: '+7 (921) 755-51-25', website: 'https://mitropolia-palomnik.ru/', email: 'info@mitropolia-palomnik.ru', org: 'Санкт-Петербургская епархия' },
-                { name: 'Паломническая служба «Кавказский Паломник»', region: 'Пятигорск', phone: '+7 (879) 333-25-33', website: 'http://Kavkaz-palomnik.ru', email: 'Kavkaz-palomnik@mail.ru', org: 'Пятигорская епархия' },
-                { name: 'Паломнический центр Симферопольской епархии', region: 'Симферополь', phone: '+7 (978) 820-30-98', website: 'https://palomnic.ru/', email: 'atushev@yandex.ru', org: 'Симферопольская епархия' },
-                { name: 'Паломнический центр Орловской епархии', region: 'Орёл', phone: '+7 (903) 882-26-36', website: 'https://orel-eparhia.ru/structure/departments/piligrimage', email: 'logos-orel@yandex.ru', org: 'Орловская епархия' },
-                { name: 'Паломнический центр Александро-Невского собора', region: 'Новосибирск', phone: '+7 (913) 007-50-15', website: 'https://ansobor.ru/', email: 'palomnik@sibmail.ru', org: 'Александро-Невский собор' },
-                { name: 'Паломническая служба «7 стран»', region: 'Московская область', phone: '+7 (926) 133-13-28', website: 'https://7stran.com/', email: 'givonosnyiistochnik@gmail.com', org: 'Храм Живоносный Источник' }
-            ];
         }
 
         // ========================================
@@ -1172,24 +1150,29 @@
                 grid.innerHTML = `
                     <div class="no-results" style="grid-column:1/-1;">
                         <span class="no-icon">🔍</span>
-                        <p>Ничего не найдено по запросу <strong>«${query}»</strong></p>
+                        <p>Ничего не найдено по запросу <strong>«${escapeRouteHtml(query)}»</strong></p>
                         <p style="font-size:13px; color:#9E8A6A; margin-top:4px;">Попробуйте изменить запрос или посмотреть все центры</p>
                     </div>
                 `;
             } else {
                 let html = '';
                 results.forEach(s => {
-                    const phoneLink = s.phone ? `<a href="tel:${s.phone.replace(/\s/g, '')}">${s.phone}</a>` : '';
-                    const websiteLink = s.website ? `<a href="${s.website}" target="_blank">${s.website.replace(/^https?:\/\//, '').substring(0, 30)}</a>` : '';
-                    const orgHtml = s.org ? `<div class="rs-org">🏛️ ${s.org}</div>` : '';
+                    const phone = escapeRouteHtml(s.phone);
+                    const phoneHref = String(s.phone || '').replace(/[^+\d]/g, '');
+                    const website = escapeRouteHtml(s.website);
+                    const websiteLabel = escapeRouteHtml(String(s.website || '').replace(/^https?:\/\//, '').substring(0, 42));
+                    const phoneLink = s.phone ? `<a href="tel:${phoneHref}">${phone}</a>` : '';
+                    const websiteLink = s.website ? `<a href="${website}" target="_blank" rel="noopener noreferrer">${websiteLabel}</a>` : '';
+                    const orgHtml = s.org ? `<div class="rs-org">🏛️ ${escapeRouteHtml(s.org)}</div>` : '';
 
                     html += `
                         <div class="result-service">
-                            <div class="rs-name">${s.name}</div>
-                            <div class="rs-region">📍 ${s.region}</div>
+                            <div class="rs-name">${escapeRouteHtml(s.name)}</div>
+                            <div class="rs-region">📍 ${escapeRouteHtml(s.region)}</div>
                             ${s.phone ? `<div class="rs-phone">📞 ${phoneLink}</div>` : ''}
                             ${s.website ? `<div class="rs-website">🌐 ${websiteLink}</div>` : ''}
                             ${orgHtml}
+                            <div class="rs-region">Статус: требует актуальной проверки</div>
                         </div>
                     `;
                 });
@@ -1214,6 +1197,7 @@
         // ПЕРЕКЛЮЧЕНИЕ ВКЛАДОК
         // ========================================
         function switchRoutesTab(tab) {
+            tab = tab === 'official' ? 'official' : 'our';
             document.querySelectorAll('.routes-tab').forEach(btn => {
                 btn.classList.toggle('active', btn.dataset.tab === tab);
             });
@@ -1228,20 +1212,25 @@
         // ========================================
         // ОБНОВЛЕНИЕ
         // ========================================
-        function refreshOfficialData() {
+        async function refreshOfficialData() {
             const btn = document.getElementById('refreshOfficialBtn');
             btn.classList.add('spinning');
             btn.disabled = true;
-
-            setTimeout(() => {
-                // Перестраиваем всё
+            try {
+                await loadServicesData();
                 const districts = buildDistricts(allServices);
                 renderAccordion(districts);
                 renderPopularCities(allServices);
+                document.getElementById('totalCount').textContent = allServices.length;
+                document.getElementById('officialRoutesCount').textContent = allServices.length;
+                showToast('✅ Каталог перезагружен');
+            } catch (error) {
+                console.error('Pilgrim services unavailable', error);
+                showToast('Не удалось загрузить каталог');
+            } finally {
                 btn.classList.remove('spinning');
                 btn.disabled = false;
-                showToast('✅ Данные обновлены!');
-            }, 800);
+            }
         }
 
         // ========================================
@@ -1266,69 +1255,105 @@
         }
 
         // ========================================
-        // ЗАГРУЗКА НАШИХ МАРШРУТОВ
+        // ЗАГРУЗКА НАШИХ МАРШРУТОВ — M4.1 graph/route data
         // ========================================
-        function loadOurRoutes() {
-            const grid = document.getElementById('ourRoutesGrid');
-            const ourRoutes = [{
-                title: 'Московский паломник',
-                location: 'Москва → Сергиев Посад',
-                duration: '4–5 дней',
-                distance: '120 км',
-                price: 'Бесплатно (личные расходы)',
-                desc: 'Главный пеший паломнический путь России. Повторяет исторический маршрут царского богомолья от Иверской часовни у стен Московского Кремля до Свято-Троицкой Сергиевой Лавры.',
-                places: ['Храм Христа Спасителя', 'Троице-Сергиева Лавра'],
-                img: 'https://i.postimg.cc/9F0J7SyK/lavra3.jpg',
-                badge: 'Пеший маршрут'
-            }, {
-                title: 'Дивеевский маршрут',
-                location: 'Нижегородская область',
-                duration: '2–3 дня',
-                distance: '4 объекта',
-                price: 'от 7 500 ₽',
-                desc: 'Паломничество в четвёртый удел Пресвятой Богородицы — Свято-Дивеевский монастырь. Прохождение по Святой Канавке, поклонение мощам преподобного Серафима Саровского.',
-                places: ['Свято-Дивеевский монастырь', 'Арзамас'],
-                img: 'https://i.postimg.cc/2yyFYdyK/images-(3).jpg',
-                badge: 'Паломнический'
-            }];
+        function escapeRouteHtml(value) {
+            return String(value == null ? '' : value).replace(/[&<>'"]/g, function(ch) {
+                return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[ch];
+            });
+        }
 
-            let html = '';
-            ourRoutes.forEach(route => {
-                const placesHtml = route.places.map(p => `<a href="#">${p}</a>`).join(', ');
-                html += `
-                    <div class="route-card">
+        async function resolveRouteFilter() {
+            const params = new URLSearchParams(window.location.search);
+            const entityId = params.get('entity');
+            const placeId = params.get('place');
+            const search = (params.get('search') || '').trim();
+
+            if (entityId) {
+                return { routes: await PravmirData.getRoutesForEntity(entityId), label: search };
+            }
+            if (placeId) {
+                return { routes: await PravmirData.getRoutesForPlace(placeId), label: search };
+            }
+            if (search) {
+                const entityMatches = await PravmirData.getEntities({ query: search });
+                const exact = entityMatches.find(function(item) {
+                    return PravmirData.normalizeText(item.name) === PravmirData.normalizeText(search);
+                });
+                if (exact) {
+                    return { routes: await PravmirData.getRoutesForEntity(exact.id), label: search };
+                }
+                return { routes: await PravmirData.getRoutes({ query: search }), label: search };
+            }
+            return { routes: await PravmirData.getRoutes(), label: '' };
+        }
+
+        async function loadOurRoutes() {
+            const grid = document.getElementById('ourRoutesGrid');
+            const allRoutes = await PravmirData.getRoutes();
+            const filtered = await resolveRouteFilter();
+            const ourRoutes = filtered.routes;
+            const countBadge = document.getElementById('ourRoutesCount');
+            if (countBadge) countBadge.textContent = allRoutes.length;
+
+            if (!ourRoutes.length) {
+                const label = filtered.label ? ` для «${escapeRouteHtml(filtered.label)}»` : '';
+                grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1;text-align:center;padding:32px;color:var(--text-muted);">Подходящих маршрутов${label} пока нет. Данные святынь и связей сохранены без выдумывания маршрута.</div>`;
+                return;
+            }
+
+            const cards = await Promise.all(ourRoutes.map(async function(route) {
+                const points = await PravmirData.getRoutePoints(route);
+                const placesHtml = points.map(function(point) {
+                    const label = escapeRouteHtml(point.name);
+                    const href = point.detail_url;
+                    const marker = point.kind === 'legacy_waypoint' ? ' <small title="Точка из прежнего описания">*</small>' : '';
+                    return href ? `<a href="${escapeRouteHtml(href)}">${label}</a>${marker}` : `<span>${label}</span>${marker}`;
+                }).join(', ');
+                const distanceIcon = String(route.distance || '').includes('км') ? '👣' : '⛪';
+                const detailHref = PravmirData.routeDetailUrl(route);
+                return `
+                    <div class="route-card" data-route-id="${escapeRouteHtml(route.id)}">
                         <div class="route-img">
-                            <img src="${route.img}" alt="${route.title}" loading="lazy">
-                            <div class="route-badge">${route.badge}</div>
+                            <img src="${escapeRouteHtml(route.image || '')}" alt="${escapeRouteHtml(route.title)}" loading="lazy">
+                            <div class="route-badge">${escapeRouteHtml(route.badge || 'Маршрут')}</div>
                         </div>
                         <div class="route-body">
-                            <div class="route-title">${route.title}</div>
+                            <div class="route-title">${escapeRouteHtml(route.title)}</div>
                             <div class="route-meta">
-                                <span class="route-meta-item"><span class="route-meta-icon">📍</span> ${route.location}</span>
-                                <span class="route-meta-item"><span class="route-meta-icon">🕐</span> ${route.duration}</span>
-                                <span class="route-meta-item"><span class="route-meta-icon">${route.distance.includes('км') ? '👣' : '⛪'}</span> ${route.distance}</span>
+                                <span class="route-meta-item"><span class="route-meta-icon">📍</span> ${escapeRouteHtml(route.location || '')}</span>
+                                <span class="route-meta-item"><span class="route-meta-icon">🕐</span> ${escapeRouteHtml(route.duration || '')}</span>
+                                <span class="route-meta-item"><span class="route-meta-icon">${distanceIcon}</span> ${escapeRouteHtml(route.distance || '')}</span>
                             </div>
-                            <div class="route-price">${route.price}</div>
-                            <div class="route-desc">${route.desc}</div>
-                            <div class="route-places"><strong>Объекты:</strong> ${placesHtml}</div>
-                            <button class="route-btn" onclick="alert('Подробности скоро появятся. Спасибо за интерес!')">Подробнее →</button>
+                            <div class="route-price">${escapeRouteHtml(route.price || '')}</div>
+                            <div class="route-desc">${escapeRouteHtml(route.description || '')}</div>
+                            <div class="route-places"><strong>Точки:</strong> ${placesHtml}<br><small>* точка из прежнего описания ещё не сопоставлена с каталогом мест</small></div>
+                            <a class="route-btn" href="${escapeRouteHtml(detailHref)}">Подробнее →</a>
                         </div>
-                    </div>
-                `;
-            });
-            grid.innerHTML = html;
+                    </div>`;
+            }));
+            grid.innerHTML = cards.join('');
         }
 
         // ========================================
         // ИНИЦИАЛИЗАЦИЯ
         // ========================================
         document.addEventListener('DOMContentLoaded', async function() {
-            // Восстанавливаем вкладку
-            const savedTab = localStorage.getItem('routesTab') || 'our';
+            // Восстанавливаем вкладку; deep-link M4 всегда открывает наши data-driven маршруты.
+            const params = new URLSearchParams(window.location.search);
+            const hasRouteDeepLink = params.has('entity') || params.has('place') || params.has('search');
+            const requestedTab = params.get('tab') === 'services' ? 'official' : '';
+            const savedTab = hasRouteDeepLink ? 'our' : (requestedTab || localStorage.getItem('routesTab') || 'our');
             switchRoutesTab(savedTab);
 
             // Загружаем данные
-            await loadServicesData();
+            try {
+                await loadServicesData();
+            } catch (error) {
+                console.error('Pilgrim services unavailable', error);
+                allServices = [];
+                document.getElementById('popularGrid').innerHTML = '<div class="no-results">Каталог временно недоступен.</div>';
+            }
 
             // Строим округа
             const districts = buildDistricts(allServices);
@@ -1344,10 +1369,7 @@
             document.getElementById('officialRoutesCount').textContent = allServices.length;
 
             // Загружаем наши маршруты
-            loadOurRoutes();
-
-            // Контакты скрыты по умолчанию
-            document.getElementById('officialContacts').style.display = 'none';
+            await loadOurRoutes();
 
             // Обработчик Enter в поиске
             document.getElementById('serviceSearch').addEventListener('keydown', function(e) {

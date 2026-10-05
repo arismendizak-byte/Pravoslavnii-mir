@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "60b93662ffb974ae6efbd8a84ebe8405c9c8bec837dfe47dc84fbe3f47540611",
+  "providers": [
+    "pravmir-editorial-food"
+  ],
+  "recipes": 9,
+  "relations": 27,
+  "fasting_guidance_relations": 24,
+  "feast_guidance_relations": 3,
+  "editorial_guidance_relations": 27,
+  "canonical_liturgical_prescriptions_created": 0,
+  "disclaimer": "Подборка носит редакционный кулинарный характер и не является указанием меры поста. Конкретные ограничения зависят от дня, традиции, благословения и личных обстоятельств."
+}

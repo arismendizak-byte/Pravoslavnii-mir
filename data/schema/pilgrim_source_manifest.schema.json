@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pravmir.local/schema/pilgrim_source_manifest.schema.json",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "providers"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "providers": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "provider",
+          "source_file",
+          "purpose",
+          "trust_layer",
+          "verification_status"
+        ],
+        "properties": {
+          "provider": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_file": {
+            "type": "string",
+            "minLength": 1
+          },
+          "purpose": {
+            "enum": [
+              "system_taxonomy",
+              "review_input",
+              "canonical_records"
+            ]
+          },
+          "trust_layer": {
+            "enum": [
+              "canonical_system",
+              "verified_organisation",
+              "editorial",
+              "community",
+              "legacy_unverified"
+            ]
+          },
+          "verification_status": {
+            "enum": [
+              "system_defined",
+              "source_verified",
+              "verified_organisation",
+              "editorial_verified",
+              "community_unverified",
+              "legacy_unverified"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

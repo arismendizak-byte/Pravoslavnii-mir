@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pravmir.local/schema/event_review_item.schema.json",
+  "title": "Pravmir non-canonical event review item",
+  "type": "object",
+  "required": ["id", "status", "provider", "source_id", "source_file", "reason", "raw_event"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^pm-event-review-[0-9a-f]{20}$"},
+    "status": {"const": "pending_review"},
+    "provider": {"type": "string", "minLength": 1},
+    "source_id": {"type": "string", "minLength": 1},
+    "source_file": {"type": "string", "minLength": 1},
+    "reason": {"type": "string", "minLength": 1},
+    "raw_event": {"type": "object"}
+  },
+  "additionalProperties": false
+}

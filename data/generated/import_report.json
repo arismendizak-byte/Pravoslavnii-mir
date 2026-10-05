@@ -1,0 +1,4119 @@
+{
+  "schema_version": "1.0.0",
+  "release_version": "1.7",
+  "generated_at": "2026-10-05T20:52:08Z",
+  "source_snapshot_at": "2026-10-02T19:54:24Z",
+  "source_snapshot_file": "data/schema/source_snapshot.json",
+  "source_snapshots": {
+    "regional_csv": {
+      "file": "data/schema/source_snapshot.json",
+      "snapshot_at": "2026-10-02T19:54:24Z"
+    },
+    "legacy_spb": {
+      "file": "data/schema/legacy_source_snapshot.json",
+      "snapshot_at": "2026-10-02T21:46:00Z"
+    }
+  },
+  "source_files_expected": 18,
+  "source_files_processed": 18,
+  "source_rows_imported_before_aggregation": 12966,
+  "source_identity_duplicates_merged": 3,
+  "records_imported": 12963,
+  "records_rejected": 645,
+  "validation_errors": [],
+  "fatal_errors": [],
+  "files": [
+    {
+      "file": "arkhangelsk_temples_full.csv",
+      "region": "Архангельская область",
+      "encoding": "utf-8-sig",
+      "rows_seen": 686,
+      "imported_before_source_aggregation": 677,
+      "skipped_empty": 1,
+      "skipped_missing_name": 9,
+      "issues": [
+        {
+          "row": 73,
+          "source_id": "22040",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 76,
+          "source_id": "8437",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 77,
+          "source_id": "16177",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 82,
+          "source_id": "3796",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 114,
+          "source_id": "30641",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 116,
+          "source_id": "17006",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 121,
+          "source_id": "16633",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 122,
+          "source_id": "22840",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 400,
+          "source_id": "16238",
+          "code": "missing_name",
+          "severity": "warning"
+        }
+      ],
+      "imported": 677
+    },
+    {
+      "file": "bryansk_temples_full.csv",
+      "region": "Брянская область",
+      "encoding": "utf-8-sig",
+      "rows_seen": 301,
+      "imported_before_source_aggregation": 285,
+      "skipped_empty": 1,
+      "skipped_missing_name": 16,
+      "issues": [
+        {
+          "row": 85,
+          "source_id": "24483",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 104,
+          "source_id": "17643",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 116,
+          "source_id": "18392",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 138,
+          "source_id": "27003",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 140,
+          "source_id": "27018",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 144,
+          "source_id": "21070",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 147,
+          "source_id": "25289",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 151,
+          "source_id": "32013",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 171,
+          "source_id": "30618",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 225,
+          "source_id": "25156",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 269,
+          "source_id": "3694",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 290,
+          "source_id": "15420",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 295,
+          "source_id": "17652",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 297,
+          "source_id": "25899",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 302,
+          "source_id": "27972",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 303,
+          "source_id": "21089",
+          "code": "missing_name",
+          "severity": "warning"
+        }
+      ],
+      "imported": 285
+    },
+    {
+      "file": "ivanovo_temples_full.csv",
+      "region": "Ивановская область",
+      "encoding": "utf-8-sig",
+      "rows_seen": 555,
+      "imported_before_source_aggregation": 539,
+      "skipped_empty": 1,
+      "skipped_missing_name": 16,
+      "issues": [
+        {
+          "row": 145,
+          "source_id": "3281",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 147,
+          "source_id": "17414",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 157,
+          "source_id": "4405",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 218,
+          "source_id": "25709",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 219,
+          "source_id": "27104",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 220,
+          "source_id": "12757",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 221,
+          "source_id": "8421",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 284,
+          "source_id": "6131",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 290,
+          "source_id": "10327",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 291,
+          "source_id": "32693",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 316,
+          "source_id": "9474",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 326,
+          "source_id": "12774",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 383,
+          "source_id": "4804",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 384,
+          "source_id": "4805",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 412,
+          "source_id": "11320",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 439,
+          "source_id": "3237",
+          "code": "missing_name",
+          "severity": "warning"
+        }
+      ],
+      "imported": 539
+    },
+    {
+      "file": "karelia_temples_full.csv",
+      "region": "Республика Карелия",
+      "encoding": "utf-8-sig",
+      "rows_seen": 371,
+      "imported_before_source_aggregation": 359,
+      "skipped_empty": 1,
+      "skipped_missing_name": 12,
+      "issues": [
+        {
+          "row": 33,
+          "source_id": "5194",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 77,
+          "source_id": "8998",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 78,
+          "source_id": "18743",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 129,
+          "source_id": "19987",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 239,
+          "source_id": "25305",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 243,
+          "source_id": "30897",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 266,
+          "source_id": "30900",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 268,
+          "source_id": "5557",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 270,
+          "source_id": "4446",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 328,
+          "source_id": "28414",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 356,
+          "source_id": "26756",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 367,
+          "source_id": "29315",
+          "code": "missing_name",
+          "severity": "warning"
+        }
+      ],
+      "imported": 359
+    },
+    {
+      "file": "kostroma_temples_full.csv",
+      "region": "Костромская область",
+      "encoding": "utf-8-sig",
+      "rows_seen": 656,
+      "imported_before_source_aggregation": 599,
+      "skipped_empty": 1,
+      "skipped_missing_name": 57,
+      "issues": [
+        {
+          "row": 64,
+          "source_id": "30170",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 66,
+          "source_id": "8176",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 72,
+          "source_id": "9840",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 73,
+          "source_id": "10764",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 74,
+          "source_id": "9995",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 124,
+          "source_id": "23960",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 127,
+          "source_id": "7121",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 137,
+          "source_id": "4579",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 164,
+          "source_id": "8083",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 165,
+          "source_id": "8567",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 176,
+          "source_id": "18138",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 187,
+          "source_id": "8570",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 218,
+          "source_id": "12651",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 235,
+          "source_id": "9464",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 236,
+          "source_id": "9413",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 251,
+          "source_id": "10752",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 262,
+          "source_id": "17291",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 268,
+          "source_id": "20706",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 271,
+          "source_id": "18157",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 274,
+          "source_id": "10766",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 276,
+          "source_id": "30180",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 302,
+          "source_id": "9686",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 307,
+          "source_id": "18142",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 311,
+          "source_id": "18144",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 317,
+          "source_id": "9846",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 327,
+          "source_id": "20707",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 330,
+          "source_id": "9852",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 337,
+          "source_id": "12647",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 342,
+          "source_id": "10840",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 362,
+          "source_id": "12635",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 364,
+          "source_id": "18540",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 372,
+          "source_id": "16081",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 376,
+          "source_id": "20421",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 414,
+          "source_id": "10718",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 416,
+          "source_id": "10719",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 417,
+          "source_id": "10720",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 427,
+          "source_id": "9834",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 432,
+          "source_id": "23771",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 434,
+          "source_id": "23773",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 450,
+          "source_id": "18021",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 454,
+          "source_id": "15174",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 474,
+          "source_id": "10726",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 478,
+          "source_id": "9913",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 492,
+          "source_id": "20594",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 493,
+          "source_id": "9752",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 506,
+          "source_id": "11447",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 528,
+          "source_id": "12643",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 551,
+          "source_id": "14491",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 574,
+          "source_id": "12597",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 578,
+          "source_id": "16980",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 612,
+          "source_id": "20900",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 616,
+          "source_id": "9814",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 617,
+          "source_id": "18155",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 618,
+          "source_id": "18154",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 624,
+          "source_id": "9466",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 641,
+          "source_id": "15182",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 643,
+          "source_id": "20514",
+          "code": "missing_name",
+          "severity": "warning"
+        }
+      ],
+      "imported": 599
+    },
+    {
+      "file": "lo_temples.csv",
+      "region": "Ленинградская область",
+      "encoding": "utf-8-sig",
+      "rows_seen": 566,
+      "imported_before_source_aggregation": 562,
+      "skipped_empty": 0,
+      "skipped_missing_name": 4,
+      "issues": [
+        {
+          "row": 115,
+          "source_id": "13856",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 116,
+          "source_id": "13858",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 117,
+          "source_id": "16907",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 118,
+          "source_id": "26771",
+          "code": "missing_name",
+          "severity": "warning"
+        }
+      ],
+      "imported": 562
+    },
+    {
+      "file": "mo_temples_full.csv",
+      "region": "Московская область",
+      "encoding": "utf-8-sig",
+      "rows_seen": 2602,
+      "imported_before_source_aggregation": 2463,
+      "skipped_empty": 1,
+      "skipped_missing_name": 139,
+      "issues": [
+        {
+          "row": 31,
+          "source_id": "2595",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 41,
+          "source_id": "5200",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 44,
+          "source_id": "7140",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 45,
+          "source_id": "5201",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 83,
+          "source_id": "26173",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 200,
+          "source_id": "1181",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 201,
+          "source_id": "2259",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 203,
+          "source_id": "4911",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 204,
+          "source_id": "4908",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 311,
+          "source_id": "697",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 319,
+          "source_id": "2125",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 369,
+          "source_id": "7769",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 370,
+          "source_id": "1575",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 387,
+          "source_id": "1190",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 389,
+          "source_id": "4923",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 392,
+          "source_id": "24622",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 393,
+          "source_id": "5613",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 394,
+          "source_id": "5614",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 395,
+          "source_id": "536",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 436,
+          "source_id": "2521",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 449,
+          "source_id": "31218",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 455,
+          "source_id": "13884",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 461,
+          "source_id": "6933",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 464,
+          "source_id": "1747",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 468,
+          "source_id": "9043",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 481,
+          "source_id": "2732",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 554,
+          "source_id": "597",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 556,
+          "source_id": "589",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 569,
+          "source_id": "1453",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 570,
+          "source_id": "654",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 715,
+          "source_id": "20435",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 719,
+          "source_id": "14423",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 762,
+          "source_id": "2590",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 764,
+          "source_id": "2591",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 766,
+          "source_id": "2501",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 812,
+          "source_id": "6224",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 848,
+          "source_id": "986",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 850,
+          "source_id": "1954",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 851,
+          "source_id": "25390",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 852,
+          "source_id": "5218",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 853,
+          "source_id": "25411",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 854,
+          "source_id": "5219",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 855,
+          "source_id": "2599",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 856,
+          "source_id": "1012",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 857,
+          "source_id": "1013",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 860,
+          "source_id": "1015",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 862,
+          "source_id": "29869",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 866,
+          "source_id": "1022",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 877,
+          "source_id": "7927",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 889,
+          "source_id": "5625",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 893,
+          "source_id": "8499",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 895,
+          "source_id": "6281",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 896,
+          "source_id": "2286",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 904,
+          "source_id": "552",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 940,
+          "source_id": "1159",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1201,
+          "source_id": "7908",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1205,
+          "source_id": "605",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1209,
+          "source_id": "610",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1215,
+          "source_id": "1053",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1217,
+          "source_id": "5094",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1225,
+          "source_id": "1734",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1228,
+          "source_id": "1732",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1232,
+          "source_id": "2553",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1239,
+          "source_id": "7893",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1248,
+          "source_id": "15933",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1249,
+          "source_id": "15935",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1250,
+          "source_id": "1779",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1263,
+          "source_id": "2289",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1268,
+          "source_id": "29395",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1292,
+          "source_id": "13263",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1293,
+          "source_id": "30968",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1295,
+          "source_id": "25394",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1297,
+          "source_id": "3027",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1298,
+          "source_id": "2177",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1331,
+          "source_id": "5230",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1337,
+          "source_id": "6291",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1338,
+          "source_id": "1647",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1341,
+          "source_id": "625",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1345,
+          "source_id": "7819",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1380,
+          "source_id": "1950",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1381,
+          "source_id": "1951",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1384,
+          "source_id": "1944",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1437,
+          "source_id": "9778",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1635,
+          "source_id": "7721",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1646,
+          "source_id": "7715",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1649,
+          "source_id": "7717",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1654,
+          "source_id": "3041",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1666,
+          "source_id": "7412",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1697,
+          "source_id": "3610",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1712,
+          "source_id": "7835",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1721,
+          "source_id": "4893",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1726,
+          "source_id": "1224",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1727,
+          "source_id": "3779",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1731,
+          "source_id": "4729",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1737,
+          "source_id": "7416",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1763,
+          "source_id": "2040",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1764,
+          "source_id": "2092",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1765,
+          "source_id": "1226",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1766,
+          "source_id": "1770",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1767,
+          "source_id": "1771",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1768,
+          "source_id": "26523",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1769,
+          "source_id": "26524",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1770,
+          "source_id": "3890",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1806,
+          "source_id": "5662",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1849,
+          "source_id": "15127",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1851,
+          "source_id": "2698",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1855,
+          "source_id": "2759",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1968,
+          "source_id": "737",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1978,
+          "source_id": "4990",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1980,
+          "source_id": "7956",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2068,
+          "source_id": "4878",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2076,
+          "source_id": "4702",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2077,
+          "source_id": "4034",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2111,
+          "source_id": "5047",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2130,
+          "source_id": "5674",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2136,
+          "source_id": "2199",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2186,
+          "source_id": "893",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2197,
+          "source_id": "26394",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2214,
+          "source_id": "1523",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2222,
+          "source_id": "24857",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2224,
+          "source_id": "3061",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2227,
+          "source_id": "13765",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2229,
+          "source_id": "5723",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2280,
+          "source_id": "5261",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2286,
+          "source_id": "23614",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2287,
+          "source_id": "2786",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2288,
+          "source_id": "19368",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2297,
+          "source_id": "1656",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2337,
+          "source_id": "2103",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2342,
+          "source_id": "2018",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2344,
+          "source_id": "11601",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2365,
+          "source_id": "2579",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2377,
+          "source_id": "567",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2385,
+          "source_id": "1081",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2386,
+          "source_id": "17587",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2498,
+          "source_id": "18053",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2507,
+          "source_id": "2583",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2600,
+          "source_id": "526",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 2603,
+          "source_id": "600",
+          "code": "missing_name",
+          "severity": "warning"
+        }
+      ],
+      "imported": 2463
+    },
+    {
+      "file": "moscow_temples_full.csv",
+      "region": "Москва",
+      "encoding": "utf-8-sig",
+      "rows_seen": 1244,
+      "imported_before_source_aggregation": 1244,
+      "skipped_empty": 1,
+      "skipped_missing_name": 0,
+      "issues": [],
+      "imported": 1244
+    },
+    {
+      "file": "nizhny_novgorod_temples_full.csv",
+      "region": "Нижегородская область",
+      "encoding": "utf-8-sig",
+      "rows_seen": 750,
+      "imported_before_source_aggregation": 707,
+      "skipped_empty": 1,
+      "skipped_missing_name": 43,
+      "issues": [
+        {
+          "row": 29,
+          "source_id": "16704",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 30,
+          "source_id": "19596",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 31,
+          "source_id": "12874",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 32,
+          "source_id": "16701",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 34,
+          "source_id": "31011",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 74,
+          "source_id": "11570",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 83,
+          "source_id": "7251",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 127,
+          "source_id": "23700",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 168,
+          "source_id": "26214",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 208,
+          "source_id": "26313",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 261,
+          "source_id": "15688",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 313,
+          "source_id": "15411",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 334,
+          "source_id": "10315",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 336,
+          "source_id": "8441",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 338,
+          "source_id": "9996",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 344,
+          "source_id": "12532",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 346,
+          "source_id": "30773",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 381,
+          "source_id": "29618",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 382,
+          "source_id": "29619",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 495,
+          "source_id": "5781",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 497,
+          "source_id": "31398",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 506,
+          "source_id": "5709",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 509,
+          "source_id": "8656",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 522,
+          "source_id": "26407",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 535,
+          "source_id": "26454",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 552,
+          "source_id": "23229",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 553,
+          "source_id": "26127",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 574,
+          "source_id": "10874",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 576,
+          "source_id": "10875",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 587,
+          "source_id": "25265",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 590,
+          "source_id": "7435",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 597,
+          "source_id": "19028",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 612,
+          "source_id": "27581",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 633,
+          "source_id": "11810",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 635,
+          "source_id": "33178",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 648,
+          "source_id": "21415",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 683,
+          "source_id": "24457",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 685,
+          "source_id": "19208",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 691,
+          "source_id": "17763",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 694,
+          "source_id": "15636",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 695,
+          "source_id": "11782",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 734,
+          "source_id": "13511",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 737,
+          "source_id": "19034",
+          "code": "missing_name",
+          "severity": "warning"
+        }
+      ],
+      "imported": 707
+    },
+    {
+      "file": "pskov_temples_full.csv",
+      "region": "Псковская область",
+      "encoding": "utf-8-sig",
+      "rows_seen": 614,
+      "imported_before_source_aggregation": 570,
+      "skipped_empty": 1,
+      "skipped_missing_name": 44,
+      "issues": [
+        {
+          "row": 24,
+          "source_id": "27668",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 79,
+          "source_id": "32142",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 109,
+          "source_id": "27614",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 114,
+          "source_id": "31949",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 117,
+          "source_id": "32739",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 130,
+          "source_id": "4170",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 149,
+          "source_id": "27660",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 151,
+          "source_id": "27616",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 152,
+          "source_id": "32814",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 196,
+          "source_id": "13385",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 197,
+          "source_id": "18073",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 200,
+          "source_id": "29957",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 203,
+          "source_id": "11020",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 223,
+          "source_id": "28135",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 236,
+          "source_id": "31299",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 237,
+          "source_id": "31290",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 245,
+          "source_id": "30376",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 255,
+          "source_id": "31301",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 256,
+          "source_id": "19952",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 258,
+          "source_id": "24335",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 270,
+          "source_id": "32834",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 288,
+          "source_id": "32816",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 289,
+          "source_id": "8630",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 291,
+          "source_id": "29829",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 292,
+          "source_id": "21654",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 299,
+          "source_id": "32062",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 304,
+          "source_id": "7469",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 411,
+          "source_id": "12819",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 414,
+          "source_id": "8042",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 415,
+          "source_id": "18757",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 434,
+          "source_id": "12051",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 459,
+          "source_id": "12110",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 468,
+          "source_id": "5921",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 469,
+          "source_id": "12112",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 471,
+          "source_id": "31784",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 474,
+          "source_id": "12055",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 492,
+          "source_id": "29822",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 504,
+          "source_id": "15585",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 505,
+          "source_id": "21188",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 506,
+          "source_id": "27625",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 510,
+          "source_id": "29866",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 519,
+          "source_id": "27645",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 520,
+          "source_id": "33214",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 536,
+          "source_id": "32832",
+          "code": "missing_name",
+          "severity": "warning"
+        }
+      ],
+      "imported": 570
+    },
+    {
+      "file": "ryazan_temples_full.csv",
+      "region": "Рязанская область",
+      "encoding": "utf-8-sig",
+      "rows_seen": 121,
+      "imported_before_source_aggregation": 116,
+      "skipped_empty": 1,
+      "skipped_missing_name": 5,
+      "issues": [
+        {
+          "row": 98,
+          "source_id": "9986",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 103,
+          "source_id": "26927",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 106,
+          "source_id": "6110",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 114,
+          "source_id": "14456",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 120,
+          "source_id": "10441",
+          "code": "missing_name",
+          "severity": "warning"
+        }
+      ],
+      "imported": 116
+    },
+    {
+      "file": "smolensk_temples_full.csv",
+      "region": "Смоленская область",
+      "encoding": "utf-8-sig",
+      "rows_seen": 320,
+      "imported_before_source_aggregation": 315,
+      "skipped_empty": 1,
+      "skipped_missing_name": 5,
+      "issues": [
+        {
+          "row": 3,
+          "source_id": "4644",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 32,
+          "source_id": "20090",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 33,
+          "source_id": "32265",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 46,
+          "source_id": "29497",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 273,
+          "source_id": "3292",
+          "code": "missing_name",
+          "severity": "warning"
+        }
+      ],
+      "imported": 315
+    },
+    {
+      "file": "sverdlovsk_temples_full.csv",
+      "region": "Свердловская область",
+      "encoding": "utf-8-sig",
+      "rows_seen": 676,
+      "imported_before_source_aggregation": 642,
+      "skipped_empty": 1,
+      "skipped_missing_name": 34,
+      "issues": [
+        {
+          "row": 82,
+          "source_id": "21908",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 124,
+          "source_id": "32580",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 126,
+          "source_id": "32640",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 128,
+          "source_id": "9092",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 129,
+          "source_id": "3387",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 132,
+          "source_id": "3394",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 140,
+          "source_id": "29910",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 166,
+          "source_id": "11650",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 171,
+          "source_id": "11653",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 194,
+          "source_id": "21634",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 203,
+          "source_id": "30369",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 262,
+          "source_id": "27048",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 263,
+          "source_id": "30112",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 265,
+          "source_id": "32603",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 310,
+          "source_id": "21750",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 311,
+          "source_id": "27569",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 364,
+          "source_id": "10141",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 388,
+          "source_id": "27980",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 416,
+          "source_id": "11683",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 433,
+          "source_id": "8914",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 435,
+          "source_id": "11697",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 447,
+          "source_id": "11716",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 448,
+          "source_id": "11709",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 450,
+          "source_id": "11713",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 451,
+          "source_id": "11707",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 491,
+          "source_id": "21742",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 492,
+          "source_id": "29000",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 497,
+          "source_id": "29903",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 511,
+          "source_id": "21925",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 540,
+          "source_id": "21861",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 583,
+          "source_id": "27521",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 584,
+          "source_id": "30986",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 625,
+          "source_id": "27515",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 672,
+          "source_id": "27580",
+          "code": "missing_name",
+          "severity": "warning"
+        }
+      ],
+      "imported": 642
+    },
+    {
+      "file": "tver_temples_full.csv",
+      "region": "Тверская область",
+      "encoding": "utf-8-sig",
+      "rows_seen": 1099,
+      "imported_before_source_aggregation": 1048,
+      "skipped_empty": 1,
+      "skipped_missing_name": 51,
+      "issues": [
+        {
+          "row": 88,
+          "source_id": "27707",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 445,
+          "source_id": "27910",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 450,
+          "source_id": "22838",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 453,
+          "source_id": "14404",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 456,
+          "source_id": "5170",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 497,
+          "source_id": "12867",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 551,
+          "source_id": "28095",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 555,
+          "source_id": "19667",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 558,
+          "source_id": "1695",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 571,
+          "source_id": "17883",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 618,
+          "source_id": "3602",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 627,
+          "source_id": "5529",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 630,
+          "source_id": "4039",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 631,
+          "source_id": "32975",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 651,
+          "source_id": "5802",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 669,
+          "source_id": "9758",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 675,
+          "source_id": "28516",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 676,
+          "source_id": "19640",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 677,
+          "source_id": "4368",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 678,
+          "source_id": "9945",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 722,
+          "source_id": "4776",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 723,
+          "source_id": "4755",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 730,
+          "source_id": "6891",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 732,
+          "source_id": "4068",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 741,
+          "source_id": "6801",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 766,
+          "source_id": "9519",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 769,
+          "source_id": "9039",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 772,
+          "source_id": "27718",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 773,
+          "source_id": "15259",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 807,
+          "source_id": "5133",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 812,
+          "source_id": "4371",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 816,
+          "source_id": "9631",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 830,
+          "source_id": "4127",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 833,
+          "source_id": "19154",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 886,
+          "source_id": "9946",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 887,
+          "source_id": "8522",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 888,
+          "source_id": "10256",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 890,
+          "source_id": "20002",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 937,
+          "source_id": "27686",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 939,
+          "source_id": "4080",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 943,
+          "source_id": "27886",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 945,
+          "source_id": "10255",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 950,
+          "source_id": "27681",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 991,
+          "source_id": "3327",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 995,
+          "source_id": "10985",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 996,
+          "source_id": "3315",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 998,
+          "source_id": "3313",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1008,
+          "source_id": "15076",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1041,
+          "source_id": "20142",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1043,
+          "source_id": "9661",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 1046,
+          "source_id": "29053",
+          "code": "missing_name",
+          "severity": "warning"
+        }
+      ],
+      "imported": 1048
+    },
+    {
+      "file": "vladimir_temples_full.csv",
+      "region": "Владимирская область",
+      "encoding": "utf-8-sig",
+      "rows_seen": 967,
+      "imported_before_source_aggregation": 902,
+      "skipped_empty": 1,
+      "skipped_missing_name": 65,
+      "issues": [
+        {
+          "row": 159,
+          "source_id": "9002",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 199,
+          "source_id": "5329",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 214,
+          "source_id": "19169",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 215,
+          "source_id": "33213",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 216,
+          "source_id": "6196",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 218,
+          "source_id": "6185",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 219,
+          "source_id": "6186",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 221,
+          "source_id": "6921",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 259,
+          "source_id": "3751",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 262,
+          "source_id": "13785",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 264,
+          "source_id": "19170",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 266,
+          "source_id": "28732",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 267,
+          "source_id": "13788",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 310,
+          "source_id": "9080",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 321,
+          "source_id": "22826",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 324,
+          "source_id": "17074",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 326,
+          "source_id": "33253",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 356,
+          "source_id": "18235",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 357,
+          "source_id": "18233",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 358,
+          "source_id": "18224",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 359,
+          "source_id": "18223",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 360,
+          "source_id": "18234",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 365,
+          "source_id": "28151",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 401,
+          "source_id": "18353",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 408,
+          "source_id": "23002",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 409,
+          "source_id": "10500",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 456,
+          "source_id": "26240",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 460,
+          "source_id": "3750",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 463,
+          "source_id": "29784",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 466,
+          "source_id": "29777",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 485,
+          "source_id": "25490",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 508,
+          "source_id": "2795",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 520,
+          "source_id": "2799",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 524,
+          "source_id": "2803",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 582,
+          "source_id": "15971",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 652,
+          "source_id": "30586",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 653,
+          "source_id": "22993",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 655,
+          "source_id": "15282",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 656,
+          "source_id": "10450",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 659,
+          "source_id": "10634",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 661,
+          "source_id": "1273",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 688,
+          "source_id": "28018",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 689,
+          "source_id": "10669",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 693,
+          "source_id": "19143",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 696,
+          "source_id": "22994",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 697,
+          "source_id": "5942",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 713,
+          "source_id": "29258",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 715,
+          "source_id": "12452",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 716,
+          "source_id": "12453",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 722,
+          "source_id": "23603",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 723,
+          "source_id": "30399",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 725,
+          "source_id": "4003",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 765,
+          "source_id": "1359",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 769,
+          "source_id": "10633",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 770,
+          "source_id": "10377",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 805,
+          "source_id": "5357",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 807,
+          "source_id": "5355",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 849,
+          "source_id": "5397",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 851,
+          "source_id": "33269",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 910,
+          "source_id": "33251",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 911,
+          "source_id": "10489",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 912,
+          "source_id": "18924",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 959,
+          "source_id": "29195",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 961,
+          "source_id": "23599",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 966,
+          "source_id": "10637",
+          "code": "missing_name",
+          "severity": "warning"
+        }
+      ],
+      "imported": 902
+    },
+    {
+      "file": "vologda_temples_full.csv",
+      "region": "Вологодская область",
+      "encoding": "utf-8-sig",
+      "rows_seen": 671,
+      "imported_before_source_aggregation": 624,
+      "skipped_empty": 1,
+      "skipped_missing_name": 47,
+      "issues": [
+        {
+          "row": 6,
+          "source_id": "12073",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 9,
+          "source_id": "8897",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 14,
+          "source_id": "10393",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 15,
+          "source_id": "9789",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 16,
+          "source_id": "11174",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 17,
+          "source_id": "11175",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 35,
+          "source_id": "20272",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 37,
+          "source_id": "7173",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 54,
+          "source_id": "24170",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 62,
+          "source_id": "9320",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 96,
+          "source_id": "22678",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 109,
+          "source_id": "7125",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 110,
+          "source_id": "17141",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 118,
+          "source_id": "17257",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 127,
+          "source_id": "18289",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 132,
+          "source_id": "14186",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 135,
+          "source_id": "9660",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 137,
+          "source_id": "9059",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 166,
+          "source_id": "7501",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 168,
+          "source_id": "7496",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 170,
+          "source_id": "7499",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 171,
+          "source_id": "7505",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 173,
+          "source_id": "3758",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 176,
+          "source_id": "3757",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 219,
+          "source_id": "17203",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 220,
+          "source_id": "5900",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 221,
+          "source_id": "5899",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 269,
+          "source_id": "5495",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 272,
+          "source_id": "5496",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 296,
+          "source_id": "17253",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 322,
+          "source_id": "27145",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 323,
+          "source_id": "7171",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 354,
+          "source_id": "11102",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 368,
+          "source_id": "33365",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 378,
+          "source_id": "15108",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 409,
+          "source_id": "3216",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 422,
+          "source_id": "7483",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 424,
+          "source_id": "15873",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 452,
+          "source_id": "22889",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 476,
+          "source_id": "9680",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 496,
+          "source_id": "21783",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 521,
+          "source_id": "17893",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 547,
+          "source_id": "22778",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 569,
+          "source_id": "3854",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 617,
+          "source_id": "12031",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 638,
+          "source_id": "9061",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 668,
+          "source_id": "15385",
+          "code": "missing_name",
+          "severity": "warning"
+        }
+      ],
+      "imported": 624
+    },
+    {
+      "file": "yaroslavl_temples_full.csv",
+      "region": "Ярославская область",
+      "encoding": "utf-8-sig",
+      "rows_seen": 998,
+      "imported_before_source_aggregation": 900,
+      "skipped_empty": 1,
+      "skipped_missing_name": 98,
+      "issues": [
+        {
+          "row": 22,
+          "source_id": "9505",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 28,
+          "source_id": "11518",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 33,
+          "source_id": "13845",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 35,
+          "source_id": "28081",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 49,
+          "source_id": "11151",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 70,
+          "source_id": "33526",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 72,
+          "source_id": "33532",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 73,
+          "source_id": "33525",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 80,
+          "source_id": "28640",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 88,
+          "source_id": "19431",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 110,
+          "source_id": "9311",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 120,
+          "source_id": "12097",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 127,
+          "source_id": "14842",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 137,
+          "source_id": "28402",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 138,
+          "source_id": "20817",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 139,
+          "source_id": "8488",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 155,
+          "source_id": "18464",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 166,
+          "source_id": "14843",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 167,
+          "source_id": "7062",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 174,
+          "source_id": "4197",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 175,
+          "source_id": "4191",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 177,
+          "source_id": "8448",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 201,
+          "source_id": "10686",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 218,
+          "source_id": "20650",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 220,
+          "source_id": "11067",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 226,
+          "source_id": "11206",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 233,
+          "source_id": "6807",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 234,
+          "source_id": "12971",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 244,
+          "source_id": "11154",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 249,
+          "source_id": "18695",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 258,
+          "source_id": "4249",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 278,
+          "source_id": "11939",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 279,
+          "source_id": "17635",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 287,
+          "source_id": "11439",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 297,
+          "source_id": "15605",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 308,
+          "source_id": "3439",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 342,
+          "source_id": "19674",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 343,
+          "source_id": "8371",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 344,
+          "source_id": "8372",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 345,
+          "source_id": "8748",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 389,
+          "source_id": "13465",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 390,
+          "source_id": "11585",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 392,
+          "source_id": "14029",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 431,
+          "source_id": "12911",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 437,
+          "source_id": "5292",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 439,
+          "source_id": "10558",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 440,
+          "source_id": "3937",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 442,
+          "source_id": "9312",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 490,
+          "source_id": "12009",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 491,
+          "source_id": "1010",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 492,
+          "source_id": "14325",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 494,
+          "source_id": "4280",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 495,
+          "source_id": "4281",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 532,
+          "source_id": "10970",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 533,
+          "source_id": "15735",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 534,
+          "source_id": "18598",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 535,
+          "source_id": "15366",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 540,
+          "source_id": "8675",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 572,
+          "source_id": "8291",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 590,
+          "source_id": "5285",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 600,
+          "source_id": "19913",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 610,
+          "source_id": "17636",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 614,
+          "source_id": "12011",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 622,
+          "source_id": "20368",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 623,
+          "source_id": "3386",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 631,
+          "source_id": "11230",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 632,
+          "source_id": "10677",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 641,
+          "source_id": "12833",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 643,
+          "source_id": "20012",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 661,
+          "source_id": "17609",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 666,
+          "source_id": "8461",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 671,
+          "source_id": "15527",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 672,
+          "source_id": "15528",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 675,
+          "source_id": "26672",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 690,
+          "source_id": "5520",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 706,
+          "source_id": "9026",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 708,
+          "source_id": "18034",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 711,
+          "source_id": "14035",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 753,
+          "source_id": "10679",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 763,
+          "source_id": "25004",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 764,
+          "source_id": "19184",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 788,
+          "source_id": "4649",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 800,
+          "source_id": "17294",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 802,
+          "source_id": "25562",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 821,
+          "source_id": "11934",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 823,
+          "source_id": "6171",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 829,
+          "source_id": "12921",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 950,
+          "source_id": "3471",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 952,
+          "source_id": "3473",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 953,
+          "source_id": "4131",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 955,
+          "source_id": "3472",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 956,
+          "source_id": "4130",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 957,
+          "source_id": "32714",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 958,
+          "source_id": "4156",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 993,
+          "source_id": "14254",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 996,
+          "source_id": "7193",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 997,
+          "source_id": "7168",
+          "code": "missing_name",
+          "severity": "warning"
+        },
+        {
+          "row": 999,
+          "source_id": "15715",
+          "code": "missing_name",
+          "severity": "warning"
+        }
+      ],
+      "imported": 900
+    },
+    {
+      "file": "data/spb_temples.json",
+      "region": "Санкт-Петербург",
+      "format": "legacy_spb_json",
+      "encoding": "utf-8",
+      "rows_seen": 414,
+      "imported_before_source_aggregation": 414,
+      "skipped_empty": 0,
+      "skipped_missing_name": 0,
+      "issues": [
+        {
+          "row": 56,
+          "source_id": "56",
+          "code": "coordinates_invalid",
+          "severity": "warning"
+        }
+      ],
+      "imported": 414
+    }
+  ]
+}

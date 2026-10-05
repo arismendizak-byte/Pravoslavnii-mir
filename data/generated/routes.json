@@ -1,0 +1,96 @@
+{
+  "routes": [
+    {
+      "badge": "Паломнический",
+      "description": "Паломничество в четвёртый удел Пресвятой Богородицы — Свято-Дивеевский монастырь. Прохождение по Святой Канавке, поклонение мощам преподобного Серафима Саровского.",
+      "distance": "4 объекта",
+      "duration": "2–3 дня",
+      "id": "pm-route-b1a746ad676ea34a8ea92a76",
+      "image": "https://i.postimg.cc/2yyFYdyK/images-(3).jpg",
+      "location": "Нижегородская область",
+      "price": "от 7 500 ₽",
+      "quality_flags": [
+        "contains_legacy_waypoint"
+      ],
+      "slug": "diveevskii-marshrut",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-routes",
+          "source_file": "data/routes.json",
+          "source_id": "diveevo-route"
+        }
+      ],
+      "stops": [
+        {
+          "order": 1,
+          "place_id": "pm-d9b350eb1f99542d8e011cf7028bd2d0",
+          "quality_flags": [
+            "legacy_label_differs_from_canonical_name"
+          ]
+        }
+      ],
+      "title": "Дивеевский маршрут",
+      "verification_status": "legacy_unverified",
+      "waypoints": [
+        {
+          "detail_path": "objects/arzamas.html",
+          "label": "Арзамас",
+          "lat": 55.3948,
+          "lon": 43.8396,
+          "order": 2,
+          "place_id": null,
+          "quality_flags": [
+            "curated_stop_without_canonical_place",
+            "legacy_noncanonical_waypoint"
+          ]
+        }
+      ]
+    },
+    {
+      "badge": "Пеший маршрут",
+      "description": "Главный пеший паломнический путь России. Повторяет исторический маршрут царского богомолья от Иверской часовни у стен Московского Кремля до Свято-Троицкой Сергиевой Лавры.",
+      "distance": "120 км",
+      "duration": "4–5 дней",
+      "id": "pm-route-b26a02228cbb5a023d02f37e",
+      "image": "https://i.postimg.cc/9F0J7SyK/lavra3.jpg",
+      "location": "Москва → Сергиев Посад",
+      "price": "Бесплатно (личные расходы)",
+      "quality_flags": [
+        "contains_legacy_waypoint"
+      ],
+      "slug": "moskovskii-palomnik",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-routes",
+          "source_file": "data/routes.json",
+          "source_id": "moscow-pilgrim"
+        }
+      ],
+      "stops": [
+        {
+          "order": 2,
+          "place_id": "pm-9e8bc6fff182514f91cf1739e41d2839",
+          "quality_flags": []
+        }
+      ],
+      "title": "Московский паломник",
+      "verification_status": "legacy_unverified",
+      "waypoints": [
+        {
+          "detail_path": "objects/christ.html",
+          "label": "Храм Христа Спасителя",
+          "lat": 55.7444,
+          "lon": 37.6054,
+          "order": 1,
+          "place_id": null,
+          "quality_flags": [
+            "curated_stop_without_canonical_place",
+            "legacy_noncanonical_waypoint"
+          ]
+        }
+      ]
+    }
+  ],
+  "schema_version": "1.1.0",
+  "source_snapshot_sha256": "115c88ef3852a20da2b48369eca9d3d0d074cba79d0937a2c4335c6527f9e3ab"
+}

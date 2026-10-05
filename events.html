@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>События — Православный Мир</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/events.css">
+</head>
+<body>
+<div id="nav-container"></div><div id="bottom-nav-container"></div>
+<main class="page-section event-shell">
+    <div class="breadcrumbs"><a href="index.html">Главная</a> &rarr; <span>События</span></div>
+    <header class="event-hero">
+        <div class="event-kicker">Афиша · встречи и паломничество</div>
+        <h1>События православного мира</h1>
+        <p>Богослужения, крестные ходы, лекции и поездки. Публикуем события после проверки источника, времени и места проведения.</p>
+    </header>
+    <div id="eventError" class="event-error" hidden></div>
+    <section class="event-trust" id="eventTrust" aria-live="polite">Загрузка афиши…</section>
+    <section class="event-controls" aria-label="Фильтры событий">
+        <div class="filter-field"><label for="eventSearch">Найти событие</label><input id="eventSearch" type="search" placeholder="Название, место, организатор"></div>
+        <div class="filter-field"><label for="eventType">Тип события</label><select id="eventType"><option value="">Все типы</option><option value="service">Богослужения</option><option value="procession">Крестные ходы</option><option value="lecture">Лекции</option><option value="pilgrimage_trip">Паломнические поездки</option><option value="parish_event">Приходские события</option><option value="pilgrim_event">Паломнические события</option><option value="meeting">Встречи</option><option value="other">Другие</option></select></div>
+        <div class="filter-field"><label for="eventFrom">С даты</label><input id="eventFrom" type="date"></div>
+        <div class="filter-field"><label for="eventTo">По дату</label><input id="eventTo" type="date"></div>
+    </section>
+    <section class="event-list" id="eventList" aria-live="polite"></section>
+</main>
+<div id="footer-container"></div>
+<script src="js/config.js"></script><script src="js/components.js"></script><script src="js/event-layer.js"></script><script src="js/events.js"></script>
+</body>
+</html>

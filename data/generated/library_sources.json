@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.2.0",
+  "source_snapshot_sha256": "413c8dc21e944c9609d18cf7817a0a163b6de40dc3330958d24110aa8b58fee1",
+  "count": 4,
+  "sources": [
+    {
+      "provider": "pravmir-library-rights-system",
+      "label": "Pravmir Library rights ingestion policy",
+      "source_file": "data/library_sources/rights_taxonomy.json",
+      "source_section": "policies",
+      "mode": "system_policy",
+      "trust_layer": "canonical_system",
+      "verification_status": "system_defined",
+      "jurisdiction": "cross-jurisdictional",
+      "rights_scope": "asset_ingestion_policy",
+      "notes": "Technical ingestion policy only. Rights for each future text/audio/video asset must be evidenced separately."
+    },
+    {
+      "provider": "azbyka-scripture-metadata-2026-10-05",
+      "label": "Азбука веры — Библия / Синодальный перевод, verified metadata snapshot 2026-10-05",
+      "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+      "source_section": "authors+works",
+      "mode": "canonical_source",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "jurisdiction": "unspecified",
+      "rights_scope": "metadata_only",
+      "notes": "Bibliographic metadata and explicit citation-prefix bridge for the 48 already verified liturgical readings. No full Scripture text is ingested."
+    },
+    {
+      "provider": "wikisource-public-domain-2026-10-05",
+      "label": "Викитека — rights-verified Orthodox text source verification 2026-10-05",
+      "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+      "source_section": "text_records+life_records",
+      "mode": "canonical_source",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "jurisdiction": "Russia + applicable life+70 jurisdictions",
+      "rights_scope": "per_asset_verified_text",
+      "notes": "Historical theology, hagiography, prayer/liturgy, sermons, catechesis and church-history records. Work rights and exact electronic-publication rights remain separate; selected pinned transcriptions are CC BY-SA, unresolved modern editions remain external-link-only, and no remote bytes are copied without explicit storage evidence."
+    },
+    {
+      "provider": "wikimedia-commons-rights-2026-10-05",
+      "label": "Wikimedia Commons — verified CC0/CC BY-SA media 2026-10-05",
+      "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+      "source_section": "media_records+relations",
+      "mode": "canonical_source",
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "jurisdiction": "cross-jurisdictional license terms",
+      "rights_scope": "explicit_open_media",
+      "notes": "External media links with preserved creator/license/checksum evidence; no large media binaries copied into the release."
+    }
+  ]
+}

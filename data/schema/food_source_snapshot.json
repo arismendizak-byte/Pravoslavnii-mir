@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "domain": "orthodox_food",
+  "files": [
+    {
+      "path": "data/food_sources/source_manifest.json",
+      "size": 312,
+      "sha256": "344a67ead4b20db0c220b6dabd93331e0938be13d8cb0e843907042eb4c3993d"
+    },
+    {
+      "path": "data/food_sources/recipes_editorial.json",
+      "size": 20187,
+      "sha256": "f3870640ad50ced369c4fd2584dc0dd3517d3046e5e86d3a73fdca368a59786c"
+    }
+  ]
+}

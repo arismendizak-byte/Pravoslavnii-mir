@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0.0",
+  "domain": "library_scripture_catalog",
+  "verified_on": "2026-10-05",
+  "provider": "azbyka-scripture-metadata-2026-10-05",
+  "source_url": "https://azbyka.ru/biblia/",
+  "translation_label": "Синодальный перевод",
+  "rights_status": "metadata_only",
+  "notes": "Source-verified bibliographic bridge only. No Scripture text is copied into Pravmir Library. Authorship relations are created only where the source catalog explicitly names the author in the work/group label; Acts and Hebrews are intentionally left without author relations at this stage.",
+  "authors": [
+    {
+      "key": "matthew",
+      "display_name": "Апостол и евангелист Матфей",
+      "aliases": [
+        "Матфей",
+        "Евангелист Матфей"
+      ]
+    },
+    {
+      "key": "mark",
+      "display_name": "Апостол и евангелист Марк",
+      "aliases": [
+        "Марк",
+        "Евангелист Марк"
+      ]
+    },
+    {
+      "key": "luke",
+      "display_name": "Апостол и евангелист Лука",
+      "aliases": [
+        "Лука",
+        "Евангелист Лука"
+      ]
+    },
+    {
+      "key": "john",
+      "display_name": "Апостол и евангелист Иоанн Богослов",
+      "aliases": [
+        "Иоанн Богослов",
+        "Евангелист Иоанн"
+      ]
+    },
+    {
+      "key": "paul",
+      "display_name": "Апостол Павел",
+      "aliases": [
+        "Павел",
+        "Святой апостол Павел"
+      ]
+    },
+    {
+      "key": "peter",
+      "display_name": "Апостол Петр",
+      "aliases": [
+        "Петр",
+        "Святой апостол Петр"
+      ]
+    }
+  ],
+  "works": [
+    {
+      "citation_prefix": "Мф.",
+      "key": "gospel-matthew",
+      "title": "Евангелие от Матфея",
+      "author_key": "matthew",
+      "author_relation_type": "author_attribution"
+    },
+    {
+      "citation_prefix": "Мк.",
+      "key": "gospel-mark",
+      "title": "Евангелие от Марка",
+      "author_key": "mark",
+      "author_relation_type": "author_attribution"
+    },
+    {
+      "citation_prefix": "Лк.",
+      "key": "gospel-luke",
+      "title": "Евангелие от Луки",
+      "author_key": "luke",
+      "author_relation_type": "author_attribution"
+    },
+    {
+      "citation_prefix": "Ин.",
+      "key": "gospel-john",
+      "title": "Евангелие от Иоанна",
+      "author_key": "john",
+      "author_relation_type": "author_attribution"
+    },
+    {
+      "citation_prefix": "Деян.",
+      "key": "acts",
+      "title": "Деяния святых Апостолов",
+      "author_key": null,
+      "author_relation_type": null
+    },
+    {
+      "citation_prefix": "Рим.",
+      "key": "romans",
+      "title": "Послание к Римлянам",
+      "author_key": "paul",
+      "author_relation_type": "author_attribution"
+    },
+    {
+      "citation_prefix": "1Кор.",
+      "key": "1-corinthians",
+      "title": "Первое послание к Коринфянам",
+      "author_key": "paul",
+      "author_relation_type": "author_attribution"
+    },
+    {
+      "citation_prefix": "2Кор.",
+      "key": "2-corinthians",
+      "title": "Второе послание к Коринфянам",
+      "author_key": "paul",
+      "author_relation_type": "author_attribution"
+    },
+    {
+      "citation_prefix": "Гал.",
+      "key": "galatians",
+      "title": "Послание к Галатам",
+      "author_key": "paul",
+      "author_relation_type": "author_attribution"
+    },
+    {
+      "citation_prefix": "Флп.",
+      "key": "philippians",
+      "title": "Послание к Филиппийцам",
+      "author_key": "paul",
+      "author_relation_type": "author_attribution"
+    },
+    {
+      "citation_prefix": "Тит.",
+      "key": "titus",
+      "title": "Послание к Титу",
+      "author_key": "paul",
+      "author_relation_type": "author_attribution"
+    },
+    {
+      "citation_prefix": "Евр.",
+      "key": "hebrews",
+      "title": "Послание к Евреям",
+      "author_key": null,
+      "author_relation_type": null
+    },
+    {
+      "citation_prefix": "1Ин.",
+      "key": "1-john",
+      "title": "Первое послание Иоанна",
+      "author_key": "john",
+      "author_relation_type": "author_attribution"
+    },
+    {
+      "citation_prefix": "2Пет.",
+      "key": "2-peter",
+      "title": "Второе послание Петра",
+      "author_key": "peter",
+      "author_relation_type": "author_attribution"
+    }
+  ]
+}

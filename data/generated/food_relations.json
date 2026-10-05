@@ -1,0 +1,682 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "60b93662ffb974ae6efbd8a84ebe8405c9c8bec837dfe47dc84fbe3f47540611",
+  "count": 27,
+  "relations": [
+    {
+      "id": "pm-foodrel-03dae7d1c218ee819601",
+      "relation_type": "related_to_feast",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-e458c441ed6c62512d0a"
+      },
+      "to": {
+        "kind": "feast",
+        "id": "pm-feast-e168192c9f98092e4e02"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Редакционная праздничная подборка; связь не является литургическим или дисциплинарным предписанием.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "tvorozhnaya-paskha-editorial",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 8,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-08ab9d660a1516dbc248",
+      "relation_type": "editorial_suggestion_for_fast_period",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-ec700b505436e651e0c3"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Рецепт подходит по общему составу; связь не является каноническим предписанием меры поста.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "postnye-shchi-s-fasolyu",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 1,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-14b0e50bad1f40c1dce3",
+      "relation_type": "editorial_suggestion_for_fast_period",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-b7e936336abcce0b6630"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Рецепт подходит по общему составу; связь не является каноническим предписанием меры поста.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "chechevichnaya-pohlebka",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 3,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-1a98dcacc5f5ebfce5c7",
+      "relation_type": "editorial_suggestion_for_fast_period",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-e7a8b3ad48586ff6cdd6"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-4392fc29019cc3f5a733"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Рецепт подходит по общему составу; связь не является каноническим предписанием меры поста.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "kartofel-s-gribami-v-duhovke",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 5,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-1a9eec5c8d970f5794e6",
+      "relation_type": "editorial_suggestion_for_fast_period",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-b7e936336abcce0b6630"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Рецепт подходит по общему составу; связь не является каноническим предписанием меры поста.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "chechevichnaya-pohlebka",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 3,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-2bbb70e1301d3c1ff962",
+      "relation_type": "editorial_suggestion_for_fast_period",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-488427bb91e2d24c9053"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-4392fc29019cc3f5a733"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Рецепт подходит по общему составу; связь не является каноническим предписанием меры поста.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "vinegret",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 4,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-5572e041ec7ac3b704ce",
+      "relation_type": "editorial_suggestion_for_fast_period",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-ec700b505436e651e0c3"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Рецепт подходит по общему составу; связь не является каноническим предписанием меры поста.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "postnye-shchi-s-fasolyu",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 1,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-568ae51b2f32070fcf22",
+      "relation_type": "editorial_suggestion_for_fast_period",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-ec700b505436e651e0c3"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-4392fc29019cc3f5a733"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Рецепт подходит по общему составу; связь не является каноническим предписанием меры поста.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "postnye-shchi-s-fasolyu",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 1,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-5721af8b103846262da7",
+      "relation_type": "editorial_suggestion_for_fast_period",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-1384e76e596ada43005f"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Рецепт подходит по общему составу; связь не является каноническим предписанием меры поста.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "grechka-s-gribami",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 2,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-580cda211e5a2e34a4dd",
+      "relation_type": "editorial_suggestion_for_fast_period",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-ec700b505436e651e0c3"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Рецепт подходит по общему составу; связь не является каноническим предписанием меры поста.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "postnye-shchi-s-fasolyu",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 1,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-5e54baa97ace69d289c5",
+      "relation_type": "editorial_suggestion_for_fast_period",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-e7a8b3ad48586ff6cdd6"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Рецепт подходит по общему составу; связь не является каноническим предписанием меры поста.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "kartofel-s-gribami-v-duhovke",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 5,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-700998a9a1ab36a50d30",
+      "relation_type": "editorial_suggestion_for_fast_period",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-488427bb91e2d24c9053"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Рецепт подходит по общему составу; связь не является каноническим предписанием меры поста.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "vinegret",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 4,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-75fa13bc65c38c3e01d6",
+      "relation_type": "editorial_suggestion_for_fast_period",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-b7e936336abcce0b6630"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Рецепт подходит по общему составу; связь не является каноническим предписанием меры поста.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "chechevichnaya-pohlebka",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 3,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-760fc1ca70e5a0ca16f6",
+      "relation_type": "editorial_suggestion_for_fast_period",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-c3c628d59136b98c0349"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-4392fc29019cc3f5a733"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Рецепт подходит по общему составу; связь не является каноническим предписанием меры поста.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "ovsyanaya-kasha-s-yablokom",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 6,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-85751eb69e5a988b9be0",
+      "relation_type": "editorial_suggestion_for_fast_period",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-488427bb91e2d24c9053"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Рецепт подходит по общему составу; связь не является каноническим предписанием меры поста.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "vinegret",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 4,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-8e5ce744ca6ff2671e9f",
+      "relation_type": "editorial_suggestion_for_fast_period",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-b7e936336abcce0b6630"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-4392fc29019cc3f5a733"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Рецепт подходит по общему составу; связь не является каноническим предписанием меры поста.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "chechevichnaya-pohlebka",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 3,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-903f3acf2a5e551b5527",
+      "relation_type": "editorial_suggestion_for_fast_period",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-e7a8b3ad48586ff6cdd6"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Рецепт подходит по общему составу; связь не является каноническим предписанием меры поста.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "kartofel-s-gribami-v-duhovke",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 5,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-a6cfa7cd891109bce550",
+      "relation_type": "editorial_suggestion_for_fast_period",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-c3c628d59136b98c0349"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-402636d7f82405187cbd"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Рецепт подходит по общему составу; связь не является каноническим предписанием меры поста.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "ovsyanaya-kasha-s-yablokom",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 6,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-b1fe4dccd97405b30fb3",
+      "relation_type": "related_to_feast",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-73286f69d22f5a22a82e"
+      },
+      "to": {
+        "kind": "feast",
+        "id": "pm-feast-e168192c9f98092e4e02"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Редакционная праздничная подборка; связь не является литургическим или дисциплинарным предписанием.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "paskhalny-kulich-editorial",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 7,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-b4d307e5d5d33e99992d",
+      "relation_type": "related_to_feast",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-5ebb101321b2d3071d7b"
+      },
+      "to": {
+        "kind": "feast",
+        "id": "pm-feast-d2a6b919fe5c37c14aa0"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Редакционная праздничная подборка; связь не является литургическим или дисциплинарным предписанием.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "rozhdestvenskie-medovye-pryaniki-editorial",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 9,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-b69cb77440f796d0f30b",
+      "relation_type": "editorial_suggestion_for_fast_period",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-c3c628d59136b98c0349"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Рецепт подходит по общему составу; связь не является каноническим предписанием меры поста.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "ovsyanaya-kasha-s-yablokom",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 6,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-bfd5c4b8f926000ed412",
+      "relation_type": "editorial_suggestion_for_fast_period",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-1384e76e596ada43005f"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Рецепт подходит по общему составу; связь не является каноническим предписанием меры поста.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "grechka-s-gribami",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 2,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-d3e7d2aba0a1c8566aa1",
+      "relation_type": "editorial_suggestion_for_fast_period",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-1384e76e596ada43005f"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-4392fc29019cc3f5a733"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Рецепт подходит по общему составу; связь не является каноническим предписанием меры поста.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "grechka-s-gribami",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 2,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-dbfaaa9ad99e86f2b49e",
+      "relation_type": "editorial_suggestion_for_fast_period",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-c3c628d59136b98c0349"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Рецепт подходит по общему составу; связь не является каноническим предписанием меры поста.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "ovsyanaya-kasha-s-yablokom",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 6,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-f1b05558a77b90178d26",
+      "relation_type": "editorial_suggestion_for_fast_period",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-e7a8b3ad48586ff6cdd6"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-8e139912f4858f604686"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Рецепт подходит по общему составу; связь не является каноническим предписанием меры поста.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "kartofel-s-gribami-v-duhovke",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 5,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-f4814c52398dd0f8284f",
+      "relation_type": "editorial_suggestion_for_fast_period",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-488427bb91e2d24c9053"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Рецепт подходит по общему составу; связь не является каноническим предписанием меры поста.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "vinegret",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 4,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-foodrel-fe5be06325ea364a4c17",
+      "relation_type": "editorial_suggestion_for_fast_period",
+      "relation_class": "editorial_guidance",
+      "from": {
+        "kind": "recipe",
+        "id": "pm-recipe-1384e76e596ada43005f"
+      },
+      "to": {
+        "kind": "fasting_rule",
+        "id": "pm-fast-078cd89e51d0cc91d74e"
+      },
+      "verification_status": "editorial_guidance",
+      "note": "Рецепт подходит по общему составу; связь не является каноническим предписанием меры поста.",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-food",
+          "source_id": "grechka-s-gribami",
+          "source_file": "data/food_sources/recipes_editorial.json",
+          "source_row": 2,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    }
+  ]
+}

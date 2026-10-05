@@ -1,0 +1,231 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "cb8933e71a4b77703b8f483e56da2559d16312c92899cdde4daaa786f8d88291",
+  "count": 7,
+  "categories": [
+    {
+      "id": "pm-category-1d096be6986e86e7e0c7",
+      "name": "Культура",
+      "slug": "category-",
+      "verification_status": "legacy_curated",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-articles",
+          "source_id": "5",
+          "source_file": "data/articles.json",
+          "source_row": 5,
+          "source_url": null,
+          "migrated_from": null
+        },
+        {
+          "provider": "pravmir-legacy-articles",
+          "source_id": "10",
+          "source_file": "data/articles.json",
+          "source_row": 10,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-category-24d0e6856d821d098662",
+      "name": "Святые",
+      "slug": "category-",
+      "verification_status": "legacy_curated",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-articles",
+          "source_id": "2",
+          "source_file": "data/articles.json",
+          "source_row": 2,
+          "source_url": null,
+          "migrated_from": null
+        },
+        {
+          "provider": "pravmir-legacy-articles",
+          "source_id": "7",
+          "source_file": "data/articles.json",
+          "source_row": 7,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-category-81790b6de02defa58f25",
+      "name": "Паломничество",
+      "slug": "category-",
+      "verification_status": "legacy_curated",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-journalpp",
+          "source_id": "articles:news/svyatye-mesta-rossii-kuda-poekhat-letom-2026",
+          "source_file": "data/content_sources/journalpp_legacy.json",
+          "source_row": 1,
+          "source_url": "https://journalpp.ru/news/svyatye-mesta-rossii-kuda-poekhat-letom-2026/",
+          "migrated_from": "journal.html inline RPZ_ARTICLES/RPZ_NEWS"
+        },
+        {
+          "provider": "pravmir-legacy-journalpp",
+          "source_id": "articles:news/svyataya-zemlya-kak-podgotovitsya-k-palomnichestvu",
+          "source_file": "data/content_sources/journalpp_legacy.json",
+          "source_row": 5,
+          "source_url": "https://journalpp.ru/news/svyataya-zemlya-kak-podgotovitsya-k-palomnichestvu/",
+          "migrated_from": "journal.html inline RPZ_ARTICLES/RPZ_NEWS"
+        },
+        {
+          "provider": "pravmir-legacy-journalpp",
+          "source_id": "articles:news/v-diveevo-s-detmi-chto-nuzhno-znat-palomnikam",
+          "source_file": "data/content_sources/journalpp_legacy.json",
+          "source_row": 2,
+          "source_url": "https://journalpp.ru/news/v-diveevo-s-detmi-chto-nuzhno-znat-palomnikam/",
+          "migrated_from": "journal.html inline RPZ_ARTICLES/RPZ_NEWS"
+        },
+        {
+          "provider": "pravmir-legacy-journalpp",
+          "source_id": "articles:news/palomnichestvo-v-optinu-pustyn-istoriya-i-sovremennost",
+          "source_file": "data/content_sources/journalpp_legacy.json",
+          "source_row": 3,
+          "source_url": "https://journalpp.ru/news/palomnichestvo-v-optinu-pustyn-istoriya-i-sovremennost/",
+          "migrated_from": "journal.html inline RPZ_ARTICLES/RPZ_NEWS"
+        },
+        {
+          "provider": "pravmir-legacy-journalpp",
+          "source_id": "articles:news/moshchi-svyatogo-nikolaya-gde-poklonyatsya-v-rossii",
+          "source_file": "data/content_sources/journalpp_legacy.json",
+          "source_row": 6,
+          "source_url": "https://journalpp.ru/news/moshchi-svyatogo-nikolaya-gde-poklonyatsya-v-rossii/",
+          "migrated_from": "journal.html inline RPZ_ARTICLES/RPZ_NEWS"
+        },
+        {
+          "provider": "pravmir-legacy-journalpp",
+          "source_id": "articles:news/kak-dobratsya-do-valaama-instruktsiya-dlya-palomnika",
+          "source_file": "data/content_sources/journalpp_legacy.json",
+          "source_row": 4,
+          "source_url": "https://journalpp.ru/news/kak-dobratsya-do-valaama-instruktsiya-dlya-palomnika/",
+          "migrated_from": "journal.html inline RPZ_ARTICLES/RPZ_NEWS"
+        }
+      ]
+    },
+    {
+      "id": "pm-category-94da3ab90c40545f76a7",
+      "name": "История",
+      "slug": "category-",
+      "verification_status": "legacy_curated",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-articles",
+          "source_id": "6",
+          "source_file": "data/articles.json",
+          "source_row": 6,
+          "source_url": null,
+          "migrated_from": null
+        },
+        {
+          "provider": "pravmir-legacy-articles",
+          "source_id": "1",
+          "source_file": "data/articles.json",
+          "source_row": 1,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-category-98d39f6d02a64244ce87",
+      "name": "Факты",
+      "slug": "category-",
+      "verification_status": "legacy_curated",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-articles",
+          "source_id": "9",
+          "source_file": "data/articles.json",
+          "source_row": 9,
+          "source_url": null,
+          "migrated_from": null
+        },
+        {
+          "provider": "pravmir-legacy-articles",
+          "source_id": "4",
+          "source_file": "data/articles.json",
+          "source_row": 4,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-category-9e09ef33f7ad5bd3e456",
+      "name": "Новость",
+      "slug": "category-",
+      "verification_status": "legacy_curated",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-journalpp",
+          "source_id": "news:news/palomnicheskiy-tsentr-lavry-zapustil-onlayn-translyatsii",
+          "source_file": "data/content_sources/journalpp_legacy.json",
+          "source_row": 5,
+          "source_url": "https://journalpp.ru/news/palomnicheskiy-tsentr-lavry-zapustil-onlayn-translyatsii/",
+          "migrated_from": "journal.html inline RPZ_ARTICLES/RPZ_NEWS"
+        },
+        {
+          "provider": "pravmir-legacy-journalpp",
+          "source_id": "news:news/novyy-palomnicheskiy-marshrut-zolotoe-koltsa-pravoslaviya",
+          "source_file": "data/content_sources/journalpp_legacy.json",
+          "source_row": 3,
+          "source_url": "https://journalpp.ru/news/novyy-palomnicheskiy-marshrut-zolotoe-koltsa-pravoslaviya/",
+          "migrated_from": "journal.html inline RPZ_ARTICLES/RPZ_NEWS"
+        },
+        {
+          "provider": "pravmir-legacy-journalpp",
+          "source_id": "news:news/v-diveevskom-monastyre-zavershilas-restavratsiya-svyatoy-kanavki",
+          "source_file": "data/content_sources/journalpp_legacy.json",
+          "source_row": 4,
+          "source_url": "https://journalpp.ru/news/v-diveevskom-monastyre-zavershilas-restavratsiya-svyatoy-kanavki/",
+          "migrated_from": "journal.html inline RPZ_ARTICLES/RPZ_NEWS"
+        },
+        {
+          "provider": "pravmir-legacy-journalpp",
+          "source_id": "news:news/prinesenie-moshchey-svyatitelya-nikolaya-v-moskvu-raspisanie",
+          "source_file": "data/content_sources/journalpp_legacy.json",
+          "source_row": 2,
+          "source_url": "https://journalpp.ru/news/prinesenie-moshchey-svyatitelya-nikolaya-v-moskvu-raspisanie/",
+          "migrated_from": "journal.html inline RPZ_ARTICLES/RPZ_NEWS"
+        },
+        {
+          "provider": "pravmir-legacy-journalpp",
+          "source_id": "news:news/prezentatsiya-novogo-nomera-zhurnala-pravoslavnyy-palomnik",
+          "source_file": "data/content_sources/journalpp_legacy.json",
+          "source_row": 1,
+          "source_url": "https://journalpp.ru/news/prezentatsiya-novogo-nomera-zhurnala-pravoslavnyy-palomnik/",
+          "migrated_from": "journal.html inline RPZ_ARTICLES/RPZ_NEWS"
+        }
+      ]
+    },
+    {
+      "id": "pm-category-a6722db3e00ed34c0a4a",
+      "name": "Праздники",
+      "slug": "category-",
+      "verification_status": "legacy_curated",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-articles",
+          "source_id": "8",
+          "source_file": "data/articles.json",
+          "source_row": 8,
+          "source_url": null,
+          "migrated_from": null
+        },
+        {
+          "provider": "pravmir-legacy-articles",
+          "source_id": "3",
+          "source_file": "data/articles.json",
+          "source_row": 3,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    }
+  ]
+}

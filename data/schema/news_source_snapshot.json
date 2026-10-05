@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "domain": "news",
+  "files": [
+    {
+      "path": "data/news_sources/source_manifest.json",
+      "size": 1223,
+      "sha256": "5afd22636af59d7c9a0ece5b7e0219b307d0c0e8597118abfccf03ab7459f80d"
+    },
+    {
+      "path": "data/content_sources/journalpp_legacy.json",
+      "size": 5891,
+      "sha256": "a0d2b941bed57cb4db5c3b0b381455b2949371b96410cb3f9ce93dad99308f0e"
+    },
+    {
+      "path": "data/news_sources/verified_records_2026-10-05.json",
+      "size": 3531,
+      "sha256": "88dcb66602d84da06ef85ec1cfb212481054d51bc5becc13b88faa3e65b90036"
+    }
+  ]
+}

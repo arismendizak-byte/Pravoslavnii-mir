@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0.0",
+  "provider": "pravmir-legacy-calendar-2026",
+  "source_file": "data/content_sources/calendar_2026_legacy.json",
+  "verification_status": "legacy_unverified",
+  "notes": "Explicit migration semantics for M5.3. These mappings preserve legacy assertions and are not source verification.",
+  "fast_start_links": [
+    {
+      "entry_source_id": "entry:2026-02-23:начало великого поста",
+      "fast_source_id": "great-lent-2026"
+    },
+    {
+      "entry_source_id": "entry:2026-06-01:начало петрова поста",
+      "fast_source_id": "apostles-fast-2026"
+    },
+    {
+      "entry_source_id": "entry:2026-08-14:начало успенского поста",
+      "fast_source_id": "dormition-fast-2026"
+    },
+    {
+      "entry_source_id": "entry:2026-11-28:начало рождественского поста",
+      "fast_source_id": "nativity-fast-2026"
+    }
+  ],
+  "commemoration_saints": [
+    {
+      "entry_source_id": "entry:2026-01-25:мученицы татианы",
+      "saints": [
+        {
+          "source_id": "legacy-saint-tatiana",
+          "name": "Татиана",
+          "display_name": "Мученица Татиана",
+          "aliases": [
+            "Татиана"
+          ]
+        }
+      ]
+    },
+    {
+      "entry_source_id": "entry:2026-05-24:кирилла и мефодия",
+      "saints": [
+        {
+          "source_id": "legacy-saint-cyril",
+          "name": "Кирилл",
+          "display_name": "Кирилл",
+          "aliases": [
+            "Кирилл"
+          ]
+        },
+        {
+          "source_id": "legacy-saint-methodius",
+          "name": "Мефодий",
+          "display_name": "Мефодий",
+          "aliases": [
+            "Мефодий"
+          ]
+        }
+      ]
+    },
+    {
+      "entry_source_id": "entry:2026-06-26:преподобной анны кашинской",
+      "saints": [
+        {
+          "source_id": "legacy-saint-anna-kashinskaya",
+          "name": "Анна Кашинская",
+          "display_name": "Анна Кашинская",
+          "aliases": [
+            "Анна Кашинская"
+          ]
+        }
+      ]
+    },
+    {
+      "entry_source_id": "entry:2026-07-28:равноапостольного владимира",
+      "saints": [
+        {
+          "source_id": "legacy-saint-vladimir",
+          "name": "Владимир",
+          "display_name": "Владимир",
+          "aliases": [
+            "Владимир"
+          ]
+        }
+      ]
+    },
+    {
+      "entry_source_id": "entry:2026-08-01:серафима саровского",
+      "saints": [
+        {
+          "source_id": "legacy-saint-seraphim-sarov",
+          "name": "Серафим Саровский",
+          "display_name": "Серафим Саровский",
+          "aliases": [
+            "Серафим Саровский"
+          ]
+        }
+      ]
+    },
+    {
+      "entry_source_id": "entry:2026-12-06:святителя николая чудотворца",
+      "saints": [
+        {
+          "source_id": "legacy-saint-nicholas-wonderworker",
+          "name": "Николай Чудотворец",
+          "display_name": "Николай Чудотворец",
+          "aliases": [
+            "Николай Чудотворец"
+          ]
+        }
+      ]
+    }
+  ]
+}

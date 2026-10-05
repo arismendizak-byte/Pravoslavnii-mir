@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "7d0fc92ae7338a63670089a6366266ab30fcf67d1d779e73ac3f346f2bdaddc1",
+  "counts": {
+    "sources": 2,
+    "news": 4,
+    "relations": 1,
+    "review_queue": 5,
+    "rejected": 0
+  },
+  "review_by_year": {
+    "2026": [
+      "pm-news-review-8e922f2c0c46f5617fed",
+      "pm-news-review-1d3886e4b3e98047940d",
+      "pm-news-review-b3c9ec49db6a7adab28d",
+      "pm-news-review-f037a65c5053e7b47e18",
+      "pm-news-review-cc346c12936abe0505b7"
+    ]
+  },
+  "news_by_slug": {
+    "news-patriarchia-123188-6654e08d": "pm-news-d83038e745956654e08d",
+    "news-patriarchia-123193-58e6b73c": "pm-news-80723986a59858e6b73c",
+    "news-patriarchia-123190-6c7bbea1": "pm-news-1237374c171d6c7bbea1",
+    "news-patriarchia-123033-fa129507": "pm-news-ef682c7d0480fa129507"
+  },
+  "news_by_id": {
+    "pm-news-d83038e745956654e08d": 0,
+    "pm-news-80723986a59858e6b73c": 1,
+    "pm-news-1237374c171d6c7bbea1": 2,
+    "pm-news-ef682c7d0480fa129507": 3
+  }
+}

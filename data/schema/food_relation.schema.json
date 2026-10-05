@@ -1,0 +1,5 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://pravmir.local/schema/food_relation.schema.json","title":"Pravmir food typed relation","type":"object",
+  "required":["id","relation_type","relation_class","from","to","verification_status","note","source_records"],
+  "properties":{"id":{"type":"string","pattern":"^pm-foodrel-[0-9a-f]{20}$"},"relation_type":{"enum":["editorial_suggestion_for_fast_period","related_to_feast","related_to_content"]},"relation_class":{"enum":["editorial_guidance","canonical_fact"]},"from":{"type":"object","required":["kind","id"],"properties":{"kind":{"const":"recipe"},"id":{"type":"string","pattern":"^pm-recipe-[0-9a-f]{20}$"}},"additionalProperties":false},"to":{"type":"object","required":["kind","id"],"properties":{"kind":{"enum":["fasting_rule","feast","content","calendar_day"]},"id":{"type":"string","minLength":1}},"additionalProperties":false},"verification_status":{"enum":["editorial_guidance","source_verified"]},"note":{"type":"string","minLength":1},"source_records":{"$ref":"content_item.schema.json#/$defs/source_records"}},"additionalProperties":false
+}

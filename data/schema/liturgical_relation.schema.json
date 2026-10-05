@@ -1,0 +1,7 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://pravmir.local/schema/liturgical_relation.schema.json","title":"Pravmir liturgical typed relation","type":"object",
+  "required":["id","relation_type","from","to","verification_status","source_records"],
+  "properties":{"id":{"type":"string","pattern":"^pm-lrel-[0-9a-f]{20}$"},"relation_type":{"type":"string","minLength":1},"from":{"$ref":"#/$defs/ref"},"to":{"$ref":"#/$defs/ref"},"verification_status":{"enum":["legacy_unverified","source_verified","editorial_verified","system_derived"]},"source_records":{"type":"array","minItems":1,"items":{"$ref":"content_item.schema.json#/$defs/source_record"}}},
+  "$defs":{"ref":{"type":"object","required":["kind","id"],"properties":{"kind":{"enum":["calendar_day","feast","saint","commemoration","fasting_rule","reading","content","place","entity","route","event","icon","work","author","organisation"]},"id":{"type":"string","minLength":1}},"additionalProperties":false}},
+  "additionalProperties":false
+}

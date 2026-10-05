@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "library_scripture_reference.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "reading_ref",
+    "work_ref",
+    "edition_ref",
+    "date",
+    "citation",
+    "canonical_path",
+    "external_url",
+    "trust_layer",
+    "verification_status",
+    "source_records"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^pm-scripture-ref-[0-9a-f]{20}$"
+    },
+    "reading_ref": {
+      "type": "string",
+      "pattern": "^pm-reading-[0-9a-f]{20}$"
+    },
+    "work_ref": {
+      "type": "string",
+      "pattern": "^pm-work-[0-9a-f]{20}$"
+    },
+    "edition_ref": {
+      "type": "string",
+      "pattern": "^pm-edition-[0-9a-f]{20}$"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "citation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canonical_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "external_url": {
+      "type": "string",
+      "minLength": 1
+    },
+    "trust_layer": {
+      "const": "editorial"
+    },
+    "verification_status": {
+      "const": "source_verified_bridge"
+    },
+    "source_records": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

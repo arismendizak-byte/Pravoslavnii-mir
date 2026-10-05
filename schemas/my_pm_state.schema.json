@@ -1,0 +1,211 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pravmir.local/schemas/my_pm_state.schema.json",
+  "title": "Pravmir My PM device-local state",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "local_user_id",
+    "storage_mode",
+    "sync_status",
+    "profile",
+    "collections",
+    "migration"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "storage_mode": {
+      "const": "device_local"
+    },
+    "sync_status": {
+      "const": "local_only"
+    },
+    "profile": {
+      "type": "object",
+      "required": [
+        "display_name",
+        "email",
+        "updated_at"
+      ],
+      "properties": {
+        "display_name": {
+          "type": "string",
+          "maxLength": 60
+        },
+        "email": {
+          "type": "string",
+          "maxLength": 160
+        },
+        "updated_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "collections": {
+      "type": "object",
+      "required": [
+        "favorites",
+        "read_later",
+        "saved_routes"
+      ],
+      "properties": {
+        "favorites": {
+          "$ref": "#/$defs/refList"
+        },
+        "read_later": {
+          "$ref": "#/$defs/refList"
+        },
+        "saved_routes": {
+          "$ref": "#/$defs/refList"
+        }
+      },
+      "additionalProperties": false
+    },
+    "migration": {
+      "type": "object",
+      "required": [
+        "legacy_keys_checked",
+        "migrated_refs",
+        "unresolved",
+        "last_checked_at"
+      ],
+      "properties": {
+        "legacy_keys_checked": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "migrated_refs": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unresolved": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/unresolved"
+          }
+        },
+        "last_checked_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "local_user_id": {
+      "type": "string",
+      "pattern": "^pm-local-user-[a-z0-9-]+$",
+      "maxLength": 120
+    }
+  },
+  "$defs": {
+    "ref": {
+      "type": "object",
+      "required": [
+        "kind",
+        "id"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "place",
+            "content",
+            "route"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 180
+        }
+      },
+      "additionalProperties": false
+    },
+    "refItem": {
+      "type": "object",
+      "required": [
+        "ref",
+        "saved_at",
+        "source"
+      ],
+      "properties": {
+        "ref": {
+          "$ref": "#/$defs/ref"
+        },
+        "saved_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source": {
+          "enum": [
+            "user",
+            "legacy_migration"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "refList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/refItem"
+      }
+    },
+    "unresolved": {
+      "type": "object",
+      "required": [
+        "fingerprint",
+        "legacy_key",
+        "kind_hint",
+        "title",
+        "sub",
+        "url",
+        "preserved_at"
+      ],
+      "properties": {
+        "fingerprint": {
+          "type": "string"
+        },
+        "legacy_key": {
+          "type": "string"
+        },
+        "kind_hint": {
+          "enum": [
+            "place",
+            "content",
+            "route"
+          ]
+        },
+        "title": {
+          "type": "string"
+        },
+        "sub": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "preserved_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

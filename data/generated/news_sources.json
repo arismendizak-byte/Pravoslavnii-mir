@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "7d0fc92ae7338a63670089a6366266ab30fcf67d1d779e73ac3f346f2bdaddc1",
+  "count": 2,
+  "sources": [
+    {
+      "provider": "pravmir-legacy-journalpp",
+      "label": "Legacy «Православный паломник» snapshot",
+      "mode": "review_only",
+      "trust_layer": "legacy_unverified",
+      "verification_status": "legacy_unverified",
+      "jurisdiction": "unspecified",
+      "origin_url": "https://journalpp.ru",
+      "notes": "Historical project snapshot. Rows must be re-verified before canonical News promotion."
+    },
+    {
+      "provider": "pravmir-editorial-patriarchia-verification-2026-10-05",
+      "label": "Патриархия.ru — verified snapshot 2026-10-05",
+      "mode": "canonical_source",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "jurisdiction": "Русская Православная Церковь",
+      "origin_url": "https://patriarchia.ru",
+      "notes": "Small manually verified temporal ingestion sample; no relations inferred."
+    }
+  ]
+}

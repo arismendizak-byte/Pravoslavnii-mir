@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "library_review_item.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "subject_kind",
+    "title",
+    "review_status",
+    "rights_status",
+    "source_records"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^pm-library-review-[0-9a-f]{20}$"
+    },
+    "subject_kind": {
+      "enum": [
+        "work",
+        "author",
+        "edition",
+        "text_asset",
+        "media_asset"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "review_status": {
+      "enum": [
+        "needs_source_verification",
+        "needs_rights_review",
+        "rejected",
+        "promoted"
+      ]
+    },
+    "rights_status": {
+      "enum": [
+        "public_domain_verified",
+        "open_license",
+        "permission_granted",
+        "metadata_only",
+        "external_link_only",
+        "restricted",
+        "review_required"
+      ]
+    },
+    "source_records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

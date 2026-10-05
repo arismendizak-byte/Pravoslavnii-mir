@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "provider": "pravmir-community-event-contributions",
+  "trust_layer": "community",
+  "events": [
+    {
+      "source_id": "demo-community-event-001",
+      "title": "[ДЕМО] Пользовательское предложение события",
+      "summary": "Синтетический community contribution для проверки того, что community не пишет canonical напрямую.",
+      "event_type": "parish_event",
+      "temporal": {
+        "all_day": false,
+        "starts_at": "2026-10-20T18:00:00+03:00",
+        "ends_at": "2026-10-20T20:00:00+03:00",
+        "timezone": "Europe/Moscow",
+        "recurrence": {"kind": "none", "rrule": null}
+      },
+      "status": "scheduled",
+      "venue": {"name": "Демонстрационное место", "address": null, "place_ref": null},
+      "organizer": {"name": "Community demo fixture", "organisation_ref": null},
+      "registration": null,
+      "scope": {"jurisdiction": null, "tradition": "orthodox", "locale": "ru-RU"},
+      "freshness": {"observed_at": "2026-10-03", "verified_at": null, "expires_at": null},
+      "references": [],
+      "source_url": null,
+      "evidence_note": "Synthetic community seed for review-pipeline testing only.",
+      "aliases": []
+    }
+  ]
+}

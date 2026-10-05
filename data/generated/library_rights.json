@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "413c8dc21e944c9609d18cf7817a0a163b6de40dc3330958d24110aa8b58fee1",
+  "count": 7,
+  "policies": [
+    {
+      "key": "public_domain_verified",
+      "label": "Public domain — verified",
+      "description": "Local storage is allowed only after the specific source/edition or recording is verified to be in the public domain for the applicable use.",
+      "local_text_allowed": true,
+      "local_media_allowed": true,
+      "requires_rights_evidence": true,
+      "requires_license_url": false,
+      "trust_layer": "canonical_system",
+      "verification_status": "system_defined"
+    },
+    {
+      "key": "open_license",
+      "label": "Open license",
+      "description": "Local storage is allowed only when the exact asset license permits it and attribution/license evidence is preserved.",
+      "local_text_allowed": true,
+      "local_media_allowed": true,
+      "requires_rights_evidence": true,
+      "requires_license_url": true,
+      "trust_layer": "canonical_system",
+      "verification_status": "system_defined"
+    },
+    {
+      "key": "permission_granted",
+      "label": "Permission granted",
+      "description": "Local storage is allowed only with preserved permission evidence covering the exact asset and intended use.",
+      "local_text_allowed": true,
+      "local_media_allowed": true,
+      "requires_rights_evidence": true,
+      "requires_license_url": false,
+      "trust_layer": "canonical_system",
+      "verification_status": "system_defined"
+    },
+    {
+      "key": "metadata_only",
+      "label": "Metadata only",
+      "description": "Bibliographic metadata may be stored, but no protected full text, audio, video or image bytes are ingested.",
+      "local_text_allowed": false,
+      "local_media_allowed": false,
+      "requires_rights_evidence": false,
+      "requires_license_url": false,
+      "trust_layer": "canonical_system",
+      "verification_status": "system_defined"
+    },
+    {
+      "key": "external_link_only",
+      "label": "External link only",
+      "description": "The project may preserve metadata and a verified external URL, but must not copy the asset locally.",
+      "local_text_allowed": false,
+      "local_media_allowed": false,
+      "requires_rights_evidence": true,
+      "requires_license_url": false,
+      "trust_layer": "canonical_system",
+      "verification_status": "system_defined"
+    },
+    {
+      "key": "restricted",
+      "label": "Copyright restricted",
+      "description": "Protected asset. Keep only permitted metadata/provenance; local content ingestion is forbidden without a later rights change.",
+      "local_text_allowed": false,
+      "local_media_allowed": false,
+      "requires_rights_evidence": true,
+      "requires_license_url": false,
+      "trust_layer": "canonical_system",
+      "verification_status": "system_defined"
+    },
+    {
+      "key": "review_required",
+      "label": "Rights review required",
+      "description": "Rights are unresolved. No full text or media bytes may enter canonical storage until evidence is reviewed.",
+      "local_text_allowed": false,
+      "local_media_allowed": false,
+      "requires_rights_evidence": true,
+      "requires_license_url": false,
+      "trust_layer": "canonical_system",
+      "verification_status": "system_defined"
+    }
+  ]
+}

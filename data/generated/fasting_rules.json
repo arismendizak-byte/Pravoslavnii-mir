@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "a9ee762957cf96ade9f1e1d5e01eec3151689d7ed798c30e3cc39c9178151bd9",
+  "count": 4,
+  "rules": [
+    {
+      "id": "pm-fast-078cd89e51d0cc91d74e",
+      "slug": "fast-526396f84addcef9",
+      "title": "Великий пост",
+      "canonical_path": "calendar/item.html?kind=fasting_rule&id=pm-fast-078cd89e51d0cc91d74e",
+      "date_start": "2026-02-23",
+      "date_end": "2026-04-11",
+      "rule_level": "period_only",
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "Великий пост"
+      ],
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "great-lent-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 28,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-fast-402636d7f82405187cbd",
+      "slug": "fast-e74020f0f95ec979",
+      "title": "Петров пост",
+      "canonical_path": "calendar/item.html?kind=fasting_rule&id=pm-fast-402636d7f82405187cbd",
+      "date_start": "2026-06-01",
+      "date_end": "2026-07-11",
+      "rule_level": "period_only",
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "Петров пост"
+      ],
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "apostles-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 29,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-fast-4392fc29019cc3f5a733",
+      "slug": "fast-f272dd573e120ad4",
+      "title": "Успенский пост",
+      "canonical_path": "calendar/item.html?kind=fasting_rule&id=pm-fast-4392fc29019cc3f5a733",
+      "date_start": "2026-08-14",
+      "date_end": "2026-08-27",
+      "rule_level": "period_only",
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "Успенский пост"
+      ],
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "dormition-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 30,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-fast-8e139912f4858f604686",
+      "slug": "fast-615ed6930625fdf8",
+      "title": "Рождественский пост",
+      "canonical_path": "calendar/item.html?kind=fasting_rule&id=pm-fast-8e139912f4858f604686",
+      "date_start": "2026-11-28",
+      "date_end": "2026-12-31",
+      "rule_level": "period_only",
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "Рождественский пост"
+      ],
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "nativity-fast-2026",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 31,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    }
+  ]
+}

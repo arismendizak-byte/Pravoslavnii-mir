@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.1.0",
+  "snapshot_at": "2026-10-03T01:02:27Z",
+  "sources": [
+    {
+      "file": "data/graph_sources/verified_relations.json",
+      "kind": "verified_graph_claims",
+      "provider": "pravmir-verified-graph-sources",
+      "sha256": "1ca4efadcd7ea326bf610dc459f31bab2ac2d27d3c2d41c8e7051beb73e9cbea",
+      "size": 6045
+    },
+    {
+      "file": "data/holiness.json",
+      "kind": "legacy_holiness",
+      "provider": "pravmir-legacy-holiness",
+      "sha256": "b2443e1bfa5956d33d5032e49866ecff3dc7b37fd655afd906b654b828e1e16c",
+      "size": 4388
+    },
+    {
+      "file": "data/routes.json",
+      "kind": "legacy_routes",
+      "provider": "pravmir-legacy-routes",
+      "sha256": "11c12a03f045c1d2c9ce385beb72f85654250f6b75a591efef985c160a7b0d33",
+      "size": 2868
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Православная кухня — Православный Мир</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/food.css">
+</head>
+<body>
+<div id="nav-container"></div><div id="bottom-nav-container"></div>
+<main class="page-section food-shell">
+    <div class="breadcrumbs"><a href="index.html">Главная</a> &rarr; <span>Православная кухня</span></div>
+    <header class="food-hero">
+        <div class="food-kicker">Трапеза и традиция</div>
+        <h1>Православная кухня</h1>
+        <p>Постные и праздничные рецепты для домашней трапезы. Подборки связаны с календарём, но не заменяют церковных предписаний и личного совета о мере поста.</p>
+    </header>
+    <div id="foodError" class="food-error" role="alert" hidden></div>
+    <section id="foodTrust" class="food-trust">Загрузка рецептов…</section>
+    <div class="food-date-row">
+        <div class="filter-field"><label for="foodDate">Подборка к дате</label><input id="foodDate" type="date"></div>
+        <div id="foodDateContext" class="food-date-context" aria-live="polite">Выберите дату для календарной подборки или смотрите все рецепты ниже.</div>
+    </div>
+    <section class="food-controls" aria-label="Фильтры рецептов">
+        <div class="filter-field"><label for="foodSearch">Найти рецепт</label><input id="foodSearch" type="search" placeholder="Блюдо или ингредиент"></div>
+        <div class="filter-field"><label for="foodType">Тип блюда</label><select id="foodType"><option value="">Все блюда</option><option value="soup">Супы</option><option value="main">Основные</option><option value="salad">Салаты</option><option value="breakfast">Завтраки</option><option value="dessert">Десерты</option><option value="baking">Выпечка</option></select></div>
+        <div class="filter-field"><label for="foodFasting">Состав</label><select id="foodFasting"><option value="">Любой состав</option><option value="general_fast_friendly">Постные по общему составу</option></select></div>
+        <div class="filter-field"><label for="foodOil">Масло</label><select id="foodOil"><option value="">Любое использование</option><option value="none">Без масла</option><option value="optional">Можно исключить</option><option value="used">С маслом</option></select></div>
+    </section>
+    <p id="foodResultCount" class="result-count" role="status"></p>
+    <section id="foodList" class="food-list" aria-busy="true"></section>
+</main>
+<div id="footer-container"></div>
+<script src="js/config.js"></script><script src="js/components.js"></script>
+<script src="js/liturgical-layer.js"></script><script src="js/food-layer.js"></script><script src="js/food.js"></script>
+</body>
+</html>

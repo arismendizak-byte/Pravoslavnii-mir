@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "f756a09b26d7c3b63960632e8acaa7bc051a8f004727aedf05c384f60c5774fe",
+  "legacy_records_seen": 85,
+  "legacy_records_in_review_queue": 85,
+  "legacy_records_promoted_with_explicit_evidence": 2,
+  "canonical_amenities_created_from_legacy": 0,
+  "canonical_services_created_from_legacy": 2,
+  "source_verified_canonical_records": 4,
+  "unresolved_evidence_conflicts": 1,
+  "inferred_place_route_organisation_links_created": 0,
+  "organisation_entities_created": 0,
+  "notes": [
+    "M5.6.2 creates canonical amenity/service records only from explicit official-source evidence captured in the verified source bundle.",
+    "Two legacy service rows are promoted only after official-source verification and explicit stable place refs; no text/name matching creates relations.",
+    "The remaining legacy rows stay in the review queue. Place != Organisation remains enforced and no organisation entities/relations are created before M7.",
+    "Conflicting official evidence is preserved separately; unresolved candidates are not canonicalized.",
+    "Mutable infrastructure records carry observed_at/verified_at freshness fields."
+  ]
+}

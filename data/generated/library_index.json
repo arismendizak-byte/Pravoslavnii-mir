@@ -1,0 +1,225 @@
+{
+  "schema_version": "1.2.0",
+  "source_snapshot_sha256": "413c8dc21e944c9609d18cf7817a0a163b6de40dc3330958d24110aa8b58fee1",
+  "counts": {
+    "sources": 4,
+    "rights_policies": 7,
+    "authors": 11,
+    "works": 39,
+    "editions": 38,
+    "scripture_references": 48,
+    "text_assets": 24,
+    "media_assets": 2,
+    "relations": 107,
+    "review_queue": 0,
+    "rejected": 0
+  },
+  "rights_by_key": {
+    "public_domain_verified": 0,
+    "open_license": 1,
+    "permission_granted": 2,
+    "metadata_only": 3,
+    "external_link_only": 4,
+    "restricted": 5,
+    "review_required": 6
+  },
+  "work_by_slug": {
+    "scripture-gospel-matthew": "pm-work-ead539b807952476ceab",
+    "scripture-gospel-mark": "pm-work-2bcc66d0fa0877aadc78",
+    "scripture-gospel-luke": "pm-work-f10011f5590643d4ad5b",
+    "scripture-gospel-john": "pm-work-9a06f06165dec584fd5f",
+    "scripture-acts": "pm-work-88ed49e4eeb1e80fc71a",
+    "scripture-romans": "pm-work-b332575fa64ad64b5cf9",
+    "scripture-1-corinthians": "pm-work-b78fa698cdc84e069c3c",
+    "scripture-2-corinthians": "pm-work-98ed244e0b24b307ad5b",
+    "scripture-galatians": "pm-work-f975c10a93106f166042",
+    "scripture-philippians": "pm-work-d58f05c9b12b2c9c2f20",
+    "scripture-titus": "pm-work-ddb436c4a9ddef94cf81",
+    "scripture-hebrews": "pm-work-a3f2610ca1d32e3e93ab",
+    "scripture-1-john": "pm-work-7798d2d95fcb5ddfef79",
+    "scripture-2-peter": "pm-work-edb29935b70bdf39c242",
+    "work-theophan-thoughts-every-day": "pm-work-9bcc5e2d2617e8f32947",
+    "work-philaret-longer-catechism": "pm-work-9906f04decbc4fa0a163",
+    "work-philaret-scripture-translations": "pm-work-01a0f8ec5e9aa5921785",
+    "work-ignatius-on-orthodoxy": "pm-work-06c637a0f2384817fd24",
+    "work-ignatius-word-on-man": "pm-work-166e138e1aa87cbc22fa",
+    "work-ignatius-garden-in-winter": "pm-work-e8f804a36f7ff9b82b5d",
+    "work-ignatius-obedience-to-elder": "pm-work-418ca5914c52724ff608",
+    "work-theophan-christian-life-begins": "pm-work-f4099288b3a4dead38f9",
+    "work-theophan-eternal-torments": "pm-work-dcaba6b1797dd6768af0",
+    "work-theophan-two-words-baptism": "pm-work-c4ea07e87dd3dc7461e6",
+    "work-theophan-spiritual-instructions": "pm-work-bac606807a9c00d22fae",
+    "work-theophan-hermas-commentary": "pm-work-69aec6a2c7a3271e0906",
+    "work-lord-prayer-19c": "pm-work-59aefe056c9b88fccbd9",
+    "work-heavenly-king-19c": "pm-work-881d7fc99b281c38f527",
+    "work-worthy-is-19c": "pm-work-dd07f9dd508080e165f6",
+    "work-nicene-creed-tolstoy-1875": "pm-work-1545f9c669c5ef7c9b1e",
+    "work-theophan-sermons-orthodoxy-1863": "pm-work-fc5ab2a44e310e7df61d",
+    "work-philaret-gumilevsky-sacred-history-1850": "pm-work-5e6db8095c36fa8d7418",
+    "work-pobedonostsev-orthodox-church-history-1891": "pm-work-7ae8eceded8a2f474f7e",
+    "work-life-seraphim-sarov": "pm-work-d6025672bee94c6bafbf",
+    "work-martyrdom-tatiana": "pm-work-0d999a24d135a1efc6a5",
+    "work-life-nicholas-myra": "pm-work-27c4e7cab5b3ea4b63df",
+    "work-life-cyril-methodius": "pm-work-4257cdc79b1a388342e9",
+    "work-memory-vladimir-kiev": "pm-work-c60dbaf180deda1bbc82",
+    "work-bogorodice-devo-znamenny": "pm-work-2aefda2a5f933f716a67"
+  },
+  "author_by_slug": {
+    "matthew": "pm-author-01f09f4aff577c5d7cb4",
+    "mark": "pm-author-e2115b444f202888e299",
+    "luke": "pm-author-7bede0dea6d9a6b581bb",
+    "john": "pm-author-69ba9458b741f43f848b",
+    "paul": "pm-author-7989e30a4cfc964ba4d7",
+    "peter": "pm-author-f8ff6d9e9398baf562b8",
+    "theophan-the-recluse": "pm-author-ce345c0078a116badf2f",
+    "philaret-drozdov": "pm-author-5626b80b178243d5aeff",
+    "ignatius-brianchaninov": "pm-author-8baee35eb044feca0efb",
+    "philaret-gumilevsky": "pm-author-0d6627e49d4c5c3f9247",
+    "konstantin-pobedonostsev": "pm-author-e88f3e39ad793578b424"
+  },
+  "work_by_citation_prefix": {
+    "Мф.": "pm-work-ead539b807952476ceab",
+    "Мк.": "pm-work-2bcc66d0fa0877aadc78",
+    "Лк.": "pm-work-f10011f5590643d4ad5b",
+    "Ин.": "pm-work-9a06f06165dec584fd5f",
+    "Деян.": "pm-work-88ed49e4eeb1e80fc71a",
+    "Рим.": "pm-work-b332575fa64ad64b5cf9",
+    "1Кор.": "pm-work-b78fa698cdc84e069c3c",
+    "2Кор.": "pm-work-98ed244e0b24b307ad5b",
+    "Гал.": "pm-work-f975c10a93106f166042",
+    "Флп.": "pm-work-d58f05c9b12b2c9c2f20",
+    "Тит.": "pm-work-ddb436c4a9ddef94cf81",
+    "Евр.": "pm-work-a3f2610ca1d32e3e93ab",
+    "1Ин.": "pm-work-7798d2d95fcb5ddfef79",
+    "2Пет.": "pm-work-edb29935b70bdf39c242"
+  },
+  "scripture_by_reading": {
+    "pm-reading-09bbe8121761fc9b054c": "pm-scripture-ref-2cde118be1314d8b3b99",
+    "pm-reading-1292a3cf023b33be491a": "pm-scripture-ref-f835bf12b4ce25d4b55b",
+    "pm-reading-18bb95705dfd6453ef2d": "pm-scripture-ref-9373389ec53a3edb5b36",
+    "pm-reading-18f12ae920faec61b1dd": "pm-scripture-ref-5a5cfef11fbe68c49d78",
+    "pm-reading-1c4bfb0ca47662ca8988": "pm-scripture-ref-693824be51e4a8ae534e",
+    "pm-reading-2492a2e73266807bcb04": "pm-scripture-ref-93bb3b28dc6ce25394f9",
+    "pm-reading-3e1123688c2323c64f22": "pm-scripture-ref-07c911eb057305f161cb",
+    "pm-reading-40bb959a68dd93e46fec": "pm-scripture-ref-806101b15902f0a9f2e1",
+    "pm-reading-4924c90ae6a6326fff16": "pm-scripture-ref-48379a38e9381724df10",
+    "pm-reading-4e55bb79ad5a482e7099": "pm-scripture-ref-7bf4f814bb88e1e07e88",
+    "pm-reading-58ecd4fda1dc875a2db5": "pm-scripture-ref-14472e923da8aeef7a95",
+    "pm-reading-62415f5d41fdba9d280c": "pm-scripture-ref-680c0abf1634c8add483",
+    "pm-reading-6966ef426fc964c3800a": "pm-scripture-ref-942511a201565c61d25e",
+    "pm-reading-7140bf40e23013779954": "pm-scripture-ref-f0ddc22b56de4d4edaa7",
+    "pm-reading-7514a78ca9d8a2b9228d": "pm-scripture-ref-f12021a3ae7f5373a453",
+    "pm-reading-8726c47595a423bec487": "pm-scripture-ref-9c8bd956295abe9af4f7",
+    "pm-reading-8aaba5fdd348df244d27": "pm-scripture-ref-a813a736e0d18249445c",
+    "pm-reading-921f96884344253d921a": "pm-scripture-ref-7db203f03d7b0bca8837",
+    "pm-reading-93905306881404cbedce": "pm-scripture-ref-df0d26e1e63ec9a9531d",
+    "pm-reading-9824c05b57a8971beef2": "pm-scripture-ref-9151ce1a5479f6c151a5",
+    "pm-reading-9d5e2aa44a08c4910b4c": "pm-scripture-ref-93aa4cc4665ecd2e2d1a",
+    "pm-reading-9f457738286d4cd69eba": "pm-scripture-ref-b3573c1bf71d3424a104",
+    "pm-reading-a0abe9e8bdf284198427": "pm-scripture-ref-1224549d62924947cecf",
+    "pm-reading-a4e01d8d11f68ef4e0e8": "pm-scripture-ref-c3062dcda45a3f2ba5fa",
+    "pm-reading-ac491ad6771018591452": "pm-scripture-ref-413cc0cf97306a7c804a",
+    "pm-reading-b0b7ef6ffcf73eaa13e8": "pm-scripture-ref-7c81cf5886705c275606",
+    "pm-reading-b913664d210150314bef": "pm-scripture-ref-ae3b1a2cfbbac0b01d20",
+    "pm-reading-bcb95438af45cb5b03c9": "pm-scripture-ref-b5c8aaa9f1d530734e98",
+    "pm-reading-be216a176ebc0ab2f49f": "pm-scripture-ref-9e41b065e58552efba66",
+    "pm-reading-c5f518a7bf382ba6e36d": "pm-scripture-ref-07e829a58230692bb7f5",
+    "pm-reading-c7b956a3b207cab00315": "pm-scripture-ref-618e09f15e98ac4ad25e",
+    "pm-reading-c8c28d629f1cdd7b8617": "pm-scripture-ref-d4b83eaf8f554b622eb3",
+    "pm-reading-cc2de1e84f9bc7cb9219": "pm-scripture-ref-3c760991b8813610efee",
+    "pm-reading-d2a9a7bc7ccef2776dc7": "pm-scripture-ref-5c3da58992270dd2626e",
+    "pm-reading-d3e9f01d12a63c4b1416": "pm-scripture-ref-6719a970e1a2c4ce0b16",
+    "pm-reading-d54f292c2fd82aba522b": "pm-scripture-ref-b6644acc50ae3d5c7a12",
+    "pm-reading-d60f361a4024f6e1d255": "pm-scripture-ref-e055b9e6ea5c116626e1",
+    "pm-reading-d74ddb9c294bbeda6141": "pm-scripture-ref-28a511b114c2610034be",
+    "pm-reading-d8e55c4b7f645fbf8438": "pm-scripture-ref-206fde1d8ed0fe83c1bc",
+    "pm-reading-da3835da2b192b4dfb54": "pm-scripture-ref-9e3d98e90266fa10edde",
+    "pm-reading-dc17e58f53df809351c5": "pm-scripture-ref-73acea755ce7224746c2",
+    "pm-reading-de66b03576d5124c53e5": "pm-scripture-ref-be9154f495f8f89633e1",
+    "pm-reading-e0146a92230720a5ec33": "pm-scripture-ref-3073df987305ccb0a45c",
+    "pm-reading-ea4573c331aa1f70a264": "pm-scripture-ref-49671c032ac63859fd98",
+    "pm-reading-ef34d5e57ec794a7f208": "pm-scripture-ref-226d8fcb1737e872ce5d",
+    "pm-reading-f551378f999ea1e74826": "pm-scripture-ref-4436d34129462af775ec",
+    "pm-reading-f98feb38bc1847db96bb": "pm-scripture-ref-8ab78cf2e8ba05400352",
+    "pm-reading-fefe047efff612c03aa4": "pm-scripture-ref-514416f2c10ce9a81aa5"
+  },
+  "text_assets_by_work": {
+    "pm-work-9bcc5e2d2617e8f32947": [
+      "pm-text-021502897b2703bb72ba"
+    ],
+    "pm-work-9906f04decbc4fa0a163": [
+      "pm-text-ebd869b2c29975009025"
+    ],
+    "pm-work-01a0f8ec5e9aa5921785": [
+      "pm-text-e6fc8caa015efb62277f"
+    ],
+    "pm-work-06c637a0f2384817fd24": [
+      "pm-text-eed9ece59f6774c77c89"
+    ],
+    "pm-work-166e138e1aa87cbc22fa": [
+      "pm-text-d155991ad4f6d539d1ab"
+    ],
+    "pm-work-e8f804a36f7ff9b82b5d": [
+      "pm-text-6c9706548036fc866316"
+    ],
+    "pm-work-418ca5914c52724ff608": [
+      "pm-text-a1e17bb46be12a1c756c"
+    ],
+    "pm-work-f4099288b3a4dead38f9": [
+      "pm-text-b1fb87d6024c7efbfd5b"
+    ],
+    "pm-work-dcaba6b1797dd6768af0": [
+      "pm-text-19604869dc444ca10663"
+    ],
+    "pm-work-c4ea07e87dd3dc7461e6": [
+      "pm-text-6cfbc9188d6a9fe8485a"
+    ],
+    "pm-work-bac606807a9c00d22fae": [
+      "pm-text-1183fe7a355cba368dfb"
+    ],
+    "pm-work-69aec6a2c7a3271e0906": [
+      "pm-text-48831af7c452c6d6b16e"
+    ],
+    "pm-work-59aefe056c9b88fccbd9": [
+      "pm-text-f546fa83a78d0fcf32ac"
+    ],
+    "pm-work-881d7fc99b281c38f527": [
+      "pm-text-ebe380ce1e64730c4421"
+    ],
+    "pm-work-dd07f9dd508080e165f6": [
+      "pm-text-f4d3a4a4e2d4894bb883"
+    ],
+    "pm-work-1545f9c669c5ef7c9b1e": [
+      "pm-text-9a99e61833133a8e878b"
+    ],
+    "pm-work-fc5ab2a44e310e7df61d": [
+      "pm-text-ce5bef3ee406d52ceb26"
+    ],
+    "pm-work-5e6db8095c36fa8d7418": [
+      "pm-text-7eabffa7f6e8d6c55e3d"
+    ],
+    "pm-work-7ae8eceded8a2f474f7e": [
+      "pm-text-1d3a07e8c866fef354a5"
+    ],
+    "pm-work-d6025672bee94c6bafbf": [
+      "pm-text-cfb37fa1bd5b510fc0f5"
+    ],
+    "pm-work-0d999a24d135a1efc6a5": [
+      "pm-text-a1d9e8701599ddf21244"
+    ],
+    "pm-work-27c4e7cab5b3ea4b63df": [
+      "pm-text-28988278bc0984c7ee0d"
+    ],
+    "pm-work-4257cdc79b1a388342e9": [
+      "pm-text-1575bc4e827f6669ab04"
+    ],
+    "pm-work-c60dbaf180deda1bbc82": [
+      "pm-text-e9bb9c6c6243b8eb14ea"
+    ]
+  },
+  "media_assets_by_work": {
+    "pm-work-2aefda2a5f933f716a67": [
+      "pm-media-64473668a8d18211a3a6"
+    ]
+  }
+}

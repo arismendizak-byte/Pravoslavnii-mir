@@ -1,0 +1,258 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "f756a09b26d7c3b63960632e8acaa7bc051a8f004727aedf05c384f60c5774fe",
+  "counts": {
+    "amenity_types": 12,
+    "amenities": 2,
+    "services": 2,
+    "relations": 4,
+    "review_queue": 85,
+    "conflicts": 1,
+    "rejected": 0
+  },
+  "amenity_type_by_key": {
+    "accommodation": "pm-amenity-type-accommodation",
+    "refectory": "pm-amenity-type-refectory",
+    "church_shop": "pm-amenity-type-church-shop",
+    "transport": "pm-amenity-type-transport",
+    "parking": "pm-amenity-type-parking",
+    "holy_spring": "pm-amenity-type-holy-spring",
+    "bathing_font": "pm-amenity-type-bathing-font",
+    "toilets": "pm-amenity-type-toilets",
+    "wheelchair_accessibility": "pm-amenity-type-wheelchair-accessibility",
+    "family_children": "pm-amenity-type-family-children",
+    "pilgrim_support": "pm-amenity-type-pilgrim-support",
+    "information_point": "pm-amenity-type-information-point"
+  },
+  "amenity_by_id": {
+    "pm-amenity-e3e7ca4c14e8207c278a": 0,
+    "pm-amenity-288f30912a79315f0b5c": 1
+  },
+  "service_by_id": {
+    "pm-service-5bf9755195456a06251b": 0,
+    "pm-service-65add67c4c32357ac883": 1
+  },
+  "by_slug": {
+    "amenity-lavra-pilgrim-house-207c278a": "pm-amenity-e3e7ca4c14e8207c278a",
+    "amenity-lavra-old-hotel-315f0b5c": "pm-amenity-288f30912a79315f0b5c",
+    "service-berluki-pilgrimage-service-6a06251b": "pm-service-5bf9755195456a06251b",
+    "service-lavra-pilgrim-center-357ac883": "pm-service-65add67c4c32357ac883"
+  },
+  "review_by_region": {
+    "Алушта": [
+      "pm-pilgrim-review-0b181be0f3b1245f69c3",
+      "pm-pilgrim-review-b260245d10c3e8a5d825"
+    ],
+    "Архангельск": [
+      "pm-pilgrim-review-bf995cc43b33c3bab469"
+    ],
+    "Благовещенск": [
+      "pm-pilgrim-review-af5a58885c72297cccf6"
+    ],
+    "Борисоглебск": [
+      "pm-pilgrim-review-b1ca66fa3a7d5cd4e8f9"
+    ],
+    "Братск": [
+      "pm-pilgrim-review-a34aaaaccb4015f219fa"
+    ],
+    "Брянск": [
+      "pm-pilgrim-review-a64d66afcde13aa5f846"
+    ],
+    "Бутурлиновка": [
+      "pm-pilgrim-review-8a709917500ce8f25281"
+    ],
+    "Владикавказ": [
+      "pm-pilgrim-review-7add980ac9e4a93abf20"
+    ],
+    "Волгоград": [
+      "pm-pilgrim-review-492904d423a159e96d77"
+    ],
+    "Вологда": [
+      "pm-pilgrim-review-df870776aaf166bc1ecf"
+    ],
+    "Воронеж": [
+      "pm-pilgrim-review-e550b5ddb5f28ac34947"
+    ],
+    "Воронежская область": [
+      "pm-pilgrim-review-750bdc9c990b147109ba"
+    ],
+    "Вязьма": [
+      "pm-pilgrim-review-29b4c5c8a2697c57b01f"
+    ],
+    "Гатчина": [
+      "pm-pilgrim-review-5bc47b84cd6b0745f161"
+    ],
+    "Георгиевск": [
+      "pm-pilgrim-review-044493c7ec6f7fd18af2"
+    ],
+    "Ейск": [
+      "pm-pilgrim-review-02dfe6d64a6f93972a59"
+    ],
+    "Екатеринбург": [
+      "pm-pilgrim-review-45ee7a076d0bf283245c"
+    ],
+    "Елец": [
+      "pm-pilgrim-review-97506da9a144efdacb35"
+    ],
+    "Железногорск": [
+      "pm-pilgrim-review-7d276346df9968acf3d2"
+    ],
+    "Искитим": [
+      "pm-pilgrim-review-8056ad800bccd305fd42"
+    ],
+    "Йошкар-Ола": [
+      "pm-pilgrim-review-98830d6ec1ffba88e3d8"
+    ],
+    "Калуга": [
+      "pm-pilgrim-review-f020accf6ea3b38506c5"
+    ],
+    "Канск": [
+      "pm-pilgrim-review-d02d5b2bb1a13cf784b1"
+    ],
+    "Касимов": [
+      "pm-pilgrim-review-12b4a092e850536e9a45"
+    ],
+    "Кемерово": [
+      "pm-pilgrim-review-35a67a01a855c153f9c3"
+    ],
+    "Кинешма": [
+      "pm-pilgrim-review-a274deeb8448332581bc"
+    ],
+    "Клинцы": [
+      "pm-pilgrim-review-030436b2e8204c36b469"
+    ],
+    "Краснодар": [
+      "pm-pilgrim-review-07fc7786155e0323c0cc"
+    ],
+    "Курск": [
+      "pm-pilgrim-review-45dd9c0ef8c4911480f6"
+    ],
+    "Липецк": [
+      "pm-pilgrim-review-5ea3018c94dd7e1b1d01"
+    ],
+    "Москва": [
+      "pm-pilgrim-review-31a0b7d23c6e51b197b7",
+      "pm-pilgrim-review-47b71db44e04169af9f1",
+      "pm-pilgrim-review-51d926529ae344ac7f4e",
+      "pm-pilgrim-review-7f7993adfb2a4325cee6",
+      "pm-pilgrim-review-c5be92eda0dc0a7c678e",
+      "pm-pilgrim-review-cc57715c8e14098cf999",
+      "pm-pilgrim-review-d67ae0c5224c8b3359f6"
+    ],
+    "Московская область": [
+      "pm-pilgrim-review-0642b830aa997c89ddec",
+      "pm-pilgrim-review-144eef231bbb0a0627b1",
+      "pm-pilgrim-review-1dd9fbb08baade5966ab",
+      "pm-pilgrim-review-2d0c6f479a13b0022821",
+      "pm-pilgrim-review-403c0d786b3d74966b58",
+      "pm-pilgrim-review-529afefcc7809a9caed2",
+      "pm-pilgrim-review-732f80199d154349f554",
+      "pm-pilgrim-review-b66a09f2bd4b88118a63",
+      "pm-pilgrim-review-c896802769c71e6687b2",
+      "pm-pilgrim-review-ed8b96e80da4f54d1369"
+    ],
+    "Нефтекамск": [
+      "pm-pilgrim-review-3a10d827161900a0a02b"
+    ],
+    "Нижний Новгород": [
+      "pm-pilgrim-review-37aad7cda2ecc8f478f6"
+    ],
+    "Новокузнецк": [
+      "pm-pilgrim-review-e3f60a7fe4c376fb7c7e"
+    ],
+    "Новосибирск": [
+      "pm-pilgrim-review-1e50f7c2044f7e376541"
+    ],
+    "Омск": [
+      "pm-pilgrim-review-905fd89894d64e9616f5"
+    ],
+    "Орёл": [
+      "pm-pilgrim-review-9c965b78bac1f0ce23b3"
+    ],
+    "Пенза": [
+      "pm-pilgrim-review-a3945af5ced26d0cf5bc"
+    ],
+    "Переславль-Залесский": [
+      "pm-pilgrim-review-47a96de493bca50fd8fd"
+    ],
+    "Петропавловск-Камчатский": [
+      "pm-pilgrim-review-d160c4b5837c11baf358"
+    ],
+    "Плавск": [
+      "pm-pilgrim-review-accd812cc9af74ae247e"
+    ],
+    "Пятигорск": [
+      "pm-pilgrim-review-30610757d7b1f124eea7"
+    ],
+    "Ржев": [
+      "pm-pilgrim-review-d0b5e270c53ed1676143"
+    ],
+    "Ростов": [
+      "pm-pilgrim-review-c253dd0ad43de602d3e7"
+    ],
+    "Санкт-Петербург": [
+      "pm-pilgrim-review-5ee1bf1b57bec93384bb",
+      "pm-pilgrim-review-7d1bdd973437ade0cef7"
+    ],
+    "Саратов": [
+      "pm-pilgrim-review-f49e946225a6f43a63e2"
+    ],
+    "Севастополь": [
+      "pm-pilgrim-review-1e654974f2c591309f60",
+      "pm-pilgrim-review-96f6b2e5e0054d5cf7bd"
+    ],
+    "Сердобск": [
+      "pm-pilgrim-review-e836d7c890480782b617"
+    ],
+    "Симферополь": [
+      "pm-pilgrim-review-17b867ac6042edd06ff2"
+    ],
+    "Смоленск": [
+      "pm-pilgrim-review-8ad961ab3bacc34ab6bc"
+    ],
+    "Соловецкий": [
+      "pm-pilgrim-review-e1623f33960ac2846c4f"
+    ],
+    "Ставрополь": [
+      "pm-pilgrim-review-3f1d4f6c12cdd046e63f"
+    ],
+    "Сызрань": [
+      "pm-pilgrim-review-ef27a772ba86328b31e1"
+    ],
+    "Тамбов": [
+      "pm-pilgrim-review-4f2beb63d45dba8c6463"
+    ],
+    "Тверь": [
+      "pm-pilgrim-review-f53b96067ec1c67bf6f0"
+    ],
+    "Тула": [
+      "pm-pilgrim-review-865f9b1a385def85eade"
+    ],
+    "Урюпинск": [
+      "pm-pilgrim-review-ba78f376a0f682712404"
+    ],
+    "Хлебодаровка": [
+      "pm-pilgrim-review-a7f964feb3ea1f8700ed"
+    ],
+    "Чебоксары": [
+      "pm-pilgrim-review-a698ca8fd71d242fd22c"
+    ],
+    "Челябинск": [
+      "pm-pilgrim-review-7a2ec6aee4b93846e74c"
+    ],
+    "Шадринск": [
+      "pm-pilgrim-review-135c1129c2badf013beb"
+    ],
+    "Шуя": [
+      "pm-pilgrim-review-d1f6bba79ab47d5bdc33"
+    ],
+    "Энгельс": [
+      "pm-pilgrim-review-26cddf49b61a00a76890"
+    ],
+    "Ярославль": [
+      "pm-pilgrim-review-06da5c8dbc1877ac04f2",
+      "pm-pilgrim-review-0a2ad802b0182ff69edb",
+      "pm-pilgrim-review-6fbb0a92224d6c62dd53"
+    ]
+  }
+}

@@ -1,0 +1,604 @@
+{
+  "schema_version": "1.0.0",
+  "provider": "pravmir-editorial-food",
+  "recipes": [
+    {
+      "source_id": "postnye-shchi-s-fasolyu",
+      "title": "Постные щи с фасолью",
+      "summary": "Сытные щи без мяса и молочных продуктов: капуста, картофель, фасоль и овощи.",
+      "recipe_type": "soup",
+      "servings": 6,
+      "prep_minutes": 20,
+      "cook_minutes": 55,
+      "ingredients": [
+        {
+          "name": "Капуста белокочанная",
+          "amount": "500 г"
+        },
+        {
+          "name": "Картофель",
+          "amount": "4 шт."
+        },
+        {
+          "name": "Фасоль консервированная или отварная",
+          "amount": "300 г"
+        },
+        {
+          "name": "Морковь",
+          "amount": "1 шт."
+        },
+        {
+          "name": "Лук",
+          "amount": "1 шт."
+        },
+        {
+          "name": "Томатная паста",
+          "amount": "1 ст. л."
+        },
+        {
+          "name": "Растительное масло",
+          "amount": "1–2 ст. л.",
+          "note": "можно исключить"
+        },
+        {
+          "name": "Вода",
+          "amount": "2 л"
+        },
+        {
+          "name": "Соль, лавровый лист, зелень",
+          "amount": "по вкусу"
+        }
+      ],
+      "steps": [
+        "Нарежьте картофель и капусту, залейте водой и доведите до кипения.",
+        "Добавьте морковь и лук. При желании предварительно припустите их с небольшим количеством масла.",
+        "Через 20 минут добавьте фасоль и томатную пасту.",
+        "Посолите, добавьте лавровый лист и варите ещё 10–15 минут. Перед подачей посыпьте зеленью."
+      ],
+      "tags": [
+        "постное",
+        "суп",
+        "фасоль",
+        "домашняя кухня"
+      ],
+      "dietary_profile": {
+        "contains_meat": false,
+        "contains_dairy": false,
+        "contains_eggs": false,
+        "contains_fish": false,
+        "contains_alcohol": false,
+        "uses_oil": true,
+        "plant_based": true
+      },
+      "fasting_compatibility": {
+        "classification": "general_fast_friendly",
+        "oil_mode": "optional",
+        "note": "Состав без мяса, молочных продуктов, яиц и рыбы. Масло можно исключить."
+      }
+    },
+    {
+      "source_id": "grechka-s-gribami",
+      "title": "Гречка с грибами и луком",
+      "summary": "Простое горячее блюдо из гречки, грибов и лука.",
+      "recipe_type": "main",
+      "servings": 4,
+      "prep_minutes": 10,
+      "cook_minutes": 30,
+      "ingredients": [
+        {
+          "name": "Гречневая крупа",
+          "amount": "250 г"
+        },
+        {
+          "name": "Шампиньоны или лесные грибы",
+          "amount": "350 г"
+        },
+        {
+          "name": "Лук",
+          "amount": "2 шт."
+        },
+        {
+          "name": "Растительное масло",
+          "amount": "1–2 ст. л.",
+          "note": "можно уменьшить или исключить"
+        },
+        {
+          "name": "Вода",
+          "amount": "500 мл"
+        },
+        {
+          "name": "Соль, перец",
+          "amount": "по вкусу"
+        }
+      ],
+      "steps": [
+        "Промойте гречку и сварите до готовности.",
+        "Нарежьте лук и грибы. Потушите их с небольшим количеством воды или масла.",
+        "Соедините с гречкой, посолите и прогрейте 3–5 минут."
+      ],
+      "tags": [
+        "постное",
+        "гречка",
+        "грибы",
+        "быстро"
+      ],
+      "dietary_profile": {
+        "contains_meat": false,
+        "contains_dairy": false,
+        "contains_eggs": false,
+        "contains_fish": false,
+        "contains_alcohol": false,
+        "uses_oil": true,
+        "plant_based": true
+      },
+      "fasting_compatibility": {
+        "classification": "general_fast_friendly",
+        "oil_mode": "optional",
+        "note": "Блюдо можно готовить без масла, туша грибы и лук с водой."
+      }
+    },
+    {
+      "source_id": "chechevichnaya-pohlebka",
+      "title": "Чечевичная похлёбка",
+      "summary": "Густая похлёбка из красной чечевицы, моркови и томатов.",
+      "recipe_type": "soup",
+      "servings": 4,
+      "prep_minutes": 10,
+      "cook_minutes": 35,
+      "ingredients": [
+        {
+          "name": "Красная чечевица",
+          "amount": "250 г"
+        },
+        {
+          "name": "Морковь",
+          "amount": "1 шт."
+        },
+        {
+          "name": "Лук",
+          "amount": "1 шт."
+        },
+        {
+          "name": "Томаты в собственном соку",
+          "amount": "300 г"
+        },
+        {
+          "name": "Вода",
+          "amount": "1,2 л"
+        },
+        {
+          "name": "Паприка, соль",
+          "amount": "по вкусу"
+        }
+      ],
+      "steps": [
+        "Промойте чечевицу.",
+        "Соедините чечевицу, нарезанные овощи и воду, доведите до кипения.",
+        "Через 15 минут добавьте томаты и специи.",
+        "Варите ещё 10–15 минут до мягкости чечевицы."
+      ],
+      "tags": [
+        "постное",
+        "чечевица",
+        "без масла",
+        "суп"
+      ],
+      "dietary_profile": {
+        "contains_meat": false,
+        "contains_dairy": false,
+        "contains_eggs": false,
+        "contains_fish": false,
+        "contains_alcohol": false,
+        "uses_oil": false,
+        "plant_based": true
+      },
+      "fasting_compatibility": {
+        "classification": "general_fast_friendly",
+        "oil_mode": "none",
+        "note": "Рецепт не требует растительного масла."
+      }
+    },
+    {
+      "source_id": "vinegret",
+      "title": "Винегрет",
+      "summary": "Классический овощной салат из свёклы, картофеля, моркови, солёных огурцов и горошка.",
+      "recipe_type": "salad",
+      "servings": 6,
+      "prep_minutes": 20,
+      "cook_minutes": 45,
+      "ingredients": [
+        {
+          "name": "Свёкла",
+          "amount": "2 шт."
+        },
+        {
+          "name": "Картофель",
+          "amount": "3 шт."
+        },
+        {
+          "name": "Морковь",
+          "amount": "2 шт."
+        },
+        {
+          "name": "Солёные огурцы",
+          "amount": "3 шт."
+        },
+        {
+          "name": "Зелёный горошек",
+          "amount": "200 г"
+        },
+        {
+          "name": "Лук",
+          "amount": "1 шт."
+        },
+        {
+          "name": "Растительное масло",
+          "amount": "1–2 ст. л.",
+          "note": "по желанию"
+        },
+        {
+          "name": "Соль",
+          "amount": "по вкусу"
+        }
+      ],
+      "steps": [
+        "Отварите свёклу, картофель и морковь до готовности и остудите.",
+        "Нарежьте овощи небольшими кубиками.",
+        "Добавьте огурцы, горошек и лук.",
+        "Перемешайте, при желании заправьте растительным маслом."
+      ],
+      "tags": [
+        "постное",
+        "салат",
+        "овощи",
+        "без мяса"
+      ],
+      "dietary_profile": {
+        "contains_meat": false,
+        "contains_dairy": false,
+        "contains_eggs": false,
+        "contains_fish": false,
+        "contains_alcohol": false,
+        "uses_oil": true,
+        "plant_based": true
+      },
+      "fasting_compatibility": {
+        "classification": "general_fast_friendly",
+        "oil_mode": "optional",
+        "note": "Масло можно исключить из заправки."
+      }
+    },
+    {
+      "source_id": "kartofel-s-gribami-v-duhovke",
+      "title": "Картофель с грибами в духовке",
+      "summary": "Картофель и грибы, запечённые с луком и травами.",
+      "recipe_type": "main",
+      "servings": 4,
+      "prep_minutes": 15,
+      "cook_minutes": 50,
+      "ingredients": [
+        {
+          "name": "Картофель",
+          "amount": "800 г"
+        },
+        {
+          "name": "Грибы",
+          "amount": "350 г"
+        },
+        {
+          "name": "Лук",
+          "amount": "2 шт."
+        },
+        {
+          "name": "Растительное масло",
+          "amount": "2 ст. л.",
+          "note": "можно уменьшить"
+        },
+        {
+          "name": "Сушёные травы, соль",
+          "amount": "по вкусу"
+        }
+      ],
+      "steps": [
+        "Нарежьте картофель, грибы и лук.",
+        "Смешайте с травами и небольшим количеством масла или воды.",
+        "Запекайте при 190 °C около 45–50 минут, один раз перемешав."
+      ],
+      "tags": [
+        "постное",
+        "картофель",
+        "грибы",
+        "духовка"
+      ],
+      "dietary_profile": {
+        "contains_meat": false,
+        "contains_dairy": false,
+        "contains_eggs": false,
+        "contains_fish": false,
+        "contains_alcohol": false,
+        "uses_oil": true,
+        "plant_based": true
+      },
+      "fasting_compatibility": {
+        "classification": "general_fast_friendly",
+        "oil_mode": "optional",
+        "note": "При необходимости количество масла можно уменьшить или заменить водой."
+      }
+    },
+    {
+      "source_id": "ovsyanaya-kasha-s-yablokom",
+      "title": "Овсяная каша с яблоком и корицей",
+      "summary": "Овсяная каша на воде с яблоком, корицей и изюмом.",
+      "recipe_type": "breakfast",
+      "servings": 2,
+      "prep_minutes": 5,
+      "cook_minutes": 12,
+      "ingredients": [
+        {
+          "name": "Овсяные хлопья",
+          "amount": "120 г"
+        },
+        {
+          "name": "Вода",
+          "amount": "350 мл"
+        },
+        {
+          "name": "Яблоко",
+          "amount": "1 шт."
+        },
+        {
+          "name": "Изюм",
+          "amount": "30 г"
+        },
+        {
+          "name": "Корица",
+          "amount": "по вкусу"
+        }
+      ],
+      "steps": [
+        "Доведите воду до кипения и всыпьте овсяные хлопья.",
+        "Через 5 минут добавьте нарезанное яблоко и изюм.",
+        "Варите до желаемой густоты и добавьте корицу."
+      ],
+      "tags": [
+        "постное",
+        "завтрак",
+        "без масла",
+        "овсянка"
+      ],
+      "dietary_profile": {
+        "contains_meat": false,
+        "contains_dairy": false,
+        "contains_eggs": false,
+        "contains_fish": false,
+        "contains_alcohol": false,
+        "uses_oil": false,
+        "plant_based": true
+      },
+      "fasting_compatibility": {
+        "classification": "general_fast_friendly",
+        "oil_mode": "none",
+        "note": "Рецепт без продуктов животного происхождения и без масла."
+      }
+    },
+    {
+      "source_id": "paskhalny-kulich-editorial",
+      "title": "Пасхальный кулич",
+      "summary": "Редакционный вариант праздничной дрожжевой выпечки с изюмом, цедрой и глазурью.",
+      "recipe_type": "baking",
+      "servings": 10,
+      "prep_minutes": 35,
+      "cook_minutes": 45,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": "600 г"
+        },
+        {
+          "name": "Молоко",
+          "amount": "250 мл"
+        },
+        {
+          "name": "Яйца",
+          "amount": "3 шт."
+        },
+        {
+          "name": "Сливочное масло",
+          "amount": "120 г"
+        },
+        {
+          "name": "Сахар",
+          "amount": "150 г"
+        },
+        {
+          "name": "Сухие дрожжи",
+          "amount": "8 г"
+        },
+        {
+          "name": "Изюм",
+          "amount": "120 г"
+        },
+        {
+          "name": "Цедра лимона",
+          "amount": "1 ч. л."
+        },
+        {
+          "name": "Соль",
+          "amount": "щепотка"
+        }
+      ],
+      "steps": [
+        "Подогрейте молоко до тёплого состояния, смешайте с дрожжами и частью сахара.",
+        "Добавьте яйца, растопленное масло, соль и постепенно вмешайте муку.",
+        "Вымесите мягкое тесто, добавьте изюм и цедру, оставьте подниматься примерно на 1–1,5 часа.",
+        "Разложите тесто по формам примерно до половины объёма и дайте подняться повторно.",
+        "Выпекайте при 175 °C около 35–45 минут, ориентируясь на размер форм и сухую шпажку."
+      ],
+      "tags": [
+        "Пасха",
+        "праздничное",
+        "выпечка",
+        "кулич"
+      ],
+      "dietary_profile": {
+        "contains_meat": false,
+        "contains_dairy": true,
+        "contains_eggs": true,
+        "contains_fish": false,
+        "contains_alcohol": false,
+        "uses_oil": false,
+        "plant_based": false
+      },
+      "fasting_compatibility": {
+        "classification": "not_classified",
+        "oil_mode": "none",
+        "note": "Праздничная редакционная выпечка; рецепт не классифицируется как постный."
+      },
+      "feast_refs": [
+        "pm-feast-e168192c9f98092e4e02"
+      ]
+    },
+    {
+      "source_id": "tvorozhnaya-paskha-editorial",
+      "title": "Творожная пасха с сухофруктами",
+      "summary": "Холодный праздничный десерт из творога, сливочного масла и сухофруктов.",
+      "recipe_type": "dessert",
+      "servings": 8,
+      "prep_minutes": 30,
+      "cook_minutes": 0,
+      "ingredients": [
+        {
+          "name": "Творог",
+          "amount": "700 г"
+        },
+        {
+          "name": "Сливочное масло",
+          "amount": "100 г"
+        },
+        {
+          "name": "Сметана",
+          "amount": "150 г"
+        },
+        {
+          "name": "Сахарная пудра",
+          "amount": "100 г"
+        },
+        {
+          "name": "Изюм",
+          "amount": "80 г"
+        },
+        {
+          "name": "Курага",
+          "amount": "80 г"
+        },
+        {
+          "name": "Ваниль",
+          "amount": "по вкусу"
+        }
+      ],
+      "steps": [
+        "Протрите творог через сито или измельчите до однородной текстуры.",
+        "Смешайте творог с мягким сливочным маслом, сметаной и сахарной пудрой.",
+        "Добавьте промытые и обсушенные сухофрукты.",
+        "Выложите массу в форму, застеленную влажной марлей, установите лёгкий гнёт.",
+        "Охлаждайте 10–12 часов, затем аккуратно переверните на блюдо."
+      ],
+      "tags": [
+        "Пасха",
+        "праздничное",
+        "десерт",
+        "творог"
+      ],
+      "dietary_profile": {
+        "contains_meat": false,
+        "contains_dairy": true,
+        "contains_eggs": false,
+        "contains_fish": false,
+        "contains_alcohol": false,
+        "uses_oil": false,
+        "plant_based": false
+      },
+      "fasting_compatibility": {
+        "classification": "not_classified",
+        "oil_mode": "none",
+        "note": "Праздничный молочный десерт; рецепт не классифицируется как постный."
+      },
+      "feast_refs": [
+        "pm-feast-e168192c9f98092e4e02"
+      ]
+    },
+    {
+      "source_id": "rozhdestvenskie-medovye-pryaniki-editorial",
+      "title": "Рождественские медовые пряники",
+      "summary": "Редакционный вариант ароматных медовых пряников со специями для праздничного стола.",
+      "recipe_type": "baking",
+      "servings": 12,
+      "prep_minutes": 25,
+      "cook_minutes": 15,
+      "ingredients": [
+        {
+          "name": "Пшеничная мука",
+          "amount": "350 г"
+        },
+        {
+          "name": "Мёд",
+          "amount": "120 г"
+        },
+        {
+          "name": "Сливочное масло",
+          "amount": "80 г"
+        },
+        {
+          "name": "Яйцо",
+          "amount": "1 шт."
+        },
+        {
+          "name": "Сахар",
+          "amount": "70 г"
+        },
+        {
+          "name": "Сода",
+          "amount": "1/2 ч. л."
+        },
+        {
+          "name": "Корица",
+          "amount": "1 ч. л."
+        },
+        {
+          "name": "Имбирь молотый",
+          "amount": "1/2 ч. л."
+        }
+      ],
+      "steps": [
+        "Слегка прогрейте мёд с сахаром и маслом до однородности, затем остудите до тёплого состояния.",
+        "Добавьте яйцо, специи и соду.",
+        "Постепенно вмешайте муку и охладите тесто 30 минут.",
+        "Раскатайте тесто толщиной около 5 мм и вырежьте пряники.",
+        "Выпекайте при 180 °C примерно 10–15 минут."
+      ],
+      "tags": [
+        "Рождество",
+        "праздничное",
+        "выпечка",
+        "пряники"
+      ],
+      "dietary_profile": {
+        "contains_meat": false,
+        "contains_dairy": true,
+        "contains_eggs": true,
+        "contains_fish": false,
+        "contains_alcohol": false,
+        "uses_oil": false,
+        "plant_based": false
+      },
+      "fasting_compatibility": {
+        "classification": "not_classified",
+        "oil_mode": "none",
+        "note": "Праздничная редакционная выпечка; рецепт не классифицируется как постный."
+      },
+      "feast_refs": [
+        "pm-feast-d2a6b919fe5c37c14aa0"
+      ]
+    }
+  ]
+}

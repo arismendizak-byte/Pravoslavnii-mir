@@ -1,0 +1,266 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "a9ee762957cf96ade9f1e1d5e01eec3151689d7ed798c30e3cc39c9178151bd9",
+  "count": 7,
+  "saints": [
+    {
+      "id": "pm-saint-4db1cd8508af04e95c6d",
+      "slug": "saint-751a2770c0e8cc03",
+      "name": "Анна Кашинская",
+      "display_name": "Анна Кашинская",
+      "canonical_path": "calendar/item.html?kind=saint&id=pm-saint-4db1cd8508af04e95c6d",
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "Анна Кашинская"
+      ],
+      "references": [
+        {
+          "kind": "commemoration",
+          "id": "pm-comm-84206d9b9149f4ae874b",
+          "relation_type": "commemorated_by"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-06-26:преподобной анны кашинской",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 14,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-saint-4efbfd490a4731dd4707",
+      "slug": "saint-b9f825bdce8ef335",
+      "name": "Серафим Саровский",
+      "display_name": "Серафим Саровский",
+      "canonical_path": "calendar/item.html?kind=saint&id=pm-saint-4efbfd490a4731dd4707",
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "Серафим Саровский"
+      ],
+      "references": [
+        {
+          "kind": "commemoration",
+          "id": "pm-comm-1b5916d3536d3b80bd3f",
+          "relation_type": "commemorated_by"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-08-01:серафима саровского",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 17,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-saint-5debdc29945c75da37dc",
+      "slug": "saint-4936754e1db04156",
+      "name": "Николай Чудотворец",
+      "display_name": "Николай Чудотворец",
+      "canonical_path": "calendar/item.html?kind=saint&id=pm-saint-5debdc29945c75da37dc",
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "Николай Чудотворец"
+      ],
+      "references": [
+        {
+          "kind": "commemoration",
+          "id": "pm-comm-58312e1ba4e51051b3ad",
+          "relation_type": "commemorated_by"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-12-06:святителя николая чудотворца",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 27,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-saint-5e9427d027db724c0adf",
+      "slug": "saint-7bfedff3631d2113",
+      "name": "Татиана",
+      "display_name": "Мученица Татиана",
+      "canonical_path": "calendar/item.html?kind=saint&id=pm-saint-5e9427d027db724c0adf",
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "Татиана"
+      ],
+      "references": [
+        {
+          "kind": "commemoration",
+          "id": "pm-comm-c5d505838696a3036a6b",
+          "relation_type": "commemorated_by"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-01-25:мученицы татианы",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 3,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-saint-c7191324786b992d64d1",
+      "slug": "saint-fe3e2dd388bcef44",
+      "name": "Кирилл",
+      "display_name": "Кирилл",
+      "canonical_path": "calendar/item.html?kind=saint&id=pm-saint-c7191324786b992d64d1",
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "Кирилл"
+      ],
+      "references": [
+        {
+          "kind": "commemoration",
+          "id": "pm-comm-d430778866669a0e530a",
+          "relation_type": "commemorated_by"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-05-24:кирилла и мефодия",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 11,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-saint-d65fcc88a283729e7147",
+      "slug": "saint-2c1d90ce37ba1506",
+      "name": "Мефодий",
+      "display_name": "Мефодий",
+      "canonical_path": "calendar/item.html?kind=saint&id=pm-saint-d65fcc88a283729e7147",
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "Мефодий"
+      ],
+      "references": [
+        {
+          "kind": "commemoration",
+          "id": "pm-comm-d430778866669a0e530a",
+          "relation_type": "commemorated_by"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-05-24:кирилла и мефодия",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 11,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-saint-f78aee1ef3f22a9d0a76",
+      "slug": "saint-f7605a143d9c72f4",
+      "name": "Владимир",
+      "display_name": "Владимир",
+      "canonical_path": "calendar/item.html?kind=saint&id=pm-saint-f78aee1ef3f22a9d0a76",
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "Владимир"
+      ],
+      "references": [
+        {
+          "kind": "commemoration",
+          "id": "pm-comm-44391236ccbb9053880f",
+          "relation_type": "commemorated_by"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-07-28:равноапостольного владимира",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 16,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    }
+  ]
+}

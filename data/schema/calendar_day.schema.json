@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pravmir.local/schema/calendar_day.schema.json",
+  "title": "Pravmir calendar day",
+  "type": "object",
+  "required": [
+    "id",
+    "date",
+    "canonical_path",
+    "scope",
+    "verification_status",
+    "references",
+    "source_records"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^pm-day-[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "canonical_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "$ref": "#/$defs/scope"
+    },
+    "verification_status": {
+      "enum": [
+        "system_derived",
+        "legacy_unverified",
+        "source_verified",
+        "editorial_verified"
+      ]
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "$ref": "content_item.schema.json#/$defs/reference"
+      }
+    },
+    "source_records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "content_item.schema.json#/$defs/source_record"
+      }
+    }
+  },
+  "$defs": {
+    "scope": {
+      "type": "object",
+      "required": [
+        "jurisdiction",
+        "tradition",
+        "calendar_style",
+        "locale",
+        "valid_from",
+        "valid_to",
+        "verified_at"
+      ],
+      "properties": {
+        "jurisdiction": {
+          "type": "string"
+        },
+        "tradition": {
+          "type": "string"
+        },
+        "calendar_style": {
+          "type": "string"
+        },
+        "locale": {
+          "type": "string"
+        },
+        "valid_from": {
+          "type": "string",
+          "format": "date"
+        },
+        "valid_to": {
+          "type": "string",
+          "format": "date"
+        },
+        "verified_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

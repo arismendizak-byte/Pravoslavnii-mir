@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "id": "pm-c4c1a81ac63f5ff28f982f22de44ca76",
+  "slug": "chasovnya-georgiya-pobedonostsa-partizanskaya-slava",
+  "name": "Часовня Георгия Победоносца на мемориале Партизанская Слава",
+  "alt_names": [],
+  "place_type": "chapel",
+  "type_raw": "часовня",
+  "status": "active",
+  "status_raw": "действ.",
+  "foundation": {
+    "raw_text": "2016",
+    "from_year": 2016,
+    "to_year": 2016
+  },
+  "architects": [
+    "Бухаев В. Б."
+  ],
+  "address": {
+    "country_code": "RU",
+    "country": "Россия",
+    "region": "Ленинградская область",
+    "district": "Лужский район",
+    "locality": null,
+    "formatted": "Ленинградская обл., Лужский р-н, 139-й км автодороги Р-23 «Псков»"
+  },
+  "location": {
+    "lat": 58.788111,
+    "lon": 29.882255,
+    "precision": "exact"
+  },
+  "descriptions": {
+    "short": "Кирпичная входная часовня построена на мемориале «Партизанская Слава» в 2016 году.",
+    "full": null
+  },
+  "dedications": [
+    "Георгия Победоносца"
+  ],
+  "media": [],
+  "links": {
+    "detail_path": null,
+    "official_url": null,
+    "map_url": null
+  },
+  "source_records": [
+    {
+      "provider": "templesru",
+      "source_id": "32052",
+      "source_url": null,
+      "raw_type": "часовня",
+      "raw_status": "действ.",
+      "imported_at": "2026-10-02T00:00:00Z",
+      "last_verified_at": null,
+      "source_file": "lo_temples.csv",
+      "source_row": 2,
+      "source_region": "Ленинградская область"
+    }
+  ],
+  "quality": {
+    "score": 90,
+    "flags": [
+      "source_url_missing"
+    ]
+  },
+  "merged_from_ids": []
+}

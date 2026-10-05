@@ -1,0 +1,167 @@
+{
+  "$id": "https://pravmir.local/schema/relation.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "from": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "entity",
+            "place"
+          ]
+        }
+      },
+      "required": [
+        "kind",
+        "id"
+      ],
+      "type": "object"
+    },
+    "id": {
+      "pattern": "^pm-rel-[a-f0-9]{24}$",
+      "type": "string"
+    },
+    "provenance": {
+      "additionalProperties": true,
+      "properties": {
+        "evidence_field": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "provider": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "source_file": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "source_id": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "provider",
+        "source_id",
+        "source_file"
+      ],
+      "type": "object"
+    },
+    "relation_type": {
+      "enum": [
+        "located_at",
+        "relics_at",
+        "relic_of"
+      ]
+    },
+    "source_records": {
+      "items": {
+        "additionalProperties": true,
+        "properties": {
+          "authority": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "checked_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "claim_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidence_note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "provider": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "source_file": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "source_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "source_title": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "provider",
+          "source_id",
+          "source_file"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "to": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "entity",
+            "place"
+          ]
+        }
+      },
+      "required": [
+        "kind",
+        "id"
+      ],
+      "type": "object"
+    },
+    "verification_status": {
+      "enum": [
+        "legacy_unverified",
+        "source_verified"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "relation_type",
+    "from",
+    "to",
+    "provenance",
+    "verification_status",
+    "source_records"
+  ],
+  "title": "Pravmir graph relation",
+  "type": "object"
+}

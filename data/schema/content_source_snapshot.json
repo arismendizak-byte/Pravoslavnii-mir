@@ -1,0 +1,111 @@
+{
+    "schema_version": "1.2.0",
+    "snapshot_at": "2026-10-04T18:52:28Z",
+    "sources": [
+        {
+            "file": "data/articles.json",
+            "kind": "legacy_local_articles",
+            "provider": "pravmir-legacy-articles",
+            "sha256": "bb7986f335af906f29fc4662d868e794a58165f6d5515ac4770ea7a81f9a55b7",
+            "size": 5127
+        },
+        {
+            "file": "data/pilgrim-centers.json",
+            "kind": "legacy_pilgrim_services",
+            "provider": "pravmir-legacy-pilgrim-services",
+            "sha256": "124918f7df5a132815ca2b0b46f666ea548d0846a0e7853e12ff9d64592b15a8",
+            "size": 27347
+        },
+        {
+            "file": "data/content_sources/journalpp_legacy.json",
+            "kind": "legacy_external_journal",
+            "provider": "pravmir-legacy-journalpp",
+            "sha256": "a0d2b941bed57cb4db5c3b0b381455b2949371b96410cb3f9ce93dad99308f0e",
+            "size": 5891
+        },
+        {
+            "file": "data/content_sources/calendar_2026_legacy.json",
+            "kind": "legacy_calendar",
+            "provider": "pravmir-legacy-calendar-2026",
+            "sha256": "cbfe28506eb1700f3f1fda79c4973e564c2f03c9feb813b68ed7cfd3a9ce737f",
+            "size": 4278
+        },
+        {
+            "file": "data/content_sources/editorial_links.json",
+            "kind": "editorial_content_links",
+            "provider": "pravmir-editorial-content-links",
+            "sha256": "6a426a1f06580c21e18918b538e74f28da14666bb6db2b5e534d94ede44c89cf",
+            "size": 4557
+        },
+        {
+            "file": "articles/article-1.html",
+            "kind": "legacy_local_article_body",
+            "provider": "pravmir-legacy-article-html",
+            "sha256": "cf0f504b0a2eb77213fdbee302ab2b9b601f396f3c8f5885032cb3384f167e29",
+            "size": 9666
+        },
+        {
+            "file": "articles/article-2.html",
+            "kind": "legacy_local_article_body",
+            "provider": "pravmir-legacy-article-html",
+            "sha256": "7fc06206c3cab0018307cec787d727b4ef77436e858a93d91c6d19386daf1471",
+            "size": 7093
+        },
+        {
+            "file": "articles/article-3.html",
+            "kind": "legacy_local_article_body",
+            "provider": "pravmir-legacy-article-html",
+            "sha256": "3c7973dec969b03549e585e06202f127770ca97c0909350ca18e8693b99f34d5",
+            "size": 7337
+        },
+        {
+            "file": "articles/article-4.html",
+            "kind": "legacy_local_article_body",
+            "provider": "pravmir-legacy-article-html",
+            "sha256": "f6956b86e812861ab0303365919d3ec81fdc0d6d3c14d782f0312f3d3621bdb3",
+            "size": 6146
+        },
+        {
+            "file": "articles/article-5.html",
+            "kind": "legacy_local_article_body",
+            "provider": "pravmir-legacy-article-html",
+            "sha256": "902959a892c32b029db3457cfb0f9d17fc6ce49bf54fe326481cf5cf3d43f5d5",
+            "size": 7986
+        },
+        {
+            "file": "articles/article-6.html",
+            "kind": "legacy_local_article_body",
+            "provider": "pravmir-legacy-article-html",
+            "sha256": "4cbe9548f617aa2bbffc52a861ac8fe0e6e9b99ab7b36a5d688db1b2e7570436",
+            "size": 6295
+        },
+        {
+            "file": "articles/article-7.html",
+            "kind": "legacy_local_article_body",
+            "provider": "pravmir-legacy-article-html",
+            "sha256": "367998bd042817b6f7c98f4d9db41591eef4f9e187cc73974fa21ebe305045dc",
+            "size": 6563
+        },
+        {
+            "file": "articles/article-8.html",
+            "kind": "legacy_local_article_body",
+            "provider": "pravmir-legacy-article-html",
+            "sha256": "c9f263cae571a9b87bbe2db640cb176ce0470991b0221f7c38175edcc59b8c31",
+            "size": 5945
+        },
+        {
+            "file": "articles/article-9.html",
+            "kind": "legacy_local_article_body",
+            "provider": "pravmir-legacy-article-html",
+            "sha256": "4f27e0d84af6301a3c5cf83c5988563360b33ac57e41c46f5c466f8dec06fb10",
+            "size": 6401
+        },
+        {
+            "file": "articles/article-10.html",
+            "kind": "legacy_local_article_body",
+            "provider": "pravmir-legacy-article-html",
+            "sha256": "746d40f7f29e1068c272be25266a93ce5ed8f0e1717be66b19e91507d22b8c6f",
+            "size": 5965
+        }
+    ]
+}

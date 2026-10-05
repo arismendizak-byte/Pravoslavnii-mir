@@ -1,0 +1,1783 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "a9ee762957cf96ade9f1e1d5e01eec3151689d7ed798c30e3cc39c9178151bd9",
+  "count": 48,
+  "readings": [
+    {
+      "id": "pm-reading-09bbe8121761fc9b054c",
+      "slug": "reading-d6d9e1aed14e24d0",
+      "title": "Утреня: Лк.2:25–32 (зач. 8)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-09bbe8121761fc9b054c",
+      "date": "2026-02-15",
+      "citation": "Лк.2:25–32",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-02-15",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-02-15-09",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 9,
+          "source_url": "https://azbyka.ru/days/2026-02-15",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-1292a3cf023b33be491a",
+      "slug": "reading-746572cc2188d0fc",
+      "title": "Литургия — Воздвижение: Ин.19:6–11,13–20,25–28,30–35 (зач. 60)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-1292a3cf023b33be491a",
+      "date": "2026-09-27",
+      "citation": "Ин.19:6–11,13–20,25–28,30–35",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-09-27",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-09-27-45",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 45,
+          "source_url": "https://azbyka.ru/days/2026-09-27",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-18bb95705dfd6453ef2d",
+      "slug": "reading-6a4f0bff21b2f69e",
+      "title": "Литургия: Мф.2:1–12 (зач. 3)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-18bb95705dfd6453ef2d",
+      "date": "2026-01-07",
+      "citation": "Мф.2:1–12",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-01-07",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-07-03",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 3,
+          "source_url": "https://azbyka.ru/days/2026-01-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-18f12ae920faec61b1dd",
+      "slug": "reading-e1022be1dd92d4a6",
+      "title": "Литургия: Ин.1:1–17 (зач. 1)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-18f12ae920faec61b1dd",
+      "date": "2026-04-12",
+      "citation": "Ин.1:1–17",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-04-12",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-12-19",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 19,
+          "source_url": "https://azbyka.ru/days/2026-04-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-1c4bfb0ca47662ca8988",
+      "slug": "reading-28603e299cb71606",
+      "title": "Утреня: Ин.12:28–36 (зач. 42 от полу)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-1c4bfb0ca47662ca8988",
+      "date": "2026-09-27",
+      "citation": "Ин.12:28–36",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-09-27",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-09-27-43",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 43,
+          "source_url": "https://azbyka.ru/days/2026-09-27",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-2492a2e73266807bcb04",
+      "slug": "reading-f13f5b26db3fcd5d",
+      "title": "Литургия — Вознесение: Деян.1:1–12 (зач. 1)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-2492a2e73266807bcb04",
+      "date": "2026-05-21",
+      "citation": "Деян.1:1–12",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-05-21",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-21-22",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 22,
+          "source_url": "https://azbyka.ru/days/2026-05-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-3e1123688c2323c64f22",
+      "slug": "reading-2cdcd0a7a5eaa39c",
+      "title": "Литургия — рядовое: Мф.9:1–8 (зач. 29)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-3e1123688c2323c64f22",
+      "date": "2026-07-12",
+      "citation": "Мф.9:1–8",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-07-12",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-07-12-31",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 31,
+          "source_url": "https://azbyka.ru/days/2026-07-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-40bb959a68dd93e46fec",
+      "slug": "reading-5b84963f654fdccd",
+      "title": "Утреня: Лк.1:39–49,56 (зач. 4)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-40bb959a68dd93e46fec",
+      "date": "2026-08-28",
+      "citation": "Лк.1:39–49,56",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-08-28",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-08-28-37",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 37,
+          "source_url": "https://azbyka.ru/days/2026-08-28",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-4924c90ae6a6326fff16",
+      "slug": "reading-d43dda5b5a451c10",
+      "title": "Вечерня: Ин.20:19–25 (зач. 65)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-4924c90ae6a6326fff16",
+      "date": "2026-04-12",
+      "citation": "Ин.20:19–25",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-04-12",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-12-20",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 20,
+          "source_url": "https://azbyka.ru/days/2026-04-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-4e55bb79ad5a482e7099",
+      "slug": "reading-a2d739cc2d517f9f",
+      "title": "Утреня: Мк.16:9–20 (зач. 71)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-4e55bb79ad5a482e7099",
+      "date": "2026-05-21",
+      "citation": "Мк.16:9–20",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-05-21",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-21-21",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 21,
+          "source_url": "https://azbyka.ru/days/2026-05-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-58ecd4fda1dc875a2db5",
+      "slug": "reading-a33fca5238989fad",
+      "title": "Освящение воды: 1Кор.10:1-4 (зач. 143 от полу)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-58ecd4fda1dc875a2db5",
+      "date": "2026-01-19",
+      "citation": "1Кор.10:1-4",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-01-19",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-19-07",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 7,
+          "source_url": "https://azbyka.ru/days/2026-01-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-62415f5d41fdba9d280c",
+      "slug": "reading-d3fbf2b8815dc8c3",
+      "title": "Литургия — Покров: Лк.10:38–42,11:27–28 (зач. 54)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-62415f5d41fdba9d280c",
+      "date": "2026-10-14",
+      "citation": "Лк.10:38–42,11:27–28",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-10-14",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-10-14-48",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 48,
+          "source_url": "https://azbyka.ru/days/2026-10-14",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-6966ef426fc964c3800a",
+      "slug": "reading-e86ef79b373fadbf",
+      "title": "Литургия — рядовое: Рим.12:6–14 (зач. 110)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-6966ef426fc964c3800a",
+      "date": "2026-07-12",
+      "citation": "Рим.12:6–14",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-07-12",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-07-12-30",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 30,
+          "source_url": "https://azbyka.ru/days/2026-07-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-7140bf40e23013779954",
+      "slug": "reading-1b707c6ba26a2449",
+      "title": "Литургия — Успение: Флп.2:5–11 (зач. 240)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-7140bf40e23013779954",
+      "date": "2026-08-28",
+      "citation": "Флп.2:5–11",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-08-28",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-08-28-38",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 38,
+          "source_url": "https://azbyka.ru/days/2026-08-28",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-7514a78ca9d8a2b9228d",
+      "slug": "reading-b4122e7390654106",
+      "title": "Утреня: Ин.20:19–23 (зач. 65)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-7514a78ca9d8a2b9228d",
+      "date": "2026-05-31",
+      "citation": "Ин.20:19–23",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-05-31",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-31-26",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 26,
+          "source_url": "https://azbyka.ru/days/2026-05-31",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-8726c47595a423bec487",
+      "slug": "reading-f907afb6112cacfe",
+      "title": "Апостолу Иоанну: 1Ин.1:1–7 (зач. 68)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-8726c47595a423bec487",
+      "date": "2026-05-21",
+      "citation": "1Ин.1:1–7",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-05-21",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-21-24",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 24,
+          "source_url": "https://azbyka.ru/days/2026-05-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-8aaba5fdd348df244d27",
+      "slug": "reading-ecb82c6c70715a02",
+      "title": "Утреня: Лк.24:36–53 (зач. 114)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-8aaba5fdd348df244d27",
+      "date": "2026-07-12",
+      "citation": "Лк.24:36–53",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-07-12",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-07-12-29",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 29,
+          "source_url": "https://azbyka.ru/days/2026-07-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-921f96884344253d921a",
+      "slug": "reading-2a80e2a00b622775",
+      "title": "Литургия — Успение: Лк.10:38–42,11:27–28 (зач. 54)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-921f96884344253d921a",
+      "date": "2026-08-28",
+      "citation": "Лк.10:38–42,11:27–28",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-08-28",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-08-28-39",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 39,
+          "source_url": "https://azbyka.ru/days/2026-08-28",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-93905306881404cbedce",
+      "slug": "reading-31867199d967a2a8",
+      "title": "Апостолам Петру и Павлу: 2Кор.11:21-12:9 (зач. 193)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-93905306881404cbedce",
+      "date": "2026-07-12",
+      "citation": "2Кор.11:21-12:9",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-07-12",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-07-12-32",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 32,
+          "source_url": "https://azbyka.ru/days/2026-07-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-9824c05b57a8971beef2",
+      "slug": "reading-6b6b36e271090525",
+      "title": "Литургия — Благовещение: Лк.1:24–38 (зач. 3)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-9824c05b57a8971beef2",
+      "date": "2026-04-07",
+      "citation": "Лк.1:24–38",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-04-07",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-07-16",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 16,
+          "source_url": "https://azbyka.ru/days/2026-04-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-9d5e2aa44a08c4910b4c",
+      "slug": "reading-ea82910f5969b742",
+      "title": "Литургия — Покров: Евр.9:1–7 (зач. 320)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-9d5e2aa44a08c4910b4c",
+      "date": "2026-10-14",
+      "citation": "Евр.9:1–7",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-10-14",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-10-14-47",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 47,
+          "source_url": "https://azbyka.ru/days/2026-10-14",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-9f457738286d4cd69eba",
+      "slug": "reading-216fda8702cae37c",
+      "title": "Литургия — Сретение: Лк.2:22–40 (зач. 7)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-9f457738286d4cd69eba",
+      "date": "2026-02-15",
+      "citation": "Лк.2:22–40",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-02-15",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-02-15-13",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 13,
+          "source_url": "https://azbyka.ru/days/2026-02-15",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-a0abe9e8bdf284198427",
+      "slug": "reading-b80d49e12400d19e",
+      "title": "Литургия — Троица: Ин.7:37–52,8:12 (зач. 27)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-a0abe9e8bdf284198427",
+      "date": "2026-05-31",
+      "citation": "Ин.7:37–52,8:12",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-05-31",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-31-28",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 28,
+          "source_url": "https://azbyka.ru/days/2026-05-31",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-a4e01d8d11f68ef4e0e8",
+      "slug": "reading-70eee154e8e24503",
+      "title": "Литургия — Сретение: Евр.7:7–17 (зач. 316)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-a4e01d8d11f68ef4e0e8",
+      "date": "2026-02-15",
+      "citation": "Евр.7:7–17",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-02-15",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-02-15-12",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 12,
+          "source_url": "https://azbyka.ru/days/2026-02-15",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-ac491ad6771018591452",
+      "slug": "reading-42b45f481ce94be7",
+      "title": "Утреня: Лк.1:39–49,56 (зач. 4)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-ac491ad6771018591452",
+      "date": "2026-10-14",
+      "citation": "Лк.1:39–49,56",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-10-14",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-10-14-46",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 46,
+          "source_url": "https://azbyka.ru/days/2026-10-14",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-b0b7ef6ffcf73eaa13e8",
+      "slug": "reading-a768c1307b8e5e34",
+      "title": "Литургия — Вознесение: Лк.24:36–53 (зач. 114)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-b0b7ef6ffcf73eaa13e8",
+      "date": "2026-05-21",
+      "citation": "Лк.24:36–53",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-05-21",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-21-23",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 23,
+          "source_url": "https://azbyka.ru/days/2026-05-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-b913664d210150314bef",
+      "slug": "reading-d3213a9e83d253f2",
+      "title": "Утреня: Лк.1:39–49,56 (зач. 4)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-b913664d210150314bef",
+      "date": "2026-04-07",
+      "citation": "Лк.1:39–49,56",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-04-07",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-07-14",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 14,
+          "source_url": "https://azbyka.ru/days/2026-04-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-bcb95438af45cb5b03c9",
+      "slug": "reading-13b4794578caa61d",
+      "title": "Литургия — Преображение: 2Пет.1:10-19 (зач. 65)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-bcb95438af45cb5b03c9",
+      "date": "2026-08-19",
+      "citation": "2Пет.1:10-19",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-08-19",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-08-19-35",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 35,
+          "source_url": "https://azbyka.ru/days/2026-08-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-be216a176ebc0ab2f49f",
+      "slug": "reading-78111cf76adf3d84",
+      "title": "Утреня: Мф.1:18–25 (зач. 2)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-be216a176ebc0ab2f49f",
+      "date": "2026-01-07",
+      "citation": "Мф.1:18–25",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-01-07",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-07-01",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 1,
+          "source_url": "https://azbyka.ru/days/2026-01-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-c5f518a7bf382ba6e36d",
+      "slug": "reading-0cf45ebef3182517",
+      "title": "Утреня: Мк.1:9–11 (зач. 2)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-c5f518a7bf382ba6e36d",
+      "date": "2026-01-19",
+      "citation": "Мк.1:9–11",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-01-19",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-19-04",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 4,
+          "source_url": "https://azbyka.ru/days/2026-01-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-c7b956a3b207cab00315",
+      "slug": "reading-911b4a0aeed2bded",
+      "title": "Литургия: Гал.4:4–7 (зач. 209)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-c7b956a3b207cab00315",
+      "date": "2026-01-07",
+      "citation": "Гал.4:4–7",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-01-07",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-07-02",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 2,
+          "source_url": "https://azbyka.ru/days/2026-01-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-c8c28d629f1cdd7b8617",
+      "slug": "reading-9fe86cdc7a334cfb",
+      "title": "Литургия — рядовое: 1Кор.8:8-9:2 (зач. 140)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-c8c28d629f1cdd7b8617",
+      "date": "2026-02-15",
+      "citation": "1Кор.8:8-9:2",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-02-15",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-02-15-10",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 10,
+          "source_url": "https://azbyka.ru/days/2026-02-15",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-cc2de1e84f9bc7cb9219",
+      "slug": "reading-9f4be75851acaf56",
+      "title": "Литургия — Преображение: Мф.17:1–9 (зач. 70)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-cc2de1e84f9bc7cb9219",
+      "date": "2026-08-19",
+      "citation": "Мф.17:1–9",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-08-19",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-08-19-36",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 36,
+          "source_url": "https://azbyka.ru/days/2026-08-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-d2a9a7bc7ccef2776dc7",
+      "slug": "reading-79f82e4e15af7bd5",
+      "title": "Литургия — Рождество Богородицы: Флп.2:5–11 (зач. 240)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-d2a9a7bc7ccef2776dc7",
+      "date": "2026-09-21",
+      "citation": "Флп.2:5–11",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-09-21",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-09-21-41",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 41,
+          "source_url": "https://azbyka.ru/days/2026-09-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-d3e9f01d12a63c4b1416",
+      "slug": "reading-2fa19b58af7f4cc9",
+      "title": "Апостолам Петру и Павлу: Мф.16:13–19 (зач. 67)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-d3e9f01d12a63c4b1416",
+      "date": "2026-07-12",
+      "citation": "Мф.16:13–19",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-07-12",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-07-12-33",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 33,
+          "source_url": "https://azbyka.ru/days/2026-07-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-d54f292c2fd82aba522b",
+      "slug": "reading-3d0a7e1e5a66b8f5",
+      "title": "Литургия — Воздвижение: 1Кор.1:18-24 (зач. 125)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-d54f292c2fd82aba522b",
+      "date": "2026-09-27",
+      "citation": "1Кор.1:18-24",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-09-27",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-09-27-44",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 44,
+          "source_url": "https://azbyka.ru/days/2026-09-27",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-d60f361a4024f6e1d255",
+      "slug": "reading-92c114dc0568bff3",
+      "title": "Великий Вторник: Мф.24:36–26:2 (зач. 102)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-d60f361a4024f6e1d255",
+      "date": "2026-04-07",
+      "citation": "Мф.24:36–26:2",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-04-07",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-07-17",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 17,
+          "source_url": "https://azbyka.ru/days/2026-04-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-d74ddb9c294bbeda6141",
+      "slug": "reading-246ba3365a5ac165",
+      "title": "Литургия: Тит.2:11–14,3:4–7 (зач. 302)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-d74ddb9c294bbeda6141",
+      "date": "2026-01-19",
+      "citation": "Тит.2:11–14,3:4–7",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-01-19",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-19-05",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 5,
+          "source_url": "https://azbyka.ru/days/2026-01-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-d8e55c4b7f645fbf8438",
+      "slug": "reading-c63cb16a7b20ec55",
+      "title": "Литургия — рядовое: Мф.25:31–46 (зач. 106)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-d8e55c4b7f645fbf8438",
+      "date": "2026-02-15",
+      "citation": "Мф.25:31–46",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-02-15",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-02-15-11",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 11,
+          "source_url": "https://azbyka.ru/days/2026-02-15",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-da3835da2b192b4dfb54",
+      "slug": "reading-804252a3b7379bcb",
+      "title": "Литургия — Благовещение: Евр.2:11–18 (зач. 306)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-da3835da2b192b4dfb54",
+      "date": "2026-04-07",
+      "citation": "Евр.2:11–18",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-04-07",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-07-15",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 15,
+          "source_url": "https://azbyka.ru/days/2026-04-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-dc17e58f53df809351c5",
+      "slug": "reading-65d6e103e07e4491",
+      "title": "Освящение воды: Мк.1:9–11 (зач. 2)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-dc17e58f53df809351c5",
+      "date": "2026-01-19",
+      "citation": "Мк.1:9–11",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-01-19",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-19-08",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 8,
+          "source_url": "https://azbyka.ru/days/2026-01-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-de66b03576d5124c53e5",
+      "slug": "reading-a745d62d88f4869e",
+      "title": "Литургия: Деян.1:1–8 (зач. 1)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-de66b03576d5124c53e5",
+      "date": "2026-04-12",
+      "citation": "Деян.1:1–8",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-04-12",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-12-18",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 18,
+          "source_url": "https://azbyka.ru/days/2026-04-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-e0146a92230720a5ec33",
+      "slug": "reading-e718fb9a21f32a7c",
+      "title": "Литургия — Рождество Богородицы: Лк.10:38–42,11:27–28 (зач. 54)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-e0146a92230720a5ec33",
+      "date": "2026-09-21",
+      "citation": "Лк.10:38–42,11:27–28",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-09-21",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-09-21-42",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 42,
+          "source_url": "https://azbyka.ru/days/2026-09-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-ea4573c331aa1f70a264",
+      "slug": "reading-ce663d68c3f5d626",
+      "title": "Утреня: Лк.9:28–36 (зач. 45)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-ea4573c331aa1f70a264",
+      "date": "2026-08-19",
+      "citation": "Лк.9:28–36",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-08-19",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-08-19-34",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 34,
+          "source_url": "https://azbyka.ru/days/2026-08-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-ef34d5e57ec794a7f208",
+      "slug": "reading-ad6a86e003357828",
+      "title": "Литургия: Мф.3:13–17 (зач. 6)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-ef34d5e57ec794a7f208",
+      "date": "2026-01-19",
+      "citation": "Мф.3:13–17",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-01-19",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-19-06",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 6,
+          "source_url": "https://azbyka.ru/days/2026-01-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-f551378f999ea1e74826",
+      "slug": "reading-63c05034d1d7dbac",
+      "title": "Утреня: Лк.1:39–49,56 (зач. 4)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-f551378f999ea1e74826",
+      "date": "2026-09-21",
+      "citation": "Лк.1:39–49,56",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-09-21",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-09-21-40",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 40,
+          "source_url": "https://azbyka.ru/days/2026-09-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-f98feb38bc1847db96bb",
+      "slug": "reading-bf4b0a49e4d3b674",
+      "title": "Апостолу Иоанну: Ин.19:25–27,21:24–25 (зач. 61)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-f98feb38bc1847db96bb",
+      "date": "2026-05-21",
+      "citation": "Ин.19:25–27,21:24–25",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-05-21",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-21-25",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 25,
+          "source_url": "https://azbyka.ru/days/2026-05-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-reading-fefe047efff612c03aa4",
+      "slug": "reading-46d5f1cd6628a3c1",
+      "title": "Литургия — Троица: Деян.2:1–11 (зач. 3)",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-fefe047efff612c03aa4",
+      "date": "2026-05-31",
+      "citation": "Деян.2:1–11",
+      "text_ref": null,
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "russian-orthodox-editorial-calendar",
+        "calendar_style": "civil_date_new_style_with_old_style_reference",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": "2026-10-04T18:52:28Z"
+      },
+      "verification_status": "editorial_verified",
+      "aliases": [],
+      "references": [
+        {
+          "kind": "calendar_day",
+          "id": "pm-day-2026-05-31",
+          "relation_type": "reading_for"
+        }
+      ],
+      "source_records": [
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-31-27",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 27,
+          "source_url": "https://azbyka.ru/days/2026-05-31",
+          "migrated_from": null
+        }
+      ]
+    }
+  ]
+}

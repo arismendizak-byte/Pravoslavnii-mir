@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0.0",
+  "verified_on": "2026-10-05",
+  "authors": [
+    {
+      "source_url": "https://ru.wikisource.org/w/index.php?title=Автор:Игнатий_(Брянчанинов)&oldid=5378313",
+      "observed_on": "2026-10-05",
+      "source_html_sha256": "f31c3a06a33b1d775155b8428f529b300b1318c8aeb40157ec41e32e84048ba4",
+      "rights_statement": "Работы этого автора находятся в общественном достоянии в тех странах, где срок охраны авторского права равен жизни автора плюс 100 лет и менее. Переводы и позднейшие редакции произведений этого автора могут являться объектами авторских прав соответствующих лиц согласно статье 1260 ГК РФ."
+    },
+    {
+      "source_url": "https://ru.wikisource.org/w/index.php?title=Автор:Феофан_Затворник&oldid=3820189",
+      "observed_on": "2026-10-05",
+      "source_html_sha256": "f9d5222feb4e211189d7588e5603813e579330e4fced23b481e4e6b035957424",
+      "rights_statement": "Работы этого автора находятся в общественном достоянии в тех странах, где срок охраны авторского права равен жизни автора плюс 100 лет и менее. Переводы и позднейшие редакции произведений этого автора могут являться объектами авторских прав соответствующих лиц согласно статье 1260 ГК РФ."
+    },
+    {
+      "source_url": "https://ru.wikisource.org/w/index.php?title=Автор:Филарет_(Дроздов)&oldid=4812984",
+      "observed_on": "2026-10-05",
+      "source_html_sha256": "f766eef4182ae2ed48507582e22a98847320e851c4911284ca251c228edd3142",
+      "rights_statement": "Работы этого автора находятся в общественном достоянии в тех странах, где срок охраны авторского права равен жизни автора плюс 100 лет и менее. Переводы и позднейшие редакции произведений этого автора могут являться объектами авторских прав соответствующих лиц согласно статье 1260 ГК РФ."
+    }
+  ],
+  "local_texts": [
+    {
+      "schema_version": "1.0.0",
+      "key": "theophan-eternal-torments",
+      "title": "О вечности мучений",
+      "source_url": "https://ru.wikisource.org/w/index.php?title=О_вечности_мучений_(Феофан_Затворник)&oldid=1071762",
+      "source_revision": "1071762",
+      "source_html_sha256": "ee0078572c09a4e5221c68658f3e361218e089a68ed8a10fbfd9d1dde01ddec2",
+      "verified_on": "2026-10-05",
+      "source_header": "О вечности мученийавтор Феофан ЗатворникДата создания: вторая половина XIX века. Источник: Скан ЭнциклопедииРБС ► Феофан (Говоров)\nЭСБЕ ► Феофан (Говоров)\nвнешние ссылки\nБольшая российская энциклопедияВикипроекты Викитека\n Википедия\n Фото, аудио и видео\n Данные\n Цитаты и афоризмы\nФеофан Затворник",
+      "author_evidence_url": "https://ru.wikisource.org/w/index.php?title=Автор:Феофан_Затворник&oldid=3820189",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ru",
+      "rights_status": "open_license",
+      "transformation": "Extract text blocks, headings and footnotes; remove site navigation, author widgets and edit controls; preserve spelling and source errors; join blocks with two LF characters. No translation or abridgment.",
+      "completeness_scope": "Full selected Wikisource electronic publication; not a completeness claim for the author collection or a critical edition.",
+      "text_quality": "source_transcription_not_independently_proofread",
+      "content_path": "library/texts/theophan-eternal-torments.txt",
+      "content_sha256": "1f87de0c6ebf25536452e018ba86f1bd5e6598ab71f28b86768e088b5420c107",
+      "content_size_bytes": 58370
+    },
+    {
+      "schema_version": "1.0.0",
+      "key": "theophan-spiritual-instructions",
+      "title": "Наставления в духовной жизни",
+      "source_url": "https://ru.wikisource.org/w/index.php?title=Наставления_в_духовной_жизни_(Феофан_Затворник)&oldid=5698478",
+      "source_revision": "5698478",
+      "source_html_sha256": "831024f79fa4c02f4dee4d690f1436f7d51a0f34989c1d048a96dedf4b800308",
+      "verified_on": "2026-10-05",
+      "source_header": "Наставления в духовной жизни — 1-2автор Феофан ЗатворникДата создания: вторая половина XIX века. ЭнциклопедииРБС ► Феофан (Говоров)\nЭСБЕ ► Феофан (Говоров)\nвнешние ссылки\nБольшая российская энциклопедияВикипроекты Викитека\n Википедия\n Фото, аудио и видео\n Данные\n Цитаты и афоризмы\nФеофан Затворник",
+      "author_evidence_url": "https://ru.wikisource.org/w/index.php?title=Автор:Феофан_Затворник&oldid=3820189",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ru",
+      "rights_status": "open_license",
+      "transformation": "Extract text blocks, headings and footnotes; remove site navigation, author widgets and edit controls; preserve spelling and source errors; join blocks with two LF characters. No translation or abridgment.",
+      "completeness_scope": "Full selected Wikisource electronic publication; not a completeness claim for the author collection or a critical edition.",
+      "text_quality": "source_transcription_not_independently_proofread",
+      "content_path": "library/texts/theophan-spiritual-instructions.txt",
+      "content_sha256": "0084af6f0789f57fee196768e31f40ae9985da7c90dc81797300380f13c5aa15",
+      "content_size_bytes": 22578
+    },
+    {
+      "schema_version": "1.0.0",
+      "key": "theophan-hermas-commentary",
+      "title": "Толкование на книгу св. Ермы",
+      "source_url": "https://ru.wikisource.org/w/index.php?title=Толкование_на_книгу_св._Ермы_(Феофан_Затворник)&oldid=5666316#bodyContent",
+      "source_revision": "5666316",
+      "source_html_sha256": "26489e7f6cba59c9c10b8a35fe58695560b4aafc33018508c07da9d3770c7b83",
+      "verified_on": "2026-10-05",
+      "source_header": "Толкование на книгу св. Ермы — 1-4автор Феофан ЗатворникИз цикла «Толкования». Дата создания: вторая половина XIX века. Источник: Скан ЭнциклопедииРБС ► Феофан (Говоров)\nЭСБЕ ► Феофан (Говоров)\nвнешние ссылки\nБольшая российская энциклопедияВикипроекты Викитека\n Википедия\n Фото, аудио и видео\n Данные\n Цитаты и афоризмы\nФеофан Затворник",
+      "author_evidence_url": "https://ru.wikisource.org/w/index.php?title=Автор:Феофан_Затворник&oldid=3820189",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ru",
+      "rights_status": "open_license",
+      "transformation": "Extract text blocks, headings and footnotes; remove site navigation, author widgets and edit controls; preserve spelling and source errors; join blocks with two LF characters. No translation or abridgment.",
+      "completeness_scope": "Full selected Wikisource electronic publication; not a completeness claim for the author collection or a critical edition.",
+      "text_quality": "source_transcription_not_independently_proofread",
+      "content_path": "library/texts/theophan-hermas-commentary.txt",
+      "content_sha256": "4ba254952986440f2ede9ed3c188eeb6841adb736031fdee7afb059208e5c2f0",
+      "content_size_bytes": 66364
+    },
+    {
+      "schema_version": "1.0.0",
+      "key": "ignatius-obedience-to-elder",
+      "title": "О жительстве в послушании у старца",
+      "source_url": "https://ru.wikisource.org/w/index.php?title=О_жительстве_в_послушании_у_старца_(Игнатий_Брянчанинов)&oldid=2626028#bodyContent",
+      "source_revision": "2626028",
+      "source_html_sha256": "4d20248f8868dc37ad8a0097e943e466a7cad8cc8d4b5f840568b083d019097b",
+      "verified_on": "2026-10-05",
+      "source_header": "← Об отшельнической жизниО жительстве в послушании у старцаавтор Игнатий (Брянчанинов)О жительстве по совету →См. Святитель Игнатий Брянчанинов. Приношение Современному монашеству. Источник: http://klikovo.ru/db/book/msg/1928 \n← Об отшельнической жизниИгнатий (Брянчанинов)О жительстве по совету →",
+      "author_evidence_url": "https://ru.wikisource.org/w/index.php?title=Автор:Игнатий_(Брянчанинов)&oldid=5378313",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ru",
+      "rights_status": "open_license",
+      "transformation": "Extract text blocks, headings and footnotes; remove site navigation, author widgets and edit controls; preserve spelling and source errors; join blocks with two LF characters. No translation or abridgment.",
+      "completeness_scope": "Full selected Wikisource electronic publication; not a completeness claim for the author collection or a critical edition.",
+      "text_quality": "source_transcription_not_independently_proofread",
+      "content_path": "library/texts/ignatius-obedience-to-elder.txt",
+      "content_sha256": "5dfe9a212b6145329f921f7004ef9196b907830ae22b7d218ea76704597b179c",
+      "content_size_bytes": 16712
+    },
+    {
+      "schema_version": "1.0.0",
+      "key": "philaret-scripture-translations",
+      "title": "О догматическом достоинстве и охранительном употреблении переводов Священного Писания",
+      "source_url": "https://ru.wikisource.org/w/index.php?title=О_догматическом_достоинстве_и_охранительном_употреблении_переводов_Священного_Писания_(свят._Филарет)/ДО&oldid=5666262",
+      "source_revision": "5666262",
+      "source_html_sha256": "f1ef4b0f82afb7d77ce5ac81d046a11e1bc1cb4d1f19d270cc5fb42ad5c181b8",
+      "verified_on": "2026-10-05",
+      "source_header": "О догматическомъ достоинствѣ и охранительномъ употребленіи греческаго седмидесяти толковниковъ и славенскаго переводовъ Священнаго Писанія.авторъ Свят. Филаретъ, митр. МосковскійДата созданія: 8 мая 1845 года, опубл.: 1858 год. Источникъ: Журналъ «Прибавленiя къ изданію твореній Святыхъ Отцевъ, въ русскомъ переводѣ» за 1858 годъ. — М.: Въ Типографiи В. Готье, 1858. — Часть XVII. — С. 452-484; имеется в библиотеке Русская Библія Другие редакции\nВ новой орфографииВикипроекты Данные\nО догматическом достоинстве и охранительном употреблении переводов Священного Писания (свят. Филарет)",
+      "author_evidence_url": "https://ru.wikisource.org/w/index.php?title=Автор:Филарет_(Дроздов)&oldid=4812984",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ru",
+      "rights_status": "open_license",
+      "transformation": "Extract text blocks, headings and footnotes; remove site navigation, author widgets and edit controls; preserve spelling and source errors; join blocks with two LF characters. No translation or abridgment.",
+      "completeness_scope": "Full selected Wikisource electronic publication; not a completeness claim for the author collection or a critical edition.",
+      "text_quality": "source_transcription_not_independently_proofread",
+      "content_path": "library/texts/philaret-scripture-translations.txt",
+      "content_sha256": "24761d6d674267d0fb3d3c2fbadcbd1a6eb0d7f37d9139c1efd1502f3024f14b",
+      "content_size_bytes": 81962
+    }
+  ],
+  "rights_corrections": [
+    {
+      "key": "ignatius-word-on-man",
+      "observed_on": "2026-10-05",
+      "source_url": "https://ru.wikisource.org/wiki/Слово_о_человеке_(Брянчанинов)",
+      "previous_assessment": {
+        "rights_status": "public_domain_verified",
+        "copyright_notice": "Викитека указывает, что авторские произведения святителя Игнатия (Брянчанинова) находятся в общественном достоянии; поздние редакции/производные версии не считаются автоматически свободными.",
+        "rights_evidence_url": "https://ru.wikisource.org/wiki/Автор:Игнатий_(Брянчанинов)"
+      },
+      "new_rights_status": "external_link_only",
+      "reason": "В источнике указана первая публикация в 1995 году; имеются предисловие и редакторские примечания 1995 года. Статус точного издания требует отдельной проверки, возраст автора не доказывает права всей версии."
+    },
+    {
+      "key": "ignatius-on-orthodoxy",
+      "observed_on": "2026-10-05",
+      "source_url": "https://ru.wikisource.org/wiki/О_Православии_(Брянчанинов)",
+      "previous_assessment": {
+        "rights_status": "public_domain_verified",
+        "copyright_notice": "Викитека указывает, что авторские произведения святителя Игнатия (Брянчанинова) находятся в общественном достоянии; поздние редакции/производные версии не считаются автоматически свободными.",
+        "rights_evidence_url": "https://ru.wikisource.org/wiki/Автор:Игнатий_(Брянчанинов)"
+      },
+      "new_rights_status": "external_link_only",
+      "reason": "В электронной публикации есть поздние комментарии со ссылками на издания 1996 года. Общественное достояние авторского текста 1857 года не доказывает права редакционного аппарата."
+    },
+    {
+      "key": "philaret-longer-catechism",
+      "observed_on": "2026-10-05",
+      "source_url": "https://ru.wikisource.org/wiki/Пространный_христианский_катихизис_Православной_Кафолической_Восточной_Церкви",
+      "previous_assessment": {
+        "rights_status": "public_domain_verified",
+        "copyright_notice": "Викитека указывает, что авторские произведения святителя Филарета (Дроздова) находятся в общественном достоянии; для конкретного произведения сохраняется отдельная source URL.",
+        "rights_evidence_url": "https://ru.wikisource.org/wiki/Автор:Филарет_(Дроздов)"
+      },
+      "new_rights_status": "external_link_only",
+      "reason": "Страница электронной публикации ссылается на издание 2006 года с редакционной подготовкой А. Г. Дунаева. Public-domain статус исторического произведения не доказывает права редакционного аппарата конкретной электронной версии."
+    }
+  ],
+  "deferred_candidates": [
+    {
+      "title": "Руководство к духовной жизни (Феофан Затворник)",
+      "source_url": "https://ru.wikisource.org/wiki/Руководство_к_духовной_жизни_(Феофан_Затворник)",
+      "reason": "Source explicitly warns that the publication source and header are missing; no canonical promotion or local copy."
+    }
+  ]
+}

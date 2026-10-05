@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "M3.5",
+  "source": {
+    "provider": "pravmir-legacy-spb",
+    "file": "data/spb_temples.json",
+    "snapshot_at": "2026-10-02T21:46:00Z",
+    "sha256": "0bd525a80fee352161e0f34d3ff94b11acb006a37d90e639b53504e11494ae5f",
+    "size": 170199,
+    "records": 414,
+    "unique_source_ids": 414,
+    "external_upstream_provenance": "not_present_in_legacy_dataset"
+  },
+  "migration": {
+    "canonical_records_with_spb_source": 413,
+    "legacy_source_records_preserved": 414,
+    "runtime_aliases": 414,
+    "runtime_alias_targets_valid": true,
+    "source_to_alias_coverage_complete": true,
+    "internal_auto_merge_groups": [
+      {
+        "canonical_id": "pm-291b6356363d5f868f0dde3a54d950b7",
+        "legacy_source_ids": [
+          "387",
+          "69"
+        ]
+      }
+    ],
+    "cross_provider_auto_merges": [],
+    "cross_canonical_suspicious_candidates": [],
+    "review_candidates_involving_spb": [
+      {
+        "left_id": "pm-15a1dbb3d74f5f798d3881ff3e034b61",
+        "right_id": "pm-3fe6cb2e49eb5455af783bc1f7d39cf8",
+        "reason": "similar_name_and_address",
+        "confidence": 0.94,
+        "distance_m": 53.46,
+        "name_similarity": 0.9591,
+        "address_similarity": 0.9722
+      },
+      {
+        "left_id": "pm-15dfb05db672538a9ec9e0a0991d6b88",
+        "right_id": "pm-bb577f4e7a1451478f8c5bcc8eecccb3",
+        "reason": "similar_name_within_250m",
+        "confidence": 0.9001,
+        "distance_m": 34.0,
+        "name_similarity": 0.9242,
+        "address_similarity": 1.0
+      },
+      {
+        "left_id": "pm-b4a1b563c3885367ad25ce75a502c3ba",
+        "right_id": "pm-e20221438e71551286cbd26111795476",
+        "reason": "similar_name_within_250m",
+        "confidence": 0.7867,
+        "distance_m": 110.44,
+        "name_similarity": 0.939,
+        "address_similarity": 0.8857
+      },
+      {
+        "left_id": "pm-cae571ef947e520abf8610a947cd13fe",
+        "right_id": "pm-f640174cdf5557479f042404743cb87c",
+        "reason": "similar_name_within_250m",
+        "confidence": 0.8736,
+        "distance_m": 49.49,
+        "name_similarity": 0.9213,
+        "address_similarity": 0.9667
+      }
+    ],
+    "region_counts": {
+      "Санкт-Петербург": 413
+    },
+    "type_counts": {
+      "cathedral": 31,
+      "chapel": 86,
+      "church": 291,
+      "monastery": 5
+    },
+    "status_counts": {
+      "active": 347,
+      "preserved": 57,
+      "under_construction": 8,
+      "unknown": 1
+    }
+  },
+  "compatibility": {
+    "runtime_dependency_on_spb_source_removed": true,
+    "legacy_source_archive_retained": true,
+    "compatibility_mirror_retained": true,
+    "mirror_matches_source": true
+  },
+  "curated_pages": [
+    {
+      "name": "Храм Христа Спасителя",
+      "detail_path": "objects/christ.html",
+      "page_exists": true,
+      "canonical_match_id": "pm-180e678907775f3d9705dc3094b6b21a"
+    },
+    {
+      "name": "Никольский Морской собор",
+      "detail_path": "objects/nikolsky.html",
+      "page_exists": true,
+      "canonical_match_id": "pm-d3be800e597b5c47af4ca606573464c7"
+    },
+    {
+      "name": "Троице-Сергиева Лавра",
+      "detail_path": "objects/lavra.html",
+      "page_exists": true,
+      "canonical_match_id": "pm-9e8bc6fff182514f91cf1739e41d2839"
+    },
+    {
+      "name": "Дивеево",
+      "detail_path": "objects/diveevo.html",
+      "page_exists": true,
+      "canonical_match_id": null
+    },
+    {
+      "name": "Арзамас",
+      "detail_path": "objects/arzamas.html",
+      "page_exists": true,
+      "canonical_match_id": null
+    },
+    {
+      "name": "universal-place-page",
+      "detail_path": "objects/place.html",
+      "page_exists": true,
+      "canonical_match_id": null
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pravmir.local/schema/pilgrim_service_record.schema.json",
+  "type": "object",
+  "required": [
+    "id",
+    "slug",
+    "title",
+    "service_type",
+    "status",
+    "aliases",
+    "canonical_path",
+    "provider_name",
+    "contacts",
+    "availability",
+    "trust_layer",
+    "verification_status",
+    "freshness",
+    "source_records"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^pm-service-[0-9a-f]{20}$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "service_type": {
+      "enum": [
+        "pilgrimage_trip",
+        "guided_tour",
+        "transport",
+        "accommodation_booking",
+        "meal_service",
+        "consultation",
+        "accessibility_support",
+        "family_support",
+        "other"
+      ]
+    },
+    "status": {
+      "enum": [
+        "available",
+        "temporarily_unavailable",
+        "seasonal",
+        "closed",
+        "unknown"
+      ]
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "canonical_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provider_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "contacts": {
+      "type": "object",
+      "required": [
+        "phone",
+        "email",
+        "website"
+      ],
+      "properties": {
+        "phone": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "email": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "website": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "availability": {
+      "type": "object",
+      "required": [
+        "text",
+        "timezone"
+      ],
+      "properties": {
+        "text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "timezone": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "trust_layer": {
+      "enum": [
+        "canonical_system",
+        "verified_organisation",
+        "editorial",
+        "community"
+      ]
+    },
+    "verification_status": {
+      "enum": [
+        "source_verified",
+        "verified_organisation",
+        "editorial_verified",
+        "community_unverified"
+      ]
+    },
+    "freshness": {
+      "type": "object",
+      "required": [
+        "observed_at",
+        "verified_at",
+        "valid_from",
+        "valid_to",
+        "expires_at"
+      ],
+      "properties": {
+        "observed_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "verified_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "valid_from": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "valid_to": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "expires_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "source_records": {
+      "$ref": "content_item.schema.json#/$defs/source_records"
+    }
+  },
+  "additionalProperties": false
+}

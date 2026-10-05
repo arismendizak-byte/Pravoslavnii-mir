@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Библиотека и медиа — Православный Мир</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/library.css">
+</head>
+<body>
+<div id="nav-container"></div><div id="bottom-nav-container"></div>
+<main class="library-domain" id="main-content">
+  <div class="breadcrumbs"><a href="index.html">Главная</a> &rarr; <span>Библиотека и медиа</span></div>
+  <section class="library-hero">
+    <div class="section-label">M5.10.6 · Интеграция расширенной библиотеки</div>
+    <h1>Православное знание,<br><em>с уважением к источнику и правам</em></h1>
+    <p>Священное Писание, жития, богословие, молитвы, богослужебные тексты, проповеди, катехизация и история Церкви. Каталог использует только canonical metadata и explicit relations; локальный полный текст доступен только там, где права конкретной электронной публикации подтверждены.</p>
+  </section>
+
+  <div class="library-stats" id="libraryStats" aria-live="polite">
+    <div><strong>—</strong><span>произведений</span></div><div><strong>—</strong><span>авторов</span></div><div><strong>—</strong><span>ссылок Писания</span></div><div><strong>—</strong><span>текстов и медиа</span></div>
+  </div>
+  <div class="library-trust"><strong>Copyright-first.</strong> Полный текст, аудио, видео или изображение хранится локально только при подтверждённых правах конкретного asset. Иначе ПМ сохраняет metadata, provenance и допустимую внешнюю ссылку.</div>
+  <div class="library-trust" id="libraryTrustSummary" aria-live="polite">Проверка trust layer…</div>
+
+  <section class="library-section" id="libraryDiscoverySection">
+    <div class="library-section-head">
+      <div><h2>Найти произведение</h2><p>Поиск работает по названию, алиасам, описанию и подтверждённому авторству. Фильтры не создают новых graph-связей.</p></div>
+      <a class="library-clear-link" id="libraryClearAuthor" href="library.html" hidden>Все авторы</a>
+    </div>
+    <div id="libraryAuthorView" class="library-author-view" hidden></div>
+    <form id="libraryFilters" class="library-filters" role="search">
+      <label class="library-filter library-filter--wide"><span>Поиск</span><input id="libraryQuery" name="q" type="search" autocomplete="off" placeholder="Название, автор, тема"></label>
+      <label class="library-filter"><span>Тип</span><select id="libraryType" name="type"><option value="">Все типы</option></select></label>
+      <label class="library-filter"><span>Права произведения</span><select id="libraryRightsFilter" name="rights"><option value="">Все статусы</option></select></label>
+      <label class="library-filter"><span>Доступность</span><select id="libraryAvailability" name="availability"><option value="">Любая</option><option value="local_text">Читать здесь</option><option value="external_text">Внешний полный текст</option><option value="metadata_only">Только metadata</option></select></label>
+      <div class="library-filter-actions"><button type="submit" class="library-filter-button">Применить</button><button type="button" class="library-filter-reset" id="libraryReset">Сбросить</button></div>
+    </form>
+    <div id="libraryResultSummary" class="library-result-summary" aria-live="polite"></div>
+    <div id="libraryCanonical" class="library-results" aria-live="polite"><div class="library-state">Загрузка…</div></div>
+  </section>
+
+  <section class="library-section"><h2>Тексты и материалы</h2><p>Локальные публикации открываются на странице произведения. Внешние ссылки сохраняются вместе со сведениями о правах; спорные редакции локально не копируются.</p><div id="libraryAssets" class="library-grid"></div></section>
+  <section class="library-section"><h2>Авторы</h2><p>Переход на автора показывает только произведения, связанные explicit <code>author_attribution</code>. Неоднозначная атрибуция не превращается в canonical связь автоматически.</p><div id="libraryAuthors" class="library-grid"></div></section>
+  <section class="library-section"><h2>Политика прав</h2><p>Системные статусы определяют, можно ли хранить конкретный asset локально.</p><div id="libraryRights" class="library-grid"></div></section>
+</main>
+<div id="footer-container"></div>
+<script src="js/config.js"></script><script src="js/components.js"></script><script src="js/library-layer.js"></script><script src="js/library.js"></script>
+</body>
+</html>

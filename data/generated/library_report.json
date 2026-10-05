@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.2.0",
+  "source_snapshot_sha256": "413c8dc21e944c9609d18cf7817a0a163b6de40dc3330958d24110aa8b58fee1",
+  "canonical_works_created": 39,
+  "canonical_authors_created": 11,
+  "canonical_editions_created": 38,
+  "scripture_references_created": 48,
+  "explicit_relations_created": 107,
+  "rights_cleared_text_assets_created": 21,
+  "rights_cleared_media_assets_created": 2,
+  "local_text_assets_created": 9,
+  "local_media_assets_created": 0,
+  "full_protected_texts_copied": 0,
+  "unlicensed_local_assets_created": 0,
+  "inferred_relations_created": 0,
+  "organisation_entities_created": 0,
+  "notes": [
+    "M5.10.7 closes the current Library/Knowledge engineering gate without adding canonical works, assets or relations.",
+    "Stable IDs and rights boundaries are preserved; normalized author aliases are validated at the frozen-source/build boundary to prevent search-equivalent duplicates.",
+    "The Philaret Longer Catechism exact electronic asset remains external-link-only while the historical work remains public-domain; prior rights assessment stays in audit evidence.",
+    "All existing saint/Scripture/media relations remain explicit and unchanged; no inferred place/feast/organisation links are created."
+  ]
+}

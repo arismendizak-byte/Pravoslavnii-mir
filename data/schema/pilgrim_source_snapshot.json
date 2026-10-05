@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_at": "2026-10-04T23:30:00+03:00",
+  "files": [
+    {
+      "path": "data/pilgrim_sources/amenity_types.json",
+      "size": 4635,
+      "sha256": "1cf870bf01c90dce67f6e46c129b46c40c88e19d5e922e9dbc10a51d6f1990ee"
+    },
+    {
+      "path": "data/pilgrim_sources/source_manifest.json",
+      "size": 827,
+      "sha256": "455e96f209e22f952a92c32c9f2d5b8912b2a01417c2da3bb4a7f01d128f6523"
+    },
+    {
+      "path": "data/pilgrim_sources/verified_records_2026-10-04.json",
+      "size": 5579,
+      "sha256": "ee3fa6c69a122259487bcb218441f165327958a688a4b7218a06278e46ae8c06"
+    },
+    {
+      "path": "data/pilgrim-centers.json",
+      "size": 27347,
+      "sha256": "124918f7df5a132815ca2b0b46f666ea548d0846a0e7853e12ff9d64592b15a8"
+    }
+  ]
+}

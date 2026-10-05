@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "domain": "events",
+  "trust_layers": [
+    {
+      "id": "editorial",
+      "canonical_eligible": true,
+      "description": "Редакционные записи ПМ, опубликованные только после явной проверки источника/расписания."
+    },
+    {
+      "id": "verified_organisation",
+      "canonical_eligible": true,
+      "description": "Данные подтверждённой организации/прихода; не смешиваются с Place и требуют собственного provider evidence."
+    },
+    {
+      "id": "community",
+      "canonical_eligible": false,
+      "description": "Пользовательские предложения сохраняются в review queue и не становятся canonical до верификации."
+    }
+  ],
+  "providers": [
+    {
+      "provider": "pravmir-editorial-events",
+      "source_file": "data/event_sources/events_editorial.json",
+      "trust_layer": "editorial",
+      "verification_status": "editorial_verified",
+      "authority_class": "pravmir_editorial",
+      "jurisdiction": null,
+      "tradition": "orthodox",
+      "locale": "ru-RU"
+    },
+    {
+      "provider": "pravmir-verified-organisation-events",
+      "source_file": "data/event_sources/events_verified_organisations.json",
+      "trust_layer": "verified_organisation",
+      "verification_status": "verified_organisation",
+      "authority_class": "verified_organisation",
+      "jurisdiction": null,
+      "tradition": "orthodox",
+      "locale": "ru-RU"
+    },
+    {
+      "provider": "pravmir-community-event-contributions",
+      "source_file": "data/event_sources/events_community.json",
+      "trust_layer": "community",
+      "verification_status": "community_unverified",
+      "authority_class": "community_contribution",
+      "jurisdiction": null,
+      "tradition": "orthodox",
+      "locale": "ru-RU"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.1.0",
+  "key": "nicene-creed-tolstoy-1875",
+  "title": "Никео-Цареградский Символ веры",
+  "source_url": "https://ru.wikisource.org/w/index.php?oldid=4854183&title=Никео-Цареградский_Символ_веры/1875,_Толстой_(ДО)",
+  "source_revision": "4854183",
+  "verified_on": "2026-10-05",
+  "source_header": "Викитека, Никео-Цареградский Символ веры, редакция 1875 года из «Новой азбуки» Л. Н. Толстого; страница указывает источник: Толстой Л. Н., ПСС, т. 21, 1957, с. 95.",
+  "work_rights_evidence_url": "https://ru.wikisource.org/w/index.php?oldid=4854183&title=Никео-Цареградский_Символ_веры/1875,_Толстой_(ДО)",
+  "classification_evidence_url": "https://azbyka.ru/simvol_very",
+  "classification_evidence_summary": "«Азбука веры» отдельно отмечает, что Символ веры не является молитвой, и подтверждает его соборное пение за Литургией и чтение в других богослужебных последованиях.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "rights_status": "open_license",
+  "transformation": "Select the explicitly identified historical edition/variant; remove site navigation, footnote markers and alternate editions; preserve source spelling and source transcription errors; join retained blocks with two LF characters. No translation or abridgment inside the selected variant.",
+  "completeness_scope": "Полный текст выбранной церковнославянской редакции 1875 года на закреплённой странице; навигация и библиографическая шапка не входят в локальный body. Это не критическое издание.",
+  "text_quality": "source_transcription_not_independently_proofread",
+  "content_path": "library/texts/nicene-creed-tolstoy-1875.txt",
+  "content_sha256": "96da23154e68c8db2836124c0c21e84ffd3cdef2ef0e9e6b047373d8e7515494",
+  "content_size_bytes": 1809,
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": "Никео-Цареградский Символ веры"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Вѣрую во единаго Бога Отца, Вседержителя. Творца небу и земли, видимымъ же всѣмъ и невидимымъ. И во единаго Господа Іисуса Христа, Сына Божія, единороднаго. Иже отъ Отца рожденнаго прежде всѣхъ вѣкъ: Свѣта отъ Свѣта, Бога истинна отъ Бога истина, рожденна, несотворенна, единосущна Отцу, Имъ же вся быша. Насъ ради человѣкъ. и нашего ради спасенія, сшедшаго съ небесъ, и воплотившагося отъ Духа Свята и Маріи Дѣвы и вочеловѣчшася. Распятаго же за ны при Понтійстѣмъ Пилатѣ, и страдавша и погребенна."
+    },
+    {
+      "kind": "paragraph",
+      "text": "И воскресшаго въ третій день по писаніемъ. И возшедшаго на небеса и сѣдяща одесную Отца. И паки грядущаго со славою судити живымъ и мертвымъ, Его же царствію не будетъ конца. И въ Духа Святаго, Господа, животворящаго, Иже отъ Отца исходящаго, Иже со Отцемъ и Сыномъ споклоняема и сславима, глаголовшаго пророки. Во едину, Святую, Соборную, и Апостольскую Церковь. Исповѣдую едино крещеніе во оставленіе грѣховъ. Чаю воскресенія мертвыхъ, и жизни будущаго вѣка, Аминь."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://pravmir.local/schema/food_source_manifest.schema.json",
+  "title":"Pravmir food source manifest",
+  "type":"object",
+  "required":["schema_version","domain","providers"],
+  "properties":{"schema_version":{"type":"string","minLength":1},"domain":{"const":"orthodox_food"},"providers":{"type":"array","minItems":1,"items":{"type":"object","required":["provider","source_file","trust_layer","verification_status","locale"],"properties":{"provider":{"type":"string","minLength":1},"source_file":{"type":"string","minLength":1},"trust_layer":{"const":"editorial"},"verification_status":{"const":"editorial_content"},"locale":{"type":"string","minLength":1}},"additionalProperties":false}}},
+  "additionalProperties":false
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.8.0",
+  "domain": "library",
+  "files": [
+    {
+      "path": "data/library_sources/source_manifest.json",
+      "size": 2854,
+      "sha256": "54c8ef7b63908917250411288f81847014e1917ffb9b78026b23399b4e2f6312"
+    },
+    {
+      "path": "data/library_sources/rights_taxonomy.json",
+      "size": 3275,
+      "sha256": "58d1724faacc65be11a467872bd292994375c71e9acb32a1e11ab31b94aa5064"
+    },
+    {
+      "path": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+      "size": 4764,
+      "sha256": "4195443520948dc79b3e89c5a9611f17f67e2a1a0dd837b8d931fa049af92411"
+    },
+    {
+      "path": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+      "size": 51880,
+      "sha256": "74c843209a9da118ad47cabe59a5d1e98b067e66214b07713102e8e49ed35db3"
+    },
+    {
+      "path": "data/library_sources/text_verification_2026-10-05.json",
+      "size": 17486,
+      "sha256": "19e75e672f3f2ba905d076780f7fd8d985ac2a3a28a3b97cf3e7509034c10d6d"
+    },
+    {
+      "path": "data/library_sources/texts/philaret-scripture-translations.json",
+      "size": 89172,
+      "sha256": "c55129c96a106c45fafdb14c0c8050f7638e734f2f4dbb658beaf8cdf9064672"
+    },
+    {
+      "path": "data/library_sources/texts/ignatius-obedience-to-elder.json",
+      "size": 19704,
+      "sha256": "39bea81ed39e22865dff402f82dc75d279b6f809104bf1800a527ab3f9a3dbfe"
+    },
+    {
+      "path": "data/library_sources/texts/theophan-eternal-torments.json",
+      "size": 62954,
+      "sha256": "774af8263a95e84e655bdba76638edddc57c4f6ca305c9e33cde1dbd3b5a27db"
+    },
+    {
+      "path": "data/library_sources/texts/theophan-spiritual-instructions.json",
+      "size": 25943,
+      "sha256": "193730abd27caff4940cee95f84fac508a5c832a71d140ac5825a42b13294f96"
+    },
+    {
+      "path": "data/library_sources/texts/theophan-hermas-commentary.json",
+      "size": 71939,
+      "sha256": "adbf49193c0f91dc59ce63f57097668a561a619cc6e2138e91b841f720bf4305"
+    },
+    {
+      "path": "data/library_sources/texts/lord-prayer-19c.json",
+      "size": 2789,
+      "sha256": "2fb26f7f16bf6862ac797cc116c7311f3f2e1796986403a29019b03a6199d23e"
+    },
+    {
+      "path": "data/library_sources/texts/heavenly-king-19c.json",
+      "size": 2548,
+      "sha256": "49567c5607360b6e1874d00cdcee097310bb03ae7d2f55375f7e2ba0c6f9db0d"
+    },
+    {
+      "path": "data/library_sources/texts/worthy-is-19c.json",
+      "size": 2685,
+      "sha256": "43f2b695ef451625a05d7efefd829bec01bad70b1fa6f0ff1183f7024af8f748"
+    },
+    {
+      "path": "data/library_sources/texts/nicene-creed-tolstoy-1875.json",
+      "size": 4260,
+      "sha256": "c436c217e9b350feb725bf9d10bb02bb57bb502bb44d1f426aa9b3378d451638"
+    }
+  ]
+}

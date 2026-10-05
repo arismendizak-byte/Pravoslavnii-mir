@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pravmir.local/schema/event.schema.json",
+  "title": "Pravmir canonical event",
+  "type": "object",
+  "required": [
+    "id", "slug", "title", "event_type", "temporal", "status", "canonical_path",
+    "trust_layer", "verification_status", "freshness", "scope", "references", "source_records"
+  ],
+  "properties": {
+    "id": {"type": "string", "pattern": "^pm-event-[0-9a-f]{20}$"},
+    "slug": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "title": {"type": "string", "minLength": 1},
+    "summary": {"type": ["string", "null"]},
+    "event_type": {"enum": ["service", "procession", "lecture", "pilgrimage_trip", "parish_event", "pilgrim_event", "meeting", "other"]},
+    "temporal": {
+      "type": "object",
+      "required": ["all_day", "starts_at", "ends_at", "timezone", "recurrence"],
+      "properties": {
+        "all_day": {"type": "boolean"},
+        "starts_at": {"type": "string", "minLength": 10},
+        "ends_at": {"type": ["string", "null"]},
+        "timezone": {"type": ["string", "null"]},
+        "recurrence": {
+          "type": "object",
+          "required": ["kind", "rrule"],
+          "properties": {
+            "kind": {"enum": ["none", "rrule"]},
+            "rrule": {"type": ["string", "null"]}
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "status": {"enum": ["scheduled", "cancelled", "postponed", "completed", "draft"]},
+    "canonical_path": {"type": "string", "minLength": 1},
+    "venue": {
+      "type": ["object", "null"],
+      "properties": {
+        "name": {"type": ["string", "null"]},
+        "address": {"type": ["string", "null"]},
+        "place_ref": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "organizer": {
+      "type": ["object", "null"],
+      "properties": {
+        "name": {"type": ["string", "null"]},
+        "organisation_ref": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "registration": {
+      "type": ["object", "null"],
+      "properties": {
+        "required": {"type": ["boolean", "null"]},
+        "url": {"type": ["string", "null"]},
+        "email": {"type": ["string", "null"]},
+        "phone": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "trust_layer": {"enum": ["editorial", "verified_organisation"]},
+    "verification_status": {"enum": ["editorial_verified", "verified_organisation", "source_verified", "legacy_unverified"]},
+    "freshness": {
+      "type": "object",
+      "required": ["observed_at", "verified_at", "expires_at"],
+      "properties": {
+        "observed_at": {"type": ["string", "null"]},
+        "verified_at": {"type": ["string", "null"]},
+        "expires_at": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "scope": {
+      "type": "object",
+      "required": ["jurisdiction", "tradition", "locale"],
+      "properties": {
+        "jurisdiction": {"type": ["string", "null"]},
+        "tradition": {"type": ["string", "null"]},
+        "locale": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "references": {"$ref": "content_item.schema.json#/$defs/references"},
+    "source_records": {"$ref": "content_item.schema.json#/$defs/source_records"}
+  },
+  "additionalProperties": false
+}

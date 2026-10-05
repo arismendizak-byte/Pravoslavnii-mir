@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "providers": [
+    {
+      "provider": "pravmir-system-pilgrim-taxonomy",
+      "source_file": "data/pilgrim_sources/amenity_types.json",
+      "purpose": "system_taxonomy",
+      "trust_layer": "canonical_system",
+      "verification_status": "system_defined"
+    },
+    {
+      "provider": "pravmir-legacy-pilgrim-services",
+      "source_file": "data/pilgrim-centers.json",
+      "purpose": "review_input",
+      "trust_layer": "legacy_unverified",
+      "verification_status": "legacy_unverified"
+    },
+    {
+      "provider": "pravmir-editorial-pilgrim-verification-2026-10-04",
+      "source_file": "data/pilgrim_sources/verified_records_2026-10-04.json",
+      "purpose": "canonical_records",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified"
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "schema_version": "1.2.0",
+  "source_snapshot_sha256": "413c8dc21e944c9609d18cf7817a0a163b6de40dc3330958d24110aa8b58fee1",
+  "count": 11,
+  "authors": [
+    {
+      "id": "pm-author-01f09f4aff577c5d7cb4",
+      "slug": "matthew",
+      "display_name": "Апостол и евангелист Матфей",
+      "summary": "Библиографическая персона для проверенных записей православной библиотеки; историко-критические вопросы авторства здесь не выводятся автоматически.",
+      "canonical_path": "library.html?author=matthew",
+      "aliases": [
+        "Матфей",
+        "Евангелист Матфей"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "author:matthew",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 1
+        }
+      ]
+    },
+    {
+      "id": "pm-author-e2115b444f202888e299",
+      "slug": "mark",
+      "display_name": "Апостол и евангелист Марк",
+      "summary": "Библиографическая персона для проверенных записей православной библиотеки; историко-критические вопросы авторства здесь не выводятся автоматически.",
+      "canonical_path": "library.html?author=mark",
+      "aliases": [
+        "Марк",
+        "Евангелист Марк"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "author:mark",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 2
+        }
+      ]
+    },
+    {
+      "id": "pm-author-7bede0dea6d9a6b581bb",
+      "slug": "luke",
+      "display_name": "Апостол и евангелист Лука",
+      "summary": "Библиографическая персона для проверенных записей православной библиотеки; историко-критические вопросы авторства здесь не выводятся автоматически.",
+      "canonical_path": "library.html?author=luke",
+      "aliases": [
+        "Лука",
+        "Евангелист Лука"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "author:luke",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 3
+        }
+      ]
+    },
+    {
+      "id": "pm-author-69ba9458b741f43f848b",
+      "slug": "john",
+      "display_name": "Апостол и евангелист Иоанн Богослов",
+      "summary": "Библиографическая персона для проверенных записей православной библиотеки; историко-критические вопросы авторства здесь не выводятся автоматически.",
+      "canonical_path": "library.html?author=john",
+      "aliases": [
+        "Иоанн Богослов",
+        "Евангелист Иоанн"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "author:john",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 4
+        }
+      ]
+    },
+    {
+      "id": "pm-author-7989e30a4cfc964ba4d7",
+      "slug": "paul",
+      "display_name": "Апостол Павел",
+      "summary": "Библиографическая персона для проверенных записей православной библиотеки; историко-критические вопросы авторства здесь не выводятся автоматически.",
+      "canonical_path": "library.html?author=paul",
+      "aliases": [
+        "Павел",
+        "Святой апостол Павел"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "author:paul",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 5
+        }
+      ]
+    },
+    {
+      "id": "pm-author-f8ff6d9e9398baf562b8",
+      "slug": "peter",
+      "display_name": "Апостол Петр",
+      "summary": "Библиографическая персона для проверенных записей православной библиотеки; историко-критические вопросы авторства здесь не выводятся автоматически.",
+      "canonical_path": "library.html?author=peter",
+      "aliases": [
+        "Петр",
+        "Святой апостол Петр"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "author:peter",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 6
+        }
+      ]
+    },
+    {
+      "id": "pm-author-ce345c0078a116badf2f",
+      "slug": "theophan-the-recluse",
+      "display_name": "Святитель Феофан Затворник",
+      "summary": "Автор source-verified public-domain произведений; запись создана из frozen rights evidence.",
+      "canonical_path": "library.html?author=theophan-the-recluse",
+      "aliases": [
+        "Феофан Затворник"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "author:theophan-the-recluse",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Мысли_на_каждый_день_года_по_церковным_чтениям_из_Слова_Божия_(Феофан-Затворник)",
+          "source_row": 1,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Мысли_на_каждый_день_года_по_церковным_чтениям_из_Слова_Божия_(Феофан-Затворник)"
+        }
+      ]
+    },
+    {
+      "id": "pm-author-5626b80b178243d5aeff",
+      "slug": "philaret-drozdov",
+      "display_name": "Святитель Филарет (Дроздов), митрополит Московский",
+      "summary": "Автор source-verified public-domain произведений; запись создана из frozen rights evidence.",
+      "canonical_path": "library.html?author=philaret-drozdov",
+      "aliases": [
+        "Филарет Московский",
+        "Филарет (Дроздов)"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "author:philaret-drozdov",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Пространный_христианский_катихизис_Православной_Кафолической_Восточной_Церкви",
+          "source_row": 2,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Пространный_христианский_катихизис_Православной_Кафолической_Восточной_Церкви"
+        }
+      ]
+    },
+    {
+      "id": "pm-author-8baee35eb044feca0efb",
+      "slug": "ignatius-brianchaninov",
+      "display_name": "Святитель Игнатий (Брянчанинов)",
+      "summary": "Автор source-verified public-domain произведений; запись создана из frozen rights evidence.",
+      "canonical_path": "library.html?author=ignatius-brianchaninov",
+      "aliases": [
+        "Игнатий Брянчанинов"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "author:ignatius-brianchaninov",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/О_Православии_(Брянчанинов)",
+          "source_row": 4,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/О_Православии_(Брянчанинов)"
+        }
+      ]
+    },
+    {
+      "id": "pm-author-0d6627e49d4c5c3f9247",
+      "slug": "philaret-gumilevsky",
+      "display_name": "Архиепископ Филарет (Гумилевский)",
+      "summary": "Автор source-verified public-domain произведений; запись создана из frozen rights evidence.",
+      "canonical_path": "library.html?author=philaret-gumilevsky",
+      "aliases": [
+        "Филарет (Гумилевский)",
+        "Филарет Черниговский",
+        "Дмитрий Григорьевич Гумилевский"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "author:philaret-gumilevsky",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=Избранные_места_из_священной_истории_Ветхого_и_Нового_завета_с_назидательными_размышлениями_(Филарет)&oldid=5261535",
+          "source_row": 18,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=Избранные_места_из_священной_истории_Ветхого_и_Нового_завета_с_назидательными_размышлениями_(Филарет)&oldid=5261535"
+        }
+      ]
+    },
+    {
+      "id": "pm-author-e88f3e39ad793578b424",
+      "slug": "konstantin-pobedonostsev",
+      "display_name": "Константин Петрович Победоносцев",
+      "summary": "Автор source-verified public-domain произведений; запись создана из frozen rights evidence.",
+      "canonical_path": "library.html?author=konstantin-pobedonostsev",
+      "aliases": [
+        "К. П. Победоносцев",
+        "Константин Победоносцев"
+      ],
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "author:konstantin-pobedonostsev",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=История_Православной_Церкви_до_начала_разделения_Церквей_(Победоносцев)&oldid=5591605",
+          "source_row": 19,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=История_Православной_Церкви_до_начала_разделения_Церквей_(Победоносцев)&oldid=5591605"
+        }
+      ]
+    }
+  ]
+}

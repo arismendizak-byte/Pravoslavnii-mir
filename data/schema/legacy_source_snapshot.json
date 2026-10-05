@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_at": "2026-10-02T21:46:00Z",
+  "source_count": 1,
+  "sources": {
+    "data/spb_temples.json": {
+      "provider": "pravmir-legacy-spb",
+      "sha256": "0bd525a80fee352161e0f34d3ff94b11acb006a37d90e639b53504e11494ae5f",
+      "size": 170199
+    }
+  }
+}

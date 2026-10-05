@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pravmir.local/schema/pilgrim_review_item.schema.json",
+  "type": "object",
+  "required": [
+    "id",
+    "legacy_ref",
+    "candidate_kind",
+    "name",
+    "region_text",
+    "organisation_text",
+    "contacts",
+    "review_status",
+    "candidate_refs",
+    "evidence",
+    "raw_fields",
+    "source_records"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^pm-pilgrim-review-[0-9a-f]{20}$"
+    },
+    "legacy_ref": {
+      "type": "string",
+      "pattern": "^pm-pilgrim-[0-9a-f]{20}$"
+    },
+    "candidate_kind": {
+      "const": "pilgrim_service_provider"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "region_text": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "organisation_text": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "contacts": {
+      "type": "object",
+      "required": [
+        "phone",
+        "email",
+        "website"
+      ],
+      "properties": {
+        "phone": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "email": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "website": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "review_status": {
+      "enum": [
+        "needs_evidence",
+        "ready_for_review",
+        "rejected",
+        "promoted"
+      ]
+    },
+    "candidate_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "kind",
+          "id",
+          "basis"
+        ],
+        "properties": {
+          "kind": {
+            "enum": [
+              "place",
+              "route",
+              "organisation"
+            ]
+          },
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "basis": {
+            "enum": [
+              "explicit_evidence",
+              "manual_review"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "raw_fields": {
+      "type": "object"
+    },
+    "source_records": {
+      "$ref": "content_item.schema.json#/$defs/source_records"
+    }
+  },
+  "additionalProperties": false
+}

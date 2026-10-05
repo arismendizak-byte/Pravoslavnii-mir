@@ -1,0 +1,140 @@
+{
+  "schema_version": "1.0.0",
+  "provider": "pravmir-system-pilgrim-taxonomy",
+  "trust_layer": "canonical_system",
+  "verification_status": "system_defined",
+  "types": [
+    {
+      "source_id": "accommodation",
+      "key": "accommodation",
+      "label": "Ночлег",
+      "category": "stay",
+      "description": "Гостиница, паломнический дом, гостевой корпус или иное место ночлега.",
+      "sort_order": 10,
+      "capabilities": [
+        "overnight_stay"
+      ]
+    },
+    {
+      "source_id": "refectory",
+      "key": "refectory",
+      "label": "Трапезная",
+      "category": "food",
+      "description": "Трапезная или иное место питания для паломников.",
+      "sort_order": 20,
+      "capabilities": [
+        "meals"
+      ]
+    },
+    {
+      "source_id": "church_shop",
+      "key": "church_shop",
+      "label": "Церковная лавка",
+      "category": "support",
+      "description": "Лавка при храме, монастыре или паломническом объекте.",
+      "sort_order": 30,
+      "capabilities": [
+        "retail"
+      ]
+    },
+    {
+      "source_id": "transport",
+      "key": "transport",
+      "label": "Транспорт",
+      "category": "transport",
+      "description": "Остановка, трансфер или другой транспортный сервис, полезный в поездке.",
+      "sort_order": 40,
+      "capabilities": [
+        "transport"
+      ]
+    },
+    {
+      "source_id": "parking",
+      "key": "parking",
+      "label": "Парковка",
+      "category": "transport",
+      "description": "Парковочное место или зона рядом с объектом паломничества.",
+      "sort_order": 50,
+      "capabilities": [
+        "parking"
+      ]
+    },
+    {
+      "source_id": "holy_spring",
+      "key": "holy_spring",
+      "label": "Святой источник",
+      "category": "sacred_water",
+      "description": "Источник воды, связанный с паломническим местом; факт требует отдельного источника.",
+      "sort_order": 60,
+      "capabilities": [
+        "water"
+      ]
+    },
+    {
+      "source_id": "bathing_font",
+      "key": "bathing_font",
+      "label": "Купель",
+      "category": "sacred_water",
+      "description": "Купель или место омовения; режим и доступность должны иметь свежую проверку.",
+      "sort_order": 70,
+      "capabilities": [
+        "bathing"
+      ]
+    },
+    {
+      "source_id": "toilets",
+      "key": "toilets",
+      "label": "Туалеты",
+      "category": "accessibility",
+      "description": "Санитарная инфраструктура для посетителей.",
+      "sort_order": 80,
+      "capabilities": [
+        "sanitary"
+      ]
+    },
+    {
+      "source_id": "wheelchair_accessibility",
+      "key": "wheelchair_accessibility",
+      "label": "Доступность для маломобильных",
+      "category": "accessibility",
+      "description": "Пандусы, безбарьерный доступ и другие сведения о доступности.",
+      "sort_order": 90,
+      "capabilities": [
+        "wheelchair_access"
+      ]
+    },
+    {
+      "source_id": "family_children",
+      "key": "family_children",
+      "label": "Для семей с детьми",
+      "category": "accessibility",
+      "description": "Инфраструктура и условия, важные для поездок с детьми.",
+      "sort_order": 100,
+      "capabilities": [
+        "family_support"
+      ]
+    },
+    {
+      "source_id": "pilgrim_support",
+      "key": "pilgrim_support",
+      "label": "Паломническая помощь",
+      "category": "support",
+      "description": "Справочная, организационная или волонтёрская помощь паломникам.",
+      "sort_order": 110,
+      "capabilities": [
+        "assistance"
+      ]
+    },
+    {
+      "source_id": "information_point",
+      "key": "information_point",
+      "label": "Информация на месте",
+      "category": "support",
+      "description": "Информационный пункт, стойка, бюро или другое место получения справки.",
+      "sort_order": 120,
+      "capabilities": [
+        "information"
+      ]
+    }
+  ]
+}

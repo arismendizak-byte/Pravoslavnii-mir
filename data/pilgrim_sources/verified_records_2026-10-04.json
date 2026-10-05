@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0.0",
+  "provider": "pravmir-editorial-pilgrim-verification-2026-10-04",
+  "trust_layer": "editorial",
+  "verification_status": "source_verified",
+  "observed_at": "2026-10-04",
+  "records": [
+    {
+      "source_id": "lavra-pilgrim-center",
+      "kind": "service",
+      "title": "Паломнический центр Свято-Троицкой Сергиевой Лавры",
+      "service_type": "guided_tour",
+      "status": "available",
+      "aliases": [],
+      "provider_name": "Свято-Троицкая Сергиева Лавра",
+      "contacts": {
+        "phone": "+7 (496) 540-57-21; +7 (910) 471-01-70",
+        "email": null,
+        "website": "https://lavra.ru/excursions/"
+      },
+      "availability": {
+        "text": "Апрель–ноябрь: 08:00–18:00; ноябрь–апрель: 08:30–17:00.",
+        "timezone": "Europe/Moscow"
+      },
+      "legacy_ref": "pm-pilgrim-144eef231bbb0a0627b1",
+      "place_ref": "pm-9e8bc6fff182514f91cf1739e41d2839",
+      "relation_type": "serves_place",
+      "source_url": "https://lavra.ru/excursions/"
+    },
+    {
+      "source_id": "lavra-pilgrim-house",
+      "kind": "amenity",
+      "name": "Дом паломника",
+      "amenity_type": "accommodation",
+      "status": "available",
+      "aliases": [],
+      "address": "141310 Московская область, г. Сергиев Посад, ул. 1-ой Ударной Армии, 17",
+      "coordinates": {"lat": 56.3129242, "lon": 38.1046557},
+      "opening_hours": {"text": null, "timezone": "Europe/Moscow"},
+      "contacts": {
+        "phone": "+7 (909) 620-40-94",
+        "email": "voskresgost@gmail.com",
+        "website": "https://lavra.ru/about_lavra/all/palomnicheskaya-gostinitsa-pri-voskresenskom-podvore/"
+      },
+      "accessibility": {"wheelchair": "unknown", "step_free": "unknown", "accessible_toilet": "unknown", "notes": null},
+      "family_suitability": "unknown",
+      "availability_note": "Гостевой фонд указан на официальной странице; актуальную доступность мест необходимо подтверждать перед поездкой.",
+      "place_ref": "pm-9e8bc6fff182514f91cf1739e41d2839",
+      "relation_type": "serves_place",
+      "source_url": "https://lavra.ru/about_lavra/all/palomnicheskaya-gostinitsa-pri-voskresenskom-podvore/"
+    },
+    {
+      "source_id": "lavra-old-hotel",
+      "kind": "amenity",
+      "name": "Старая Лаврская гостиница",
+      "amenity_type": "accommodation",
+      "status": "available",
+      "aliases": [],
+      "address": "г. Сергиев Посад, проспект Красной Армии, д. 133",
+      "coordinates": null,
+      "opening_hours": {"text": null, "timezone": "Europe/Moscow"},
+      "contacts": {
+        "phone": "+7 (496) 549-90-00; +7 (496) 541-43-00",
+        "email": null,
+        "website": "https://lavrahotel.ru"
+      },
+      "accessibility": {"wheelchair": "unknown", "step_free": "unknown", "accessible_toilet": "unknown", "notes": null},
+      "family_suitability": "unknown",
+      "availability_note": "Официальная страница указывает размещение паломников; наличие мест необходимо подтверждать перед поездкой.",
+      "place_ref": "pm-9e8bc6fff182514f91cf1739e41d2839",
+      "relation_type": "serves_place",
+      "source_url": "https://www.lavra.ru/about_lavra/all/staraya-lavrskaya-gostinitsa/"
+    },
+    {
+      "source_id": "berluki-pilgrimage-service",
+      "kind": "service",
+      "title": "Паломническая служба Николо-Берлюковской пустыни",
+      "service_type": "pilgrimage_trip",
+      "status": "available",
+      "aliases": [],
+      "provider_name": "Николо-Берлюковская пустынь",
+      "contacts": {
+        "phone": "8 (968) 374-11-07",
+        "email": "palomnik@berluki.ru",
+        "website": "https://www.berluki.ru/"
+      },
+      "availability": {
+        "text": "Актуальные поездки и условия необходимо уточнять по официальным контактам паломнической службы.",
+        "timezone": "Europe/Moscow"
+      },
+      "legacy_ref": "pm-pilgrim-732f80199d154349f554",
+      "place_ref": "pm-364155d04b9c5e14b86956cd81e950c0",
+      "relation_type": "serves_place",
+      "source_url": "https://www.berluki.ru/%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B/"
+    }
+  ],
+  "conflicts": [
+    {
+      "source_id": "lavra-voznesenskaya-address",
+      "candidate_name": "Вознесенская гостиница Троице-Сергиевой Лавры",
+      "field": "address",
+      "resolution_status": "unresolved",
+      "values": [
+        {
+          "value": "141300, Московская область, г. Сергиев Посад, ул. Вознесенская, 1",
+          "source_url": "https://lavra.ru/about_lavra/all/voznesenskaya-gostinitsa/"
+        },
+        {
+          "value": "г. Сергиев Посад, ул. Вознесенская, д. 3",
+          "source_url": "https://lavra.ru/welcome/all/gde-ostanovitsya"
+        }
+      ],
+      "note": "Два официальных раздела lavra.ru одновременно указывают разные номера дома. До разрешения конфликта canonical amenity не создаётся."
+    }
+  ]
+}

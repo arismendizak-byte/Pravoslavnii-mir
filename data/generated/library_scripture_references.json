@@ -1,0 +1,1351 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "413c8dc21e944c9609d18cf7817a0a163b6de40dc3330958d24110aa8b58fee1",
+  "count": 48,
+  "scripture_references": [
+    {
+      "id": "pm-scripture-ref-2cde118be1314d8b3b99",
+      "reading_ref": "pm-reading-09bbe8121761fc9b054c",
+      "work_ref": "pm-work-f10011f5590643d4ad5b",
+      "edition_ref": "pm-edition-dba1b9d4556488daf3ee",
+      "date": "2026-02-15",
+      "citation": "Лк.2:25–32",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-09bbe8121761fc9b054c",
+      "external_url": "https://azbyka.ru/days/2026-02-15",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-02-15-09",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 9,
+          "source_url": "https://azbyka.ru/days/2026-02-15",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-f835bf12b4ce25d4b55b",
+      "reading_ref": "pm-reading-1292a3cf023b33be491a",
+      "work_ref": "pm-work-9a06f06165dec584fd5f",
+      "edition_ref": "pm-edition-e16bd52bb41ab327b4b8",
+      "date": "2026-09-27",
+      "citation": "Ин.19:6–11,13–20,25–28,30–35",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-1292a3cf023b33be491a",
+      "external_url": "https://azbyka.ru/days/2026-09-27",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Ин.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-09-27-45",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 45,
+          "source_url": "https://azbyka.ru/days/2026-09-27",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-9373389ec53a3edb5b36",
+      "reading_ref": "pm-reading-18bb95705dfd6453ef2d",
+      "work_ref": "pm-work-ead539b807952476ceab",
+      "edition_ref": "pm-edition-8f4f08797bd9078be011",
+      "date": "2026-01-07",
+      "citation": "Мф.2:1–12",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-18bb95705dfd6453ef2d",
+      "external_url": "https://azbyka.ru/days/2026-01-07",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Мф.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-07-03",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 3,
+          "source_url": "https://azbyka.ru/days/2026-01-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-5a5cfef11fbe68c49d78",
+      "reading_ref": "pm-reading-18f12ae920faec61b1dd",
+      "work_ref": "pm-work-9a06f06165dec584fd5f",
+      "edition_ref": "pm-edition-e16bd52bb41ab327b4b8",
+      "date": "2026-04-12",
+      "citation": "Ин.1:1–17",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-18f12ae920faec61b1dd",
+      "external_url": "https://azbyka.ru/days/2026-04-12",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Ин.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-12-19",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 19,
+          "source_url": "https://azbyka.ru/days/2026-04-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-693824be51e4a8ae534e",
+      "reading_ref": "pm-reading-1c4bfb0ca47662ca8988",
+      "work_ref": "pm-work-9a06f06165dec584fd5f",
+      "edition_ref": "pm-edition-e16bd52bb41ab327b4b8",
+      "date": "2026-09-27",
+      "citation": "Ин.12:28–36",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-1c4bfb0ca47662ca8988",
+      "external_url": "https://azbyka.ru/days/2026-09-27",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Ин.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-09-27-43",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 43,
+          "source_url": "https://azbyka.ru/days/2026-09-27",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-93bb3b28dc6ce25394f9",
+      "reading_ref": "pm-reading-2492a2e73266807bcb04",
+      "work_ref": "pm-work-88ed49e4eeb1e80fc71a",
+      "edition_ref": "pm-edition-cbede8fa0fae18f23389",
+      "date": "2026-05-21",
+      "citation": "Деян.1:1–12",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-2492a2e73266807bcb04",
+      "external_url": "https://azbyka.ru/days/2026-05-21",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Деян.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-21-22",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 22,
+          "source_url": "https://azbyka.ru/days/2026-05-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-07c911eb057305f161cb",
+      "reading_ref": "pm-reading-3e1123688c2323c64f22",
+      "work_ref": "pm-work-ead539b807952476ceab",
+      "edition_ref": "pm-edition-8f4f08797bd9078be011",
+      "date": "2026-07-12",
+      "citation": "Мф.9:1–8",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-3e1123688c2323c64f22",
+      "external_url": "https://azbyka.ru/days/2026-07-12",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Мф.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-07-12-31",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 31,
+          "source_url": "https://azbyka.ru/days/2026-07-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-806101b15902f0a9f2e1",
+      "reading_ref": "pm-reading-40bb959a68dd93e46fec",
+      "work_ref": "pm-work-f10011f5590643d4ad5b",
+      "edition_ref": "pm-edition-dba1b9d4556488daf3ee",
+      "date": "2026-08-28",
+      "citation": "Лк.1:39–49,56",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-40bb959a68dd93e46fec",
+      "external_url": "https://azbyka.ru/days/2026-08-28",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-08-28-37",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 37,
+          "source_url": "https://azbyka.ru/days/2026-08-28",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-48379a38e9381724df10",
+      "reading_ref": "pm-reading-4924c90ae6a6326fff16",
+      "work_ref": "pm-work-9a06f06165dec584fd5f",
+      "edition_ref": "pm-edition-e16bd52bb41ab327b4b8",
+      "date": "2026-04-12",
+      "citation": "Ин.20:19–25",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-4924c90ae6a6326fff16",
+      "external_url": "https://azbyka.ru/days/2026-04-12",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Ин.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-12-20",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 20,
+          "source_url": "https://azbyka.ru/days/2026-04-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-7bf4f814bb88e1e07e88",
+      "reading_ref": "pm-reading-4e55bb79ad5a482e7099",
+      "work_ref": "pm-work-2bcc66d0fa0877aadc78",
+      "edition_ref": "pm-edition-846c5ec7d5c3b2c0958f",
+      "date": "2026-05-21",
+      "citation": "Мк.16:9–20",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-4e55bb79ad5a482e7099",
+      "external_url": "https://azbyka.ru/days/2026-05-21",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Мк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-21-21",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 21,
+          "source_url": "https://azbyka.ru/days/2026-05-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-14472e923da8aeef7a95",
+      "reading_ref": "pm-reading-58ecd4fda1dc875a2db5",
+      "work_ref": "pm-work-b78fa698cdc84e069c3c",
+      "edition_ref": "pm-edition-c7256025662f5b43a3e0",
+      "date": "2026-01-19",
+      "citation": "1Кор.10:1-4",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-58ecd4fda1dc875a2db5",
+      "external_url": "https://azbyka.ru/days/2026-01-19",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:1Кор.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-19-07",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 7,
+          "source_url": "https://azbyka.ru/days/2026-01-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-680c0abf1634c8add483",
+      "reading_ref": "pm-reading-62415f5d41fdba9d280c",
+      "work_ref": "pm-work-f10011f5590643d4ad5b",
+      "edition_ref": "pm-edition-dba1b9d4556488daf3ee",
+      "date": "2026-10-14",
+      "citation": "Лк.10:38–42,11:27–28",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-62415f5d41fdba9d280c",
+      "external_url": "https://azbyka.ru/days/2026-10-14",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-10-14-48",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 48,
+          "source_url": "https://azbyka.ru/days/2026-10-14",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-942511a201565c61d25e",
+      "reading_ref": "pm-reading-6966ef426fc964c3800a",
+      "work_ref": "pm-work-b332575fa64ad64b5cf9",
+      "edition_ref": "pm-edition-2656573735e396aa14f3",
+      "date": "2026-07-12",
+      "citation": "Рим.12:6–14",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-6966ef426fc964c3800a",
+      "external_url": "https://azbyka.ru/days/2026-07-12",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Рим.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-07-12-30",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 30,
+          "source_url": "https://azbyka.ru/days/2026-07-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-f0ddc22b56de4d4edaa7",
+      "reading_ref": "pm-reading-7140bf40e23013779954",
+      "work_ref": "pm-work-d58f05c9b12b2c9c2f20",
+      "edition_ref": "pm-edition-30c2a5ccc8319f66788a",
+      "date": "2026-08-28",
+      "citation": "Флп.2:5–11",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-7140bf40e23013779954",
+      "external_url": "https://azbyka.ru/days/2026-08-28",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Флп.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-08-28-38",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 38,
+          "source_url": "https://azbyka.ru/days/2026-08-28",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-f12021a3ae7f5373a453",
+      "reading_ref": "pm-reading-7514a78ca9d8a2b9228d",
+      "work_ref": "pm-work-9a06f06165dec584fd5f",
+      "edition_ref": "pm-edition-e16bd52bb41ab327b4b8",
+      "date": "2026-05-31",
+      "citation": "Ин.20:19–23",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-7514a78ca9d8a2b9228d",
+      "external_url": "https://azbyka.ru/days/2026-05-31",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Ин.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-31-26",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 26,
+          "source_url": "https://azbyka.ru/days/2026-05-31",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-9c8bd956295abe9af4f7",
+      "reading_ref": "pm-reading-8726c47595a423bec487",
+      "work_ref": "pm-work-7798d2d95fcb5ddfef79",
+      "edition_ref": "pm-edition-bd07e11a9656c956b9f2",
+      "date": "2026-05-21",
+      "citation": "1Ин.1:1–7",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-8726c47595a423bec487",
+      "external_url": "https://azbyka.ru/days/2026-05-21",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:1Ин.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-21-24",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 24,
+          "source_url": "https://azbyka.ru/days/2026-05-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-a813a736e0d18249445c",
+      "reading_ref": "pm-reading-8aaba5fdd348df244d27",
+      "work_ref": "pm-work-f10011f5590643d4ad5b",
+      "edition_ref": "pm-edition-dba1b9d4556488daf3ee",
+      "date": "2026-07-12",
+      "citation": "Лк.24:36–53",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-8aaba5fdd348df244d27",
+      "external_url": "https://azbyka.ru/days/2026-07-12",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-07-12-29",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 29,
+          "source_url": "https://azbyka.ru/days/2026-07-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-7db203f03d7b0bca8837",
+      "reading_ref": "pm-reading-921f96884344253d921a",
+      "work_ref": "pm-work-f10011f5590643d4ad5b",
+      "edition_ref": "pm-edition-dba1b9d4556488daf3ee",
+      "date": "2026-08-28",
+      "citation": "Лк.10:38–42,11:27–28",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-921f96884344253d921a",
+      "external_url": "https://azbyka.ru/days/2026-08-28",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-08-28-39",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 39,
+          "source_url": "https://azbyka.ru/days/2026-08-28",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-df0d26e1e63ec9a9531d",
+      "reading_ref": "pm-reading-93905306881404cbedce",
+      "work_ref": "pm-work-98ed244e0b24b307ad5b",
+      "edition_ref": "pm-edition-3243ed298004c9c96f5a",
+      "date": "2026-07-12",
+      "citation": "2Кор.11:21-12:9",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-93905306881404cbedce",
+      "external_url": "https://azbyka.ru/days/2026-07-12",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:2Кор.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-07-12-32",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 32,
+          "source_url": "https://azbyka.ru/days/2026-07-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-9151ce1a5479f6c151a5",
+      "reading_ref": "pm-reading-9824c05b57a8971beef2",
+      "work_ref": "pm-work-f10011f5590643d4ad5b",
+      "edition_ref": "pm-edition-dba1b9d4556488daf3ee",
+      "date": "2026-04-07",
+      "citation": "Лк.1:24–38",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-9824c05b57a8971beef2",
+      "external_url": "https://azbyka.ru/days/2026-04-07",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-07-16",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 16,
+          "source_url": "https://azbyka.ru/days/2026-04-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-93aa4cc4665ecd2e2d1a",
+      "reading_ref": "pm-reading-9d5e2aa44a08c4910b4c",
+      "work_ref": "pm-work-a3f2610ca1d32e3e93ab",
+      "edition_ref": "pm-edition-9c099ac1fb85683e55e5",
+      "date": "2026-10-14",
+      "citation": "Евр.9:1–7",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-9d5e2aa44a08c4910b4c",
+      "external_url": "https://azbyka.ru/days/2026-10-14",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Евр.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-10-14-47",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 47,
+          "source_url": "https://azbyka.ru/days/2026-10-14",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-b3573c1bf71d3424a104",
+      "reading_ref": "pm-reading-9f457738286d4cd69eba",
+      "work_ref": "pm-work-f10011f5590643d4ad5b",
+      "edition_ref": "pm-edition-dba1b9d4556488daf3ee",
+      "date": "2026-02-15",
+      "citation": "Лк.2:22–40",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-9f457738286d4cd69eba",
+      "external_url": "https://azbyka.ru/days/2026-02-15",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-02-15-13",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 13,
+          "source_url": "https://azbyka.ru/days/2026-02-15",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-1224549d62924947cecf",
+      "reading_ref": "pm-reading-a0abe9e8bdf284198427",
+      "work_ref": "pm-work-9a06f06165dec584fd5f",
+      "edition_ref": "pm-edition-e16bd52bb41ab327b4b8",
+      "date": "2026-05-31",
+      "citation": "Ин.7:37–52,8:12",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-a0abe9e8bdf284198427",
+      "external_url": "https://azbyka.ru/days/2026-05-31",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Ин.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-31-28",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 28,
+          "source_url": "https://azbyka.ru/days/2026-05-31",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-c3062dcda45a3f2ba5fa",
+      "reading_ref": "pm-reading-a4e01d8d11f68ef4e0e8",
+      "work_ref": "pm-work-a3f2610ca1d32e3e93ab",
+      "edition_ref": "pm-edition-9c099ac1fb85683e55e5",
+      "date": "2026-02-15",
+      "citation": "Евр.7:7–17",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-a4e01d8d11f68ef4e0e8",
+      "external_url": "https://azbyka.ru/days/2026-02-15",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Евр.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-02-15-12",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 12,
+          "source_url": "https://azbyka.ru/days/2026-02-15",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-413cc0cf97306a7c804a",
+      "reading_ref": "pm-reading-ac491ad6771018591452",
+      "work_ref": "pm-work-f10011f5590643d4ad5b",
+      "edition_ref": "pm-edition-dba1b9d4556488daf3ee",
+      "date": "2026-10-14",
+      "citation": "Лк.1:39–49,56",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-ac491ad6771018591452",
+      "external_url": "https://azbyka.ru/days/2026-10-14",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-10-14-46",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 46,
+          "source_url": "https://azbyka.ru/days/2026-10-14",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-7c81cf5886705c275606",
+      "reading_ref": "pm-reading-b0b7ef6ffcf73eaa13e8",
+      "work_ref": "pm-work-f10011f5590643d4ad5b",
+      "edition_ref": "pm-edition-dba1b9d4556488daf3ee",
+      "date": "2026-05-21",
+      "citation": "Лк.24:36–53",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-b0b7ef6ffcf73eaa13e8",
+      "external_url": "https://azbyka.ru/days/2026-05-21",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-21-23",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 23,
+          "source_url": "https://azbyka.ru/days/2026-05-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-ae3b1a2cfbbac0b01d20",
+      "reading_ref": "pm-reading-b913664d210150314bef",
+      "work_ref": "pm-work-f10011f5590643d4ad5b",
+      "edition_ref": "pm-edition-dba1b9d4556488daf3ee",
+      "date": "2026-04-07",
+      "citation": "Лк.1:39–49,56",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-b913664d210150314bef",
+      "external_url": "https://azbyka.ru/days/2026-04-07",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-07-14",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 14,
+          "source_url": "https://azbyka.ru/days/2026-04-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-b5c8aaa9f1d530734e98",
+      "reading_ref": "pm-reading-bcb95438af45cb5b03c9",
+      "work_ref": "pm-work-edb29935b70bdf39c242",
+      "edition_ref": "pm-edition-2fcbbd8aca29c52efc2e",
+      "date": "2026-08-19",
+      "citation": "2Пет.1:10-19",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-bcb95438af45cb5b03c9",
+      "external_url": "https://azbyka.ru/days/2026-08-19",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:2Пет.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-08-19-35",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 35,
+          "source_url": "https://azbyka.ru/days/2026-08-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-9e41b065e58552efba66",
+      "reading_ref": "pm-reading-be216a176ebc0ab2f49f",
+      "work_ref": "pm-work-ead539b807952476ceab",
+      "edition_ref": "pm-edition-8f4f08797bd9078be011",
+      "date": "2026-01-07",
+      "citation": "Мф.1:18–25",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-be216a176ebc0ab2f49f",
+      "external_url": "https://azbyka.ru/days/2026-01-07",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Мф.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-07-01",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 1,
+          "source_url": "https://azbyka.ru/days/2026-01-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-07e829a58230692bb7f5",
+      "reading_ref": "pm-reading-c5f518a7bf382ba6e36d",
+      "work_ref": "pm-work-2bcc66d0fa0877aadc78",
+      "edition_ref": "pm-edition-846c5ec7d5c3b2c0958f",
+      "date": "2026-01-19",
+      "citation": "Мк.1:9–11",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-c5f518a7bf382ba6e36d",
+      "external_url": "https://azbyka.ru/days/2026-01-19",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Мк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-19-04",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 4,
+          "source_url": "https://azbyka.ru/days/2026-01-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-618e09f15e98ac4ad25e",
+      "reading_ref": "pm-reading-c7b956a3b207cab00315",
+      "work_ref": "pm-work-f975c10a93106f166042",
+      "edition_ref": "pm-edition-ba1ce819367d7c3dbb7e",
+      "date": "2026-01-07",
+      "citation": "Гал.4:4–7",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-c7b956a3b207cab00315",
+      "external_url": "https://azbyka.ru/days/2026-01-07",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Гал.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-07-02",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 2,
+          "source_url": "https://azbyka.ru/days/2026-01-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-d4b83eaf8f554b622eb3",
+      "reading_ref": "pm-reading-c8c28d629f1cdd7b8617",
+      "work_ref": "pm-work-b78fa698cdc84e069c3c",
+      "edition_ref": "pm-edition-c7256025662f5b43a3e0",
+      "date": "2026-02-15",
+      "citation": "1Кор.8:8-9:2",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-c8c28d629f1cdd7b8617",
+      "external_url": "https://azbyka.ru/days/2026-02-15",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:1Кор.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-02-15-10",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 10,
+          "source_url": "https://azbyka.ru/days/2026-02-15",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-3c760991b8813610efee",
+      "reading_ref": "pm-reading-cc2de1e84f9bc7cb9219",
+      "work_ref": "pm-work-ead539b807952476ceab",
+      "edition_ref": "pm-edition-8f4f08797bd9078be011",
+      "date": "2026-08-19",
+      "citation": "Мф.17:1–9",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-cc2de1e84f9bc7cb9219",
+      "external_url": "https://azbyka.ru/days/2026-08-19",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Мф.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-08-19-36",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 36,
+          "source_url": "https://azbyka.ru/days/2026-08-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-5c3da58992270dd2626e",
+      "reading_ref": "pm-reading-d2a9a7bc7ccef2776dc7",
+      "work_ref": "pm-work-d58f05c9b12b2c9c2f20",
+      "edition_ref": "pm-edition-30c2a5ccc8319f66788a",
+      "date": "2026-09-21",
+      "citation": "Флп.2:5–11",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-d2a9a7bc7ccef2776dc7",
+      "external_url": "https://azbyka.ru/days/2026-09-21",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Флп.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-09-21-41",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 41,
+          "source_url": "https://azbyka.ru/days/2026-09-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-6719a970e1a2c4ce0b16",
+      "reading_ref": "pm-reading-d3e9f01d12a63c4b1416",
+      "work_ref": "pm-work-ead539b807952476ceab",
+      "edition_ref": "pm-edition-8f4f08797bd9078be011",
+      "date": "2026-07-12",
+      "citation": "Мф.16:13–19",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-d3e9f01d12a63c4b1416",
+      "external_url": "https://azbyka.ru/days/2026-07-12",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Мф.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-07-12-33",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 33,
+          "source_url": "https://azbyka.ru/days/2026-07-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-b6644acc50ae3d5c7a12",
+      "reading_ref": "pm-reading-d54f292c2fd82aba522b",
+      "work_ref": "pm-work-b78fa698cdc84e069c3c",
+      "edition_ref": "pm-edition-c7256025662f5b43a3e0",
+      "date": "2026-09-27",
+      "citation": "1Кор.1:18-24",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-d54f292c2fd82aba522b",
+      "external_url": "https://azbyka.ru/days/2026-09-27",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:1Кор.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-09-27-44",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 44,
+          "source_url": "https://azbyka.ru/days/2026-09-27",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-e055b9e6ea5c116626e1",
+      "reading_ref": "pm-reading-d60f361a4024f6e1d255",
+      "work_ref": "pm-work-ead539b807952476ceab",
+      "edition_ref": "pm-edition-8f4f08797bd9078be011",
+      "date": "2026-04-07",
+      "citation": "Мф.24:36–26:2",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-d60f361a4024f6e1d255",
+      "external_url": "https://azbyka.ru/days/2026-04-07",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Мф.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-07-17",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 17,
+          "source_url": "https://azbyka.ru/days/2026-04-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-28a511b114c2610034be",
+      "reading_ref": "pm-reading-d74ddb9c294bbeda6141",
+      "work_ref": "pm-work-ddb436c4a9ddef94cf81",
+      "edition_ref": "pm-edition-121178fdf5657c043441",
+      "date": "2026-01-19",
+      "citation": "Тит.2:11–14,3:4–7",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-d74ddb9c294bbeda6141",
+      "external_url": "https://azbyka.ru/days/2026-01-19",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Тит.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-19-05",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 5,
+          "source_url": "https://azbyka.ru/days/2026-01-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-206fde1d8ed0fe83c1bc",
+      "reading_ref": "pm-reading-d8e55c4b7f645fbf8438",
+      "work_ref": "pm-work-ead539b807952476ceab",
+      "edition_ref": "pm-edition-8f4f08797bd9078be011",
+      "date": "2026-02-15",
+      "citation": "Мф.25:31–46",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-d8e55c4b7f645fbf8438",
+      "external_url": "https://azbyka.ru/days/2026-02-15",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Мф.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-02-15-11",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 11,
+          "source_url": "https://azbyka.ru/days/2026-02-15",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-9e3d98e90266fa10edde",
+      "reading_ref": "pm-reading-da3835da2b192b4dfb54",
+      "work_ref": "pm-work-a3f2610ca1d32e3e93ab",
+      "edition_ref": "pm-edition-9c099ac1fb85683e55e5",
+      "date": "2026-04-07",
+      "citation": "Евр.2:11–18",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-da3835da2b192b4dfb54",
+      "external_url": "https://azbyka.ru/days/2026-04-07",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Евр.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-07-15",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 15,
+          "source_url": "https://azbyka.ru/days/2026-04-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-73acea755ce7224746c2",
+      "reading_ref": "pm-reading-dc17e58f53df809351c5",
+      "work_ref": "pm-work-2bcc66d0fa0877aadc78",
+      "edition_ref": "pm-edition-846c5ec7d5c3b2c0958f",
+      "date": "2026-01-19",
+      "citation": "Мк.1:9–11",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-dc17e58f53df809351c5",
+      "external_url": "https://azbyka.ru/days/2026-01-19",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Мк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-19-08",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 8,
+          "source_url": "https://azbyka.ru/days/2026-01-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-be9154f495f8f89633e1",
+      "reading_ref": "pm-reading-de66b03576d5124c53e5",
+      "work_ref": "pm-work-88ed49e4eeb1e80fc71a",
+      "edition_ref": "pm-edition-cbede8fa0fae18f23389",
+      "date": "2026-04-12",
+      "citation": "Деян.1:1–8",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-de66b03576d5124c53e5",
+      "external_url": "https://azbyka.ru/days/2026-04-12",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Деян.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-12-18",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 18,
+          "source_url": "https://azbyka.ru/days/2026-04-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-3073df987305ccb0a45c",
+      "reading_ref": "pm-reading-e0146a92230720a5ec33",
+      "work_ref": "pm-work-f10011f5590643d4ad5b",
+      "edition_ref": "pm-edition-dba1b9d4556488daf3ee",
+      "date": "2026-09-21",
+      "citation": "Лк.10:38–42,11:27–28",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-e0146a92230720a5ec33",
+      "external_url": "https://azbyka.ru/days/2026-09-21",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-09-21-42",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 42,
+          "source_url": "https://azbyka.ru/days/2026-09-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-49671c032ac63859fd98",
+      "reading_ref": "pm-reading-ea4573c331aa1f70a264",
+      "work_ref": "pm-work-f10011f5590643d4ad5b",
+      "edition_ref": "pm-edition-dba1b9d4556488daf3ee",
+      "date": "2026-08-19",
+      "citation": "Лк.9:28–36",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-ea4573c331aa1f70a264",
+      "external_url": "https://azbyka.ru/days/2026-08-19",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-08-19-34",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 34,
+          "source_url": "https://azbyka.ru/days/2026-08-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-226d8fcb1737e872ce5d",
+      "reading_ref": "pm-reading-ef34d5e57ec794a7f208",
+      "work_ref": "pm-work-ead539b807952476ceab",
+      "edition_ref": "pm-edition-8f4f08797bd9078be011",
+      "date": "2026-01-19",
+      "citation": "Мф.3:13–17",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-ef34d5e57ec794a7f208",
+      "external_url": "https://azbyka.ru/days/2026-01-19",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Мф.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-19-06",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 6,
+          "source_url": "https://azbyka.ru/days/2026-01-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-4436d34129462af775ec",
+      "reading_ref": "pm-reading-f551378f999ea1e74826",
+      "work_ref": "pm-work-f10011f5590643d4ad5b",
+      "edition_ref": "pm-edition-dba1b9d4556488daf3ee",
+      "date": "2026-09-21",
+      "citation": "Лк.1:39–49,56",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-f551378f999ea1e74826",
+      "external_url": "https://azbyka.ru/days/2026-09-21",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-09-21-40",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 40,
+          "source_url": "https://azbyka.ru/days/2026-09-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-8ab78cf2e8ba05400352",
+      "reading_ref": "pm-reading-f98feb38bc1847db96bb",
+      "work_ref": "pm-work-9a06f06165dec584fd5f",
+      "edition_ref": "pm-edition-e16bd52bb41ab327b4b8",
+      "date": "2026-05-21",
+      "citation": "Ин.19:25–27,21:24–25",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-f98feb38bc1847db96bb",
+      "external_url": "https://azbyka.ru/days/2026-05-21",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Ин.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-21-25",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 25,
+          "source_url": "https://azbyka.ru/days/2026-05-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-scripture-ref-514416f2c10ce9a81aa5",
+      "reading_ref": "pm-reading-fefe047efff612c03aa4",
+      "work_ref": "pm-work-88ed49e4eeb1e80fc71a",
+      "edition_ref": "pm-edition-cbede8fa0fae18f23389",
+      "date": "2026-05-31",
+      "citation": "Деян.2:1–11",
+      "canonical_path": "calendar/item.html?kind=reading&id=pm-reading-fefe047efff612c03aa4",
+      "external_url": "https://azbyka.ru/days/2026-05-31",
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Деян.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-31-27",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 27,
+          "source_url": "https://azbyka.ru/days/2026-05-31",
+          "migrated_from": null
+        }
+      ]
+    }
+  ]
+}

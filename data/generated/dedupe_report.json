@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-10-05T20:52:21Z",
+  "input_records": 12963,
+  "candidate_pairs_evaluated": 27682,
+  "output_records": 12957,
+  "records_removed_by_merge": 6,
+  "auto_merge_pairs": 6,
+  "auto_merged_groups": 6,
+  "review_candidates": 76,
+  "blocked_cluster_merges": 0,
+  "merged_groups": [
+    {
+      "canonical_id": "pm-0776046c8a0959acafb0e4ac7872d2fd",
+      "merged_ids": [
+        "pm-9c32f03eef2353b6ac8bdb91560924fe"
+      ],
+      "source_count": 2
+    },
+    {
+      "canonical_id": "pm-230893862c1954a39683851d444f5bb8",
+      "merged_ids": [
+        "pm-4e4eecd14fb0532f805daf9b44c21d34"
+      ],
+      "source_count": 2
+    },
+    {
+      "canonical_id": "pm-291b6356363d5f868f0dde3a54d950b7",
+      "merged_ids": [
+        "pm-b67fad88625d560e9facd6afbf4590dc"
+      ],
+      "source_count": 2
+    },
+    {
+      "canonical_id": "pm-3c7bed171ca45d7f95fd70c06e54a9ee",
+      "merged_ids": [
+        "pm-70402150e05356909b1c4319c57938b1"
+      ],
+      "source_count": 2
+    },
+    {
+      "canonical_id": "pm-44cabbd6cc995103bd18f0b522ee535d",
+      "merged_ids": [
+        "pm-acc17320fa945e81a7f50f6cf39b7e3d"
+      ],
+      "source_count": 2
+    },
+    {
+      "canonical_id": "pm-6eba05824d0e5814b78f74d1471a98bc",
+      "merged_ids": [
+        "pm-ac74251ae6ce5d3aabab0de115bc8c27"
+      ],
+      "source_count": 2
+    }
+  ],
+  "merge_matches": [
+    {
+      "left_id": "pm-291b6356363d5f868f0dde3a54d950b7",
+      "right_id": "pm-b67fad88625d560e9facd6afbf4590dc",
+      "reason": "same_name_within_10m",
+      "confidence": 0.997,
+      "distance_m": 0.0,
+      "name_similarity": 1.0,
+      "address_similarity": 0.6875
+    },
+    {
+      "left_id": "pm-6eba05824d0e5814b78f74d1471a98bc",
+      "right_id": "pm-ac74251ae6ce5d3aabab0de115bc8c27",
+      "reason": "same_name_within_10m",
+      "confidence": 0.997,
+      "distance_m": 0.0,
+      "name_similarity": 1.0,
+      "address_similarity": 1.0
+    },
+    {
+      "left_id": "pm-3c7bed171ca45d7f95fd70c06e54a9ee",
+      "right_id": "pm-70402150e05356909b1c4319c57938b1",
+      "reason": "same_name_within_10m",
+      "confidence": 0.997,
+      "distance_m": 2.1,
+      "name_similarity": 1.0,
+      "address_similarity": 1.0
+    },
+    {
+      "left_id": "pm-44cabbd6cc995103bd18f0b522ee535d",
+      "right_id": "pm-acc17320fa945e81a7f50f6cf39b7e3d",
+      "reason": "same_name_and_address",
+      "confidence": 0.995,
+      "distance_m": 22.82,
+      "name_similarity": 1.0,
+      "address_similarity": 1.0
+    },
+    {
+      "left_id": "pm-0776046c8a0959acafb0e4ac7872d2fd",
+      "right_id": "pm-9c32f03eef2353b6ac8bdb91560924fe",
+      "reason": "same_name_and_address",
+      "confidence": 0.995,
+      "distance_m": 222.92,
+      "name_similarity": 1.0,
+      "address_similarity": 1.0
+    },
+    {
+      "left_id": "pm-230893862c1954a39683851d444f5bb8",
+      "right_id": "pm-4e4eecd14fb0532f805daf9b44c21d34",
+      "reason": "same_name_and_address",
+      "confidence": 0.995,
+      "distance_m": null,
+      "name_similarity": 1.0,
+      "address_similarity": 1.0
+    }
+  ]
+}

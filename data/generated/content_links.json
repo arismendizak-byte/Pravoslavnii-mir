@@ -1,0 +1,260 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "cb8933e71a4b77703b8f483e56da2559d16312c92899cdde4daaa786f8d88291",
+  "count": 11,
+  "links": [
+    {
+      "id": "pm-clink-0dedff0e80a21ef38f10",
+      "relation_type": "related_route",
+      "from": {
+        "kind": "content",
+        "id": "pm-content-aa501e5dfe502a4918c9"
+      },
+      "to": {
+        "kind": "route",
+        "id": "pm-route-b1a746ad676ea34a8ea92a76"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-content-links",
+          "source_id": "journal-diveevo-family-related-route",
+          "source_file": "data/content_sources/editorial_links.json",
+          "source_row": 7,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-clink-220c70bae39874179ee8",
+      "relation_type": "about_place",
+      "from": {
+        "kind": "content",
+        "id": "pm-content-82a3a218eef8f8cbefe3"
+      },
+      "to": {
+        "kind": "place",
+        "id": "pm-d9b350eb1f99542d8e011cf7028bd2d0"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-content-links",
+          "source_id": "journal-diveevo-restoration-about-place",
+          "source_file": "data/content_sources/editorial_links.json",
+          "source_row": 8,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-clink-54ab8cd59858c83d7bd9",
+      "relation_type": "about_feast",
+      "from": {
+        "kind": "content",
+        "id": "pm-content-b7232301d8701023309c"
+      },
+      "to": {
+        "kind": "feast",
+        "id": "pm-feast-e168192c9f98092e4e02"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-content-links",
+          "source_id": "article-3-about-pascha",
+          "source_file": "data/content_sources/editorial_links.json",
+          "source_row": 3,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-clink-6c5164c0312f3eceed3b",
+      "relation_type": "about_entity",
+      "from": {
+        "kind": "content",
+        "id": "pm-content-9f5cac3be0e95d1aeb5c"
+      },
+      "to": {
+        "kind": "entity",
+        "id": "pm-ent-9d94e9636c51e1693bb0bf0f"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-content-links",
+          "source_id": "article-2-about-sergiy-radonezhskiy",
+          "source_file": "data/content_sources/editorial_links.json",
+          "source_row": 1,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-clink-778610167a1cffe4123f",
+      "relation_type": "about_entity",
+      "from": {
+        "kind": "content",
+        "id": "pm-content-a4d1558a53ceb0936253"
+      },
+      "to": {
+        "kind": "entity",
+        "id": "pm-ent-7a19b4b09c5b9ef2bf63e102"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-content-links",
+          "source_id": "journal-nicholas-moscow-about-entity",
+          "source_file": "data/content_sources/editorial_links.json",
+          "source_row": 11,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-clink-87c76bb744d5738ccfe0",
+      "relation_type": "about_entity",
+      "from": {
+        "kind": "content",
+        "id": "pm-content-d9012af899758b4ed519"
+      },
+      "to": {
+        "kind": "entity",
+        "id": "pm-ent-7a19b4b09c5b9ef2bf63e102"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-content-links",
+          "source_id": "journal-nicholas-relics-about-entity",
+          "source_file": "data/content_sources/editorial_links.json",
+          "source_row": 10,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-clink-9316a83024071dde116f",
+      "relation_type": "about_place",
+      "from": {
+        "kind": "content",
+        "id": "pm-content-aa501e5dfe502a4918c9"
+      },
+      "to": {
+        "kind": "place",
+        "id": "pm-d9b350eb1f99542d8e011cf7028bd2d0"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-content-links",
+          "source_id": "journal-diveevo-family-about-place",
+          "source_file": "data/content_sources/editorial_links.json",
+          "source_row": 6,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-clink-b38546cbd6fa4299764b",
+      "relation_type": "mentions_place",
+      "from": {
+        "kind": "content",
+        "id": "pm-content-9f5cac3be0e95d1aeb5c"
+      },
+      "to": {
+        "kind": "place",
+        "id": "pm-9e8bc6fff182514f91cf1739e41d2839"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-content-links",
+          "source_id": "article-2-mentions-lavra",
+          "source_file": "data/content_sources/editorial_links.json",
+          "source_row": 2,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-clink-db414a6b8c662548fa9e",
+      "relation_type": "about_entity",
+      "from": {
+        "kind": "content",
+        "id": "pm-content-a9973214cf0ba233218b"
+      },
+      "to": {
+        "kind": "entity",
+        "id": "pm-ent-7a19b4b09c5b9ef2bf63e102"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-content-links",
+          "source_id": "article-7-about-nicholas",
+          "source_file": "data/content_sources/editorial_links.json",
+          "source_row": 4,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-clink-f0189d11deef7d01ff8e",
+      "relation_type": "about_feast",
+      "from": {
+        "kind": "content",
+        "id": "pm-content-20f43ffe7d4b59e9252f"
+      },
+      "to": {
+        "kind": "feast",
+        "id": "pm-feast-d2a6b919fe5c37c14aa0"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-content-links",
+          "source_id": "article-8-about-nativity",
+          "source_file": "data/content_sources/editorial_links.json",
+          "source_row": 5,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-clink-f8f623f0a7c62c4f1a2e",
+      "relation_type": "about_place",
+      "from": {
+        "kind": "content",
+        "id": "pm-content-1ab2a89722a3a44f687a"
+      },
+      "to": {
+        "kind": "place",
+        "id": "pm-9e8bc6fff182514f91cf1739e41d2839"
+      },
+      "verification_status": "editorial_verified",
+      "source_records": [
+        {
+          "provider": "pravmir-editorial-content-links",
+          "source_id": "journal-lavra-stream-about-place",
+          "source_file": "data/content_sources/editorial_links.json",
+          "source_row": 9,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    }
+  ]
+}

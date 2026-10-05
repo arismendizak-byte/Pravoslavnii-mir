@@ -1,0 +1,281 @@
+{
+  "adjacency": {
+    "entity:pm-ent-1f9700eb7514b6f45228427a": [
+      {
+        "edge_type": "relation",
+        "relation_id": "pm-rel-c3e37314517314ddb1721810",
+        "relation_type": "located_at",
+        "to": "place:pm-db95b49a09a150e38f1f796d2cd641ef",
+        "verification_status": "source_verified"
+      }
+    ],
+    "entity:pm-ent-2d9d6f56fcacbf171fad717a": [
+      {
+        "edge_type": "relation",
+        "relation_id": "pm-rel-55398e62da13e9742cb2bcd7",
+        "relation_type": "relics_at",
+        "to": "place:pm-d9b350eb1f99542d8e011cf7028bd2d0",
+        "verification_status": "source_verified"
+      }
+    ],
+    "entity:pm-ent-6e29ec9dc7650a7f2a108758": [
+      {
+        "edge_type": "relation",
+        "relation_id": "pm-rel-8b186f1bd5880c9ac9ab97f9",
+        "relation_type": "relics_at",
+        "to": "place:pm-35717840d34c5419ac424affb83c5f64",
+        "verification_status": "source_verified"
+      }
+    ],
+    "entity:pm-ent-7477196711d7b29ee27e362f": [
+      {
+        "edge_type": "relation",
+        "relation_id": "pm-rel-6eb9151b4ee5369e92f5f79c",
+        "relation_type": "relic_of",
+        "to": "entity:pm-ent-9d94e9636c51e1693bb0bf0f",
+        "verification_status": "source_verified"
+      },
+      {
+        "edge_type": "relation",
+        "relation_id": "pm-rel-ef04f28ba63675ece02040db",
+        "relation_type": "located_at",
+        "to": "place:pm-9e8bc6fff182514f91cf1739e41d2839",
+        "verification_status": "source_verified"
+      }
+    ],
+    "entity:pm-ent-9b3ad4dabf06d97a85b8366f": [
+      {
+        "edge_type": "relation",
+        "relation_id": "pm-rel-5edaa4f914468d4f77ff9805",
+        "relation_type": "located_at",
+        "to": "place:pm-7afa9f66d2125be7abf29d2d17bc761d",
+        "verification_status": "source_verified"
+      }
+    ],
+    "entity:pm-ent-9d94e9636c51e1693bb0bf0f": [
+      {
+        "edge_type": "relation",
+        "relation_id": "pm-rel-6eb9151b4ee5369e92f5f79c",
+        "relation_type": "relic_of",
+        "to": "entity:pm-ent-7477196711d7b29ee27e362f",
+        "verification_status": "source_verified"
+      },
+      {
+        "edge_type": "relation",
+        "relation_id": "pm-rel-69468648269050a3dd653bb8",
+        "relation_type": "relics_at",
+        "to": "place:pm-9e8bc6fff182514f91cf1739e41d2839",
+        "verification_status": "source_verified"
+      }
+    ],
+    "place:pm-35717840d34c5419ac424affb83c5f64": [
+      {
+        "edge_type": "relation",
+        "relation_id": "pm-rel-8b186f1bd5880c9ac9ab97f9",
+        "relation_type": "relics_at",
+        "to": "entity:pm-ent-6e29ec9dc7650a7f2a108758",
+        "verification_status": "source_verified"
+      }
+    ],
+    "place:pm-7afa9f66d2125be7abf29d2d17bc761d": [
+      {
+        "edge_type": "relation",
+        "relation_id": "pm-rel-5edaa4f914468d4f77ff9805",
+        "relation_type": "located_at",
+        "to": "entity:pm-ent-9b3ad4dabf06d97a85b8366f",
+        "verification_status": "source_verified"
+      }
+    ],
+    "place:pm-9e8bc6fff182514f91cf1739e41d2839": [
+      {
+        "edge_type": "relation",
+        "relation_id": "pm-rel-ef04f28ba63675ece02040db",
+        "relation_type": "located_at",
+        "to": "entity:pm-ent-7477196711d7b29ee27e362f",
+        "verification_status": "source_verified"
+      },
+      {
+        "edge_type": "relation",
+        "relation_id": "pm-rel-69468648269050a3dd653bb8",
+        "relation_type": "relics_at",
+        "to": "entity:pm-ent-9d94e9636c51e1693bb0bf0f",
+        "verification_status": "source_verified"
+      },
+      {
+        "edge_type": "route_stop",
+        "order": 2,
+        "route_id": "pm-route-b26a02228cbb5a023d02f37e",
+        "to": "route:pm-route-b26a02228cbb5a023d02f37e",
+        "verification_status": "legacy_unverified"
+      }
+    ],
+    "place:pm-d9b350eb1f99542d8e011cf7028bd2d0": [
+      {
+        "edge_type": "relation",
+        "relation_id": "pm-rel-55398e62da13e9742cb2bcd7",
+        "relation_type": "relics_at",
+        "to": "entity:pm-ent-2d9d6f56fcacbf171fad717a",
+        "verification_status": "source_verified"
+      },
+      {
+        "edge_type": "route_stop",
+        "order": 1,
+        "route_id": "pm-route-b1a746ad676ea34a8ea92a76",
+        "to": "route:pm-route-b1a746ad676ea34a8ea92a76",
+        "verification_status": "legacy_unverified"
+      }
+    ],
+    "place:pm-db95b49a09a150e38f1f796d2cd641ef": [
+      {
+        "edge_type": "relation",
+        "relation_id": "pm-rel-c3e37314517314ddb1721810",
+        "relation_type": "located_at",
+        "to": "entity:pm-ent-1f9700eb7514b6f45228427a",
+        "verification_status": "source_verified"
+      }
+    ],
+    "route:pm-route-b1a746ad676ea34a8ea92a76": [
+      {
+        "edge_type": "route_stop",
+        "order": 1,
+        "route_id": "pm-route-b1a746ad676ea34a8ea92a76",
+        "to": "place:pm-d9b350eb1f99542d8e011cf7028bd2d0",
+        "verification_status": "legacy_unverified"
+      }
+    ],
+    "route:pm-route-b26a02228cbb5a023d02f37e": [
+      {
+        "edge_type": "route_stop",
+        "order": 2,
+        "route_id": "pm-route-b26a02228cbb5a023d02f37e",
+        "to": "place:pm-9e8bc6fff182514f91cf1739e41d2839",
+        "verification_status": "legacy_unverified"
+      }
+    ]
+  },
+  "entities_by_place": {
+    "pm-35717840d34c5419ac424affb83c5f64": [
+      "pm-ent-6e29ec9dc7650a7f2a108758"
+    ],
+    "pm-7afa9f66d2125be7abf29d2d17bc761d": [
+      "pm-ent-9b3ad4dabf06d97a85b8366f"
+    ],
+    "pm-9e8bc6fff182514f91cf1739e41d2839": [
+      "pm-ent-7477196711d7b29ee27e362f",
+      "pm-ent-9d94e9636c51e1693bb0bf0f"
+    ],
+    "pm-d9b350eb1f99542d8e011cf7028bd2d0": [
+      "pm-ent-2d9d6f56fcacbf171fad717a"
+    ],
+    "pm-db95b49a09a150e38f1f796d2cd641ef": [
+      "pm-ent-1f9700eb7514b6f45228427a"
+    ]
+  },
+  "entity_ids": [
+    "pm-ent-1f9700eb7514b6f45228427a",
+    "pm-ent-2d9d6f56fcacbf171fad717a",
+    "pm-ent-6e29ec9dc7650a7f2a108758",
+    "pm-ent-7477196711d7b29ee27e362f",
+    "pm-ent-7a19b4b09c5b9ef2bf63e102",
+    "pm-ent-9b3ad4dabf06d97a85b8366f",
+    "pm-ent-9d94e9636c51e1693bb0bf0f"
+  ],
+  "places_by_entity": {
+    "pm-ent-1f9700eb7514b6f45228427a": [
+      "pm-db95b49a09a150e38f1f796d2cd641ef"
+    ],
+    "pm-ent-2d9d6f56fcacbf171fad717a": [
+      "pm-d9b350eb1f99542d8e011cf7028bd2d0"
+    ],
+    "pm-ent-6e29ec9dc7650a7f2a108758": [
+      "pm-35717840d34c5419ac424affb83c5f64"
+    ],
+    "pm-ent-7477196711d7b29ee27e362f": [
+      "pm-9e8bc6fff182514f91cf1739e41d2839"
+    ],
+    "pm-ent-9b3ad4dabf06d97a85b8366f": [
+      "pm-7afa9f66d2125be7abf29d2d17bc761d"
+    ],
+    "pm-ent-9d94e9636c51e1693bb0bf0f": [
+      "pm-9e8bc6fff182514f91cf1739e41d2839"
+    ]
+  },
+  "relations_by_entity": {
+    "pm-ent-1f9700eb7514b6f45228427a": [
+      "pm-rel-c3e37314517314ddb1721810"
+    ],
+    "pm-ent-2d9d6f56fcacbf171fad717a": [
+      "pm-rel-55398e62da13e9742cb2bcd7"
+    ],
+    "pm-ent-6e29ec9dc7650a7f2a108758": [
+      "pm-rel-8b186f1bd5880c9ac9ab97f9"
+    ],
+    "pm-ent-7477196711d7b29ee27e362f": [
+      "pm-rel-6eb9151b4ee5369e92f5f79c",
+      "pm-rel-ef04f28ba63675ece02040db"
+    ],
+    "pm-ent-9b3ad4dabf06d97a85b8366f": [
+      "pm-rel-5edaa4f914468d4f77ff9805"
+    ],
+    "pm-ent-9d94e9636c51e1693bb0bf0f": [
+      "pm-rel-69468648269050a3dd653bb8",
+      "pm-rel-6eb9151b4ee5369e92f5f79c"
+    ]
+  },
+  "relations_by_place": {
+    "pm-35717840d34c5419ac424affb83c5f64": [
+      "pm-rel-8b186f1bd5880c9ac9ab97f9"
+    ],
+    "pm-7afa9f66d2125be7abf29d2d17bc761d": [
+      "pm-rel-5edaa4f914468d4f77ff9805"
+    ],
+    "pm-9e8bc6fff182514f91cf1739e41d2839": [
+      "pm-rel-69468648269050a3dd653bb8",
+      "pm-rel-ef04f28ba63675ece02040db"
+    ],
+    "pm-d9b350eb1f99542d8e011cf7028bd2d0": [
+      "pm-rel-55398e62da13e9742cb2bcd7"
+    ],
+    "pm-db95b49a09a150e38f1f796d2cd641ef": [
+      "pm-rel-c3e37314517314ddb1721810"
+    ]
+  },
+  "route_ids": [
+    "pm-route-b1a746ad676ea34a8ea92a76",
+    "pm-route-b26a02228cbb5a023d02f37e"
+  ],
+  "routes_by_entity": {
+    "pm-ent-1f9700eb7514b6f45228427a": [],
+    "pm-ent-2d9d6f56fcacbf171fad717a": [
+      "pm-route-b1a746ad676ea34a8ea92a76"
+    ],
+    "pm-ent-6e29ec9dc7650a7f2a108758": [],
+    "pm-ent-7477196711d7b29ee27e362f": [
+      "pm-route-b26a02228cbb5a023d02f37e"
+    ],
+    "pm-ent-7a19b4b09c5b9ef2bf63e102": [],
+    "pm-ent-9b3ad4dabf06d97a85b8366f": [],
+    "pm-ent-9d94e9636c51e1693bb0bf0f": [
+      "pm-route-b26a02228cbb5a023d02f37e"
+    ]
+  },
+  "routes_by_place": {
+    "pm-9e8bc6fff182514f91cf1739e41d2839": [
+      "pm-route-b26a02228cbb5a023d02f37e"
+    ],
+    "pm-d9b350eb1f99542d8e011cf7028bd2d0": [
+      "pm-route-b1a746ad676ea34a8ea92a76"
+    ]
+  },
+  "schema_version": "1.3.0",
+  "source_snapshot_sha256": "115c88ef3852a20da2b48369eca9d3d0d074cba79d0937a2c4335c6527f9e3ab",
+  "source_verified_relation_ids": [
+    "pm-rel-55398e62da13e9742cb2bcd7",
+    "pm-rel-5edaa4f914468d4f77ff9805",
+    "pm-rel-69468648269050a3dd653bb8",
+    "pm-rel-6eb9151b4ee5369e92f5f79c",
+    "pm-rel-8b186f1bd5880c9ac9ab97f9",
+    "pm-rel-c3e37314517314ddb1721810",
+    "pm-rel-ef04f28ba63675ece02040db"
+  ]
+}

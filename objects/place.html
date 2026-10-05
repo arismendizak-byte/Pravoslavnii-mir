@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Объект — Православный Мир</title>
+    <link rel="manifest" href="../manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="nav-container"></div>
+    <div id="bottom-nav-container"></div>
+
+    <main class="page-section data-object-page" id="objectPage" aria-live="polite">
+        <div class="breadcrumbs" id="objectBreadcrumbs">
+            <a href="../index.html">Главная</a> &rarr;
+            <a href="../catalog/catalog.html">Каталог</a> &rarr;
+            <span>Объект</span>
+        </div>
+
+        <div class="data-object-loading" id="objectLoading">
+            <div class="data-object-loading-icon" aria-hidden="true"><span class="data-object-loading-mark">✦</span></div>
+            <h1>Загрузка карточки…</h1>
+            <p>Получаем данные из единого каталога.</p>
+        </div>
+
+        <section id="objectContent" hidden>
+            <div class="object-hero data-object-hero">
+                <div class="object-gallery data-object-placeholder" id="objectVisual" aria-hidden="true">
+                    <span class="data-object-placeholder-icon" id="objectIcon"></span>
+                    <span class="data-object-placeholder-text">Изображение пока не добавлено</span>
+                </div>
+
+                <div class="object-info">
+                    <div class="object-info-category" id="objectCategory"></div>
+                    <h1 class="object-info-title" id="objectTitle"></h1>
+                    <div class="object-info-location" id="objectLocation"></div>
+                    <div class="object-info-tags" id="objectTags"></div>
+                    <p class="object-info-desc data-object-lead" id="objectLead"></p>
+                    <div class="data-object-actions">
+                        <button type="button" class="btn-nav btn-gold" id="objectMapBtn">Показать на карте</button>
+                        <button type="button" class="btn-nav btn-ghost" id="objectRouteBtn">Построить маршрут</button>
+                        <button type="button" class="btn-nav btn-ghost" id="objectFavoriteBtn" aria-pressed="false">♡ В избранное</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="object-content data-object-content">
+                <div class="object-text">
+                    <section class="data-object-section" id="descriptionSection" hidden>
+                        <h2>Описание</h2>
+                        <div id="objectDescription"></div>
+                    </section>
+                    <section class="data-object-section" id="dedicationsSection" hidden>
+                        <h2>Посвящения</h2>
+                        <ul id="objectDedications"></ul>
+                    </section>
+                    <section class="data-object-section" id="architectsSection" hidden>
+                        <h2>Архитекторы</h2>
+                        <ul id="objectArchitects"></ul>
+                    </section>
+                    <section class="data-object-section" id="relatedEntitiesSection" hidden>
+                        <h2>Связанные святыни и святые</h2>
+                        <p class="data-object-relation-note">Показываются только связи из canonical graph. Статус проверки и источник приводятся отдельно для каждой связи.</p>
+                        <div class="data-object-related-entities" id="objectRelatedEntities"></div>
+                    </section>
+                    <section class="data-object-section" id="relatedRoutesSection" hidden>
+                        <h2>Маршруты по связанному графу</h2>
+                        <p class="data-object-relation-note">Сначала показываются маршруты, проходящие через объект; затем — только те предложения, до которых существует короткий canonical graph-путь.</p>
+                        <div class="data-object-related-routes" id="objectRelatedRoutes"></div>
+                    </section>
+                    <section class="data-object-section" id="relatedPlacesSection" hidden>
+                        <h2>Связанные объекты</h2>
+                        <p class="data-object-relation-note">Объекты связываются только через canonical entity/relation или общий canonical route stop. Legacy waypoints в эти рекомендации не входят.</p>
+                        <div class="data-object-related-places" id="objectRelatedPlaces"></div>
+                    </section>
+                    <section class="data-object-section" id="relatedContentSection" hidden>
+                        <h2>Материалы об этом месте</h2>
+                        <p class="data-object-relation-note">Показываются только явные редакционные связи из Content Core. Совпадение названия само по себе связь не создаёт.</p>
+                        <div class="data-object-related-content" id="objectRelatedContent"></div>
+                    </section>
+                    <section class="data-object-section" id="relatedNewsSection" hidden>
+                        <h2>Новости об этом месте</h2>
+                        <p class="data-object-relation-note">Показываются только canonical News с явной source-verified связью на stable ID этого места. Совпадение текста или названия связь не создаёт.</p>
+                        <div class="data-object-related-content" id="objectRelatedNews"></div>
+                    </section>
+                    <section class="data-object-section" id="relatedPilgrimSection" hidden>
+                        <h2>Паломнику рядом</h2>
+                        <p class="data-object-relation-note">Показываются только M5.6 amenities/services с явной source-verified связью с этим canonical place.</p>
+                        <div class="data-object-related-content" id="objectRelatedPilgrim"></div>
+                    </section>
+                </div>
+
+                <aside class="object-sidebar">
+                    <div class="sidebar-block" id="factsBlock">
+                        <div class="sidebar-title">Сведения</div>
+                        <dl class="data-object-facts" id="objectFacts"></dl>
+                    </div>
+                    <div class="sidebar-block" id="sourceBlock" hidden>
+                        <div class="sidebar-title">Источник данных</div>
+                        <div class="data-object-source" id="objectSource"></div>
+                    </div>
+                </aside>
+            </div>
+
+            <div class="data-object-footer-actions">
+                <a href="../catalog/catalog.html" class="btn-nav btn-ghost">← Вернуться к каталогу</a>
+            </div>
+        </section>
+
+        <section class="data-object-error" id="objectError" hidden>
+            <div class="data-object-loading-icon">🔎</div>
+            <h1>Объект не найден</h1>
+            <p id="objectErrorText">Проверьте ссылку или вернитесь в каталог.</p>
+            <a href="../catalog/catalog.html" class="btn-nav btn-gold">Открыть каталог</a>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/components.js"></script>
+    <script src="../js/data-layer.js"></script>
+    <script src="../js/content-layer.js"></script>
+    <script src="../js/pilgrim-layer.js"></script>
+    <script src="../js/news-layer.js"></script>
+    <script src="../js/my-pm-layer.js"></script>
+    <script src="../js/object.js"></script>
+</body>
+</html>

@@ -1,0 +1,2881 @@
+{
+  "schema_version": "1.2.0",
+  "source_snapshot_sha256": "413c8dc21e944c9609d18cf7817a0a163b6de40dc3330958d24110aa8b58fee1",
+  "count": 107,
+  "relations": [
+    {
+      "id": "pm-library-rel-57b8fbf730ae7042b901",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-ead539b807952476ceab"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-01f09f4aff577c5d7cb4"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "authorship:gospel-matthew",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 1
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-9516bdc903eb87c7c59a",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-2bcc66d0fa0877aadc78"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-e2115b444f202888e299"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "authorship:gospel-mark",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 2
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-5519011f4affc794eef2",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-f10011f5590643d4ad5b"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-7bede0dea6d9a6b581bb"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "authorship:gospel-luke",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 3
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-7249b6a50b5a3be67021",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-9a06f06165dec584fd5f"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-69ba9458b741f43f848b"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "authorship:gospel-john",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 4
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-2616c69ebcbdf652c0dc",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-b332575fa64ad64b5cf9"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-7989e30a4cfc964ba4d7"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "authorship:romans",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 6
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-7438f71428a02d919ea1",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-b78fa698cdc84e069c3c"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-7989e30a4cfc964ba4d7"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "authorship:1-corinthians",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 7
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-b36a07e6487450c72544",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-98ed244e0b24b307ad5b"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-7989e30a4cfc964ba4d7"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "authorship:2-corinthians",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 8
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-0b6af602dde979915188",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-f975c10a93106f166042"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-7989e30a4cfc964ba4d7"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "authorship:galatians",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 9
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-44236fb24a52b1f669c4",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-d58f05c9b12b2c9c2f20"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-7989e30a4cfc964ba4d7"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "authorship:philippians",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 10
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-006bfcf084bf5deb7f74",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-ddb436c4a9ddef94cf81"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-7989e30a4cfc964ba4d7"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "authorship:titus",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 11
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-f81fe7c0485859d30dd0",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-7798d2d95fcb5ddfef79"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-69ba9458b741f43f848b"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "authorship:1-john",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 13
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-a33fafc27499e0fc2ab5",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-edb29935b70bdf39c242"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-f8ff6d9e9398baf562b8"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "authorship:2-peter",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/",
+          "source_row": 14
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-47542e3d061f63143701",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-09bbe8121761fc9b054c"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-f10011f5590643d4ad5b"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-02-15-09",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 9,
+          "source_url": "https://azbyka.ru/days/2026-02-15",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-6646683072cac1f56081",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-1292a3cf023b33be491a"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-9a06f06165dec584fd5f"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Ин.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-09-27-45",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 45,
+          "source_url": "https://azbyka.ru/days/2026-09-27",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-dde8af60f66df6feb70e",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-18bb95705dfd6453ef2d"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-ead539b807952476ceab"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Мф.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-07-03",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 3,
+          "source_url": "https://azbyka.ru/days/2026-01-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-50767c5bce10f0951a4e",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-18f12ae920faec61b1dd"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-9a06f06165dec584fd5f"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Ин.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-12-19",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 19,
+          "source_url": "https://azbyka.ru/days/2026-04-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-b05ccffafcf5225fc1b0",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-1c4bfb0ca47662ca8988"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-9a06f06165dec584fd5f"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Ин.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-09-27-43",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 43,
+          "source_url": "https://azbyka.ru/days/2026-09-27",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-1b42c30815e2907abc63",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-2492a2e73266807bcb04"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-88ed49e4eeb1e80fc71a"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Деян.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-21-22",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 22,
+          "source_url": "https://azbyka.ru/days/2026-05-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-e8040cf02ab995cf1893",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-3e1123688c2323c64f22"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-ead539b807952476ceab"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Мф.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-07-12-31",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 31,
+          "source_url": "https://azbyka.ru/days/2026-07-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-d29da6d12b63fd04c5df",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-40bb959a68dd93e46fec"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-f10011f5590643d4ad5b"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-08-28-37",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 37,
+          "source_url": "https://azbyka.ru/days/2026-08-28",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-92c6f5911cbcd28474fd",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-4924c90ae6a6326fff16"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-9a06f06165dec584fd5f"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Ин.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-12-20",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 20,
+          "source_url": "https://azbyka.ru/days/2026-04-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-d1beecd2d8ed5818a892",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-4e55bb79ad5a482e7099"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-2bcc66d0fa0877aadc78"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Мк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-21-21",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 21,
+          "source_url": "https://azbyka.ru/days/2026-05-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-0bbef0053c60fe78f222",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-58ecd4fda1dc875a2db5"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-b78fa698cdc84e069c3c"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:1Кор.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-19-07",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 7,
+          "source_url": "https://azbyka.ru/days/2026-01-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-6147c3febaeea256c1db",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-62415f5d41fdba9d280c"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-f10011f5590643d4ad5b"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-10-14-48",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 48,
+          "source_url": "https://azbyka.ru/days/2026-10-14",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-809bb15f1cf31a47d305",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-6966ef426fc964c3800a"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-b332575fa64ad64b5cf9"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Рим.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-07-12-30",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 30,
+          "source_url": "https://azbyka.ru/days/2026-07-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-8174e448c7d9d1eb37ea",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-7140bf40e23013779954"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-d58f05c9b12b2c9c2f20"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Флп.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-08-28-38",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 38,
+          "source_url": "https://azbyka.ru/days/2026-08-28",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-e8d16ff9ac4372fcfce1",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-7514a78ca9d8a2b9228d"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-9a06f06165dec584fd5f"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Ин.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-31-26",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 26,
+          "source_url": "https://azbyka.ru/days/2026-05-31",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-72ca9c89e39cecbf1054",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-8726c47595a423bec487"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-7798d2d95fcb5ddfef79"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:1Ин.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-21-24",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 24,
+          "source_url": "https://azbyka.ru/days/2026-05-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-16cb26ff17dbfc2f5e26",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-8aaba5fdd348df244d27"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-f10011f5590643d4ad5b"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-07-12-29",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 29,
+          "source_url": "https://azbyka.ru/days/2026-07-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-ee7b95c29e110325d72c",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-921f96884344253d921a"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-f10011f5590643d4ad5b"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-08-28-39",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 39,
+          "source_url": "https://azbyka.ru/days/2026-08-28",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-a74e415b188c97f313e8",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-93905306881404cbedce"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-98ed244e0b24b307ad5b"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:2Кор.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-07-12-32",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 32,
+          "source_url": "https://azbyka.ru/days/2026-07-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-9dd5855596d3b5c4f799",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-9824c05b57a8971beef2"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-f10011f5590643d4ad5b"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-07-16",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 16,
+          "source_url": "https://azbyka.ru/days/2026-04-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-affe96f9668739c7aa43",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-9d5e2aa44a08c4910b4c"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-a3f2610ca1d32e3e93ab"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Евр.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-10-14-47",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 47,
+          "source_url": "https://azbyka.ru/days/2026-10-14",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-91cdc1fd454e4b2d64e5",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-9f457738286d4cd69eba"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-f10011f5590643d4ad5b"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-02-15-13",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 13,
+          "source_url": "https://azbyka.ru/days/2026-02-15",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-b2f648b76bccc4d0a875",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-a0abe9e8bdf284198427"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-9a06f06165dec584fd5f"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Ин.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-31-28",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 28,
+          "source_url": "https://azbyka.ru/days/2026-05-31",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-bad041dd6da8fb782743",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-a4e01d8d11f68ef4e0e8"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-a3f2610ca1d32e3e93ab"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Евр.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-02-15-12",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 12,
+          "source_url": "https://azbyka.ru/days/2026-02-15",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-2c5d9e0e98221ebedf27",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-ac491ad6771018591452"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-f10011f5590643d4ad5b"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-10-14-46",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 46,
+          "source_url": "https://azbyka.ru/days/2026-10-14",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-6e597970ccaf0afb9c3c",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-b0b7ef6ffcf73eaa13e8"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-f10011f5590643d4ad5b"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-21-23",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 23,
+          "source_url": "https://azbyka.ru/days/2026-05-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-2e0af81578cb75e35cc7",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-b913664d210150314bef"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-f10011f5590643d4ad5b"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-07-14",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 14,
+          "source_url": "https://azbyka.ru/days/2026-04-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-7d316c549bfbf3ec5bd3",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-bcb95438af45cb5b03c9"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-edb29935b70bdf39c242"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:2Пет.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-08-19-35",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 35,
+          "source_url": "https://azbyka.ru/days/2026-08-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-3fe985f704b07f7a9efe",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-be216a176ebc0ab2f49f"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-ead539b807952476ceab"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Мф.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-07-01",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 1,
+          "source_url": "https://azbyka.ru/days/2026-01-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-5bdb8b9b56bb287f4c50",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-c5f518a7bf382ba6e36d"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-2bcc66d0fa0877aadc78"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Мк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-19-04",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 4,
+          "source_url": "https://azbyka.ru/days/2026-01-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-87437da9ad8ba40e9ed0",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-c7b956a3b207cab00315"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-f975c10a93106f166042"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Гал.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-07-02",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 2,
+          "source_url": "https://azbyka.ru/days/2026-01-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-a70b93398e4b82a372fa",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-c8c28d629f1cdd7b8617"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-b78fa698cdc84e069c3c"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:1Кор.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-02-15-10",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 10,
+          "source_url": "https://azbyka.ru/days/2026-02-15",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-eca30ead75dde12f22f9",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-cc2de1e84f9bc7cb9219"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-ead539b807952476ceab"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Мф.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-08-19-36",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 36,
+          "source_url": "https://azbyka.ru/days/2026-08-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-e5c9df87076c17826920",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-d2a9a7bc7ccef2776dc7"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-d58f05c9b12b2c9c2f20"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Флп.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-09-21-41",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 41,
+          "source_url": "https://azbyka.ru/days/2026-09-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-c66c7301ed7524a65e3f",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-d3e9f01d12a63c4b1416"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-ead539b807952476ceab"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Мф.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-07-12-33",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 33,
+          "source_url": "https://azbyka.ru/days/2026-07-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-46e2ae857c182883de12",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-d54f292c2fd82aba522b"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-b78fa698cdc84e069c3c"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:1Кор.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-09-27-44",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 44,
+          "source_url": "https://azbyka.ru/days/2026-09-27",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-a88ae3dd3ca633af9dea",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-d60f361a4024f6e1d255"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-ead539b807952476ceab"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Мф.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-07-17",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 17,
+          "source_url": "https://azbyka.ru/days/2026-04-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-b0eadb249738fed7f867",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-d74ddb9c294bbeda6141"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-ddb436c4a9ddef94cf81"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Тит.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-19-05",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 5,
+          "source_url": "https://azbyka.ru/days/2026-01-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-30293e0bb4f92f41d590",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-d8e55c4b7f645fbf8438"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-ead539b807952476ceab"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Мф.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-02-15-11",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 11,
+          "source_url": "https://azbyka.ru/days/2026-02-15",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-132356f3d16e5641eca2",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-da3835da2b192b4dfb54"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-a3f2610ca1d32e3e93ab"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Евр.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-07-15",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 15,
+          "source_url": "https://azbyka.ru/days/2026-04-07",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-4d7faced84d35e22b829",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-dc17e58f53df809351c5"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-2bcc66d0fa0877aadc78"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Мк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-19-08",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 8,
+          "source_url": "https://azbyka.ru/days/2026-01-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-d215f495afc5284150e5",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-de66b03576d5124c53e5"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-88ed49e4eeb1e80fc71a"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Деян.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-04-12-18",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 18,
+          "source_url": "https://azbyka.ru/days/2026-04-12",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-839ebb90a3a68431be69",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-e0146a92230720a5ec33"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-f10011f5590643d4ad5b"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-09-21-42",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 42,
+          "source_url": "https://azbyka.ru/days/2026-09-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-b25323964d20082a38c2",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-ea4573c331aa1f70a264"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-f10011f5590643d4ad5b"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-08-19-34",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 34,
+          "source_url": "https://azbyka.ru/days/2026-08-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-5cc570129b3719ae4f0d",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-ef34d5e57ec794a7f208"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-ead539b807952476ceab"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Мф.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-01-19-06",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 6,
+          "source_url": "https://azbyka.ru/days/2026-01-19",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-d9ad21b31a1d47137cf9",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-f551378f999ea1e74826"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-f10011f5590643d4ad5b"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Лк.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-09-21-40",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 40,
+          "source_url": "https://azbyka.ru/days/2026-09-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-51c436d8edddf7963887",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-f98feb38bc1847db96bb"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-9a06f06165dec584fd5f"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Ин.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-21-25",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 25,
+          "source_url": "https://azbyka.ru/days/2026-05-21",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-3c23bf587a6f465d8286",
+      "relation_type": "scripture_citation_of",
+      "from": {
+        "kind": "reading",
+        "id": "pm-reading-fefe047efff612c03aa4"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-88ed49e4eeb1e80fc71a"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified_bridge",
+      "source_records": [
+        {
+          "provider": "azbyka-scripture-metadata-2026-10-05",
+          "source_id": "bridge:Деян.",
+          "source_file": "data/library_sources/scripture_catalog_azbyka_2026-10-05.json",
+          "source_url": "https://azbyka.ru/biblia/"
+        },
+        {
+          "provider": "azbyka-calendar-2026-editorial",
+          "source_id": "azbyka-2026-05-31-27",
+          "source_file": "data/liturgical_sources/readings_2026_editorial.json",
+          "source_row": 27,
+          "source_url": "https://azbyka.ru/days/2026-05-31",
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-2b0c0765618e1720c0ad",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-9bcc5e2d2617e8f32947"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-ce345c0078a116badf2f"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "authorship:theophan-thoughts-every-day",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Мысли_на_каждый_день_года_по_церковным_чтениям_из_Слова_Божия_(Феофан-Затворник)",
+          "source_row": 1,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Мысли_на_каждый_день_года_по_церковным_чтениям_из_Слова_Божия_(Феофан-Затворник)"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-9ce1555eaf8195c931ba",
+      "relation_type": "full_text_of",
+      "from": {
+        "kind": "text_asset",
+        "id": "pm-text-021502897b2703bb72ba"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-9bcc5e2d2617e8f32947"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text-work:theophan-thoughts-every-day",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Мысли_на_каждый_день_года_по_церковным_чтениям_из_Слова_Божия_(Феофан-Затворник)",
+          "source_row": 1,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Мысли_на_каждый_день_года_по_церковным_чтениям_из_Слова_Божия_(Феофан-Затворник)"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-443ff2aa93ced38b27fd",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-9906f04decbc4fa0a163"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-5626b80b178243d5aeff"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "authorship:philaret-longer-catechism",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Пространный_христианский_катихизис_Православной_Кафолической_Восточной_Церкви",
+          "source_row": 2,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Пространный_христианский_катихизис_Православной_Кафолической_Восточной_Церкви"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-8dc022d52184af339933",
+      "relation_type": "full_text_of",
+      "from": {
+        "kind": "text_asset",
+        "id": "pm-text-ebd869b2c29975009025"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-9906f04decbc4fa0a163"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text-work:philaret-longer-catechism",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Пространный_христианский_катихизис_Православной_Кафолической_Восточной_Церкви",
+          "source_row": 2,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Пространный_христианский_катихизис_Православной_Кафолической_Восточной_Церкви"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-317aada56213d91922db",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-01a0f8ec5e9aa5921785"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-5626b80b178243d5aeff"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "authorship:philaret-scripture-translations",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=О_догматическом_достоинстве_и_охранительном_употреблении_переводов_Священного_Писания_(свят._Филарет)/ДО&oldid=5666262",
+          "source_row": 3,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=О_догматическом_достоинстве_и_охранительном_употреблении_переводов_Священного_Писания_(свят._Филарет)/ДО&oldid=5666262"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-cb6cefbe1aff86109d8d",
+      "relation_type": "full_text_of",
+      "from": {
+        "kind": "text_asset",
+        "id": "pm-text-e6fc8caa015efb62277f"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-01a0f8ec5e9aa5921785"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text-work:philaret-scripture-translations",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=О_догматическом_достоинстве_и_охранительном_употреблении_переводов_Священного_Писания_(свят._Филарет)/ДО&oldid=5666262",
+          "source_row": 3,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=О_догматическом_достоинстве_и_охранительном_употреблении_переводов_Священного_Писания_(свят._Филарет)/ДО&oldid=5666262"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-8e83b67e3b8b6f9ee6a5",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-06c637a0f2384817fd24"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-8baee35eb044feca0efb"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "authorship:ignatius-on-orthodoxy",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/О_Православии_(Брянчанинов)",
+          "source_row": 4,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/О_Православии_(Брянчанинов)"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-e64f012ab8ed5eb5c634",
+      "relation_type": "full_text_of",
+      "from": {
+        "kind": "text_asset",
+        "id": "pm-text-eed9ece59f6774c77c89"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-06c637a0f2384817fd24"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text-work:ignatius-on-orthodoxy",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/О_Православии_(Брянчанинов)",
+          "source_row": 4,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/О_Православии_(Брянчанинов)"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-74878e90ec29d31083f6",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-166e138e1aa87cbc22fa"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-8baee35eb044feca0efb"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "authorship:ignatius-word-on-man",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Слово_о_человеке_(Брянчанинов)",
+          "source_row": 5,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Слово_о_человеке_(Брянчанинов)"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-5f51126f5dd7063dc802",
+      "relation_type": "full_text_of",
+      "from": {
+        "kind": "text_asset",
+        "id": "pm-text-d155991ad4f6d539d1ab"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-166e138e1aa87cbc22fa"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "source_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text-work:ignatius-word-on-man",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Слово_о_человеке_(Брянчанинов)",
+          "source_row": 5,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Слово_о_человеке_(Брянчанинов)"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-78d3b07f0ff97262412a",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-e8f804a36f7ff9b82b5d"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-8baee35eb044feca0efb"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "authorship:ignatius-garden-in-winter",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Сад_во_время_зимы_(Игнатий_Брянчанинов)",
+          "source_row": 6,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Автор:Игнатий_(Брянчанинов)"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-c47317017c4615498ea4",
+      "relation_type": "full_text_of",
+      "from": {
+        "kind": "text_asset",
+        "id": "pm-text-6c9706548036fc866316"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-e8f804a36f7ff9b82b5d"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text-work:ignatius-garden-in-winter",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Сад_во_время_зимы_(Игнатий_Брянчанинов)",
+          "source_row": 6,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Автор:Игнатий_(Брянчанинов)"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-93f27097f574500dd932",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-418ca5914c52724ff608"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-8baee35eb044feca0efb"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "authorship:ignatius-obedience-to-elder",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=О_жительстве_в_послушании_у_старца_(Игнатий_Брянчанинов)&oldid=2626028#bodyContent",
+          "source_row": 7,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=О_жительстве_в_послушании_у_старца_(Игнатий_Брянчанинов)&oldid=2626028#bodyContent"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-9e435ec5e4a24f9bc948",
+      "relation_type": "full_text_of",
+      "from": {
+        "kind": "text_asset",
+        "id": "pm-text-a1e17bb46be12a1c756c"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-418ca5914c52724ff608"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text-work:ignatius-obedience-to-elder",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=О_жительстве_в_послушании_у_старца_(Игнатий_Брянчанинов)&oldid=2626028#bodyContent",
+          "source_row": 7,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=О_жительстве_в_послушании_у_старца_(Игнатий_Брянчанинов)&oldid=2626028#bodyContent"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-38914eac07397349d467",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-f4099288b3a4dead38f9"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-ce345c0078a116badf2f"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "authorship:theophan-christian-life-begins",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Как_начинается_в_нас_христианская_жизнь%3F",
+          "source_row": 8,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Феофан_Затворник"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-46106e478e735c56ad65",
+      "relation_type": "full_text_of",
+      "from": {
+        "kind": "text_asset",
+        "id": "pm-text-b1fb87d6024c7efbfd5b"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-f4099288b3a4dead38f9"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text-work:theophan-christian-life-begins",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Как_начинается_в_нас_христианская_жизнь%3F",
+          "source_row": 8,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Феофан_Затворник"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-43b792be611cf4c36adf",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-dcaba6b1797dd6768af0"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-ce345c0078a116badf2f"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "authorship:theophan-eternal-torments",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=О_вечности_мучений_(Феофан_Затворник)&oldid=1071762",
+          "source_row": 9,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=О_вечности_мучений_(Феофан_Затворник)&oldid=1071762"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-3c0a02a09b46dbb668ce",
+      "relation_type": "full_text_of",
+      "from": {
+        "kind": "text_asset",
+        "id": "pm-text-19604869dc444ca10663"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-dcaba6b1797dd6768af0"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text-work:theophan-eternal-torments",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=О_вечности_мучений_(Феофан_Затворник)&oldid=1071762",
+          "source_row": 9,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=О_вечности_мучений_(Феофан_Затворник)&oldid=1071762"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-81fcb2d0c833f4e34d90",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-c4ea07e87dd3dc7461e6"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-ce345c0078a116badf2f"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "authorship:theophan-two-words-baptism",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Два_слова_о_святом_таинстве_крещения_(Феофан_Затворник)",
+          "source_row": 10,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Феофан_Затворник"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-11725aa12afae20f3d3e",
+      "relation_type": "full_text_of",
+      "from": {
+        "kind": "text_asset",
+        "id": "pm-text-6cfbc9188d6a9fe8485a"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-c4ea07e87dd3dc7461e6"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text-work:theophan-two-words-baptism",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Два_слова_о_святом_таинстве_крещения_(Феофан_Затворник)",
+          "source_row": 10,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Феофан_Затворник"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-a61447c61090dee85480",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-bac606807a9c00d22fae"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-ce345c0078a116badf2f"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "authorship:theophan-spiritual-instructions",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=Наставления_в_духовной_жизни_(Феофан_Затворник)&oldid=5698478",
+          "source_row": 11,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=Наставления_в_духовной_жизни_(Феофан_Затворник)&oldid=5698478"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-6056f7504bca1bcc806b",
+      "relation_type": "full_text_of",
+      "from": {
+        "kind": "text_asset",
+        "id": "pm-text-1183fe7a355cba368dfb"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-bac606807a9c00d22fae"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text-work:theophan-spiritual-instructions",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=Наставления_в_духовной_жизни_(Феофан_Затворник)&oldid=5698478",
+          "source_row": 11,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=Наставления_в_духовной_жизни_(Феофан_Затворник)&oldid=5698478"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-cd79e99d8f9a80104e90",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-69aec6a2c7a3271e0906"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-ce345c0078a116badf2f"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "authorship:theophan-hermas-commentary",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=Толкование_на_книгу_св._Ермы_(Феофан_Затворник)&oldid=5666316#bodyContent",
+          "source_row": 12,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=Толкование_на_книгу_св._Ермы_(Феофан_Затворник)&oldid=5666316#bodyContent"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-17cc0f4a132665e695c4",
+      "relation_type": "full_text_of",
+      "from": {
+        "kind": "text_asset",
+        "id": "pm-text-48831af7c452c6d6b16e"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-69aec6a2c7a3271e0906"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text-work:theophan-hermas-commentary",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=Толкование_на_книгу_св._Ермы_(Феофан_Затворник)&oldid=5666316#bodyContent",
+          "source_row": 12,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=Толкование_на_книгу_св._Ермы_(Феофан_Затворник)&oldid=5666316#bodyContent"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-c95af5bb113684472174",
+      "relation_type": "full_text_of",
+      "from": {
+        "kind": "text_asset",
+        "id": "pm-text-f546fa83a78d0fcf32ac"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-59aefe056c9b88fccbd9"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text-work:lord-prayer-19c",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?oldid=5096383&title=Отче_наш/ДО",
+          "source_row": 13,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?oldid=5096383&title=Отче_наш/ДО",
+          "classification_evidence_url": "https://www.pravenc.ru/text/2581755.html",
+          "classification_evidence_summary": "Православная энциклопедия идентифицирует «Отче наш» как молитву Господню; статья «Начало обычное» подтверждает её богослужебное употребление."
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-be5d789929751df36f8d",
+      "relation_type": "full_text_of",
+      "from": {
+        "kind": "text_asset",
+        "id": "pm-text-ebe380ce1e64730c4421"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-881d7fc99b281c38f527"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text-work:heavenly-king-19c",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?oldid=489359&title=Царю_Небесный/ДО",
+          "source_row": 14,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?oldid=489359&title=Царю_Небесный/ДО",
+          "classification_evidence_url": "https://m.pravenc.ru/text/%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%B0.html",
+          "classification_evidence_summary": "Православная энциклопедия прямо называет «Царю Небесный» стихирой праздника Пятидесятницы и описывает её употребление в «Начале обычном»."
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-d61237a197d61471b3f9",
+      "relation_type": "full_text_of",
+      "from": {
+        "kind": "text_asset",
+        "id": "pm-text-f4d3a4a4e2d4894bb883"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-dd07f9dd508080e165f6"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text-work:worthy-is-19c",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?oldid=483297&title=Достойно_есть/ДО",
+          "source_row": 15,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?oldid=483297&title=Достойно_есть/ДО",
+          "classification_evidence_url": "https://m.pravenc.ru/rubrics/383270.html",
+          "classification_evidence_summary": "Рубрикатор Православной энциклопедии определяет «Достойно есть» как одно из наиболее известных православных песнопений во имя Пресвятой Богородицы."
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-805085432d2ea761c739",
+      "relation_type": "full_text_of",
+      "from": {
+        "kind": "text_asset",
+        "id": "pm-text-9a99e61833133a8e878b"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-1545f9c669c5ef7c9b1e"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text-work:nicene-creed-tolstoy-1875",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?oldid=4854183&title=Никео-Цареградский_Символ_веры/1875,_Толстой_(ДО)",
+          "source_row": 16,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?oldid=4854183&title=Никео-Цареградский_Символ_веры/1875,_Толстой_(ДО)",
+          "classification_evidence_url": "https://azbyka.ru/simvol_very",
+          "classification_evidence_summary": "«Азбука веры» отдельно отмечает, что Символ веры не является молитвой, и подтверждает его соборное пение за Литургией и чтение в других богослужебных последованиях."
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-55b9269bdeef765cb0f4",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-fc5ab2a44e310e7df61d"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-ce345c0078a116badf2f"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "authorship:theophan-sermons-orthodoxy-1863",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=Сборник_слов_и_проповедей_о_православии_с_предостережениями_от_погрешений_против_него…_(Феофан-Затворник)&oldid=5661984",
+          "source_row": 17,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=Сборник_слов_и_проповедей_о_православии_с_предостережениями_от_погрешений_против_него…_(Феофан-Затворник)&oldid=5661984",
+          "classification_evidence_url": "https://ru.wikisource.org/w/index.php?title=Сборник_слов_и_проповедей_о_православии_с_предостережениями_от_погрешений_против_него…_(Феофан-Затворник)&oldid=5661984",
+          "classification_evidence_summary": "Название и оглавление источника прямо определяют произведение как сборник слов и проповедей."
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-04f841112d6b0ab1212f",
+      "relation_type": "full_text_of",
+      "from": {
+        "kind": "text_asset",
+        "id": "pm-text-ce5bef3ee406d52ceb26"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-fc5ab2a44e310e7df61d"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text-work:theophan-sermons-orthodoxy-1863",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=Сборник_слов_и_проповедей_о_православии_с_предостережениями_от_погрешений_против_него…_(Феофан-Затворник)&oldid=5661984",
+          "source_row": 17,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=Сборник_слов_и_проповедей_о_православии_с_предостережениями_от_погрешений_против_него…_(Феофан-Затворник)&oldid=5661984",
+          "classification_evidence_url": "https://ru.wikisource.org/w/index.php?title=Сборник_слов_и_проповедей_о_православии_с_предостережениями_от_погрешений_против_него…_(Феофан-Затворник)&oldid=5661984",
+          "classification_evidence_summary": "Название и оглавление источника прямо определяют произведение как сборник слов и проповедей."
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-53e2c8733f89b42e5b5d",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-5e6db8095c36fa8d7418"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-0d6627e49d4c5c3f9247"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "authorship:philaret-gumilevsky-sacred-history-1850",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=Избранные_места_из_священной_истории_Ветхого_и_Нового_завета_с_назидательными_размышлениями_(Филарет)&oldid=5261535",
+          "source_row": 18,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=Избранные_места_из_священной_истории_Ветхого_и_Нового_завета_с_назидательными_размышлениями_(Филарет)&oldid=5261535",
+          "classification_evidence_url": "https://ru.wikisource.org/w/index.php?title=Избранные_места_из_священной_истории_Ветхого_и_Нового_завета_с_назидательными_размышлениями_(Филарет)&oldid=5261535",
+          "classification_evidence_summary": "Структура источника сочетает изложение Священной истории с отдельными назидательными размышлениями; в Library классифицируется как учебно-катехизический текст."
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-92ce1debf59389bfddeb",
+      "relation_type": "full_text_of",
+      "from": {
+        "kind": "text_asset",
+        "id": "pm-text-7eabffa7f6e8d6c55e3d"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-5e6db8095c36fa8d7418"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text-work:philaret-gumilevsky-sacred-history-1850",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=Избранные_места_из_священной_истории_Ветхого_и_Нового_завета_с_назидательными_размышлениями_(Филарет)&oldid=5261535",
+          "source_row": 18,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=Избранные_места_из_священной_истории_Ветхого_и_Нового_завета_с_назидательными_размышлениями_(Филарет)&oldid=5261535",
+          "classification_evidence_url": "https://ru.wikisource.org/w/index.php?title=Избранные_места_из_священной_истории_Ветхого_и_Нового_завета_с_назидательными_размышлениями_(Филарет)&oldid=5261535",
+          "classification_evidence_summary": "Структура источника сочетает изложение Священной истории с отдельными назидательными размышлениями; в Library классифицируется как учебно-катехизический текст."
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-d1b2087cfd8a558cf62b",
+      "relation_type": "author_attribution",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-7ae8eceded8a2f474f7e"
+      },
+      "to": {
+        "kind": "author",
+        "id": "pm-author-e88f3e39ad793578b424"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "authorship:pobedonostsev-orthodox-church-history-1891",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=История_Православной_Церкви_до_начала_разделения_Церквей_(Победоносцев)&oldid=5591605",
+          "source_row": 19,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=История_Православной_Церкви_до_начала_разделения_Церквей_(Победоносцев)&oldid=5591605",
+          "classification_evidence_url": "https://ru.wikisource.org/w/index.php?title=История_Православной_Церкви_до_начала_разделения_Церквей_(Победоносцев)&oldid=5591605",
+          "classification_evidence_summary": "Источник прямо озаглавлен как история Православной Церкви и содержит последовательное историческое изложение до разделения Церквей."
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-ad503302af34689f63c4",
+      "relation_type": "full_text_of",
+      "from": {
+        "kind": "text_asset",
+        "id": "pm-text-1d3a07e8c866fef354a5"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-7ae8eceded8a2f474f7e"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text-work:pobedonostsev-orthodox-church-history-1891",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/w/index.php?title=История_Православной_Церкви_до_начала_разделения_Церквей_(Победоносцев)&oldid=5591605",
+          "source_row": 19,
+          "rights_evidence_url": "https://ru.wikisource.org/w/index.php?title=История_Православной_Церкви_до_начала_разделения_Церквей_(Победоносцев)&oldid=5591605",
+          "classification_evidence_url": "https://ru.wikisource.org/w/index.php?title=История_Православной_Церкви_до_начала_разделения_Церквей_(Победоносцев)&oldid=5591605",
+          "classification_evidence_summary": "Источник прямо озаглавлен как история Православной Церкви и содержит последовательное историческое изложение до разделения Церквей."
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-f2e7ff414879afda5659",
+      "relation_type": "full_text_of",
+      "from": {
+        "kind": "text_asset",
+        "id": "pm-text-cfb37fa1bd5b510fc0f5"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-d6025672bee94c6bafbf"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:life-seraphim-sarov",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Январь/2",
+          "source_row": 1,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Январь.djvu"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-cf3364668ea4e860dfe9",
+      "relation_type": "life_of",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-d6025672bee94c6bafbf"
+      },
+      "to": {
+        "kind": "saint",
+        "id": "pm-saint-4efbfd490a4731dd4707"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "life-saint:life-seraphim-sarov:pm-saint-4efbfd490a4731dd4707",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Январь/2",
+          "source_row": 1,
+          "evidence": "Source page explicitly identifies the work as the life of St Seraphim of Sarov.",
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Январь.djvu"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-6ababd46d6ce8a1370b4",
+      "relation_type": "full_text_of",
+      "from": {
+        "kind": "text_asset",
+        "id": "pm-text-a1d9e8701599ddf21244"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-0d999a24d135a1efc6a5"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:martyrdom-tatiana",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Январь/12",
+          "source_row": 2,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Январь.djvu"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-da132df0df2e1a9ea93b",
+      "relation_type": "life_of",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-0d999a24d135a1efc6a5"
+      },
+      "to": {
+        "kind": "saint",
+        "id": "pm-saint-5e9427d027db724c0adf"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "life-saint:martyrdom-tatiana:pm-saint-5e9427d027db724c0adf",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Январь/12",
+          "source_row": 2,
+          "evidence": "Source page explicitly identifies the hagiographic text as the martyrdom of St Tatiana.",
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Январь.djvu"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-f2721ae0ca18d93cea0f",
+      "relation_type": "full_text_of",
+      "from": {
+        "kind": "text_asset",
+        "id": "pm-text-28988278bc0984c7ee0d"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-27c4e7cab5b3ea4b63df"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:life-nicholas-myra",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Декабрь/6",
+          "source_row": 3,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Декабрь.djvu"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-99e8ac9d7c300faaf9a2",
+      "relation_type": "life_of",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-27c4e7cab5b3ea4b63df"
+      },
+      "to": {
+        "kind": "saint",
+        "id": "pm-saint-5debdc29945c75da37dc"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "life-saint:life-nicholas-myra:pm-saint-5debdc29945c75da37dc",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Декабрь/6",
+          "source_row": 3,
+          "evidence": "Source page explicitly identifies the work as the life of St Nicholas the Wonderworker, Archbishop of Myra.",
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Декабрь.djvu"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-a60e50813d150fa4ce21",
+      "relation_type": "full_text_of",
+      "from": {
+        "kind": "text_asset",
+        "id": "pm-text-1575bc4e827f6669ab04"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-4257cdc79b1a388342e9"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:life-cyril-methodius",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Май/11",
+          "source_row": 4,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Май.djvu"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-6996a0d186715ce43aa8",
+      "relation_type": "life_of",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-4257cdc79b1a388342e9"
+      },
+      "to": {
+        "kind": "saint",
+        "id": "pm-saint-c7191324786b992d64d1"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "life-saint:life-cyril-methodius:pm-saint-c7191324786b992d64d1",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Май/11",
+          "source_row": 4,
+          "evidence": "Source page explicitly names Constantine, in monasticism Cyril, as one of the two subjects.",
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Май.djvu"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-1de0bd10950a4a7502d0",
+      "relation_type": "life_of",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-4257cdc79b1a388342e9"
+      },
+      "to": {
+        "kind": "saint",
+        "id": "pm-saint-d65fcc88a283729e7147"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "life-saint:life-cyril-methodius:pm-saint-d65fcc88a283729e7147",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Май/11",
+          "source_row": 4,
+          "evidence": "Source page explicitly names Methodius as one of the two subjects.",
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Май.djvu"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-f083c2ca201d29014092",
+      "relation_type": "full_text_of",
+      "from": {
+        "kind": "text_asset",
+        "id": "pm-text-e9bb9c6c6243b8eb14ea"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-c60dbaf180deda1bbc82"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "text:memory-vladimir-kiev",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Июль/15",
+          "source_row": 5,
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Июль.djvu"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-44e9d0098be175dbf886",
+      "relation_type": "life_of",
+      "from": {
+        "kind": "work",
+        "id": "pm-work-c60dbaf180deda1bbc82"
+      },
+      "to": {
+        "kind": "saint",
+        "id": "pm-saint-f78aee1ef3f22a9d0a76"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikisource-public-domain-2026-10-05",
+          "source_id": "life-saint:memory-vladimir-kiev:pm-saint-f78aee1ef3f22a9d0a76",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://ru.wikisource.org/wiki/Жития_святых_по_изложению_свт._Димитрия_Ростовского/Июль/15",
+          "source_row": 5,
+          "evidence": "Source page explicitly contains the commemoration of the Holy Equal-to-the-Apostles Grand Prince Vladimir.",
+          "rights_evidence_url": "https://ru.wikisource.org/wiki/Файл:Жития_святых_свт._Димитрия_Ростовскаго._Июль.djvu"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-395ecdda0c0b4e8c9eaf",
+      "relation_type": "recording_of",
+      "from": {
+        "kind": "media_asset",
+        "id": "pm-media-64473668a8d18211a3a6"
+      },
+      "to": {
+        "kind": "work",
+        "id": "pm-work-2aefda2a5f933f716a67"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikimedia-commons-rights-2026-10-05",
+          "source_id": "media:bogorodice-devo-znamenny-audio",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://commons.wikimedia.org/wiki/File:04_Bogorodice_Devo_radujsja_znamennyj_raspev_grind_Moscow_Patriarchal_Choir.ogg",
+          "source_row": 1,
+          "rights_evidence_url": "https://commons.wikimedia.org/wiki/File:04_Bogorodice_Devo_radujsja_znamennyj_raspev_grind_Moscow_Patriarchal_Choir.ogg",
+          "source_sha1": "50aa361893437409ad4d8181c77aec1086fd502a",
+          "source_size": 452799,
+          "source_creator": "Moscow Patriarchal Choir of the Russian Orthodox Church"
+        }
+      ]
+    },
+    {
+      "id": "pm-library-rel-d90e9cc43bb4d0489980",
+      "relation_type": "depicts_feast",
+      "from": {
+        "kind": "media_asset",
+        "id": "pm-media-0c70a4f711b96258f8d7"
+      },
+      "to": {
+        "kind": "feast",
+        "id": "pm-feast-0d16d133b2183b48ebb6"
+      },
+      "trust_layer": "editorial",
+      "verification_status": "rights_verified",
+      "source_records": [
+        {
+          "provider": "wikimedia-commons-rights-2026-10-05",
+          "source_id": "relation:theophany-video-to-baptism-feast",
+          "source_file": "data/library_sources/rights_cleared_assets_2026-10-05.json",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Theophany_in_Thessaloniki.webm",
+          "source_row": 1,
+          "evidence": "The Wikimedia Commons source description explicitly identifies the depicted ceremony as Theophany/Epiphany during the Great Blessing of the Water.",
+          "rights_evidence_url": "https://commons.wikimedia.org/wiki/File:Theophany_in_Thessaloniki.webm"
+        }
+      ]
+    }
+  ]
+}

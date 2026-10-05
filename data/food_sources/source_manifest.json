@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "domain": "orthodox_food",
+  "providers": [
+    {
+      "provider": "pravmir-editorial-food",
+      "source_file": "data/food_sources/recipes_editorial.json",
+      "trust_layer": "editorial",
+      "verification_status": "editorial_content",
+      "locale": "ru-RU"
+    }
+  ]
+}

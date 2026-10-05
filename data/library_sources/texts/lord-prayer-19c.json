@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.1.0",
+  "key": "lord-prayer-19c",
+  "title": "Отче наш",
+  "source_url": "https://ru.wikisource.org/w/index.php?oldid=5096383&title=Отче_наш/ДО",
+  "source_revision": "5096383",
+  "verified_on": "2026-10-05",
+  "source_header": "Викитека, «Отче наш/ДО», раздел «Молитва Господня», написание XIX века; страница указывает источник «КРАТКІЙ МОЛИТВОСЛОВЪ» и отдельную редакцию из «Новой Азбуки» Л. Н. Толстого.",
+  "work_rights_evidence_url": "https://ru.wikisource.org/w/index.php?oldid=5096383&title=Отче_наш/ДО",
+  "classification_evidence_url": "https://www.pravenc.ru/text/2581755.html",
+  "classification_evidence_summary": "Православная энциклопедия идентифицирует «Отче наш» как молитву Господню; статья «Начало обычное» подтверждает её богослужебное употребление.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "rights_status": "open_license",
+  "transformation": "Select the explicitly identified historical edition/variant; remove site navigation, footnote markers and alternate editions; preserve source spelling and source transcription errors; join retained blocks with two LF characters. No translation or abridgment inside the selected variant.",
+  "completeness_scope": "Полный текст выбранной первой редакции «Написанье 19 века» со страницы закреплённой ревизии; примечания, навигация и альтернативные редакции не включены. Это не критическое издание.",
+  "text_quality": "source_transcription_not_independently_proofread",
+  "content_path": "library/texts/lord-prayer-19c.txt",
+  "content_sha256": "5b99a1fb3205a5fdd1ac0771f8894e61bc13037085bef058d0cb4be3767d4e12",
+  "content_size_bytes": 554,
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": "Молитва Господня"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Отче нашъ, Иже еси на небесѣхъ! Да святится имя Твое, да пріидетъ Царствіе Твое, да будетъ воля Твоя, яко на небеси и на земли. Хлѣбъ нашъ насущный даждь намъ днесь; и остави намъ долги наша, якоже и мы оставляемъ должникомъ нашимъ; и не введи насъ во искушеніе, но избави насъ отъ лукаваго."
+    }
+  ]
+}

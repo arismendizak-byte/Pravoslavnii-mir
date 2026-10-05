@@ -1,0 +1,21 @@
+{
+  "authorities": {
+    "official_cathedral": 1,
+    "official_church": 1,
+    "official_diocese": 1,
+    "official_monastery": 4
+  },
+  "claims": 7,
+  "providers": {
+    "official-diveevo-monastyr": 1,
+    "official-kazansky-spb": 1,
+    "official-lavra-ru": 3,
+    "official-moscow-eparchy": 1,
+    "official-patriarchia-ru": 1
+  },
+  "schema_version": "1.0.0",
+  "source_files": [
+    "data/graph_sources/verified_relations.json"
+  ],
+  "source_snapshot_sha256": "115c88ef3852a20da2b48369eca9d3d0d074cba79d0937a2c4335c6527f9e3ab"
+}

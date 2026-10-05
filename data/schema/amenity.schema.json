@@ -1,0 +1,267 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pravmir.local/schema/amenity.schema.json",
+  "type": "object",
+  "required": [
+    "id",
+    "slug",
+    "name",
+    "amenity_type_ref",
+    "status",
+    "aliases",
+    "canonical_path",
+    "address",
+    "coordinates",
+    "opening_hours",
+    "contacts",
+    "accessibility",
+    "family_suitability",
+    "availability_note",
+    "trust_layer",
+    "verification_status",
+    "freshness",
+    "source_records"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^pm-amenity-[0-9a-f]{20}$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "amenity_type_ref": {
+      "type": "string",
+      "pattern": "^pm-amenity-type-[a-z0-9-]+$"
+    },
+    "status": {
+      "enum": [
+        "available",
+        "temporarily_unavailable",
+        "seasonal",
+        "closed",
+        "unknown"
+      ]
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "canonical_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "address": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "coordinates": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "required": [
+            "lat",
+            "lon"
+          ],
+          "properties": {
+            "lat": {
+              "type": "number",
+              "minimum": -90,
+              "maximum": 90
+            },
+            "lon": {
+              "type": "number",
+              "minimum": -180,
+              "maximum": 180
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "opening_hours": {
+      "type": "object",
+      "required": [
+        "text",
+        "timezone"
+      ],
+      "properties": {
+        "text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "timezone": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "contacts": {
+      "type": "object",
+      "required": [
+        "phone",
+        "email",
+        "website"
+      ],
+      "properties": {
+        "phone": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "email": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "website": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "accessibility": {
+      "type": "object",
+      "required": [
+        "wheelchair",
+        "step_free",
+        "accessible_toilet",
+        "notes"
+      ],
+      "properties": {
+        "wheelchair": {
+          "enum": [
+            "yes",
+            "partial",
+            "no",
+            "unknown"
+          ]
+        },
+        "step_free": {
+          "enum": [
+            "yes",
+            "partial",
+            "no",
+            "unknown"
+          ]
+        },
+        "accessible_toilet": {
+          "enum": [
+            "yes",
+            "partial",
+            "no",
+            "unknown"
+          ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "family_suitability": {
+      "enum": [
+        "yes",
+        "partial",
+        "no",
+        "unknown"
+      ]
+    },
+    "availability_note": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "trust_layer": {
+      "enum": [
+        "canonical_system",
+        "verified_organisation",
+        "editorial",
+        "community"
+      ]
+    },
+    "verification_status": {
+      "enum": [
+        "source_verified",
+        "verified_organisation",
+        "editorial_verified",
+        "community_unverified"
+      ]
+    },
+    "freshness": {
+      "type": "object",
+      "required": [
+        "observed_at",
+        "verified_at",
+        "valid_from",
+        "valid_to",
+        "expires_at"
+      ],
+      "properties": {
+        "observed_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "verified_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "valid_from": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "valid_to": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "expires_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "source_records": {
+      "$ref": "content_item.schema.json#/$defs/source_records"
+    }
+  },
+  "additionalProperties": false
+}

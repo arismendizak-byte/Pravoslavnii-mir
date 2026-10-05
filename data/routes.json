@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "provider": "pravmir-legacy-routes",
+  "verification_status": "legacy_unverified",
+  "routes": [
+    {
+      "source_id": "moscow-pilgrim",
+      "title": "Московский паломник",
+      "location": "Москва → Сергиев Посад",
+      "duration": "4–5 дней",
+      "distance": "120 км",
+      "price": "Бесплатно (личные расходы)",
+      "description": "Главный пеший паломнический путь России. Повторяет исторический маршрут царского богомолья от Иверской часовни у стен Московского Кремля до Свято-Троицкой Сергиевой Лавры.",
+      "badge": "Пеший маршрут",
+      "image": "https://i.postimg.cc/9F0J7SyK/lavra3.jpg",
+      "stops": [
+        {
+          "order": 1,
+          "label": "Храм Христа Спасителя",
+          "detail_path": "objects/christ.html",
+          "place_id": null,
+          "lat": 55.7444,
+          "lon": 37.6054,
+          "quality_flags": ["curated_stop_without_canonical_place"]
+        },
+        {
+          "order": 2,
+          "label": "Троице-Сергиева Лавра",
+          "detail_path": "objects/lavra.html",
+          "place_id": "pm-9e8bc6fff182514f91cf1739e41d2839",
+          "lat": 56.3114,
+          "lon": 38.1321,
+          "quality_flags": []
+        }
+      ]
+    },
+    {
+      "source_id": "diveevo-route",
+      "title": "Дивеевский маршрут",
+      "location": "Нижегородская область",
+      "duration": "2–3 дня",
+      "distance": "4 объекта",
+      "price": "от 7 500 ₽",
+      "description": "Паломничество в четвёртый удел Пресвятой Богородицы — Свято-Дивеевский монастырь. Прохождение по Святой Канавке, поклонение мощам преподобного Серафима Саровского.",
+      "badge": "Паломнический",
+      "image": "https://i.postimg.cc/2yyFYdyK/images-(3).jpg",
+      "stops": [
+        {
+          "order": 1,
+          "label": "Свято-Дивеевский монастырь",
+          "detail_path": "objects/diveevo.html",
+          "place_id": "pm-d9b350eb1f99542d8e011cf7028bd2d0",
+          "lat": 55.0434,
+          "lon": 43.2372,
+          "quality_flags": ["legacy_label_differs_from_canonical_name"]
+        },
+        {
+          "order": 2,
+          "label": "Арзамас",
+          "detail_path": "objects/arzamas.html",
+          "place_id": null,
+          "lat": 55.3948,
+          "lon": 43.8396,
+          "quality_flags": ["curated_stop_without_canonical_place"]
+        }
+      ]
+    }
+  ]
+}

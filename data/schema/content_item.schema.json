@@ -1,0 +1,278 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pravmir.local/schema/content_item.schema.json",
+  "title": "Pravmir content item",
+  "type": "object",
+  "required": [
+    "id",
+    "slug",
+    "content_type",
+    "title",
+    "canonical_path",
+    "status",
+    "verification_status",
+    "source_records",
+    "references"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^pm-content-[0-9a-f]{20}$"
+    },
+    "slug": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "content_type": {
+      "enum": [
+        "article",
+        "external_article",
+        "news",
+        "guide",
+        "recipe"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "author": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "author_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^pm-author-[0-9a-f]{20}$"
+    },
+    "published_on": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "published_label": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "publisher": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "category_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^pm-category-[0-9a-f]{20}$"
+      },
+      "uniqueItems": true
+    },
+    "emoji": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "media": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "kind",
+          "value"
+        ],
+        "properties": {
+          "kind": {
+            "enum": [
+              "emoji",
+              "image",
+              "audio",
+              "video"
+            ]
+          },
+          "value": {
+            "type": "string",
+            "minLength": 1
+          },
+          "alt": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "body_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "body_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^pm-content-[0-9a-f]{20}$"
+    },
+    "external_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "canonical_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "published",
+        "draft",
+        "archived"
+      ]
+    },
+    "verification_status": {
+      "enum": [
+        "legacy_curated",
+        "source_verified",
+        "editorial_verified"
+      ]
+    },
+    "references": {
+      "$ref": "#/$defs/references"
+    },
+    "source_records": {
+      "$ref": "#/$defs/source_records"
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "reference": {
+      "type": "object",
+      "required": [
+        "kind",
+        "id",
+        "relation_type"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "place",
+            "entity",
+            "route",
+            "content",
+            "event",
+            "calendar_entry",
+            "pilgrim_service",
+            "author",
+            "saint",
+            "icon",
+            "feast",
+            "work",
+            "organisation",
+            "calendar_day",
+            "commemoration",
+            "fasting_rule",
+            "reading"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "relation_type": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/reference"
+      }
+    },
+    "source_record": {
+      "type": "object",
+      "required": [
+        "provider",
+        "source_id",
+        "source_file"
+      ],
+      "properties": {
+        "provider": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_file": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_row": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "source_url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "migrated_from": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "source_records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/source_record"
+      }
+    }
+  }
+}

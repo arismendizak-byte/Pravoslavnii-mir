@@ -1,0 +1,283 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "f756a09b26d7c3b63960632e8acaa7bc051a8f004727aedf05c384f60c5774fe",
+  "count": 12,
+  "types": [
+    {
+      "id": "pm-amenity-type-accommodation",
+      "key": "accommodation",
+      "label": "Ночлег",
+      "category": "stay",
+      "description": "Гостиница, паломнический дом, гостевой корпус или иное место ночлега.",
+      "sort_order": 10,
+      "capabilities": [
+        "overnight_stay"
+      ],
+      "trust_layer": "canonical_system",
+      "verification_status": "system_defined",
+      "source_records": [
+        {
+          "provider": "pravmir-system-pilgrim-taxonomy",
+          "source_id": "accommodation",
+          "source_file": "data/pilgrim_sources/amenity_types.json",
+          "source_row": 1,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-amenity-type-refectory",
+      "key": "refectory",
+      "label": "Трапезная",
+      "category": "food",
+      "description": "Трапезная или иное место питания для паломников.",
+      "sort_order": 20,
+      "capabilities": [
+        "meals"
+      ],
+      "trust_layer": "canonical_system",
+      "verification_status": "system_defined",
+      "source_records": [
+        {
+          "provider": "pravmir-system-pilgrim-taxonomy",
+          "source_id": "refectory",
+          "source_file": "data/pilgrim_sources/amenity_types.json",
+          "source_row": 2,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-amenity-type-church-shop",
+      "key": "church_shop",
+      "label": "Церковная лавка",
+      "category": "support",
+      "description": "Лавка при храме, монастыре или паломническом объекте.",
+      "sort_order": 30,
+      "capabilities": [
+        "retail"
+      ],
+      "trust_layer": "canonical_system",
+      "verification_status": "system_defined",
+      "source_records": [
+        {
+          "provider": "pravmir-system-pilgrim-taxonomy",
+          "source_id": "church_shop",
+          "source_file": "data/pilgrim_sources/amenity_types.json",
+          "source_row": 3,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-amenity-type-transport",
+      "key": "transport",
+      "label": "Транспорт",
+      "category": "transport",
+      "description": "Остановка, трансфер или другой транспортный сервис, полезный в поездке.",
+      "sort_order": 40,
+      "capabilities": [
+        "transport"
+      ],
+      "trust_layer": "canonical_system",
+      "verification_status": "system_defined",
+      "source_records": [
+        {
+          "provider": "pravmir-system-pilgrim-taxonomy",
+          "source_id": "transport",
+          "source_file": "data/pilgrim_sources/amenity_types.json",
+          "source_row": 4,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-amenity-type-parking",
+      "key": "parking",
+      "label": "Парковка",
+      "category": "transport",
+      "description": "Парковочное место или зона рядом с объектом паломничества.",
+      "sort_order": 50,
+      "capabilities": [
+        "parking"
+      ],
+      "trust_layer": "canonical_system",
+      "verification_status": "system_defined",
+      "source_records": [
+        {
+          "provider": "pravmir-system-pilgrim-taxonomy",
+          "source_id": "parking",
+          "source_file": "data/pilgrim_sources/amenity_types.json",
+          "source_row": 5,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-amenity-type-holy-spring",
+      "key": "holy_spring",
+      "label": "Святой источник",
+      "category": "sacred_water",
+      "description": "Источник воды, связанный с паломническим местом; факт требует отдельного источника.",
+      "sort_order": 60,
+      "capabilities": [
+        "water"
+      ],
+      "trust_layer": "canonical_system",
+      "verification_status": "system_defined",
+      "source_records": [
+        {
+          "provider": "pravmir-system-pilgrim-taxonomy",
+          "source_id": "holy_spring",
+          "source_file": "data/pilgrim_sources/amenity_types.json",
+          "source_row": 6,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-amenity-type-bathing-font",
+      "key": "bathing_font",
+      "label": "Купель",
+      "category": "sacred_water",
+      "description": "Купель или место омовения; режим и доступность должны иметь свежую проверку.",
+      "sort_order": 70,
+      "capabilities": [
+        "bathing"
+      ],
+      "trust_layer": "canonical_system",
+      "verification_status": "system_defined",
+      "source_records": [
+        {
+          "provider": "pravmir-system-pilgrim-taxonomy",
+          "source_id": "bathing_font",
+          "source_file": "data/pilgrim_sources/amenity_types.json",
+          "source_row": 7,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-amenity-type-toilets",
+      "key": "toilets",
+      "label": "Туалеты",
+      "category": "accessibility",
+      "description": "Санитарная инфраструктура для посетителей.",
+      "sort_order": 80,
+      "capabilities": [
+        "sanitary"
+      ],
+      "trust_layer": "canonical_system",
+      "verification_status": "system_defined",
+      "source_records": [
+        {
+          "provider": "pravmir-system-pilgrim-taxonomy",
+          "source_id": "toilets",
+          "source_file": "data/pilgrim_sources/amenity_types.json",
+          "source_row": 8,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-amenity-type-wheelchair-accessibility",
+      "key": "wheelchair_accessibility",
+      "label": "Доступность для маломобильных",
+      "category": "accessibility",
+      "description": "Пандусы, безбарьерный доступ и другие сведения о доступности.",
+      "sort_order": 90,
+      "capabilities": [
+        "wheelchair_access"
+      ],
+      "trust_layer": "canonical_system",
+      "verification_status": "system_defined",
+      "source_records": [
+        {
+          "provider": "pravmir-system-pilgrim-taxonomy",
+          "source_id": "wheelchair_accessibility",
+          "source_file": "data/pilgrim_sources/amenity_types.json",
+          "source_row": 9,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-amenity-type-family-children",
+      "key": "family_children",
+      "label": "Для семей с детьми",
+      "category": "accessibility",
+      "description": "Инфраструктура и условия, важные для поездок с детьми.",
+      "sort_order": 100,
+      "capabilities": [
+        "family_support"
+      ],
+      "trust_layer": "canonical_system",
+      "verification_status": "system_defined",
+      "source_records": [
+        {
+          "provider": "pravmir-system-pilgrim-taxonomy",
+          "source_id": "family_children",
+          "source_file": "data/pilgrim_sources/amenity_types.json",
+          "source_row": 10,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-amenity-type-pilgrim-support",
+      "key": "pilgrim_support",
+      "label": "Паломническая помощь",
+      "category": "support",
+      "description": "Справочная, организационная или волонтёрская помощь паломникам.",
+      "sort_order": 110,
+      "capabilities": [
+        "assistance"
+      ],
+      "trust_layer": "canonical_system",
+      "verification_status": "system_defined",
+      "source_records": [
+        {
+          "provider": "pravmir-system-pilgrim-taxonomy",
+          "source_id": "pilgrim_support",
+          "source_file": "data/pilgrim_sources/amenity_types.json",
+          "source_row": 11,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    },
+    {
+      "id": "pm-amenity-type-information-point",
+      "key": "information_point",
+      "label": "Информация на месте",
+      "category": "support",
+      "description": "Информационный пункт, стойка, бюро или другое место получения справки.",
+      "sort_order": 120,
+      "capabilities": [
+        "information"
+      ],
+      "trust_layer": "canonical_system",
+      "verification_status": "system_defined",
+      "source_records": [
+        {
+          "provider": "pravmir-system-pilgrim-taxonomy",
+          "source_id": "information_point",
+          "source_file": "data/pilgrim_sources/amenity_types.json",
+          "source_row": 12,
+          "source_url": null,
+          "migrated_from": null
+        }
+      ]
+    }
+  ]
+}

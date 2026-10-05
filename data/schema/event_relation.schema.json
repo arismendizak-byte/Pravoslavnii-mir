@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pravmir.local/schema/event_relation.schema.json",
+  "title": "Pravmir event typed relation",
+  "type": "object",
+  "required": ["id", "relation_type", "from", "to", "trust_layer", "verification_status", "source_records"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^pm-erel-[0-9a-f]{20}$"},
+    "relation_type": {"type": "string", "minLength": 1},
+    "from": {
+      "type": "object",
+      "required": ["kind", "id"],
+      "properties": {"kind": {"const": "event"}, "id": {"type": "string", "pattern": "^pm-event-[0-9a-f]{20}$"}},
+      "additionalProperties": false
+    },
+    "to": {"$ref": "#/$defs/ref"},
+    "trust_layer": {"enum": ["editorial", "verified_organisation"]},
+    "verification_status": {"enum": ["editorial_verified", "verified_organisation", "source_verified", "legacy_unverified"]},
+    "source_records": {"$ref": "content_item.schema.json#/$defs/source_records"}
+  },
+  "$defs": {
+    "ref": {
+      "type": "object",
+      "required": ["kind", "id"],
+      "properties": {
+        "kind": {"enum": ["place", "entity", "route", "content", "calendar_day", "feast", "saint", "commemoration", "fasting_rule", "reading", "organisation"]},
+        "id": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

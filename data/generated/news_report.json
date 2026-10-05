@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "7d0fc92ae7338a63670089a6366266ab30fcf67d1d779e73ac3f346f2bdaddc1",
+  "legacy_rows_seen": 5,
+  "legacy_review_items": 5,
+  "canonical_news_created": 4,
+  "canonical_relations_created": 1,
+  "source_verified_news": 4,
+  "inferred_relations_created": 0,
+  "organisation_entities_created": 0,
+  "rejected": 0,
+  "notes": [
+    "Canonical News is built only from manually verified official-source records.",
+    "Legacy Journal news remains review-only and is excluded from canonical consumers.",
+    "Relations are explicit source-evidence bindings only; no text matching or inferred organisation facts are used."
+  ]
+}

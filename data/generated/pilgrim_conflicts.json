@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "f756a09b26d7c3b63960632e8acaa7bc051a8f004727aedf05c384f60c5774fe",
+  "count": 1,
+  "items": [
+    {
+      "id": "pm-pilgrim-conflict-181d6d481238bf4edba9",
+      "source_id": "lavra-voznesenskaya-address",
+      "candidate_name": "Вознесенская гостиница Троице-Сергиевой Лавры",
+      "field": "address",
+      "resolution_status": "unresolved",
+      "values": [
+        {
+          "value": "141300, Московская область, г. Сергиев Посад, ул. Вознесенская, 1",
+          "source_url": "https://lavra.ru/about_lavra/all/voznesenskaya-gostinitsa/"
+        },
+        {
+          "value": "г. Сергиев Посад, ул. Вознесенская, д. 3",
+          "source_url": "https://lavra.ru/welcome/all/gde-ostanovitsya"
+        }
+      ],
+      "note": "Два официальных раздела lavra.ru одновременно указывают разные номера дома. До разрешения конфликта canonical amenity не создаётся.",
+      "observed_at": "2026-10-04"
+    }
+  ]
+}

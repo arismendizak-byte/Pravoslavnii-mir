@@ -1,0 +1,517 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "a9ee762957cf96ade9f1e1d5e01eec3151689d7ed798c30e3cc39c9178151bd9",
+  "count": 15,
+  "feasts": [
+    {
+      "id": "pm-feast-06d4818f17b2241a5618",
+      "slug": "feast-bd1df445d06e9de1",
+      "title": "ВОЗДВИЖЕНИЕ КРЕСТА ГОСПОДНЯ",
+      "canonical_path": "calendar/item.html?kind=feast&id=pm-feast-06d4818f17b2241a5618",
+      "observance": {
+        "date_start": "2026-09-27",
+        "date_end": "2026-09-27"
+      },
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "ВОЗДВИЖЕНИЕ КРЕСТА ГОСПОДНЯ"
+      ],
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-09-27:воздвижение креста господня",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 22,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-feast-0d16d133b2183b48ebb6",
+      "slug": "feast-5da5077afe0fd1cd",
+      "title": "КРЕЩЕНИЕ ГОСПОДНЕ",
+      "canonical_path": "calendar/item.html?kind=feast&id=pm-feast-0d16d133b2183b48ebb6",
+      "observance": {
+        "date_start": "2026-01-19",
+        "date_end": "2026-01-19"
+      },
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "КРЕЩЕНИЕ ГОСПОДНЕ"
+      ],
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-01-19:крещение господне",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 2,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-feast-1329aa553e96ce62d806",
+      "slug": "feast-cc18c631c5ce535f",
+      "title": "ВОЗНЕСЕНИЕ ГОСПОДНЕ",
+      "canonical_path": "calendar/item.html?kind=feast&id=pm-feast-1329aa553e96ce62d806",
+      "observance": {
+        "date_start": "2026-05-21",
+        "date_end": "2026-05-21"
+      },
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "ВОЗНЕСЕНИЕ ГОСПОДНЕ"
+      ],
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-05-21:вознесение господне",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 10,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-feast-2eec1d0a53ab0dda4fa4",
+      "slug": "feast-4b9398d8182e8623",
+      "title": "УСПЕНИЕ ПРЕСВЯТОЙ БОГОРОДИЦЫ",
+      "canonical_path": "calendar/item.html?kind=feast&id=pm-feast-2eec1d0a53ab0dda4fa4",
+      "observance": {
+        "date_start": "2026-08-28",
+        "date_end": "2026-08-28"
+      },
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "УСПЕНИЕ ПРЕСВЯТОЙ БОГОРОДИЦЫ"
+      ],
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-08-28:успение пресвятой богородицы",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 20,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-feast-464eaad4104098f7ed0e",
+      "slug": "feast-bb7319793366168f",
+      "title": "РОЖДЕСТВО ПРЕСВЯТОЙ БОГОРОДИЦЫ",
+      "canonical_path": "calendar/item.html?kind=feast&id=pm-feast-464eaad4104098f7ed0e",
+      "observance": {
+        "date_start": "2026-09-21",
+        "date_end": "2026-09-21"
+      },
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "РОЖДЕСТВО ПРЕСВЯТОЙ БОГОРОДИЦЫ"
+      ],
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-09-21:рождество пресвятой богородицы",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 21,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-feast-714fb97ce53e3934b482",
+      "slug": "feast-7ff3493d139d85ee",
+      "title": "ДЕНЬ СВЯТОЙ ТРОИЦЫ",
+      "canonical_path": "calendar/item.html?kind=feast&id=pm-feast-714fb97ce53e3934b482",
+      "observance": {
+        "date_start": "2026-05-31",
+        "date_end": "2026-05-31"
+      },
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "ДЕНЬ СВЯТОЙ ТРОИЦЫ"
+      ],
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-05-31:день святой троицы",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 12,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-feast-77e553f688cf6cb2d43d",
+      "slug": "feast-6fd30507e23ab9f7",
+      "title": "БЛАГОВЕЩЕНИЕ ПРЕСВЯТОЙ БОГОРОДИЦЫ",
+      "canonical_path": "calendar/item.html?kind=feast&id=pm-feast-77e553f688cf6cb2d43d",
+      "observance": {
+        "date_start": "2026-04-07",
+        "date_end": "2026-04-07"
+      },
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "БЛАГОВЕЩЕНИЕ ПРЕСВЯТОЙ БОГОРОДИЦЫ"
+      ],
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-04-07:благовещение пресвятой богородицы",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 6,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-feast-7f2419086b1894a14da8",
+      "slug": "feast-76862316468cb5a7",
+      "title": "ПОКРОВ ПРЕСВЯТОЙ БОГОРОДИЦЫ",
+      "canonical_path": "calendar/item.html?kind=feast&id=pm-feast-7f2419086b1894a14da8",
+      "observance": {
+        "date_start": "2026-10-14",
+        "date_end": "2026-10-14"
+      },
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "ПОКРОВ ПРЕСВЯТОЙ БОГОРОДИЦЫ"
+      ],
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-10-14:покров пресвятой богородицы",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 23,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-feast-9fe64f862bec24c75b51",
+      "slug": "feast-880f8d04d38d8b24",
+      "title": "СРЕТЕНИЕ ГОСПОДНЕ",
+      "canonical_path": "calendar/item.html?kind=feast&id=pm-feast-9fe64f862bec24c75b51",
+      "observance": {
+        "date_start": "2026-02-15",
+        "date_end": "2026-02-15"
+      },
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "СРЕТЕНИЕ ГОСПОДНЕ"
+      ],
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-02-15:сретение господне",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 4,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-feast-a9cd42d8e139aabcf163",
+      "slug": "feast-1ddf77f8d0c36506",
+      "title": "Казанской иконы Божией Матери",
+      "canonical_path": "calendar/item.html?kind=feast&id=pm-feast-a9cd42d8e139aabcf163",
+      "observance": {
+        "date_start": "2026-11-04",
+        "date_end": "2026-11-04"
+      },
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "Казанской иконы Божией Матери"
+      ],
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-11-04:казанской иконы божией матери",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 24,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-feast-b3b695bd49798b0770a2",
+      "slug": "feast-0189a7a73e680939",
+      "title": "Апостолов Петра и Павла",
+      "canonical_path": "calendar/item.html?kind=feast&id=pm-feast-b3b695bd49798b0770a2",
+      "observance": {
+        "date_start": "2026-07-12",
+        "date_end": "2026-07-12"
+      },
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "Апостолов Петра и Павла"
+      ],
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-07-12:апостолов петра и павла",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 15,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-feast-d2a6b919fe5c37c14aa0",
+      "slug": "feast-0e10d6cb1390a27d",
+      "title": "РОЖДЕСТВО ХРИСТОВО",
+      "canonical_path": "calendar/item.html?kind=feast&id=pm-feast-d2a6b919fe5c37c14aa0",
+      "observance": {
+        "date_start": "2026-01-07",
+        "date_end": "2026-01-07"
+      },
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "РОЖДЕСТВО ХРИСТОВО"
+      ],
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-01-07:рождество христово",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 1,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-feast-dcfc2961bfad5d4da3ae",
+      "slug": "feast-0e700926f79e7056",
+      "title": "ВВЕДЕНИЕ ВО ХРАМ ПРЕСВЯТОЙ БОГОРОДИЦЫ",
+      "canonical_path": "calendar/item.html?kind=feast&id=pm-feast-dcfc2961bfad5d4da3ae",
+      "observance": {
+        "date_start": "2026-12-04",
+        "date_end": "2026-12-04"
+      },
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "ВВЕДЕНИЕ ВО ХРАМ ПРЕСВЯТОЙ БОГОРОДИЦЫ"
+      ],
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-12-04:введение во храм пресвятой богородицы",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 26,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-feast-e168192c9f98092e4e02",
+      "slug": "feast-384bd480a29c6ae4",
+      "title": "ПАСХА ХРИСТОВА",
+      "canonical_path": "calendar/item.html?kind=feast&id=pm-feast-e168192c9f98092e4e02",
+      "observance": {
+        "date_start": "2026-04-12",
+        "date_end": "2026-04-12"
+      },
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "ПАСХА ХРИСТОВА"
+      ],
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-04-12:пасха христова",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 7,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    },
+    {
+      "id": "pm-feast-fac0126a9ab43e90d972",
+      "slug": "feast-c58599154c903eef",
+      "title": "ПРЕОБРАЖЕНИЕ ГОСПОДНЕ",
+      "canonical_path": "calendar/item.html?kind=feast&id=pm-feast-fac0126a9ab43e90d972",
+      "observance": {
+        "date_start": "2026-08-19",
+        "date_end": "2026-08-19"
+      },
+      "scope": {
+        "jurisdiction": "unspecified",
+        "tradition": "unspecified",
+        "calendar_style": "civil_date_legacy",
+        "locale": "ru-RU",
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31",
+        "verified_at": null
+      },
+      "verification_status": "legacy_unverified",
+      "aliases": [
+        "ПРЕОБРАЖЕНИЕ ГОСПОДНЕ"
+      ],
+      "references": [],
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-calendar-2026",
+          "source_id": "entry:2026-08-19:преображение господне",
+          "source_file": "data/content_sources/calendar_2026_legacy.json",
+          "source_row": 19,
+          "source_url": null,
+          "migrated_from": "calendar.html inline calendar2026/getFast"
+        }
+      ]
+    }
+  ]
+}

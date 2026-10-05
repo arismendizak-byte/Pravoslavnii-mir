@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0.0",
+  "source_snapshot_sha256": "7d0fc92ae7338a63670089a6366266ab30fcf67d1d779e73ac3f346f2bdaddc1",
+  "count": 5,
+  "items": [
+    {
+      "id": "pm-news-review-8e922f2c0c46f5617fed",
+      "title": "В Москве прошла презентация нового номера журнала \"Православный паломник\"",
+      "summary": "В Паломническом центре Московского Патриархата состоялась презентация июльского номера. Главная тема — паломничество по святым местам Поволжья.",
+      "published_on": "2026-06-28",
+      "source_url": "https://journalpp.ru/news/prezentatsiya-novogo-nomera-zhurnala-pravoslavnyy-palomnik/",
+      "publisher_text": "Православный паломник",
+      "trust_layer": "legacy_unverified",
+      "verification_status": "legacy_unverified",
+      "review_status": "needs_source_verification",
+      "legacy_content_ref": "pm-content-bdfef345528b3bfb0976",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-journalpp",
+          "source_id": "news:1",
+          "source_file": "data/content_sources/journalpp_legacy.json",
+          "source_row": 1,
+          "source_url": "https://journalpp.ru/news/prezentatsiya-novogo-nomera-zhurnala-pravoslavnyy-palomnik/",
+          "migrated_from": "journal.html inline RPZ_ARTICLES/RPZ_NEWS"
+        }
+      ]
+    },
+    {
+      "id": "pm-news-review-1d3886e4b3e98047940d",
+      "title": "Принесение мощей святителя Николая в Москву: расписание и адреса храмов",
+      "summary": "С 1 по 15 июля в Москве будут принесены частицы мощей святителя Николая Чудотворца. График пребывания в храмах столицы.",
+      "published_on": "2026-06-25",
+      "source_url": "https://journalpp.ru/news/prinesenie-moshchey-svyatitelya-nikolaya-v-moskvu-raspisanie/",
+      "publisher_text": "Православный паломник",
+      "trust_layer": "legacy_unverified",
+      "verification_status": "legacy_unverified",
+      "review_status": "needs_source_verification",
+      "legacy_content_ref": "pm-content-a4d1558a53ceb0936253",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-journalpp",
+          "source_id": "news:2",
+          "source_file": "data/content_sources/journalpp_legacy.json",
+          "source_row": 2,
+          "source_url": "https://journalpp.ru/news/prinesenie-moshchey-svyatitelya-nikolaya-v-moskvu-raspisanie/",
+          "migrated_from": "journal.html inline RPZ_ARTICLES/RPZ_NEWS"
+        }
+      ]
+    },
+    {
+      "id": "pm-news-review-b3c9ec49db6a7adab28d",
+      "title": "Новый паломнический маршрут \"Золотое кольцо православия\" открыт для посещения",
+      "summary": "Маршрут объединяет 12 древних городов России, включая Ростов Великий, Суздаль, Владимир и Переславль-Залесский. Доступен в формате 3-х и 5-дневных туров.",
+      "published_on": "2026-06-20",
+      "source_url": "https://journalpp.ru/news/novyy-palomnicheskiy-marshrut-zolotoe-koltsa-pravoslaviya/",
+      "publisher_text": "Православный паломник",
+      "trust_layer": "legacy_unverified",
+      "verification_status": "legacy_unverified",
+      "review_status": "needs_source_verification",
+      "legacy_content_ref": "pm-content-45c032dd07f9a2c1e14c",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-journalpp",
+          "source_id": "news:3",
+          "source_file": "data/content_sources/journalpp_legacy.json",
+          "source_row": 3,
+          "source_url": "https://journalpp.ru/news/novyy-palomnicheskiy-marshrut-zolotoe-koltsa-pravoslaviya/",
+          "migrated_from": "journal.html inline RPZ_ARTICLES/RPZ_NEWS"
+        }
+      ]
+    },
+    {
+      "id": "pm-news-review-f037a65c5053e7b47e18",
+      "title": "В Дивеевском монастыре завершилась реставрация Святой Канавки",
+      "summary": "После реставрации открыт доступ паломников к святыне. Обновлённое покрытие и укрепление дорожек делают прохождение более безопасным.",
+      "published_on": "2026-06-15",
+      "source_url": "https://journalpp.ru/news/v-diveevskom-monastyre-zavershilas-restavratsiya-svyatoy-kanavki/",
+      "publisher_text": "Православный паломник",
+      "trust_layer": "legacy_unverified",
+      "verification_status": "legacy_unverified",
+      "review_status": "needs_source_verification",
+      "legacy_content_ref": "pm-content-82a3a218eef8f8cbefe3",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-journalpp",
+          "source_id": "news:4",
+          "source_file": "data/content_sources/journalpp_legacy.json",
+          "source_row": 4,
+          "source_url": "https://journalpp.ru/news/v-diveevskom-monastyre-zavershilas-restavratsiya-svyatoy-kanavki/",
+          "migrated_from": "journal.html inline RPZ_ARTICLES/RPZ_NEWS"
+        }
+      ]
+    },
+    {
+      "id": "pm-news-review-cc346c12936abe0505b7",
+      "title": "Паломнический центр Лавры запустил онлайн-трансляции богослужений",
+      "summary": "Теперь паломники со всего мира могут присоединиться к богослужениям в Троице-Сергиевой Лавре в режиме реального времени.",
+      "published_on": "2026-06-10",
+      "source_url": "https://journalpp.ru/news/palomnicheskiy-tsentr-lavry-zapustil-onlayn-translyatsii/",
+      "publisher_text": "Православный паломник",
+      "trust_layer": "legacy_unverified",
+      "verification_status": "legacy_unverified",
+      "review_status": "needs_source_verification",
+      "legacy_content_ref": "pm-content-1ab2a89722a3a44f687a",
+      "source_records": [
+        {
+          "provider": "pravmir-legacy-journalpp",
+          "source_id": "news:5",
+          "source_file": "data/content_sources/journalpp_legacy.json",
+          "source_row": 5,
+          "source_url": "https://journalpp.ru/news/palomnicheskiy-tsentr-lavry-zapustil-onlayn-translyatsii/",
+          "migrated_from": "journal.html inline RPZ_ARTICLES/RPZ_NEWS"
+        }
+      ]
+    }
+  ]
+}

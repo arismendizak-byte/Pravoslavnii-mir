@@ -2,14 +2,14 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
     <title>Святыни — Православный Мир</title>
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
         .holiness-header { text-align: center; margin-bottom: 40px; }
@@ -107,6 +107,39 @@
         }
         .holiness-feast { font-weight: 500; color: var(--gold); }
         .holiness-location { font-weight: 500; color: var(--gold); }
+        .holiness-name-link { display: block; text-decoration: none; }
+        .holiness-name-link:hover { color: var(--gold); }
+        .holiness-verification { display: inline-flex; margin-top: 10px; padding: 3px 9px; border-radius: 999px; font-size: 11px; font-weight: 600; }
+        .holiness-verification.verified, .entity-detail-badge.verified { background: #e8f6ec; color: #2d6b3f; }
+        .holiness-verification.unverified, .entity-detail-badge.unverified { background: var(--gold-pale); color: var(--dark-2); }
+
+        .entity-detail { margin: 0 auto 28px; max-width: 980px; background: var(--white); border: 1px solid var(--cream-2); border-radius: var(--radius-md); box-shadow: var(--shadow-card); padding: 24px; }
+        .entity-detail-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; }
+        .entity-detail-copy { min-width: 0; }
+        .entity-detail-side { display: flex; flex-direction: column; gap: 10px; align-items: flex-end; flex-shrink: 0; }
+        .entity-detail-type { color: var(--gold); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+        .entity-detail-name { margin: 4px 0; font-family: 'Playfair Display', serif; color: var(--dark); font-size: clamp(26px, 4vw, 38px); }
+        .entity-detail-title, .entity-detail-location { color: var(--text-muted); font-size: 14px; line-height: 1.55; }
+        .entity-detail-description { color: var(--text); line-height: 1.7; }
+        .entity-detail-location { padding: 10px 12px; background: var(--cream); border-radius: 10px; }
+        .entity-detail-badge { display: inline-flex; padding: 4px 9px; border-radius: 999px; font-size: 11px; font-weight: 700; }
+        .entity-detail-close { color: var(--gold); font-size: 13px; text-decoration: none; }
+        .entity-detail-quality, .entity-detail-relations, .entity-detail-sources { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--cream-2); }
+        .entity-detail h3 { margin: 0 0 10px; color: var(--dark); font-size: 16px; }
+        .entity-detail ul { margin: 0; padding-left: 20px; color: var(--text-muted); line-height: 1.6; }
+        .entity-detail-empty { color: var(--text-muted); font-size: 14px; line-height: 1.6; }
+        .entity-place-list { display: grid; gap: 10px; }
+        .entity-place-card { border: 1px solid var(--cream-2); border-radius: 12px; padding: 13px 14px; }
+        .entity-place-name { display: inline-block; color: var(--dark); font-weight: 700; text-decoration: none; }
+        .entity-place-name:hover { color: var(--gold); }
+        .entity-place-meta, .entity-place-relation, .entity-place-source { margin-top: 5px; color: var(--text-muted); font-size: 12px; line-height: 1.45; overflow-wrap: anywhere; }
+        .entity-place-card .entity-detail-badge { margin-top: 8px; }
+        .entity-detail-related { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--cream-2); }
+        .entity-graph-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+        .entity-graph-card { display: flex; flex-direction: column; gap: 4px; padding: 12px 14px; border: 1px solid var(--cream-2); border-radius: 12px; color: var(--dark); text-decoration: none; }
+        .entity-graph-card:hover { border-color: var(--gold); background: var(--gold-pale); }
+        .entity-graph-card strong { font-size: 14px; line-height: 1.35; }
+        .entity-graph-card span { color: var(--text-muted); font-size: 11px; line-height: 1.4; }
 
         /* НОВЫЕ КНОПКИ ДЕЙСТВИЙ */
         .holiness-actions {
@@ -147,7 +180,16 @@
             .holiness-card-img { height: 160px; }
             .holiness-name { font-size: 18px; }
             .holiness-actions a { min-width: 80px; font-size: 12px; }
+            .entity-detail { padding: 18px; }
+            .entity-detail-top { flex-direction: column; gap: 14px; }
+            .entity-detail-side { align-items: flex-start; }
         }
+
+        .entity-content-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:10px; }
+        .entity-content-card { display:flex; flex-direction:column; gap:6px; padding:13px 14px; border:1px solid var(--cream-2); border-radius:12px; background:var(--white); color:inherit; text-decoration:none; }
+        .entity-content-card:hover { border-color:var(--gold); background:var(--gold-pale); }
+        .entity-content-card strong { color:var(--dark); line-height:1.35; }
+        .entity-content-card span { color:var(--text-muted); font-size:12px; line-height:1.45; }
     </style>
 </head>
 <body>
@@ -165,9 +207,13 @@
             <p>Путеводитель по величайшим святыням православного мира. Жития святых, чудотворные иконы и местонахождение святых мощей.</p>
         </div>
 
+        <section class="entity-detail" id="entityDetail" hidden aria-live="polite">
+            <div id="entityDetailContent"></div>
+        </section>
+
         <div class="holiness-search">
             <span class="search-icon">🔍</span>
-            <input type="text" id="holinessSearch" placeholder="Поиск по имени, месту, святому..." oninput="applySearchAndFilter()">
+            <input type="text" id="holinessSearch" placeholder="Поиск по имени, месту, святому...">
         </div>
 
         <div class="holiness-filters">
@@ -182,132 +228,10 @@
 
     <div id="footer-container"></div>
 
-    <script>
-        let allData = [];
-
-        fetch('data/holiness.json')
-            .then(response => response.json())
-            .then(data => {
-                allData = data;
-                renderHoliness(data, 'all');
-                
-                document.querySelectorAll('.filter-btn').forEach(btn => {
-                    btn.addEventListener('click', function() {
-                        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                        this.classList.add('active');
-                        applySearchAndFilter();
-                    });
-                });
-            })
-            .catch(error => {
-                console.error('Ошибка загрузки святынь:', error);
-                document.getElementById('holinessGrid').innerHTML = '<p style="text-align:center;color:var(--text-muted);">Не удалось загрузить данные. Проверьте файл data/holiness.json</p>';
-            });
-
-        function applySearchAndFilter() {
-            const searchText = document.getElementById('holinessSearch').value.toLowerCase().trim();
-            const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
-
-            let filtered = activeFilter === 'all' 
-                ? allData 
-                : allData.filter(item => item.type === activeFilter);
-
-            if (searchText !== '') {
-                filtered = filtered.filter(item => {
-                    const searchable = [
-                        item.name,
-                        item.title,
-                        item.description,
-                        item.feast_day || '',
-                        item.relics || '',
-                        item.location || '',
-                        item.saint || ''
-                    ].join(' ').toLowerCase();
-                    return searchable.includes(searchText);
-                });
-            }
-
-            renderHoliness(filtered, 'all', true);
-        }
-
-        function renderHoliness(data, filter, skipFilter) {
-            const grid = document.getElementById('holinessGrid');
-            grid.innerHTML = '';
-
-            if (data.length === 0) {
-                grid.innerHTML = `
-                    <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-muted);">
-                        <span style="font-size: 48px; display: block;">🔍</span>
-                        <p>Ничего не найдено по вашему запросу</p>
-                    </div>
-                `;
-                return;
-            }
-
-            data.forEach(item => {
-                const card = document.createElement('div');
-                card.className = 'holiness-card';
-
-                let metaHtml = '';
-                let actionsHtml = '';
-
-                if (item.type === 'saint') {
-                    metaHtml = `
-                        <div class="holiness-meta">
-                            <span class="holiness-feast">📅 ${item.feast_day}</span>
-                            <span class="holiness-location">⛪ ${item.relics}</span>
-                        </div>
-                    `;
-                    actionsHtml = `
-                        <div class="holiness-actions">
-                            <a href="${item.link || '#'}" class="btn-location">📍 Где мощи</a>
-                            <a href="/routes/routes.html?search=${encodeURIComponent(item.name)}" class="btn-route">🗺️ Маршруты к святому</a>
-                        </div>
-                    `;
-                } else if (item.type === 'icon') {
-                    metaHtml = `
-                        <div class="holiness-meta">
-                            <span class="holiness-location">📍 ${item.location}</span>
-                        </div>
-                    `;
-                    actionsHtml = `
-                        <div class="holiness-actions">
-                            <a href="${item.link || '#'}" class="btn-location">📍 Где находится</a>
-                            <a href="/routes/routes.html?search=${encodeURIComponent(item.name)}" class="btn-route">🗺️ Маршруты к иконе</a>
-                        </div>
-                    `;
-                } else if (item.type === 'relic') {
-                    metaHtml = `
-                        <div class="holiness-meta">
-                            <span class="holiness-feast">🙏 ${item.saint}</span>
-                            <span class="holiness-location">⛪ ${item.location}</span>
-                        </div>
-                    `;
-                    actionsHtml = `
-                        <div class="holiness-actions">
-                            <a href="${item.link || '#'}" class="btn-location">📍 Где мощи</a>
-                            <a href="/routes/routes.html?search=${encodeURIComponent(item.saint)}" class="btn-route">🗺️ Маршруты к святому</a>
-                        </div>
-                    `;
-                }
-
-                card.innerHTML = `
-                    <div class="holiness-card-img">${item.emoji}</div>
-                    <div class="holiness-body">
-                        <div class="holiness-tag">${item.type === 'saint' ? 'Святой' : item.type === 'icon' ? 'Икона' : 'Мощи'}</div>
-                        <div class="holiness-name">${item.name}</div>
-                        <div class="holiness-title">${item.title}</div>
-                        <div class="holiness-desc">${item.description}</div>
-                        ${metaHtml}
-                        ${actionsHtml}
-                    </div>
-                `;
-                grid.appendChild(card);
-            });
-        }
-    </script>
-
+    <script src="js/data-layer.js"></script>
+    <script src="js/content-layer.js"></script>
     <script src="js/config.js"></script>
     <script src="js/components.js"></script>
+    <script src="js/holiness.js"></script>
 </body>
 </html>

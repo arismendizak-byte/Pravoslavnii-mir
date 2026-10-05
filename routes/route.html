@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Маршрут — Православный Мир</title>
+    <link rel="manifest" href="../manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/route.css">
+</head>
+<body>
+    <div id="nav-container"></div>
+    <div id="bottom-nav-container"></div>
+
+    <main class="route-detail-page" aria-live="polite">
+        <div class="breadcrumbs">
+            <a href="../index.html">Главная</a> &rarr;
+            <a href="routes.html">Маршруты</a> &rarr;
+            <span id="routeBreadcrumb">Маршрут</span>
+        </div>
+
+        <section id="routeLoading" class="route-loading">
+            <h1>Загрузка маршрута…</h1>
+            <p>Загружаем описание, остановки и карту.</p>
+        </section>
+
+        <section id="routeContent" hidden>
+            <div class="route-detail-hero">
+                <article class="route-detail-card">
+                    <span class="route-detail-badge" id="routeBadge">Маршрут</span>
+                    <h1 class="route-detail-title" id="routeTitle"></h1>
+                    <p class="route-detail-description" id="routeDescription"></p>
+                    <div class="route-detail-meta" id="routeMeta"></div>
+                    <div class="route-detail-actions">
+                        <button type="button" class="btn-nav btn-gold" id="routeFullMapBtn">Открыть на общей карте</button>
+                        <button type="button" class="btn-nav btn-ghost" id="routeExternalBtn">Навигация во внешней карте</button>
+                        <button type="button" class="btn-nav btn-ghost" id="routeSaveBtn" aria-pressed="false">♡ Сохранить маршрут</button>
+                    </div>
+                </article>
+                <aside class="route-meta-card">
+                    <dl id="routeFacts"></dl>
+                    <div class="route-quality" id="routeQuality"></div>
+                </aside>
+            </div>
+
+            <div class="route-layout">
+                <section class="route-map-card">
+                    <div class="route-map-status" id="routeMapStatus">Подключение карты…</div>
+                    <div class="route-map" id="routeMap" aria-label="Карта точек маршрута"></div>
+                    <div class="route-map-note">Линия соединяет точки только в их заданном порядке. Это не расчёт автомобильного или пешеходного пути по дорогам.</div>
+                </section>
+                <section class="route-points-card">
+                    <h2 class="route-section-title">Точки маршрута</h2>
+                    <div class="route-point-list" id="routePoints"></div>
+                </section>
+            </div>
+
+            <section class="route-related-card" id="routeEntitiesSection" hidden>
+                <h2 class="route-section-title">Святыни на пути</h2>
+                <div class="route-related-list" id="routeEntities"></div>
+            </section>
+
+            <section class="route-related-card" id="routePilgrimSection" hidden>
+                <h2 class="route-section-title">Паломнику на маршруте</h2>
+                <p class="route-related-note">Инфраструктура показана через canonical остановки маршрута и explicit M5.6 place relations. Это discovery traversal, а не новый supports_route факт.</p>
+                <div class="route-pilgrim-list" id="routePilgrim"></div>
+            </section>
+
+            <section class="route-related-card" id="routeSuggestionsSection" hidden>
+                <h2 class="route-section-title">Связанные маршруты</h2>
+                <p class="route-related-note">Другие маршруты, связанные с этим через общие места и святыни.</p>
+                <div class="route-related-list route-suggestion-list" id="routeSuggestions"></div>
+            </section>
+        </section>
+
+        <section id="routeError" class="route-error" hidden>
+            <h1>Маршрут не найден</h1>
+            <p id="routeErrorText">Проверьте ссылку или вернитесь к списку маршрутов.</p>
+            <a class="btn-nav btn-gold" href="routes.html">Открыть маршруты</a>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/components.js"></script>
+    <script src="../js/data-layer.js"></script>
+    <script src="../js/map-runtime.js"></script>
+    <script src="../js/pilgrim-layer.js"></script>
+    <script src="../js/my-pm-layer.js"></script>
+    <script src="../js/route.js"></script>
+</body>
+</html>

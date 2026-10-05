@@ -1,0 +1,289 @@
+{
+  "relations": [
+    {
+      "from": {
+        "id": "pm-ent-2d9d6f56fcacbf171fad717a",
+        "kind": "entity"
+      },
+      "id": "pm-rel-55398e62da13e9742cb2bcd7",
+      "provenance": {
+        "authority": "official_monastery",
+        "checked_at": "2026-10-03",
+        "claim_id": "pm-gclaim-1375bc55320c098fab51d74e",
+        "evidence_note": "Официальный сайт Серафимо-Дивеевского монастыря сообщает, что мощи преподобного Серафима были возложены в Троицком соборе обители.",
+        "provider": "official-diveevo-monastyr",
+        "source_file": "data/graph_sources/verified_relations.json",
+        "source_id": "diveevo-serafim-relics-at-monastery",
+        "source_title": "«Блажен воистинну был еси, преподобне Серафиме»",
+        "source_url": "https://diveevo-monastyr.ru/news/blazhen-voistinnu-byl-esi-prepodobne-serafime/"
+      },
+      "relation_type": "relics_at",
+      "source_records": [
+        {
+          "authority": "official_monastery",
+          "checked_at": "2026-10-03",
+          "claim_id": "pm-gclaim-1375bc55320c098fab51d74e",
+          "evidence_note": "Официальный сайт Серафимо-Дивеевского монастыря сообщает, что мощи преподобного Серафима были возложены в Троицком соборе обители.",
+          "provider": "official-diveevo-monastyr",
+          "source_file": "data/graph_sources/verified_relations.json",
+          "source_id": "diveevo-serafim-relics-at-monastery",
+          "source_title": "«Блажен воистинну был еси, преподобне Серафиме»",
+          "source_url": "https://diveevo-monastyr.ru/news/blazhen-voistinnu-byl-esi-prepodobne-serafime/"
+        },
+        {
+          "evidence_field": "relics",
+          "provider": "pravmir-legacy-holiness",
+          "source_file": "data/holiness.json",
+          "source_id": "3"
+        }
+      ],
+      "to": {
+        "id": "pm-d9b350eb1f99542d8e011cf7028bd2d0",
+        "kind": "place"
+      },
+      "verification_status": "source_verified"
+    },
+    {
+      "from": {
+        "id": "pm-ent-9b3ad4dabf06d97a85b8366f",
+        "kind": "entity"
+      },
+      "id": "pm-rel-5edaa4f914468d4f77ff9805",
+      "provenance": {
+        "authority": "official_diocese",
+        "checked_at": "2026-10-03",
+        "claim_id": "pm-gclaim-a799ba69bc3290e4605d2172",
+        "evidence_note": "Материал Московской епархии указывает, что Владимирская икона Божией Матери хранится в храме святителя Николая в Толмачах.",
+        "provider": "official-moscow-eparchy",
+        "source_file": "data/graph_sources/verified_relations.json",
+        "source_id": "moseparh-vladimir-icon-at-tolmachi",
+        "source_title": "В Толмачи на поклон к Владимирской",
+        "source_url": "https://moseparh.ru/v-tolmachi-na-poklon-k-vladimirskoj.html"
+      },
+      "relation_type": "located_at",
+      "source_records": [
+        {
+          "authority": "official_diocese",
+          "checked_at": "2026-10-03",
+          "claim_id": "pm-gclaim-a799ba69bc3290e4605d2172",
+          "evidence_note": "Материал Московской епархии указывает, что Владимирская икона Божией Матери хранится в храме святителя Николая в Толмачах.",
+          "provider": "official-moscow-eparchy",
+          "source_file": "data/graph_sources/verified_relations.json",
+          "source_id": "moseparh-vladimir-icon-at-tolmachi",
+          "source_title": "В Толмачи на поклон к Владимирской",
+          "source_url": "https://moseparh.ru/v-tolmachi-na-poklon-k-vladimirskoj.html"
+        }
+      ],
+      "to": {
+        "id": "pm-7afa9f66d2125be7abf29d2d17bc761d",
+        "kind": "place"
+      },
+      "verification_status": "source_verified"
+    },
+    {
+      "from": {
+        "id": "pm-ent-9d94e9636c51e1693bb0bf0f",
+        "kind": "entity"
+      },
+      "id": "pm-rel-69468648269050a3dd653bb8",
+      "provenance": {
+        "authority": "official_monastery",
+        "checked_at": "2026-10-03",
+        "claim_id": "pm-gclaim-a2472a75258516f6ade73a88",
+        "evidence_note": "Официальный сайт Лавры указывает на пребывание мощей преподобного Сергия Радонежского в Троице-Сергиевой Лавре.",
+        "provider": "official-lavra-ru",
+        "source_file": "data/graph_sources/verified_relations.json",
+        "source_id": "lavra-sergiy-relics-at-lavra",
+        "source_title": "Празднование обретения честных мощей преподобного Сергия Радонежского",
+        "source_url": "https://lavra.ru/news/all/prazdnovanie-obre-teniya-chestnykh-moshchey-prepodobnogo-sergiya-igumena-radonezhskogo-vseya-rossii-"
+      },
+      "relation_type": "relics_at",
+      "source_records": [
+        {
+          "authority": "official_monastery",
+          "checked_at": "2026-10-03",
+          "claim_id": "pm-gclaim-a2472a75258516f6ade73a88",
+          "evidence_note": "Официальный сайт Лавры указывает на пребывание мощей преподобного Сергия Радонежского в Троице-Сергиевой Лавре.",
+          "provider": "official-lavra-ru",
+          "source_file": "data/graph_sources/verified_relations.json",
+          "source_id": "lavra-sergiy-relics-at-lavra",
+          "source_title": "Празднование обретения честных мощей преподобного Сергия Радонежского",
+          "source_url": "https://lavra.ru/news/all/prazdnovanie-obre-teniya-chestnykh-moshchey-prepodobnogo-sergiya-igumena-radonezhskogo-vseya-rossii-"
+        },
+        {
+          "evidence_field": "relics",
+          "provider": "pravmir-legacy-holiness",
+          "source_file": "data/holiness.json",
+          "source_id": "1"
+        }
+      ],
+      "to": {
+        "id": "pm-9e8bc6fff182514f91cf1739e41d2839",
+        "kind": "place"
+      },
+      "verification_status": "source_verified"
+    },
+    {
+      "from": {
+        "id": "pm-ent-7477196711d7b29ee27e362f",
+        "kind": "entity"
+      },
+      "id": "pm-rel-6eb9151b4ee5369e92f5f79c",
+      "provenance": {
+        "authority": "official_monastery",
+        "checked_at": "2026-10-03",
+        "claim_id": "pm-gclaim-9e000a76112dfa4aa6bc50d1",
+        "evidence_note": "Официальный материал Лавры прямо идентифицирует святыню как мощи преподобного Сергия Радонежского.",
+        "provider": "official-lavra-ru",
+        "source_file": "data/graph_sources/verified_relations.json",
+        "source_id": "lavra-sergiy-relic-of-sergiy",
+        "source_title": "Празднование обретения честных мощей преподобного Сергия Радонежского",
+        "source_url": "https://lavra.ru/news/all/prazdnovanie-obre-teniya-chestnykh-moshchey-prepodobnogo-sergiya-igumena-radonezhskogo-vseya-rossii-"
+      },
+      "relation_type": "relic_of",
+      "source_records": [
+        {
+          "authority": "official_monastery",
+          "checked_at": "2026-10-03",
+          "claim_id": "pm-gclaim-9e000a76112dfa4aa6bc50d1",
+          "evidence_note": "Официальный материал Лавры прямо идентифицирует святыню как мощи преподобного Сергия Радонежского.",
+          "provider": "official-lavra-ru",
+          "source_file": "data/graph_sources/verified_relations.json",
+          "source_id": "lavra-sergiy-relic-of-sergiy",
+          "source_title": "Празднование обретения честных мощей преподобного Сергия Радонежского",
+          "source_url": "https://lavra.ru/news/all/prazdnovanie-obre-teniya-chestnykh-moshchey-prepodobnogo-sergiya-igumena-radonezhskogo-vseya-rossii-"
+        },
+        {
+          "evidence_field": "saint",
+          "provider": "pravmir-legacy-holiness",
+          "source_file": "data/holiness.json",
+          "source_id": "7"
+        }
+      ],
+      "to": {
+        "id": "pm-ent-9d94e9636c51e1693bb0bf0f",
+        "kind": "entity"
+      },
+      "verification_status": "source_verified"
+    },
+    {
+      "from": {
+        "id": "pm-ent-6e29ec9dc7650a7f2a108758",
+        "kind": "entity"
+      },
+      "id": "pm-rel-8b186f1bd5880c9ac9ab97f9",
+      "provenance": {
+        "authority": "official_church",
+        "checked_at": "2026-10-03",
+        "claim_id": "pm-gclaim-d92c7dcaf12d6858370c5786",
+        "evidence_note": "Официальная страница Патриархии указывает, что в храме-усыпальнице Иоанновского монастыря покоятся мощи святого Иоанна Кронштадтского.",
+        "provider": "official-patriarchia-ru",
+        "source_file": "data/graph_sources/verified_relations.json",
+        "source_id": "patriarchia-ioann-relics-at-ioannovsky",
+        "source_title": "Иоанновский ставропигиальный женский монастырь",
+        "source_url": "https://patriarchia.ru/ua/org/463"
+      },
+      "relation_type": "relics_at",
+      "source_records": [
+        {
+          "authority": "official_church",
+          "checked_at": "2026-10-03",
+          "claim_id": "pm-gclaim-d92c7dcaf12d6858370c5786",
+          "evidence_note": "Официальная страница Патриархии указывает, что в храме-усыпальнице Иоанновского монастыря покоятся мощи святого Иоанна Кронштадтского.",
+          "provider": "official-patriarchia-ru",
+          "source_file": "data/graph_sources/verified_relations.json",
+          "source_id": "patriarchia-ioann-relics-at-ioannovsky",
+          "source_title": "Иоанновский ставропигиальный женский монастырь",
+          "source_url": "https://patriarchia.ru/ua/org/463"
+        }
+      ],
+      "to": {
+        "id": "pm-35717840d34c5419ac424affb83c5f64",
+        "kind": "place"
+      },
+      "verification_status": "source_verified"
+    },
+    {
+      "from": {
+        "id": "pm-ent-1f9700eb7514b6f45228427a",
+        "kind": "entity"
+      },
+      "id": "pm-rel-c3e37314517314ddb1721810",
+      "provenance": {
+        "authority": "official_cathedral",
+        "checked_at": "2026-10-03",
+        "claim_id": "pm-gclaim-4f71c9accd786c1e50f287d5",
+        "evidence_note": "Официальный сайт Казанского собора называет Казанскую икону Божией Матери главной святыней собора.",
+        "provider": "official-kazansky-spb",
+        "source_file": "data/graph_sources/verified_relations.json",
+        "source_id": "kazansky-spb-icon-at-cathedral",
+        "source_title": "Санкт-Петербургский список Казанской иконы Божией Матери",
+        "source_url": "https://kazansky-spb.ru/texts/ikona_bozhieimateri"
+      },
+      "relation_type": "located_at",
+      "source_records": [
+        {
+          "authority": "official_cathedral",
+          "checked_at": "2026-10-03",
+          "claim_id": "pm-gclaim-4f71c9accd786c1e50f287d5",
+          "evidence_note": "Официальный сайт Казанского собора называет Казанскую икону Божией Матери главной святыней собора.",
+          "provider": "official-kazansky-spb",
+          "source_file": "data/graph_sources/verified_relations.json",
+          "source_id": "kazansky-spb-icon-at-cathedral",
+          "source_title": "Санкт-Петербургский список Казанской иконы Божией Матери",
+          "source_url": "https://kazansky-spb.ru/texts/ikona_bozhieimateri"
+        }
+      ],
+      "to": {
+        "id": "pm-db95b49a09a150e38f1f796d2cd641ef",
+        "kind": "place"
+      },
+      "verification_status": "source_verified"
+    },
+    {
+      "from": {
+        "id": "pm-ent-7477196711d7b29ee27e362f",
+        "kind": "entity"
+      },
+      "id": "pm-rel-ef04f28ba63675ece02040db",
+      "provenance": {
+        "authority": "official_monastery",
+        "checked_at": "2026-10-03",
+        "claim_id": "pm-gclaim-1dcb581439af194e23f3ca77",
+        "evidence_note": "Официальный материал Лавры описывает раку со святыми мощами преподобного Сергия Радонежского в Лавре.",
+        "provider": "official-lavra-ru",
+        "source_file": "data/graph_sources/verified_relations.json",
+        "source_id": "lavra-sergiy-relic-entity-at-lavra",
+        "source_title": "Празднование обретения честных мощей преподобного Сергия Радонежского",
+        "source_url": "https://lavra.ru/news/all/prazdnovanie-obre-teniya-chestnykh-moshchey-prepodobnogo-sergiya-igumena-radonezhskogo-vseya-rossii-"
+      },
+      "relation_type": "located_at",
+      "source_records": [
+        {
+          "authority": "official_monastery",
+          "checked_at": "2026-10-03",
+          "claim_id": "pm-gclaim-1dcb581439af194e23f3ca77",
+          "evidence_note": "Официальный материал Лавры описывает раку со святыми мощами преподобного Сергия Радонежского в Лавре.",
+          "provider": "official-lavra-ru",
+          "source_file": "data/graph_sources/verified_relations.json",
+          "source_id": "lavra-sergiy-relic-entity-at-lavra",
+          "source_title": "Празднование обретения честных мощей преподобного Сергия Радонежского",
+          "source_url": "https://lavra.ru/news/all/prazdnovanie-obre-teniya-chestnykh-moshchey-prepodobnogo-sergiya-igumena-radonezhskogo-vseya-rossii-"
+        },
+        {
+          "evidence_field": "location",
+          "provider": "pravmir-legacy-holiness",
+          "source_file": "data/holiness.json",
+          "source_id": "7"
+        }
+      ],
+      "to": {
+        "id": "pm-9e8bc6fff182514f91cf1739e41d2839",
+        "kind": "place"
+      },
+      "verification_status": "source_verified"
+    }
+  ],
+  "schema_version": "1.1.0",
+  "source_snapshot_sha256": "115c88ef3852a20da2b48369eca9d3d0d074cba79d0937a2c4335c6527f9e3ab"
+}
